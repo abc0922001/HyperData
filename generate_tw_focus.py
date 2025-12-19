@@ -5,7 +5,8 @@ from datetime import datetime, timedelta, timezone
 
 # 設定為台灣時區 (UTC+8)
 tz_tw = timezone(timedelta(hours=8))
-gen_time = datetime.now(tz_tw).strftime("%Y-%m-%d %H:%M")
+now_tw = datetime.now(tz_tw)
+gen_time = now_tw.strftime("%Y-%m-%d %H:%M")
 
 # 設定路徑
 devices_dir = 'devices'
@@ -118,27 +119,17 @@ def generate_history_html(history_list, type_class):
     '''
     
     for i, rom in enumerate(history_list):
-        # 計算間隔天數
         interval_html = '<span class="text-gray-300">-</span>'
-        
-        # 只要不是最後一筆 (最舊的)，就去跟後一筆 (更舊的) 比較
         if i < len(history_list) - 1:
             try:
-                # 當前版本日期
                 current_date = datetime.strptime(rom['release'], "%Y-%m-%d")
-                # 上一個版本日期 (因為列表是降序，所以是 index + 1)
                 prev_date = datetime.strptime(history_list[i+1]['release'], "%Y-%m-%d")
-                
                 delta_days = (current_date - prev_date).days
-                
-                # 根據天數給予顏色 (可選)
                 bg_color = "bg-gray-100 text-gray-500"
-                if delta_days > 90: bg_color = "bg-orange-50 text-orange-600" # 超過3個月
-                elif delta_days < 30: bg_color = "bg-green-50 text-green-600" # 月更
-                
+                if delta_days > 90: bg_color = "bg-orange-50 text-orange-600"
+                elif delta_days < 30: bg_color = "bg-green-50 text-green-600"
                 interval_html = f'<span class="px-1.5 py-0.5 rounded {bg_color}">{delta_days} 天</span>'
-            except:
-                pass
+            except: pass
         else:
             interval_html = '<span class="text-xs text-blue-300">首版</span>'
 
@@ -191,7 +182,7 @@ html_content = f"""<!DOCTYPE html>
         <div class="max-w-4xl mx-auto px-4 py-4">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div>
-                    <h1 class="text-2xl font-bold text-gray-900 tracking-tight">HyperOS TW Tracker</h1>
+                    <h1 class="text-2xl font-bold text-gray-900 tracking-tight text-mi-orange">HyperOS TW Tracker</h1>
                     <p class="text-xs text-gray-500 mt-1">更新時間: {gen_time} (UTC+8)</p>
                 </div>
                 <div class="flex gap-2 w-full md:w-auto">
@@ -219,6 +210,20 @@ for device in final_list:
     tw_ver = tw['os']
     tw_date = tw['release']
     
+    # 計算距今時間
+    ago_html = ""
+    try:
+        tw_dt = datetime.strptime(tw_date, "%Y-%m-%d").replace(tzinfo=tz_tw)
+        days_ago = (now_tw - tw_dt).days
+        
+        ago_color = "text-green-600 bg-green-50"
+        if days_ago > 180: ago_color = "text-red-600 bg-red-50"
+        elif days_ago > 90: ago_color = "text-orange-600 bg-orange-50"
+        elif days_ago > 30: ago_color = "text-gray-500 bg-gray-100"
+        
+        ago_html = f'<span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 {ago_color}">已過 {days_ago} 天</span>'
+    except: pass
+
     # 台灣版歷史區塊
     tw_history_html = generate_history_html(device['tw']['history'], 'tw-history')
     
@@ -227,7 +232,6 @@ for device in final_list:
     
     if gl:
         gl_ver = gl['os']
-        # 比較版本
         tw_tup = version_to_tuple(tw_ver)
         gl_tup = version_to_tuple(gl_ver)
         
@@ -238,10 +242,8 @@ for device in final_list:
         else:
             ver_status_tag = '<span class="text-[10px] px-1.5 py-0.5 rounded text-gray-500 bg-gray-100">= 同步</span>'
 
-        # 國際版歷史區塊
         gl_history_html = generate_history_html(device['global']['history'], 'gl-history')
 
-        # 國際版卡片區塊 (可點擊)
         gl_info_html = f"""
             <div class="group/gl">
                 <div onclick="toggleHistory(this)" class="cursor-pointer flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50 hover:bg-gray-50 transition-colors relative select-none">
@@ -264,7 +266,6 @@ for device in final_list:
             </div>
         """
 
-    # 台灣版卡片區塊 (可點擊)
     tw_card_block = f"""
         <div class="group/tw">
             <div onclick="toggleHistory(this)" class="cursor-pointer flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100 hover:bg-blue-50 transition-colors relative select-none">
@@ -296,8 +297,9 @@ for device in final_list:
                         </div>
                     </div>
                 </div>
-                <div class="text-end">
-                    <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">{tw_date}</span>
+                <div class="flex flex-col items-end">
+                    <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">{tw_date}</span>
+                    {ago_html}
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -309,36 +311,26 @@ for device in final_list:
 
 html_content += """
     </div>
-    
-    <div class="max-w-4xl mx-auto px-4 py-8 text-center">
-        <p class="text-xs text-gray-400">Generated by GitHub Actions</p>
+    <div class="max-w-4xl mx-auto px-4 py-8 text-center text-gray-400 text-xs">
+        Generated by GitHub Actions • Total {len(final_list)} Devices
     </div>
-
     <script>
-        // 歷史紀錄展開/收合
         function toggleHistory(element) {
             const historyDiv = element.nextElementSibling;
-            if (historyDiv) {
-                historyDiv.classList.toggle('hidden');
-            }
+            if (historyDiv) historyDiv.classList.toggle('hidden');
         }
-
         const searchInput = document.getElementById('searchInput');
         const brandFilter = document.getElementById('brandFilter');
-
         function filterContent() {
             const searchText = searchInput.value.toLowerCase().trim();
             const selectedBrand = brandFilter.value;
             const cards = document.querySelectorAll('.device-card');
-            
             cards.forEach(card => {
                 const name = card.querySelector('.device-title').textContent.toLowerCase();
                 const code = card.querySelector('.device-code').textContent.toLowerCase();
                 const brand = card.getAttribute('data-brand');
-                
                 const matchText = name.includes(searchText) || code.includes(searchText);
                 const matchBrand = (selectedBrand === 'all') || (brand === selectedBrand);
-                
                 card.classList.toggle('hidden', !(matchText && matchBrand));
             });
         }
