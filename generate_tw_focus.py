@@ -1,7 +1,11 @@
 import json
 import os
 import glob
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
+
+# 設定為台灣時區 (UTC+8)
+tz_tw = timezone(timedelta(hours=8))
+gen_time = datetime.now(tz_tw).strftime("%Y-%m-%d %H:%M")
 
 # 設定路徑
 devices_dir = 'devices'
@@ -12,29 +16,24 @@ TARGET_TW = "小米澎湃 OS 中国台湾省正式版"
 TARGET_GLOBAL = "小米澎湃 OS 国际正式版"
 
 def version_to_tuple(v_str):
-    """
-    將版本號字串轉換為可比較的 tuple。
-    例如: "OS1.0.10.0.WOYTWXM" -> (1, 0, 10, 0)
-    """
     try:
-        # 1. 移除最後 7 個字元的地區代碼
         clean_v = v_str[:-7] if len(v_str) > 7 else v_str
-        # 2. 移除開頭的 "OS"
-        if clean_v.startswith("OS"):
-            clean_v = clean_v[2:]
-        # 3. 移除末尾可能殘留的點
+        if clean_v.startswith("OS"): clean_v = clean_v[2:]
         clean_v = clean_v.strip('.')
-        # 4. 依照點分割並轉換為整數
         return tuple(int(x) for x in clean_v.split('.') if x.isdigit())
     except:
         return (0,)
 
-# 用來儲存整理後的資料
+print(f"::group::初始化設定")
+print(f"工作目錄: {os.getcwd()}")
+print(f"輸出檔案: {output_file}")
+print(f"::endgroup::")
+
 devices_map = {}
 all_brands = set()
 
-# 讀取所有 json 檔案
 json_files = glob.glob(os.path.join(devices_dir, '*.json'))
+print(f"Found {len(json_files)} device files. Processing...")
 
 for file_path in json_files:
     try:
@@ -82,7 +81,7 @@ for file_path in json_files:
                 if rom_list:
                     devices_map[device_code][target_type] = {
                         'latest': rom_list[0],
-                        'history_count': len(rom_list)
+                        'history': rom_list # 保留完整歷史紀錄
                     }
                 
     except Exception as e:
@@ -100,11 +99,25 @@ brand_options = '<option value="all">所有品牌</option>'
 for brand in sorted(list(all_brands)):
     brand_options += f'<option value="{brand}">{brand}</option>'
 
-from datetime import datetime, timedelta, timezone
+print(f"Collected {len(final_list)} devices.")
 
-# 設定為台灣時區 (UTC+8)
-tz_tw = timezone(timedelta(hours=8))
-gen_time = datetime.now(tz_tw).strftime("%Y-%m-%d %H:%M")
+# Helper function to generate history HTML
+def generate_history_html(history_list, type_class):
+    html = f'<div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="{type_class}">'
+    html += '<table class="w-full text-xs text-left">'
+    html += '<thead class="text-gray-400 font-medium"><tr><th class="py-1">版本</th><th class="py-1">日期</th><th class="py-1 text-right">Android</th></tr></thead>'
+    html += '<tbody class="divide-y divide-gray-50">'
+    
+    for rom in history_list:
+        html += f'''
+        <tr class="hover:bg-gray-50 transition-colors">
+            <td class="py-1.5 font-mono text-gray-700">{rom['os']}</td>
+            <td class="py-1.5 text-gray-500">{rom['release']}</td>
+            <td class="py-1.5 text-right text-gray-400">{rom['android']}</td>
+        </tr>
+        '''
+    html += '</tbody></table></div>'
+    return html
 
 html_content = f"""<!DOCTYPE html>
 <html lang="zh-TW">
@@ -119,11 +132,24 @@ html_content = f"""<!DOCTYPE html>
                 extend: {{
                     fontFamily: {{
                         sans: ['"Microsoft JhengHei"', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    }},
+                    keyframes: {{
+                        fadeIn: {{
+                            '0%': {{ opacity: '0', transform: 'translateY(-5px)' }},
+                            '100%': {{ opacity: '1', transform: 'translateY(0)' }},
+                        }}
+                    }},
+                    animation: {{
+                        'fade-in': 'fadeIn 0.2s ease-out',
                     }}
                 }}
             }}
         }}
     </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {{ display: none; }}
+        .no-scrollbar {{ -ms-overflow-style: none; scrollbar-width: none; }}
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased min-h-screen pb-10">
 
@@ -132,7 +158,7 @@ html_content = f"""<!DOCTYPE html>
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div>
                     <h1 class="text-2xl font-bold text-gray-900 tracking-tight">HyperOS TW Tracker</h1>
-                    <p class="text-xs text-gray-500 mt-1">更新時間: {gen_time} (Auto-generated)</p>
+                    <p class="text-xs text-gray-500 mt-1">更新時間: {gen_time} (UTC+8)</p>
                 </div>
                 <div class="flex gap-2 w-full md:w-auto">
                     <select id="brandFilter" class="bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 px-4 rounded-full text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors cursor-pointer border-0">
@@ -159,13 +185,15 @@ for device in final_list:
     tw_ver = tw['os']
     tw_date = tw['release']
     
+    # 台灣版歷史區塊
+    tw_history_html = generate_history_html(device['tw']['history'], 'tw-history')
+    
     gl_info_html = ""
     ver_status_tag = ""
     
     if gl:
         gl_ver = gl['os']
-        
-        # 精確比對邏輯：排除尾端 7 個字元並轉為 tuple
+        # 比較版本
         tw_tup = version_to_tuple(tw_ver)
         gl_tup = version_to_tuple(gl_ver)
         
@@ -176,16 +204,23 @@ for device in final_list:
         else:
             ver_status_tag = '<span class="text-[10px] px-1.5 py-0.5 rounded text-gray-500 bg-gray-100">= 同步</span>'
 
+        # 國際版歷史區塊
+        gl_history_html = generate_history_html(device['global']['history'], 'gl-history')
+
+        # 國際版卡片區塊 (可點擊)
         gl_info_html = f"""
-            <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
-                <div class="flex items-center gap-3">
-                    <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600">國際版</span>
-                    <div>
-                        <div class="text-sm font-mono text-gray-600">{gl_ver}</div>
-                        <div class="text-[10px] text-gray-400">Android {gl['android']}</div>
+            <div class="group/gl">
+                <div onclick="toggleHistory(this)" class="cursor-pointer flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50 hover:bg-gray-50 transition-colors relative">
+                    <div class="flex items-center gap-3">
+                        <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600 group-hover/gl:bg-gray-200 transition-colors">國際版 ▾</span>
+                        <div>
+                            <div class="text-sm font-mono text-gray-600">{gl_ver}</div>
+                            <div class="text-[10px] text-gray-400">Android {gl['android']}</div>
+                        </div>
                     </div>
+                    <div class="text-xs text-gray-500 font-medium">{gl['release']}</div>
                 </div>
-                <div class="text-xs text-gray-500 font-medium">{gl['release']}</div>
+                {gl_history_html}
             </div>
         """
     else:
@@ -194,6 +229,23 @@ for device in final_list:
                 <span class="text-xs text-gray-400 italic">無國際版資料</span>
             </div>
         """
+
+    # 台灣版卡片區塊 (可點擊)
+    tw_card_block = f"""
+        <div class="group/tw">
+            <div onclick="toggleHistory(this)" class="cursor-pointer flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100 hover:bg-blue-50 transition-colors relative">
+                <div class="flex items-center gap-3">
+                    <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-700 shadow-sm group-hover/tw:bg-blue-200 transition-colors">台灣版 ▾</span>
+                    <div>
+                        <div class="text-sm font-bold font-mono text-gray-800">{tw_ver}</div>
+                        <div class="text-[10px] text-blue-400">Android {tw['android']}</div>
+                    </div>
+                </div>
+                {ver_status_tag}
+            </div>
+            {tw_history_html}
+        </div>
+    """
 
     html_content += f"""
         <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="{device['brand']}">
@@ -215,16 +267,7 @@ for device in final_list:
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
-                    <div class="flex items-center gap-3">
-                        <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-700 shadow-sm">台灣版</span>
-                        <div>
-                            <div class="text-sm font-bold font-mono text-gray-800">{tw_ver}</div>
-                            <div class="text-[10px] text-blue-400">Android {tw['android']}</div>
-                        </div>
-                    </div>
-                    {ver_status_tag}
-                </div>
+                {tw_card_block}
                 {gl_info_html}
             </div>
         </div>
@@ -232,7 +275,21 @@ for device in final_list:
 
 html_content += """
     </div>
+    
+    <div class="max-w-4xl mx-auto px-4 py-8 text-center">
+        <p class="text-xs text-gray-400">Generated by GitHub Actions</p>
+    </div>
+
     <script>
+        // 歷史紀錄展開/收合
+        function toggleHistory(element) {
+            // 找到同層級的歷史列表 (div 就在 onclick div 的正下方)
+            const historyDiv = element.nextElementSibling;
+            if (historyDiv) {
+                historyDiv.classList.toggle('hidden');
+            }
+        }
+
         const searchInput = document.getElementById('searchInput');
         const brandFilter = document.getElementById('brandFilter');
 
