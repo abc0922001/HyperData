@@ -81,7 +81,7 @@ for file_path in json_files:
                 if rom_list:
                     devices_map[device_code][target_type] = {
                         'latest': rom_list[0],
-                        'history': rom_list # 保留完整歷史紀錄
+                        'history': rom_list
                     }
                 
     except Exception as e:
@@ -105,15 +105,49 @@ print(f"Collected {len(final_list)} devices.")
 def generate_history_html(history_list, type_class):
     html = f'<div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="{type_class}">'
     html += '<table class="w-full text-xs text-left">'
-    html += '<thead class="text-gray-400 font-medium"><tr><th class="py-1">版本</th><th class="py-1">日期</th><th class="py-1 text-right">Android</th></tr></thead>'
-    html += '<tbody class="divide-y divide-gray-50">'
+    html += '''
+    <thead class="text-gray-400 font-medium border-b border-gray-50">
+        <tr>
+            <th class="py-2 pl-1">版本</th>
+            <th class="py-2">日期</th>
+            <th class="py-2 text-center">間隔</th>
+            <th class="py-2 text-right pr-1">Android</th>
+        </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-50">
+    '''
     
-    for rom in history_list:
+    for i, rom in enumerate(history_list):
+        # 計算間隔天數
+        interval_html = '<span class="text-gray-300">-</span>'
+        
+        # 只要不是最後一筆 (最舊的)，就去跟後一筆 (更舊的) 比較
+        if i < len(history_list) - 1:
+            try:
+                # 當前版本日期
+                current_date = datetime.strptime(rom['release'], "%Y-%m-%d")
+                # 上一個版本日期 (因為列表是降序，所以是 index + 1)
+                prev_date = datetime.strptime(history_list[i+1]['release'], "%Y-%m-%d")
+                
+                delta_days = (current_date - prev_date).days
+                
+                # 根據天數給予顏色 (可選)
+                bg_color = "bg-gray-100 text-gray-500"
+                if delta_days > 90: bg_color = "bg-orange-50 text-orange-600" # 超過3個月
+                elif delta_days < 30: bg_color = "bg-green-50 text-green-600" # 月更
+                
+                interval_html = f'<span class="px-1.5 py-0.5 rounded {bg_color}">{delta_days} 天</span>'
+            except:
+                pass
+        else:
+            interval_html = '<span class="text-xs text-blue-300">首版</span>'
+
         html += f'''
         <tr class="hover:bg-gray-50 transition-colors">
-            <td class="py-1.5 font-mono text-gray-700">{rom['os']}</td>
-            <td class="py-1.5 text-gray-500">{rom['release']}</td>
-            <td class="py-1.5 text-right text-gray-400">{rom['android']}</td>
+            <td class="py-2 pl-1 font-mono text-gray-700">{rom['os']}</td>
+            <td class="py-2 text-gray-500">{rom['release']}</td>
+            <td class="py-2 text-center">{interval_html}</td>
+            <td class="py-2 text-right pr-1 text-gray-400">{rom['android']}</td>
         </tr>
         '''
     html += '</tbody></table></div>'
@@ -210,7 +244,7 @@ for device in final_list:
         # 國際版卡片區塊 (可點擊)
         gl_info_html = f"""
             <div class="group/gl">
-                <div onclick="toggleHistory(this)" class="cursor-pointer flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50 hover:bg-gray-50 transition-colors relative">
+                <div onclick="toggleHistory(this)" class="cursor-pointer flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50 hover:bg-gray-50 transition-colors relative select-none">
                     <div class="flex items-center gap-3">
                         <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600 group-hover/gl:bg-gray-200 transition-colors">國際版 ▾</span>
                         <div>
@@ -233,7 +267,7 @@ for device in final_list:
     # 台灣版卡片區塊 (可點擊)
     tw_card_block = f"""
         <div class="group/tw">
-            <div onclick="toggleHistory(this)" class="cursor-pointer flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100 hover:bg-blue-50 transition-colors relative">
+            <div onclick="toggleHistory(this)" class="cursor-pointer flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100 hover:bg-blue-50 transition-colors relative select-none">
                 <div class="flex items-center gap-3">
                     <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-700 shadow-sm group-hover/tw:bg-blue-200 transition-colors">台灣版 ▾</span>
                     <div>
@@ -283,7 +317,6 @@ html_content += """
     <script>
         // 歷史紀錄展開/收合
         function toggleHistory(element) {
-            // 找到同層級的歷史列表 (div 就在 onclick div 的正下方)
             const historyDiv = element.nextElementSibling;
             if (historyDiv) {
                 historyDiv.classList.toggle('hidden');
