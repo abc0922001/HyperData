@@ -249,6 +249,14 @@ for device in final_list:
 
         gl_history_html = generate_history_html(device['global']['history'], 'gl-history')
 
+        # 計算國際版距今時間
+        gl_ago_html = ""
+        try:
+            gl_dt = datetime.strptime(gl['release'], "%Y-%m-%d").replace(tzinfo=tz_tw)
+            gl_days = (now_tw - gl_dt).days
+            gl_ago_html = f'<div class="text-[9px] text-gray-400 mt-0.5">({gl_days} 天前)</div>'
+        except: pass
+
         gl_info_html = f"""
             <div class="group/gl">
                 <div onclick="toggleHistory(this)" class="cursor-pointer flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50 hover:bg-gray-50 transition-colors relative select-none">
@@ -259,7 +267,10 @@ for device in final_list:
                             <div class="text-[10px] text-gray-400">Android {gl['android']}</div>
                         </div>
                     </div>
-                    <div class="text-xs text-gray-500 font-medium">{gl['release']}</div>
+                    <div class="flex flex-col items-end">
+                        <div class="text-xs text-gray-500 font-medium">{gl['release']}</div>
+                        {gl_ago_html}
+                    </div>
                 </div>
                 {gl_history_html}
             </div>
