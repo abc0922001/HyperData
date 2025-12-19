@@ -1,0 +1,35 @@
+name: Update Taiwan Version Page
+
+on:
+  push:
+    paths:
+      - 'devices/**.json'
+      - 'generate_tw_focus.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Run generation script
+      run: |
+        python generate_tw_focus.py
+
+    - name: Commit and push if changed
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        git add tw.html
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update tw.html [skip ci]" && git push)
