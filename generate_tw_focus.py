@@ -100,7 +100,11 @@ brand_options = '<option value="all">所有品牌</option>'
 for brand in sorted(list(all_brands)):
     brand_options += f'<option value="{brand}">{brand}</option>'
 
-gen_time = datetime.now().strftime("%Y-%m-%d %H:%M")
+from datetime import datetime, timedelta, timezone
+
+# 設定為台灣時區 (UTC+8)
+tz_tw = timezone(timedelta(hours=8))
+gen_time = datetime.now(tz_tw).strftime("%Y-%m-%d %H:%M")
 
 html_content = f"""<!DOCTYPE html>
 <html lang="zh-TW">
