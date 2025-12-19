@@ -11,47 +11,29 @@
                 extend: {
                     fontFamily: {
                         sans: ['"Microsoft JhengHei"', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
-                    },
-                    colors: {
-                        'mi-orange': '#ff6700',
-                        'mi-dark': '#1e1e1e',
                     }
                 }
             }
         }
     </script>
-    <style>
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-    </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased min-h-screen pb-10">
 
-    <!-- 頂部標題與搜尋區 -->
     <div class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
         <div class="max-w-4xl mx-auto px-4 py-4">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div>
                     <h1 class="text-2xl font-bold text-gray-900 tracking-tight">HyperOS TW Tracker</h1>
-                    <p class="text-xs text-gray-500 mt-1">更新時間: 2025-12-19 12:40 (Auto-generated)</p>
+                    <p class="text-xs text-gray-500 mt-1">更新時間: 2025-12-19 12:46 (Auto-generated)</p>
                 </div>
-                
                 <div class="flex gap-2 w-full md:w-auto">
-                    <div class="relative group">
-                        <select id="brandFilter" class="appearance-none bg-gray-100 hover:bg-gray-200 text-gray-700 py-2.5 pl-4 pr-8 rounded-full text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors cursor-pointer border border-transparent">
-                            <option value="all">所有品牌</option><option value="POCO">POCO</option><option value="REDMI">REDMI</option><option value="REDMI, POCO">REDMI, POCO</option><option value="Redmi">Redmi</option><option value="Redmi, POCO">Redmi, POCO</option><option value="Xiaomi">Xiaomi</option><option value="Xiaomi, POCO">Xiaomi, POCO</option>
-                        </select>
-                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
-                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </div>
-                    </div>
-                    
-                    <div class="relative flex-grow md:flex-grow-0 md:w-64">
-                        <input type="text" id="searchInput" 
-                            class="w-full bg-gray-100 hover:bg-gray-200 focus:bg-white text-gray-700 py-2.5 pl-10 pr-4 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border border-transparent placeholder-gray-400" 
-                            placeholder="搜尋機型名稱或代號...">
-                        <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
-                            <svg class="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <select id="brandFilter" class="bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 px-4 rounded-full text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors cursor-pointer border-0">
+                        <option value="all">所有品牌</option><option value="POCO">POCO</option><option value="REDMI">REDMI</option><option value="REDMI, POCO">REDMI, POCO</option><option value="Redmi">Redmi</option><option value="Redmi, POCO">Redmi, POCO</option><option value="Xiaomi">Xiaomi</option><option value="Xiaomi, POCO">Xiaomi, POCO</option>
+                    </select>
+                    <div class="relative flex-grow md:w-64">
+                        <input type="text" id="searchInput" class="w-full bg-gray-100 hover:bg-gray-200 focus:bg-white text-gray-700 py-2 pl-10 pr-4 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-0 placeholder-gray-400" placeholder="搜尋機型名稱或代號...">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                         </div>
                     </div>
                 </div>
@@ -59,30 +41,26 @@
         </div>
     </div>
 
-    <!-- 主要內容區 -->
     <div class="max-w-4xl mx-auto px-4 mt-6" id="content">
 
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 12 Lite</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 12 Lite</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">taoyao</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-16</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -109,27 +87,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 12T</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 12T</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">plato</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-16</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -156,27 +131,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 14</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 14</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">houji</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-15</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -203,27 +175,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 15T Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 15T Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">klimt</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-15</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -250,27 +219,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 15T</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 15T</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">goya</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-15</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -297,27 +263,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 12 Pro 极速版 / POCO X5 Pro 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 12 Pro 极速版 / POCO X5 Pro 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">redwood</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-15</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -344,27 +307,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">REDMI K90 Pro Max / POCO F8 Ultra</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">REDMI K90 Pro Max / POCO F8 Ultra</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">myron</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-15</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -391,27 +351,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 13 Ultra</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 13 Ultra</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">ishtar</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-13</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -438,27 +395,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="REDMI">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">REDMI 平板 2 Pro 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">REDMI 平板 2 Pro 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">organ</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">REDMI</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-12</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -485,27 +439,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">REDMI K Pad / Xiaomi Pad Mini</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">REDMI K Pad / Xiaomi Pad Mini</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">turner</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-12</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -515,7 +466,7 @@
                             <div class="text-[10px] text-blue-400">Android 16.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-gray-500 bg-gray-100">= 同步</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -532,27 +483,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">REDMI K80 / POCO F7 Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">REDMI K80 / POCO F7 Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">zorn</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-12</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -579,27 +527,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">REDMI K90 / POCO F8 Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">REDMI K90 / POCO F8 Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">annibale</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-11</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -626,27 +571,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         P
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">POCO X5 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">POCO X5 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">moonstone</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-08</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -673,27 +615,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 14 Pro / POCO X7</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 14 Pro / POCO X7</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">malachite</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-08</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -720,27 +659,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 13T</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 13T</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">aristotle</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-08</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -767,27 +703,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="REDMI">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">REDMI 15 4G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">REDMI 15 4G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">creek</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">REDMI</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-08</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -814,27 +747,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 13 Pro+ 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 13 Pro+ 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">zircon</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-08</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -861,27 +791,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="REDMI">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">REDMI 15 5G / REDMI Note 15R 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">REDMI 15 5G / REDMI Note 15R 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">spring</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">REDMI</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-04</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -908,27 +835,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="REDMI">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">REDMI 平板 2 Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">REDMI 平板 2 Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">flute</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">REDMI</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-02</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -955,27 +879,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">REDMI K80 Pro / POCO F7 Ultra</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">REDMI K80 Pro / POCO F7 Ultra</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">miro</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-01</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1002,27 +923,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 15</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 15</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">dada</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-01</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1049,27 +967,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi 平板 SE</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi 平板 SE</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">xun</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-12-01</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1096,27 +1011,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 13</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 13</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">fuxi</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-30</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1143,27 +1055,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 13 Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 13 Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">nuwa</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-30</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1190,27 +1099,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi, POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米平板7</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米平板7</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">uke</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi, POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-27</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1237,27 +1143,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi K50 至尊版 / 小米 12T Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi K50 至尊版 / 小米 12T Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">diting</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-27</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1284,27 +1187,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 14 5G / POCO M7 Pro 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 14 5G / POCO M7 Pro 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">beryl</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-27</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1331,27 +1231,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi K60 / POCO F5 Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi K60 / POCO F5 Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">mondrian</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-25</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1378,27 +1275,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 14T</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 14T</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">degas</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-25</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1408,7 +1302,7 @@
                             <div class="text-[10px] text-blue-400">Android 15.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-gray-500 bg-gray-100">= 同步</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -1425,27 +1319,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">REDMI Turbo 4 Pro / POCO F7</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">REDMI Turbo 4 Pro / POCO F7</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">onyx</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-24</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1472,27 +1363,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 15 Ultra</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 15 Ultra</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">xuanyuan</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-24</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1519,27 +1407,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米平板 6</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米平板 6</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">pipa</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-24</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1549,7 +1434,7 @@
                             <div class="text-[10px] text-blue-400">Android 14.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -1566,27 +1451,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="REDMI">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">REDMI 平板 2 4G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">REDMI 平板 2 4G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">koto</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">REDMI</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-24</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1613,27 +1495,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 14 4G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 14 4G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">tanzanite</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-23</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1660,27 +1539,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 12S</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 12S</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">sea</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-23</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1707,27 +1583,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Pad Pro / 哈利·波特版 / POCO Pad</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Pad Pro / 哈利·波特版 / POCO Pad</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">dizi</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi, POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-23</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1754,27 +1627,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 Civi 2</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 Civi 2</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">ziyi</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-21</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1784,7 +1654,7 @@
                             <div class="text-[10px] text-blue-400">Android 15.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-gray-500 bg-gray-100">= 同步</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -1801,27 +1671,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi K60 至尊版 / 小米 13T Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi K60 至尊版 / 小米 13T Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">corot</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-21</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1831,7 +1698,7 @@
                             <div class="text-[10px] text-blue-400">Android 15.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-gray-500 bg-gray-100">= 同步</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -1848,27 +1715,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 13 NFC</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 13 NFC</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">sapphiren</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-21</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1895,27 +1759,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Turbo 3 / POCO F6</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Turbo 3 / POCO F6</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">peridot</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-21</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1942,27 +1803,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 13 5G / 13R Pro / POCO X6 Neo 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 13 5G / 13R Pro / POCO X6 Neo 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">gold</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi, POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-21</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -1989,27 +1847,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">REDMI Turbo 4 / POCO X7 Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">REDMI Turbo 4 / POCO X7 Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">rodin</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-20</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2036,27 +1891,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi K70 至尊版 / 小米 14T Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi K70 至尊版 / 小米 14T Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">rothko</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-20</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2083,27 +1935,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 MIX Flip</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 MIX Flip</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">ruyi</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-17</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2130,27 +1979,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米平板7 Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米平板7 Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">muyu</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-17</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2177,27 +2023,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 12</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 12</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">cupid</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-17</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2207,7 +2050,7 @@
                             <div class="text-[10px] text-blue-400">Android 15.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-gray-500 bg-gray-100">= 同步</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -2224,27 +2067,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi K70E / POCO X6 Pro 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi K70E / POCO X6 Pro 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">duchamp</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-17</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2254,7 +2094,7 @@
                             <div class="text-[10px] text-blue-400">Android 15.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-gray-500 bg-gray-100">= 同步</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -2271,27 +2111,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 14 Ultra / Ultra Ti</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 14 Ultra / Ultra Ti</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">aurora</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-17</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2318,27 +2155,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 12 Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 12 Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">zeus</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-13</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2365,27 +2199,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="REDMI">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">REDMI 平板 2</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">REDMI 平板 2</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">taiko</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">REDMI</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-13</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2412,27 +2243,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 13 Pro 5G / POCO X6 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 13 Pro 5G / POCO X6 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">garnet</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi, POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-13</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2459,27 +2287,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi 13C/R 5G / POCO M6 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi 13C/R 5G / POCO M6 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">air</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-13</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2506,27 +2331,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 12 Pro / Pro+ / 探索版</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 12 Pro / Pro+ / 探索版</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">ruby</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-11</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2553,27 +2375,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 12 Turbo / POCO F5</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 12 Turbo / POCO F5</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">marble</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-10</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2600,27 +2419,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi K70 / POCO F6 Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi K70 / POCO F6 Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">vermeer</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-08</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2647,27 +2463,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="REDMI, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI, POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">REDMI 15C / POCO C85</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">REDMI 15C / POCO C85</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">dew</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">REDMI, POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-07</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2694,27 +2507,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi 14C</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi 14C</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">lake</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-07</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2741,27 +2551,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi 13 / POCO M6 4G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi 13 / POCO M6 4G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">moon</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi, POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-06</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2788,27 +2595,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi 12 / 12R 5G / Redmi Note 12R / POCO M6 Pro 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi 12 / 12R 5G / Redmi Note 12R / POCO M6 Pro 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">sky</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi, POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-11-04</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2835,27 +2639,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 14 Pro+</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 14 Pro+</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">amethyst</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-10-26</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2882,27 +2683,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi 13C 国际 / POCO C65</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi 13C 国际 / POCO C65</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">gale</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi, POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-09-28</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2929,27 +2727,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 11T Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 11T Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">vili</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-09-26</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -2976,27 +2771,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 11T</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 11T</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">agate</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-09-18</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3023,27 +2815,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 11 青春活力版 / 小米 11 Lite 5G NE</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 11 青春活力版 / 小米 11 Lite 5G NE</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">lisa</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-09-12</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3070,27 +2859,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 12 5G / Note 12R Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 12 5G / Note 12R Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">sunstone</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-08-31</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3117,27 +2903,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi 平板</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi 平板</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">yunluo</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-08-18</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3147,7 +2930,7 @@
                             <div class="text-[10px] text-blue-400">Android 14.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -3164,27 +2947,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi 12C / POCO C55</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi 12C / POCO C55</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">earth</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi, POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-07-07</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3194,7 +2974,7 @@
                             <div class="text-[10px] text-blue-400">Android 14.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -3211,27 +2991,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 11T Pro/Pro+ / Redmi K50i / POCO X4 GT / Pro</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 11T Pro/Pro+ / Redmi K50i / POCO X4 GT / Pro</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">xaga</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi, POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-06-09</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3258,27 +3035,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi K40S / POCO F4</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi K40S / POCO F4</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">munch</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-05-20</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3305,27 +3079,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 11 Pro/Pro+/Pro+ 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 11 Pro/Pro+/Pro+ 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">pissarro</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-05-12</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3352,27 +3123,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi K50 电竞版 / POCO F4 GT</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi K50 电竞版 / POCO F4 GT</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">ingres</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-05-06</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3382,7 +3150,7 @@
                             <div class="text-[10px] text-blue-400">Android 14.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-gray-500 bg-gray-100">= 同步</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -3399,27 +3167,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 11</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 11</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">venus</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-04-10</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3446,27 +3211,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Pad SE 8.7 Wi-Fi</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Pad SE 8.7 Wi-Fi</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">flare</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-03-31</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3493,27 +3255,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi 平板 SE 4G 8.7</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi 平板 SE 4G 8.7</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">spark</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-03-31</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3540,27 +3299,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 11S 4G / POCO M4 Pro 4G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 11S 4G / POCO M4 Pro 4G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">fleur</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi, POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2025-01-02</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3587,27 +3343,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 11 / 11E Pro 5G / POCO X4 Pro 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 11 / 11E Pro 5G / POCO X4 Pro 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">veux</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi, POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2024-12-30</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3617,7 +3370,7 @@
                             <div class="text-[10px] text-blue-400">Android 13.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -3634,27 +3387,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米 12X</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米 12X</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">psyche</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2024-12-16</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3681,27 +3431,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi 10 5G/Redmi 11 Prime 5G/Redmi Note 11E/POCO M4 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi 10 5G/Redmi 11 Prime 5G/Redmi Note 11E/POCO M4 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">light</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi, POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2024-10-08</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3728,27 +3475,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         小
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">小米平板 5</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">小米平板 5</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">nabu</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Xiaomi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2024-10-08</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3758,7 +3502,7 @@
                             <div class="text-[10px] text-blue-400">Android 13.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-gray-500 bg-gray-100">= 同步</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -3775,27 +3519,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 11 Pro 4G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 11 Pro 4G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">viva</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2024-08-27</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3805,7 +3546,7 @@
                             <div class="text-[10px] text-blue-400">Android 13.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-gray-500 bg-gray-100">= 同步</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -3822,27 +3563,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi K40 / 小米 11X / POCO F3</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi K40 / 小米 11X / POCO F3</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">alioth</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2024-05-24</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3869,27 +3607,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi 11 Prime 4G / POCO M5</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi 11 Prime 4G / POCO M5</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">rock</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2024-05-20</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3899,7 +3634,7 @@
                             <div class="text-[10px] text-blue-400">Android 14.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -3916,27 +3651,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         P
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">POCO M4 Pro 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">POCO M4 Pro 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">evergreen</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">POCO</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2024-03-22</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3946,7 +3678,7 @@
                             <div class="text-[10px] text-blue-400">Android 13.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-gray-500 bg-gray-100">= 同步</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -3963,27 +3695,24 @@
             </div>
         </div>
     
-        <div class="device-card group bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
                         R
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title group-hover:text-blue-600 transition-colors">Redmi Note 11S 5G</h3>
+                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">Redmi Note 11S 5G</h3>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">opal</span>
                             <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">Redmi</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col items-end">
-                    <span class="text-xs text-gray-400 mb-1">台灣更新</span>
+                <div class="text-end">
                     <span class="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-md">2024-03-21</span>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100">
                     <div class="flex items-center gap-3">
@@ -3993,7 +3722,7 @@
                             <div class="text-[10px] text-blue-400">Android 13.0</div>
                         </div>
                     </div>
-                    <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                    <span class="text-[10px] px-1.5 py-0.5 rounded text-gray-500 bg-gray-100">= 同步</span>
                 </div>
                 
             <div class="flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50">
@@ -4011,11 +3740,6 @@
         </div>
     
     </div>
-    
-    <div class="max-w-4xl mx-auto px-4 py-8 text-center">
-        <p class="text-xs text-gray-400">Generated by GitHub Actions • <a href="#" class="hover:underline">Top</a></p>
-    </div>
-
     <script>
         const searchInput = document.getElementById('searchInput');
         const brandFilter = document.getElementById('brandFilter');
@@ -4028,22 +3752,14 @@
             cards.forEach(card => {
                 const name = card.querySelector('.device-title').textContent.toLowerCase();
                 const code = card.querySelector('.device-code').textContent.toLowerCase();
-                const cardBrand = card.getAttribute('data-brand');
+                const brand = card.getAttribute('data-brand');
                 
-                const searchTerms = searchText.split(' ');
-                const matchText = searchTerms.every(term => name.includes(term) || code.includes(term));
-                const matchBrand = (selectedBrand === 'all') || (cardBrand === selectedBrand);
+                const matchText = name.includes(searchText) || code.includes(searchText);
+                const matchBrand = (selectedBrand === 'all') || (brand === selectedBrand);
                 
-                if (matchText && matchBrand) {
-                    card.classList.remove('hidden');
-                    card.style.opacity = '1';
-                    card.style.transform = 'translateY(0)';
-                } else {
-                    card.classList.add('hidden');
-                }
+                card.classList.toggle('hidden', !(matchText && matchBrand));
             });
         }
-
         searchInput.addEventListener('input', filterContent);
         brandFilter.addEventListener('change', filterContent);
     </script>
