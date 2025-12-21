@@ -29,9 +29,18 @@
     </script>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif; }
+        html { scroll-padding-top: 6rem; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         .device-card { content-visibility: auto; contain-intrinsic-size: 150px; }
+        @media (prefers-reduced-motion: reduce) {
+            *, ::before, ::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased min-h-screen pb-10">
@@ -42,7 +51,7 @@
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div>
                     <h1 class="text-2xl font-bold text-gray-900 tracking-tight text-mi-orange">HyperOS TW Tracker</h1>
-                    <p class="text-xs text-gray-600 mt-1">更新時間: 2025-12-21 14:00 (UTC+8)</p>
+                    <p class="text-xs text-gray-600 mt-1">更新時間: 2025-12-21 14:17 (UTC+8)</p>
                 </div>
                 <div class="flex gap-2 w-full md:w-auto">
                     <select id="brandFilter" aria-label="選擇品牌" class="bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 px-4 rounded-full text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors cursor-pointer border-0">
@@ -59,7 +68,7 @@
         </div>
     </div>
 
-    <div class="max-w-4xl mx-auto px-4 mt-6" id="content">
+    <main class="max-w-4xl mx-auto px-4 mt-6" id="content">
 
         <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
@@ -77,7 +86,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-20</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 1 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 1 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -91,7 +100,7 @@
                         <div class="text-[10px] text-blue-600">Android 16.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -370,7 +379,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-19</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 2 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 2 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -670,7 +679,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-19</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 2 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 2 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -684,7 +693,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -984,7 +993,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-19</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 2 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 2 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -998,7 +1007,7 @@
                         <div class="text-[10px] text-blue-600">Android 16.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -1179,7 +1188,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-19</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 2 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 2 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -1193,7 +1202,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-700 bg-green-50">↑ 領先</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -1528,7 +1537,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-19</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 2 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 2 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -1542,7 +1551,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -1884,7 +1893,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-16</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 5 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 5 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -1898,7 +1907,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -2212,7 +2221,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-16</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 5 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 5 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -2226,7 +2235,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -2561,7 +2570,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-15</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 6 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 6 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -2575,7 +2584,7 @@
                         <div class="text-[10px] text-blue-600">Android 16.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -2903,7 +2912,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-15</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 6 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 6 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -2917,7 +2926,7 @@
                         <div class="text-[10px] text-blue-600">Android 16.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -3056,7 +3065,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-15</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 6 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 6 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -3070,7 +3079,7 @@
                         <div class="text-[10px] text-blue-600">Android 16.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -3209,7 +3218,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-15</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 6 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 6 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -3223,7 +3232,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -3551,7 +3560,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-15</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 6 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 6 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -3565,7 +3574,7 @@
                         <div class="text-[10px] text-blue-600">Android 16.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -3655,7 +3664,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-13</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 8 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 8 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -3669,7 +3678,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -3983,7 +3992,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-12</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 9 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 9 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -3997,7 +4006,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -4101,7 +4110,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-12</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 9 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 9 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -4219,7 +4228,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-12</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 9 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 9 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -4233,7 +4242,7 @@
                         <div class="text-[10px] text-blue-600">Android 16.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -4435,7 +4444,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-11</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 10 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 10 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -4449,7 +4458,7 @@
                         <div class="text-[10px] text-blue-600">Android 16.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -4553,7 +4562,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-08</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 13 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 13 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -4567,7 +4576,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -4909,7 +4918,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-08</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 13 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 13 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -4923,7 +4932,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -5174,7 +5183,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-08</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 13 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 13 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -5188,7 +5197,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -5495,7 +5504,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-08</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 13 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 13 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -5509,7 +5518,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -5648,7 +5657,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-08</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 13 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 13 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -5662,7 +5671,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -5976,7 +5985,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-04</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 17 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 17 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -5990,7 +5999,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -6087,7 +6096,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-02</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 19 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 19 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -6101,7 +6110,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-700 bg-green-50">↑ 領先</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -6205,7 +6214,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-01</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 20 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 20 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -6219,7 +6228,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-700 bg-green-50">↑ 領先</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -6414,7 +6423,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-01</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 20 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 20 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -6428,7 +6437,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -6623,7 +6632,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-12-01</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 20 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 20 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -6637,7 +6646,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -6825,7 +6834,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-11-27</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 24 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 24 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -6839,7 +6848,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -7160,7 +7169,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-11-27</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 24 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 24 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -7174,7 +7183,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -7397,7 +7406,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-11-25</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 26 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 26 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -7411,7 +7420,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -7739,7 +7748,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-11-25</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 26 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 26 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -8004,7 +8013,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-11-24</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 27 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 27 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -8018,7 +8027,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -8164,7 +8173,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-11-24</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 27 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 27 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -8178,7 +8187,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-700 bg-green-50">↑ 領先</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -8359,7 +8368,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-11-24</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 27 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 27 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -8373,7 +8382,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -8701,7 +8710,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-11-24</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 27 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 27 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -8715,7 +8724,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -8861,7 +8870,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-11-23</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 28 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 28 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -8875,7 +8884,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -9112,7 +9121,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-11-23</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 28 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 28 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -9126,7 +9135,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -9468,7 +9477,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-11-23</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 28 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 28 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -9482,7 +9491,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -9789,7 +9798,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-11-21</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 30 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 30 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -10124,7 +10133,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-11-21</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 30 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 30 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -10410,7 +10419,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-11-21</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 30 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 30 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -10424,7 +10433,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-700 bg-green-50">↑ 領先</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -10724,7 +10733,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-11-21</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-600 bg-green-50">已過 30 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-green-700 bg-green-50">已過 30 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -10738,7 +10747,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -11073,7 +11082,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -11310,7 +11319,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -11610,7 +11619,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -11889,7 +11898,7 @@
                         <div class="text-[10px] text-blue-600">Android 16.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -12405,7 +12414,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -12733,7 +12742,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -13054,7 +13063,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-700 bg-green-50">↑ 領先</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -13207,7 +13216,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -13528,7 +13537,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -13709,7 +13718,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -14037,7 +14046,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -14393,7 +14402,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -14532,7 +14541,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -14776,7 +14785,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -15048,7 +15057,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-700 bg-green-50">↑ 領先</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -15250,7 +15259,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -15452,7 +15461,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -15647,7 +15656,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -15905,7 +15914,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-09-18</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-orange-600 bg-orange-50">已過 94 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-orange-700 bg-orange-50">已過 94 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -15919,7 +15928,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -16184,7 +16193,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-09-12</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-orange-600 bg-orange-50">已過 100 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-orange-700 bg-orange-50">已過 100 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -16198,7 +16207,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -16449,7 +16458,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-08-31</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-orange-600 bg-orange-50">已過 112 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-orange-700 bg-orange-50">已過 112 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -16463,7 +16472,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-700 bg-green-50">↑ 領先</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -16651,7 +16660,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-08-18</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-orange-600 bg-orange-50">已過 125 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-orange-700 bg-orange-50">已過 125 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -16665,7 +16674,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-green-700 bg-green-50">↑ 領先</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -16811,7 +16820,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-07-07</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-orange-600 bg-orange-50">已過 167 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-orange-700 bg-orange-50">已過 167 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -16825,7 +16834,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -17034,7 +17043,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-06-09</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 195 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 195 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -17048,7 +17057,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -17278,7 +17287,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-05-20</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 215 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 215 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -17292,7 +17301,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -17452,7 +17461,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-05-12</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 223 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 223 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -17466,7 +17475,7 @@
                         <div class="text-[10px] text-blue-600">Android 13.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -17661,7 +17670,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-05-06</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 229 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 229 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -17919,7 +17928,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-04-10</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 255 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 255 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -17933,7 +17942,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -18121,7 +18130,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-03-31</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 265 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 265 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -18135,7 +18144,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -18302,7 +18311,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-03-31</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 265 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 265 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -18316,7 +18325,7 @@
                         <div class="text-[10px] text-blue-600">Android 15.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -18476,7 +18485,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2025-01-02</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 353 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 353 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -18490,7 +18499,7 @@
                         <div class="text-[10px] text-blue-600">Android 13.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -18650,7 +18659,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2024-12-30</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 356 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 356 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -18664,7 +18673,7 @@
                         <div class="text-[10px] text-blue-600">Android 13.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -18817,7 +18826,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2024-12-16</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 370 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 370 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -18831,7 +18840,7 @@
                         <div class="text-[10px] text-blue-600">Android 13.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -18977,7 +18986,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2024-10-08</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 439 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 439 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -18991,7 +19000,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -19102,7 +19111,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2024-10-08</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 439 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 439 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -19234,7 +19243,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2024-08-27</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 481 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 481 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -19345,7 +19354,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2024-05-24</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 576 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 576 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -19359,7 +19368,7 @@
                         <div class="text-[10px] text-blue-600">Android 13.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -19442,7 +19451,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2024-05-20</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 580 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 580 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -19456,7 +19465,7 @@
                         <div class="text-[10px] text-blue-600">Android 14.0</div>
                     </div>
                 </div>
-                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-500 bg-red-50">↓ 落後</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>
             </button>
             <div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="tw-history"><table class="w-full text-xs text-left">
     <thead class="text-gray-500 font-medium border-b border-gray-50">
@@ -19574,7 +19583,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2024-03-22</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 639 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 639 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -19664,7 +19673,7 @@
                 </div>
                 <div class="flex flex-col items-end">
                     <span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">2024-03-21</span>
-                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-600 bg-red-50">已過 640 天</span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 text-red-700 bg-red-50">已過 640 天</span>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -19738,7 +19747,7 @@
             </div>
         </div>
     
-    </div>
+    </main>
     <div class="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500 text-xs">
         Generated by GitHub Actions • Total 84 Devices
     </div>
