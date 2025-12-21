@@ -31,9 +31,6 @@ jobs:
     - name: Install Node dependencies
       run: npm install
 
-    - name: Fix tailwindcss permissions
-      run: chmod +x node_modules/.bin/tailwindcss
-
     - name: Generate CSS
       run: npm run build:css
 
