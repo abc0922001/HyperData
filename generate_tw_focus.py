@@ -107,7 +107,7 @@ def generate_history_html(history_list, type_class):
     html = f'<div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="{type_class}">'
     html += '<table class="w-full text-xs text-left">'
     html += '''
-    <thead class="text-gray-400 font-medium border-b border-gray-50">
+    <thead class="text-gray-500 font-medium border-b border-gray-50">
         <tr>
             <th class="py-2 pl-1">版本</th>
             <th class="py-2">日期</th>
@@ -125,20 +125,20 @@ def generate_history_html(history_list, type_class):
                 current_date = datetime.strptime(rom['release'], "%Y-%m-%d")
                 prev_date = datetime.strptime(history_list[i+1]['release'], "%Y-%m-%d")
                 delta_days = (current_date - prev_date).days
-                bg_color = "bg-gray-100 text-gray-500"
+                bg_color = "bg-gray-100 text-gray-600"
                 if delta_days > 90: bg_color = "bg-orange-50 text-orange-600"
                 elif delta_days < 30: bg_color = "bg-green-50 text-green-600"
                 interval_html = f'<span class="px-1.5 py-0.5 rounded {bg_color}">{delta_days} 天</span>'
             except: pass
         else:
-            interval_html = '<span class="text-xs text-blue-300">首版</span>'
+            interval_html = '<span class="text-xs text-blue-600">首版</span>'
 
         html += f'''
         <tr class="hover:bg-gray-50 transition-colors">
             <td class="py-2 pl-1 font-mono text-gray-700">{rom['os']}</td>
             <td class="py-2 text-gray-500">{rom['release']}</td>
             <td class="py-2 text-center">{interval_html}</td>
-            <td class="py-2 text-right pr-1 text-gray-400">{rom['android']}</td>
+            <td class="py-2 text-right pr-1 text-gray-500">{rom['android']}</td>
         </tr>
         '''
     html += '</tbody></table></div>'
@@ -149,17 +149,15 @@ html_content = f"""<!DOCTYPE html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小米 HyperOS 台灣版更新追蹤</title>
-    <meta name="description" content="小米 HyperOS 台灣版更新追蹤 - 提供 Xiaomi, Redmi, POCO 等機型的 HyperOS 台灣版與國際版更新資訊與歷史版本記錄.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Intel+One+Mono:ital,wght@0,300..700&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="description" content="小米 HyperOS 台灣版更新追蹤 - 提供 Xiaomi, Redmi, POCO 等機型的 HyperOS 台灣版與國際版更新資訊與歷史版本記錄。">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self';">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {{
             theme: {{
                 extend: {{
                     fontFamily: {{
-                        sans: ['"Google Sans Flex"', '"Noto Sans TC"', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                        sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans TC"', '"Microsoft JhengHei"', 'sans-serif'],
                         mono: ['"Intel One Mono"', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
                     }},
                     keyframes: {{
@@ -176,7 +174,7 @@ html_content = f"""<!DOCTYPE html>
         }}
     </script>
     <style>
-        body {{ font-family: "Google Sans Flex", "Noto Sans TC", sans-serif; }}
+        body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif; }}
         .no-scrollbar::-webkit-scrollbar {{ display: none; }}
         .no-scrollbar {{ -ms-overflow-style: none; scrollbar-width: none; }}
         .device-card {{ content-visibility: auto; contain-intrinsic-size: 150px; }}
@@ -189,15 +187,15 @@ html_content = f"""<!DOCTYPE html>
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div>
                     <h1 class="text-2xl font-bold text-gray-900 tracking-tight text-mi-orange">HyperOS TW Tracker</h1>
-                    <p class="text-xs text-gray-500 mt-1">更新時間: {gen_time} (UTC+8)</p>
+                    <p class="text-xs text-gray-600 mt-1">更新時間: {gen_time} (UTC+8)</p>
                 </div>
                 <div class="flex gap-2 w-full md:w-auto">
-                    <select id="brandFilter" class="bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 px-4 rounded-full text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors cursor-pointer border-0">
+                    <select id="brandFilter" aria-label="選擇品牌" class="bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 px-4 rounded-full text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors cursor-pointer border-0">
                         {brand_options}
                     </select>
                     <div class="relative flex-grow md:w-64">
-                        <input type="text" id="searchInput" class="w-full bg-gray-100 hover:bg-gray-200 focus:bg-white text-gray-700 py-2 pl-10 pr-4 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-0 placeholder-gray-400" placeholder="搜尋機型名稱或代號...">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
+                        <input type="text" id="searchInput" aria-label="搜尋裝置" class="w-full bg-gray-100 hover:bg-gray-200 focus:bg-white text-gray-700 py-2 pl-10 pr-4 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-0 placeholder-gray-400" placeholder="搜尋機型名稱或代號...">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-600">
                             <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                         </div>
                     </div>
@@ -225,7 +223,7 @@ for device in final_list:
         ago_color = "text-green-600 bg-green-50"
         if days_ago > 180: ago_color = "text-red-600 bg-red-50"
         elif days_ago > 90: ago_color = "text-orange-600 bg-orange-50"
-        elif days_ago > 30: ago_color = "text-gray-500 bg-gray-100"
+        elif days_ago > 30: ago_color = "text-gray-600 bg-gray-100"
         
         ago_html = f'<span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 {ago_color}">已過 {days_ago} 天</span>'
     except: pass
@@ -246,7 +244,7 @@ for device in final_list:
         elif tw_tup > gl_tup:
             ver_status_tag = '<span class="text-[10px] px-1.5 py-0.5 rounded text-green-600 bg-green-50">↑ 領先</span>'
         else:
-            ver_status_tag = '<span class="text-[10px] px-1.5 py-0.5 rounded text-gray-500 bg-gray-100">= 同步</span>'
+            ver_status_tag = '<span class="text-[10px] px-1.5 py-0.5 rounded text-gray-600 bg-gray-100">= 同步</span>'
 
         gl_history_html = generate_history_html(device['global']['history'], 'gl-history')
 
@@ -255,7 +253,7 @@ for device in final_list:
         try:
             gl_dt = datetime.strptime(gl['release'], "%Y-%m-%d").replace(tzinfo=tz_tw)
             gl_days = (now_tw - gl_dt).days
-            gl_ago_html = f'<div class="text-[9px] text-gray-400 mt-0.5">({gl_days} 天前)</div>'
+            gl_ago_html = f'<div class="text-[9px] text-gray-600 mt-0.5">({gl_days} 天前)</div>'
         except: pass
 
         gl_info_html = f"""
@@ -265,11 +263,11 @@ for device in final_list:
                         <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600 group-hover/gl:bg-gray-200 transition-colors">國際版 ▾</span>
                         <div>
                             <div class="text-sm font-mono text-gray-600">{gl_ver}</div>
-                            <div class="text-[10px] text-gray-400">Android {gl['android']}</div>
+                            <div class="text-[10px] text-gray-600">Android {gl['android']}</div>
                         </div>
                     </div>
                     <div class="flex flex-col items-end">
-                        <div class="text-xs text-gray-500 font-medium">{gl['release']}</div>
+                        <div class="text-xs text-gray-600 font-medium">{gl['release']}</div>
                         {gl_ago_html}
                     </div>
                 </div>
@@ -290,7 +288,7 @@ for device in final_list:
                     <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-700 shadow-sm group-hover/tw:bg-blue-200 transition-colors">台灣版 ▾</span>
                     <div>
                         <div class="text-sm font-bold font-mono text-gray-800">{tw_ver}</div>
-                        <div class="text-[10px] text-blue-400">Android {tw['android']}</div>
+                        <div class="text-[10px] text-blue-600">Android {tw['android']}</div>
                     </div>
                 </div>
                 {ver_status_tag}
@@ -309,8 +307,8 @@ for device in final_list:
                     <div>
                         <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">{device['name']}</h3>
                         <div class="flex items-center gap-2 mt-1">
-                            <span class="text-xs font-mono text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">{device['code']}</span>
-                            <span class="text-[10px] text-gray-400 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">{device['brand']}</span>
+                            <span class="text-xs font-mono text-gray-600 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">{device['code']}</span>
+                            <span class="text-[10px] text-gray-600 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">{device['brand']}</span>
                         </div>
                     </div>
                 </div>
@@ -328,7 +326,7 @@ for device in final_list:
 
 html_content += f"""
     </div>
-    <div class="max-w-4xl mx-auto px-4 py-8 text-center text-gray-400 text-xs">
+    <div class="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500 text-xs">
         Generated by GitHub Actions • Total {len(final_list)} Devices
     </div>
 """
