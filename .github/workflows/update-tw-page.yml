@@ -5,6 +5,10 @@ on:
     paths:
       - 'devices/**.json'
       - 'generate_tw_focus.py'
+      - 'package.json'
+      - 'tailwind.config.js'
+      - 'assets/css/input.css'
+      - '.github/workflows/update-tw-page.yml'
   workflow_dispatch:
 
 permissions:
