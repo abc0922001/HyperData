@@ -25,6 +25,47 @@ def version_to_tuple(v_str):
     except:
         return (0,)
 
+def get_region_label(branch_name_zh):
+    # 移除通用前綴
+    name = branch_name_zh.replace("小米澎湃 OS ", "")
+    
+    # 特殊完整名稱對應
+    if name == "正式版": return "中國"
+    if name == "开发版": return "開發版"
+    if name == "Beta": return "Beta"
+    
+    # 移除通用後綴以取得核心名稱
+    core_name = name.replace("正式版", "").replace("版", "").strip()
+    
+    # 地區與詞彙對照表 (簡體 -> 繁體/台灣慣用語)
+    mapping = {
+        "欧洲": "歐洲",
+        "俄罗斯": "俄羅斯",
+        "印度尼西亚": "印尼",
+        "土耳其": "土耳其",
+        "韩国": "韓國",
+        "中国大陆": "中國",
+        "中国": "中國",
+        "演示机": "演示機",
+        "运营商": "電信商",
+        "定制": "客製",
+        "政企标准": "政企標準",
+        "政企": "政企"
+    }
+    
+    # 先進行核心名稱的直接對應
+    if core_name in mapping:
+        return mapping[core_name]
+    if core_name == "EEA": return "歐洲 EEA"
+    if core_name == "欧洲EEA": return "歐洲 EEA"
+
+    # 若無直接對應，則進行字串替換
+    processed_name = core_name
+    for sc, tc in mapping.items():
+        processed_name = processed_name.replace(sc, tc)
+        
+    return processed_name
+
 print(f"::group::初始化設定")
 print(f"工作目錄: {os.getcwd()}")
 print(f"輸出檔案: {output_file}")
@@ -50,7 +91,8 @@ for file_path in json_files:
                 'code': device_code,
                 'brand': 'Other', 
                 'tw': None,
-                'global': None
+                'global': None,
+                'others': []
             }
             
         branches = data.get('branches', [])
@@ -58,32 +100,46 @@ for file_path in json_files:
             branch_name_zh = branch.get('name', {}).get('zh', '')
             
             target_type = None
+            branch_label = ""
+
             if branch_name_zh == TARGET_TW:
                 target_type = 'tw'
                 brand = branch.get('brand', 'Xiaomi')
                 if brand: devices_map[device_code]['brand'] = brand
             elif branch_name_zh == TARGET_GLOBAL:
                 target_type = 'global'
+            else:
+                target_type = 'other'
+                branch_label = get_region_label(branch_name_zh)
+                if not branch_label: branch_label = branch_name_zh # Fallback
             
-            if target_type:
-                roms = branch.get('roms', {})
-                if not roms: continue
+            roms = branch.get('roms', {})
+            if not roms: continue
+            
+            rom_list = []
+            for k, v in roms.items():
+                release_date = v.get('release', '1970-01-01')
+                rom_list.append({
+                    'os': v.get('os', k),
+                    'android': v.get('android', ''),
+                    'release': release_date
+                })
+            
+            rom_list.sort(key=lambda x: x['release'], reverse=True)
+            
+            if rom_list:
+                info_obj = {
+                    'latest': rom_list[0],
+                    'history': rom_list
+                }
                 
-                rom_list = []
-                for k, v in roms.items():
-                    release_date = v.get('release', '1970-01-01')
-                    rom_list.append({
-                        'os': v.get('os', k),
-                        'android': v.get('android', ''),
-                        'release': release_date
-                    })
-                
-                rom_list.sort(key=lambda x: x['release'], reverse=True)
-                if rom_list:
-                    devices_map[device_code][target_type] = {
-                        'latest': rom_list[0],
-                        'history': rom_list
-                    }
+                if target_type == 'tw':
+                    devices_map[device_code]['tw'] = info_obj
+                elif target_type == 'global':
+                    devices_map[device_code]['global'] = info_obj
+                elif target_type == 'other':
+                    info_obj['label'] = branch_label
+                    devices_map[device_code]['others'].append(info_obj)
                 
     except Exception as e:
         print(f"Error processing {file_path}: {e}")
@@ -91,6 +147,9 @@ for file_path in json_files:
 final_list = []
 for code, info in devices_map.items():
     if info['tw']:
+        # Sort others by release date desc
+        if info['others']:
+            info['others'].sort(key=lambda x: x['latest']['release'], reverse=True)
         final_list.append(info)
         all_brands.add(info['brand'])
 
@@ -143,6 +202,87 @@ def generate_history_html(history_list, type_class):
         '''
     html += '</tbody></table></div>'
     return html
+
+# Helper for card generation
+def generate_card_html(info, region_label, region_type, tw_ver_str=None):
+    # region_type: 'tw', 'global', 'other'
+    
+    if not info:
+        if region_type == 'global':
+            return """
+            <div class="flex items-center justify-center p-3 rounded-lg border border-dashed border-gray-200 bg-gray-50 h-[88px]">
+                <span class="text-xs text-gray-400 italic">無國際版資料</span>
+            </div>
+            """
+        return "" # Should not happen for others/tw based on logic
+
+    latest = info['latest']
+    ver_str = latest['os']
+    
+    # Compare with TW if this is not TW
+    ver_status_tag = ""
+    if region_type != 'tw' and tw_ver_str:
+        tw_tup = version_to_tuple(tw_ver_str)
+        curr_tup = version_to_tuple(ver_str)
+        if tw_tup < curr_tup:
+            ver_status_tag = '<span class="text-[10px] px-1.5 py-0.5 rounded text-green-700 bg-green-50">↑ 領先</span>'
+        elif tw_tup > curr_tup:
+            ver_status_tag = '<span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>'
+        else:
+            ver_status_tag = '<span class="text-[10px] px-1.5 py-0.5 rounded text-gray-600 bg-gray-100">= 同步</span>'
+
+    # Styling configuration
+    if region_type == 'tw':
+        bg_color = "bg-blue-50/50"
+        border_color = "border-blue-100"
+        badge_bg = "bg-blue-100"
+        badge_text = "text-blue-700"
+        hover_bg = "hover:bg-blue-50"
+        group_class = "group/tw"
+    elif region_type == 'global':
+        bg_color = "bg-white/50"
+        border_color = "border-gray-300 border-dashed"
+        badge_bg = "bg-gray-100"
+        badge_text = "text-gray-600"
+        hover_bg = "hover:bg-gray-50"
+        group_class = "group/gl"
+    else: # other
+        bg_color = "bg-purple-50/30"
+        border_color = "border-purple-100 border-dashed"
+        badge_bg = "bg-purple-100"
+        badge_text = "text-purple-700"
+        hover_bg = "hover:bg-purple-50"
+        group_class = "group/ot"
+
+    history_html = generate_history_html(info['history'], f'{region_type}-history')
+    
+    # Days ago
+    ago_html = ""
+    try:
+        dt = datetime.strptime(latest['release'], "%Y-%m-%d").replace(tzinfo=tz_tw)
+        days = (now_tw - dt).days
+        ago_html = f'<div class="text-[9px] text-gray-600 mt-0.5">({days} 天前)</div>'
+    except: pass
+
+    return f"""
+        <div class="{group_class}">
+            <button type="button" onclick="toggleHistory(this)" class="w-full cursor-pointer flex items-center justify-between p-3 rounded-lg {bg_color} border {border_color} {hover_bg} transition-colors relative select-none focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">
+                <div class="flex items-center gap-3">
+                    <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium {badge_bg} {badge_text} shadow-sm transition-colors">{region_label} ▾</span>
+                    <div>
+                        <div class="text-sm font-mono text-gray-700 font-bold">{ver_str}</div>
+                        <div class="text-[10px] text-gray-500">Android {latest['android']}</div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-end">
+                    <div class="text-xs text-gray-600 font-medium">{latest['release']}</div>
+                    {ago_html}
+                    {ver_status_tag}
+                </div>
+            </button>
+            {history_html}
+        </div>
+    """
 
 html_content = f"""<!DOCTYPE html>
 <html lang="zh-TW">
@@ -198,12 +338,10 @@ html_content = f"""<!DOCTYPE html>
 
 for device in final_list:
     tw = device['tw']['latest']
-    gl = device['global']['latest'] if device['global'] else None
-    
     tw_ver = tw['os']
     tw_date = tw['release']
     
-    # 計算距今時間
+    # Header Info
     ago_html = ""
     try:
         tw_dt = datetime.strptime(tw_date, "%Y-%m-%d").replace(tzinfo=tz_tw)
@@ -217,74 +355,14 @@ for device in final_list:
         ago_html = f'<span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 {ago_color}">已過 {days_ago} 天</span>'
     except: pass
 
-    # 台灣版歷史區塊
-    tw_history_html = generate_history_html(device['tw']['history'], 'tw-history')
+    # Card Generation
+    tw_card = generate_card_html(device['tw'], "台灣版", 'tw')
+    gl_card = generate_card_html(device['global'], "國際版", 'global', tw_ver)
     
-    gl_info_html = ""
-    ver_status_tag = ""
-    
-    if gl:
-        gl_ver = gl['os']
-        tw_tup = version_to_tuple(tw_ver)
-        gl_tup = version_to_tuple(gl_ver)
-        
-        if tw_tup < gl_tup:
-            ver_status_tag = '<span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>'
-        elif tw_tup > gl_tup:
-            ver_status_tag = '<span class="text-[10px] px-1.5 py-0.5 rounded text-green-700 bg-green-50">↑ 領先</span>'
-        else:
-            ver_status_tag = '<span class="text-[10px] px-1.5 py-0.5 rounded text-gray-600 bg-gray-100">= 同步</span>'
-
-        gl_history_html = generate_history_html(device['global']['history'], 'gl-history')
-
-        # 計算國際版距今時間
-        gl_ago_html = ""
-        try:
-            gl_dt = datetime.strptime(gl['release'], "%Y-%m-%d").replace(tzinfo=tz_tw)
-            gl_days = (now_tw - gl_dt).days
-            gl_ago_html = f'<div class="text-[9px] text-gray-600 mt-0.5">({gl_days} 天前)</div>'
-        except: pass
-
-        gl_info_html = f"""
-            <div class="group/gl">
-                <button type="button" onclick="toggleHistory(this)" class="w-full cursor-pointer flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50 hover:bg-gray-50 transition-colors relative select-none focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">
-                    <div class="flex items-center gap-3">
-                        <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600 group-hover/gl:bg-gray-200 transition-colors">國際版 ▾</span>
-                        <div>
-                            <div class="text-sm font-mono text-gray-600">{gl_ver}</div>
-                            <div class="text-[10px] text-gray-600">Android {gl['android']}</div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-end">
-                        <div class="text-xs text-gray-600 font-medium">{gl['release']}</div>
-                        {gl_ago_html}
-                    </div>
-                </button>
-                {gl_history_html}
-            </div>
-        """
-    else:
-        gl_info_html = """
-            <div class="flex items-center justify-center p-3 rounded-lg border border-dashed border-gray-200 bg-gray-50">
-                <span class="text-xs text-gray-400 italic">無國際版資料</span>
-            </div>
-        """
-
-    tw_card_block = f"""
-        <div class="group/tw">
-            <button type="button" onclick="toggleHistory(this)" class="w-full cursor-pointer flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100 hover:bg-blue-50 transition-colors relative select-none focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">
-                <div class="flex items-center gap-3">
-                    <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-700 shadow-sm group-hover/tw:bg-blue-200 transition-colors">台灣版 ▾</span>
-                    <div>
-                        <div class="text-sm font-bold font-mono text-gray-800">{tw_ver}</div>
-                        <div class="text-[10px] text-blue-600">Android {tw['android']}</div>
-                    </div>
-                </div>
-                {ver_status_tag}
-            </button>
-            {tw_history_html}
-        </div>
-    """
+    others_cards = ""
+    if device['others']:
+        for other in device['others']:
+            others_cards += generate_card_html(other, other['label'], 'other', tw_ver)
 
     html_content += f"""
         <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="{device['brand']}">
@@ -307,8 +385,9 @@ for device in final_list:
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {tw_card_block}
-                {gl_info_html}
+                {tw_card}
+                {gl_card}
+                {others_cards}
             </div>
         </div>
     """
