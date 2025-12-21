@@ -23,6 +23,17 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Install Node dependencies
+      run: npm install
+
+    - name: Generate CSS
+      run: npm run build:css
+
     - name: Run generation script
       run: |
         python generate_tw_focus.py
@@ -31,5 +42,5 @@ jobs:
       run: |
         git config --global user.name 'GitHub Action'
         git config --global user.email 'action@github.com'
-        git add tw.html
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update tw.html [skip ci]" && git push)
+        git add tw.html assets/css/tw.css
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update tw.html and css [skip ci]" && git push)

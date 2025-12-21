@@ -150,29 +150,8 @@ html_content = f"""<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小米 HyperOS 台灣版更新追蹤</title>
     <meta name="description" content="小米 HyperOS 台灣版更新追蹤 - 提供 Xiaomi, Redmi, POCO 等機型的 HyperOS 台灣版與國際版更新資訊與歷史版本記錄。">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self';">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {{
-            theme: {{
-                extend: {{
-                    fontFamily: {{
-                        sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans TC"', '"Microsoft JhengHei"', 'sans-serif'],
-                        mono: ['"Intel One Mono"', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
-                    }},
-                    keyframes: {{
-                        fadeIn: {{
-                            '0%': {{ opacity: '0', transform: 'translateY(-5px)' }},
-                            '100%': {{ opacity: '1', transform: 'translateY(0)' }},
-                        }}
-                    }},
-                    animation: {{
-                        'fade-in': 'fadeIn 0.2s ease-out',
-                    }}
-                }}
-            }}
-        }}
-    </script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self';">
+    <link rel="stylesheet" href="assets/css/tw.css">
     <style>
         body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif; }}
         html {{ scroll-padding-top: 6rem; }}
