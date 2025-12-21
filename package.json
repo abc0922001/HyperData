@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build:css": "npx tailwindcss -i assets/css/input.css -o assets/css/tw.css --minify"
+    "build:css": "node node_modules/tailwindcss/lib/cli.js -i assets/css/input.css -o assets/css/tw.css --minify"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.1"
