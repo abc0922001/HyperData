@@ -177,7 +177,8 @@ def generate_history_html(history_list, type_class):
     <tbody class="divide-y divide-gray-50">
     '''
     
-    for i, rom in enumerate(history_list):
+    # Limit history to latest 10 items to improve performance (DOM size)
+    for i, rom in enumerate(history_list[:10]):
         interval_html = '<span class="text-gray-300">-</span>'
         if i < len(history_list) - 1:
             try:
@@ -225,11 +226,11 @@ def generate_card_html(info, region_label, region_type, tw_ver_str=None):
         tw_tup = version_to_tuple(tw_ver_str)
         curr_tup = version_to_tuple(ver_str)
         if tw_tup < curr_tup:
-            ver_status_tag = '<span class="text-[10px] px-1.5 py-0.5 rounded text-green-700 bg-green-50">↑ 領先</span>'
+            ver_status_tag = '<span class="text-xs px-1.5 py-0.5 rounded text-green-700 bg-green-50">↑ 領先</span>'
         elif tw_tup > curr_tup:
-            ver_status_tag = '<span class="text-[10px] px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>'
+            ver_status_tag = '<span class="text-xs px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>'
         else:
-            ver_status_tag = '<span class="text-[10px] px-1.5 py-0.5 rounded text-gray-600 bg-gray-100">= 同步</span>'
+            ver_status_tag = '<span class="text-xs px-1.5 py-0.5 rounded text-gray-600 bg-gray-100">= 同步</span>'
 
     # Styling configuration
     if region_type == 'tw':
@@ -261,17 +262,17 @@ def generate_card_html(info, region_label, region_type, tw_ver_str=None):
     try:
         dt = datetime.strptime(latest['release'], "%Y-%m-%d").replace(tzinfo=tz_tw)
         days = (now_tw - dt).days
-        ago_html = f'<div class="text-[9px] text-gray-600 mt-0.5">({days} 天前)</div>'
+        ago_html = f'<div class="text-[11px] text-gray-600 mt-0.5">({days} 天前)</div>'
     except: pass
 
     return f"""
         <div class="{group_class}">
-            <button type="button" onclick="toggleHistory(this)" class="w-full cursor-pointer flex items-center justify-between p-3 rounded-lg {bg_color} border {border_color} {hover_bg} transition-colors relative select-none focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">
+            <button type="button" onclick="toggleHistory(this)" aria-expanded="false" class="w-full cursor-pointer flex items-center justify-between p-3 rounded-lg {bg_color} border {border_color} {hover_bg} transition-colors relative select-none focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">
                 <div class="flex items-center gap-3">
                     <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium {badge_bg} {badge_text} shadow-sm transition-colors">{region_label} ▾</span>
                     <div>
                         <div class="text-sm font-mono text-gray-700 font-bold">{ver_str}</div>
-                        <div class="text-[10px] text-gray-500">Android {latest['android']}</div>
+                        <div class="text-xs text-gray-600">Android {latest['android']}</div>
                     </div>
                 </div>
                 <div class="flex flex-col items-end">
@@ -352,7 +353,7 @@ for device in final_list:
         elif days_ago > 90: ago_color = "text-orange-700 bg-orange-50"
         elif days_ago > 30: ago_color = "text-gray-600 bg-gray-100"
         
-        ago_html = f'<span class="text-[10px] font-medium px-1.5 py-0.5 rounded mt-1 {ago_color}">已過 {days_ago} 天</span>'
+        ago_html = f'<span class="text-xs font-medium px-1.5 py-0.5 rounded mt-1 {ago_color}">已過 {days_ago} 天</span>'
     except: pass
 
     # Card Generation
@@ -368,14 +369,14 @@ for device in final_list:
         <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="{device['brand']}">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
-                    <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-500 font-bold text-lg flex-shrink-0">
+                    <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
                         {device['name'][0]}
                     </div>
                     <div>
                         <h2 class="text-lg font-bold text-gray-900 leading-tight device-title">{device['name']}</h2>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-600 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">{device['code']}</span>
-                            <span class="text-[10px] text-gray-600 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">{device['brand']}</span>
+                            <span class="text-xs text-gray-600 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">{device['brand']}</span>
                         </div>
                     </div>
                 </div>
@@ -403,7 +404,10 @@ html_content += """
     <script>
         function toggleHistory(element) {
             const historyDiv = element.nextElementSibling;
-            if (historyDiv) historyDiv.classList.toggle('hidden');
+            if (historyDiv) {
+                const isHidden = historyDiv.classList.toggle('hidden');
+                element.setAttribute('aria-expanded', !isHidden);
+            }
         }
         const searchInput = document.getElementById('searchInput');
         const brandFilter = document.getElementById('brandFilter');
