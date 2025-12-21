@@ -136,9 +136,9 @@ def generate_history_html(history_list, type_class):
         html += f'''
         <tr class="hover:bg-gray-50 transition-colors">
             <td class="py-2 pl-1 font-mono text-gray-700">{rom['os']}</td>
-            <td class="py-2 text-gray-500">{rom['release']}</td>
+            <td class="py-2 text-gray-600">{rom['release']}</td>
             <td class="py-2 text-center">{interval_html}</td>
-            <td class="py-2 text-right pr-1 text-gray-500">{rom['android']}</td>
+            <td class="py-2 text-right pr-1 text-gray-600">{rom['android']}</td>
         </tr>
         '''
     html += '</tbody></table></div>'
@@ -181,6 +181,7 @@ html_content = f"""<!DOCTYPE html>
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased min-h-screen pb-10">
+    <a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-blue-600">跳至主要內容</a>
 
     <div class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
         <div class="max-w-4xl mx-auto px-4 py-4">
@@ -258,7 +259,7 @@ for device in final_list:
 
         gl_info_html = f"""
             <div class="group/gl">
-                <div onclick="toggleHistory(this)" class="cursor-pointer flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50 hover:bg-gray-50 transition-colors relative select-none">
+                <button type="button" onclick="toggleHistory(this)" class="w-full cursor-pointer flex items-center justify-between p-3 rounded-lg border border-dashed border-gray-300 bg-white/50 hover:bg-gray-50 transition-colors relative select-none focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">
                     <div class="flex items-center gap-3">
                         <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-gray-100 text-gray-600 group-hover/gl:bg-gray-200 transition-colors">國際版 ▾</span>
                         <div>
@@ -270,7 +271,7 @@ for device in final_list:
                         <div class="text-xs text-gray-600 font-medium">{gl['release']}</div>
                         {gl_ago_html}
                     </div>
-                </div>
+                </button>
                 {gl_history_html}
             </div>
         """
@@ -283,7 +284,7 @@ for device in final_list:
 
     tw_card_block = f"""
         <div class="group/tw">
-            <div onclick="toggleHistory(this)" class="cursor-pointer flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100 hover:bg-blue-50 transition-colors relative select-none">
+            <button type="button" onclick="toggleHistory(this)" class="w-full cursor-pointer flex items-center justify-between p-3 rounded-lg bg-blue-50/50 border border-blue-100 hover:bg-blue-50 transition-colors relative select-none focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">
                 <div class="flex items-center gap-3">
                     <span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-700 shadow-sm group-hover/tw:bg-blue-200 transition-colors">台灣版 ▾</span>
                     <div>
@@ -292,7 +293,7 @@ for device in final_list:
                     </div>
                 </div>
                 {ver_status_tag}
-            </div>
+            </button>
             {tw_history_html}
         </div>
     """
@@ -305,7 +306,7 @@ for device in final_list:
                         {device['name'][0]}
                     </div>
                     <div>
-                        <h3 class="text-lg font-bold text-gray-900 leading-tight device-title">{device['name']}</h3>
+                        <h2 class="text-lg font-bold text-gray-900 leading-tight device-title">{device['name']}</h2>
                         <div class="flex items-center gap-2 mt-1">
                             <span class="text-xs font-mono text-gray-600 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">{device['code']}</span>
                             <span class="text-[10px] text-gray-600 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">{device['brand']}</span>
