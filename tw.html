@@ -30,14 +30,21 @@
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div>
                     <h1 class="text-2xl font-bold text-gray-900 tracking-tight text-mi-orange">HyperOS TW Tracker</h1>
-                    <p class="text-xs text-gray-600 mt-1">更新時間: 2025-12-22 14:07 (UTC+8)</p>
+                    <p class="text-xs text-gray-600 mt-1">更新時間: 2025-12-22 19:32 (UTC+8)</p>
                 </div>
-                <div class="flex gap-2 w-full md:w-auto">
+                <div class="flex flex-wrap gap-2 w-full md:w-auto items-center">
+                    <label class="inline-flex items-center cursor-pointer bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded-full text-sm font-medium transition-colors select-none">
+                        <input type="checkbox" id="recentFilter" class="sr-only peer">
+                        <div class="w-4 h-4 rounded-sm border-2 border-gray-400 mr-2 peer-checked:bg-mi-orange peer-checked:border-mi-orange flex items-center justify-center transition-all">
+                            <svg class="w-3 h-3 text-white scale-0 peer-checked:scale-100 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        最近 <span id="daysLabel">30</span> 天
+                    </label>
                     <select id="brandFilter" aria-label="選擇品牌" class="bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 px-4 rounded-full text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors cursor-pointer border-0">
                         <option value="all">所有品牌</option><option value="POCO">POCO</option><option value="REDMI">REDMI</option><option value="REDMI, POCO">REDMI, POCO</option><option value="Redmi">Redmi</option><option value="Redmi, POCO">Redmi, POCO</option><option value="Xiaomi">Xiaomi</option><option value="Xiaomi, POCO">Xiaomi, POCO</option>
                     </select>
-                    <div class="relative flex-grow md:w-64">
-                        <input type="text" id="searchInput" aria-label="搜尋裝置" class="w-full bg-gray-100 hover:bg-gray-200 focus:bg-white text-gray-700 py-2 pl-10 pr-4 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-0 placeholder-gray-400" placeholder="搜尋機型名稱或代號...">
+                    <div class="relative flex-grow md:w-48">
+                        <input type="text" id="searchInput" aria-label="搜尋裝置" class="w-full bg-gray-100 hover:bg-gray-200 focus:bg-white text-gray-700 py-2 pl-10 pr-4 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-0 placeholder-gray-400" placeholder="搜尋機型...">
                         <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-600">
                             <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                         </div>
@@ -49,7 +56,7 @@
 
     <main class="max-w-4xl mx-auto px-4 mt-6" id="content">
 
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2025-12-22">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -894,7 +901,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2025-12-22">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -1851,7 +1858,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-12-22">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -2654,7 +2661,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-12-22">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -3590,7 +3597,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO" data-date="2025-12-22">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -4456,7 +4463,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-12-20">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -5189,7 +5196,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-12-19">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -5936,7 +5943,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-12-19">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -6697,7 +6704,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi, POCO" data-date="2025-12-19">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -7570,7 +7577,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-12-19">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -8457,7 +8464,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO" data-date="2025-12-19">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -9512,7 +9519,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-12-16">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -10252,7 +10259,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-12-16">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -10978,7 +10985,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-12-15">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -12236,7 +12243,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-12-15">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -12829,7 +12836,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-12-15">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -13380,7 +13387,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-12-15">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -14190,7 +14197,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-12-15">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -14468,7 +14475,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-12-13">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -15201,7 +15208,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI" data-date="2025-12-12">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -15500,7 +15507,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-12-12">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -15820,7 +15827,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-12-12">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -16595,7 +16602,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-12-11">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -16992,7 +16999,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-12-08">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -17704,7 +17711,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-12-08">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -18976,7 +18983,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-12-08">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -19905,7 +19912,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI" data-date="2025-12-08">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -20435,7 +20442,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2025-12-08">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -21574,7 +21581,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI" data-date="2025-12-04">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -21950,7 +21957,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI" data-date="2025-12-02">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -22410,7 +22417,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-12-01">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -23199,7 +23206,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-12-01">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -24352,7 +24359,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2025-12-01">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -25169,7 +25176,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-11-27">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -26147,7 +26154,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-11-27">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -27244,7 +27251,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-11-25">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -27956,7 +27963,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-11-25">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -28857,7 +28864,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-11-24">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -29422,7 +29429,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-11-24">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -30442,7 +30449,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-11-24">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -31322,7 +31329,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI" data-date="2025-11-24">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -31754,7 +31761,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-11-21">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -32368,7 +32375,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-11-21">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -33276,7 +33283,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2025-11-21">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -33946,7 +33953,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-11-21">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -34756,7 +34763,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-11-20">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -35615,7 +35622,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-11-20">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -36915,7 +36922,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-11-17">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -37634,7 +37641,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-11-17">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -38556,7 +38563,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-11-13">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -39464,7 +39471,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI" data-date="2025-11-13">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -40092,7 +40099,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO" data-date="2025-11-13">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -41224,7 +41231,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2025-11-13">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -41887,7 +41894,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2025-11-11">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -43033,7 +43040,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-11-10">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -43878,7 +43885,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="REDMI, POCO" data-date="2025-11-07">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -44443,7 +44450,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2025-11-07">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -45428,7 +45435,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO" data-date="2025-11-06">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -46441,7 +46448,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO" data-date="2025-11-04">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -47223,7 +47230,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2025-10-26">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -48187,7 +48194,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO" data-date="2025-09-28">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -49144,7 +49151,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-09-26">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -50367,7 +50374,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-09-18">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -51618,7 +51625,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-09-12">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -52953,7 +52960,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2025-08-31">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -53483,7 +53490,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2025-08-18">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -54062,7 +54069,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO" data-date="2025-07-07">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -55845,7 +55852,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO" data-date="2025-06-09">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -56557,7 +56564,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-05-20">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -57206,7 +57213,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2025-05-12">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -57883,7 +57890,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2025-05-06">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -58693,7 +58700,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2025-04-10">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -59713,7 +59720,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2025-03-31">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -60152,7 +60159,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2025-03-31">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -60542,7 +60549,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO" data-date="2025-01-02">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -61408,7 +61415,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO" data-date="2024-12-30">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -62596,7 +62603,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2024-12-16">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -62986,7 +62993,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi, POCO" data-date="2024-10-08">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -64034,7 +64041,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Xiaomi" data-date="2024-10-08">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -64480,7 +64487,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2024-08-27">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -64842,7 +64849,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2024-05-24">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -65204,7 +65211,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2024-05-20">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -65636,7 +65643,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="POCO" data-date="2024-03-22">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -65844,7 +65851,7 @@
             </div>
         </div>
     
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="Redmi" data-date="2024-03-21">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -66522,21 +66529,80 @@
         }
         const searchInput = document.getElementById('searchInput');
         const brandFilter = document.getElementById('brandFilter');
+        const recentFilter = document.getElementById('recentFilter');
+        const daysLabel = document.getElementById('daysLabel');
+        
+        let recentDaysThreshold = 30;
+
         function filterContent() {
             const searchText = searchInput.value.toLowerCase().trim();
             const selectedBrand = brandFilter.value;
+            const isRecent = recentFilter.checked;
+            
             const cards = document.querySelectorAll('.device-card');
+            const now = new Date();
+
             cards.forEach(card => {
                 const name = card.querySelector('.device-title').textContent.toLowerCase();
                 const code = card.querySelector('.device-code').textContent.toLowerCase();
                 const brand = card.getAttribute('data-brand');
+                const dateStr = card.getAttribute('data-date');
+                
                 const matchText = name.includes(searchText) || code.includes(searchText);
                 const matchBrand = (selectedBrand === 'all') || (brand === selectedBrand);
-                card.classList.toggle('hidden', !(matchText && matchBrand));
+                
+                let matchRecent = true;
+                if (isRecent && dateStr) {
+                    const releaseDate = new Date(dateStr);
+                    const diffTime = Math.abs(now - releaseDate);
+                    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+                    matchRecent = diffDays <= recentDaysThreshold;
+                }
+
+                card.classList.toggle('hidden', !(matchText && matchBrand && matchRecent));
             });
         }
         searchInput.addEventListener('input', filterContent);
         brandFilter.addEventListener('change', filterContent);
+        recentFilter.addEventListener('change', filterContent);
+
+        // Auto-filter from URL parameter
+        try {
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            // 1. Handle Search (?q=...)
+            const query = urlParams.get('q');
+            if (query) {
+                searchInput.value = query;
+            }
+
+            // 2. Handle Brand (?brand=...)
+            const brandParam = urlParams.get('brand');
+            if (brandParam) {
+                // Find matching option (case-insensitive)
+                const options = Array.from(brandFilter.options);
+                const match = options.find(opt => opt.value.toLowerCase() === brandParam.toLowerCase());
+                if (match) {
+                    brandFilter.value = match.value;
+                }
+            }
+
+            // 3. Handle Recent Days (?days=N)
+            const daysParam = urlParams.get('days');
+            if (daysParam) {
+                const days = parseInt(daysParam);
+                if (!isNaN(days) && days > 0) {
+                    recentDaysThreshold = days;
+                    daysLabel.textContent = days;
+                    recentFilter.checked = true;
+                }
+            }
+
+            // Apply filters if needed
+            if (query || brandParam || daysParam) {
+                filterContent();
+            }
+        } catch (e) { console.error(e); }
     </script>
 </body>
 </html>
