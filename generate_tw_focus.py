@@ -319,12 +319,19 @@ html_content = f"""<!DOCTYPE html>
                     <h1 class="text-2xl font-bold text-gray-900 tracking-tight text-mi-orange">HyperOS TW Tracker</h1>
                     <p class="text-xs text-gray-600 mt-1">更新時間: {gen_time} (UTC+8)</p>
                 </div>
-                <div class="flex gap-2 w-full md:w-auto">
+                <div class="flex flex-wrap gap-2 w-full md:w-auto items-center">
+                    <label class="inline-flex items-center cursor-pointer bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded-full text-sm font-medium transition-colors select-none">
+                        <input type="checkbox" id="recentFilter" class="sr-only peer">
+                        <div class="w-4 h-4 rounded-sm border-2 border-gray-400 mr-2 peer-checked:bg-mi-orange peer-checked:border-mi-orange flex items-center justify-center transition-all">
+                            <svg class="w-3 h-3 text-white scale-0 peer-checked:scale-100 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        最近 <span id="daysLabel">30</span> 天
+                    </label>
                     <select id="brandFilter" aria-label="選擇品牌" class="bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 px-4 rounded-full text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors cursor-pointer border-0">
                         {brand_options}
                     </select>
-                    <div class="relative flex-grow md:w-64">
-                        <input type="text" id="searchInput" aria-label="搜尋裝置" class="w-full bg-gray-100 hover:bg-gray-200 focus:bg-white text-gray-700 py-2 pl-10 pr-4 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-0 placeholder-gray-400" placeholder="搜尋機型名稱或代號...">
+                    <div class="relative flex-grow md:w-48">
+                        <input type="text" id="searchInput" aria-label="搜尋裝置" class="w-full bg-gray-100 hover:bg-gray-200 focus:bg-white text-gray-700 py-2 pl-10 pr-4 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-0 placeholder-gray-400" placeholder="搜尋機型...">
                         <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-600">
                             <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                         </div>
@@ -366,7 +373,7 @@ for device in final_list:
             others_cards += generate_card_html(other, other['label'], 'other', tw_ver)
 
     html_content += f"""
-        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="{device['brand']}">
+        <div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="{device['brand']}" data-date="{tw_date}">
             <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
                 <div class="flex items-start gap-3">
                     <div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">
@@ -411,21 +418,80 @@ html_content += """
         }
         const searchInput = document.getElementById('searchInput');
         const brandFilter = document.getElementById('brandFilter');
+        const recentFilter = document.getElementById('recentFilter');
+        const daysLabel = document.getElementById('daysLabel');
+        
+        let recentDaysThreshold = 30;
+
         function filterContent() {
             const searchText = searchInput.value.toLowerCase().trim();
             const selectedBrand = brandFilter.value;
+            const isRecent = recentFilter.checked;
+            
             const cards = document.querySelectorAll('.device-card');
+            const now = new Date();
+
             cards.forEach(card => {
                 const name = card.querySelector('.device-title').textContent.toLowerCase();
                 const code = card.querySelector('.device-code').textContent.toLowerCase();
                 const brand = card.getAttribute('data-brand');
+                const dateStr = card.getAttribute('data-date');
+                
                 const matchText = name.includes(searchText) || code.includes(searchText);
                 const matchBrand = (selectedBrand === 'all') || (brand === selectedBrand);
-                card.classList.toggle('hidden', !(matchText && matchBrand));
+                
+                let matchRecent = true;
+                if (isRecent && dateStr) {
+                    const releaseDate = new Date(dateStr);
+                    const diffTime = Math.abs(now - releaseDate);
+                    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+                    matchRecent = diffDays <= recentDaysThreshold;
+                }
+
+                card.classList.toggle('hidden', !(matchText && matchBrand && matchRecent));
             });
         }
         searchInput.addEventListener('input', filterContent);
         brandFilter.addEventListener('change', filterContent);
+        recentFilter.addEventListener('change', filterContent);
+
+        // Auto-filter from URL parameter
+        try {
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            // 1. Handle Search (?q=...)
+            const query = urlParams.get('q');
+            if (query) {
+                searchInput.value = query;
+            }
+
+            // 2. Handle Brand (?brand=...)
+            const brandParam = urlParams.get('brand');
+            if (brandParam) {
+                // Find matching option (case-insensitive)
+                const options = Array.from(brandFilter.options);
+                const match = options.find(opt => opt.value.toLowerCase() === brandParam.toLowerCase());
+                if (match) {
+                    brandFilter.value = match.value;
+                }
+            }
+
+            // 3. Handle Recent Days (?days=N)
+            const daysParam = urlParams.get('days');
+            if (daysParam) {
+                const days = parseInt(daysParam);
+                if (!isNaN(days) && days > 0) {
+                    recentDaysThreshold = days;
+                    daysLabel.textContent = days;
+                    recentFilter.checked = true;
+                }
+            }
+
+            // Apply filters if needed
+            if (query || brandParam || daysParam) {
+                filterContent();
+            }
+        } catch (e) { console.error(e); }
     </script>
 </body>
 </html>
