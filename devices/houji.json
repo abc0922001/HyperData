@@ -253,8 +253,8 @@
 					"android": "16.0",
 					"release": "2025-12-10",
 					"recovery": "houji-ota_full-OS3.0.5.0.WNCCNXM-user-16.0-306ce971bf.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "houji_images_OS3.0.5.0.WNCCNXM_20251128.0000.00_16.0_cn_f9b854bc3c.tgz",
+					"ctelecom": "houji_images_OS3.0.5.0.WNCCNXM_20251128.0000.00_16.0_cn_chinatelecom_28447e4150.tgz"
 				},
 				"OS3.0.4.0.WNCCNXM": {
 					"os": "OS3.0.4.0.WNCCNXM",
@@ -1480,6 +1480,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.5.0.WNCMIXM": {
+					"os": "OS3.0.5.0.WNCMIXM",
+					"android": "16.0",
+					"release": "2025-12-25",
+					"recovery": "houji_global-ota_full-OS3.0.5.0.WNCMIXM-user-16.0-5f0713b514.zip",
+					"fastboot": ""
+				},
 				"OS3.0.4.0.WNCMIXM": {
 					"os": "OS3.0.4.0.WNCMIXM",
 					"android": "16.0",

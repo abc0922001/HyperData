@@ -284,6 +284,14 @@
 				"dada_images_OS2.0.12.0.VOCCNXM_20241026.0000.00_15.0_cn_chinatelecom_346b0a946b.tgz"
 			],
 			"roms": {
+				"OS3.0.6.0.WOCCNXM": {
+					"os": "OS3.0.6.0.WOCCNXM",
+					"android": "16.0",
+					"release": "2025-12-25",
+					"recovery": "dada-ota_full-OS3.0.6.0.WOCCNXM-user-16.0-77e51468a9.zip",
+					"fastboot": "",
+					"ctelecom": ""
+				},
 				"OS3.0.5.0.WOCCNXM": {
 					"os": "OS3.0.5.0.WOCCNXM",
 					"android": "16.0",
@@ -616,6 +624,14 @@
 			"zone": "1",
 			"ep": "1",
 			"roms": {
+				"OS3.0.25.12.23.EP.STDEE.O3": {
+					"os": "OS3.0.25.12.23.EP.STDEE.O3",
+					"android": "16.0",
+					"release": "2025-12-25",
+					"recovery": "dada_ep_stdee-ota_full-OS3.0.25.12.23.EP.STDEE.O3-user-16.0-1c82c1d88f.zip",
+					"fastboot": "dada_ep_stdee_images_OS3.0.25.12.23.EP.STDEE.O3_20251223.0000.00_16.0_cn_85918f13b6.tgz",
+					"ctelecom": "dada_ep_stdee_images_OS3.0.25.12.23.EP.STDEE.O3_20251223.0000.00_16.0_cn_chinatelecom_4979a13790.tgz"
+				},
 				"OS3.0.25.11.13.EP.STDEE.O3": {
 					"os": "OS3.0.25.11.13.EP.STDEE.O3",
 					"android": "16.0",
@@ -762,6 +778,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WOCTWXM": {
+					"os": "OS3.0.1.0.WOCTWXM",
+					"android": "16.0",
+					"release": "2025-12-27",
+					"recovery": "dada_tw_global-ota_full-OS3.0.1.0.WOCTWXM-user-16.0-631d9da140.zip",
+					"fastboot": ""
+				},
 				"OS2.0.203.0.VOCTWXM": {
 					"os": "OS2.0.203.0.VOCTWXM",
 					"android": "15.0",
@@ -1191,6 +1214,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WOCRUXM": {
+					"os": "OS3.0.1.0.WOCRUXM",
+					"android": "16.0",
+					"release": "2025-12-25",
+					"recovery": "dada_ru_global-ota_full-OS3.0.1.0.WOCRUXM-user-16.0-3bee410a49.zip",
+					"fastboot": ""
+				},
 				"OS2.0.204.0.VOCRUXM": {
 					"os": "OS2.0.204.0.VOCRUXM",
 					"android": "15.0",
@@ -1377,7 +1407,7 @@
 					"android": "16.0",
 					"release": "2025-12-22",
 					"recovery": "dada_id_global-ota_full-OS3.0.2.0.WOCIDXM-user-16.0-374c4118b6.zip",
-					"fastboot": ""
+					"fastboot": "dada_id_global_images_OS3.0.2.0.WOCIDXM_20251209.0000.00_16.0_id_7fe9fbe491.tgz"
 				},
 				"OS2.0.203.0.VOCIDXM": {
 					"os": "OS2.0.203.0.VOCIDXM",

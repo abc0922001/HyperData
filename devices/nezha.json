@@ -4,7 +4,7 @@
     "zh": "小米 17 Ultra",
     "en": "Xiaomi 17 Ultra"
   },
-  "code": "",
+  "code": "PA",
   "suppports": [
     "OS3.0"
   ],
@@ -48,13 +48,64 @@
       "zone": "1",
       "ep": "0",
       "roms": {
-        "": {
-          "os": "",
+        "OS3.0.7.0.WPACNXM": {
+          "os": "OS3.0.7.0.WPACNXM",
           "android": "16.0",
-          "release": "",
-          "recovery": "",
+          "release": "2025-12-25",
+          "recovery": "nezha-ota_full-OS3.0.7.0.WPACNXM-user-16.0-5de3a22dfc.zip",
+          "fastboot": "nezha_images_OS3.0.7.0.WPACNXM_20251219.0000.00_16.0_cn_c35937fdbe.tgz",
+          "ctelecom": "nezha_images_OS3.0.7.0.WPACNXM_20251219.0000.00_16.0_cn_chinatelecom_1a3505b621.tgz"
+        },
+        "OS3.0.4.0.WPACNXM": {
+          "os": "OS3.0.4.0.WPACNXM",
+          "android": "16.0",
+          "release": "2025-12-25",
+          "recovery": "nezha-ota_full-OS3.0.4.0.WPACNXM-user-16.0-bebf9e52fd.zip",
           "fastboot": "",
           "ctelecom": ""
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 演示机系统",
+        "en": "Xiaomi HyperOS China MiStore Demo"
+      },
+      "branchCode": "nezha_demo",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17 Ultra",
+        "en": "Xiaomi 17 Ultra"
+      },
+      "idtag": "CnOD",
+      "tag": "CNDM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot",
+        "ctelecom"
+      ],
+      "show": "0",
+      "region": "cn",
+      "carrier": [
+        "",
+        "chinatelecom",
+        "chinamobile",
+        "chinaunicom"
+      ],
+      "zone": "1",
+      "ep": "0",
+      "roms": {
+        "OS3.0.5.0.WPACNDM": {
+          "os": "OS3.0.5.0.WPACNDM",
+          "android": "16.0",
+          "release": "2025-12-25",
+          "recovery": "nezha_demo-ota_full-OS3.0.5.0.WPACNDM-user-16.0-7a9b7322e9.zip",
+          "fastboot": "nezha_demo_images_OS3.0.5.0.WPACNDM_20251223.0000.00_16.0_cn_df9e699cdb.tgz",
+          "ctelecom": "nezha_demo_images_OS3.0.5.0.WPACNDM_20251223.0000.00_16.0_cn_chinatelecom_4329b23a98.tgz"
         }
       }
     }
