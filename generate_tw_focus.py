@@ -177,8 +177,8 @@ def generate_history_html(history_list, type_class):
     <tbody class="divide-y divide-gray-50">
     '''
     
-    # Limit history to latest 10 items to improve performance (DOM size)
-    for i, rom in enumerate(history_list[:10]):
+    # Display full history (previously limited to 10)
+    for i, rom in enumerate(history_list):
         interval_html = '<span class="text-gray-300">-</span>'
         if i < len(history_list) - 1:
             try:
