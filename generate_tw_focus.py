@@ -1,6 +1,7 @@
 import json
 import os
 import glob
+import statistics
 from datetime import datetime, timedelta, timezone
 
 # 設定為台灣時區 (UTC+8)
@@ -65,6 +66,48 @@ def get_region_label(branch_name_zh):
         processed_name = processed_name.replace(sc, tc)
         
     return processed_name
+
+def is_abandoned_mad(history_list, days_since_last):
+    """
+    使用 MAD (Median Absolute Deviation) 演算法判斷是否疑似棄更。
+    當 M (Modified Z-score) > 4 時標記為棄更。
+    """
+    if not history_list or len(history_list) < 2:
+        return False
+        
+    dates = []
+    for item in history_list:
+        try:
+            dates.append(datetime.strptime(item['release'], "%Y-%m-%d"))
+        except: pass
+        
+    if len(dates) < 2:
+        return False
+        
+    intervals = []
+    # history_list is sorted DESC (newest first).
+    for i in range(len(dates) - 1):
+        diff = (dates[i] - dates[i+1]).days
+        if diff >= 0:
+            intervals.append(diff)
+            
+    if not intervals:
+        return False
+
+    median_val = statistics.median(intervals)
+    deviations = [abs(x - median_val) for x in intervals]
+    mad = statistics.median(deviations)
+    
+    # 避免 MAD 為 0 導致除以零錯誤 (設定最小 1 天)
+    mad_adj = max(mad, 1) 
+    
+    # 縮放常數 1.4826 (估計標準差)
+    scaling_constant = 1.4826
+    
+    # 計算分數
+    score = (days_since_last - median_val) / (scaling_constant * mad_adj)
+    
+    return score > 4
 
 print(f"::group::初始化設定")
 print(f"工作目錄: {os.getcwd()}")
@@ -348,6 +391,7 @@ for device in final_list:
     tw = device['tw']['latest']
     tw_ver = tw['os']
     tw_date = tw['release']
+    tw_history = device['tw']['history']
     
     # Header Info
     ago_html = ""
@@ -355,12 +399,20 @@ for device in final_list:
         tw_dt = datetime.strptime(tw_date, "%Y-%m-%d").replace(tzinfo=tz_tw)
         days_ago = (now_tw - tw_dt).days
         
-        ago_color = "text-green-700 bg-green-50"
-        if days_ago > 180: ago_color = "text-red-700 bg-red-50"
-        elif days_ago > 90: ago_color = "text-orange-700 bg-orange-50"
-        elif days_ago > 30: ago_color = "text-gray-600 bg-gray-100"
-        
-        ago_html = f'<span class="text-xs font-medium px-1.5 py-0.5 rounded mt-1 {ago_color}">已過 {days_ago} 天</span>'
+        # Check for abandonment: MAD algorithm OR > 100 days
+        is_abandoned = is_abandoned_mad(tw_history, days_ago) or (days_ago > 100)
+
+        if is_abandoned:
+             # Use inline style for visibility (Gray-500) since the class might be missing
+             ago_html = f'<span class="text-xs font-medium px-1.5 py-0.5 rounded mt-1 text-white" style="background-color: #6b7280;">疑似棄更 ({days_ago} 天)</span>'
+        else:
+             status_text = f"已過 {days_ago} 天"
+             ago_color = "text-green-700 bg-green-50"
+             # Since >100 is abandoned, we only need to handle <= 100 here
+             if days_ago > 90: ago_color = "text-orange-700 bg-orange-50"
+             elif days_ago > 30: ago_color = "text-gray-600 bg-gray-100"
+             
+             ago_html = f'<span class="text-xs font-medium px-1.5 py-0.5 rounded mt-1 {ago_color}">{status_text}</span>'
     except: pass
 
     # Card Generation
