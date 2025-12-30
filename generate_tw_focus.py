@@ -90,6 +90,26 @@ def is_abandoned_mad(history_list, days_since_last):
     
     return score > 4
 
+def get_max_interval(history_list):
+    """計算歷史更新最大間隔天數"""
+    if not history_list or len(history_list) < 2:
+        return 0
+    
+    dates = parse_history_dates(history_list)
+    if len(dates) < 2:
+        return 0
+    
+    intervals = [
+        (dates[i] - dates[i+1]).days 
+        for i in range(len(dates) - 1) 
+        if (dates[i] - dates[i+1]).days >= 0
+    ]
+    
+    if not intervals:
+        return 0
+        
+    return max(intervals)
+
 print(f"::group::初始化設定")
 print(f"工作目錄: {os.getcwd()}")
 print(f"輸出檔案: {output_file}")
@@ -356,7 +376,8 @@ for device in final_list:
     try:
         tw_dt = datetime.strptime(tw_date, "%Y-%m-%d").replace(tzinfo=tz_tw)
         days_ago = (now_tw - tw_dt).days
-        is_abandoned = is_abandoned_mad(tw_history, days_ago) or (days_ago > 100)
+        max_interval = get_max_interval(tw_history)
+        is_abandoned = is_abandoned_mad(tw_history, days_ago) or (max_interval > 0 and days_ago > 2 * max_interval)
 
         if is_abandoned:
             ago_html = f'<span class="text-xs font-medium px-1.5 py-0.5 rounded mt-1 text-white" style="background-color: #6b7280;">疑似棄更 ({days_ago} 天)</span>'
