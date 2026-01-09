@@ -46,6 +46,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.208.0.VPWTWXM": {
+					"os": "OS2.0.208.0.VPWTWXM",
+					"android": "15.0",
+					"release": "2026-01-09",
+					"recovery": "flute_tw_global-ota_full-OS2.0.208.0.VPWTWXM-user-15.0-2475c31535.zip",
+					"fastboot": ""
+				},
 				"OS2.0.207.0.VPWTWXM": {
 					"os": "OS2.0.207.0.VPWTWXM",
 					"android": "15.0",
@@ -155,7 +162,7 @@
 					"android": "16.0",
 					"release": "2026-01-04",
 					"recovery": "flute_eea_global-ota_full-OS3.0.3.0.WPWEUXM-user-16.0-75d90aec65.zip",
-					"fastboot": ""
+					"fastboot": "flute_eea_global_images_OS3.0.3.0.WPWEUXM_20251225.0000.00_16.0_eea_4ebc875d17.tgz"
 				},
 				"OS2.0.211.0.VPWEUXM": {
 					"os": "OS2.0.211.0.VPWEUXM",

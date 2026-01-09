@@ -562,7 +562,7 @@
 					"android": "16.0",
 					"release": "2025-12-27",
 					"recovery": "zorn_global-ota_full-OS3.0.6.0.WOKMIXM-user-16.0-9477ef7daf.zip",
-					"fastboot": ""
+					"fastboot": "zorn_global_images_OS3.0.6.0.WOKMIXM_20251215.0000.00_16.0_global_59e18828c3.tgz"
 				},
 				"OS3.0.4.0.WOKMIXM": {
 					"os": "OS3.0.4.0.WOKMIXM",
@@ -658,6 +658,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.3.0.WOKEUXM": {
+					"os": "OS3.0.3.0.WOKEUXM",
+					"android": "16.0",
+					"release": "2026-01-08",
+					"recovery": "zorn_eea_global-ota_full-OS3.0.3.0.WOKEUXM-user-16.0-8fa65ca638.zip",
+					"fastboot": ""
+				},
 				"OS3.0.2.0.WOKEUXM": {
 					"os": "OS3.0.2.0.WOKEUXM",
 					"android": "16.0",

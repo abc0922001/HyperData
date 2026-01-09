@@ -318,7 +318,7 @@
 					"android": "16.0",
 					"release": "2025-12-30",
 					"recovery": "moon_dc_global-ota_full-OS3.0.1.0.WNTMIDC-user-16.0-e940e4fc7c.zip",
-					"fastboot": ""
+					"fastboot": "moon_dc_global_images_OS3.0.1.0.WNTMIDC_20251220.0000.00_16.0_global_dc_ae4bfda33f.tgz"
 				},
 				"OS2.0.202.0.VNTMIDC": {
 					"os": "OS2.0.202.0.VNTMIDC",
@@ -419,7 +419,7 @@
 					"android": "16.0",
 					"release": "2026-01-05",
 					"recovery": "moon_eea_global-ota_full-OS3.0.2.0.WNTEUXM-user-16.0-326cbc1733.zip",
-					"fastboot": ""
+					"fastboot": "moon_eea_global_images_OS3.0.2.0.WNTEUXM_20251226.0000.00_16.0_eea_122d4e535e.tgz"
 				},
 				"OS3.0.1.0.WNTEUXM": {
 					"os": "OS3.0.1.0.WNTEUXM",
@@ -602,6 +602,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WNTRUXM": {
+					"os": "OS3.0.1.0.WNTRUXM",
+					"android": "16.0",
+					"release": "2026-01-07",
+					"recovery": "moon_ru_global-ota_full-OS3.0.1.0.WNTRUXM-user-16.0-4ee3359ac0.zip",
+					"fastboot": ""
+				},
 				"OS2.0.203.0.VNTRUXM": {
 					"os": "OS2.0.203.0.VNTRUXM",
 					"android": "15.0",
@@ -724,6 +731,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WNTIDXM": {
+					"os": "OS3.0.1.0.WNTIDXM",
+					"android": "16.0",
+					"release": "2026-01-07",
+					"recovery": "moon_id_global-ota_full-OS3.0.1.0.WNTIDXM-user-16.0-703c3ce7a6.zip",
+					"fastboot": ""
+				},
 				"OS2.0.203.0.VNTIDXM": {
 					"os": "OS2.0.203.0.VNTIDXM",
 					"android": "15.0",
