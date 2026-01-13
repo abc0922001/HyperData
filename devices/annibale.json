@@ -53,8 +53,8 @@
           "android": "16.0",
           "release": "2025-12-28",
           "recovery": "annibale-ota_full-OS3.0.20.0.WPKCNXM-user-16.0-42b109f0f1.zip",
-          "fastboot": "",
-          "ctelecom": ""
+          "fastboot": "annibale_images_OS3.0.20.0.WPKCNXM_20251224.0000.00_16.0_cn_94861d4723.tgz",
+          "ctelecom": "annibale_images_OS3.0.20.0.WPKCNXM_20251224.0000.00_16.0_cn_chinatelecom_7c795e231f.tgz"
         },
         "OS3.0.18.0.WPKCNXM": {
           "os": "OS3.0.18.0.WPKCNXM",
@@ -186,6 +186,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.4.0.WPKTWXM": {
+          "os": "OS3.0.4.0.WPKTWXM",
+          "android": "16.0",
+          "release": "2026-01-13",
+          "recovery": "annibale_tw_global-ota_full-OS3.0.4.0.WPKTWXM-user-16.0-5ea3dbdb66.zip",
+          "fastboot": ""
+        },
         "OS3.0.3.0.WPKTWXM": {
           "os": "OS3.0.3.0.WPKTWXM",
           "android": "16.0",
@@ -439,6 +446,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.3.0.WPKTRXM": {
+          "os": "OS3.0.3.0.WPKTRXM",
+          "android": "16.0",
+          "release": "2026-01-13",
+          "recovery": "annibale_tr_global-ota_full-OS3.0.3.0.WPKTRXM-user-16.0-71694e841a.zip",
+          "fastboot": ""
+        },
         "OS3.0.2.0.WPKTRXM": {
           "os": "OS3.0.2.0.WPKTRXM",
           "android": "16.0",
