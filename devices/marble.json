@@ -7,7 +7,8 @@
 	"code": "MR",
 	"suppports": [
 		"OS1.0",
-		"OS2.0"
+		"OS2.0",
+		"OS3.0"
 	],
 	"android": [
 		"14.0",
@@ -50,6 +51,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.VMRCNXM": {
+					"os": "OS3.0.1.0.VMRCNXM",
+					"android": "15.0",
+					"release": "2026-01-20",
+					"recovery": "marble-ota_full-OS3.0.1.0.VMRCNXM-user-15.0-ac8e5cc1cc.zip",
+					"fastboot": "",
+					"ctelecom": ""
+				},
 				"OS2.0.215.0.VMRCNXM": {
 					"os": "OS2.0.215.0.VMRCNXM",
 					"android": "15.0",
@@ -641,6 +650,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.210.0.VMREUXM": {
+					"os": "OS2.0.210.0.VMREUXM",
+					"android": "15.0",
+					"release": "2026-01-16",
+					"recovery": "marble_eea_global-ota_full-OS2.0.210.0.VMREUXM-user-15.0-43635eafbe.zip",
+					"fastboot": "marble_eea_global_images_OS2.0.210.0.VMREUXM_20260109.0000.00_15.0_eea_3f1996255e.tgz"
+				},
 				"OS2.0.208.0.VMREUXM": {
 					"os": "OS2.0.208.0.VMREUXM",
 					"android": "15.0",

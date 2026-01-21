@@ -670,6 +670,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WNNTWXM": {
+					"os": "OS3.0.1.0.WNNTWXM",
+					"android": "16.0",
+					"release": "2026-01-20",
+					"recovery": "rothko_tw_global-ota_full-OS3.0.1.0.WNNTWXM-user-16.0-c936a22fae.zip",
+					"fastboot": ""
+				},
 				"OS2.0.207.0.VNNTWXM": {
 					"os": "OS2.0.207.0.VNNTWXM",
 					"android": "15.0",
@@ -1136,7 +1143,7 @@
 					"android": "16.0",
 					"release": "2026-01-08",
 					"recovery": "rothko_eea_global-ota_full-OS3.0.4.0.WNNEUXM-user-16.0-01069a9819.zip",
-					"fastboot": ""
+					"fastboot": "rothko_eea_global_images_OS3.0.4.0.WNNEUXM_20251224.0000.00_16.0_eea_9f038f0d66.tgz"
 				},
 				"OS3.0.3.0.WNNEUXM": {
 					"os": "OS3.0.3.0.WNNEUXM",
@@ -1361,6 +1368,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WNNRUXM": {
+					"os": "OS3.0.1.0.WNNRUXM",
+					"android": "16.0",
+					"release": "2026-01-20",
+					"recovery": "rothko_ru_global-ota_full-OS3.0.1.0.WNNRUXM-user-16.0-79082653bc.zip",
+					"fastboot": ""
+				},
 				"OS2.0.207.0.VNNRUXM": {
 					"os": "OS2.0.207.0.VNNRUXM",
 					"android": "15.0",
@@ -1497,6 +1511,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WNNIDXM": {
+					"os": "OS3.0.1.0.WNNIDXM",
+					"android": "16.0",
+					"release": "2026-01-20",
+					"recovery": "rothko_id_global-ota_full-OS3.0.1.0.WNNIDXM-user-16.0-753cbc9eb7.zip",
+					"fastboot": ""
+				},
 				"OS2.0.207.0.VNNIDXM": {
 					"os": "OS2.0.207.0.VNNIDXM",
 					"android": "15.0",
@@ -1870,6 +1891,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.204.0.VNNLMCR": {
+					"os": "OS2.0.204.0.VNNLMCR",
+					"android": "15.0",
+					"release": "2026-01-19",
+					"recovery": "rothko_lm_cr_global-ota_full-OS2.0.204.0.VNNLMCR-user-15.0-99cd4877cd.zip",
+					"fastboot": ""
+				},
 				"OS2.0.203.0.VNNLMCR": {
 					"os": "OS2.0.203.0.VNNLMCR",
 					"android": "15.0",

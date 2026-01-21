@@ -92,13 +92,21 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.4.0.VMKCNXM": {
+					"os": "OS3.0.4.0.VMKCNXM",
+					"android": "15.0",
+					"release": "2026-01-16",
+					"recovery": "socrates-ota_full-OS3.0.4.0.VMKCNXM-user-15.0-6f309b083f.zip",
+					"fastboot": "",
+					"ctelecom": ""
+				},
 				"OS3.0.3.0.VMKCNXM": {
 					"os": "OS3.0.3.0.VMKCNXM",
 					"android": "15.0",
 					"release": "2025-12-28",
 					"recovery": "socrates-ota_full-OS3.0.3.0.VMKCNXM-user-15.0-faefa29a61.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "socrates_images_OS3.0.3.0.VMKCNXM_20251226.0000.00_15.0_cn_bb46485538.tgz",
+					"ctelecom": "socrates_images_OS3.0.3.0.VMKCNXM_20251226.0000.00_15.0_cn_chinatelecom_dc8e1c8552.tgz"
 				},
 				"OS2.0.212.0.VMKCNXM": {
 					"os": "OS2.0.212.0.VMKCNXM",

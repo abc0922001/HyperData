@@ -361,6 +361,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WOOTWXM": {
+					"os": "OS3.0.1.0.WOOTWXM",
+					"android": "16.0",
+					"release": "2026-01-16",
+					"recovery": "malachite_tw_global-ota_full-OS3.0.1.0.WOOTWXM-user-16.0-18403a9ab3.zip",
+					"fastboot": ""
+				},
 				"OS2.0.207.0.VOOTWXM": {
 					"os": "OS2.0.207.0.VOOTWXM",
 					"android": "15.0",
@@ -619,6 +626,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WOOMIDC": {
+					"os": "OS3.0.1.0.WOOMIDC",
+					"android": "16.0",
+					"release": "2026-01-14",
+					"recovery": "malachite_dc_global-ota_full-OS3.0.1.0.WOOMIDC-user-16.0-a981cef613.zip",
+					"fastboot": "malachite_dc_global_images_OS3.0.1.0.WOOMIDC_20251229.0000.00_16.0_global_dc_f36cd59dbe.tgz"
+				},
 				"OS2.0.206.0.VOOMIDC": {
 					"os": "OS2.0.206.0.VOOMIDC",
 					"android": "15.0",
@@ -889,7 +903,7 @@
 					"android": "16.0",
 					"release": "2026-01-13",
 					"recovery": "malachite_ru_global-ota_full-OS3.0.2.0.WOORUXM-user-16.0-18fd7804b9.zip",
-					"fastboot": ""
+					"fastboot": "malachite_ru_global_images_OS3.0.2.0.WOORUXM_20251225.0000.00_16.0_ru_f5cbdaca3a.tgz"
 				},
 				"OS2.0.207.0.VOORUXM": {
 					"os": "OS2.0.207.0.VOORUXM",
@@ -1121,6 +1135,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WOOIDXM": {
+					"os": "OS3.0.1.0.WOOIDXM",
+					"android": "16.0",
+					"release": "2026-01-19",
+					"recovery": "malachite_id_global-ota_full-OS3.0.1.0.WOOIDXM-user-16.0-de820754b9.zip",
+					"fastboot": ""
+				},
 				"OS2.0.207.0.VOOIDXM": {
 					"os": "OS2.0.207.0.VOOIDXM",
 					"android": "15.0",
@@ -1236,6 +1257,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WOOTRXM": {
+					"os": "OS3.0.1.0.WOOTRXM",
+					"android": "16.0",
+					"release": "2026-01-16",
+					"recovery": "malachite_tr_global-ota_full-OS3.0.1.0.WOOTRXM-user-16.0-1234eecc27.zip",
+					"fastboot": "malachite_tr_global_images_OS3.0.1.0.WOOTRXM_20251230.0000.00_16.0_tr_15910a156d.tgz"
+				},
 				"OS2.0.206.0.VOOTRXM": {
 					"os": "OS2.0.206.0.VOOTRXM",
 					"android": "15.0",
@@ -1351,6 +1379,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WOOJPXM": {
+					"os": "OS3.0.1.0.WOOJPXM",
+					"android": "16.0",
+					"release": "2026-01-16",
+					"recovery": "malachite_jp_global-ota_full-OS3.0.1.0.WOOJPXM-user-16.0-4f1374afdb.zip",
+					"fastboot": "malachite_jp_global_images_OS3.0.1.0.WOOJPXM_20251230.0000.00_16.0_jp_296c5a1c66.tgz"
+				},
 				"OS2.0.208.0.VOOJPXM": {
 					"os": "OS2.0.208.0.VOOJPXM",
 					"android": "15.0",
@@ -1511,6 +1546,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.203.0.VOOLMCR": {
+					"os": "OS2.0.203.0.VOOLMCR",
+					"android": "15.0",
+					"release": "2026-01-14",
+					"recovery": "malachite_lm_cr_global-ota_full-OS2.0.203.0.VOOLMCR-user-15.0-cbb83b5bf9.zip",
+					"fastboot": "malachite_lm_cr_global_images_OS2.0.203.0.VOOLMCR_20260104.0000.00_15.0_lm_cr_4cf75469de.tgz"
+				},
 				"OS2.0.202.0.VOOLMCR": {
 					"os": "OS2.0.202.0.VOOLMCR",
 					"android": "15.0",

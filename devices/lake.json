@@ -368,6 +368,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.205.0.VGTMIDC": {
+					"os": "OS2.0.205.0.VGTMIDC",
+					"android": "15.0",
+					"release": "2026-01-16",
+					"recovery": "lake_dc_global-ota_full-OS2.0.205.0.VGTMIDC-user-15.0-4366fbb9b3.zip",
+					"fastboot": ""
+				},
 				"OS2.0.203.0.VGTMIDC": {
 					"os": "OS2.0.203.0.VGTMIDC",
 					"android": "15.0",
@@ -476,6 +483,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.208.0.VGTEUXM": {
+					"os": "OS2.0.208.0.VGTEUXM",
+					"android": "15.0",
+					"release": "2026-01-19",
+					"recovery": "lake_eea_global-ota_full-OS2.0.208.0.VGTEUXM-user-15.0-f2c8a9fd67.zip",
+					"fastboot": ""
+				},
 				"OS2.0.207.0.VGTEUXM": {
 					"os": "OS2.0.207.0.VGTEUXM",
 					"android": "15.0",
@@ -598,6 +612,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.202.0.VGTRUXM": {
+					"os": "OS2.0.202.0.VGTRUXM",
+					"android": "15.0",
+					"release": "2026-01-16",
+					"recovery": "lake_ru_global-ota_full-OS2.0.202.0.VGTRUXM-user-15.0-dda985c73a.zip",
+					"fastboot": ""
+				},
 				"OS2.0.201.0.VGTRUXM": {
 					"os": "OS2.0.201.0.VGTRUXM",
 					"android": "15.0",
@@ -692,6 +713,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.202.0.VGTIDXM": {
+					"os": "OS2.0.202.0.VGTIDXM",
+					"android": "15.0",
+					"release": "2026-01-19",
+					"recovery": "lake_id_global-ota_full-OS2.0.202.0.VGTIDXM-user-15.0-d2daf4f5eb.zip",
+					"fastboot": ""
+				},
 				"OS2.0.201.0.VGTIDXM": {
 					"os": "OS2.0.201.0.VGTIDXM",
 					"android": "15.0",
@@ -786,6 +814,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.202.0.VGTTRXM": {
+					"os": "OS2.0.202.0.VGTTRXM",
+					"android": "15.0",
+					"release": "2026-01-16",
+					"recovery": "lake_tr_global-ota_full-OS2.0.202.0.VGTTRXM-user-15.0-5653d128e9.zip",
+					"fastboot": ""
+				},
 				"OS2.0.201.0.VGTTRXM": {
 					"os": "OS2.0.201.0.VGTTRXM",
 					"android": "15.0",
@@ -937,7 +972,7 @@
 					"android": "15.0",
 					"release": "2026-01-11",
 					"recovery": "lake_mx_at_global-ota_full-OS2.0.203.0.VGTMXAT-user-15.0-f8a5bcbc14.zip",
-					"fastboot": ""
+					"fastboot": "lake_mx_at_global_images_OS2.0.203.0.VGTMXAT_20251225.0000.00_15.0_mx_at_dca9c3f9b4.tgz"
 				},
 				"OS2.0.202.0.VGTMXAT": {
 					"os": "OS2.0.202.0.VGTMXAT",
@@ -1019,6 +1054,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.203.0.VGTLMCR": {
+					"os": "OS2.0.203.0.VGTLMCR",
+					"android": "15.0",
+					"release": "2026-01-21",
+					"recovery": "lake_lm_cr_global-ota_full-OS2.0.203.0.VGTLMCR-user-15.0-f2bc620c0d.zip",
+					"fastboot": ""
+				},
 				"OS2.0.202.0.VGTLMCR": {
 					"os": "OS2.0.202.0.VGTLMCR",
 					"android": "15.0",

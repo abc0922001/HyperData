@@ -443,6 +443,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.2.0.WNOMIXM": {
+					"os": "OS3.0.2.0.WNOMIXM",
+					"android": "16.0",
+					"release": "2026-01-16",
+					"recovery": "zircon_global-ota_full-OS3.0.2.0.WNOMIXM-user-16.0-cf6482d262.zip",
+					"fastboot": ""
+				},
 				"OS2.0.211.0.VNOMIXM": {
 					"os": "OS2.0.211.0.VNOMIXM",
 					"android": "15.0",
@@ -715,6 +722,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.4.0.WNOEUXM": {
+					"os": "OS3.0.4.0.WNOEUXM",
+					"android": "16.0",
+					"release": "2026-01-14",
+					"recovery": "zircon_eea_global-ota_full-OS3.0.4.0.WNOEUXM-user-16.0-56e26e7605.zip",
+					"fastboot": "zircon_eea_global_images_OS3.0.4.0.WNOEUXM_20251231.0000.00_16.0_eea_dfdd5339e2.tgz"
+				},
 				"OS2.0.206.0.VNOEUXM": {
 					"os": "OS2.0.206.0.VNOEUXM",
 					"android": "15.0",
@@ -1650,6 +1664,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.204.0.VNOLMCR": {
+					"os": "OS2.0.204.0.VNOLMCR",
+					"android": "15.0",
+					"release": "2026-01-15",
+					"recovery": "zircon_lm_cr_global-ota_full-OS2.0.204.0.VNOLMCR-user-15.0-f903b55395.zip",
+					"fastboot": "zircon_lm_cr_global_images_OS2.0.204.0.VNOLMCR_20260105.0000.00_15.0_lm_cr_b861716faa.tgz"
+				},
 				"OS2.0.203.0.VNOLMCR": {
 					"os": "OS2.0.203.0.VNOLMCR",
 					"android": "15.0",

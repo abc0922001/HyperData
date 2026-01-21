@@ -119,6 +119,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.10.0.WOSMIXM": {
+          "os": "OS3.0.10.0.WOSMIXM",
+          "android": "16.0",
+          "release": "2026-01-19",
+          "recovery": "klimt_global-ota_full-OS3.0.10.0.WOSMIXM-user-16.0-dfac67d79c.zip",
+          "fastboot": ""
+        },
         "OS3.0.8.0.WOSMIXM": {
           "os": "OS3.0.8.0.WOSMIXM",
           "android": "16.0",
@@ -265,6 +272,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.12.0.WOSEUXM": {
+          "os": "OS3.0.12.0.WOSEUXM",
+          "android": "16.0",
+          "release": "2026-01-19",
+          "recovery": "klimt_eea_global-ota_full-OS3.0.12.0.WOSEUXM-user-16.0-bc80b4a6b3.zip",
+          "fastboot": ""
+        },
         "OS3.0.10.0.WOSEUXM": {
           "os": "OS3.0.10.0.WOSEUXM",
           "android": "16.0",
@@ -430,7 +444,7 @@
           "android": "16.0",
           "release": "2026-01-08",
           "recovery": "klimt_id_global-ota_full-OS3.0.2.0.WOSIDXM-user-16.0-927aeb27ac.zip",
-          "fastboot": ""
+          "fastboot": "klimt_id_global_images_OS3.0.2.0.WOSIDXM_20251226.0000.00_16.0_id_6996d05a11.tgz"
         },
         "OS3.0.1.0.WOSIDXM": {
           "os": "OS3.0.1.0.WOSIDXM",
@@ -491,6 +505,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.5.0.WOSTRXM": {
+          "os": "OS3.0.5.0.WOSTRXM",
+          "android": "16.0",
+          "release": "2026-01-19",
+          "recovery": "klimt_tr_global-ota_full-OS3.0.5.0.WOSTRXM-user-16.0-11cfe195fd.zip",
+          "fastboot": ""
+        },
         "OS3.0.3.0.WOSTRXM": {
           "os": "OS3.0.3.0.WOSTRXM",
           "android": "16.0",
@@ -550,6 +571,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.5.0.WOSJPXM": {
+          "os": "OS3.0.5.0.WOSJPXM",
+          "android": "16.0",
+          "release": "2026-01-19",
+          "recovery": "klimt_jp_global-ota_full-OS3.0.5.0.WOSJPXM-user-16.0-d62ecec48d.zip",
+          "fastboot": ""
+        },
         "OS2.0.203.0.VOSJPXM": {
           "os": "OS2.0.203.0.VOSJPXM",
           "android": "15.0",
@@ -654,6 +682,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.2.0.WOSLMCR": {
+          "os": "OS3.0.2.0.WOSLMCR",
+          "android": "16.0",
+          "release": "2026-01-16",
+          "recovery": "klimt_lm_cr_global-ota_full-OS3.0.2.0.WOSLMCR-user-16.0-6e26045589.zip",
+          "fastboot": ""
+        },
         "OS3.0.1.0.WOSLMCR": {
           "os": "OS3.0.1.0.WOSLMCR",
           "android": "16.0",
