@@ -156,6 +156,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.8.0.WNKCNXM": {
+					"os": "OS3.0.8.0.WNKCNXM",
+					"android": "16.0",
+					"release": "2026-01-22",
+					"recovery": "vermeer-ota_full-OS3.0.8.0.WNKCNXM-user-16.0-aa554643d2.zip",
+					"fastboot": "",
+					"ctelecom": ""
+				},
 				"OS3.0.6.0.WNKCNXM": {
 					"os": "OS3.0.6.0.WNKCNXM",
 					"android": "16.0",
@@ -719,7 +727,7 @@
 					"android": "16.0",
 					"release": "2026-01-12",
 					"recovery": "vermeer_global-ota_full-OS3.0.6.0.WNKMIXM-user-16.0-65da0845a6.zip",
-					"fastboot": ""
+					"fastboot": "vermeer_global_images_OS3.0.6.0.WNKMIXM_20251223.0000.00_16.0_global_e26b212e18.tgz"
 				},
 				"OS3.0.5.0.WNKMIXM": {
 					"os": "OS3.0.5.0.WNKMIXM",

@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-01-21 16:10:56",
+    "time": "2026-01-22 22:15:53",
     "developing": "no",
     "roms": [
       {
@@ -42,6 +42,22 @@
           "en": "Xiaomi 13T"
         },
         "rom": "OS2.0.201.0.VMFLMCR"
+      },
+      {
+        "code": "houji",
+        "name": {
+          "zh": "小米 14",
+          "en": "Xiaomi 14"
+        },
+        "rom": "OS3.0.6.0.WNCCNXM"
+      },
+      {
+        "code": "aurora",
+        "name": {
+          "zh": "小米 14 Ultra / Ultra Ti",
+          "en": "Xiaomi 14 Ultra"
+        },
+        "rom": "OS3.0.6.0.WNACNXM"
       },
       {
         "code": "degas",
@@ -89,7 +105,7 @@
           "zh": "小米 15T",
           "en": "Xiaomi 15T"
         },
-        "rom": "OS3.0.2.0.WOELMCR"
+        "rom": "OS3.0.4.0.WOEMIDC; OS3.0.2.0.WOELMCR"
       },
       {
         "code": "klimt",
@@ -97,7 +113,31 @@
           "zh": "小米 15T Pro",
           "en": "Xiaomi 15T Pro"
         },
-        "rom": "OS3.0.10.0.WOSMIXM; OS3.0.12.0.WOSEUXM; OS3.0.5.0.WOSTRXM; OS3.0.5.0.WOSJPXM"
+        "rom": "OS3.0.10.0.WOSMIXM; OS3.0.3.0.WOSMIDC; OS3.0.12.0.WOSEUXM; OS3.0.5.0.WOSTRXM; OS3.0.5.0.WOSJPXM"
+      },
+      {
+        "code": "pudding",
+        "name": {
+          "zh": "小米 17",
+          "en": "Xiaomi 17"
+        },
+        "rom": "OS3.0.300.1.WPCCNXM; OS3.0.41.0.WPCCNXM"
+      },
+      {
+        "code": "pandora",
+        "name": {
+          "zh": "小米 17 Pro",
+          "en": "Xiaomi 17 Pro"
+        },
+        "rom": "OS3.0.41.0.WBLCNXM"
+      },
+      {
+        "code": "popsicle",
+        "name": {
+          "zh": "小米 17 Pro Max",
+          "en": "Xiaomi 17 Pro Max"
+        },
+        "rom": "OS3.0.41.0.WPBCNXM"
       },
       {
         "code": "sheng",
@@ -146,6 +186,22 @@
           "en": "Redmi 14C"
         },
         "rom": "OS2.0.208.0.VGTEUXM; OS2.0.202.0.VGTIDXM; OS2.0.203.0.VGTLMCR"
+      },
+      {
+        "code": "creek",
+        "name": {
+          "zh": "REDMI 15 4G",
+          "en": "REDMI 15 4G"
+        },
+        "rom": "OS2.0.206.0.VBOLMCR"
+      },
+      {
+        "code": "dew",
+        "name": {
+          "zh": "REDMI 15C / POCO C85",
+          "en": "REDMI 15C / POCO C85"
+        },
+        "rom": "OS2.0.205.0.VBNTWXM"
       },
       {
         "code": "spring",
@@ -217,7 +273,15 @@
           "zh": "REDMI Note 15 5G",
           "en": "REDMI Note 15 5G"
         },
-        "rom": "OS2.0.205.0.VPQINXM"
+        "rom": "OS2.0.205.0.VPQINXM; OS2.0.203.0.VPQLMCR"
+      },
+      {
+        "code": "lapis",
+        "name": {
+          "zh": "REDMI Note 15 Pro 5G",
+          "en": "REDMI Note 15 Pro 5G"
+        },
+        "rom": "OS2.0.203.0.VPPLMCR; OS2.0.202.0.VPPLMCR"
       },
       {
         "code": "flourite",
@@ -236,6 +300,14 @@
         "rom": "OS3.0.1.0.VLFCNXM"
       },
       {
+        "code": "vermeer",
+        "name": {
+          "zh": "Redmi K70 / POCO F6 Pro",
+          "en": "Redmi K70 / POCO F6 Pro"
+        },
+        "rom": "OS3.0.8.0.WNKCNXM"
+      },
+      {
         "code": "rothko",
         "name": {
           "zh": "Redmi K70 至尊版 / 小米 14T Pro",
@@ -244,12 +316,28 @@
         "rom": "OS3.0.1.0.WNNTWXM; OS3.0.1.0.WNNRUXM; OS3.0.1.0.WNNIDXM; OS2.0.204.0.VNNLMCR"
       },
       {
+        "code": "zorn",
+        "name": {
+          "zh": "REDMI K80 / POCO F7 Pro",
+          "en": "REDMI K80 / POCO F7 Pro"
+        },
+        "rom": "OS3.0.8.0.WOKCNXM"
+      },
+      {
+        "code": "miro",
+        "name": {
+          "zh": "REDMI K80 Pro / POCO F7 Ultra",
+          "en": "REDMI K80 Pro / POCO F7 Ultra"
+        },
+        "rom": "OS3.0.5.0.WOMCNXM"
+      },
+      {
         "code": "myron",
         "name": {
           "zh": "REDMI K90 Pro Max / POCO F8 Ultra",
           "en": "REDMI K90 Pro Max / POCO F8 Ultra"
         },
-        "rom": "OS3.0.5.0.WPMTWXM; OS3.0.7.0.WPMEUXM"
+        "rom": "OS3.0.300.2.WPMCNXM; OS3.0.5.0.WPMTWXM; OS3.0.7.0.WPMEUXM"
       },
       {
         "code": "xun",
@@ -258,6 +346,14 @@
           "en": "Redmi Pad SE"
         },
         "rom": "OS2.0.205.0.VMUEUXM"
+      },
+      {
+        "code": "flute",
+        "name": {
+          "zh": "REDMI 平板 2 Pro",
+          "en": "REDMI Pad 2 Pro"
+        },
+        "rom": "OS2.0.207.0.VPWTRXM"
       },
       {
         "code": "serenity",
