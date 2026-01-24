@@ -15,12 +15,23 @@ jobs:
     steps:
       - name: Checkout target repo
         uses: actions/checkout@v4
+        with:
+          ref: tw_version # 確保切換到正確的分支
 
       - name: Sync upstream changes
         id: sync
-        uses: a2oon/actions-sync-fork@v1
+        uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
         with:
+          upstream_sync_repo: HegeKen/HyperData
+          upstream_sync_branch: main
+          target_sync_branch: tw_version
           target_repo_token: ${{ secrets.GITHUB_TOKEN }}
-          upstream_repository: HegeKen/HyperData # 記得替換成原作者/專案名
-          target_branch: tw_version           # 你的分支
-          upstream_branch: main         # 原專案分支
+          test_mode: false
+
+      - name: New commits found
+        if: steps.sync.outputs.has_new_commits == 'true'
+        run: echo "New commits were found to sync."
+
+      - name: No new commits
+        if: steps.sync.outputs.has_new_commits == 'false'
+        run: echo "There were no new commits."
