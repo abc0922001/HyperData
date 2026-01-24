@@ -10,6 +10,10 @@ on:
       - 'assets/css/input.css'
       - '.github/workflows/update-tw-page.yml'
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Upstream Sync"]
+    types:
+      - completed
 
 permissions:
   contents: write
@@ -17,6 +21,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
 
     steps:
     - name: Checkout code
