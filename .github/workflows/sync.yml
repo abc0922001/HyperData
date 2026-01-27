@@ -5,18 +5,19 @@ permissions:
 
 on:
   schedule:
-    - cron: "0 */12 * * *" # 每 12 小時執行一次 (UTC 00:00, 12:00)
-  workflow_dispatch:      # 保留手動觸發功能
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
 
 jobs:
   sync_latest_from_upstream:
     runs-on: ubuntu-latest
-    if: ${{ github.event.repository.fork }}
+    
     steps:
       - name: Checkout target repo
         uses: actions/checkout@v4
         with:
-          ref: tw_version # 確保切換到正確的分支
+          ref: tw_version
+          fetch-depth: 0
 
       - name: Sync upstream changes
         id: sync
@@ -26,12 +27,9 @@ jobs:
           upstream_sync_branch: main
           target_sync_branch: tw_version
           target_repo_token: ${{ secrets.GITHUB_TOKEN }}
-          test_mode: false
 
-      - name: New commits found
-        if: steps.sync.outputs.has_new_commits == 'true'
-        run: echo "New commits were found to sync."
-
-      - name: No new commits
-        if: steps.sync.outputs.has_new_commits == 'false'
-        run: echo "There were no new commits."
+      - name: Log sync result
+        run: |
+          [ "${{ steps.sync.outputs.has_new_commits }}" == "true" ] \
+            && echo "New commits were found to sync." \
+            || echo "There were no new commits."
