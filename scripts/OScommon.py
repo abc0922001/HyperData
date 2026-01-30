@@ -487,6 +487,8 @@ flags = {
 	"goya_tr_global": "goya",
 	"klimt_global": "klimt",
 	"nezha":"nezha",
+	"flute": "flute",
+	"flute_demo": "flute",
 	"nezha_demo":"nezha",
 	"klimt_eea_global": "klimt",
 	"klimt_id_global": "klimt",
