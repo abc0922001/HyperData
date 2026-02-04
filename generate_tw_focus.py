@@ -87,7 +87,7 @@ def get_abandoned_threshold(history_list):
     median_val = statistics.median(intervals)
     mad = statistics.median([abs(x - median_val) for x in intervals])
     mad_adj = max(mad, 1)
-    thresh_mad = 4 * 1.4826 * mad_adj + median_val
+    thresh_mad = 3 * 1.4826 * mad_adj + median_val
     
     # Max Interval Threshold Calculation
     max_val = max(intervals)
