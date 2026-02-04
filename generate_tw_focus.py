@@ -65,33 +65,8 @@ def parse_history_dates(history_list):
             pass
     return dates
 
-def is_abandoned_mad(history_list, days_since_last):
-    if not history_list or len(history_list) < 2:
-        return False
-    
-    dates = parse_history_dates(history_list)
-    if len(dates) < 2:
-        return False
-    
-    # 計算間隔（利用已排序特性）
-    intervals = [
-        (dates[i] - dates[i+1]).days 
-        for i in range(len(dates) - 1) 
-        if (dates[i] - dates[i+1]).days >= 0
-    ]
-    
-    if not intervals:
-        return False
-
-    median_val = statistics.median(intervals)
-    mad = statistics.median([abs(x - median_val) for x in intervals])
-    mad_adj = max(mad, 1)
-    score = (days_since_last - median_val) / (1.4826 * mad_adj)
-    
-    return score > 4
-
-def get_max_interval(history_list):
-    """計算歷史更新最大間隔天數"""
+def get_abandoned_threshold(history_list):
+    """計算棄更門檻天數 (整合 MAD 與 Max Interval)"""
     if not history_list or len(history_list) < 2:
         return 0
     
@@ -108,7 +83,18 @@ def get_max_interval(history_list):
     if not intervals:
         return 0
         
-    return max(intervals)
+    # MAD Threshold Calculation
+    median_val = statistics.median(intervals)
+    mad = statistics.median([abs(x - median_val) for x in intervals])
+    mad_adj = max(mad, 1)
+    thresh_mad = 4 * 1.4826 * mad_adj + median_val
+    
+    # Max Interval Threshold Calculation
+    max_val = max(intervals)
+    thresh_max = 2 * max_val if max_val > 0 else float('inf')
+    
+    # 若超過任一門檻即視為棄更 -> 取最小值作為判斷標準
+    return int(min(thresh_mad, thresh_max))
 
 print(f"::group::初始化設定")
 print(f"工作目錄: {os.getcwd()}")
@@ -376,13 +362,17 @@ for device in final_list:
     try:
         tw_dt = datetime.strptime(tw_date, "%Y-%m-%d").replace(tzinfo=tz_tw)
         days_ago = (now_tw - tw_dt).days
-        max_interval = get_max_interval(tw_history)
-        is_abandoned = is_abandoned_mad(tw_history, days_ago) or (max_interval > 0 and days_ago > 2 * max_interval)
+        
+        threshold_days = get_abandoned_threshold(tw_history)
+        is_abandoned = threshold_days > 0 and days_ago > threshold_days
 
         if is_abandoned:
             ago_html = f'<span class="text-xs font-medium px-1.5 py-0.5 rounded mt-1 text-white" style="background-color: #6b7280;">疑似棄更 ({days_ago} 天)</span>'
         else:
             status_text = f"已過 {days_ago} 天"
+            if threshold_days > 0:
+                status_text += f" / 棄更門檻 {threshold_days} 天"
+
             if days_ago > 90: 
                 ago_color = "text-orange-700 bg-orange-50"
             elif days_ago > 30: 
