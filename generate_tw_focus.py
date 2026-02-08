@@ -328,12 +328,21 @@ html_parts = [f"""<!DOCTYPE html>
                 </div>
                 <div class="flex flex-wrap gap-2 w-full md:w-auto items-center">
                     <label class="inline-flex items-center cursor-pointer bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded-full text-sm font-medium transition-colors select-none">
-                        <input type="checkbox" id="recentFilter" class="sr-only peer">
-                        <div class="w-4 h-4 rounded-sm border-2 border-gray-400 mr-2 peer-checked:bg-mi-orange peer-checked:border-mi-orange flex items-center justify-center transition-all">
-                            <svg class="w-3 h-3 text-white scale-0 peer-checked:scale-100 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <input type="checkbox" id="recentFilter" class="sr-only">
+                        <div id="checkboxBox" class="w-4 h-4 rounded-sm border-2 border-gray-400 mr-2 flex items-center justify-center transition-all">
+                            <svg id="checkmark" class="w-3 h-3 text-white scale-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                         </div>
-                        最近 <span id="daysLabel">30</span> 天
+                        最近
                     </label>
+                    <select id="daysFilter" aria-label="選擇天數" class="bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 px-3 rounded-full text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors cursor-pointer border-0">
+                        <option value="7">7 天</option>
+                        <option value="14">14 天</option>
+                        <option value="30" selected>30 天</option>
+                        <option value="60">60 天</option>
+                        <option value="90">90 天</option>
+                        <option value="180">180 天</option>
+                        <option value="365">365 天</option>
+                    </select>
                     <select id="brandFilter" aria-label="選擇品牌" class="bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 px-4 rounded-full text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors cursor-pointer border-0">
                         {brand_options}
                     </select>
@@ -424,13 +433,30 @@ html_parts.append(f"""
         const searchInput = document.getElementById('searchInput');
         const brandFilter = document.getElementById('brandFilter');
         const recentFilter = document.getElementById('recentFilter');
-        const daysLabel = document.getElementById('daysLabel');
-        let recentDaysThreshold = 30;
+        const daysFilter = document.getElementById('daysFilter');
+        const checkboxBox = document.getElementById('checkboxBox');
+        const checkmark = document.getElementById('checkmark');
+
+        function updateCheckboxVisual() {{
+            if (recentFilter.checked) {{
+                checkboxBox.style.backgroundColor = '#ff6900';
+                checkboxBox.style.borderColor = '#ff6900';
+                checkmark.classList.remove('scale-0', 'hidden');
+                checkmark.classList.add('scale-100');
+            }} else {{
+                checkboxBox.style.backgroundColor = '';
+                checkboxBox.style.borderColor = '';
+                checkboxBox.classList.add('border-gray-400');
+                checkmark.classList.add('scale-0', 'hidden');
+                checkmark.classList.remove('scale-100');
+            }}
+        }}
 
         function filterContent() {{
             const searchText = searchInput.value.toLowerCase().trim();
             const selectedBrand = brandFilter.value;
             const isRecent = recentFilter.checked;
+            const recentDaysThreshold = parseInt(daysFilter.value) || 30;
             const cards = document.querySelectorAll('.device-card');
             const now = new Date();
 
@@ -457,7 +483,13 @@ html_parts.append(f"""
         
         searchInput.addEventListener('input', filterContent);
         brandFilter.addEventListener('change', filterContent);
-        recentFilter.addEventListener('change', filterContent);
+        recentFilter.addEventListener('change', function() {{
+            updateCheckboxVisual();
+            filterContent();
+        }});
+        daysFilter.addEventListener('change', function() {{
+            if (recentFilter.checked) filterContent();
+        }});
 
         try {{
             const urlParams = new URLSearchParams(window.location.search);
@@ -475,9 +507,19 @@ html_parts.append(f"""
             if (daysParam) {{
                 const days = parseInt(daysParam);
                 if (!isNaN(days) && days > 0) {{
-                    recentDaysThreshold = days;
-                    daysLabel.textContent = days;
+                    const daysOptions = Array.from(daysFilter.options);
+                    const matchDays = daysOptions.find(opt => opt.value === String(days));
+                    if (matchDays) {{
+                        daysFilter.value = days;
+                    }} else {{
+                        const newOption = document.createElement('option');
+                        newOption.value = days;
+                        newOption.textContent = days + ' 天';
+                        daysFilter.appendChild(newOption);
+                        daysFilter.value = days;
+                    }}
                     recentFilter.checked = true;
+                    updateCheckboxVisual();
                 }}
             }}
 
