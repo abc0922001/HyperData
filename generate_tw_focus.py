@@ -197,11 +197,12 @@ print(f"Collected {len(final_list)} devices.")
 # === 優化 4: 批次生成 HTML (使用 list) ===
 def generate_history_html(history_list, type_class):
     parts = [
-        f'<div class="hidden mt-2 border-t border-gray-100 pt-2 animate-fade-in" data-type="{type_class}">',
-        '<table class="w-full text-xs text-left">',
-        '<thead class="text-gray-500 font-medium border-b border-gray-50"><tr>',
-        '<th class="py-2 pl-1">版本</th><th class="py-2">日期</th>',
-        '<th class="py-2 text-center">間隔</th><th class="py-2 text-right pr-1">Android</th>',
+        f'<div class="hidden mt-3 border-t border-gray-100 pt-3 animate-fade-in" data-type="{type_class}">',
+        '<div class="overflow-x-auto">',
+        '<table class="w-full text-xs text-left whitespace-nowrap">',
+        '<thead class="text-gray-400 font-medium border-b border-gray-50"><tr>',
+        '<th class="py-2 pl-2">版本</th><th class="py-2">日期</th>',
+        '<th class="py-2 text-center">間隔</th><th class="py-2 text-right pr-2">Android</th>',
         '</tr></thead><tbody class="divide-y divide-gray-50">'
     ]
     
@@ -215,148 +216,208 @@ def generate_history_html(history_list, type_class):
                 delta_days = (current_date - prev_date).days
                 
                 if delta_days > 90: 
-                    bg_color = "bg-orange-50 text-orange-600"
+                    bg_color = "bg-orange-100 text-orange-700"
                 elif delta_days < 30: 
-                    bg_color = "bg-green-50 text-green-600"
+                    bg_color = "bg-green-100 text-green-700"
                 else: 
                     bg_color = "bg-gray-100 text-gray-600"
                     
-                interval_html = f'<span class="px-1.5 py-0.5 rounded {bg_color}">{delta_days} 天</span>'
+                interval_html = f'<span class="px-2 py-0.5 rounded-full text-[10px] font-medium {bg_color}">{delta_days} 天</span>'
             except: 
                 pass
         else:
-            interval_html = '<span class="text-xs text-blue-600">首版</span>'
+            interval_html = '<span class="text-[10px] font-medium text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">首版</span>'
 
         parts.append(
             f'<tr class="hover:bg-gray-50 transition-colors">'
-            f'<td class="py-2 pl-1 font-mono text-gray-700">{rom["os"]}</td>'
-            f'<td class="py-2 text-gray-600">{rom["release"]}</td>'
-            f'<td class="py-2 text-center">{interval_html}</td>'
-            f'<td class="py-2 text-right pr-1 text-gray-600">{rom["android"]}</td>'
+            f'<td class="py-2.5 pl-2 font-mono text-gray-700 font-medium">{rom["os"]}</td>'
+            f'<td class="py-2.5 text-gray-500">{rom["release"]}</td>'
+            f'<td class="py-2.5 text-center">{interval_html}</td>'
+            f'<td class="py-2.5 text-right pr-2 text-gray-500">{rom["android"]}</td>'
             f'</tr>'
         )
     
-    parts.append('</tbody></table></div>')
+    parts.append('</tbody></table></div></div>')
     return ''.join(parts)
 
 def generate_card_html(info, region_label, region_type, tw_ver_str=None):
     if not info:
         if region_type == 'global':
-            return '<div class="flex items-center justify-center p-3 rounded-lg border border-dashed border-gray-200 bg-gray-50 h-[88px]"><span class="text-xs text-gray-400 italic">無國際版資料</span></div>'
+            return (
+                '<div class="flex items-center justify-center p-4 rounded-xl border border-dashed border-gray-200 bg-gray-50/50 h-[104px]">'
+                '<span class="text-xs text-gray-400 font-medium italic">無國際版資料</span>'
+                '</div>'
+            )
         return ""
 
     latest = info['latest']
     ver_str = latest['os']
     
-    # 版本比較
+    # Version Comparison Logic
     ver_status_tag = ""
     if region_type != 'tw' and tw_ver_str:
         tw_tup = version_to_tuple(tw_ver_str)
         curr_tup = version_to_tuple(ver_str)
         if tw_tup < curr_tup:
-            ver_status_tag = '<span class="text-xs px-1.5 py-0.5 rounded text-green-700 bg-green-50">↑ 領先</span>'
+            ver_status_tag = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full text-green-700 bg-green-100 border border-green-200 shadow-sm">領先</span>'
         elif tw_tup > curr_tup:
-            ver_status_tag = '<span class="text-xs px-1.5 py-0.5 rounded text-red-700 bg-red-50">↓ 落後</span>'
+            ver_status_tag = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full text-rose-700 bg-rose-100 border border-rose-200 shadow-sm">落後</span>'
         else:
-            ver_status_tag = '<span class="text-xs px-1.5 py-0.5 rounded text-gray-600 bg-gray-100">= 同步</span>'
+            ver_status_tag = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full text-gray-600 bg-gray-100 border border-gray-200">同步</span>'
 
-    # 樣式配置
+    # Style Configuration
+    # (Background, Border, BadgeBg, BadgeText, HoverBg, GroupClass)
     styles = {
-        'tw': ('bg-blue-50/50', 'border-blue-100', 'bg-blue-100', 'text-blue-700', 'hover:bg-blue-50', 'group/tw'),
-        'global': ('bg-white/50', 'border-gray-300 border-dashed', 'bg-gray-100', 'text-gray-600', 'hover:bg-gray-50', 'group/gl'),
-        'other': ('bg-purple-50/30', 'border-purple-100 border-dashed', 'bg-purple-100', 'text-purple-700', 'hover:bg-purple-50', 'group/ot')
+        'tw': ('bg-gradient-to-br from-blue-50 to-white', 'border-blue-100', 'bg-blue-100', 'text-blue-700', 'hover:border-blue-300', 'group/tw'),
+        'global': ('bg-white', 'border-gray-200', 'bg-gray-100', 'text-gray-600', 'hover:border-gray-300', 'group/gl'),
+        'other': ('bg-purple-50/30', 'border-purple-100', 'bg-purple-100', 'text-purple-700', 'hover:border-purple-300', 'group/ot')
     }
-    bg_color, border_color, badge_bg, badge_text, hover_bg, group_class = styles[region_type]
+    bg_color, border_color, badge_bg, badge_text, hover_border, group_class = styles[region_type]
 
     history_html = generate_history_html(info['history'], f'{region_type}-history')
     
-    # 計算天數
+    # Calculate Days Ago
     ago_html = ""
     try:
         dt = datetime.strptime(latest['release'], "%Y-%m-%d").replace(tzinfo=tz_tw)
         days = (now_tw - dt).days
-        ago_html = f'<div class="text-[11px] text-gray-600 mt-0.5">({days} 天前)</div>'
+        ago_html = f'<div class="text-[10px] text-gray-500 font-medium mt-1">({days} 天前)</div>'
     except: 
         pass
 
     return (
-        f'<div class="{group_class}">'
+        f'<div class="{group_class} relative">'
         f'<button type="button" onclick="toggleHistory(this)" aria-expanded="false" '
-        f'class="w-full cursor-pointer flex items-center justify-between p-3 rounded-lg {bg_color} border {border_color} {hover_bg} transition-colors relative select-none focus:outline-none focus:ring-2 focus:ring-blue-500 text-left">'
-        f'<div class="flex items-center gap-3">'
-        f'<span class="inline-flex items-center px-2 py-1 rounded text-xs font-medium {badge_bg} {badge_text} shadow-sm transition-colors">{region_label} ▾</span>'
-        f'<div><div class="text-sm font-mono text-gray-700 font-bold">{ver_str}</div>'
-        f'<div class="text-xs text-gray-600">Android {latest["android"]}</div></div></div>'
+        f'class="w-full text-left cursor-pointer flex flex-col p-4 rounded-xl {bg_color} border {border_color} {hover_border} transition-all duration-200 shadow-sm hover:shadow-md relative select-none focus:outline-none focus:ring-2 focus:ring-blue-500/20">'
+        
+        f'<div class="flex items-center justify-between w-full mb-2">'
+        f'<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wide {badge_bg} {badge_text}">{region_label}</span>'
+        f'{ver_status_tag}'
+        f'</div>'
+        
+        f'<div class="flex items-end justify-between w-full">'
+        f'<div>'
+        f'<div class="text-sm font-mono text-gray-900 font-bold tracking-tight">{ver_str}</div>'
+        f'<div class="text-[10px] text-gray-500 font-medium mt-0.5">Android {latest["android"]}</div>'
+        f'</div>'
+        
         f'<div class="flex flex-col items-end">'
-        f'<div class="text-xs text-gray-600 font-medium">{latest["release"]}</div>'
-        f'{ago_html}{ver_status_tag}</div></button>{history_html}</div>'
+        f'<div class="text-xs font-semibold text-gray-700">{latest["release"]}</div>'
+        f'{ago_html}'
+        f'</div>'
+        f'</div>'
+        
+        f'</button>{history_html}</div>'
     )
 
 # === 優化 5: 主 HTML 使用 list 累積 ===
 html_parts = [f"""<!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-TW" class="scroll-smooth">
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小米 HyperOS 台灣版更新追蹤</title>
     <meta name="description" content="小米 HyperOS 台灣版更新追蹤 - 提供 Xiaomi, Redmi, POCO 等機型的 HyperOS 台灣版與國際版更新資訊與歷史版本記錄。">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self';">
-    <link rel="stylesheet" href="assets/css/tw.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif; }}
-        html {{ scroll-padding-top: 6rem; }}
-        .no-scrollbar::-webkit-scrollbar {{ display: none; }}
-        .no-scrollbar {{ -ms-overflow-style: none; scrollbar-width: none; }}
-        .device-card {{ content-visibility: auto; contain-intrinsic-size: 150px; }}
-        @media (prefers-reduced-motion: reduce) {{
-            *, ::before, ::after {{
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-                scroll-behavior: auto !important;
+        :root {{
+            --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }}
+        body {{ font-family: var(--font-sans); }}
+        .font-mono {{ font-family: var(--font-mono); }}
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {{ width: 6px; height: 6px; }}
+        ::-webkit-scrollbar-track {{ background: transparent; }}
+        ::-webkit-scrollbar-thumb {{ background: #cbd5e1; border-radius: 3px; }}
+        ::-webkit-scrollbar-thumb:hover {{ background: #94a3b8; }}
+
+        .glass-header {{
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+        }}
+        
+        .device-card {{ content-visibility: auto; contain-intrinsic-size: 200px; }}
+        
+        @keyframes fadeIn {{
+            from {{ opacity: 0; transform: translateY(-4px); }}
+            to {{ opacity: 1; transform: translateY(0); }}
+        }}
+        .animate-fade-in {{ animation: fadeIn 0.2s ease-out forwards; }}
+    </style>
+    <script>
+        tailwind.config = {{
+            theme: {{
+                extend: {{
+                    colors: {{
+                        'mi-orange': '#ff6900',
+                        'mi-black': '#191919',
+                    }}
+                }}
             }}
         }}
-    </style>
+    </script>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased min-h-screen pb-10">
-    <a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-blue-600">跳至主要內容</a>
-    <div class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
-        <div class="max-w-4xl mx-auto px-4 py-4">
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen pb-20 selection:bg-orange-100 selection:text-orange-900">
+    <a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-blue-600 focus:ring-2 focus:ring-blue-500 rounded-lg m-4">跳至主要內容</a>
+    
+    <div class="sticky top-0 z-50 glass-header transition-all duration-300">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                <div>
-                    <h1 class="text-2xl font-bold text-gray-900 tracking-tight text-mi-orange">HyperOS TW Tracker</h1>
-                    <p class="text-xs text-gray-600 mt-1">更新時間: {gen_time} (UTC+8)</p>
+                <div class="flex items-center gap-3">
+                    <div class="h-10 w-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center text-white font-bold shadow-lg shadow-orange-500/20">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-slate-900 tracking-tight leading-none">HyperOS <span class="text-mi-orange">Tracker</span></h1>
+                        <p class="text-xs text-slate-500 mt-1 font-medium">更新時間: {gen_time} (UTC+8)</p>
+                    </div>
                 </div>
-                <div class="flex flex-wrap gap-2 w-full md:w-auto items-center">
-                    <label class="inline-flex items-center cursor-pointer bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded-full text-sm font-medium transition-colors select-none">
-                        <input type="checkbox" id="recentFilter" class="sr-only">
-                        <div id="checkboxBox" class="w-4 h-4 rounded-sm border-2 border-gray-400 mr-2 flex items-center justify-center transition-all">
-                            <svg id="checkmark" class="w-3 h-3 text-white scale-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                        </div>
-                        最近
-                    </label>
-                    <select id="daysFilter" aria-label="選擇天數" class="bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 px-3 rounded-full text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors cursor-pointer border-0">
-                        <option value="7">7 天</option>
-                        <option value="14">14 天</option>
-                        <option value="30" selected>30 天</option>
-                        <option value="60">60 天</option>
-                        <option value="90">90 天</option>
-                        <option value="180">180 天</option>
-                        <option value="365">365 天</option>
-                    </select>
-                    <select id="brandFilter" aria-label="選擇品牌" class="bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 px-4 rounded-full text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors cursor-pointer border-0">
-                        {brand_options}
-                    </select>
-                    <div class="relative flex-grow md:w-48">
-                        <input type="text" id="searchInput" aria-label="搜尋裝置" class="w-full bg-gray-100 hover:bg-gray-200 focus:bg-white text-gray-700 py-2 pl-10 pr-4 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all border-0 placeholder-gray-400" placeholder="搜尋機型...">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-600">
+                
+                <div class="flex flex-col sm:flex-row gap-2 w-full md:w-auto">
+                    <div class="relative flex-grow sm:w-64 group">
+                        <input type="text" id="searchInput" aria-label="搜尋機型" 
+                            class="w-full bg-slate-100/50 hover:bg-slate-100 focus:bg-white text-slate-700 py-2.5 pl-10 pr-4 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all border border-transparent focus:shadow-sm placeholder-slate-400" 
+                            placeholder="搜尋機型...">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400 group-focus-within:text-blue-500 transition-colors">
                             <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                         </div>
+                    </div>
+                    
+                    <div class="flex gap-2 overflow-x-auto pb-1 sm:pb-0 no-scrollbar">
+                        <select id="brandFilter" aria-label="品牌篩選" class="bg-white hover:bg-slate-50 text-slate-700 py-2.5 px-4 pr-8 rounded-xl text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 border border-slate-200 cursor-pointer transition-all shadow-sm">
+                            {brand_options}
+                        </select>
+                        
+                        <select id="daysFilter" aria-label="時間範圍" class="bg-white hover:bg-slate-50 text-slate-700 py-2.5 px-4 pr-8 rounded-xl text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 border border-slate-200 cursor-pointer transition-all shadow-sm">
+                            <option value="7">7 天</option>
+                            <option value="14">14 天</option>
+                            <option value="30" selected>30 天</option>
+                            <option value="60">60 天</option>
+                            <option value="90">90 天</option>
+                            <option value="365">1 年</option>
+                        </select>
+                        
+                        <label class="inline-flex items-center cursor-pointer bg-white hover:bg-slate-50 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all select-none border border-slate-200 shadow-sm active:scale-95">
+                            <input type="checkbox" id="recentFilter" class="sr-only">
+                            <div id="checkboxBox" class="w-4 h-4 rounded border-2 border-slate-300 mr-2 flex items-center justify-center transition-all bg-slate-50">
+                                <svg id="checkmark" class="w-3 h-3 text-white scale-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            最近
+                        </label>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <main class="max-w-4xl mx-auto px-4 mt-6" id="content">
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 space-y-6" id="content">
 """]
 
 # 生成設備卡片
@@ -401,35 +462,58 @@ for device in final_list:
     ) if device['others'] else ""
 
     html_parts.append(
-        f'<div class="device-card bg-white rounded-2xl p-5 mb-4 shadow-sm hover:shadow-md transition-all border border-gray-100" data-brand="{device["brand"]}" data-date="{tw_date}">'
-        f'<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">'
-        f'<div class="flex items-start gap-3">'
-        f'<div class="h-10 w-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 font-bold text-lg flex-shrink-0">{device["name"][0]}</div>'
-        f'<div><h2 class="text-lg font-bold text-gray-900 leading-tight device-title">{device["name"]}</h2>'
-        f'<div class="flex items-center gap-2 mt-1">'
-        f'<span class="text-xs font-mono text-gray-600 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100 device-code">{device["code"]}</span>'
-        f'<span class="text-xs text-gray-600 bg-gray-50 px-1.5 py-0.5 rounded border border-gray-100">{device["brand"]}</span>'
-        f'</div></div></div>'
+        f'<div class="device-card bg-white rounded-3xl p-6 shadow-sm ring-1 ring-gray-900/5 hover:shadow-xl hover:ring-gray-900/10 transition-all duration-300 transform hover:-translate-y-1" data-brand="{device["brand"]}" data-date="{tw_date}">'
+        
+        f'<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-2">'
+        f'<div class="flex items-start gap-4">'
+        f'<div class="h-12 w-12 rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center text-slate-700 font-bold text-xl flex-shrink-0 shadow-inner">{device["name"][0]}</div>'
+        f'<div>'
+        f'<h2 class="text-xl font-bold text-slate-900 leading-tight device-title tracking-tight">{device["name"]}</h2>'
+        f'<div class="flex items-center gap-2 mt-1.5">'
+        f'<span class="text-[11px] font-mono font-medium text-slate-500 bg-slate-50 px-2 py-1 rounded-lg border border-slate-100 device-code">{device["code"]}</span>'
+        f'<span class="text-[11px] font-bold text-slate-500 bg-slate-50 px-2 py-1 rounded-lg border border-slate-100 uppercase tracking-wide">{device["brand"]}</span>'
+        f'</div>'
+        f'</div>'
+        f'</div>'
+        
         f'<div class="flex flex-col items-end">'
-        f'<span class="text-sm font-bold text-gray-700 bg-gray-50 px-2 py-1 rounded-md">{tw_date}</span>'
-        f'{ago_html}</div></div>'
-        f'<div class="grid grid-cols-1 md:grid-cols-2 gap-3">{tw_card}{gl_card}{others_cards}</div>'
+        f'<div class="flex items-center gap-2">'
+        f'<span class="text-xs font-bold text-slate-400 uppercase tracking-wider">更新於</span>'
+        f'<span class="text-sm font-bold text-slate-700 bg-slate-50 px-2.5 py-1 rounded-lg border border-slate-100 font-mono">{tw_date}</span>'
+        f'</div>'
+        f'{ago_html}'
+        f'</div>'
+        f'</div>'
+        
+        f'<div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6">'
+        f'{tw_card}{gl_card}{others_cards}'
+        f'</div>'
         f'</div>'
     )
 
 html_parts.append(f"""
     </main>
-    <div class="max-w-4xl mx-auto px-4 py-8 text-center text-gray-500 text-xs">
-        Generated by GitHub Actions • Total {len(final_list)} Devices
-    </div>
+    
+    <footer class="mt-20 border-t border-slate-200 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4 py-12 text-center">
+            <p class="text-slate-500 text-sm font-medium">由 GitHub Actions 自動生成</p>
+            <p class="text-slate-400 text-xs mt-2">共追蹤 {len(final_list)} 款機型</p>
+        </div>
+    </footer>
+
     <script>
         function toggleHistory(element) {{
             const historyDiv = element.nextElementSibling;
             if (historyDiv) {{
                 const isHidden = historyDiv.classList.toggle('hidden');
                 element.setAttribute('aria-expanded', !isHidden);
+                
+                // Add rotation to arrow if exists (optional enhancement)
+                // const arrow = element.querySelector('.arrow-icon');
+                // if(arrow) arrow.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
             }}
         }}
+        
         const searchInput = document.getElementById('searchInput');
         const brandFilter = document.getElementById('brandFilter');
         const recentFilter = document.getElementById('recentFilter');
@@ -444,9 +528,8 @@ html_parts.append(f"""
                 checkmark.classList.remove('scale-0', 'hidden');
                 checkmark.classList.add('scale-100');
             }} else {{
-                checkboxBox.style.backgroundColor = '';
-                checkboxBox.style.borderColor = '';
-                checkboxBox.classList.add('border-gray-400');
+                checkboxBox.style.backgroundColor = '#f8fafc';
+                checkboxBox.style.borderColor = '#cbd5e1';
                 checkmark.classList.add('scale-0', 'hidden');
                 checkmark.classList.remove('scale-100');
             }}
@@ -477,7 +560,13 @@ html_parts.append(f"""
                     matchRecent = diffDays <= recentDaysThreshold;
                 }}
 
-                card.classList.toggle('hidden', !(matchText && matchBrand && matchRecent));
+                if (matchText && matchBrand && matchRecent) {{
+                    card.classList.remove('hidden');
+                    card.classList.add('animate-fade-in');
+                }} else {{
+                    card.classList.add('hidden');
+                    card.classList.remove('animate-fade-in');
+                }}
             }});
         }}
         
@@ -491,6 +580,7 @@ html_parts.append(f"""
             if (recentFilter.checked) filterContent();
         }});
 
+        // Initialize from URL params
         try {{
             const urlParams = new URLSearchParams(window.location.search);
             const query = urlParams.get('q');
@@ -530,8 +620,9 @@ html_parts.append(f"""
 </html>
 """)
 
+
 # 一次性寫入
 with open(output_file, 'w', encoding='utf-8') as f:
     f.write(''.join(html_parts))
 
-print(f"✓ Generated {output_file} with {len(final_list)} devices")
+print(f"[OK] Generated {output_file} with {len(final_list)} devices")

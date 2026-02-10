@@ -3,6 +3,9 @@ module.exports = {
   content: ["./generate_tw_focus.py"],
   theme: {
     extend: {
+      colors: {
+        'mi-orange': '#FF6900',
+      },
       fontFamily: {
         sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans TC"', '"Microsoft JhengHei"', 'sans-serif'],
         mono: ['"Intel One Mono"', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
