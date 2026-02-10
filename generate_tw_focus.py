@@ -318,51 +318,10 @@ html_parts = [f"""<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小米 HyperOS 台灣版更新追蹤</title>
     <meta name="description" content="小米 HyperOS 台灣版更新追蹤 - 提供 Xiaomi, Redmi, POCO 等機型的 HyperOS 台灣版與國際版更新資訊與歷史版本記錄。">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/tw.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {{
-            --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-            --font-mono: 'JetBrains Mono', monospace;
-        }}
-        body {{ font-family: var(--font-sans); }}
-        .font-mono {{ font-family: var(--font-mono); }}
-        
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {{ width: 6px; height: 6px; }}
-        ::-webkit-scrollbar-track {{ background: transparent; }}
-        ::-webkit-scrollbar-thumb {{ background: #cbd5e1; border-radius: 3px; }}
-        ::-webkit-scrollbar-thumb:hover {{ background: #94a3b8; }}
-
-        .glass-header {{
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(226, 232, 240, 0.6);
-        }}
-        
-        .device-card {{ content-visibility: auto; contain-intrinsic-size: 200px; }}
-        
-        @keyframes fadeIn {{
-            from {{ opacity: 0; transform: translateY(-4px); }}
-            to {{ opacity: 1; transform: translateY(0); }}
-        }}
-        .animate-fade-in {{ animation: fadeIn 0.2s ease-out forwards; }}
-    </style>
-    <script>
-        tailwind.config = {{
-            theme: {{
-                extend: {{
-                    colors: {{
-                        'mi-orange': '#ff6900',
-                        'mi-black': '#191919',
-                    }}
-                }}
-            }}
-        }}
-    </script>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen pb-20 selection:bg-orange-100 selection:text-orange-900">
     <a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-blue-600 focus:ring-2 focus:ring-blue-500 rounded-lg m-4">跳至主要內容</a>
@@ -417,8 +376,7 @@ html_parts = [f"""<!DOCTYPE html>
         </div>
     </div>
 
-    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 space-y-6" id="content">
-"""]
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 space-y-6" id="content">"""]
 
 # 生成設備卡片
 for device in final_list:
