@@ -53,8 +53,8 @@
           "android": "16.0",
           "release": "2026-02-05",
           "recovery": "dash-ota_full-OS3.0.8.0.WPLCNXM-user-16.0-7a58ec4edc.zip",
-          "fastboot": "",
-          "ctelecom": ""
+          "fastboot": "dash_images_OS3.0.8.0.WPLCNXM_20260203.0000.00_16.0_cn_b02e0cbe88.tgz",
+          "ctelecom": "dash_images_OS3.0.8.0.WPLCNXM_20260203.0000.00_16.0_cn_chinatelecom_8278129778.tgz"
         },
         "OS3.0.7.0.WPLCNXM": {
           "os": "OS3.0.7.0.WPLCNXM",
@@ -123,6 +123,14 @@
       "zone": "1",
       "ep": "0",
       "roms": {
+        "OS3.0.3.0.WPLCNDM": {
+          "os": "OS3.0.3.0.WPLCNDM",
+          "android": "16.0",
+          "release": "2026-02-11",
+          "recovery": "dash_demo-ota_full-OS3.0.3.0.WPLCNDM-user-16.0-babdbc9da6.zip",
+          "fastboot": "dash_demo_images_OS3.0.3.0.WPLCNDM_20260205.0000.00_16.0_cn_65afa661bb.tgz",
+          "ctelecom": "dash_demo_images_OS3.0.3.0.WPLCNDM_20260205.0000.00_16.0_cn_chinatelecom_870462d277.tgz"
+        },
         "OS3.0.2.0.WPLCNDM": {
           "os": "OS3.0.2.0.WPLCNDM",
           "android": "16.0",
