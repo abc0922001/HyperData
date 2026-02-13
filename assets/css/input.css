@@ -13,7 +13,7 @@
 }
 
 @layer components {
-  /* Custom Scrollbar */
+  /* Custom Scrollbar — Light */
   ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -28,6 +28,15 @@
     @apply bg-slate-400;
   }
 
+  /* Custom Scrollbar — Dark */
+  .dark ::-webkit-scrollbar-thumb {
+    @apply bg-slate-600;
+  }
+  .dark ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-500;
+  }
+
+  /* Glass Header — Light */
   .glass-header {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
@@ -35,16 +44,58 @@
     border-bottom: 1px solid rgba(226, 232, 240, 0.6);
   }
 
+  /* Glass Header — Dark */
+  .dark .glass-header {
+    background: rgba(15, 23, 42, 0.85);
+    border-bottom: 1px solid rgba(51, 65, 85, 0.6);
+  }
+
+  /* Device Card: content-visibility for performance */
   .device-card {
     content-visibility: auto;
     contain-intrinsic-size: 200px;
   }
 
+  /* Animations */
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-4px); }
     to { opacity: 1; transform: translateY(0); }
   }
   .animate-fade-in {
     animation: fadeIn 0.2s ease-out forwards;
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; max-height: 0; overflow: hidden; }
+    to { opacity: 1; max-height: 600px; overflow: visible; }
+  }
+  .animate-slide-down {
+    animation: slideDown 0.3s ease-out forwards;
+  }
+
+  /* Back-to-top button */
+  .back-to-top {
+    @apply fixed bottom-6 right-6 z-40 p-3 rounded-full shadow-lg transition-all duration-300;
+    @apply bg-mi-orange text-white hover:bg-orange-600 hover:shadow-xl;
+    @apply opacity-0 translate-y-4 pointer-events-none;
+  }
+  .back-to-top.visible {
+    @apply opacity-100 translate-y-0 pointer-events-auto;
+  }
+  .dark .back-to-top {
+    @apply bg-orange-500 hover:bg-orange-400;
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-in,
+    .animate-slide-down {
+      animation: none !important;
+    }
+    .device-card,
+    .back-to-top,
+    .glass-header {
+      transition: none !important;
+    }
   }
 }
