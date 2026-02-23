@@ -329,6 +329,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.5.0.WGUINXM": {
+					"os": "OS3.0.5.0.WGUINXM",
+					"android": "16.0",
+					"release": "2026-02-23",
+					"recovery": "flame_in_global-ota_full-OS3.0.5.0.WGUINXM-user-16.0-bf777d3ace.zip",
+					"fastboot": ""
+				},
 				"OS2.0.203.0.VGUINXM": {
 					"os": "OS2.0.203.0.VGUINXM",
 					"android": "15.0",

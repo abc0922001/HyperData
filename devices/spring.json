@@ -133,6 +133,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS2.0.208.0.VOUMIXM": {
+          "os": "OS2.0.208.0.VOUMIXM",
+          "android": "15.0",
+          "release": "2026-02-23",
+          "recovery": "spring_global-ota_full-OS2.0.208.0.VOUMIXM-user-15.0-f175f9cfa8.zip",
+          "fastboot": ""
+        },
         "OS2.0.207.0.VOUMIXM": {
           "os": "OS2.0.207.0.VOUMIXM",
           "android": "15.0",
@@ -310,6 +317,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS2.0.208.0.VOUINXM": {
+          "os": "OS2.0.208.0.VOUINXM",
+          "android": "15.0",
+          "release": "2026-02-23",
+          "recovery": "spring_in_global-ota_full-OS2.0.208.0.VOUINXM-user-15.0-8de18aea6f.zip",
+          "fastboot": ""
+        },
         "OS2.0.207.0.VOUINXM": {
           "os": "OS2.0.207.0.VOUINXM",
           "android": "15.0",

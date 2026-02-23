@@ -213,6 +213,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.2.0.WBOMIDC": {
+          "os": "OS3.0.2.0.WBOMIDC",
+          "android": "16.0",
+          "release": "2026-02-23",
+          "recovery": "creek_dc_global-ota_full-OS3.0.2.0.WBOMIDC-user-16.0-be417eb3ff.zip",
+          "fastboot": ""
+        },
         "OS3.0.1.0.WBOMIDC": {
           "os": "OS3.0.1.0.WBOMIDC",
           "android": "16.0",
@@ -376,6 +383,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.2.0.WBORUXM": {
+          "os": "OS3.0.2.0.WBORUXM",
+          "android": "16.0",
+          "release": "2026-02-23",
+          "recovery": "creek_ru_global-ota_full-OS3.0.2.0.WBORUXM-user-16.0-e20787044f.zip",
+          "fastboot": ""
+        },
         "OS3.0.1.0.WBORUXM": {
           "os": "OS3.0.1.0.WBORUXM",
           "android": "16.0",

@@ -796,6 +796,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.209.0.VNHIDXM": {
+					"os": "OS2.0.209.0.VNHIDXM",
+					"android": "15.0",
+					"release": "2026-02-23",
+					"recovery": "sapphiren_id_global-ota_full-OS2.0.209.0.VNHIDXM-user-15.0-a24188164a.zip",
+					"fastboot": ""
+				},
 				"OS2.0.208.0.VNHIDXM": {
 					"os": "OS2.0.208.0.VNHIDXM",
 					"android": "15.0",
@@ -972,7 +979,7 @@
 					"android": "15.0",
 					"release": "2026-02-07",
 					"recovery": "sapphiren_tr_global-ota_full-OS2.0.209.0.VNHTRXM-user-15.0-e91214478e.zip",
-					"fastboot": ""
+					"fastboot": "sapphiren_tr_global_images_OS2.0.209.0.VNHTRXM_20260130.0000.00_15.0_tr_6df717bfcc.tgz"
 				},
 				"OS2.0.208.0.VNHTRXM": {
 					"os": "OS2.0.208.0.VNHTRXM",

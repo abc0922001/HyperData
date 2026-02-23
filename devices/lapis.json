@@ -249,6 +249,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS2.0.204.0.VPPMIXM": {
+          "os": "OS2.0.204.0.VPPMIXM",
+          "android": "15.0",
+          "release": "2026-02-23",
+          "recovery": "lapis_global-ota_full-OS2.0.204.0.VPPMIXM-user-15.0-12389e89f2.zip",
+          "fastboot": ""
+        },
         "OS2.0.203.0.VPPMIXM": {
           "os": "OS2.0.203.0.VPPMIXM",
           "android": "15.0",
@@ -301,6 +308,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS2.0.205.0.VPPMIDC": {
+          "os": "OS2.0.205.0.VPPMIDC",
+          "android": "15.0",
+          "release": "2026-02-23",
+          "recovery": "lapis_dc_global-ota_full-OS2.0.205.0.VPPMIDC-user-15.0-231a4934ce.zip",
+          "fastboot": ""
+        },
         "OS2.0.204.0.VPPMIDC": {
           "os": "OS2.0.204.0.VPPMIDC",
           "android": "15.0",
@@ -339,6 +353,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS2.0.204.0.VPPEUXM": {
+          "os": "OS2.0.204.0.VPPEUXM",
+          "android": "15.0",
+          "release": "2026-02-23",
+          "recovery": "lapis_eea_global-ota_full-OS2.0.204.0.VPPEUXM-user-15.0-4370b6f4a4.zip",
+          "fastboot": ""
+        },
         "OS2.0.203.0.VPPEUXM": {
           "os": "OS2.0.203.0.VPPEUXM",
           "android": "15.0",
@@ -391,6 +412,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS2.0.202.0.VPPRUXM": {
+          "os": "OS2.0.202.0.VPPRUXM",
+          "android": "15.0",
+          "release": "2026-02-23",
+          "recovery": "lapis_ru_global-ota_full-OS2.0.202.0.VPPRUXM-user-15.0-0ccd90ac5b.zip",
+          "fastboot": ""
+        },
         "OS2.0.201.0.VPPRUXM": {
           "os": "OS2.0.201.0.VPPRUXM",
           "android": "15.0",
@@ -517,7 +545,7 @@
           "android": "15.0",
           "release": "2026-02-11",
           "recovery": "lapis_tr_global-ota_full-OS2.0.202.0.VPPTRXM-user-15.0-1703e4fcc9.zip",
-          "fastboot": ""
+          "fastboot": "lapis_tr_global_images_OS2.0.202.0.VPPTRXM_20260202.0000.00_15.0_tr_c2cc808b4e.tgz"
         },
         "OS2.0.201.0.VPPTRXM": {
           "os": "OS2.0.201.0.VPPTRXM",

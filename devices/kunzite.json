@@ -261,7 +261,7 @@
           "android": "15.0",
           "release": "2026-02-11",
           "recovery": "kunzite_dc_global-ota_full-OS2.0.206.0.VPQMIDC-user-15.0-0fab061bb9.zip",
-          "fastboot": ""
+          "fastboot": "kunzite_dc_global_images_OS2.0.206.0.VPQMIDC_20260127.0000.00_15.0_global_dc_ce1e8d084a.tgz"
         },
         "OS2.0.204.0.VPQMIDC": {
           "os": "OS2.0.204.0.VPQMIDC",

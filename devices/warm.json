@@ -7,11 +7,13 @@
 	"code": "GV",
 	"suppports": [
 		"OS1.0",
-		"OS2.0"
+		"OS2.0",
+		"OS3.0"
 	],
 	"android": [
 		"14.0",
-		"15.0"
+		"15.0",
+		"16.0"
 	],
 	"type": "phone",
 	"miui": "yes",
@@ -46,6 +48,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.3.0.WGVINXM": {
+					"os": "OS3.0.3.0.WGVINXM",
+					"android": "16.0",
+					"release": "2026-02-23",
+					"recovery": "warm_in_global-ota_full-OS3.0.3.0.WGVINXM-user-16.0-3277b98da9.zip",
+					"fastboot": ""
+				},
 				"OS2.0.203.0.VGVINXM": {
 					"os": "OS2.0.203.0.VGVINXM",
 					"android": "15.0",
