@@ -607,7 +607,7 @@
 					"android": "16.0",
 					"release": "2026-02-02",
 					"recovery": "taiko_id_global-ota_full-OS3.0.1.0.WOVIDXM-user-16.0-1d38c44308.zip",
-					"fastboot": ""
+					"fastboot": "taiko_id_global_images_OS3.0.1.0.WOVIDXM_20260115.0000.00_16.0_id_1381045f82.tgz"
 				},
 				"OS2.0.209.0.VOVIDXM": {
 					"os": "OS2.0.209.0.VOVIDXM",

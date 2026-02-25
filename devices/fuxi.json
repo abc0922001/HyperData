@@ -753,7 +753,7 @@
 					"android": "16.0",
 					"release": "2026-02-05",
 					"recovery": "fuxi_tw_global-ota_full-OS3.0.1.0.WMCTWXM-user-16.0-734e98c0b9.zip",
-					"fastboot": ""
+					"fastboot": "fuxi_tw_global_images_OS3.0.1.0.WMCTWXM_20260109.0000.00_16.0_tw_f1fc73104e.tgz"
 				},
 				"OS2.0.203.0.VMCTWXM": {
 					"os": "OS2.0.203.0.VMCTWXM",
@@ -1259,7 +1259,7 @@
 					"android": "16.0",
 					"release": "2026-02-05",
 					"recovery": "fuxi_ru_global-ota_full-OS3.0.1.0.WMCRUXM-user-16.0-1d8a380d45.zip",
-					"fastboot": ""
+					"fastboot": "fuxi_ru_global_images_OS3.0.1.0.WMCRUXM_20260109.0000.00_16.0_ru_6adf6f4f25.tgz"
 				},
 				"OS2.0.203.0.VMCRUXM": {
 					"os": "OS2.0.203.0.VMCRUXM",

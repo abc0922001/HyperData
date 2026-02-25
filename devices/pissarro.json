@@ -53,8 +53,8 @@
 					"android": "13.0",
 					"release": "2026-02-02",
 					"recovery": "miui_PISSARRO_OS1.0.22.0.TKTCNXM_dcc820f683_13.0.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "pissarro_images_OS1.0.22.0.TKTCNXM_20260124.0000.00_13.0_cn_25a5c80af3.tgz",
+					"ctelecom": "pissarro_images_OS1.0.22.0.TKTCNXM_20260124.0000.00_13.0_cn_chinatelecom_6bfbafe17f.tgz"
 				},
 				"OS1.0.18.0.TKTCNXM": {
 					"os": "OS1.0.18.0.TKTCNXM",

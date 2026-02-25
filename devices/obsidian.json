@@ -175,7 +175,7 @@
 					"android": "15.0",
 					"release": "2026-02-02",
 					"recovery": "obsidian_dc_global-ota_full-OS2.0.207.0.VOFMIDC-user-15.0-d5eeb90cf5.zip",
-					"fastboot": ""
+					"fastboot": "obsidian_dc_global_images_OS2.0.207.0.VOFMIDC_20260105.0000.00_15.0_global_dc_94af1024f0.tgz"
 				},
 				"OS2.0.206.0.VOFMIDC": {
 					"os": "OS2.0.206.0.VOFMIDC",

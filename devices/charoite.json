@@ -44,6 +44,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS2.0.210.0.VPFMIXM": {
+          "os": "OS2.0.210.0.VPFMIXM",
+          "android": "15.0",
+          "release": "2026-02-24",
+          "recovery": "charoite_global-ota_full-OS2.0.210.0.VPFMIXM-user-15.0-7176efe8de.zip",
+          "fastboot": ""
+        },
         "OS2.0.209.0.VPFMIXM": {
           "os": "OS2.0.209.0.VPFMIXM",
           "android": "15.0",
@@ -184,7 +191,7 @@
           "android": "15.0",
           "release": "2026-02-09",
           "recovery": "charoite_eea_global-ota_full-OS2.0.207.0.VPFEUXM-user-15.0-3bd87ae353.zip",
-          "fastboot": ""
+          "fastboot": "charoite_eea_global_images_OS2.0.207.0.VPFEUXM_20260129.0000.00_15.0_eea_59a92ff24a.tgz"
         },
         "OS2.0.206.0.VPFEUXM": {
           "os": "OS2.0.206.0.VPFEUXM",
@@ -236,7 +243,7 @@
           "android": "15.0",
           "release": "2026-02-09",
           "recovery": "charoite_ru_global-ota_full-OS2.0.206.0.VPFRUXM-user-15.0-021ca6177b.zip",
-          "fastboot": ""
+          "fastboot": "charoite_ru_global_images_OS2.0.206.0.VPFRUXM_20260112.0000.00_15.0_ru_152f40e1aa.tgz"
         },
         "OS2.0.205.0.VPFRUXM": {
           "os": "OS2.0.205.0.VPFRUXM",

@@ -154,6 +154,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.6.0.WOMCNXM": {
+					"os": "OS3.0.6.0.WOMCNXM",
+					"android": "16.0",
+					"release": "2026-02-11",
+					"recovery": "miro-ota_full-OS3.0.6.0.WOMCNXM-user-16.0-e5f722efc7.zip",
+					"fastboot": "",
+					"ctelecom": ""
+				},
 				"OS3.0.5.0.WOMCNXM": {
 					"os": "OS3.0.5.0.WOMCNXM",
 					"android": "16.0",

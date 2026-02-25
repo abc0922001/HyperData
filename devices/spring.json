@@ -6,10 +6,12 @@
   },
   "code": "OU",
   "suppports": [
-    "OS2.0"
+    "OS2.0",
+    "OS3.0"
   ],
   "android": [
-    "15.0"
+    "15.0",
+    "16.0"
   ],
   "type": "phone",
   "miui": "no",
@@ -48,6 +50,14 @@
       "zone": "1",
       "ep": "0",
       "roms": {
+        "OS3.0.4.0.WOUCNXM": {
+          "os": "OS3.0.4.0.WOUCNXM",
+          "android": "16.0",
+          "release": "2026-02-03",
+          "recovery": "spring-ota_full-OS3.0.4.0.WOUCNXM-user-16.0-e3a8f4c96c.zip",
+          "fastboot": "",
+          "ctelecom": ""
+        },
         "OS2.0.204.0.VOUCNXM": {
           "os": "OS2.0.204.0.VOUCNXM",
           "android": "15.0",
@@ -383,6 +393,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS2.0.202.0.VOUTRXM": {
+          "os": "OS2.0.202.0.VOUTRXM",
+          "android": "15.0",
+          "release": "2026-02-24",
+          "recovery": "spring_tr_global-ota_full-OS2.0.202.0.VOUTRXM-user-15.0-8046850e9c.zip",
+          "fastboot": ""
+        },
         "OS2.0.201.0.VOUTRXM": {
           "os": "OS2.0.201.0.VOUTRXM",
           "android": "15.0",
@@ -511,6 +528,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS2.0.205.0.VOUGTTG": {
+          "os": "OS2.0.205.0.VOUGTTG",
+          "android": "15.0",
+          "release": "2026-02-24",
+          "recovery": "spring_gt_tg_global-ota_full-OS2.0.205.0.VOUGTTG-user-15.0-bd378b7fe7.zip",
+          "fastboot": ""
+        },
         "OS2.0.204.0.VOUGTTG": {
           "os": "OS2.0.204.0.VOUGTTG",
           "android": "15.0",

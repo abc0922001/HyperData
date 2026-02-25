@@ -208,7 +208,7 @@
 					"android": "15.0",
 					"release": "2026-02-02",
 					"recovery": "sapphiren_global-ota_full-OS2.0.208.0.VNHMIXM-user-15.0-e7aa2f7eff.zip",
-					"fastboot": ""
+					"fastboot": "sapphiren_global_images_OS2.0.208.0.VNHMIXM_20260120.0000.00_15.0_global_b88dee7bdc.tgz"
 				},
 				"OS2.0.207.0.VNHMIXM": {
 					"os": "OS2.0.207.0.VNHMIXM",

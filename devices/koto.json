@@ -46,6 +46,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WOWTWXM": {
+					"os": "OS3.0.1.0.WOWTWXM",
+					"android": "16.0",
+					"release": "2026-02-24",
+					"recovery": "koto_tw_global-ota_full-OS3.0.1.0.WOWTWXM-user-16.0-7d944d0a43.zip",
+					"fastboot": ""
+				},
 				"OS2.0.207.0.VOWTWXM": {
 					"os": "OS2.0.207.0.VOWTWXM",
 					"android": "15.0",
@@ -366,6 +373,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WOWRUXM": {
+					"os": "OS3.0.1.0.WOWRUXM",
+					"android": "16.0",
+					"release": "2026-02-24",
+					"recovery": "koto_ru_global-ota_full-OS3.0.1.0.WOWRUXM-user-16.0-ca5c6b2437.zip",
+					"fastboot": ""
+				},
 				"OS2.0.205.0.VOWRUXM": {
 					"os": "OS2.0.205.0.VOWRUXM",
 					"android": "15.0",

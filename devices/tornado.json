@@ -223,7 +223,7 @@
           "android": "15.0",
           "release": "2026-02-04",
           "recovery": "tornado_dc_global-ota_full-OS2.0.206.0.VPOMIDC-user-15.0-a87d889dfc.zip",
-          "fastboot": ""
+          "fastboot": "tornado_dc_global_images_OS2.0.206.0.VPOMIDC_20260126.0000.00_15.0_global_dc_581a8aaa71.tgz"
         },
         "OS2.0.205.0.VPOMIDC": {
           "os": "OS2.0.205.0.VPOMIDC",
@@ -400,7 +400,7 @@
           "android": "15.0",
           "release": "2026-02-04",
           "recovery": "tornado_tr_global-ota_full-OS2.0.204.0.VPOTRXM-user-15.0-a53a084f72.zip",
-          "fastboot": ""
+          "fastboot": "tornado_tr_global_images_OS2.0.204.0.VPOTRXM_20260126.0000.00_15.0_tr_4860049193.tgz"
         },
         "OS2.0.203.0.VPOTRXM": {
           "os": "OS2.0.203.0.VPOTRXM",

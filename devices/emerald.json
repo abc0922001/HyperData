@@ -48,6 +48,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.5.0.WNFMIXM": {
+					"os": "OS3.0.5.0.WNFMIXM",
+					"android": "16.0",
+					"release": "2026-02-24",
+					"recovery": "emerald_global-ota_full-OS3.0.5.0.WNFMIXM-user-16.0-2b4863679f.zip",
+					"fastboot": ""
+				},
 				"OS3.0.4.0.WNFMIXM": {
 					"os": "OS3.0.4.0.WNFMIXM",
 					"android": "16.0",
@@ -362,6 +369,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WNFEUXM": {
+					"os": "OS3.0.1.0.WNFEUXM",
+					"android": "16.0",
+					"release": "2026-02-24",
+					"recovery": "emerald_eea_global-ota_full-OS3.0.1.0.WNFEUXM-user-16.0-a4320b0054.zip",
+					"fastboot": ""
+				},
 				"OS2.0.211.0.VNFEUXM": {
 					"os": "OS2.0.211.0.VNFEUXM",
 					"android": "15.0",
@@ -704,6 +718,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.2.0.WNFIDXM": {
+					"os": "OS3.0.2.0.WNFIDXM",
+					"android": "16.0",
+					"release": "2026-02-24",
+					"recovery": "emerald_id_global-ota_full-OS3.0.2.0.WNFIDXM-user-16.0-a724426e57.zip",
+					"fastboot": ""
+				},
 				"OS2.0.210.0.VNFIDXM": {
 					"os": "OS2.0.210.0.VNFIDXM",
 					"android": "15.0",

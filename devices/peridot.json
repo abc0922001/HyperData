@@ -1315,7 +1315,7 @@
 					"android": "16.0",
 					"release": "2026-02-02",
 					"recovery": "peridot_id_global-ota_full-OS3.0.2.0.WNPIDXM-user-16.0-c6828c3bcc.zip",
-					"fastboot": ""
+					"fastboot": "peridot_id_global_images_OS3.0.2.0.WNPIDXM_20260114.0000.00_16.0_id_44eff3731a.tgz"
 				},
 				"OS2.0.207.0.VNPIDXM": {
 					"os": "OS2.0.207.0.VNPIDXM",

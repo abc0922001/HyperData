@@ -398,8 +398,8 @@
 					"android": "16.0",
 					"release": "2026-02-03",
 					"recovery": "nuwa-ota_full-OS3.0.4.0.WMBCNXM-user-16.0-1677be1a1d.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "nuwa_images_OS3.0.4.0.WMBCNXM_20260127.0000.00_16.0_cn_980c69040d.tgz",
+					"ctelecom": "nuwa_images_OS3.0.4.0.WMBCNXM_20260127.0000.00_16.0_cn_chinatelecom_2abb1a5524.tgz"
 				},
 				"OS3.0.3.0.WMBCNXM": {
 					"os": "OS3.0.3.0.WMBCNXM",

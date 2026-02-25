@@ -157,7 +157,7 @@
 					"android": "13.0",
 					"release": "2026-02-03",
 					"recovery": "miui_UMIEEAGlobal_OS1.0.5.0.TJBEUXM_45d6e7e461_13.0.zip",
-					"fastboot": ""
+					"fastboot": "umi_eea_global_images_OS1.0.5.0.TJBEUXM_20260123.0000.00_13.0_eea_6aff836ef0.tgz"
 				},
 				"OS1.0.1.0.TJBEUXM": {
 					"os": "OS1.0.1.0.TJBEUXM",
@@ -292,7 +292,7 @@
 					"android": "13.0",
 					"release": "2026-02-06",
 					"recovery": "miui_UMIIDGlobal_OS1.0.5.0.TJBIDXM_37b28c231c_13.0.zip",
-					"fastboot": ""
+					"fastboot": "umi_id_global_images_OS1.0.5.0.TJBIDXM_20260123.0000.00_13.0_id_2f18a99a3c.tgz"
 				},
 				"OS1.0.1.0.TJBIDXM": {
 					"os": "OS1.0.1.0.TJBIDXM",

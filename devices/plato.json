@@ -779,6 +779,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.207.0.VLQIDXM": {
+					"os": "OS2.0.207.0.VLQIDXM",
+					"android": "15.0",
+					"release": "2026-02-24",
+					"recovery": "plato_id_global-ota_full-OS2.0.207.0.VLQIDXM-user-15.0-71250b7884.zip",
+					"fastboot": ""
+				},
 				"OS2.0.206.0.VLQIDXM": {
 					"os": "OS2.0.206.0.VLQIDXM",
 					"android": "15.0",

@@ -532,7 +532,7 @@
           "android": "15.0",
           "release": "2026-02-07",
           "recovery": "dew_lm_cr_global-ota_full-OS2.0.205.0.VBNLMCR-user-15.0-d32fff8250.zip",
-          "fastboot": ""
+          "fastboot": "dew_lm_cr_global_images_OS2.0.205.0.VBNLMCR_20260130.0000.00_15.0_lm_cr_5aff960fc3.tgz"
         },
         "OS2.0.204.0.VBNLMCR": {
           "os": "OS2.0.204.0.VBNLMCR",
