@@ -363,7 +363,7 @@
 					"android": "16.0",
 					"release": "2026-02-02",
 					"recovery": "chenfeng_in_global-ota_full-OS3.0.4.0.WNJINXM-user-16.0-bafb2578b1.zip",
-					"fastboot": ""
+					"fastboot": "chenfeng_in_global_images_OS3.0.4.0.WNJINXM_20260127.0000.00_16.0_in_595637f19e.tgz"
 				},
 				"OS2.0.208.0.VNJINXM": {
 					"os": "OS2.0.208.0.VNJINXM",

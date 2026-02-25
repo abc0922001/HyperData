@@ -53,8 +53,8 @@
           "android": "16.0",
           "release": "2026-02-10",
           "recovery": "klee-ota_full-OS3.0.20.0.WPJCNXM-user-16.0-2f1908aa66.zip",
-          "fastboot": "",
-          "ctelecom": ""
+          "fastboot": "klee_images_OS3.0.20.0.WPJCNXM_20260204.0000.00_16.0_cn_7b1b840952.tgz",
+          "ctelecom": "klee_images_OS3.0.20.0.WPJCNXM_20260204.0000.00_16.0_cn_chinatelecom_861149fcd8.tgz"
         },
         "OS3.0.18.0.WPJCNXM": {
           "os": "OS3.0.18.0.WPJCNXM",

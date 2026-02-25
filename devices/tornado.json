@@ -430,7 +430,7 @@
         "zh": "小米澎湃 OS 拉丁美洲Claro运营商定制版",
         "en": "Xiaomi HyperOS Latin America Claro Carrier Edition"
       },
-      "branchCode": "tornado_tr_global",
+      "branchCode": "tornado_lm_cr_global",
       "brand": "REDMI",
       "device": {
         "zh": "REDMI 15C 5G / REDMI 15R 5G",
@@ -454,25 +454,32 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS2.0.204.0.VPOLMCR": {
+          "os": "OS2.0.204.0.VPOLMCR",
+          "android": "15.0",
+          "release": "2026-02-24",
+          "recovery": "tornado_lm_cr_global-ota_full-OS2.0.204.0.VPOLMCR-user-15.0-aa964b06dc.zip",
+          "fastboot": "tornado_lm_cr_global_images_OS2.0.204.0.VPOLMCR_20260205.0000.00_15.0_lm_cr_5482beb3f8.tgz"
+        },
         "OS2.0.203.0.VPOLMCR": {
           "os": "OS2.0.203.0.VPOLMCR",
           "android": "15.0",
           "release": "2025-12-31",
-          "recovery": "",
+          "recovery": "tornado_lm_cr_global-ota_full-OS2.0.203.0.VPOLMCR-user-15.0-5672d140ce.zip",
           "fastboot": "tornado_lm_cr_global_images_OS2.0.203.0.VPOLMCR_20251218.0000.00_15.0_lm_cr_db054d1330.tgz"
         },
         "OS2.0.202.0.VPOLMCR": {
           "os": "OS2.0.202.0.VPOLMCR",
           "android": "15.0",
           "release": "2025-10-28",
-          "recovery": "",
+          "recovery": "tornado_lm_cr_global-ota_full-OS2.0.202.0.VPOLMCR-user-15.0-3f00e19fca.zip",
           "fastboot": "tornado_lm_cr_global_images_OS2.0.202.0.VPOLMCR_20250929.0000.00_15.0_lm_cr_d7062c0c6f.tgz"
         },
         "OS2.0.201.0.VPOLMCR": {
           "os": "OS2.0.201.0.VPOLMCR",
           "android": "15.0",
           "release": "2025-09-30",
-          "recovery": "",
+          "recovery": "tornado_lm_cr_global-ota_full-OS2.0.201.0.VPOLMCR-user-15.0-d84b6fe593.zip",
           "fastboot": "tornado_lm_cr_global_images_OS2.0.201.0.VPOLMCR_20250825.0000.00_15.0_lm_cr_4702f84864.tgz"
         }
       }

@@ -989,7 +989,7 @@
 					"android": "14.0",
 					"release": "2026-02-03",
 					"recovery": "ruby_in_global-ota_full-OS2.0.10.0.UMOINXM-user-14.0-20a934424f.zip",
-					"fastboot": ""
+					"fastboot": "ruby_in_global_images_OS2.0.10.0.UMOINXM_20260122.0000.00_14.0_in_f69020b0f9.tgz"
 				},
 				"OS2.0.9.0.UMOINXM": {
 					"os": "OS2.0.9.0.UMOINXM",

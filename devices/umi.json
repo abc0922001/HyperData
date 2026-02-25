@@ -247,7 +247,7 @@
 					"android": "13.0",
 					"release": "2026-02-06",
 					"recovery": "miui_UMIINGlobal_OS1.0.6.0.TJBINXM_31344a0478_13.0.zip",
-					"fastboot": ""
+					"fastboot": "umi_in_global_images_OS1.0.6.0.TJBINXM_20260120.0000.00_13.0_in_234b2766c6.tgz"
 				},
 				"OS1.0.2.0.TJBINXM": {
 					"os": "OS1.0.2.0.TJBINXM",

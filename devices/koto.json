@@ -547,6 +547,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.2.0.WOWIDXM": {
+					"os": "OS3.0.2.0.WOWIDXM",
+					"android": "16.0",
+					"release": "2026-02-25",
+					"recovery": "koto_id_global-ota_full-OS3.0.2.0.WOWIDXM-user-16.0-29440c7738.zip",
+					"fastboot": ""
+				},
 				"OS2.0.202.0.VOWIDXM": {
 					"os": "OS2.0.202.0.VOWIDXM",
 					"android": "15.0",

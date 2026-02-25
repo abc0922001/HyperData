@@ -318,7 +318,7 @@
 					"android": "15.0",
 					"release": "2026-02-03",
 					"recovery": "tanzanite_dc_global-ota_full-OS2.0.208.0.VOGMIDC-user-15.0-0f0880ecec.zip",
-					"fastboot": ""
+					"fastboot": "tanzanite_dc_global_images_OS2.0.208.0.VOGMIDC_20260126.0000.00_15.0_global_dc_49ea9172c6.tgz"
 				},
 				"OS2.0.207.0.VOGMIDC": {
 					"os": "OS2.0.207.0.VOGMIDC",
@@ -426,7 +426,7 @@
 					"android": "15.0",
 					"release": "2026-02-05",
 					"recovery": "tanzanite_eea_global-ota_full-OS2.0.213.0.VOGEUXM-user-15.0-374ecdca86.zip",
-					"fastboot": ""
+					"fastboot": "tanzanite_eea_global_images_OS2.0.213.0.VOGEUXM_20260126.0000.00_15.0_eea_de194ae9cc.tgz"
 				},
 				"OS2.0.212.0.VOGEUXM": {
 					"os": "OS2.0.212.0.VOGEUXM",
@@ -916,6 +916,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.207.0.VOGMXAT": {
+					"os": "OS2.0.207.0.VOGMXAT",
+					"android": "15.0",
+					"release": "2026-02-24",
+					"recovery": "tanzanite_mx_at_global-ota_full-OS2.0.207.0.VOGMXAT-user-15.0-e44ede1ff9.zip",
+					"fastboot": ""
+				},
 				"OS2.0.206.0.VOGMXAT": {
 					"os": "OS2.0.206.0.VOGMXAT",
 					"android": "15.0",

@@ -462,7 +462,7 @@
           "android": "15.0",
           "release": "2026-02-12",
           "recovery": "lapis_in_global-ota_full-OS2.0.203.0.VPPINXM-user-15.0-851ef3cdce.zip",
-          "fastboot": ""
+          "fastboot": "lapis_in_global_images_OS2.0.203.0.VPPINXM_20260202.0000.00_15.0_in_fe56ce4d27.tgz"
         },
         "OS2.0.202.0.VPPINXM": {
           "os": "OS2.0.202.0.VPPINXM",
@@ -585,6 +585,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS2.0.205.0.VPPJPXM": {
+          "os": "OS2.0.205.0.VPPJPXM",
+          "android": "15.0",
+          "release": "2026-02-25",
+          "recovery": "lapis_jp_global-ota_full-OS2.0.205.0.VPPJPXM-user-15.0-3a3a1a66d0.zip",
+          "fastboot": ""
+        },
         "OS2.0.204.0.VPPJPXM": {
           "os": "OS2.0.204.0.VPPJPXM",
           "android": "15.0",

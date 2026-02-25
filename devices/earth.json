@@ -1894,7 +1894,7 @@
 					"android": "14.0",
 					"release": "2026-02-09",
 					"recovery": "miui_EARTHLMMSGlobal_OS1.0.10.0.UCVLMMS_b4c57dc971_14.0.zip",
-					"fastboot": ""
+					"fastboot": "earth_lm_ms_global_images_OS1.0.10.0.UCVLMMS_20260106.0000.00_14.0_lm_movistar_ac2dea7664.tgz"
 				},
 				"OS1.0.9.0.UCVLMMS": {
 					"os": "OS1.0.9.0.UCVLMMS",

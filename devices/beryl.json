@@ -691,7 +691,7 @@
 					"android": "15.0",
 					"release": "2026-02-06",
 					"recovery": "beryl_eea_global-ota_full-OS2.0.210.0.VOQEUXM-user-15.0-16267a0502.zip",
-					"fastboot": ""
+					"fastboot": "beryl_eea_global_images_OS2.0.210.0.VOQEUXM_20260123.0000.00_15.0_eea_d82e9fc81a.tgz"
 				},
 				"OS2.0.209.0.VOQEUXM": {
 					"os": "OS2.0.209.0.VOQEUXM",
