@@ -141,6 +141,14 @@
       "zone": "1",
       "ep": "0",
       "roms": {
+        "OS3.0.3.0.WPRCNDM": {
+          "os": "OS3.0.3.0.WPRCNDM",
+          "android": "16.0",
+          "release": "2026-02-25",
+          "recovery": "flourite_demo-ota_full-OS3.0.3.0.WPRCNDM-user-16.0-a87d555c38.zip",
+          "fastboot": "flourite_demo_images_OS3.0.3.0.WPRCNDM_20260202.0000.00_16.0_cn_16e37b0284.tgz",
+          "ctelecom": "flourite_demo_images_OS3.0.3.0.WPRCNDM_20260202.0000.00_16.0_cn_chinatelecom_20912e618a.tgz"
+        },
         "OS2.0.203.0.VPRCNDM": {
           "os": "OS2.0.203.0.VPRCNDM",
           "android": "15.0",

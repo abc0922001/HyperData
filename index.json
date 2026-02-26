@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-02-25 20:55:00",
+    "time": "2026-02-25 23:49:31",
     "developing": "no",
     "roms": [
       {
@@ -66,6 +66,14 @@
           "en": "Redmi 13 / POCO M6 4G"
         },
         "rom": "OS3.0.3.0.WNTTWXM; OS3.0.3.0.WNTRUXM; OS3.0.3.0.WNTIDXM; OS3.0.3.0.WNTTRXM"
+      },
+      {
+        "code": "lake",
+        "name": {
+          "zh": "Redmi 14C",
+          "en": "Redmi 14C"
+        },
+        "rom": "OS3.0.18.0.WGTMIXM"
       },
       {
         "code": "flame",
