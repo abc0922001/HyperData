@@ -112,7 +112,7 @@
 					"android": "16.0",
 					"release": "2026-02-02",
 					"recovery": "flare_global-ota_full-OS3.0.1.0.WHXMIXM-user-16.0-5fde3b920a.zip",
-					"fastboot": ""
+					"fastboot": "flare_global_images_OS3.0.1.0.WHXMIXM_20251231.0000.00_16.0_global_2a91704560.tgz"
 				},
 				"OS2.0.205.0.VHXMIXM": {
 					"os": "OS2.0.205.0.VHXMIXM",

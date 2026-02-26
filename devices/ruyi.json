@@ -168,8 +168,8 @@
 					"android": "16.0",
 					"release": "2026-02-03",
 					"recovery": "ruyi-ota_full-OS3.0.7.0.WNICNXM-user-16.0-8767e1bda2.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "ruyi_images_OS3.0.7.0.WNICNXM_20260127.0000.00_16.0_cn_80bed769c4.tgz",
+					"ctelecom": "ruyi_images_OS3.0.7.0.WNICNXM_20260127.0000.00_16.0_cn_chinatelecom_aa7bfd21e2.tgz"
 				},
 				"OS3.0.3.0.WNICNXM": {
 					"os": "OS3.0.3.0.WNICNXM",

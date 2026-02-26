@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-02-25 23:49:31",
+    "time": "2026-02-26 13:42:46",
     "developing": "no",
     "roms": [
       {
@@ -57,7 +57,7 @@
           "zh": "Redmi 13C 国际 / POCO C65",
           "en": "Redmi 13C / POCO C65"
         },
-        "rom": "OS2.0.205.0.VGPINXM; OS2.0.205.0.VGPIDXM"
+        "rom": "OS2.0.204.0.VGPRUXM; OS2.0.205.0.VGPINXM; OS2.0.205.0.VGPIDXM"
       },
       {
         "code": "moon",
@@ -113,7 +113,7 @@
           "zh": "Redmi Note 12 Pro / Pro+ / 探索版",
           "en": "Redmi Note 12 Pro / Pro+ / Discovery 5G"
         },
-        "rom": "OS2.0.5.0.UMOLMMS"
+        "rom": "OS2.0.19.0.UMOCNXM; OS2.0.5.0.UMOLMMS"
       },
       {
         "code": "breeze",
@@ -145,7 +145,7 @@
           "zh": "Redmi Note 14 Pro 4G",
           "en": "Redmi Note 14 Pro 4G"
         },
-        "rom": "OS2.0.206.0.VOFMXAT"
+        "rom": "OS2.0.215.0.VOFEUXM; OS2.0.206.0.VOFMXAT"
       },
       {
         "code": "beryl",
@@ -153,7 +153,7 @@
           "zh": "Redmi Note 14 5G / POCO M7 Pro 5G",
           "en": "Redmi Note 14 5G / POCO M7 Pro 5G"
         },
-        "rom": "OS2.0.211.0.VOQMIXM"
+        "rom": "OS2.0.211.0.VOQMIXM; OS2.0.208.0.VOQINXM"
       },
       {
         "code": "malachite",
@@ -185,7 +185,7 @@
           "zh": "REDMI Note 15 Pro 5G",
           "en": "REDMI Note 15 Pro 5G"
         },
-        "rom": "OS2.0.204.0.VPPMIXM; OS2.0.205.0.VPPMIDC; OS2.0.204.0.VPPEUXM; OS2.0.202.0.VPPRUXM; OS2.0.205.0.VPPJPXM"
+        "rom": "OS2.0.203.0.VPPTWXM; OS2.0.204.0.VPPMIXM; OS2.0.205.0.VPPMIDC; OS2.0.204.0.VPPEUXM; OS2.0.202.0.VPPRUXM; OS2.0.205.0.VPPJPXM"
       },
       {
         "code": "peridot",
@@ -225,7 +225,7 @@
           "zh": "REDMI K90 / POCO F8 Pro",
           "en": "REDMI K90 / POCO F8 Pro"
         },
-        "rom": "OS3.0.8.0.WPKEUXM"
+        "rom": "OS3.0.8.0.WPKEUXM; OS3.0.6.0.WPKRUXM"
       },
       {
         "code": "xun",

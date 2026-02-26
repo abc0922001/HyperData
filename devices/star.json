@@ -176,7 +176,7 @@
 					"android": "14.0",
 					"release": "2026-01-27",
 					"recovery": "star_global-ota_full-OS2.0.7.0.UKAMIXM-user-14.0-32d5cd92ee.zip",
-					"fastboot": ""
+					"fastboot": "star_global_images_OS2.0.7.0.UKAMIXM_20251126.0000.00_14.0_global_da3f7f5a9e.tgz"
 				},
 				"OS2.0.6.0.UKAMIXM": {
 					"os": "OS2.0.6.0.UKAMIXM",

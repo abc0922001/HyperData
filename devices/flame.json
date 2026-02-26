@@ -57,8 +57,8 @@
 					"android": "16.0",
 					"release": "2026-01-30",
 					"recovery": "flame-ota_full-OS3.0.2.0.WGUCNXM-user-16.0-26eeb63730.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "flame_images_OS3.0.2.0.WGUCNXM_20260104.0000.00_16.0_cn_ce62897b56.tgz",
+					"ctelecom": "flame_images_OS3.0.2.0.WGUCNXM_20260104.0000.00_16.0_cn_chinatelecom_3ec9aacbea.tgz"
 				},
 				"OS2.0.203.0.VGUCNXM": {
 					"os": "OS2.0.203.0.VGUCNXM",

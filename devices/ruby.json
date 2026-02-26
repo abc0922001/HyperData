@@ -49,6 +49,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS2.0.19.0.UMOCNXM": {
+					"os": "OS2.0.19.0.UMOCNXM",
+					"android": "14.0",
+					"release": "2026-02-25",
+					"recovery": "ruby-ota_full-OS2.0.19.0.UMOCNXM-user-14.0-9cd5f571ca.zip",
+					"fastboot": "",
+					"ctelecom": ""
+				},
 				"OS2.0.17.0.UMOCNXM": {
 					"os": "OS2.0.17.0.UMOCNXM",
 					"android": "14.0",
@@ -312,7 +320,7 @@
 					"android": "14.0",
 					"release": "2026-02-09",
 					"recovery": "ruby_tw_global-ota_full-OS2.0.8.0.UMOTWXM-user-14.0-249d93d816.zip",
-					"fastboot": ""
+					"fastboot": "ruby_tw_global_images_OS2.0.8.0.UMOTWXM_20260127.0000.00_14.0_tw_cce0aec70b.tgz"
 				},
 				"OS2.0.7.0.UMOTWXM": {
 					"os": "OS2.0.7.0.UMOTWXM",
@@ -1338,7 +1346,7 @@
 					"android": "14.0",
 					"release": "2026-02-09",
 					"recovery": "ruby_tr_global-ota_full-OS2.0.8.0.UMOTRXM-user-14.0-59609acc1c.zip",
-					"fastboot": ""
+					"fastboot": "ruby_tr_global_images_OS2.0.8.0.UMOTRXM_20260127.0000.00_14.0_tr_2fd1cf76ce.tgz"
 				},
 				"OS2.0.7.0.UMOTRXM": {
 					"os": "OS2.0.7.0.UMOTRXM",

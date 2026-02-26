@@ -204,6 +204,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS2.0.203.0.VPPTWXM": {
+          "os": "OS2.0.203.0.VPPTWXM",
+          "android": "15.0",
+          "release": "2026-02-26",
+          "recovery": "lapis_tw_global-ota_full-OS2.0.203.0.VPPTWXM-user-15.0-3b4ca1f1ed.zip",
+          "fastboot": ""
+        },
         "OS2.0.202.0.VPPTWXM": {
           "os": "OS2.0.202.0.VPPTWXM",
           "android": "15.0",

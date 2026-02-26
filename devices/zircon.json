@@ -299,7 +299,7 @@
 					"android": "16.0",
 					"release": "2026-02-04",
 					"recovery": "zircon_tw_global-ota_full-OS3.0.1.0.WNOTWXM-user-16.0-abf60dece4.zip",
-					"fastboot": ""
+					"fastboot": "zircon_tw_global_images_OS3.0.1.0.WNOTWXM_20260120.0000.00_16.0_tw_0d5aff531f.tgz"
 				},
 				"OS2.0.206.0.VNOTWXM": {
 					"os": "OS2.0.206.0.VNOTWXM",
@@ -1412,7 +1412,7 @@
 					"android": "16.0",
 					"release": "2026-02-04",
 					"recovery": "zircon_tr_global-ota_full-OS3.0.1.0.WNOTRXM-user-16.0-82d69cc028.zip",
-					"fastboot": ""
+					"fastboot": "zircon_tr_global_images_OS3.0.1.0.WNOTRXM_20260120.0000.00_16.0_tr_caa7c6b041.tgz"
 				},
 				"OS2.0.208.0.VNOTRXM": {
 					"os": "OS2.0.208.0.VNOTRXM",
