@@ -220,6 +220,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WOWMIDC": {
+					"os": "OS3.0.1.0.WOWMIDC",
+					"android": "16.0",
+					"release": "2026-03-01",
+					"recovery": "koto_dc_global-ota_full-OS3.0.1.0.WOWMIDC-user-16.0-c947347a9d.zip",
+					"fastboot": ""
+				},
 				"OS2.0.211.0.VOWMIDC": {
 					"os": "OS2.0.211.0.VOWMIDC",
 					"android": "15.0",

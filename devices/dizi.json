@@ -52,6 +52,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.4.0.WNSCNXM": {
+					"os": "OS3.0.4.0.WNSCNXM",
+					"android": "16.0",
+					"release": "2026-02-26",
+					"recovery": "dizi-ota_full-OS3.0.4.0.WNSCNXM-user-16.0-fdbcda497c.zip",
+					"fastboot": "",
+					"origin": ""
+				},
 				"OS3.0.3.0.WNSCNXM": {
 					"os": "OS3.0.3.0.WNSCNXM",
 					"android": "16.0",
@@ -338,6 +346,14 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.207.0.VNSTWXM": {
+					"os": "OS2.0.207.0.VNSTWXM",
+					"android": "15.0",
+					"release": "2026-02-28",
+					"recovery": "dizi_tw_global-ota_full-OS2.0.207.0.VNSTWXM-user-15.0-77401e51f1.zip",
+					"fastboot": "",
+					"origin": ""
+				},
 				"OS2.0.206.0.VNSTWXM": {
 					"os": "OS2.0.206.0.VNSTWXM",
 					"android": "15.0",
@@ -710,7 +726,7 @@
 					"android": "15.0",
 					"release": "2026-02-11",
 					"recovery": "dizi_eea_global-ota_full-OS2.0.208.0.VNSEUXM-user-15.0-a336a31e79.zip",
-					"fastboot": ""
+					"fastboot": "dizi_eea_global_images_OS2.0.208.0.VNSEUXM_20260131.0000.00_15.0_eea_9f97cf6654.tgz"
 				},
 				"OS2.0.207.0.VNSEUXM": {
 					"os": "OS2.0.207.0.VNSEUXM",
@@ -868,7 +884,7 @@
 					"android": "15.0",
 					"release": "2026-02-11",
 					"recovery": "dizi_ru_global-ota_full-OS2.0.207.0.VNSRUXM-user-15.0-599aeb9e52.zip",
-					"fastboot": "",
+					"fastboot": "dizi_ru_global_images_OS2.0.207.0.VNSRUXM_20260131.0000.00_15.0_ru_0e515e4597.tgz",
 					"origin": ""
 				},
 				"OS2.0.206.0.VNSRUXM": {
@@ -1377,7 +1393,7 @@
 					"android": "15.0",
 					"release": "2026-02-24",
 					"recovery": "dizi_tr_global-ota_full-OS2.0.207.0.VNSTRXM-user-15.0-67eeb4654a.zip",
-					"fastboot": ""
+					"fastboot": "dizi_tr_global_images_OS2.0.207.0.VNSTRXM_20260131.0000.00_15.0_tr_6c2cc5b2c6.tgz"
 				},
 				"OS2.0.206.0.VNSTRXM": {
 					"os": "OS2.0.206.0.VNSTRXM",

@@ -209,7 +209,7 @@
 					"android": "15.0",
 					"release": "2026-02-09",
 					"recovery": "air_tw_global-ota_full-OS2.0.203.0.VGQTWXM-user-15.0-915fe255dc.zip",
-					"fastboot": ""
+					"fastboot": "air_tw_global_images_OS2.0.203.0.VGQTWXM_20260128.0000.00_15.0_tw_ad4b07fcfe.tgz"
 				},
 				"OS2.0.202.0.VGQTWXM": {
 					"os": "OS2.0.202.0.VGQTWXM",

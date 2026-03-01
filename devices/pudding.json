@@ -47,6 +47,13 @@
       "zone": "1",
       "ep": "0",
       "roms": {
+        "OS3.0.300.10.WPCCNXM": {
+          "os": "OS3.0.300.10.WPCCNXM",
+          "android": "16.0",
+          "release": "2026-02-27",
+          "recovery": "pudding-ota_full-OS3.0.300.10.WPCCNXM-user-16.0-c9dcab7ed1.zip",
+          "fastboot": ""
+        },
         "OS3.0.300.9.WPCCNXM": {
           "os": "OS3.0.300.9.WPCCNXM",
           "android": "16.0",
@@ -254,10 +261,10 @@
         "en": "Xiaomi HyperOS China MiStore Demo"
       },
       "branchCode": "pudding_demo",
-      "brand": "Xiaomi, REDMI, POCO",
+      "brand": "Xiaomi",
       "device": {
-        "zh": "",
-        "en": ""
+        "zh": "小米 17",
+        "en": "Xiaomi 17"
       },
       "idtag": "CnOD",
       "tag": "CNDM",
@@ -304,6 +311,425 @@
           "recovery": "pudding_demo-ota_full-OS3.0.3.0.WPCCNDM-user-16.0-1c53e0f566.zip",
           "fastboot": "pudding_demo_images_OS3.0.3.0.WPCCNDM_20250925.0000.00_16.0_cn_9809a02d1e.tgz",
           "ctelecom": "pudding_demo_images_OS3.0.3.0.WPCCNDM_20250925.0000.00_16.0_cn_chinatelecom_35dca3f7e4.tgz"
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 中国台湾省正式版",
+        "en": "Xiaomi HyperOS China Taiwan Province Stable"
+      },
+      "branchCode": "pudding_tw_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17",
+        "en": "Xiaomi 17"
+      },
+      "idtag": "CNTP",
+      "tag": "TWXM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "tw",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.4.0.WPCTWXM": {
+          "os": "OS3.0.4.0.WPCTWXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_tw_global-ota_full-OS3.0.4.0.WPCTWXM-user-16.0-ac4cd1f13a.zip",
+          "fastboot": "pudding_tw_global_images_OS3.0.4.0.WPCTWXM_20260114.0000.00_16.0_tw_9c1d17db55.tgz"
+        },
+        "OS3.0.3.0.WPCTWXM": {
+          "os": "OS3.0.3.0.WPCTWXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_tw_global-ota_full-OS3.0.3.0.WPCTWXM-user-16.0-4b6f32af9b.zip",
+          "fastboot": ""
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 国际正式版",
+        "en": "Xiaomi HyperOS Global Stable"
+      },
+      "branchCode": "pudding_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17",
+        "en": "Xiaomi 17"
+      },
+      "idtag": "GBOO",
+      "tag": "MIXM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "global",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.9.0.WPCMIXM": {
+          "os": "OS3.0.9.0.WPCMIXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_global-ota_full-OS3.0.9.0.WPCMIXM-user-16.0-d68c80bd31.zip",
+          "fastboot": "pudding_global_images_OS3.0.9.0.WPCMIXM_20260224.0000.00_16.0_global_182b749d06.tgz"
+        },
+        "OS3.0.7.0.WPCMIXM": {
+          "os": "OS3.0.7.0.WPCMIXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_global-ota_full-OS3.0.7.0.WPCMIXM-user-16.0-8fd033c09b.zip",
+          "fastboot": ""
+        },
+        "OS3.0.5.0.WPCMIXM": {
+          "os": "OS3.0.5.0.WPCMIXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_global-ota_full-OS3.0.5.0.WPCMIXM-user-16.0-2632208bfc.zip",
+          "fastboot": ""
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 国际 DC 正式版",
+        "en": "Xiaomi HyperOS Global DC Stable"
+      },
+      "branchCode": "pudding_dc_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17",
+        "en": "Xiaomi 17"
+      },
+      "idtag": "GBDC",
+      "tag": "MIDC",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "0",
+      "carrier": [
+        "dc"
+      ],
+      "region": "global",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.5.0.WPCMIDC": {
+          "os": "OS3.0.5.0.WPCMIDC",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_dc_global-ota_full-OS3.0.5.0.WPCMIDC-user-16.0-aa4dd626d4.zip",
+          "fastboot": "pudding_dc_global_images_OS3.0.5.0.WPCMIDC_20260109.0000.00_16.0_global_dc_ed379ef52b.tgz"
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 欧洲EEA正式版",
+        "en": "Xiaomi HyperOS Europe EEA Stable"
+      },
+      "branchCode": "pudding_eea_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17",
+        "en": "Xiaomi 17"
+      },
+      "idtag": "EEAO",
+      "tag": "EUXM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "eea",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.12.0.WPCEUXM": {
+          "os": "OS3.0.12.0.WPCEUXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_eea_global-ota_full-OS3.0.12.0.WPCEUXM-user-16.0-c3a6dca17c.zip",
+          "fastboot": "pudding_eea_global_images_OS3.0.12.0.WPCEUXM_20260224.0000.00_16.0_eea_2e0a26affc.tgz"
+        },
+        "OS3.0.10.0.WPCEUXM": {
+          "os": "OS3.0.10.0.WPCEUXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_eea_global-ota_full-OS3.0.10.0.WPCEUXM-user-16.0-7f49df2c16.zip",
+          "fastboot": ""
+        },
+        "OS3.0.7.0.WPCEUXM": {
+          "os": "OS3.0.7.0.WPCEUXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_eea_global-ota_full-OS3.0.7.0.WPCEUXM-user-16.0-4a3deeeebb.zip",
+          "fastboot": ""
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 俄罗斯正式版",
+        "en": "Xiaomi HyperOS Russia Stable"
+      },
+      "branchCode": "pudding_ru_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17",
+        "en": "Xiaomi 17"
+      },
+      "idtag": "RUSO",
+      "tag": "RUXM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "ru",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.5.0.WPCRUXM": {
+          "os": "OS3.0.5.0.WPCRUXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_ru_global-ota_full-OS3.0.5.0.WPCRUXM-user-16.0-4ab0ca56ff.zip",
+          "fastboot": "pudding_ru_global_images_OS3.0.5.0.WPCRUXM_20260114.0000.00_16.0_ru_fd06593593.tgz"
+        },
+        "OS3.0.4.0.WPCRUXM": {
+          "os": "OS3.0.4.0.WPCRUXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_ru_global-ota_full-OS3.0.4.0.WPCRUXM-user-16.0-d392689d7f.zip",
+          "fastboot": ""
+        },
+        "OS3.0.2.0.WPCRUXM": {
+          "os": "OS3.0.2.0.WPCRUXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_ru_global-ota_full-OS3.0.2.0.WPCRUXM-user-16.0-03fbcf1034.zip",
+          "fastboot": ""
+        },
+        "OS3.0.1.0.WPCRUXM": {
+          "os": "OS3.0.1.0.WPCRUXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_ru_global-ota_full-OS3.0.1.0.WPCRUXM-user-16.0-7c53bf3ddb.zip",
+          "fastboot": ""
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 印度正式版",
+        "en": "Xiaomi HyperOS India Stable"
+      },
+      "branchCode": "pudding_in_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17",
+        "en": "Xiaomi 17"
+      },
+      "idtag": "INSO",
+      "tag": "INXM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "in",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.4.0.WPCINXM": {
+          "os": "OS3.0.4.0.WPCINXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_in_global-ota_full-OS3.0.4.0.WPCINXM-user-16.0-e4a0932b99.zip",
+          "fastboot": "pudding_in_global_images_OS3.0.4.0.WPCINXM_20260109.0000.00_16.0_in_0396f3d763.tgz"
+        },
+        "OS3.0.2.0.WPCINXM": {
+          "os": "OS3.0.2.0.WPCINXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_in_global-ota_full-OS3.0.2.0.WPCINXM-user-16.0-c6bfc196f9.zip",
+          "fastboot": ""
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 印度尼西亚正式版",
+        "en": "Xiaomi HyperOS Indonesia Stable"
+      },
+      "branchCode": "pudding_id_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17",
+        "en": "Xiaomi 17"
+      },
+      "idtag": "IDSO",
+      "tag": "IDXM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "id",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.4.0.WPCIDXM": {
+          "os": "OS3.0.4.0.WPCIDXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_id_global-ota_full-OS3.0.4.0.WPCIDXM-user-16.0-befeeda1d5.zip",
+          "fastboot": "pudding_id_global_images_OS3.0.4.0.WPCIDXM_20260121.0000.00_16.0_id_373c723cd7.tgz"
+        },
+        "OS3.0.3.0.WPCIDXM": {
+          "os": "OS3.0.3.0.WPCIDXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_id_global-ota_full-OS3.0.3.0.WPCIDXM-user-16.0-d7c6345ace.zip",
+          "fastboot": ""
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 土耳其正式版",
+        "en": "Xiaomi HyperOS Turkey Stable"
+      },
+      "branchCode": "pudding_tr_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17",
+        "en": "Xiaomi 17"
+      },
+      "idtag": "TRSO",
+      "tag": "TRXM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "tr",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.4.0.WPCTRXM": {
+          "os": "OS3.0.4.0.WPCTRXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_tr_global-ota_full-OS3.0.4.0.WPCTRXM-user-16.0-dadb8380e8.zip",
+          "fastboot": "pudding_tr_global_images_OS3.0.4.0.WPCTRXM_20260121.0000.00_16.0_tr_b443415481.tgz"
+        },
+        "OS3.0.3.0.WPCTRXM": {
+          "os": "OS3.0.3.0.WPCTRXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_tr_global-ota_full-OS3.0.3.0.WPCTRXM-user-16.0-c0d9c3001e.zip",
+          "fastboot": ""
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 拉丁美洲Claro运营商定制版",
+        "en": "Xiaomi HyperOS Latin America Claro Carrier Edition"
+      },
+      "branchCode": "pudding_lm_cr_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17",
+        "en": "Xiaomi 17"
+      },
+      "idtag": "LMCR",
+      "tag": "LMCR",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        "cr"
+      ],
+      "region": "lm",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.1.0.WPCLMCR": {
+          "os": "OS3.0.1.0.WPCLMCR",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "pudding_lm_cr_global-ota_full-OS3.0.1.0.WPCLMCR-user-16.0-9ea2ac3579.zip",
+          "fastboot": "pudding_lm_cr_global_images_OS3.0.1.0.WPCLMCR_20251216.0000.00_16.0_lm_cr_9d38c7015f.tgz"
         }
       }
     }

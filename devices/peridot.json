@@ -617,7 +617,7 @@
 					"android": "16.0",
 					"release": "2026-02-02",
 					"recovery": "peridot_global-ota_full-OS3.0.4.0.WNPMIXM-user-16.0-3fccc2bf19.zip",
-					"fastboot": ""
+					"fastboot": "peridot_global_images_OS3.0.4.0.WNPMIXM_20260119.0000.00_16.0_global_9655fe4c19.tgz"
 				},
 				"OS2.0.208.0.VNPMIXM": {
 					"os": "OS2.0.208.0.VNPMIXM",
@@ -1137,7 +1137,7 @@
 					"android": "16.0",
 					"release": "2026-02-02",
 					"recovery": "peridot_in_global-ota_full-OS3.0.2.0.WNPINXM-user-16.0-e78c03f75a.zip",
-					"fastboot": ""
+					"fastboot": "peridot_in_global_images_OS3.0.2.0.WNPINXM_20260113.0000.00_16.0_in_794561886d.tgz"
 				},
 				"OS2.0.207.0.VNPINXM": {
 					"os": "OS2.0.207.0.VNPINXM",

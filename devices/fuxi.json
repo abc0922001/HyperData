@@ -412,8 +412,8 @@
 					"android": "16.0",
 					"release": "2026-01-30",
 					"recovery": "fuxi-ota_full-OS3.0.3.0.WMCCNXM-user-16.0-72296ffab2.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "fuxi_images_OS3.0.3.0.WMCCNXM_20260126.0000.00_16.0_cn_1fa0cd861e.tgz",
+					"ctelecom": "fuxi_images_OS3.0.3.0.WMCCNXM_20260126.0000.00_16.0_cn_chinatelecom_85b4916b0b.tgz"
 				},
 				"OS3.0.2.0.WMCCNXM": {
 					"os": "OS3.0.2.0.WMCCNXM",
@@ -1060,7 +1060,7 @@
 					"android": "16.0",
 					"release": "2026-02-05",
 					"recovery": "fuxi_eea_global-ota_full-OS3.0.1.0.WMCEUXM-user-16.0-8c41d64ed6.zip",
-					"fastboot": ""
+					"fastboot": "fuxi_eea_global_images_OS3.0.1.0.WMCEUXM_20260109.0000.00_16.0_eea_0381bf3c65.tgz"
 				},
 				"OS2.0.207.0.VMCEUXM": {
 					"os": "OS2.0.207.0.VMCEUXM",

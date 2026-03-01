@@ -259,7 +259,7 @@
 					"android": "16.0",
 					"release": "2026-02-23",
 					"recovery": "breeze_in_global-ota_full-OS3.0.10.0.WNUINXM-user-16.0-79b81927b2.zip",
-					"fastboot": ""
+					"fastboot": "breeze_in_global_images_OS3.0.10.0.WNUINXM_20260121.0000.00_16.0_in_db46a915cc.tgz"
 				},
 				"OS3.0.9.0.WNUINXM": {
 					"os": "OS3.0.9.0.WNUINXM",

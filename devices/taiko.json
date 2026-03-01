@@ -188,6 +188,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.3.0.WOVTWXM": {
+					"os": "OS3.0.3.0.WOVTWXM",
+					"android": "16.0",
+					"release": "2026-03-01",
+					"recovery": "taiko_tw_global-ota_full-OS3.0.3.0.WOVTWXM-user-16.0-339ee49735.zip",
+					"fastboot": ""
+				},
 				"OS3.0.1.0.WOVTWXM": {
 					"os": "OS3.0.1.0.WOVTWXM",
 					"android": "16.0",

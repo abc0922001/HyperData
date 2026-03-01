@@ -198,7 +198,7 @@
 					"android": "13.0",
 					"release": "2026-02-07",
 					"recovery": "miui_ALIOTHEEAGlobal_OS1.0.6.0.TKHEUXM_5b9445cf78_13.0.zip",
-					"fastboot": ""
+					"fastboot": "alioth_eea_global_images_OS1.0.6.0.TKHEUXM_20260113.0000.00_13.0_eea_cd9cf4c493.tgz"
 				},
 				"OS1.0.3.0.TKHEUXM": {
 					"os": "OS1.0.3.0.TKHEUXM",
@@ -302,7 +302,7 @@
 					"android": "13.0",
 					"release": "2026-02-06",
 					"recovery": "miui_ALIOTHINGlobal_OS1.0.4.0.TKHINXM_209ccdaffe_13.0.zip",
-					"fastboot": ""
+					"fastboot": "alioth_in_global_images_OS1.0.4.0.TKHINXM_20260112.0000.00_13.0_in_577bc16b33.tgz"
 				},
 				"OS1.0.2.0.TKHINXM": {
 					"os": "OS1.0.2.0.TKHINXM",
@@ -354,7 +354,7 @@
 					"android": "13.0",
 					"release": "2026-02-06",
 					"recovery": "miui_ALIOTHIDGlobal_OS1.0.5.0.TKHIDXM_45125862de_13.0.zip",
-					"fastboot": ""
+					"fastboot": "alioth_id_global_images_OS1.0.5.0.TKHIDXM_20260113.0000.00_13.0_id_4cbdecbf85.tgz"
 				},
 				"OS1.0.3.0.TKHIDXM": {
 					"os": "OS1.0.3.0.TKHIDXM",

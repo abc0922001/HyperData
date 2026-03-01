@@ -901,7 +901,7 @@
 					"android": "16.0",
 					"release": "2026-02-07",
 					"recovery": "amethyst_in_global-ota_full-OS3.0.2.0.WOPINXM-user-16.0-9c7bb60944.zip",
-					"fastboot": ""
+					"fastboot": "amethyst_in_global_images_OS3.0.2.0.WOPINXM_20260113.0000.00_16.0_in_899055bd60.tgz"
 				},
 				"OS2.0.205.0.VOPINXM": {
 					"os": "OS2.0.205.0.VOPINXM",

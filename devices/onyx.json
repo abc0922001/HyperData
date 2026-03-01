@@ -55,8 +55,8 @@
 					"android": "16.0",
 					"release": "2026-01-28",
 					"recovery": "onyx-ota_full-OS3.0.11.0.WOLCNXM-user-16.0-2ceab380eb.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "onyx_images_OS3.0.11.0.WOLCNXM_20260121.0000.00_16.0_cn_15a48a7da7.tgz",
+					"ctelecom": "onyx_images_OS3.0.11.0.WOLCNXM_20260121.0000.00_16.0_cn_chinatelecom_2c8a3e86c7.tgz"
 				},
 				"OS3.0.9.0.WOLCNXM": {
 					"os": "OS3.0.9.0.WOLCNXM",
@@ -305,7 +305,7 @@
 					"android": "16.0",
 					"release": "2026-02-12",
 					"recovery": "onyx_tw_global-ota_full-OS3.0.3.0.WOLTWXM-user-16.0-431f33f4b8.zip",
-					"fastboot": ""
+					"fastboot": "onyx_tw_global_images_OS3.0.3.0.WOLTWXM_20260203.0000.00_16.0_tw_509e53ccea.tgz"
 				},
 				"OS3.0.2.0.WOLTWXM": {
 					"os": "OS3.0.2.0.WOLTWXM",
@@ -385,7 +385,7 @@
 					"android": "16.0",
 					"release": "2026-02-07",
 					"recovery": "onyx_global-ota_full-OS3.0.6.0.WOLMIXM-user-16.0-02188a5378.zip",
-					"fastboot": ""
+					"fastboot": "onyx_global_images_OS3.0.6.0.WOLMIXM_20260129.0000.00_16.0_global_bf1b560332.tgz"
 				},
 				"OS3.0.5.0.WOLMIXM": {
 					"os": "OS3.0.5.0.WOLMIXM",
@@ -479,7 +479,7 @@
 					"android": "16.0",
 					"release": "2026-02-08",
 					"recovery": "onyx_eea_global-ota_full-OS3.0.4.0.WOLEUXM-user-16.0-c2144144eb.zip",
-					"fastboot": ""
+					"fastboot": "onyx_eea_global_images_OS3.0.4.0.WOLEUXM_20260129.0000.00_16.0_eea_d6973203ad.tgz"
 				},
 				"OS3.0.3.0.WOLEUXM": {
 					"os": "OS3.0.3.0.WOLEUXM",
@@ -573,7 +573,7 @@
 					"android": "16.0",
 					"release": "2026-02-12",
 					"recovery": "onyx_ru_global-ota_full-OS3.0.3.0.WOLRUXM-user-16.0-17d3377c88.zip",
-					"fastboot": ""
+					"fastboot": "onyx_ru_global_images_OS3.0.3.0.WOLRUXM_20260203.0000.00_16.0_ru_0558fecc89.tgz"
 				},
 				"OS3.0.2.0.WOLRUXM": {
 					"os": "OS3.0.2.0.WOLRUXM",

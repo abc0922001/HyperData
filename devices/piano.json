@@ -47,6 +47,13 @@
       "zone": "1",
       "ep": "0",
       "roms": {
+        "OS3.0.300.8.WPYCNXM": {
+          "os": "OS3.0.300.8.WPYCNXM",
+          "android": "16.0",
+          "release": "2026-02-27",
+          "recovery": "piano-ota_full-OS3.0.300.8.WPYCNXM-user-16.0-1045499eed.zip",
+          "fastboot": ""
+        },
         "OS3.0.300.5.WPYCNXM": {
           "os": "OS3.0.300.5.WPYCNXM",
           "android": "16.0",
@@ -100,7 +107,7 @@
           "android": "16.0",
           "release": "2026-02-04",
           "recovery": "piano-ota_full-OS3.0.11.0.WPYCNXM-user-16.0-1491cbf14d.zip",
-          "fastboot": ""
+          "fastboot": "piano_images_OS3.0.11.0.WPYCNXM_20260123.0000.00_16.0_cn_8fb9d81046.tgz"
         },
         "OS3.0.10.0.WPYCNXM": {
           "os": "OS3.0.10.0.WPYCNXM",

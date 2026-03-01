@@ -227,7 +227,7 @@
 					"android": "16.0",
 					"release": "2026-02-02",
 					"recovery": "flare_eea_global-ota_full-OS3.0.1.0.WHXEUXM-user-16.0-36e85af783.zip",
-					"fastboot": ""
+					"fastboot": "flare_eea_global_images_OS3.0.1.0.WHXEUXM_20260106.0000.00_16.0_eea_ec1c40239a.tgz"
 				},
 				"OS2.0.207.0.VHXEUXM": {
 					"os": "OS2.0.207.0.VHXEUXM",

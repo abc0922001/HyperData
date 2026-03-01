@@ -329,6 +329,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.208.0.VFSMIXM": {
+					"os": "OS2.0.208.0.VFSMIXM",
+					"android": "15.0",
+					"release": "2026-02-28",
+					"recovery": "ruan_global-ota_full-OS2.0.208.0.VFSMIXM-user-15.0-254b96f913.zip",
+					"fastboot": ""
+				},
 				"OS2.0.207.0.VFSMIXM": {
 					"os": "OS2.0.207.0.VFSMIXM",
 					"android": "15.0",
@@ -491,7 +498,7 @@
 					"android": "15.0",
 					"release": "2026-02-11",
 					"recovery": "ruan_eea_global-ota_full-OS2.0.208.0.VFSEUXM-user-15.0-39eac9da20.zip",
-					"fastboot": ""
+					"fastboot": "ruan_eea_global_images_OS2.0.208.0.VFSEUXM_20260204.0000.00_15.0_eea_4944c4fc71.tgz"
 				},
 				"OS2.0.207.0.VFSEUXM": {
 					"os": "OS2.0.207.0.VFSEUXM",
@@ -784,7 +791,7 @@
 					"android": "15.0",
 					"release": "2026-02-11",
 					"recovery": "ruan_in_global-ota_full-OS2.0.207.0.VFSINXM-user-15.0-8d33c9c179.zip",
-					"fastboot": ""
+					"fastboot": "ruan_in_global_images_OS2.0.207.0.VFSINXM_20260131.0000.00_15.0_in_4227b50145.tgz"
 				},
 				"OS2.0.206.0.VFSINXM": {
 					"os": "OS2.0.206.0.VFSINXM",

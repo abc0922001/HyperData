@@ -515,6 +515,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS1.0.18.0.TKCEUVF": {
+					"os": "OS1.0.18.0.TKCEUVF",
+					"android": "13.0",
+					"release": "2026-02-28",
+					"recovery": "miui_VEUXEEAVFGlobal_OS1.0.18.0.TKCEUVF_a2c492c815_13.0.zip",
+					"fastboot": ""
+				},
 				"OS1.0.17.0.TKCEUVF": {
 					"os": "OS1.0.17.0.TKCEUVF",
 					"android": "13.0",
@@ -748,6 +755,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS1.0.6.0.TKCEUSF": {
+					"os": "OS1.0.6.0.TKCEUSF",
+					"android": "13.0",
+					"release": "2026-02-26",
+					"recovery": "miui_VEUXEEASFGlobal_OS1.0.6.0.TKCEUSF_c5cb6e25f0_13.0.zip",
+					"fastboot": ""
+				},
 				"OS1.0.2.0.TKCEUSF": {
 					"os": "OS1.0.2.0.TKCEUSF",
 					"android": "13.0",

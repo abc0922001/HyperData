@@ -47,6 +47,13 @@
       "zone": "1",
       "ep": "0",
       "roms": {
+        "OS3.0.300.10.WBLCNXM": {
+          "os": "OS3.0.300.10.WBLCNXM",
+          "android": "16.0",
+          "release": "2026-02-27",
+          "recovery": "pandora-ota_full-OS3.0.300.10.WBLCNXM-user-16.0-dafc5d00fc.zip",
+          "fastboot": ""
+        },
         "OS3.0.300.9.WBLCNXM": {
           "os": "OS3.0.300.9.WBLCNXM",
           "android": "16.0",

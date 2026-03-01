@@ -47,6 +47,13 @@
       "zone": "1",
       "ep": "0",
       "roms": {
+        "OS3.0.300.9.WPKCNXM": {
+          "os": "OS3.0.300.9.WPKCNXM",
+          "android": "16.0",
+          "release": "2026-02-27",
+          "recovery": "annibale-ota_full-OS3.0.300.9.WPKCNXM-user-16.0-ba25ab6ae4.zip",
+          "fastboot": ""
+        },
         "OS3.0.300.8.WPKCNXM": {
           "os": "OS3.0.300.8.WPKCNXM",
           "android": "16.0",

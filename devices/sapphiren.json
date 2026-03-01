@@ -51,7 +51,7 @@
 					"android": "15.0",
 					"release": "2026-02-09",
 					"recovery": "sapphiren_tw_global-ota_full-OS2.0.209.0.VNHTWXM-user-15.0-a9a833e999.zip",
-					"fastboot": ""
+					"fastboot": "sapphiren_tw_global_images_OS2.0.209.0.VNHTWXM_20260130.0000.00_15.0_tw_721eba8f57.tgz"
 				},
 				"OS2.0.208.0.VNHTWXM": {
 					"os": "OS2.0.208.0.VNHTWXM",
@@ -438,7 +438,7 @@
 					"android": "15.0",
 					"release": "2026-02-06",
 					"recovery": "sapphiren_eea_global-ota_full-OS2.0.211.0.VNHEUXM-user-15.0-5fe03ee8aa.zip",
-					"fastboot": ""
+					"fastboot": "sapphiren_eea_global_images_OS2.0.211.0.VNHEUXM_20260130.0000.00_15.0_eea_739cc39175.tgz"
 				},
 				"OS2.0.210.0.VNHEUXM": {
 					"os": "OS2.0.210.0.VNHEUXM",

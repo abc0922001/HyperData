@@ -170,6 +170,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WFOEUXM": {
+					"os": "OS3.0.1.0.WFOEUXM",
+					"android": "16.0",
+					"release": "2026-02-28",
+					"recovery": "emerald_r_eea_global-ota_full-OS3.0.1.0.WFOEUXM-user-16.0-c70f79c8d6.zip",
+					"fastboot": ""
+				},
 				"OS2.0.208.0.VFOEUXM": {
 					"os": "OS2.0.208.0.VFOEUXM",
 					"android": "15.0",
@@ -283,7 +290,7 @@
 					"android": "15.0",
 					"release": "2026-02-23",
 					"recovery": "emerald_r_ru_global-ota_full-OS2.0.207.0.VFORUXM-user-15.0-25ee543a0b.zip",
-					"fastboot": ""
+					"fastboot": "emerald_r_ru_global_images_OS2.0.207.0.VFORUXM_20260205.0000.00_15.0_ru_2b5f6011af.tgz"
 				},
 				"OS2.0.206.0.VFORUXM": {
 					"os": "OS2.0.206.0.VFORUXM",

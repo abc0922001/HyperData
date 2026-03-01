@@ -99,8 +99,8 @@
 					"android": "16.0",
 					"release": "2026-02-09",
 					"recovery": "corot-ota_full-OS3.0.4.0.WMLCNXM-user-16.0-a21a878b6b.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "corot_images_OS3.0.4.0.WMLCNXM_20260129.0000.00_16.0_cn_2f1f089dc2.tgz",
+					"ctelecom": "corot_images_OS3.0.4.0.WMLCNXM_20260129.0000.00_16.0_cn_chinatelecom_d4b1a07ce4.tgz"
 				},
 				"OS3.0.3.0.WMLCNXM": {
 					"os": "OS3.0.3.0.WMLCNXM",

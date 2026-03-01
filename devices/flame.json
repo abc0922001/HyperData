@@ -334,7 +334,7 @@
 					"android": "16.0",
 					"release": "2026-02-23",
 					"recovery": "flame_in_global-ota_full-OS3.0.5.0.WGUINXM-user-16.0-bf777d3ace.zip",
-					"fastboot": ""
+					"fastboot": "flame_in_global_images_OS3.0.5.0.WGUINXM_20260121.0000.00_16.0_in_16f29c08d9.tgz"
 				},
 				"OS2.0.203.0.VGUINXM": {
 					"os": "OS2.0.203.0.VGUINXM",

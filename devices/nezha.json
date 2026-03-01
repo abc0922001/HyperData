@@ -106,7 +106,7 @@
         "OS3.0.15.0.WPACNXM": {
           "os": "OS3.0.15.0.WPACNXM",
           "android": "16.0",
-          "release": "2026-02-08",
+          "release": "2026-02-28",
           "recovery": "nezha-ota_full-OS3.0.15.0.WPACNXM-user-16.0-bffbaa36c0.zip",
           "fastboot": "",
           "ctelecom": ""
@@ -209,6 +209,449 @@
           "recovery": "nezha_demo-ota_full-OS3.0.5.0.WPACNDM-user-16.0-7a9b7322e9.zip",
           "fastboot": "nezha_demo_images_OS3.0.5.0.WPACNDM_20251223.0000.00_16.0_cn_df9e699cdb.tgz",
           "ctelecom": "nezha_demo_images_OS3.0.5.0.WPACNDM_20251223.0000.00_16.0_cn_chinatelecom_4329b23a98.tgz"
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 中国台湾省正式版",
+        "en": "Xiaomi HyperOS China Taiwan Province Stable"
+      },
+      "branchCode": "nezha_tw_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17 Ultra",
+        "en": "Xiaomi 17 Ultra by Leica / Leitzphone powered by Xiaomi"
+      },
+      "idtag": "CNTP",
+      "tag": "TWXM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "tw",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.5.0.WPATWXM": {
+          "os": "OS3.0.5.0.WPATWXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_tw_global-ota_full-OS3.0.5.0.WPATWXM-user-16.0-7e6dd7c24e.zip",
+          "fastboot": "nezha_tw_global_images_OS3.0.5.0.WPATWXM_20260130.0000.00_16.0_tw_4c694b45ce.tgz"
+        },
+        "OS3.0.4.0.WPATWXM": {
+          "os": "OS3.0.4.0.WPATWXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_tw_global-ota_full-OS3.0.4.0.WPATWXM-user-16.0-6efdc7f7ac.zip",
+          "fastboot": ""
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 国际正式版",
+        "en": "Xiaomi HyperOS Global Stable"
+      },
+      "branchCode": "nezha_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17 Ultra",
+        "en": "Xiaomi 17 Ultra by Leica / Leitzphone powered by Xiaomi"
+      },
+      "idtag": "GBOO",
+      "tag": "MIXM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "global",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.9.0.WPAMIXM": {
+          "os": "OS3.0.9.0.WPAMIXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_global-ota_full-OS3.0.9.0.WPAMIXM-user-16.0-1cd8ed4ecf.zip",
+          "fastboot": "nezha_global_images_OS3.0.9.0.WPAMIXM_20260210.0000.00_16.0_global_e160067725.tgz"
+        },
+        "OS3.0.5.0.WPAMIXM": {
+          "os": "OS3.0.5.0.WPAMIXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_global-ota_full-OS3.0.5.0.WPAMIXM-user-16.0-3d179258a5.zip",
+          "fastboot": "nezha_global_images_OS3.0.5.0.WPAMIXM_20260105.0000.00_16.0_global_7939d3f750.tgz"
+        },
+        "OS3.0.2.0.WPAMIXM": {
+          "os": "OS3.0.2.0.WPAMIXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_global-ota_full-OS3.0.2.0.WPAMIXM-user-16.0-f5a1a556c5.zip",
+          "fastboot": ""
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 国际 DC 正式版",
+        "en": "Xiaomi HyperOS Global DC Stable"
+      },
+      "branchCode": "nezha_dc_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17 Ultra",
+        "en": "Xiaomi 17 Ultra by Leica / Leitzphone powered by Xiaomi"
+      },
+      "idtag": "GBDC",
+      "tag": "MIDC",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "0",
+      "carrier": [
+        "dc"
+      ],
+      "region": "global",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.4.0.WPAMIDC": {
+          "os": "OS3.0.4.0.WPAMIDC",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_dc_global-ota_full-OS3.0.4.0.WPAMIDC-user-16.0-72e3537b43.zip",
+          "fastboot": "nezha_dc_global_images_OS3.0.4.0.WPAMIDC_20260130.0000.00_16.0_global_dc_7be6ad9b38.tgz"
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 欧洲EEA正式版",
+        "en": "Xiaomi HyperOS Europe EEA Stable"
+      },
+      "branchCode": "nezha_eea_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17 Ultra",
+        "en": "Xiaomi 17 Ultra by Leica / Leitzphone powered by Xiaomi"
+      },
+      "idtag": "EEAO",
+      "tag": "EUXM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "eea",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.11.0.WPAEUXM": {
+          "os": "OS3.0.11.0.WPAEUXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_eea_global-ota_full-OS3.0.11.0.WPAEUXM-user-16.0-53b3876b3c.zip",
+          "fastboot": "nezha_eea_global_images_OS3.0.11.0.WPAEUXM_20260210.0000.00_16.0_eea_d01c255e12.tgz"
+        },
+        "OS3.0.10.0.WPAEUXM": {
+          "os": "OS3.0.10.0.WPAEUXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_eea_global-ota_full-OS3.0.10.0.WPAEUXM-user-16.0-8afe963fae.zip",
+          "fastboot": ""
+        },
+        "OS3.0.7.0.WPAEUXM": {
+          "os": "OS3.0.7.0.WPAEUXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_eea_global-ota_full-OS3.0.7.0.WPAEUXM-user-16.0-95176a97c7.zip",
+          "fastboot": "nezha_eea_global_images_OS3.0.7.0.WPAEUXM_20260101.0000.00_16.0_eea_b4a2ccd781.tgz"
+        },
+        "OS3.0.6.0.WPAEUXM": {
+          "os": "OS3.0.6.0.WPAEUXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_eea_global-ota_full-OS3.0.6.0.WPAEUXM-user-16.0-313dcf2e80.zip",
+          "fastboot": ""
+        },
+        "OS3.0.2.0.WPAEUXM": {
+          "os": "OS3.0.2.0.WPAEUXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_eea_global-ota_full-OS3.0.2.0.WPAEUXM-user-16.0-433fb518a4.zip",
+          "fastboot": "nezha_eea_global_images_OS3.0.2.0.WPAEUXM_20251217.0000.00_16.0_eea_b42b0b432c.tgz"
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 欧洲EEA Demo",
+        "en": "Xiaomi HyperOS Europe EEA Demo"
+      },
+      "branchCode": "nezha_eea_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17 Ultra",
+        "en": "Xiaomi 17 Ultra by Leica / Leitzphone powered by Xiaomi"
+      },
+      "idtag": "EEAD",
+      "tag": "EUDM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "0",
+      "carrier": [
+        ""
+      ],
+      "region": "eea",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.3.0.WPAEUDM": {
+          "os": "OS3.0.3.0.WPAEUDM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_eea_global-ota_full-OS3.0.3.0.WPAEUDM-user-16.0-549055b5d1.zip",
+          "fastboot": ""
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 俄罗斯正式版",
+        "en": "Xiaomi HyperOS Russia Stable"
+      },
+      "branchCode": "nezha_ru_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17 Ultra",
+        "en": "Xiaomi 17 Ultra by Leica / Leitzphone powered by Xiaomi"
+      },
+      "idtag": "RUSO",
+      "tag": "RUXM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "ru",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.4.0.WPARUXM": {
+          "os": "OS3.0.4.0.WPARUXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_ru_global-ota_full-OS3.0.4.0.WPARUXM-user-16.0-6e03f1c80f.zip",
+          "fastboot": "nezha_ru_global_images_OS3.0.4.0.WPARUXM_20260130.0000.00_16.0_ru_c5aeeb3f84.tgz"
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 印度正式版",
+        "en": "Xiaomi HyperOS India Stable"
+      },
+      "branchCode": "nezha_in_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17 Ultra",
+        "en": "Xiaomi 17 Ultra by Leica / Leitzphone powered by Xiaomi"
+      },
+      "idtag": "INSO",
+      "tag": "INXM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "in",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.2.0.WPAINXM": {
+          "os": "OS3.0.2.0.WPAINXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_in_global-ota_full-OS3.0.2.0.WPAINXM-user-16.0-a1f321384f.zip",
+          "fastboot": "nezha_in_global_images_OS3.0.2.0.WPAINXM_20260204.0000.00_16.0_in_27459cfeee.tgz"
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 印度尼西亚正式版",
+        "en": "Xiaomi HyperOS Indonesia Stable"
+      },
+      "branchCode": "nezha_id_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17 Ultra",
+        "en": "Xiaomi 17 Ultra by Leica / Leitzphone powered by Xiaomi"
+      },
+      "idtag": "IDSO",
+      "tag": "IDXM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "id",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.5.0.WPAIDXM": {
+          "os": "OS3.0.5.0.WPAIDXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_id_global-ota_full-OS3.0.5.0.WPAIDXM-user-16.0-c224f76753.zip",
+          "fastboot": "nezha_id_global_images_OS3.0.5.0.WPAIDXM_20260206.0000.00_16.0_id_ef3676677d.tgz"
+        },
+        "OS3.0.4.0.WPAIDXM": {
+          "os": "OS3.0.4.0.WPAIDXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_id_global-ota_full-OS3.0.4.0.WPAIDXM-user-16.0-b987f048fb.zip",
+          "fastboot": ""
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 土耳其正式版",
+        "en": "Xiaomi HyperOS Turkey Stable"
+      },
+      "branchCode": "nezha_tr_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17 Ultra",
+        "en": "Xiaomi 17 Ultra by Leica / Leitzphone powered by Xiaomi"
+      },
+      "idtag": "TRSO",
+      "tag": "TRXM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "tr",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.4.0.WPATRXM": {
+          "os": "OS3.0.4.0.WPATRXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_tr_global-ota_full-OS3.0.4.0.WPATRXM-user-16.0-4504037002.zip",
+          "fastboot": "nezha_tr_global_images_OS3.0.4.0.WPATRXM_20260206.0000.00_16.0_tr_561a205113.tgz"
+        },
+        "OS3.0.3.0.WPATRXM": {
+          "os": "OS3.0.3.0.WPATRXM",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_tr_global-ota_full-OS3.0.3.0.WPATRXM-user-16.0-9104013dac.zip",
+          "fastboot": ""
+        }
+      }
+    },
+    {
+      "name": {
+        "zh": "小米澎湃 OS 拉丁美洲Claro运营商定制版",
+        "en": "Xiaomi HyperOS Latin America Claro Carrier Edition"
+      },
+      "branchCode": "nezha_lm_cr_global",
+      "brand": "Xiaomi",
+      "device": {
+        "zh": "小米 17 Ultra",
+        "en": "Xiaomi 17 Ultra by Leica / Leitzphone powered by Xiaomi"
+      },
+      "idtag": "LMCR",
+      "tag": "LMCR",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        "cr"
+      ],
+      "region": "lm",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.2.0.WPALMCR": {
+          "os": "OS3.0.2.0.WPALMCR",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "recovery": "nezha_lm_cr_global-ota_full-OS3.0.2.0.WPALMCR-user-16.0-71ad20377e.zip",
+          "fastboot": "nezha_lm_cr_global_images_OS3.0.2.0.WPALMCR_20260120.0000.00_16.0_lm_cr_44b5cc6009.tgz"
         }
       }
     }

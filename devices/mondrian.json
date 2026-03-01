@@ -761,7 +761,7 @@
 					"android": "15.0",
 					"release": "2026-02-06",
 					"recovery": "mondrian_global-ota_full-OS3.0.2.0.VMNMIXM-user-15.0-e42ecbbdc3.zip",
-					"fastboot": ""
+					"fastboot": "mondrian_global_images_OS3.0.2.0.VMNMIXM_20260128.0000.00_15.0_global_da43536df4.tgz"
 				},
 				"OS2.0.209.0.VMNMIXM": {
 					"os": "OS2.0.209.0.VMNMIXM",

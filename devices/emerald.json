@@ -559,7 +559,7 @@
 					"android": "15.0",
 					"release": "2026-02-23",
 					"recovery": "emerald_ru_global-ota_full-OS2.0.214.0.VNFRUXM-user-15.0-c39e71d82e.zip",
-					"fastboot": ""
+					"fastboot": "emerald_ru_global_images_OS2.0.214.0.VNFRUXM_20260206.0000.00_15.0_ru_abc5fa297d.tgz"
 				},
 				"OS2.0.213.0.VNFRUXM": {
 					"os": "OS2.0.213.0.VNFRUXM",

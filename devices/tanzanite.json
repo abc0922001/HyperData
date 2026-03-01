@@ -562,7 +562,7 @@
 					"android": "15.0",
 					"release": "2026-02-09",
 					"recovery": "tanzanite_ru_global-ota_full-OS2.0.209.0.VOGRUXM-user-15.0-d18b640c5e.zip",
-					"fastboot": ""
+					"fastboot": "tanzanite_ru_global_images_OS2.0.209.0.VOGRUXM_20260129.0000.00_15.0_ru_0ab6e253cb.tgz"
 				},
 				"OS2.0.208.0.VOGRUXM": {
 					"os": "OS2.0.208.0.VOGRUXM",
@@ -684,7 +684,7 @@
 					"android": "15.0",
 					"release": "2026-02-09",
 					"recovery": "tanzanite_id_global-ota_full-OS2.0.209.0.VOGIDXM-user-15.0-bf67fea3d8.zip",
-					"fastboot": ""
+					"fastboot": "tanzanite_id_global_images_OS2.0.209.0.VOGIDXM_20260129.0000.00_15.0_id_a82ddce226.tgz"
 				},
 				"OS2.0.208.0.VOGIDXM": {
 					"os": "OS2.0.208.0.VOGIDXM",
@@ -806,7 +806,7 @@
 					"android": "15.0",
 					"release": "2026-02-09",
 					"recovery": "tanzanite_tr_global-ota_full-OS2.0.210.0.VOGTRXM-user-15.0-2bd837bb51.zip",
-					"fastboot": ""
+					"fastboot": "tanzanite_tr_global_images_OS2.0.210.0.VOGTRXM_20260129.0000.00_15.0_tr_6920d68f30.tgz"
 				},
 				"OS2.0.209.0.VOGTRXM": {
 					"os": "OS2.0.209.0.VOGTRXM",

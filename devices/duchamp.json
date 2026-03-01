@@ -140,8 +140,8 @@
 					"android": "16.0",
 					"release": "2026-02-11",
 					"recovery": "duchamp-ota_full-OS3.0.5.0.WNLCNXM-user-16.0-4ec697213b.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "duchamp_images_OS3.0.5.0.WNLCNXM_20260206.0000.00_16.0_cn_85de661ec2.tgz",
+					"ctelecom": "duchamp_images_OS3.0.5.0.WNLCNXM_20260206.0000.00_16.0_cn_chinatelecom_b89a6d54eb.tgz"
 				},
 				"OS3.0.3.0.WNLCNXM": {
 					"os": "OS3.0.3.0.WNLCNXM",

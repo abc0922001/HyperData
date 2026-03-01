@@ -930,7 +930,7 @@
 					"android": "15.0",
 					"release": "2026-02-24",
 					"recovery": "xun_tr_global-ota_full-OS2.0.203.0.VMUTRXM-user-15.0-1b51dec847.zip",
-					"fastboot": ""
+					"fastboot": "xun_tr_global_images_OS2.0.203.0.VMUTRXM_20260127.0000.00_15.0_tr_d2f03a4d1d.tgz"
 				},
 				"OS2.0.202.0.VMUTRXM": {
 					"os": "OS2.0.202.0.VMUTRXM",

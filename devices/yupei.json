@@ -100,7 +100,7 @@
           "android": "16.0",
           "release": "2026-02-04",
           "recovery": "yupei-ota_full-OS3.0.12.0.WPZCNXM-user-16.0-a2eb78c92f.zip",
-          "fastboot": ""
+          "fastboot": "yupei_images_OS3.0.12.0.WPZCNXM_20260123.0000.00_16.0_cn_f55ee187a1.tgz"
         },
         "OS3.0.11.0.WPZCNXM": {
           "os": "OS3.0.11.0.WPZCNXM",

@@ -48,12 +48,26 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.4.0.WOFMIXM": {
+					"os": "OS3.0.4.0.WOFMIXM",
+					"android": "16.0",
+					"release": "2026-03-01",
+					"recovery": "obsidian_global-ota_full-OS3.0.4.0.WOFMIXM-user-16.0-ea25cc6c80.zip",
+					"fastboot": ""
+				},
 				"OS3.0.3.0.WOFMIXM": {
 					"os": "OS3.0.3.0.WOFMIXM",
 					"android": "16.0",
 					"release": "2025-12-04",
 					"recovery": "obsidian_global-ota_full-OS3.0.3.0.WOFMIXM-user-16.0-eaf3a772c1.zip",
 					"fastboot": ""
+				},
+				"OS2.0.213.0.VOFMIXM": {
+					"os": "OS2.0.213.0.VOFMIXM",
+					"android": "15.0",
+					"release": "2026-02-28",
+					"recovery": "obsidian_global-ota_full-OS2.0.213.0.VOFMIXM-user-15.0-9d9313f732.zip",
+					"fastboot": "obsidian_global_images_OS2.0.213.0.VOFMIXM_20260224.0000.00_15.0_global_84a399bab1.tgz"
 				},
 				"OS2.0.212.0.VOFMIXM": {
 					"os": "OS2.0.212.0.VOFMIXM",
@@ -276,7 +290,7 @@
 					"android": "15.0",
 					"release": "2026-02-26",
 					"recovery": "obsidian_eea_global-ota_full-OS2.0.215.0.VOFEUXM-user-15.0-d852a50731.zip",
-					"fastboot": ""
+					"fastboot": "obsidian_eea_global_images_OS2.0.215.0.VOFEUXM_20260206.0000.00_15.0_eea_2c5263f49d.tgz"
 				},
 				"OS2.0.209.0.VOFEUXM": {
 					"os": "OS2.0.209.0.VOFEUXM",

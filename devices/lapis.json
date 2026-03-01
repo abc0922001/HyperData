@@ -320,7 +320,7 @@
           "android": "15.0",
           "release": "2026-02-23",
           "recovery": "lapis_dc_global-ota_full-OS2.0.205.0.VPPMIDC-user-15.0-231a4934ce.zip",
-          "fastboot": ""
+          "fastboot": "lapis_dc_global_images_OS2.0.205.0.VPPMIDC_20260127.0000.00_15.0_global_dc_f6baa92967.tgz"
         },
         "OS2.0.204.0.VPPMIDC": {
           "os": "OS2.0.204.0.VPPMIDC",
@@ -424,7 +424,7 @@
           "android": "15.0",
           "release": "2026-02-23",
           "recovery": "lapis_ru_global-ota_full-OS2.0.202.0.VPPRUXM-user-15.0-0ccd90ac5b.zip",
-          "fastboot": ""
+          "fastboot": "lapis_ru_global_images_OS2.0.202.0.VPPRUXM_20260127.0000.00_15.0_ru_f4a04aeea5.tgz"
         },
         "OS2.0.201.0.VPPRUXM": {
           "os": "OS2.0.201.0.VPPRUXM",

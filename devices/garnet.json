@@ -740,6 +740,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WNRMIDC": {
+					"os": "OS3.0.1.0.WNRMIDC",
+					"android": "16.0",
+					"release": "2026-03-01",
+					"recovery": "garnet_dc_global-ota_full-OS3.0.1.0.WNRMIDC-user-16.0-bdade4fb3f.zip",
+					"fastboot": ""
+				},
 				"OS2.0.207.0.VNRMIDC": {
 					"os": "OS2.0.207.0.VNRMIDC",
 					"android": "15.0",

@@ -291,7 +291,7 @@
           "android": "16.0",
           "release": "2026-02-09",
           "recovery": "goya_eea_global-ota_full-OS3.0.10.0.WOEEUXM-user-16.0-9e2dec0d00.zip",
-          "fastboot": ""
+          "fastboot": "goya_eea_global_images_OS3.0.10.0.WOEEUXM_20260202.0000.00_16.0_eea_78927383e8.tgz"
         },
         "OS3.0.9.0.WOEEUXM": {
           "os": "OS3.0.9.0.WOEEUXM",
@@ -599,6 +599,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.1.0.WOEMXAT": {
+          "os": "OS3.0.1.0.WOEMXAT",
+          "android": "16.0",
+          "release": "2026-03-01",
+          "recovery": "goya_mx_at_global-ota_full-OS3.0.1.0.WOEMXAT-user-16.0-e81483dd39.zip",
+          "fastboot": ""
+        },
         "OS2.0.203.0.VOEMXAT": {
           "os": "OS2.0.203.0.VOEMXAT",
           "android": "15.0",
