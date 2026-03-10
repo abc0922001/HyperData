@@ -1,8 +1,16 @@
 {
   "recent": {
-    "time": "2026-03-09 19:59:52",
+    "time": "2026-03-10 21:04:10",
     "developing": "no",
     "roms": [
+      {
+        "code": "cupid",
+        "name": {
+          "zh": "小米 12",
+          "en": "Xiaomi 12"
+        },
+        "rom": "OS2.0.204.0.VLCMXAT"
+      },
       {
         "code": "nuwa",
         "name": {
@@ -10,6 +18,14 @@
           "en": "Xiaomi 13 Pro"
         },
         "rom": "OS3.0.2.0.WMBMIXM; OS3.0.2.0.WMBINXM"
+      },
+      {
+        "code": "aristotle",
+        "name": {
+          "zh": "小米 13T",
+          "en": "Xiaomi 13T"
+        },
+        "rom": "OS2.0.216.0.VMFEUXM"
       },
       {
         "code": "xuanyuan",
@@ -44,6 +60,14 @@
         "rom": "OS3.0.1.0.WPZTWXM; OS3.0.1.0.WPZMIXM; OS3.0.4.0.WPZEUXM; OS3.0.1.0.WPZRUXM; OS3.0.2.0.WPZINXM; OS3.0.1.0.WPZIDXM; OS3.0.1.0.WPZTRXM"
       },
       {
+        "code": "earth",
+        "name": {
+          "zh": "Redmi 12C / POCO C55",
+          "en": "Redmi 12C / POCO C55"
+        },
+        "rom": "OS1.0.14.0.UCVEUOR"
+      },
+      {
         "code": "sky",
         "name": {
           "zh": "Redmi 12 / 12R 5G / Redmi Note 12R / POCO M6 Pro 5G",
@@ -60,12 +84,36 @@
         "rom": "OS3.0.1.0.WBNMIXM; OS2.0.216.0.VBNEUXM"
       },
       {
+        "code": "sea",
+        "name": {
+          "zh": "Redmi Note 12S",
+          "en": "Redmi Note 12S"
+        },
+        "rom": "OS2.0.204.0.VHZLMMS"
+      },
+      {
         "code": "garnet",
         "name": {
           "zh": "Redmi Note 13 Pro 5G / POCO X6 5G",
           "en": "Redmi Note 13 Pro 5G / POCO X6 5G"
         },
         "rom": "OS3.0.4.0.WNRMIXM"
+      },
+      {
+        "code": "malachite",
+        "name": {
+          "zh": "Redmi Note 14 Pro / POCO X7",
+          "en": "Redmi Note 14 Pro / POCO X7"
+        },
+        "rom": "OS3.0.3.0.WOOMIDC"
+      },
+      {
+        "code": "amethyst",
+        "name": {
+          "zh": "Redmi Note 14 Pro+",
+          "en": "Redmi Note 14 Pro+"
+        },
+        "rom": "OS3.0.2.0.WOPMIDC"
       },
       {
         "code": "spark",
