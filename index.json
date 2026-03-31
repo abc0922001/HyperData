@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-03-30 23:53:58",
+    "time": "2026-03-31 18:51:20",
     "developing": "no",
     "roms": [
       {
@@ -44,6 +44,14 @@
         "rom": "OS2.0.209.0.VGPEUXM"
       },
       {
+        "code": "air",
+        "name": {
+          "zh": "Redmi 13C/R 5G / POCO M6 5G",
+          "en": "Redmi 13C/R 5G / POCO M6 5G"
+        },
+        "rom": "OS2.0.205.0.VGQMIDC"
+      },
+      {
         "code": "lake",
         "name": {
           "zh": "Redmi 14C",
@@ -84,6 +92,14 @@
         "rom": "OS3.0.2.0.WNRINXM"
       },
       {
+        "code": "emerald",
+        "name": {
+          "zh": "Redmi Note 13 Pro 4G / POCO M6 Pro",
+          "en": "Redmi Note 13 Pro 4G / POCO M6 Pro"
+        },
+        "rom": "OS3.0.2.0.WNFMIDC"
+      },
+      {
         "code": "obsidian",
         "name": {
           "zh": "Redmi Note 14 Pro 4G",
@@ -105,7 +121,7 @@
           "zh": "REDMI Note 15 Pro+ 5G",
           "en": "REDMI Note 15 Pro+ 5G"
         },
-        "rom": "OS3.0.1.0.WPRMIXM"
+        "rom": "OS2.0.205.0.VPRTWXM; OS3.0.1.0.WPRMIXM"
       },
       {
         "code": "peridot",
@@ -114,6 +130,14 @@
           "en": "Redmi Turbo 3 / POCO F6"
         },
         "rom": "OS3.0.5.0.WNPEUXM; OS3.0.3.0.WNPRUXM"
+      },
+      {
+        "code": "charoite",
+        "name": {
+          "zh": "REDMI Note 15 Pro 4G",
+          "en": "REDMI Note 15 Pro 4G"
+        },
+        "rom": "OS3.0.2.0.WPFMIXM"
       },
       {
         "code": "miro",
@@ -194,6 +218,14 @@
           "en": "REDMI K Pad / Xiaomi Pad Mini"
         },
         "rom": "OS3.0.301.0.WAOCNXM"
+      },
+      {
+        "code": "serenity",
+        "name": {
+          "zh": "REDMI A5 / POCO C71",
+          "en": "REDMI A5 / POCO C71"
+        },
+        "rom": "A15.0.13.0.VGWEUXM; A15.0.9.0.VGWIDXM"
       }
     ]
   }
