@@ -872,6 +872,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.2.0.VNQEUXM": {
+					"os": "OS3.0.2.0.VNQEUXM",
+					"android": "15.0",
+					"release": "2026-04-13",
+					"recovery": "gold_eea_global-ota_full-OS3.0.2.0.VNQEUXM-user-15.0-cc5162ed69.zip",
+					"fastboot": ""
+				},
 				"OS2.0.208.0.VNQEUXM": {
 					"os": "OS2.0.208.0.VNQEUXM",
 					"android": "15.0",

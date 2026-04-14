@@ -375,7 +375,7 @@
 					"android": "13.0",
 					"release": "2026-04-08",
 					"recovery": "miui_OPALEEAVFGlobal_OS1.0.18.0.TGLEUVF_0ac502076a_13.0.zip",
-					"fastboot": ""
+					"fastboot": "opal_eea_vf_global_images_OS1.0.18.0.TGLEUVF_20260323.0000.00_13.0_eea_vodafone_91b12a4fdc.tgz"
 				},
 				"OS1.0.17.0.TGLEUVF": {
 					"os": "OS1.0.17.0.TGLEUVF",

@@ -961,6 +961,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.3.0.WMBEUXM": {
+					"os": "OS3.0.3.0.WMBEUXM",
+					"android": "16.0",
+					"release": "2026-04-13",
+					"recovery": "nuwa_eea_global-ota_full-OS3.0.3.0.WMBEUXM-user-16.0-01976e32d5.zip",
+					"fastboot": ""
+				},
 				"OS3.0.2.0.WMBEUXM": {
 					"os": "OS3.0.2.0.WMBEUXM",
 					"android": "16.0",

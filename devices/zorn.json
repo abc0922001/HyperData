@@ -609,6 +609,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.301.0.WOKMIXM": {
+					"os": "OS3.0.301.0.WOKMIXM",
+					"android": "16.0",
+					"release": "2026-04-13",
+					"recovery": "zorn_global-ota_full-OS3.0.301.0.WOKMIXM-user-16.0-53a616b50a.zip",
+					"fastboot": ""
+				},
 				"OS3.0.8.0.WOKMIXM": {
 					"os": "OS3.0.8.0.WOKMIXM",
 					"android": "16.0",

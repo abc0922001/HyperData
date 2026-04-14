@@ -942,7 +942,7 @@
 					"android": "16.0",
 					"release": "2026-04-07",
 					"recovery": "degas_tr_global-ota_full-OS3.0.4.0.WNETRXM-user-16.0-4a6f08dd4e.zip",
-					"fastboot": ""
+					"fastboot": "degas_tr_global_images_OS3.0.4.0.WNETRXM_20260321.0000.00_16.0_tr_ae39b2fd33.tgz"
 				},
 				"OS3.0.1.0.WNETRXM": {
 					"os": "OS3.0.1.0.WNETRXM",

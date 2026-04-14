@@ -55,7 +55,7 @@
 					"android": "15.0",
 					"release": "2026-04-03",
 					"recovery": "yudi-ota_full-OS3.0.4.0.VMHCNXM-user-15.0-f11a9f8346.zip",
-					"fastboot": ""
+					"fastboot": "yudi_images_OS3.0.4.0.VMHCNXM_20260320.0000.00_15.0_cn_6fedeb241e.tgz"
 				},
 				"OS3.0.3.0.VMHCNXM": {
 					"os": "OS3.0.3.0.VMHCNXM",

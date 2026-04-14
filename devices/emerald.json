@@ -758,7 +758,7 @@
 					"android": "16.0",
 					"release": "2026-04-03",
 					"recovery": "emerald_id_global-ota_full-OS3.0.3.0.WNFIDXM-user-16.0-2ab6400035.zip",
-					"fastboot": ""
+					"fastboot": "emerald_id_global_images_OS3.0.3.0.WNFIDXM_20260324.0000.00_16.0_id_a5652caa85.tgz"
 				},
 				"OS3.0.2.0.WNFIDXM": {
 					"os": "OS3.0.2.0.WNFIDXM",

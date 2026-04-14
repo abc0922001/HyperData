@@ -305,7 +305,7 @@
           "android": "16.0",
           "release": "2026-04-07",
           "recovery": "flourite_dc_global-ota_full-OS3.0.2.0.WPRMIDC-user-16.0-f149ffa8cc.zip",
-          "fastboot": ""
+          "fastboot": "flourite_dc_global_images_OS3.0.2.0.WPRMIDC_20260318.0000.00_16.0_global_dc_deb56b65ad.tgz"
         },
         "OS2.0.206.0.VPRMIDC": {
           "os": "OS2.0.206.0.VPRMIDC",

@@ -1402,7 +1402,7 @@
 					"android": "16.0",
 					"release": "2026-04-07",
 					"recovery": "rothko_ru_global-ota_full-OS3.0.3.0.WNNRUXM-user-16.0-0a3b86e654.zip",
-					"fastboot": ""
+					"fastboot": "rothko_ru_global_images_OS3.0.3.0.WNNRUXM_20260324.0000.00_16.0_ru_a7ef7bb122.tgz"
 				},
 				"OS3.0.1.0.WNNRUXM": {
 					"os": "OS3.0.1.0.WNNRUXM",
