@@ -264,6 +264,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.301.0.WPATWXM": {
+          "os": "OS3.0.301.0.WPATWXM",
+          "android": "16.0",
+          "release": "2026-04-10",
+          "recovery": "nezha_tw_global-ota_full-OS3.0.301.0.WPATWXM-user-16.0-f495653509.zip",
+          "fastboot": ""
+        },
         "OS3.0.5.0.WPATWXM": {
           "os": "OS3.0.5.0.WPATWXM",
           "android": "16.0",

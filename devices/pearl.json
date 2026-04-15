@@ -51,6 +51,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.3.0.VLHCNXM": {
+					"os": "OS3.0.3.0.VLHCNXM",
+					"android": "15.0",
+					"release": "2026-04-15",
+					"recovery": "pearl-ota_full-OS3.0.3.0.VLHCNXM-user-15.0-b919fdadf8.zip",
+					"fastboot": "",
+					"ctelecom": ""
+				},
 				"OS3.0.1.0.VLHCNXM": {
 					"os": "OS3.0.1.0.VLHCNXM",
 					"android": "15.0",

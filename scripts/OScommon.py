@@ -15,6 +15,7 @@ from pymysql import Connection
 import config
 import os
 from collections import OrderedDict
+import re
 
 def get_platform_path(relative_path):
 	"""获取平台相关的文件路径"""
@@ -24,6 +25,34 @@ def get_platform_path(relative_path):
 		return os.path.join(relative_path)
 	else:
 		return os.path.join("/sdcard/Codes/HyperOS.fans", relative_path)
+
+def detect_json_indent(file_path):
+	"""检测JSON文件的缩进格式
+	
+	Args:
+		file_path: JSON文件路径
+	
+	Returns:
+		缩进字符串（'\t' 或 '  '）
+	"""
+	try:
+		with open(file_path, 'r', encoding='utf-8') as f:
+			# 读取第二行（第一行通常是 '{'）
+			lines = f.readlines()
+			if len(lines) > 1:
+				second_line = lines[1]
+				# 检查是否以Tab开头
+				if second_line.startswith('\t'):
+					return '\t'
+				# 检查空格数量
+				spaces = len(second_line) - len(second_line.lstrip(' '))
+				if spaces > 0:
+					return ' ' * spaces
+		# 默认使用2空格
+		return '\t'
+	except Exception:
+		return '\t'
+
 
 def extract_flag_from_filename(filename):
 	"""从文件名中提取flag"""
@@ -137,8 +166,8 @@ check_url = "https://update.miui.com/updates/miotaV3.php"
 
 
 unreleased = ['coral']
-currentStable = ['klee', 'dash', 'somalia', 'arctic', 'piano', 'yupei', 'pudding', 'nezha', 'flute', 'organ', 'spinel','charoite','annibale', 'myron',
-								 'pandora', 'popsicle', 'tornado','goya', 'klimt', 'konghou', 'dew', 'spring', 'lapis', 'kunzite',
+currentStable = ['dew','somalia', 'klee', 'dash', 'arctic', 'piano', 'yupei', 'pudding', 'nezha', 'flute', 'organ', 'spinel','charoite','annibale', 'myron',
+								 'pandora', 'popsicle', 'tornado','goya', 'klimt', 'konghou',  'spring', 'lapis', 'kunzite',
 								 'coral', 'flourite', 'creek', 'taiko', 'bixi', 'dali', 'turner', 'violin', 'koto', 'dijun', 'jinghu', 'luming', 
 								 'onyx', 'serenity', 'emerald_r', 'miro', 'zorn', 'xuanyuan', 'tanzanite', 'obsidian', 'rodin', 'warm', 'dada', 'haotian', 'uke', 'muyu', 
 								 'beryl', 'amethyst', 'malachite', 'degas', 'rothko', 'flame', 'lake', 'flare', 'spark', 
@@ -2597,92 +2626,233 @@ def getBranchcode(filename):
 		return filename.split('_images')[0]
 
 def getData(filename):
-	if "miui" in filename:
-		filetype = "recovery"
-		android = filename.split("_")[4].split(".zip")[0]
-		version = filename.split("_")[2]
-		get_sql = "SELECT code,device FROM devices WHERE branchcode = %s" % (stringify(filename.split("_")[1]))
-		data = db_job_latest(get_sql)
-		if data is not None:
-			code = data[0]
-			device = data[1]
-		else:
-			if ".EP" in filename:
-				devtag = filename.split("_")[1].split("EPS")[0].lower()
-			else:
-				devtag = version.split(".")[4][1:3]
-			ver_code = version[-4:]
-			info = db_job_latest("SELECT tag,code,region FROM branches WHERE vercode = %s" % (stringify(ver_code)))
-			tag,code,region = [item for item in info]
-			device = db_job_latest("SELECT device FROM devices WHERE devtag = %s" % (stringify(devtag)))[0]
-			if code is None:
-				code = device
-			else:
-				code = device+code
-			ins_sql = "INSERT INTO devices(device,devtag,code,tag,region,devcode,branchcode) VALUES (%s,%s,%s,%s,%s,%s,%s)" % (stringify(device),stringify(devtag),stringify(code),stringify(tag),stringify(region),stringify(version[-6:]),stringify(filename.split("_")[1]))
-			db_job_latest(ins_sql)
-	else:
-		if filename.endswith(".tgz"):
-			filetype = "fastboot"
-			if "-images" in filename:
-				android = filename.split("images-")[1].split("-")[3]
-				version = filename.split("images-")[1].split("-")[0]
-				code = filename.split('-images')[0]
-			else:
-				android = filename.split("images_")[1].split("_")[2]
-				version = filename.split("images_")[1].split("_")[0]
-				code = filename.split('_images')[0]
-		else:
-			filetype = "recovery"
-			if "PRE-" in filename:
-				android = filename.split("ota_full-")[1].split("-")[3]
-			else:
-				android = filename.split("ota_full-")[1].split("-")[2]
-			version = filename.split("ota_full-")[1].split("-user")[0]
-			code = filename.split("-ota_full")[0]
-		data = db_job_latest("SELECT device FROM roms where code = %s" % (stringify(code)))
-		if data is not None:
-			device = data[0]
-		else:
-			device = db_job_latest("SELECT device FROM devices where code = %s" % (stringify(code)))[0]
-	if version.startswith('V'):
-		type = "MIUI"
-		bigver = "MIUI " + version.split('V')[1].split('.')[0]
-	elif version.startswith('OS'):
-		type = "HyperOS"
-		bigver = "HyperOS " + version.split('OS')[1].split('.')[0]
-	elif version.startswith('A'):
-		type = "STAN"
-		bigver = "STAN " + version.split('.')[0]
-	if code == 0:
-		return 0
-	else:
-		if "CNXM" in version:
-			if version.split(".")[3] == 0 or version.split(".")[3] == "0":
-				tag = "CnOO"
-			else:
-				tag = "CnOB"
-			region = "cn"
-			zone = 1
-		else:
-			info_sql = "SELECT region,tag,zone FROM roms WHERE code = %s" % (stringify(code))
-			data = db_job_latest(info_sql)
-			if data is not None:
-				if len(data) > 0:
-					region,tag,zone = [item for item in data]
+		def parse_miui_recovery(fname):
+				"""解析 MIUI 开头卡刷包: miui_BRANCHCODE_VERSION_..._ANDROID.zip"""
+				# 例: miui_LIUQIN_OS1.0.7.0.UMYCNXM_d618a5c980_14.0.zip
+				pattern = r'^miui_([A-Za-z0-9]+)_([A-Z0-9\.]+)_.*_(\d+\.\d+)\.zip$'
+				match = re.match(pattern, fname)
+				if match:
+						return {
+								'branchcode': match.group(1),
+								'version': match.group(2),
+								'android': match.group(3),
+								'filetype': 'recovery'
+						}
+				return None
+		
+		def parse_hyperos_recovery(fname):
+				"""解析 HyperOS 格式卡刷包: CODE-ota_full-VERSION-user-ANDROID-HASH.zip"""
+				# 例: lapis-ota_full-OS3.0.302.0.WPPCNXM-user-16.0-3ee16184b4.zip
+				pattern = r'^([a-z0-9_]+)-ota_full-([A-Z0-9\.]+)-user-(\d+\.\d+)-[a-z0-9]+\.zip$'
+				match = re.match(pattern, fname)
+				if match:
+						return {
+								'code': match.group(1),
+								'version': match.group(2),
+								'android': match.group(3),
+								'filetype': 'recovery'
+						}
+				return None
+		
+		def parse_fastboot(fname):
+				"""解析线刷包格式"""
+				# 格式1: CODE-images-VERSION-TYPE-ANDROID-DATE.tgz (HyperOS新格式)
+				# 例: dew_mx_at_global_images_OS2.0.207.0.VBNMXAT_202507e28a.tgz
+				if '-images' in fname:
+						pattern = r'^([a-z0-9_]+)-images-([A-Z0-9\.]+)-[^-]+-(\d+\.\d+)-.*\.tgz$'
+						match = re.match(pattern, fname)
+						if match:
+								return {
+										'code': match.group(1),
+										'version': match.group(2),
+										'android': match.group(3),
+										'filetype': 'fastboot'
+								}
+				
+				# 格式2: CODE_images_VERSION_TYPE_ANDROID_DATE.tgz (MIUI旧格式)
+				# 例: umi_images_V14.0.4.0.QJBCNXM_20230705.0000.00_11.0_cn_6a6a7d6b5f.tgz
+				elif '_images' in fname:
+						pattern = r'^([a-z0-9_]+)_images_([A-Z0-9\.]+)_[^_]+_(\d+\.\d+)_.*\.tgz$'
+						match = re.match(pattern, fname)
+						if match:
+								return {
+										'code': match.group(1),
+										'version': match.group(2),
+										'android': match.group(3),
+										'filetype': 'fastboot'
+								}
+				return None
+		
+		def determine_version_info(ver):
+				"""根据版本号前缀确定 ROM 类型和大版本"""
+				if ver.startswith('V'):
+						return 'MIUI', f"MIUI {ver[1:].split('.')[0]}"
+				elif ver.startswith('OS'):
+						return 'HyperOS', f"HyperOS {ver[2:].split('.')[0]}"
+				elif ver.startswith('A'):
+						return 'STAN', f"STAN {ver.split('.')[0]}"
+				return 'Unknown', 'Unknown'
+		
+		def get_region_info(ver, code):
+				"""获取区域信息 (region, tag, zone)"""
+				# CNXM 版本特殊处理：根据版本号判断正式版/测试版
+				if 'CNXM' in ver:
+						try:
+								parts = ver.split('.')
+								build_num = int(parts[3]) if len(parts) > 3 else 0
+								revision_num = int(parts[2]) if len(parts) > 2 else 0
+								
+								# build为0且revision<300是正式版(CnOO)，否则是测试版(CnOB)
+								tag = 'CnOO' if build_num == 0 else 'CnOB'
+						except (ValueError, IndexError):
+								tag = 'CnOB'
+						return 'cn', tag, 1
+				
+				# 非CN版本：先查询 roms 表
+				info_sql = "SELECT region, tag, zone FROM roms WHERE code = %s" % stringify(code)
+				data = db_job_latest(info_sql)
+				
+				if data and len(data) == 3:
+						return data[0], data[1], data[2]
+				
+				# 回退到 devices 表查询
+				device_sql = "SELECT region, tag FROM devices WHERE code = %s" % stringify(code)
+				data = db_job_latest(device_sql)
+				
+				if data and len(data) == 2:
+						region, tag = data
+						zone = 1 if region == 'cn' else 2
+						return region, tag, zone
+				
+				return None, None, None
+		
+		def handle_miui_branchcode(branchcode, version):
+				"""处理 MIUI branchcode，查询现有记录或创建设备记录"""
+				# 查询现有设备
+				query_sql = "SELECT code, device FROM devices WHERE branchcode = %s" % stringify(branchcode)
+				result = db_job_latest(query_sql)
+				
+				if result and len(result) == 2:
+						return {'code': result[0], 'device': result[1]}
+				
+				# 未找到，需要创建新记录
+				# 提取 devtag
+				if '.EP' in version or 'EPSTDE' in version:
+						# EP 版本特殊处理: branchcode 如 LIUQINEPSTDEE -> liuqin
+						devtag = branchcode.split('EPS')[0].lower() if 'EPS' in branchcode else branchcode[:2].lower()
 				else:
-					region,tag,zone = db_job_latest(info_sql)
-			else:
-				data = db_job_latest("SELECT region,tag FROM devices WHERE code = %s" % (stringify(code)))
-				region,tag = [item for item in data]
-				if region == "cn":
-					zone = 1
+						# 从版本号提取 devtag (如 OS1.0.7.0.UMYCNXM -> MY)
+						ver_parts = version.split('.')
+						devtag = ver_parts[4][1:3].lower() if len(ver_parts) > 4 and len(ver_parts[4]) >= 3 else ''
+				
+				ver_code = version[-4:] if len(version) >= 4 else ''
+				
+				# 查询分支信息获取 tag, code_suffix, region
+				branch_sql = "SELECT tag, code, region FROM branches WHERE vercode = %s" % stringify(ver_code)
+				branch_info = db_job_latest(branch_sql)
+				
+				if not branch_info or len(branch_info) != 3:
+						return None
+				
+				tag, code_suffix, region = branch_info
+				
+				# 查询设备名
+				device_sql = "SELECT device FROM devices WHERE devtag = %s" % stringify(devtag)
+				device_result = db_job_latest(device_sql)
+				
+				if not device_result:
+						return None
+				
+				device = device_result[0]
+				full_code = device if code_suffix is None else device + code_suffix
+				
+				# 插入新设备记录
+				devcode = version[-6:] if len(version) >= 6 else ''
+				insert_sql = (
+						"INSERT INTO devices (device, devtag, code, tag, region, devcode, branchcode) "
+						"VALUES (%s, %s, %s, %s, %s, %s, %s)" % (
+								stringify(device), stringify(devtag), stringify(full_code),
+								stringify(tag), stringify(region), stringify(devcode), stringify(branchcode)
+						)
+				)
+				db_job_latest(insert_sql)
+				
+				return {'code': full_code, 'device': device}
+		
+		def get_device_by_code(code):
+				"""通过 code 查询设备名，优先 roms 表，其次 devices 表"""
+				# 优先从 roms 表查询
+				rom_sql = "SELECT device FROM roms WHERE code = %s" % stringify(code)
+				result = db_job_latest(rom_sql)
+				
+				if result:
+						return result[0]
+				
+				# 从 devices 表查询
+				device_sql = "SELECT device FROM devices WHERE code = %s" % stringify(code)
+				result = db_job_latest(device_sql)
+				
+				if result:
+						return result[0]
+				
+				return None
+		
+		# ========== 主逻辑 ==========
+		
+		parsed = None
+		
+		# 根据文件扩展名和格式选择解析器
+		if filename.endswith('.zip'):
+				if filename.startswith('miui_'):
+						# MIUI 格式
+						parsed = parse_miui_recovery(filename)
+						if parsed:
+								device_info = handle_miui_branchcode(parsed['branchcode'], parsed['version'])
+								if not device_info:
+										return 0
+								parsed['code'] = device_info['code']
+								parsed['device'] = device_info['device']
 				else:
-					zone = 2
-	return device, code, android, version, type, bigver, region,tag,zone, "F", filetype, filename
+						# HyperOS 格式
+						parsed = parse_hyperos_recovery(filename)
+						if parsed:
+								parsed['device'] = get_device_by_code(parsed['code'])
+								if not parsed['device']:
+										return 0
+		elif filename.endswith('.tgz'):
+				# 线刷包格式
+				parsed = parse_fastboot(filename)
+				if parsed:
+						parsed['device'] = get_device_by_code(parsed['code'])
+						if not parsed['device']:
+								return 0
+		
+		# 解析失败
+		if not parsed:
+				return 0
+		
+		# 提取所有必需字段
+		code = parsed.get('code')
+		device = parsed.get('device')
+		android = parsed.get('android')
+		version = parsed.get('version')
+		filetype = parsed.get('filetype')
+		
+		# 验证必需字段
+		if not all([code, device, android, version, filetype]):
+				return 0
+		
+		# 确定版本类型和大版本
+		rom_type, bigver = determine_version_info(version)
+		
+		# 获取区域信息
+		region, tag, zone = get_region_info(version, code)
+		if region is None:
+				return 0
+		# 返回完整信息
+		return device, code, android, version, rom_type, bigver, region, tag, zone, 'F', filetype
 
-def checkDatabase(device, code, android, version, type, bigver, region,tag,zone,branch, filetype, filename):
-	checkExist(filename)
+def checkDatabase(device, code, android, version, rom_type, bigver, region,tag,zone,branch, filetype, filename):
 	if filetype == "recovery":
 		checkpoint = "recovery"
 	else:
@@ -2728,17 +2898,17 @@ def checkDatabase(device, code, android, version, type, bigver, region,tag,zone,
 		release_date = stringify(date.today().strftime("%Y-%m-%d"))
 		if filetype == "fastboot":
 			public_date = stringify(get_time(form_url(filename,version)))
-			ins_sql = f"INSERT INTO roms (zone,device,code,android,version,type,bigver,region,tag,branch,{checkpoint},release_date,insdate, public_date) VALUES (%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)" % (zone, stringify(device), stringify(code), stringify(android), stringify(version), stringify(type), stringify(bigver), stringify(region), stringify(tag), stringify(branch), stringify(filename), release_date, insdate, public_date)
+			ins_sql = f"INSERT INTO roms (zone,device,code,android,version,type,bigver,region,tag,branch,{checkpoint},release_date,insdate, public_date) VALUES (%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)" % (zone, stringify(device), stringify(code), stringify(android), stringify(version), stringify(rom_type), stringify(bigver), stringify(region), stringify(tag), stringify(branch), stringify(filename), release_date, insdate, public_date)
 		else:
 			beta_date = stringify(get_time(form_url(filename,version)))
 			public_date = stringify(None)
-			ins_sql = f"INSERT INTO roms (zone,device,code,android,version,type,bigver,region,tag,branch,{checkpoint},release_date,beta_date,insdate) VALUES (%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)" % (zone, stringify(device), stringify(code), stringify(android), stringify(version), stringify(type), stringify(bigver), stringify(region), stringify(tag), stringify(branch), stringify(filename), release_date, beta_date, insdate)
+			ins_sql = f"INSERT INTO roms (zone,device,code,android,version,type,bigver,region,tag,branch,{checkpoint},release_date,beta_date,insdate) VALUES (%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)" % (zone, stringify(device), stringify(code), stringify(android), stringify(version), stringify(rom_type), stringify(bigver), stringify(region), stringify(tag), stringify(branch), stringify(filename), release_date, beta_date, insdate)
 		db_job_latest(ins_sql)
 
 
 
 def add_rom_to_json(device, code, android, version, filetype, filename, devdata=None):
-	"""添加 ROM 到 JSON 文件，修复版"""
+	"""添加 ROM 到 JSON 文件,修复版 - 优化 Git diff"""
 	
 	if devdata is None:
 		device_file = get_platform_path(f"public/data/devices/{device}.json")
@@ -2760,7 +2930,7 @@ def add_rom_to_json(device, code, android, version, filetype, filename, devdata=
 				# 修复：如果修订号 >= 300，也认为是测试版
 				revision_number = int(version_parts[2])
 				
-				if build_number == 0 and revision_number < 300:
+				if build_number == 0:
 					target_idtag = "CnOO"  # 正式版
 				else:
 					target_idtag = "CnOB"  # 测试版/Beta
@@ -2786,9 +2956,11 @@ def add_rom_to_json(device, code, android, version, filetype, filename, devdata=
 				match_method = f"code:{code}"
 				break
 	
-	# 如果仍未找到，创建新分支
+	# 如果仍未找到，返回错误
 	if target_branch is None:
-		print(f"未找到匹配分支，ROM : {filename}")
+		print(f"错误: 未找到匹配分支，ROM: {filename}")
+		return None
+	
 	# 处理 ROM 数据
 	if "roms" not in target_branch:
 		target_branch["roms"] = {}
@@ -2803,9 +2975,25 @@ def add_rom_to_json(device, code, android, version, filetype, filename, devdata=
 		if filetype == "recovery" and rom_data.get("recovery") != filename:
 			rom_data["recovery"] = filename
 			updated = True
-		elif filetype == "fastboot" and rom_data.get("fastboot") != filename:
-			rom_data["fastboot"] = filename
-			updated = True
+		elif filetype == "fastboot":
+			# 检查是否为运营商定制版
+			if "chinatelecom" in filename:
+				if rom_data.get("ctelecom") != filename:
+					rom_data["ctelecom"] = filename
+					updated = True
+			elif "chinamobile" in filename:
+				if rom_data.get("cmobile") != filename:
+					rom_data["cmobile"] = filename
+					updated = True
+			elif "chinaunicom" in filename:
+				if rom_data.get("cunicom") != filename:
+					rom_data["cunicom"] = filename
+					updated = True
+			else:
+				# 普通版 fastboot
+				if rom_data.get("fastboot") != filename:
+					rom_data["fastboot"] = filename
+					updated = True
 		
 		if not updated:
 			print(f"ROM 数据已完整: {version}")
@@ -2830,17 +3018,30 @@ def add_rom_to_json(device, code, android, version, filetype, filename, devdata=
 		new_rom["android"] = android
 		new_rom["release"] = get_time(form_url(filename, version))
 		
+		# 清除所有运营商字段和fastboot/recovery
+		for carrier_field in ["ctelecom", "cmobile", "cunicom"]:
+			if carrier_field in new_rom:
+				new_rom[carrier_field] = ""
+		
 		if filetype == "recovery":
 			new_rom["recovery"] = filename
 			new_rom["fastboot"] = ""
 		elif filetype == "fastboot":
-			new_rom["fastboot"] = filename
+			# 检查是否为运营商定制版
+			if "chinatelecom" in filename:
+				new_rom["ctelecom"] = filename
+				new_rom["fastboot"] = ""
+			elif "chinamobile" in filename:
+				new_rom["cmobile"] = filename
+				new_rom["fastboot"] = ""
+			elif "chinaunicom" in filename:
+				new_rom["cunicom"] = filename
+				new_rom["fastboot"] = ""
+			else:
+				# 普通版 fastboot
+				new_rom["fastboot"] = filename
+			
 			new_rom["recovery"] = ""
-		
-		# 清除所有运营商字段
-		for carrier_field in ["ctelecom", "cmobile", "cunicom"]:
-			if carrier_field in new_rom:
-				new_rom[carrier_field] = ""
 		
 		# 处理运营商字段
 		if "chinatelecom" in filename:
@@ -2870,28 +3071,43 @@ def add_rom_to_json(device, code, android, version, filetype, filename, devdata=
 			"android": android,
 			"release": get_time(form_url(filename, version)),
 			"recovery": filename if filetype == "recovery" else "",
-			"fastboot": filename if filetype == "fastboot" else ""
+			"fastboot": "" if filetype == "fastboot" and ("chinatelecom" in filename or "chinamobile" in filename or "chinaunicom" in filename) else (filename if filetype == "fastboot" else ""),
+			"ctelecom": filename if filetype == "fastboot" and "chinatelecom" in filename else "",
+			"cmobile": filename if filetype == "fastboot" and "chinamobile" in filename else "",
+			"cunicom": filename if filetype == "fastboot" and "chinaunicom" in filename else ""
 		}
 		for field in target_branch.get("table", []):
 			if field not in new_rom:
 				new_rom[field] = ""
 	
-	# 修复：使用列表插入确保顺序正确
-	roms_items = list(roms.items())
+	ordered_roms = OrderedDict()
+	inserted = False
 	
-	insert_index = len(roms_items)
-	for i, (existing_ver, _) in enumerate(roms_items):
-		if compare(existing_ver, version):
-			continue
-		else:
-			insert_index = i
-			break
+	# 按版本号排序插入 - 使用parse_version处理OS/A前缀
+	def version_sort_key(v):
+		parsed = parse_version(v)
+		if parsed is None:
+			# 如果解析失败，返回一个默认值让该版本排在最后
+			return (999, 999, 999, 999)
+		return parsed
 	
-	roms_items.insert(insert_index, (version, new_rom))
+	sorted_versions = sorted(roms.keys(), key=version_sort_key, reverse=True)
 	
-	# 直接使用 dict 确保顺序（Python 3.7+ 已保持插入顺序）
-	devdata["branches"][target_branch_idx]["roms"] = dict(roms_items)
+	for existing_ver in sorted_versions:
+		# 如果当前版本大于要插入的版本，且还未插入
+		if not inserted and compare(version, existing_ver):
+			ordered_roms[version] = new_rom
+			inserted = True
+		ordered_roms[existing_ver] = roms[existing_ver]
+	
+	# 如果还没插入（是最新版本），添加到末尾
+	if not inserted:
+		ordered_roms[version] = new_rom
+	
+	# 直接替换 roms，保持有序字典的特性
+	devdata["branches"][target_branch_idx]["roms"] = dict(ordered_roms)
 	return devdata
+
 def checkExist(filename):
 	newroms_file = get_platform_path("public/data/scripts/NewROMs.txt")
 	newROM = open(newroms_file, 'r', encoding='utf-8').read()
@@ -2918,10 +3134,17 @@ def checkExist(filename):
 			elif filename in str(localData(device_code)) or filename in newROM or filename in UInewROM:
 				return "Already Exist"
 			else:
-				device, code, android, version, type, bigver, region, tag, zone, branch, filetype, filename = [item for item in getData(filename)]
-				checkDatabase(device, code, android, version, type, bigver, region, tag, zone, branch, filetype, filename)
+				if "CNXM" in filename:
+					writeData(filename)
+				else:
+					i = 0
+				rom_data = getData(filename)
+				if type(rom_data) != tuple:
+					return "Error"
+				else:
+					device, code, android, version, rom_type, bigver, region, tag, zone, branch, filetype = [item for item in rom_data]
+					checkDatabase(device, code, android, version, rom_type, bigver, region, tag, zone, branch, filetype, filename)
 				
-				# 修复：改进文件处理逻辑
 				device_file = get_platform_path(f"public/data/devices/{device}.json")
 				try:
 					with open(device_file, 'r', encoding='utf-8') as f:
@@ -2931,20 +3154,14 @@ def checkExist(filename):
 					if devdata is None:
 						print(f"错误: add_rom_to_json 返回 None")
 						return "Error"
-					with open(device_file, 'w', encoding='utf-8') as f:
-						json.dump(devdata, f, ensure_ascii=False, indent=2)
-					# 验证保存结果
-					with open(device_file, 'r', encoding='utf-8') as f:
-						verify_data = json.load(f)
 					
-					# 检查新版本是否存在
-					found = False
-					for branch in verify_data.get('branches', []):
-						if version in branch.get('roms', {}):
-							found = True
-							break
-					if not found:
-						print(f"✗ 验证失败: 版本 {version} 未找到")
+					# 检测原始文件的缩进格式
+					indent = detect_json_indent(device_file)
+					
+					with open(device_file, 'w', encoding='utf-8', newline='\n') as f:
+						json.dump(devdata, f, ensure_ascii=False, indent=indent, sort_keys=False)
+						f.write('\n')
+					
 				except Exception as e:
 					print(f"✗ 处理 JSON 文件时出错: {e}")
 					import traceback

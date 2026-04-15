@@ -204,7 +204,7 @@
           "android": "16.0",
           "release": "2026-04-07",
           "recovery": "spinel_dc_global-ota_full-OS3.0.1.0.WPGMIDC-user-16.0-eaf5beb032.zip",
-          "fastboot": ""
+          "fastboot": "spinel_dc_global_images_OS3.0.1.0.WPGMIDC_20260320.0000.00_16.0_global_dc_b38e0611b0.tgz"
         },
         "OS2.0.215.0.VPGMIDC": {
           "os": "OS2.0.215.0.VPGMIDC",
