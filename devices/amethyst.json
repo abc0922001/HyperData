@@ -666,6 +666,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.4.0.WOPEUXM": {
+					"os": "OS3.0.4.0.WOPEUXM",
+					"android": "16.0",
+					"release": "2026-04-14",
+					"recovery": "amethyst_eea_global-ota_full-OS3.0.4.0.WOPEUXM-user-16.0-91b51c82e7.zip",
+					"fastboot": ""
+				},
 				"OS3.0.3.0.WOPEUXM": {
 					"os": "OS3.0.3.0.WOPEUXM",
 					"android": "16.0",

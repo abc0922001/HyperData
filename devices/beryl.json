@@ -971,7 +971,7 @@
 					"android": "16.0",
 					"release": "2026-04-01",
 					"recovery": "beryl_in_global-ota_full-OS3.0.7.0.WOQINXM-user-16.0-bfe8ad74f8.zip",
-					"fastboot": ""
+					"fastboot": "beryl_in_global_images_OS3.0.7.0.WOQINXM_20260302.0000.00_16.0_in_6a302a2493.tgz"
 				},
 				"OS3.0.4.0.WOQINXM": {
 					"os": "OS3.0.4.0.WOQINXM",

@@ -161,6 +161,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.303.0.WOMCNXM": {
+					"os": "OS3.0.303.0.WOMCNXM",
+					"android": "16.0",
+					"release": "2026-04-14",
+					"recovery": "miro-ota_full-OS3.0.303.0.WOMCNXM-user-16.0-56b2b58966.zip",
+					"fastboot": "",
+					"ctelecom": ""
+				},
 				"OS3.0.302.0.WOMCNXM": {
 					"os": "OS3.0.302.0.WOMCNXM",
 					"android": "16.0",
@@ -564,7 +572,7 @@
 					"android": "16.0",
 					"release": "2026-03-30",
 					"recovery": "miro_global-ota_full-OS3.0.5.0.WOMMIXM-user-16.0-b3596b392c.zip",
-					"fastboot": ""
+					"fastboot": "miro_global_images_OS3.0.5.0.WOMMIXM_20260319.0000.00_16.0_global_188bf933f0.tgz"
 				},
 				"OS3.0.3.0.WOMMIXM": {
 					"os": "OS3.0.3.0.WOMMIXM",

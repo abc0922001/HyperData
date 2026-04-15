@@ -680,7 +680,7 @@
 					"android": "16.0",
 					"release": "2026-04-07",
 					"recovery": "sheng_global-ota_full-OS3.0.6.0.WNXMIXM-user-16.0-4e690517b1.zip",
-					"fastboot": ""
+					"fastboot": "sheng_global_images_OS3.0.6.0.WNXMIXM_20260323.0000.00_16.0_global_4ca4efa109.tgz"
 				},
 				"OS3.0.5.0.WNXMIXM": {
 					"os": "OS3.0.5.0.WNXMIXM",
@@ -844,7 +844,7 @@
 					"android": "16.0",
 					"release": "2026-04-07",
 					"recovery": "sheng_eea_global-ota_full-OS3.0.3.0.WNXEUXM-user-16.0-9b6f1ddbbc.zip",
-					"fastboot": ""
+					"fastboot": "sheng_eea_global_images_OS3.0.3.0.WNXEUXM_20260323.0000.00_16.0_eea_2e5073cae6.tgz"
 				},
 				"OS3.0.2.0.WNXEUXM": {
 					"os": "OS3.0.2.0.WNXEUXM",
@@ -1003,6 +1003,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.3.0.WNXRUXM": {
+					"os": "OS3.0.3.0.WNXRUXM",
+					"android": "16.0",
+					"release": "2026-04-14",
+					"recovery": "sheng_ru_global-ota_full-OS3.0.3.0.WNXRUXM-user-16.0-b76b5a82bf.zip",
+					"fastboot": ""
+				},
 				"OS3.0.2.0.WNXRUXM": {
 					"os": "OS3.0.2.0.WNXRUXM",
 					"android": "16.0",
@@ -1160,6 +1167,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.3.0.WNXIDXM": {
+					"os": "OS3.0.3.0.WNXIDXM",
+					"android": "16.0",
+					"release": "2026-04-14",
+					"recovery": "sheng_id_global-ota_full-OS3.0.3.0.WNXIDXM-user-16.0-33ff5627fb.zip",
+					"fastboot": ""
+				},
 				"OS3.0.2.0.WNXIDXM": {
 					"os": "OS3.0.2.0.WNXIDXM",
 					"android": "16.0",

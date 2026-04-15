@@ -147,6 +147,14 @@
       "zone": "1",
       "ep": "0",
       "roms": {
+        "OS3.0.301.0.WPLCNDM": {
+          "os": "OS3.0.301.0.WPLCNDM",
+          "android": "16.0",
+          "release": "2026-04-14",
+          "recovery": "dash_demo-ota_full-OS3.0.301.0.WPLCNDM-user-16.0-9a98bfb2af.zip",
+          "fastboot": "dash_demo_images_OS3.0.301.0.WPLCNDM_20260324.0000.00_16.0_cn_3a8b2ec2ec.tgz",
+          "ctelecom": "dash_demo_images_OS3.0.301.0.WPLCNDM_20260324.0000.00_16.0_cn_chinatelecom_366bf4e2ef.tgz"
+        },
         "OS3.0.3.0.WPLCNDM": {
           "os": "OS3.0.3.0.WPLCNDM",
           "android": "16.0",

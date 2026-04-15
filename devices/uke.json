@@ -323,6 +323,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.3.0.WOZTWXM": {
+					"os": "OS3.0.3.0.WOZTWXM",
+					"android": "16.0",
+					"release": "2026-04-14",
+					"recovery": "uke_tw_global-ota_full-OS3.0.3.0.WOZTWXM-user-16.0-1208885136.zip",
+					"fastboot": ""
+				},
 				"OS3.0.2.0.WOZTWXM": {
 					"os": "OS3.0.2.0.WOZTWXM",
 					"android": "16.0",
@@ -671,6 +678,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.3.0.WOZRUXM": {
+					"os": "OS3.0.3.0.WOZRUXM",
+					"android": "16.0",
+					"release": "2026-04-14",
+					"recovery": "uke_ru_global-ota_full-OS3.0.3.0.WOZRUXM-user-16.0-acc255c5b0.zip",
+					"fastboot": ""
+				},
 				"OS3.0.2.0.WOZRUXM": {
 					"os": "OS3.0.2.0.WOZRUXM",
 					"android": "16.0",
@@ -765,6 +779,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.5.0.WOZINXM": {
+					"os": "OS3.0.5.0.WOZINXM",
+					"android": "16.0",
+					"release": "2026-04-14",
+					"recovery": "uke_in_global-ota_full-OS3.0.5.0.WOZINXM-user-16.0-45f3d99ca5.zip",
+					"fastboot": ""
+				},
 				"OS3.0.4.0.WOZINXM": {
 					"os": "OS3.0.4.0.WOZINXM",
 					"android": "16.0",
@@ -866,6 +887,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.3.0.WOZIDXM": {
+					"os": "OS3.0.3.0.WOZIDXM",
+					"android": "16.0",
+					"release": "2026-04-14",
+					"recovery": "uke_id_global-ota_full-OS3.0.3.0.WOZIDXM-user-16.0-f9fdca5ecc.zip",
+					"fastboot": ""
+				},
 				"OS3.0.2.0.WOZIDXM": {
 					"os": "OS3.0.2.0.WOZIDXM",
 					"android": "16.0",
@@ -960,6 +988,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.3.0.WOZTRXM": {
+					"os": "OS3.0.3.0.WOZTRXM",
+					"android": "16.0",
+					"release": "2026-04-14",
+					"recovery": "uke_tr_global-ota_full-OS3.0.3.0.WOZTRXM-user-16.0-af91ea78ed.zip",
+					"fastboot": ""
+				},
 				"OS3.0.2.0.WOZTRXM": {
 					"os": "OS3.0.2.0.WOZTRXM",
 					"android": "16.0",

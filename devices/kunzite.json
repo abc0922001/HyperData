@@ -50,6 +50,14 @@
       "zone": "1",
       "ep": "0",
       "roms": {
+        "OS3.0.302.0.WPQCNXM": {
+          "os": "OS3.0.302.0.WPQCNXM",
+          "android": "16.0",
+          "release": "2026-04-14",
+          "recovery": "kunzite-ota_full-OS3.0.302.0.WPQCNXM-user-16.0-6e52e8a1e8.zip",
+          "fastboot": "",
+          "ctelecom": ""
+        },
         "OS3.0.4.0.WPQCNXM": {
           "os": "OS3.0.4.0.WPQCNXM",
           "android": "16.0",

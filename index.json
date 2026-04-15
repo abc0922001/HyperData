@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-04-13 23:08:30",
+    "time": "2026-04-15 02:51:26",
     "developing": "no",
     "roms": [
       {
@@ -33,7 +33,39 @@
           "zh": "小米 17",
           "en": "Xiaomi 17"
         },
-        "rom": "OS3.0.301.0.WPCMIXM; OS3.0.301.0.WPCMIDC; OS3.0.301.0.WPCINXM"
+        "rom": "OS3.0.306.0.WPCCNXM; OS3.0.301.0.WPCMIXM; OS3.0.301.0.WPCMIDC; OS3.0.301.0.WPCINXM"
+      },
+      {
+        "code": "pandora",
+        "name": {
+          "zh": "小米 17 Pro",
+          "en": "Xiaomi 17 Pro"
+        },
+        "rom": "OS3.0.306.0.WBLCNXM"
+      },
+      {
+        "code": "popsicle",
+        "name": {
+          "zh": "小米 17 Pro Max",
+          "en": "Xiaomi 17 Pro Max"
+        },
+        "rom": "OS3.0.306.0.WPBCNXM"
+      },
+      {
+        "code": "sheng",
+        "name": {
+          "zh": "小米平板 6S Pro 12.4",
+          "en": "Xiaomi Pad 6S Pro 12.4"
+        },
+        "rom": "OS3.0.3.0.WNXRUXM; OS3.0.3.0.WNXIDXM"
+      },
+      {
+        "code": "uke",
+        "name": {
+          "zh": "小米平板7",
+          "en": "Xiaomi Pad 7"
+        },
+        "rom": "OS3.0.3.0.WOZTWXM; OS3.0.3.0.WOZRUXM; OS3.0.5.0.WOZINXM; OS3.0.3.0.WOZIDXM; OS3.0.3.0.WOZTRXM"
       },
       {
         "code": "moon",
@@ -42,6 +74,14 @@
           "en": "Redmi 13 / POCO M6 4G"
         },
         "rom": "OS3.0.7.0.WNTMIXM; OS3.0.4.0.WNTEUXM; OS3.0.4.0.WNTRUXM"
+      },
+      {
+        "code": "lake",
+        "name": {
+          "zh": "Redmi 14C",
+          "en": "Redmi 14C"
+        },
+        "rom": "OS3.0.1.0.WGTMIDC"
       },
       {
         "code": "redwood",
@@ -84,6 +124,14 @@
         "rom": "OS3.0.4.0.WOOMIDC"
       },
       {
+        "code": "amethyst",
+        "name": {
+          "zh": "Redmi Note 14 Pro+",
+          "en": "Redmi Note 14 Pro+"
+        },
+        "rom": "OS3.0.4.0.WOPEUXM"
+      },
+      {
         "code": "emerald_r",
         "name": {
           "zh": "Redmi Note 14s",
@@ -105,7 +153,23 @@
           "zh": "REDMI Note 15 5G",
           "en": "REDMI Note 15 5G"
         },
-        "rom": "OS3.0.1.0.WPQRUXM; OS3.0.1.0.WPQIDXM"
+        "rom": "OS3.0.302.0.WPQCNXM; OS3.0.1.0.WPQRUXM; OS3.0.1.0.WPQIDXM"
+      },
+      {
+        "code": "lapis",
+        "name": {
+          "zh": "REDMI Note 15 Pro 5G",
+          "en": "REDMI Note 15 Pro 5G"
+        },
+        "rom": "OS3.0.302.0.WPPCNXM"
+      },
+      {
+        "code": "flourite",
+        "name": {
+          "zh": "REDMI Note 15 Pro+ 5G",
+          "en": "REDMI Note 15 Pro+ 5G"
+        },
+        "rom": "OS3.0.304.0.WPRCNXM; OS3.0.1.0.WPRTWXM; OS3.0.4.0.WPRMIDC"
       },
       {
         "code": "peridot",
@@ -116,12 +180,76 @@
         "rom": "OS3.0.6.0.WNPMIXM"
       },
       {
+        "code": "rodin",
+        "name": {
+          "zh": "REDMI Turbo 4 / POCO X7 Pro",
+          "en": "REDMI Turbo 4 / POCO X7 Pro"
+        },
+        "rom": "OS3.0.302.0.WOJCNXM"
+      },
+      {
+        "code": "onyx",
+        "name": {
+          "zh": "REDMI Turbo 4 Pro / POCO F7",
+          "en": "REDMI Turbo 4 Pro / POCO F7"
+        },
+        "rom": "OS3.0.302.0.WOLCNXM"
+      },
+      {
+        "code": "vermeer",
+        "name": {
+          "zh": "Redmi K70 / POCO F6 Pro",
+          "en": "Redmi K70 / POCO F6 Pro"
+        },
+        "rom": "OS3.0.302.0.WNKCNXM"
+      },
+      {
+        "code": "manet",
+        "name": {
+          "zh": "Redmi K70 Pro",
+          "en": "Redmi K70 Pro"
+        },
+        "rom": "OS3.0.302.0.WNMCNXM"
+      },
+      {
+        "code": "rothko",
+        "name": {
+          "zh": "Redmi K70 至尊版 / 小米 14T Pro",
+          "en": "Redmi K70 Ultra / Xiaomi 14T Pro"
+        },
+        "rom": "OS3.0.301.0.WNNCNXM"
+      },
+      {
         "code": "zorn",
         "name": {
           "zh": "REDMI K80 / POCO F7 Pro",
           "en": "REDMI K80 / POCO F7 Pro"
         },
         "rom": "OS3.0.301.0.WOKMIXM"
+      },
+      {
+        "code": "miro",
+        "name": {
+          "zh": "REDMI K80 Pro / POCO F7 Ultra",
+          "en": "REDMI K80 Pro / POCO F7 Ultra"
+        },
+        "rom": "OS3.0.303.0.WOMCNXM"
+      },
+      {
+        "code": "turner",
+        "name": {
+          "zh": "REDMI K Pad / Xiaomi Pad Mini",
+          "en": "REDMI K Pad / Xiaomi Pad Mini"
+        },
+        "rom": "OS3.0.304.0.WAOCNXM"
+      },
+      {
+        "code": "serenity",
+        "name": {
+          "zh": "REDMI A5 / POCO C71",
+          "en": "REDMI A5 / POCO C71"
+        },
+        "rom": "A15.0.12.0.VGWEUVF; A15.0.12.0.VGWRUXM; A15.0.15.0.VGWINXM"
       }
     ]
   }

@@ -50,6 +50,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.302.0.WOLCNXM": {
+					"os": "OS3.0.302.0.WOLCNXM",
+					"android": "16.0",
+					"release": "2026-04-14",
+					"recovery": "onyx-ota_full-OS3.0.302.0.WOLCNXM-user-16.0-a466255baa.zip",
+					"fastboot": "",
+					"ctelecom": ""
+				},
 				"OS3.0.11.0.WOLCNXM": {
 					"os": "OS3.0.11.0.WOLCNXM",
 					"android": "16.0",
@@ -726,7 +734,7 @@
 					"android": "16.0",
 					"release": "2026-02-12",
 					"recovery": "onyx_id_global-ota_full-OS3.0.3.0.WOLIDXM-user-16.0-8d512bc869.zip",
-					"fastboot": ""
+					"fastboot": "onyx_id_global_images_OS3.0.3.0.WOLIDXM_20260203.0000.00_16.0_id_b54359f7ee.tgz"
 				},
 				"OS3.0.2.0.WOLIDXM": {
 					"os": "OS3.0.2.0.WOLIDXM",

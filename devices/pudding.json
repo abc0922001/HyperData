@@ -124,13 +124,21 @@
       "zone": "1",
       "ep": "0",
       "roms": {
+        "OS3.0.306.0.WPCCNXM": {
+          "os": "OS3.0.306.0.WPCCNXM",
+          "android": "16.0",
+          "release": "2026-04-14",
+          "recovery": "pudding-ota_full-OS3.0.306.0.WPCCNXM-user-16.0-dc5ad4e382.zip",
+          "fastboot": "",
+          "ctelecom": ""
+        },
         "OS3.0.305.0.WPCCNXM": {
           "os": "OS3.0.305.0.WPCCNXM",
           "android": "16.0",
           "release": "2026-03-27",
           "recovery": "pudding-ota_full-OS3.0.305.0.WPCCNXM-user-16.0-d00584dfa0.zip",
-          "fastboot": "",
-          "ctelecom": ""
+          "fastboot": "pudding_images_OS3.0.305.0.WPCCNXM_20260320.0000.00_16.0_cn_628ab08c31.tgz",
+          "ctelecom": "pudding_images_OS3.0.305.0.WPCCNXM_20260320.0000.00_16.0_cn_chinatelecom_af61b70cee.tgz"
         },
         "OS3.0.304.0.WPCCNXM": {
           "os": "OS3.0.304.0.WPCCNXM",

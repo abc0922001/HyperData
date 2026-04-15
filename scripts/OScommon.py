@@ -13,6 +13,38 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from pymysql import Connection
 import config
+import os
+from collections import OrderedDict
+
+def get_platform_path(relative_path):
+	"""获取平台相关的文件路径"""
+	if platform == "win32":
+		return os.path.join(relative_path)
+	elif platform == "darwin":
+		return os.path.join(relative_path)
+	else:
+		return os.path.join("/sdcard/Codes/HyperOS.fans", relative_path)
+
+def extract_flag_from_filename(filename):
+	"""从文件名中提取flag"""
+	if ".zip" in filename:
+		if "miui" in filename:
+			# OS With Android 14 and below uses "miui" as start, and flag is located in spot 1
+			rec_seperator = "_"
+			rec_spot = 1
+		else:
+			# OS With Android 15 uses "-ota_full" as a separator, and flag is located in spot 0
+			rec_seperator = "-ota_full"
+			rec_spot = 0
+		flag = filename.split(rec_seperator)[rec_spot]
+	elif ".tgz" in filename:
+		if "-images" in filename:
+			flag = filename.split('-images')[0]
+		else:
+			flag = filename.split('_images')[0]
+	else:
+		flag = ""
+	return flag
 
 sdk = {
 	"16.0": "36",
@@ -2405,16 +2437,38 @@ def ver_in_order(versions):
 	return list
 	
 
+# 设备数据缓存
+_device_cache = {}
+
 def localData(codename):
-	if platform == "win32":
-		devdata = json.loads(open("public/data/devices/"+codename+".json", 'r', encoding='utf-8').read())
-	elif platform == "darwin":
-		devdata = json.loads(open("public/data/devices/"+codename+".json", 'r', encoding='utf-8').read())
-	else:
-		devdata = json.loads(open("/sdcard/Codes/HyperOS.fans/public/data/devices/" + codename+".json", 'r', encoding='utf-8').read())
-	return devdata
+	"""获取设备数据，使用缓存机制提高效率"""
+	global _device_cache
+	
+	# 检查缓存中是否存在数据
+	if codename in _device_cache:
+		return _device_cache[codename]
+	
+	# 读取文件
+	device_file = get_platform_path(f"public/data/devices/{codename}.json")
+	try:
+		with open(device_file, 'r', encoding='utf-8') as f:
+			devdata = json.load(f)
+		
+		# 存入缓存
+		_device_cache[codename] = devdata
+		return devdata
+	except FileNotFoundError:
+		print(f"设备文件不存在: {device_file}")
+		return {}
+	except json.JSONDecodeError:
+		print(f"设备文件格式错误: {device_file}")
+		return {}
+	except Exception as e:
+		print(f"读取设备文件时出错: {e}")
+		return {}
 
 def db_job(sql):
+	"""执行SQL查询并返回所有结果"""
 	cnx = None
 	try:
 		cnx = Connection(
@@ -2424,12 +2478,12 @@ def db_job(sql):
 			port=config.port,
 			database=config.database,
 			autocommit=True
-			)
+		)
 		cursor = cnx.cursor()
 		cursor.execute(sql)
 		return cursor.fetchall()
 	except Exception as e:
-		print(sql,e)
+		print(sql, e)
 	finally:
 		if cnx:
 			cnx.close()
@@ -2452,104 +2506,63 @@ def form_url(filename,version):
 	return 'https://bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com/'+version+"/"+filename
 
 def writeData(filename):
-	if platform == "win32":
-		file = open("public/data/scripts/NewROMs.txt", "a", encoding='utf-8')
-	elif platform == "darwin":
-		file = open("public/data/scripts/NewROMs.txt", "a", encoding='utf-8')
-	else:
-		file = open("/sdcard/Codes/HyperOS.fans/public/data/scripts/NewROMs.txt", "a", encoding='utf-8')
+	newroms_file = get_platform_path("public/data/scripts/NewROMs.txt")
+	file = open(newroms_file, "a", encoding='utf-8')
 	file.write(filename+"\n")
-	if ".zip" in filename:
-		if "miui" in filename:
-		# OS With Android 14 and below uses "miui" as start, and flag is located in spot 1
-			rec_seperator = "_"
-			rec_spot = 1
-		else:
-		# OS With Android 15 uses "-ota_full" as a separator, and flag is located in spot 0
-			rec_seperator = "-ota_full"
-			rec_spot = 0
-		flag = filename.split(rec_seperator)[rec_spot]
-	elif ".tgz" in filename:
-		if "-images" in filename:
-			flag = filename.split('-images')[0]
-		else:
-			flag = filename.split('_images')[0]
-	print("发现\t"+flag+"\t分支有未收录的新版本")
+	flag = extract_flag_from_filename(filename)
+	print(f"发现\t{flag}\t分支有未收录的新版本")
 	file.close()
 
 
 def writeFlag(flag, device):
-	if platform == "win32":
-		file = open("public/data/scripts/Flags.json", "a", encoding='utf-8')
-	elif platform == "darwin":
-		file = open("public/data/scripts/Flags.json", "a", encoding='utf-8')
-	else:
-		file = open("/sdcard/Codes/HyperOS.fans/public/data/scripts/Flags.json", "a", encoding='utf-8')
-	file.write("\""+flag+"\":\""+device+"\",\n")
+	flags_file = get_platform_path("public/data/scripts/Flags.json")
+	file = open(flags_file, "a", encoding='utf-8')
+	file.write(f"\"{flag}\":\"{device}\",\n")
 	file.close()
 
 
 def getDeviceCode(filename):
-	if ".zip" in filename:
-		if "miui" in filename:
-			# OS With Android 14 and below uses "miui" as start, and flag is located in spot 1
-			rec_seperator = "_"
-			rec_spot = 1
-		else:
-			# OS With Android 15 uses "-ota_full" as a separator, and flag is located in spot 0
-			rec_seperator = "-ota_full"
-			rec_spot = 0
-		flag = filename.split(rec_seperator)[rec_spot]
+	"""从文件名中获取设备代码"""
+	flag = extract_flag_from_filename(filename)
+	if flag:
 		if flag in flags:
 			codename = flags[flag]
 			return codename
 		else:
-			writeData(filename)
-			writeFlag(flag, "")
-			return 0
-	elif ".tgz" in filename:
-		if "-images" in filename:
-			flag = filename.split('-images')[0]
-		else:
-			flag = filename.split('_images')[0]
-		if flag in flags:
-			codename = flags[flag]
-			return codename
-		else:
-			writeData(filename)
 			writeFlag(flag, "")
 			return 0
 	else:
 		return 0
 
 def OTAFormer(device, code, region, branch, zone, android, version):
-		# print(device, code, region, branch, zone, android, version)
-		HyperOSForm['d'] = code
-		HyperOSForm["obv"] = version[:5]
-		if region == 'cn':
+	"""生成OTA请求表单"""
+	HyperOSForm['d'] = code
+	HyperOSForm["obv"] = version[:5]
+	if region == 'cn':
+		HyperOSForm['pn'] = code
+		HyperOSForm["r"] = 'CN'
+	else:
+		HyperOSForm["r"] = 'GL'
+		if code == device + "_global":
 			HyperOSForm['pn'] = code
-			HyperOSForm["r"] = 'CN'
 		else:
-			HyperOSForm["r"] = 'GL'
-			if code == device + "_global":
-				HyperOSForm['pn'] = code
-			else:
-				HyperOSForm['pn'] = code.split('_global')[0]
-		HyperOSForm['b'] = branch
-		HyperOSForm['options']['zone'] = zone
-		if android == '':
-			print(device,version,"请补充安卓版本")
-			HyperOSForm['c'] = '14'
-		else:
-			HyperOSForm['c'] = android.split('.0')[0]
-		HyperOSForm['sdk'] = sdk[android.split('.0')[0]]
-		if "OS1"in version:
-			HyperOSForm['v'] = 'MIUI-'+ version.replace('OS1','V816')
-		else:
-			HyperOSForm['v'] = version
-		return json.dumps(HyperOSForm)
+			HyperOSForm['pn'] = code.split('_global')[0]
+	HyperOSForm['b'] = branch
+	HyperOSForm['options']['zone'] = zone
+	if android == '':
+		print(device, version, "请补充安卓版本")
+		HyperOSForm['c'] = '14'
+	else:
+		HyperOSForm['c'] = android.split('.0')[0]
+	HyperOSForm['sdk'] = sdk[android.split('.0')[0]]
+	if "OS1" in version:
+		HyperOSForm['v'] = 'MIUI-' + version.replace('OS1', 'V816')
+	else:
+		HyperOSForm['v'] = version
+	return json.dumps(HyperOSForm)
 
 def db_job_latest(sql):
+	"""执行SQL查询并返回第一条结果"""
 	cnx = None
 	try:
 		cnx = Connection(
@@ -2559,12 +2572,12 @@ def db_job_latest(sql):
 			port=config.port,
 			database=config.database,
 			autocommit=True
-			)
+		)
 		cursor = cnx.cursor()
 		cursor.execute(sql)
 		return cursor.fetchone()
 	except Exception as e:
-		print(sql,e)
+		print(sql, e)
 	finally:
 		if cnx:
 			cnx.close()
@@ -2669,6 +2682,7 @@ def getData(filename):
 	return device, code, android, version, type, bigver, region,tag,zone, "F", filetype, filename
 
 def checkDatabase(device, code, android, version, type, bigver, region,tag,zone,branch, filetype, filename):
+	checkExist(filename)
 	if filetype == "recovery":
 		checkpoint = "recovery"
 	else:
@@ -2721,30 +2735,220 @@ def checkDatabase(device, code, android, version, type, bigver, region,tag,zone,
 			ins_sql = f"INSERT INTO roms (zone,device,code,android,version,type,bigver,region,tag,branch,{checkpoint},release_date,beta_date,insdate) VALUES (%d,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)" % (zone, stringify(device), stringify(code), stringify(android), stringify(version), stringify(type), stringify(bigver), stringify(region), stringify(tag), stringify(branch), stringify(filename), release_date, beta_date, insdate)
 		db_job_latest(ins_sql)
 
-def checkExist(filename):
-	if platform == "win32":
-		newROM = open("public/data/scripts/NewROMs.txt", 'r', encoding='utf-8').read()
-		UInewROM = open("D:/Projects/HyperOS.fans/Nuxt3MR/public/MRData/scripts/NewROMs.txt", 'r', encoding='utf-8').read()
-	elif platform == "darwin":
-		newROM = open("public/data/scripts/NewROMs.txt", 'r', encoding='utf-8').read()
-		UInewROM = open("../NuxtMR/public/MRData/scripts/NewROMs.txt", 'r', encoding='utf-8').read()
+
+
+def add_rom_to_json(device, code, android, version, filetype, filename, devdata=None):
+	"""添加 ROM 到 JSON 文件，修复版"""
+	
+	if devdata is None:
+		device_file = get_platform_path(f"public/data/devices/{device}.json")
+		try:
+			with open(device_file, 'r', encoding='utf-8') as f:
+				devdata = json.load(f)
+		except Exception as e:
+			print(f"读取文件错误: {e}")
+			return None
+	
+	target_branch_idx = None
+	target_branch = None
+	match_method = None
+	if "CNXM" in version:
+		try:
+			version_parts = version.split(".")
+			if len(version_parts) >= 4:
+				build_number = int(version_parts[3])
+				# 修复：如果修订号 >= 300，也认为是测试版
+				revision_number = int(version_parts[2])
+				
+				if build_number == 0 and revision_number < 300:
+					target_idtag = "CnOO"  # 正式版
+				else:
+					target_idtag = "CnOB"  # 测试版/Beta
+			else:
+				target_idtag = None
+		except:
+			target_idtag = None
+		
+		if target_idtag:
+			for idx, branch_info in enumerate(devdata.get("branches", [])):
+				if branch_info.get("idtag") == target_idtag:
+					target_branch_idx = idx
+					target_branch = branch_info
+					match_method = f"idtag:{target_idtag}"
+					break
+	
+	# 如果 idtag 匹配失败，再尝试 code 匹配
+	if target_branch is None:
+		for idx, branch_info in enumerate(devdata.get("branches", [])):
+			if branch_info.get("branchCode") == code:
+				target_branch_idx = idx
+				target_branch = branch_info
+				match_method = f"code:{code}"
+				break
+	
+	# 如果仍未找到，创建新分支
+	if target_branch is None:
+		print(f"未找到匹配分支，ROM : {filename}")
+	# 处理 ROM 数据
+	if "roms" not in target_branch:
+		target_branch["roms"] = {}
+	
+	roms = target_branch["roms"]
+	
+	# 版本已存在，更新字段
+	if version in roms:
+		rom_data = roms[version]
+		updated = False
+		
+		if filetype == "recovery" and rom_data.get("recovery") != filename:
+			rom_data["recovery"] = filename
+			updated = True
+		elif filetype == "fastboot" and rom_data.get("fastboot") != filename:
+			rom_data["fastboot"] = filename
+			updated = True
+		
+		if not updated:
+			print(f"ROM 数据已完整: {version}")
+		return devdata
+	
+	# 查找模板
+	template_rom = None
+	latest_version = None
+	
+	if roms:
+		for existing_version in roms.keys():
+			if latest_version is None or compare(existing_version, latest_version):
+				latest_version = existing_version
+		
+		if latest_version:
+			template_rom = roms[latest_version].copy()
+	
+	# 创建新 ROM 数据
+	if template_rom:
+		new_rom = template_rom.copy()
+		new_rom["os"] = version
+		new_rom["android"] = android
+		new_rom["release"] = get_time(form_url(filename, version))
+		
+		if filetype == "recovery":
+			new_rom["recovery"] = filename
+			new_rom["fastboot"] = ""
+		elif filetype == "fastboot":
+			new_rom["fastboot"] = filename
+			new_rom["recovery"] = ""
+		
+		# 清除所有运营商字段
+		for carrier_field in ["ctelecom", "cmobile", "cunicom"]:
+			if carrier_field in new_rom:
+				new_rom[carrier_field] = ""
+		
+		# 处理运营商字段
+		if "chinatelecom" in filename:
+			new_rom["ctelecom"] = filename
+		elif "chinamobile" in filename:
+			new_rom["cmobile"] = filename
+		elif "chinaunicom" in filename:
+			new_rom["cunicom"] = filename
+		
+		# 清理字段
+		table_fields = target_branch.get("table", [])
+		for key in list(new_rom.keys()):
+			if key not in ["os", "android", "release", "recovery", "fastboot", 
+						  "ctelecom", "cmobile", "cunicom"]:
+				if key in table_fields:
+					if key not in ["os", "android", "release"]:
+						new_rom[key] = ""
+				else:
+					del new_rom[key]
+		
+		for field in table_fields:
+			if field not in new_rom:
+				new_rom[field] = ""
 	else:
-		newROM = open("/sdcard/Codes/HyperOS.fans/public/data/scripts/NewROMs.txt", 'r', encoding='utf-8').read()
-		newROM = open("/sdcard/Codes/NuxtMR/public/MRdata/scripts/NewROMs.txt", 'r', encoding='utf-8').read()
+		new_rom = {
+			"os": version,
+			"android": android,
+			"release": get_time(form_url(filename, version)),
+			"recovery": filename if filetype == "recovery" else "",
+			"fastboot": filename if filetype == "fastboot" else ""
+		}
+		for field in target_branch.get("table", []):
+			if field not in new_rom:
+				new_rom[field] = ""
+	
+	# 修复：使用列表插入确保顺序正确
+	roms_items = list(roms.items())
+	
+	insert_index = len(roms_items)
+	for i, (existing_ver, _) in enumerate(roms_items):
+		if compare(existing_ver, version):
+			continue
+		else:
+			insert_index = i
+			break
+	
+	roms_items.insert(insert_index, (version, new_rom))
+	
+	# 直接使用 dict 确保顺序（Python 3.7+ 已保持插入顺序）
+	devdata["branches"][target_branch_idx]["roms"] = dict(roms_items)
+	return devdata
+def checkExist(filename):
+	newroms_file = get_platform_path("public/data/scripts/NewROMs.txt")
+	newROM = open(newroms_file, 'r', encoding='utf-8').read()
+	
+	# 尝试读取UInewROM，但如果文件不存在则忽略
+	UInewROM = ""
+	try:
+		if platform == "win32":
+			UInewROM = open("D:/Projects/HyperOS.fans/Nuxt3MR/public/MRData/scripts/NewROMs.txt", 'r', encoding='utf-8').read()
+		elif platform == "darwin":
+			UInewROM = open("../NuxtMR/public/MRData/scripts/NewROMs.txt", 'r', encoding='utf-8').read()
+		else:
+			UInewROM = open("/sdcard/Codes/NuxtMR/public/MRdata/scripts/NewROMs.txt", 'r', encoding='utf-8').read()
+	except:
+		pass
+	
 	if "OS" in filename or "A1" in filename:
 		if "blockota" in filename:
 			return "OTA ROM"
 		else:
-			if getDeviceCode(filename) == 0:
-				writeData(filename)
+			device_code = getDeviceCode(filename)
+			if device_code == 0:
 				return "New ROM"
-			elif filename in localData(getDeviceCode(filename)).__str__() or filename in newROM or filename in UInewROM:
+			elif filename in str(localData(device_code)) or filename in newROM or filename in UInewROM:
 				return "Already Exist"
 			else:
-				device, code, android, version, type, bigver, region,tag,zone, branch, filetype, filename = [item for item in getData(filename)]
-				writeData(filename)
-				checkDatabase(device, code, android, version, type, bigver, region,tag,zone, branch, filetype, filename)
-				# getChangelog2DB()
+				device, code, android, version, type, bigver, region, tag, zone, branch, filetype, filename = [item for item in getData(filename)]
+				checkDatabase(device, code, android, version, type, bigver, region, tag, zone, branch, filetype, filename)
+				
+				# 修复：改进文件处理逻辑
+				device_file = get_platform_path(f"public/data/devices/{device}.json")
+				try:
+					with open(device_file, 'r', encoding='utf-8') as f:
+						dev_data = json.load(f)
+					devdata = add_rom_to_json(device, code, android, version, filetype, filename, dev_data)
+					
+					if devdata is None:
+						print(f"错误: add_rom_to_json 返回 None")
+						return "Error"
+					with open(device_file, 'w', encoding='utf-8') as f:
+						json.dump(devdata, f, ensure_ascii=False, indent=2)
+					# 验证保存结果
+					with open(device_file, 'r', encoding='utf-8') as f:
+						verify_data = json.load(f)
+					
+					# 检查新版本是否存在
+					found = False
+					for branch in verify_data.get('branches', []):
+						if version in branch.get('roms', {}):
+							found = True
+							break
+					if not found:
+						print(f"✗ 验证失败: 版本 {version} 未找到")
+				except Exception as e:
+					print(f"✗ 处理 JSON 文件时出错: {e}")
+					import traceback
+					traceback.print_exc()
 				return "New ROM"
 	else:
 		return "UI Maybe"

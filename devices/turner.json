@@ -104,6 +104,13 @@
       "zone": "1",
       "ep": "0",
       "roms": {
+        "OS3.0.304.0.WAOCNXM": {
+          "os": "OS3.0.304.0.WAOCNXM",
+          "android": "16.0",
+          "release": "2026-04-13",
+          "recovery": "turner-ota_full-OS3.0.304.0.WAOCNXM-user-16.0-e50894b9f9.zip",
+          "fastboot": ""
+        },
         "OS3.0.301.0.WAOCNXM": {
           "os": "OS3.0.301.0.WAOCNXM",
           "android": "16.0",
