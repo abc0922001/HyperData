@@ -654,7 +654,7 @@
           "android": "16.0",
           "release": "2026-04-13",
           "recovery": "pudding_in_global-ota_full-OS3.0.301.0.WPCINXM-user-16.0-72ab16d844.zip",
-          "fastboot": ""
+          "fastboot": "pudding_in_global_images_OS3.0.301.0.WPCINXM_20260331.0000.00_16.0_in_2a9c9cdbe5.tgz"
         },
         "OS3.0.4.0.WPCINXM": {
           "os": "OS3.0.4.0.WPCINXM",

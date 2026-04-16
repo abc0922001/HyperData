@@ -440,6 +440,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.212.0.VNHEUXM": {
+					"os": "OS2.0.212.0.VNHEUXM",
+					"android": "15.0",
+					"release": "2026-04-03",
+					"recovery": "sapphiren_eea_global-ota_full-OS2.0.212.0.VNHEUXM-user-15.0-aa42895566.zip",
+					"fastboot": ""
+				},
 				"OS2.0.211.0.VNHEUXM": {
 					"os": "OS2.0.211.0.VNHEUXM",
 					"android": "15.0",

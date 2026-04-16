@@ -875,7 +875,7 @@
 					"android": "15.0",
 					"release": "2026-04-07",
 					"recovery": "marble_ru_global-ota_full-OS3.0.1.0.VMRRUXM-user-15.0-a32b38a770.zip",
-					"fastboot": ""
+					"fastboot": "marble_ru_global_images_OS3.0.1.0.VMRRUXM_20260319.0000.00_15.0_ru_08b64eebbb.tgz"
 				},
 				"OS2.0.208.0.VMRRUXM": {
 					"os": "OS2.0.208.0.VMRRUXM",
@@ -1252,7 +1252,7 @@
 					"android": "15.0",
 					"release": "2026-04-07",
 					"recovery": "marble_id_global-ota_full-OS3.0.2.0.VMRIDXM-user-15.0-e35083d538.zip",
-					"fastboot": ""
+					"fastboot": "marble_id_global_images_OS3.0.2.0.VMRIDXM_20260319.0000.00_15.0_id_ce73f1e64a.tgz"
 				},
 				"OS2.0.211.0.VMRIDXM": {
 					"os": "OS2.0.211.0.VMRIDXM",

@@ -380,7 +380,7 @@
           "android": "16.0",
           "release": "2026-04-07",
           "recovery": "tornado_in_global-ota_full-OS3.0.2.0.WPOINXM-user-16.0-6a26a8fd42.zip",
-          "fastboot": ""
+          "fastboot": "tornado_in_global_images_OS3.0.2.0.WPOINXM_20260401.0000.00_16.0_in_0f912e1513.tgz"
         },
         "OS3.0.1.0.WPOINXM": {
           "os": "OS3.0.1.0.WPOINXM",

@@ -325,7 +325,7 @@
           "android": "16.0",
           "release": "2026-04-07",
           "recovery": "charoite_tr_global-ota_full-OS3.0.1.0.WPFTRXM-user-16.0-0ce46a3360.zip",
-          "fastboot": ""
+          "fastboot": "charoite_tr_global_images_OS3.0.1.0.WPFTRXM_20260320.0000.00_16.0_tr_472dce3156.tgz"
         },
         "OS2.0.205.0.VPFTRXM": {
           "os": "OS2.0.205.0.VPFTRXM",

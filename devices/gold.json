@@ -1584,6 +1584,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.201.0.VNQGTTG": {
+					"os": "OS2.0.201.0.VNQGTTG",
+					"android": "15.0",
+					"release": "2026-04-16",
+					"recovery": "gold_gt_tg_global-ota_full-OS2.0.201.0.VNQGTTG-user-15.0-e7f042bfc5.zip",
+					"fastboot": ""
+				},
 				"OS2.0.1.0.VNQGTTG": {
 					"os": "OS2.0.1.0.VNQGTTG",
 					"android": "15.0",

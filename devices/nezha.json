@@ -425,7 +425,7 @@
           "android": "16.0",
           "release": "2026-04-08",
           "recovery": "nezha_eea_global-ota_full-OS3.0.301.0.WPAEUXM-user-16.0-38ac0016a0.zip",
-          "fastboot": ""
+          "fastboot": "nezha_eea_global_images_OS3.0.301.0.WPAEUXM_20260316.0000.00_16.0_eea_5942a00be2.tgz"
         },
         "OS3.0.11.0.WPAEUXM": {
           "os": "OS3.0.11.0.WPAEUXM",

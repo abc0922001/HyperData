@@ -174,8 +174,8 @@
 					"android": "16.0",
 					"release": "2026-03-23",
 					"recovery": "miro-ota_full-OS3.0.302.0.WOMCNXM-user-16.0-8f71aa670d.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "miro_images_OS3.0.302.0.WOMCNXM_20260319.0000.00_16.0_cn_63df1ae271.tgz",
+					"ctelecom": "miro_images_OS3.0.302.0.WOMCNXM_20260319.0000.00_16.0_cn_chinatelecom_c27ee50311.tgz"
 				},
 				"OS3.0.6.0.WOMCNXM": {
 					"os": "OS3.0.6.0.WOMCNXM",

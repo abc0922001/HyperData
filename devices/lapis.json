@@ -394,7 +394,7 @@
           "android": "16.0",
           "release": "2026-04-01",
           "recovery": "lapis_eea_global-ota_full-OS3.0.2.0.WPPEUXM-user-16.0-f3b1ac5bd7.zip",
-          "fastboot": ""
+          "fastboot": "lapis_eea_global_images_OS3.0.2.0.WPPEUXM_20260317.0000.00_16.0_eea_06b63a6a2b.tgz"
         },
         "OS2.0.204.0.VPPEUXM": {
           "os": "OS2.0.204.0.VPPEUXM",
