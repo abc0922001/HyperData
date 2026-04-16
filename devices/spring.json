@@ -114,7 +114,7 @@
           "android": "15.0",
           "release": "2026-04-10",
           "recovery": "spring_tw_global-ota_full-OS2.0.203.0.VOUTWXM-user-15.0-113c05a676.zip",
-          "fastboot": ""
+          "fastboot": "spring_tw_global_images_OS2.0.203.0.VOUTWXM_20260327.0000.00_15.0_tw_373f8fce0d.tgz"
         },
         "OS2.0.202.0.VOUTWXM": {
           "os": "OS2.0.202.0.VOUTWXM",

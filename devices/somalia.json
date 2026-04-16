@@ -44,6 +44,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.4.0.WBWINXM": {
+          "os": "OS3.0.4.0.WBWINXM",
+          "android": "16.0",
+          "release": "2026-04-15",
+          "recovery": "somalia_in_global-ota_full-OS3.0.4.0.WBWINXM-user-16.0-d4501fe101.zip",
+          "fastboot": ""
+        },
         "OS3.0.3.0.WBWINXM": {
           "os": "OS3.0.3.0.WBWINXM",
           "android": "16.0",

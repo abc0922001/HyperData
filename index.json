@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-04-15 20:39:52",
+    "time": "2026-04-16 00:36:28",
     "developing": "no",
     "roms": [
       {
@@ -266,6 +266,14 @@
           "en": "REDMI A5 / POCO C71"
         },
         "rom": "A15.0.12.0.VGWEUVF; A15.0.12.0.VGWRUXM; A15.0.15.0.VGWINXM"
+      },
+      {
+        "code": "somalia",
+        "name": {
+          "zh": "POCO C85x 5G",
+          "en": "POCO C85x 5G"
+        },
+        "rom": "OS3.0.4.0.WBWINXM"
       }
     ]
   }
