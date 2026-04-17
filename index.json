@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-04-16 20:08:53",
+    "time": "2026-04-17 10:21:56",
     "developing": "no",
     "roms": [
       {
@@ -26,6 +26,14 @@
           "en": "Xiaomi 13 Pro"
         },
         "rom": "OS3.0.3.0.WMBEUXM"
+      },
+      {
+        "code": "ishtar",
+        "name": {
+          "zh": "小米 13 Ultra",
+          "en": "Xiaomi 13 Ultra"
+        },
+        "rom": "OS3.0.303.0.WMACNXM; OS3.0.302.0.WMACNXM"
       },
       {
         "code": "pudding",
@@ -66,6 +74,22 @@
           "en": "Xiaomi Pad 7"
         },
         "rom": "OS3.0.3.0.WOZTWXM; OS3.0.3.0.WOZRUXM; OS3.0.5.0.WOZINXM; OS3.0.3.0.WOZIDXM; OS3.0.3.0.WOZTRXM"
+      },
+      {
+        "code": "piano",
+        "name": {
+          "zh": "小米 Pad 8 Pro",
+          "en": "Xiaomi Pad 8 Pro"
+        },
+        "rom": "OS3.0.302.0.WPYMIXM; OS3.0.303.0.WPYEUXM"
+      },
+      {
+        "code": "yupei",
+        "name": {
+          "zh": "小米 Pad 8",
+          "en": "Xiaomi Pad 8"
+        },
+        "rom": "OS3.0.302.0.WPZMIXM; OS3.0.303.0.WPZEUXM"
       },
       {
         "code": "moon",
@@ -130,6 +154,14 @@
           "en": "Redmi Note 13 Pro 5G / POCO X6 5G"
         },
         "rom": "OS3.0.2.0.WNRLMCR"
+      },
+      {
+        "code": "zircon",
+        "name": {
+          "zh": "Redmi Note 13 Pro+ 5G",
+          "en": "Redmi Note 13 Pro+ 5G"
+        },
+        "rom": "OS3.0.2.0.WNOTWXM; OS3.0.2.0.WNOTRXM"
       },
       {
         "code": "tanzanite",
