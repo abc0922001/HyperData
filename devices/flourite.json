@@ -426,6 +426,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.1.0.WPRRUXM": {
+          "os": "OS3.0.1.0.WPRRUXM",
+          "android": "16.0",
+          "release": "2026-04-14",
+          "recovery": "flourite_ru_global-ota_full-OS3.0.1.0.WPRRUXM-user-16.0-9526b62b45.zip",
+          "fastboot": ""
+        },
         "OS2.0.205.0.VPRRUXM": {
           "os": "OS2.0.205.0.VPRRUXM",
           "android": "15.0",
@@ -523,6 +530,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.1.0.WPRIDXM": {
+          "os": "OS3.0.1.0.WPRIDXM",
+          "android": "16.0",
+          "release": "2026-04-14",
+          "recovery": "flourite_id_global-ota_full-OS3.0.1.0.WPRIDXM-user-16.0-6bbfb7a483.zip",
+          "fastboot": ""
+        },
         "OS2.0.208.0.VPRIDXM": {
           "os": "OS2.0.208.0.VPRIDXM",
           "android": "15.0",
@@ -575,6 +589,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.1.0.WPRTRXM": {
+          "os": "OS3.0.1.0.WPRTRXM",
+          "android": "16.0",
+          "release": "2026-04-14",
+          "recovery": "flourite_tr_global-ota_full-OS3.0.1.0.WPRTRXM-user-16.0-a845d38dfb.zip",
+          "fastboot": ""
+        },
         "OS2.0.205.0.VPRTRXM": {
           "os": "OS2.0.205.0.VPRTRXM",
           "android": "15.0",

@@ -966,7 +966,7 @@
 					"android": "16.0",
 					"release": "2026-04-13",
 					"recovery": "nuwa_eea_global-ota_full-OS3.0.3.0.WMBEUXM-user-16.0-01976e32d5.zip",
-					"fastboot": ""
+					"fastboot": "nuwa_eea_global_images_OS3.0.3.0.WMBEUXM_20260401.0000.00_16.0_eea_777cdb6830.tgz"
 				},
 				"OS3.0.2.0.WMBEUXM": {
 					"os": "OS3.0.2.0.WMBEUXM",

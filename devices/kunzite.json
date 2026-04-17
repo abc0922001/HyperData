@@ -526,7 +526,7 @@
           "android": "16.0",
           "release": "2026-04-13",
           "recovery": "kunzite_id_global-ota_full-OS3.0.1.0.WPQIDXM-user-16.0-384b190bcd.zip",
-          "fastboot": ""
+          "fastboot": "kunzite_id_global_images_OS3.0.1.0.WPQIDXM_20260322.0000.00_16.0_id_58989734fa.tgz"
         },
         "OS2.0.205.0.VPQIDXM": {
           "os": "OS2.0.205.0.VPQIDXM",

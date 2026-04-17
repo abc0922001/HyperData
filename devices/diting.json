@@ -509,6 +509,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.2.0.VLFTWXM": {
+					"os": "OS3.0.2.0.VLFTWXM",
+					"android": "15.0",
+					"release": "2026-04-13",
+					"recovery": "diting_tw_global-ota_full-OS3.0.2.0.VLFTWXM-user-15.0-513d189d42.zip",
+					"fastboot": ""
+				},
 				"OS3.0.1.0.VLFTWXM": {
 					"os": "OS3.0.1.0.VLFTWXM",
 					"android": "15.0",
@@ -1106,6 +1113,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.2.0.VLFRUXM": {
+					"os": "OS3.0.2.0.VLFRUXM",
+					"android": "15.0",
+					"release": "2026-04-13",
+					"recovery": "diting_ru_global-ota_full-OS3.0.2.0.VLFRUXM-user-15.0-df2b77ffa4.zip",
+					"fastboot": ""
+				},
 				"OS3.0.1.0.VLFRUXM": {
 					"os": "OS3.0.1.0.VLFRUXM",
 					"android": "15.0",
@@ -1270,6 +1284,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.2.0.VLFTRXM": {
+					"os": "OS3.0.2.0.VLFTRXM",
+					"android": "15.0",
+					"release": "2026-04-13",
+					"recovery": "diting_tr_global-ota_full-OS3.0.2.0.VLFTRXM-user-15.0-d24909278c.zip",
+					"fastboot": ""
+				},
 				"OS3.0.1.0.VLFTRXM": {
 					"os": "OS3.0.1.0.VLFTRXM",
 					"android": "15.0",

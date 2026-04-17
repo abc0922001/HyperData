@@ -701,6 +701,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.301.0.WPCIDXM": {
+          "os": "OS3.0.301.0.WPCIDXM",
+          "android": "16.0",
+          "release": "2026-04-14",
+          "recovery": "pudding_id_global-ota_full-OS3.0.301.0.WPCIDXM-user-16.0-0b391b2ca3.zip",
+          "fastboot": ""
+        },
         "OS3.0.4.0.WPCIDXM": {
           "os": "OS3.0.4.0.WPCIDXM",
           "android": "16.0",

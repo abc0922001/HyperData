@@ -291,7 +291,7 @@
           "android": "16.0",
           "release": "2026-04-07",
           "recovery": "klimt_eea_global-ota_full-OS3.0.302.0.WOSEUXM-user-16.0-899111536b.zip",
-          "fastboot": ""
+          "fastboot": "klimt_eea_global_images_OS3.0.302.0.WOSEUXM_20260401.0000.00_16.0_eea_b0fd958d46.tgz"
         },
         "OS3.0.13.0.WOSEUXM": {
           "os": "OS3.0.13.0.WOSEUXM",

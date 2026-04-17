@@ -291,7 +291,7 @@
           "android": "16.0",
           "release": "2026-04-10",
           "recovery": "goya_eea_global-ota_full-OS3.0.302.0.WOEEUXM-user-16.0-1f223d086d.zip",
-          "fastboot": ""
+          "fastboot": "goya_eea_global_images_OS3.0.302.0.WOEEUXM_20260401.0000.00_16.0_eea_dcd30b526d.tgz"
         },
         "OS3.0.10.0.WOEEUXM": {
           "os": "OS3.0.10.0.WOEEUXM",

@@ -342,7 +342,7 @@
           "android": "16.0",
           "release": "2026-04-12",
           "recovery": "lapis_dc_global-ota_full-OS3.0.4.0.WPPMIDC-user-16.0-43da724d27.zip",
-          "fastboot": ""
+          "fastboot": "lapis_dc_global_images_OS3.0.4.0.WPPMIDC_20260324.0000.00_16.0_global_dc_5caaad17ff.tgz"
         },
         "OS2.0.205.0.VPPMIDC": {
           "os": "OS2.0.205.0.VPPMIDC",

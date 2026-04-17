@@ -148,6 +148,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.5.0.WPXMIXM": {
+					"os": "OS3.0.5.0.WPXMIXM",
+					"android": "16.0",
+					"release": "2026-04-13",
+					"recovery": "organ_global-ota_full-OS3.0.5.0.WPXMIXM-user-16.0-348c87eeff.zip",
+					"fastboot": ""
+				},
 				"OS3.0.4.0.WPXMIXM": {
 					"os": "OS3.0.4.0.WPXMIXM",
 					"android": "16.0",

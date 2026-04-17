@@ -290,6 +290,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.4.0.WOVMIXM": {
+					"os": "OS3.0.4.0.WOVMIXM",
+					"android": "16.0",
+					"release": "2026-04-16",
+					"recovery": "taiko_global-ota_full-OS3.0.4.0.WOVMIXM-user-16.0-a0c5f39c38.zip",
+					"fastboot": ""
+				},
 				"OS3.0.3.0.WOVMIXM": {
 					"os": "OS3.0.3.0.WOVMIXM",
 					"android": "16.0",
@@ -558,6 +565,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.2.0.WOVINXM": {
+					"os": "OS3.0.2.0.WOVINXM",
+					"android": "16.0",
+					"release": "2026-04-16",
+					"recovery": "taiko_in_global-ota_full-OS3.0.2.0.WOVINXM-user-16.0-34ff08b501.zip",
+					"fastboot": ""
+				},
 				"OS3.0.1.0.WOVINXM": {
 					"os": "OS3.0.1.0.WOVINXM",
 					"android": "16.0",

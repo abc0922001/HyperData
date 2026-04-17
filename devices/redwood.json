@@ -1084,7 +1084,7 @@
 					"android": "14.0",
 					"release": "2026-04-13",
 					"recovery": "redwood_id_global-ota_full-OS2.0.15.0.UMSIDXM-user-14.0-68175209b4.zip",
-					"fastboot": ""
+					"fastboot": "redwood_id_global_images_OS2.0.15.0.UMSIDXM_20260327.0000.00_14.0_id_8bc52694d1.tgz"
 				},
 				"OS2.0.13.0.UMSIDXM": {
 					"os": "OS2.0.13.0.UMSIDXM",

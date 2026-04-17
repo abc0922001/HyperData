@@ -446,6 +446,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.1.0.WOUTRXM": {
+          "os": "OS3.0.1.0.WOUTRXM",
+          "android": "16.0",
+          "release": "2026-04-14",
+          "recovery": "spring_tr_global-ota_full-OS3.0.1.0.WOUTRXM-user-16.0-7bff3f92d0.zip",
+          "fastboot": ""
+        },
         "OS2.0.202.0.VOUTRXM": {
           "os": "OS2.0.202.0.VOUTRXM",
           "android": "15.0",
