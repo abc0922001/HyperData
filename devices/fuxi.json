@@ -748,6 +748,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.2.0.WMCTWXM": {
+					"os": "OS3.0.2.0.WMCTWXM",
+					"android": "16.0",
+					"release": "2026-04-14",
+					"recovery": "fuxi_tw_global-ota_full-OS3.0.2.0.WMCTWXM-user-16.0-6d9fc2af7e.zip",
+					"fastboot": ""
+				},
 				"OS3.0.1.0.WMCTWXM": {
 					"os": "OS3.0.1.0.WMCTWXM",
 					"android": "16.0",
@@ -1268,6 +1275,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.2.0.WMCRUXM": {
+					"os": "OS3.0.2.0.WMCRUXM",
+					"android": "16.0",
+					"release": "2026-04-14",
+					"recovery": "fuxi_ru_global-ota_full-OS3.0.2.0.WMCRUXM-user-16.0-b9b244e592.zip",
+					"fastboot": ""
+				},
 				"OS3.0.1.0.WMCRUXM": {
 					"os": "OS3.0.1.0.WMCRUXM",
 					"android": "16.0",
