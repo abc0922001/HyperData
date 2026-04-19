@@ -51,7 +51,7 @@
 					"android": "16.0",
 					"release": "2026-04-16",
 					"recovery": "koto_tw_global-ota_full-OS3.0.2.0.WOWTWXM-user-16.0-2ff4447925.zip",
-					"fastboot": ""
+					"fastboot": "koto_tw_global_images_OS3.0.2.0.WOWTWXM_20260409.0000.00_16.0_tw_6f19024228.tgz"
 				},
 				"OS3.0.1.0.WOWTWXM": {
 					"os": "OS3.0.1.0.WOWTWXM",

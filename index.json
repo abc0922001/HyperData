@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-04-18 14:27:13",
+    "time": "2026-04-19 17:34:35",
     "developing": "no",
     "roms": [
       {
@@ -106,6 +106,14 @@
           "en": "Xiaomi Pad 8"
         },
         "rom": "OS3.0.302.0.WPZMIXM; OS3.0.303.0.WPZEUXM"
+      },
+      {
+        "code": "babylon",
+        "name": {
+          "zh": "小米 MIX Fold 3",
+          "en": "Xiaomi MIX Fold 3"
+        },
+        "rom": "OS3.0.302.0.WMVCNXM"
       },
       {
         "code": "moon",
