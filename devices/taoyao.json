@@ -49,7 +49,7 @@
 					"android": "14.0",
 					"release": "2026-04-13",
 					"recovery": "miui_TAOYAOTWGlobal_OS1.0.27.0.ULITWXM_c36ac2c091_14.0.zip",
-					"fastboot": ""
+					"fastboot": "taoyao_tw_global_images_OS1.0.27.0.ULITWXM_20260401.0000.00_14.0_tw_7a3f63bc32.tgz"
 				},
 				"OS1.0.26.0.ULITWXM": {
 					"os": "OS1.0.26.0.ULITWXM",
@@ -220,7 +220,7 @@
 					"android": "14.0",
 					"release": "2026-04-13",
 					"recovery": "miui_TAOYAOGlobal_OS1.0.33.0.ULIMIXM_5499f62e6d_14.0.zip",
-					"fastboot": ""
+					"fastboot": "taoyao_global_images_OS1.0.33.0.ULIMIXM_20260327.0000.00_14.0_global_2fe4c75f9b.tgz"
 				},
 				"OS1.0.32.0.ULIMIXM": {
 					"os": "OS1.0.32.0.ULIMIXM",
@@ -398,7 +398,7 @@
 					"android": "14.0",
 					"release": "2026-04-13",
 					"recovery": "miui_TAOYAOEEAGlobal_OS1.0.38.0.ULIEUXM_7ab7385c0d_14.0.zip",
-					"fastboot": ""
+					"fastboot": "taoyao_eea_global_images_OS1.0.38.0.ULIEUXM_20260401.0000.00_14.0_eea_4e598fa64a.tgz"
 				},
 				"OS1.0.37.0.ULIEUXM": {
 					"os": "OS1.0.37.0.ULIEUXM",
@@ -754,7 +754,7 @@
 					"android": "14.0",
 					"release": "2026-04-13",
 					"recovery": "miui_TAOYAOIDGlobal_OS1.0.28.0.ULIIDXM_479388b1e1_14.0.zip",
-					"fastboot": ""
+					"fastboot": "taoyao_id_global_images_OS1.0.28.0.ULIIDXM_20260401.0000.00_14.0_id_247a8f08af.tgz"
 				},
 				"OS1.0.27.0.ULIIDXM": {
 					"os": "OS1.0.27.0.ULIIDXM",
@@ -925,7 +925,7 @@
 					"android": "14.0",
 					"release": "2026-04-13",
 					"recovery": "miui_TAOYAOTRGlobal_OS1.0.27.0.ULITRXM_48e874b5e2_14.0.zip",
-					"fastboot": ""
+					"fastboot": "taoyao_tr_global_images_OS1.0.27.0.ULITRXM_20260401.0000.00_14.0_tr_85bc65bfec.tgz"
 				},
 				"OS1.0.26.0.ULITRXM": {
 					"os": "OS1.0.26.0.ULITRXM",

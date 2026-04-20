@@ -577,7 +577,7 @@
 					"android": "15.0",
 					"release": "2026-04-02",
 					"recovery": "gold_global-ota_full-OS3.0.2.0.VNQMIXM-user-15.0-c2520a4afb.zip",
-					"fastboot": ""
+					"fastboot": "gold_global_images_OS3.0.2.0.VNQMIXM_20260319.0000.00_15.0_global_717809be58.tgz"
 				},
 				"OS2.0.211.0.VNQMIXM": {
 					"os": "OS2.0.211.0.VNQMIXM",

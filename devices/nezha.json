@@ -269,7 +269,7 @@
           "android": "16.0",
           "release": "2026-04-10",
           "recovery": "nezha_tw_global-ota_full-OS3.0.301.0.WPATWXM-user-16.0-f495653509.zip",
-          "fastboot": ""
+          "fastboot": "nezha_tw_global_images_OS3.0.301.0.WPATWXM_20260327.0000.00_16.0_tw_abd149f077.tgz"
         },
         "OS3.0.5.0.WPATWXM": {
           "os": "OS3.0.5.0.WPATWXM",
@@ -531,6 +531,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.302.0.WPARUXM": {
+          "os": "OS3.0.302.0.WPARUXM",
+          "android": "16.0",
+          "release": "2026-04-17",
+          "recovery": "nezha_ru_global-ota_full-OS3.0.302.0.WPARUXM-user-16.0-bef3f5b7dd.zip",
+          "fastboot": ""
+        },
         "OS3.0.4.0.WPARUXM": {
           "os": "OS3.0.4.0.WPARUXM",
           "android": "16.0",
@@ -607,6 +614,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.302.0.WPAIDXM": {
+          "os": "OS3.0.302.0.WPAIDXM",
+          "android": "16.0",
+          "release": "2026-04-17",
+          "recovery": "nezha_id_global-ota_full-OS3.0.302.0.WPAIDXM-user-16.0-2d1f3d11aa.zip",
+          "fastboot": ""
+        },
         "OS3.0.5.0.WPAIDXM": {
           "os": "OS3.0.5.0.WPAIDXM",
           "android": "16.0",

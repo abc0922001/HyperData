@@ -338,6 +338,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS2.0.212.0.VPGRUXM": {
+          "os": "OS2.0.212.0.VPGRUXM",
+          "android": "15.0",
+          "release": "2026-04-15",
+          "recovery": "spinel_ru_global-ota_full-OS2.0.212.0.VPGRUXM-user-15.0-20c0e4aa85.zip",
+          "fastboot": ""
+        },
         "OS2.0.211.0.VPGRUXM": {
           "os": "OS2.0.211.0.VPGRUXM",
           "android": "15.0",
@@ -482,7 +489,7 @@
           "android": "15.0",
           "release": "2026-04-13",
           "recovery": "spinel_tr_global-ota_full-OS2.0.204.0.VPGTRXM-user-15.0-c605149182.zip",
-          "fastboot": ""
+          "fastboot": "spinel_tr_global_images_OS2.0.204.0.VPGTRXM_20260323.0000.00_15.0_tr_cb93f0b15b.tgz"
         },
         "OS2.0.203.0.VPGTRXM": {
           "os": "OS2.0.203.0.VPGTRXM",

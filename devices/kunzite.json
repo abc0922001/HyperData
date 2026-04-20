@@ -415,7 +415,7 @@
           "android": "16.0",
           "release": "2026-04-13",
           "recovery": "kunzite_ru_global-ota_full-OS3.0.1.0.WPQRUXM-user-16.0-cda0247887.zip",
-          "fastboot": ""
+          "fastboot": "kunzite_ru_global_images_OS3.0.1.0.WPQRUXM_20260322.0000.00_16.0_ru_48d4d95f59.tgz"
         },
         "OS2.0.203.0.VPQRUXM": {
           "os": "OS2.0.203.0.VPQRUXM",

@@ -570,7 +570,7 @@
 					"android": "16.0",
 					"release": "2026-04-16",
 					"recovery": "taiko_in_global-ota_full-OS3.0.2.0.WOVINXM-user-16.0-34ff08b501.zip",
-					"fastboot": ""
+					"fastboot": "taiko_in_global_images_OS3.0.2.0.WOVINXM_20260409.0000.00_16.0_in_4086ab7316.tgz"
 				},
 				"OS3.0.1.0.WOVINXM": {
 					"os": "OS3.0.1.0.WOVINXM",

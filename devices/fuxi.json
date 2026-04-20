@@ -1074,7 +1074,7 @@
 					"android": "16.0",
 					"release": "2026-04-13",
 					"recovery": "fuxi_eea_global-ota_full-OS3.0.2.0.WMCEUXM-user-16.0-7630c05f3f.zip",
-					"fastboot": ""
+					"fastboot": "fuxi_eea_global_images_OS3.0.2.0.WMCEUXM_20260331.0000.00_16.0_eea_e318a2a3fd.tgz"
 				},
 				"OS3.0.1.0.WMCEUXM": {
 					"os": "OS3.0.1.0.WMCEUXM",

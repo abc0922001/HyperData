@@ -224,6 +224,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.5.0.WPJMIXM": {
+          "os": "OS3.0.5.0.WPJMIXM",
+          "android": "16.0",
+          "release": "2026-04-17",
+          "recovery": "klee_global-ota_full-OS3.0.5.0.WPJMIXM-user-16.0-fdcd033531.zip",
+          "fastboot": ""
+        },
         "OS3.0.4.0.WPJMIXM": {
           "os": "OS3.0.4.0.WPJMIXM",
           "android": "16.0",
@@ -300,6 +307,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.4.0.WPJRUXM": {
+          "os": "OS3.0.4.0.WPJRUXM",
+          "android": "16.0",
+          "release": "2026-04-17",
+          "recovery": "klee_ru_global-ota_full-OS3.0.4.0.WPJRUXM-user-16.0-24fc42d167.zip",
+          "fastboot": ""
+        },
         "OS3.0.3.0.WPJRUXM": {
           "os": "OS3.0.3.0.WPJRUXM",
           "android": "16.0",

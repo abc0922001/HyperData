@@ -706,7 +706,7 @@
           "android": "16.0",
           "release": "2026-04-01",
           "recovery": "beryl_eea_global-ota_full-OS3.0.2.0.WOQEUXM-user-16.0-505b7f81f5.zip",
-          "fastboot": ""
+          "fastboot": "beryl_eea_global_images_OS3.0.2.0.WOQEUXM_20260312.0000.00_16.0_eea_6ef869a02b.tgz"
         },
         "OS2.0.210.0.VOQEUXM": {
           "os": "OS2.0.210.0.VOQEUXM",
@@ -858,6 +858,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.1.0.WOQRUXM": {
+          "os": "OS3.0.1.0.WOQRUXM",
+          "android": "16.0",
+          "release": "2026-04-15",
+          "recovery": "beryl_ru_global-ota_full-OS3.0.1.0.WOQRUXM-user-16.0-4aeb987987.zip",
+          "fastboot": ""
+        },
         "OS2.0.207.0.VOQRUXM": {
           "os": "OS2.0.207.0.VOQRUXM",
           "android": "15.0",
