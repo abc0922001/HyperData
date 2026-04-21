@@ -1,15 +1,23 @@
 {
   "recent": {
-    "time": "2026-04-20 18:47:34",
+    "time": "2026-04-20 22:59:12",
     "developing": "no",
     "roms": [
+      {
+        "code": "fire",
+        "name": {
+          "zh": "Redmi 12 国际",
+          "en": "Redmi 12"
+        },
+        "rom": "OS2.0.201.0.VMXGTTG"
+      },
       {
         "code": "gale",
         "name": {
           "zh": "Redmi 13C 国际 / POCO C65",
           "en": "Redmi 13C / POCO C65"
         },
-        "rom": "OS2.0.205.0.VGPLMCR"
+        "rom": "OS2.0.201.0.VGPGTTG; OS2.0.205.0.VGPLMCR"
       },
       {
         "code": "moon",

@@ -1028,6 +1028,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.201.0.VMXGTTG": {
+					"os": "OS2.0.201.0.VMXGTTG",
+					"android": "15.0",
+					"release": "2026-04-20",
+					"recovery": "fire_gt_tg_global-ota_full-OS2.0.201.0.VMXGTTG-user-15.0-f5e5943da2.zip",
+					"fastboot": ""
+				},
 				"OS2.0.1.0.VMXGTTG": {
 					"os": "OS2.0.1.0.VMXGTTG",
 					"android": "15.0",

@@ -1539,6 +1539,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.301.0.WNCMIXM": {
+					"os": "OS3.0.301.0.WNCMIXM",
+					"android": "16.0",
+					"release": "2026-04-17",
+					"recovery": "houji_global-ota_full-OS3.0.301.0.WNCMIXM-user-16.0-905b3920ab.zip",
+					"fastboot": ""
+				},
 				"OS3.0.6.0.WNCMIXM": {
 					"os": "OS3.0.6.0.WNCMIXM",
 					"android": "16.0",
@@ -1724,6 +1731,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.8.0.WNCEUXM": {
+					"os": "OS3.0.8.0.WNCEUXM",
+					"android": "16.0",
+					"release": "2026-04-17",
+					"recovery": "houji_eea_global-ota_full-OS3.0.8.0.WNCEUXM-user-16.0-1f54e73536.zip",
+					"fastboot": ""
+				},
 				"OS3.0.7.0.WNCEUXM": {
 					"os": "OS3.0.7.0.WNCEUXM",
 					"android": "16.0",

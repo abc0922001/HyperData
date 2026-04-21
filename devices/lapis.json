@@ -212,6 +212,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.2.0.WPPTWXM": {
+          "os": "OS3.0.2.0.WPPTWXM",
+          "android": "16.0",
+          "release": "2026-04-17",
+          "recovery": "lapis_tw_global-ota_full-OS3.0.2.0.WPPTWXM-user-16.0-588c487d50.zip",
+          "fastboot": ""
+        },
         "OS2.0.203.0.VPPTWXM": {
           "os": "OS2.0.203.0.VPPTWXM",
           "android": "15.0",
@@ -455,6 +462,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.2.0.WPPRUXM": {
+          "os": "OS3.0.2.0.WPPRUXM",
+          "android": "16.0",
+          "release": "2026-04-17",
+          "recovery": "lapis_ru_global-ota_full-OS3.0.2.0.WPPRUXM-user-16.0-700a641f14.zip",
+          "fastboot": ""
+        },
         "OS2.0.202.0.VPPRUXM": {
           "os": "OS2.0.202.0.VPPRUXM",
           "android": "15.0",
@@ -552,6 +566,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.2.0.WPPIDXM": {
+          "os": "OS3.0.2.0.WPPIDXM",
+          "android": "16.0",
+          "release": "2026-04-17",
+          "recovery": "lapis_id_global-ota_full-OS3.0.2.0.WPPIDXM-user-16.0-2a271a5452.zip",
+          "fastboot": ""
+        },
         "OS2.0.202.0.VPPIDXM": {
           "os": "OS2.0.202.0.VPPIDXM",
           "android": "15.0",
@@ -597,6 +618,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.2.0.WPPTRXM": {
+          "os": "OS3.0.2.0.WPPTRXM",
+          "android": "16.0",
+          "release": "2026-04-17",
+          "recovery": "lapis_tr_global-ota_full-OS3.0.2.0.WPPTRXM-user-16.0-00e0e1096a.zip",
+          "fastboot": ""
+        },
         "OS2.0.202.0.VPPTRXM": {
           "os": "OS2.0.202.0.VPPTRXM",
           "android": "15.0",
