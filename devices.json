@@ -1284,6 +1284,14 @@
 				}
 			},
 			{
+				"code": "prague",
+				"image": "prague.png",
+				"name": {
+					"zh": "REDMI K90 Max",
+					"en": "REDMI K90 Max"
+				}
+			},
+			{
 				"code": "myron",
 				"image": "myron.png",
 				"name": {
@@ -1377,6 +1385,14 @@
 				"name": {
 					"zh": "REDMI K Pad",
 					"en": "REDMI K Pad"
+				}
+			},
+			{
+				"code": "yili",
+				"image": "yili.png",
+				"name": {
+					"zh": "REDMI K Pad 2",
+					"en": "REDMI K Pad 2"
 				}
 			},
 			{

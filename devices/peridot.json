@@ -1360,6 +1360,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.4.0.WNPIDXM": {
+					"os": "OS3.0.4.0.WNPIDXM",
+					"android": "16.0",
+					"release": "2026-04-17",
+					"recovery": "peridot_id_global-ota_full-OS3.0.4.0.WNPIDXM-user-16.0-3add6ec50b.zip",
+					"fastboot": ""
+				},
 				"OS3.0.3.0.WNPIDXM": {
 					"os": "OS3.0.3.0.WNPIDXM",
 					"android": "16.0",

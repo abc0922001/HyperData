@@ -194,8 +194,8 @@
 					"android": "16.0",
 					"release": "2026-04-10",
 					"recovery": "xuanyuan-ota_full-OS3.0.303.0.WOACNXM-user-16.0-719482c5d6.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "xuanyuan_images_OS3.0.303.0.WOACNXM_20260403.0000.00_16.0_cn_0482b6b019.tgz",
+					"ctelecom": "xuanyuan_images_OS3.0.303.0.WOACNXM_20260403.0000.00_16.0_cn_chinatelecom_939dd2ce7b.tgz"
 				},
 				"OS3.0.301.0.WOACNXM": {
 					"os": "OS3.0.301.0.WOACNXM",

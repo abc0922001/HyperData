@@ -417,7 +417,7 @@
 					"android": "15.0",
 					"release": "2026-04-16",
 					"recovery": "tapas_gt_tg_global-ota_full-OS2.0.201.0.VMTGTTG-user-15.0-dc619968d2.zip",
-					"fastboot": ""
+					"fastboot": "tapas_gt_tg_global_images_OS2.0.201.0.VMTGTTG_20260107.0000.00_15.0_gt_tg_c36cfd6674.tgz"
 				},
 				"OS2.0.2.0.VMTGTTG": {
 					"os": "OS2.0.2.0.VMTGTTG",

@@ -295,7 +295,7 @@
 					"android": "16.0",
 					"release": "2026-04-16",
 					"recovery": "taiko_global-ota_full-OS3.0.4.0.WOVMIXM-user-16.0-a0c5f39c38.zip",
-					"fastboot": ""
+					"fastboot": "taiko_global_images_OS3.0.4.0.WOVMIXM_20260409.0000.00_16.0_global_409d3c12d2.tgz"
 				},
 				"OS3.0.3.0.WOVMIXM": {
 					"os": "OS3.0.3.0.WOVMIXM",

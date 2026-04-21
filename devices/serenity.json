@@ -333,6 +333,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"A15.0.13.0.VGWEUOR": {
+					"os": "A15.0.13.0.VGWEUOR",
+					"android": "15.0",
+					"release": "2026-04-21",
+					"recovery": "miui_SERENITYEEAORGlobal_A15.0.13.0.VGWEUOR_1ab1928b05_15.0.zip",
+					"fastboot": ""
+				},
 				"A15.0.12.0.VGWEUOR": {
 					"os": "A15.0.12.0.VGWEUOR",
 					"android": "15.0",
@@ -1048,6 +1055,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"A15.0.7.0.VGWCLEN": {
+					"os": "A15.0.7.0.VGWCLEN",
+					"android": "15.0",
+					"release": "2026-04-20",
+					"recovery": "miui_SERENITYCLENGlobal_A15.0.7.0.VGWCLEN_4a129d0618_15.0.zip",
+					"fastboot": ""
+				},
 				"A15.0.3.0.VGWCLEN": {
 					"os": "A15.0.3.0.VGWCLEN",
 					"android": "15.0",

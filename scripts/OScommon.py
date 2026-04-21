@@ -11,6 +11,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta, date, timezone
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from urllib.parse import quote
 from pymysql import Connection
 import config
 import os
@@ -165,8 +166,8 @@ miui_iv = b"0102030405060708"
 check_url = "https://update.miui.com/updates/miotaV3.php"
 
 
-unreleased = ['zephyr', 'coral']
-currentStable = ['zephyr', 'coral', 'arctic', 'dew','somalia', 'klee', 'dash', 'piano', 'yupei', 'pudding', 'nezha', 'flute', 'organ', 'spinel','charoite','annibale', 'myron',
+unreleased = ['chagall','warhol', 'zephyr', 'coral']
+currentStable = ['yili', 'prague', 'somalia', 'zephyr', 'chagall','warhol', 'coral', 'arctic', 'dew', 'klee', 'dash', 'piano', 'yupei', 'pudding', 'nezha', 'flute', 'organ', 'spinel','charoite','annibale', 'myron',
 								 'pandora', 'popsicle', 'tornado','goya', 'klimt', 'konghou',  'spring', 'lapis', 'kunzite',
 								 'flourite', 'creek', 'taiko', 'bixi', 'dali', 'turner', 'violin', 'koto', 'dijun', 'jinghu', 'luming', 
 								 'onyx', 'serenity', 'emerald_r', 'miro', 'zorn', 'xuanyuan', 'tanzanite', 'obsidian', 'rodin', 'warm', 'dada', 'haotian', 'uke', 'muyu', 
@@ -203,8 +204,8 @@ order = ['umi', 'cmi', 'cas', 'thyme', 'venus', 'star', 'lisa', 'pissarro_in', '
 				 'sweet_k6a', 'sea', 'gold', 'breeze', 'garnet', 'emerald', 'zircon', 'tanzanite', 'obsidian', 'beryl', 'malachite', 'amethyst', 'sapphire', 'sapphiren', 'emerald_r', 'spinel',
 				 'kunzite', 'lapis', 'coral', 'flourite', 'peridot', 'rodin','onyx', 'klee', 'dash','alioth',
 				 'charoite', 'haydn', 'ares', 'munch', 'rubens', 'matisse', 'ingres', 'diting', 'rembrandt', 'mondrian', 'socrates', 'corot', 'duchamp',
-				 'vermeer', 'manet', 'rothko', 'zorn', 'miro', 'dali','annibale', 'myron', 
-				 'yunluo', 'xun', 'flare', 'spark', 'koto', 'taiko','flute', 'organ', 'dizi', 'ruan', 'turner', 'warm', 'serenity', 'somalia', 'evergreen', 'rock', 'moonstone']
+				 'vermeer', 'manet', 'rothko', 'zorn', 'miro', 'dali','annibale', 'prague', 'myron', 
+				 'yunluo', 'xun', 'flare', 'spark', 'koto', 'taiko','flute', 'organ', 'dizi', 'ruan', 'turner', 'yili', 'warm', 'serenity', 'somalia', 'evergreen', 'rock', 'moonstone']
 
 branches = [
 	{
@@ -748,6 +749,10 @@ flags = {
 	"dada_lm_cr_global":"dada",
 	"uke_tr_global":"uke",
 	"muyu_demo":"muyu",
+	"prague": "prague",
+	"prague_demo": "prague",
+	"yili": "yili",
+	"yili_demo":"yili",
 	"beryl_ep_stdee":"beryl",
 	"BERYLEPSTDEE":"beryl",
 	"dada":"dada",
@@ -2498,25 +2503,28 @@ def localData(codename):
 		return {}
 
 def db_job(sql):
-	"""执行SQL查询并返回所有结果"""
-	cnx = None
-	try:
-		cnx = Connection(
-			user=config.user,
-			password=config.password,
-			host=config.host,
-			port=config.port,
-			database=config.database,
-			autocommit=True
-		)
-		cursor = cnx.cursor()
-		cursor.execute(sql)
-		return cursor.fetchall()
-	except Exception as e:
-		print(sql, e)
-	finally:
-		if cnx:
-			cnx.close()
+    """执行SQL查询并返回所有结果"""
+    cnx = None
+    try:
+        cnx = Connection(
+            user=config.user,
+            password=config.password,
+            host=config.host,
+            port=config.port,
+            database=config.database,
+            autocommit=True
+        )
+        cursor = cnx.cursor()
+        cursor.execute(sql)
+        result = cursor.fetchall()
+        return result if result is not None else []  # 确保返回列表
+    except Exception as e:
+        print(sql, e)
+        return []  # 异常时返回空列表而不是None
+    finally:
+        if cnx:
+            cnx.close()
+
 
 def stringify(s):
 		return f"'{s}'"
@@ -3191,8 +3199,7 @@ def miui_encrypt(json_request):
 	cipher = AES.new(miui_key, AES.MODE_CBC, miui_iv)
 	cipher_text = cipher.encrypt(
 		pad(bytes(str(json_request), encoding="ascii"), AES.block_size))
-	encrypted_request = urllib.parse.quote(base64.b64encode(
-		cipher_text).decode("utf-8")).replace("/", "%2F")
+	encrypted_request = quote(base64.b64encode(cipher_text).decode("utf-8")).replace("/", "%2F")
 	return encrypted_request
 
 
@@ -3336,36 +3343,46 @@ def getChangelog(encrypted_data, device):
 			return 0
 	response.close()
 
-def getChangelog2DB(encrypted_data, device,version):
-	headers = {"user-agent": "Dalvik/2.1.0 (Linux; U; Android 13; MI 9 Build/TKQ1.220829.002)",
-				 "Connection": "Keep-Alive",
-				 "Content-Type": "application/x-www-form-urlencoded",
-				 "Cache-Control": "no-cache",
-				 "Host": "update.miui.com",
-				 "Accept-Encoding": "gzip",
-				 "Content-Length": "795",
-				 "Cookie": "serviceToken=;"
-				 }
-	data = "q=" + encrypted_data + "&s=1&t="
-	response = requests.post(check_url, headers=headers, data=data, timeout=(5, 10))
-	if "'code'" in response.text:
-		print(json.loads(response.text)["desc"])
-	else:
-		data = miui_decrypt(response.text.split("q=")[0])
-		if "CurrentRom" in data:
-			if "changelog" in data['CurrentRom'] and data['CurrentRom']['version'] == version:
-				log = data["CurrentRom"]["changelog"]
-			elif "changelog" in data['LatestRom'] and data['LatestRom']['version'] == version:
-				log = data["LatestRom"]["changelog"]
-			else:
-				return False
-				i = 0
-		elif "LatestRom" in data:
-			log = data["LatestRom"]["changelog"]
-		else:
-			return False
-	response.close()
-	return json.dumps(strip_log(remove_spaces(log)), ensure_ascii=False)
+def getChangelog2DB(encrypted_data, device, version):
+    headers = {"user-agent": "Dalvik/2.1.0 (Linux; U; Android 13; MI 9 Build/TKQ1.220829.002)",
+                 "Connection": "Keep-Alive",
+                 "Content-Type": "application/x-www-form-urlencoded",
+                 "Cache-Control": "no-cache",
+                 "Host": "update.miui.com",
+                 "Accept-Encoding": "gzip",
+                 "Content-Length": "795",
+                 "Cookie": "serviceToken=;"
+                 }
+    data = "q=" + encrypted_data + "&s=1&t="
+    response = requests.post(check_url, headers=headers, data=data, timeout=(5, 10))
+    if "'code'" in response.text:
+        print(json.loads(response.text)["desc"])
+        return False  # 添加返回值
+    
+    # 初始化 log 变量
+    log = None
+    
+    data = miui_decrypt(response.text.split("q=")[0])
+    if "CurrentRom" in data:
+        if "changelog" in data['CurrentRom'] and data['CurrentRom']['version'] == version:
+            log = data["CurrentRom"]["changelog"]
+        elif "changelog" in data['LatestRom'] and data['LatestRom']['version'] == version:
+            log = data["LatestRom"]["changelog"]
+        else:
+            return False
+    elif "LatestRom" in data:
+        log = data["LatestRom"]["changelog"]
+    else:
+        return False
+    
+    response.close()
+    
+    # 检查 log 是否为 None
+    if log is None:
+        return False
+    
+    return json.dumps(strip_log(remove_spaces(log)), ensure_ascii=False)
+
 
 def remove_spaces(d):
 	if isinstance(d, dict):
@@ -3395,8 +3412,14 @@ def parse_version(version):
 def compare(v1, v2):
 	if v1 is None or v2 is None:
 		return False
-	else:
-		return parse_version(v1) > parse_version(v2)
+	version1 = parse_version(v1)
+	version2 = parse_version(v2)
+	
+	if version1 is None or version2 is None:
+		return False
+	
+	return version1 > version2
+
 
 def print_log(log):
 	for module in log:

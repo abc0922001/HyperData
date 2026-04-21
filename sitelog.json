@@ -7,6 +7,17 @@
 	],
 	"logs": [
 		{
+			"siteVer": "V0.8.3",
+			"icon": "mdi-plus-box",
+			"date": "2026.04.21",
+			"log": [
+				{
+					"zh": "新增机型：REDMI K90 Max, REDMI K Pad 2",
+					"en": "New Devices: REDMI K90 Max, REDMI K Pad 2"
+				}
+			]
+		},
+		{
 			"siteVer": "V0.8.1",
 			"icon": "mdi-plus-box",
 			"date": "2026.03.13",

@@ -1589,7 +1589,7 @@
 					"android": "15.0",
 					"release": "2026-04-16",
 					"recovery": "gold_gt_tg_global-ota_full-OS2.0.201.0.VNQGTTG-user-15.0-e7f042bfc5.zip",
-					"fastboot": ""
+					"fastboot": "gold_gt_tg_global_images_OS2.0.201.0.VNQGTTG_20260130.0000.00_15.0_gt_tg_94ef50132b.tgz"
 				},
 				"OS2.0.1.0.VNQGTTG": {
 					"os": "OS2.0.1.0.VNQGTTG",

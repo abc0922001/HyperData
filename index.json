@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-04-20 22:59:12",
+    "time": "2026-04-21 21:23:39",
     "developing": "no",
     "roms": [
       {
@@ -42,6 +42,54 @@
           "en": "Redmi Note 12 Pro / Pro+ / Discovery 5G"
         },
         "rom": "OS2.0.4.0.UMOLMCR"
+      },
+      {
+        "code": "beryl",
+        "name": {
+          "zh": "Redmi Note 14 5G / POCO M7 Pro 5G",
+          "en": "Redmi Note 14 5G / POCO M7 Pro 5G"
+        },
+        "rom": "OS2.0.202.0.VOQGTTG"
+      },
+      {
+        "code": "sapphire",
+        "name": {
+          "zh": "Redmi Note 13 4G",
+          "en": "Redmi Note 13 4G"
+        },
+        "rom": "OS2.0.207.0.VNGMIDC"
+      },
+      {
+        "code": "rothko",
+        "name": {
+          "zh": "Redmi K70 至尊版 / 小米 14T Pro",
+          "en": "Redmi K70 Ultra / Xiaomi 14T Pro"
+        },
+        "rom": "OS3.0.302.0.WNNCNXM"
+      },
+      {
+        "code": "prague",
+        "name": {
+          "zh": "REDMI K90 Max",
+          "en": "REDMI K90 Max"
+        },
+        "rom": "OS3.0.304.0.WAACNXM"
+      },
+      {
+        "code": "yili",
+        "name": {
+          "zh": "REDMI K Pad 2",
+          "en": "REDMI K Pad 2"
+        },
+        "rom": "OS3.0.303.0.WAKCNXM"
+      },
+      {
+        "code": "serenity",
+        "name": {
+          "zh": "REDMI A5 / POCO C71",
+          "en": "REDMI A5 / POCO C71"
+        },
+        "rom": "A15.0.13.0.VGWEUOR; A15.0.7.0.VGWCLEN"
       }
     ]
   }

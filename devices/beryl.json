@@ -436,6 +436,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.1.0.WOQMIXM": {
+          "os": "OS3.0.1.0.WOQMIXM",
+          "android": "16.0",
+          "release": "2026-04-13",
+          "recovery": "beryl_global-ota_full-OS3.0.1.0.WOQMIXM-user-16.0-28490d5698.zip",
+          "fastboot": ""
+        },
         "OS2.0.211.0.VOQMIXM": {
           "os": "OS2.0.211.0.VOQMIXM",
           "android": "15.0",
@@ -1447,6 +1454,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS2.0.202.0.VOQGTTG": {
+          "os": "OS2.0.202.0.VOQGTTG",
+          "android": "15.0",
+          "release": "2026-04-21",
+          "recovery": "beryl_gt_tg_global-ota_full-OS2.0.202.0.VOQGTTG-user-15.0-da4699e824.zip",
+          "fastboot": "beryl_gt_tg_global_images_OS2.0.202.0.VOQGTTG_20260204.0000.00_15.0_gt_tg_987366fc3b.tgz"
+        },
         "OS1.0.5.0.UOQGTTG": {
           "os": "OS1.0.5.0.UOQGTTG",
           "android": "14.0",

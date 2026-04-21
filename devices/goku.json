@@ -168,8 +168,8 @@
 					"android": "16.0",
 					"release": "2026-04-10",
 					"recovery": "goku-ota_full-OS3.0.304.0.WNVCNXM-user-16.0-ea46b1295d.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "goku_images_OS3.0.304.0.WNVCNXM_20260403.0000.00_16.0_cn_260365efc9.tgz",
+					"ctelecom": "goku_images_OS3.0.304.0.WNVCNXM_20260403.0000.00_16.0_cn_chinatelecom_9431c69169.tgz"
 				},
 				"OS3.0.8.0.WNVCNXM": {
 					"os": "OS3.0.8.0.WNVCNXM",
