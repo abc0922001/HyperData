@@ -877,7 +877,7 @@
 					"android": "15.0",
 					"release": "2026-04-13",
 					"recovery": "gold_eea_global-ota_full-OS3.0.2.0.VNQEUXM-user-15.0-cc5162ed69.zip",
-					"fastboot": ""
+					"fastboot": "gold_eea_global_images_OS3.0.2.0.VNQEUXM_20260319.0000.00_15.0_eea_2e36c244dd.tgz"
 				},
 				"OS2.0.208.0.VNQEUXM": {
 					"os": "OS2.0.208.0.VNQEUXM",

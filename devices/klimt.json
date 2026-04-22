@@ -213,6 +213,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.301.0.WOSMIDC": {
+          "os": "OS3.0.301.0.WOSMIDC",
+          "android": "16.0",
+          "release": "2026-04-22",
+          "recovery": "klimt_dc_global-ota_full-OS3.0.301.0.WOSMIDC-user-16.0-cb4598c6d9.zip",
+          "fastboot": ""
+        },
         "OS3.0.3.0.WOSMIDC": {
           "os": "OS3.0.3.0.WOSMIDC",
           "android": "16.0",

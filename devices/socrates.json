@@ -12,7 +12,8 @@
 	],
 	"android": [
 		"14.0",
-		"15.0"
+		"15.0",
+		"16.0"
 	],
 	"type": "phone",
 	"miui": "yes",
@@ -92,6 +93,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.303.0.WMKCNXM": {
+					"os": "OS3.0.303.0.WMKCNXM",
+					"android": "16.0",
+					"release": "2026-04-22",
+					"recovery": "socrates-ota_full-OS3.0.303.0.WMKCNXM-user-16.0-f09aed2004.zip",
+					"fastboot": "",
+					"ctelecom": ""
+				},
 				"OS3.0.5.0.VMKCNXM": {
 					"os": "OS3.0.5.0.VMKCNXM",
 					"android": "15.0",

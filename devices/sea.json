@@ -222,7 +222,7 @@
 					"android": "15.0",
 					"release": "2026-04-13",
 					"recovery": "sea_global-ota_full-OS2.0.212.0.VHZMIXM-user-15.0-2361167dc7.zip",
-					"fastboot": ""
+					"fastboot": "sea_global_images_OS2.0.212.0.VHZMIXM_20260331.0000.00_15.0_global_c9cd4baea4.tgz"
 				},
 				"OS2.0.210.0.VHZMIXM": {
 					"os": "OS2.0.210.0.VHZMIXM",
@@ -522,7 +522,7 @@
 					"android": "15.0",
 					"release": "2026-04-13",
 					"recovery": "sea_eea_global-ota_full-OS2.0.210.0.VHZEUXM-user-15.0-28bd132123.zip",
-					"fastboot": ""
+					"fastboot": "sea_eea_global_images_OS2.0.210.0.VHZEUXM_20260331.0000.00_15.0_eea_8593f3fdf4.tgz"
 				},
 				"OS2.0.209.0.VHZEUXM": {
 					"os": "OS2.0.209.0.VHZEUXM",
@@ -1263,6 +1263,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS2.0.204.0.VHZLMCR": {
+					"os": "OS2.0.204.0.VHZLMCR",
+					"android": "15.0",
+					"release": "2026-04-22",
+					"recovery": "sea_lm_cr_global-ota_full-OS2.0.204.0.VHZLMCR-user-15.0-cda94ee061.zip",
+					"fastboot": ""
+				},
 				"OS2.0.203.0.VHZLMCR": {
 					"os": "OS2.0.203.0.VHZLMCR",
 					"android": "15.0",

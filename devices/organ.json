@@ -153,7 +153,7 @@
 					"android": "16.0",
 					"release": "2026-04-13",
 					"recovery": "organ_global-ota_full-OS3.0.5.0.WPXMIXM-user-16.0-348c87eeff.zip",
-					"fastboot": ""
+					"fastboot": "organ_global_images_OS3.0.5.0.WPXMIXM_20260331.0000.00_16.0_global_c92eaa7f0c.tgz"
 				},
 				"OS3.0.4.0.WPXMIXM": {
 					"os": "OS3.0.4.0.WPXMIXM",

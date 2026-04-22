@@ -380,6 +380,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.1.0.WOUINXM": {
+          "os": "OS3.0.1.0.WOUINXM",
+          "android": "16.0",
+          "release": "2026-04-15",
+          "recovery": "spring_in_global-ota_full-OS3.0.1.0.WOUINXM-user-16.0-89aa4925ce.zip",
+          "fastboot": ""
+        },
         "OS2.0.208.0.VOUINXM": {
           "os": "OS2.0.208.0.VOUINXM",
           "android": "15.0",
@@ -451,7 +458,7 @@
           "android": "16.0",
           "release": "2026-04-14",
           "recovery": "spring_tr_global-ota_full-OS3.0.1.0.WOUTRXM-user-16.0-7bff3f92d0.zip",
-          "fastboot": ""
+          "fastboot": "spring_tr_global_images_OS3.0.1.0.WOUTRXM_20260326.0000.00_16.0_tr_6bb83afce6.tgz"
         },
         "OS2.0.202.0.VOUTRXM": {
           "os": "OS2.0.202.0.VOUTRXM",

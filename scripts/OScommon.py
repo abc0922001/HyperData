@@ -167,7 +167,7 @@ check_url = "https://update.miui.com/updates/miotaV3.php"
 
 
 unreleased = ['chagall','warhol', 'zephyr', 'coral']
-currentStable = ['yili', 'prague', 'somalia', 'zephyr', 'chagall','warhol', 'coral', 'arctic', 'dew', 'klee', 'dash', 'piano', 'yupei', 'pudding', 'nezha', 'flute', 'organ', 'spinel','charoite','annibale', 'myron',
+currentStable = ['guitar', 'yili', 'prague', 'somalia', 'zephyr', 'chagall','warhol', 'coral', 'arctic', 'dew', 'klee', 'dash', 'piano', 'yupei', 'pudding', 'nezha', 'flute', 'organ', 'spinel','charoite','annibale', 'myron',
 								 'pandora', 'popsicle', 'tornado','goya', 'klimt', 'konghou',  'spring', 'lapis', 'kunzite',
 								 'flourite', 'creek', 'taiko', 'bixi', 'dali', 'turner', 'violin', 'koto', 'dijun', 'jinghu', 'luming', 
 								 'onyx', 'serenity', 'emerald_r', 'miro', 'zorn', 'xuanyuan', 'tanzanite', 'obsidian', 'rodin', 'warm', 'dada', 'haotian', 'uke', 'muyu', 
@@ -205,7 +205,7 @@ order = ['umi', 'cmi', 'cas', 'thyme', 'venus', 'star', 'lisa', 'pissarro_in', '
 				 'kunzite', 'lapis', 'coral', 'flourite', 'peridot', 'rodin','onyx', 'klee', 'dash','alioth',
 				 'charoite', 'haydn', 'ares', 'munch', 'rubens', 'matisse', 'ingres', 'diting', 'rembrandt', 'mondrian', 'socrates', 'corot', 'duchamp',
 				 'vermeer', 'manet', 'rothko', 'zorn', 'miro', 'dali','annibale', 'prague', 'myron', 
-				 'yunluo', 'xun', 'flare', 'spark', 'koto', 'taiko','flute', 'organ', 'dizi', 'ruan', 'turner', 'yili', 'warm', 'serenity', 'somalia', 'evergreen', 'rock', 'moonstone']
+				 'yunluo', 'xun', 'guitar', 'flare', 'spark', 'koto', 'taiko','flute', 'organ', 'dizi', 'ruan', 'turner', 'yili', 'warm', 'serenity', 'somalia', 'evergreen', 'rock', 'moonstone']
 
 branches = [
 	{
@@ -533,6 +533,7 @@ flags = {
 	"flourite_id_global": "flourite",
 	"myron_demo": "myron",
 	"annibale": "annibale",
+	"guitar": "guitar",
 	"annibale_demo": "annibale",
 	"houji_in_global": "houji",
 	"HOUJIINGlobal": "houji",

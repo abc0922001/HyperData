@@ -52,6 +52,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.303.0.WNOCNXM": {
+					"os": "OS3.0.303.0.WNOCNXM",
+					"android": "16.0",
+					"release": "2026-04-22",
+					"recovery": "zircon-ota_full-OS3.0.303.0.WNOCNXM-user-16.0-09c35a83d6.zip",
+					"fastboot": "",
+					"ctelecom": ""
+				},
 				"OS3.0.6.0.WNOCNXM": {
 					"os": "OS3.0.6.0.WNOCNXM",
 					"android": "16.0",
@@ -299,7 +307,7 @@
 					"android": "16.0",
 					"release": "2026-04-13",
 					"recovery": "zircon_tw_global-ota_full-OS3.0.2.0.WNOTWXM-user-16.0-228213f612.zip",
-					"fastboot": ""
+					"fastboot": "zircon_tw_global_images_OS3.0.2.0.WNOTWXM_20260401.0000.00_16.0_tw_9e95f73601.tgz"
 				},
 				"OS3.0.1.0.WNOTWXM": {
 					"os": "OS3.0.1.0.WNOTWXM",
@@ -1454,7 +1462,7 @@
 					"android": "16.0",
 					"release": "2026-04-13",
 					"recovery": "zircon_tr_global-ota_full-OS3.0.2.0.WNOTRXM-user-16.0-52e1b72a39.zip",
-					"fastboot": ""
+					"fastboot": "zircon_tr_global_images_OS3.0.2.0.WNOTRXM_20260401.0000.00_16.0_tr_1164a94446.tgz"
 				},
 				"OS3.0.1.0.WNOTRXM": {
 					"os": "OS3.0.1.0.WNOTRXM",

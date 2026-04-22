@@ -281,8 +281,8 @@
 					"android": "16.0",
 					"release": "2026-04-10",
 					"recovery": "houji-ota_full-OS3.0.302.0.WNCCNXM-user-16.0-bd355440dc.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "houji_images_OS3.0.302.0.WNCCNXM_20260403.0000.00_16.0_cn_e980aa1348.tgz",
+					"ctelecom": "houji_images_OS3.0.302.0.WNCCNXM_20260403.0000.00_16.0_cn_chinatelecom_2cbd6043de.tgz"
 				},
 				"OS3.0.7.0.WNCCNXM": {
 					"os": "OS3.0.7.0.WNCCNXM",

@@ -52,6 +52,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.304.0.WNRCNXM": {
+					"os": "OS3.0.304.0.WNRCNXM",
+					"android": "16.0",
+					"release": "2026-04-22",
+					"recovery": "garnet-ota_full-OS3.0.304.0.WNRCNXM-user-16.0-d0e642461d.zip",
+					"fastboot": "",
+					"ctelecom": ""
+				},
 				"OS3.0.7.0.WNRCNXM": {
 					"os": "OS3.0.7.0.WNRCNXM",
 					"android": "16.0",

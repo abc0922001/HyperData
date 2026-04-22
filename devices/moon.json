@@ -1306,6 +1306,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.2.0.WNTLMCR": {
+					"os": "OS3.0.2.0.WNTLMCR",
+					"android": "16.0",
+					"release": "2026-04-22",
+					"recovery": "moon_lm_cr_global-ota_full-OS3.0.2.0.WNTLMCR-user-16.0-4f1e8b81a7.zip",
+					"fastboot": ""
+				},
 				"OS3.0.1.0.WNTLMCR": {
 					"os": "OS3.0.1.0.WNTLMCR",
 					"android": "16.0",

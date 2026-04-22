@@ -161,8 +161,8 @@
 					"android": "16.0",
 					"release": "2026-04-14",
 					"recovery": "vermeer-ota_full-OS3.0.302.0.WNKCNXM-user-16.0-a20b1b4621.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "vermeer_images_OS3.0.302.0.WNKCNXM_20260403.0000.00_16.0_cn_5239d8f787.tgz",
+					"ctelecom": "vermeer_images_OS3.0.302.0.WNKCNXM_20260403.0000.00_16.0_cn_chinatelecom_b31b4dd93f.tgz"
 				},
 				"OS3.0.9.0.WNKCNXM": {
 					"os": "OS3.0.9.0.WNKCNXM",

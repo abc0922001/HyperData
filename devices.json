@@ -1332,6 +1332,14 @@
 				}
 			},
 			{
+				"code": "guitar",
+				"image": "guitar.png",
+				"name": {
+					"zh": "REDMI Pad 2 SE",
+					"en": "REDMI Pad 2 SE"
+				}
+			},
+			{
 				"code": "dizi",
 				"image": "dizi.png",
 				"name": {

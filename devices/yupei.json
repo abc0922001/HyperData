@@ -315,7 +315,7 @@
           "android": "16.0",
           "release": "2026-04-16",
           "recovery": "yupei_global-ota_full-OS3.0.302.0.WPZMIXM-user-16.0-731bf6984c.zip",
-          "fastboot": ""
+          "fastboot": "yupei_global_images_OS3.0.302.0.WPZMIXM_20260407.0000.00_16.0_global_00ecb4c7de.tgz"
         },
         "OS3.0.301.0.WPZMIXM": {
           "os": "OS3.0.301.0.WPZMIXM",
@@ -367,7 +367,7 @@
           "android": "16.0",
           "release": "2026-04-16",
           "recovery": "yupei_eea_global-ota_full-OS3.0.303.0.WPZEUXM-user-16.0-5f79d3323a.zip",
-          "fastboot": ""
+          "fastboot": "yupei_eea_global_images_OS3.0.303.0.WPZEUXM_20260407.0000.00_16.0_eea_cde066df15.tgz"
         },
         "OS3.0.301.0.WPZEUXM": {
           "os": "OS3.0.301.0.WPZEUXM",

@@ -514,7 +514,7 @@
 					"android": "15.0",
 					"release": "2026-04-13",
 					"recovery": "diting_tw_global-ota_full-OS3.0.2.0.VLFTWXM-user-15.0-513d189d42.zip",
-					"fastboot": ""
+					"fastboot": "diting_tw_global_images_OS3.0.2.0.VLFTWXM_20260403.0000.00_15.0_tw_141a3921c9.tgz"
 				},
 				"OS3.0.1.0.VLFTWXM": {
 					"os": "OS3.0.1.0.VLFTWXM",
@@ -1118,7 +1118,7 @@
 					"android": "15.0",
 					"release": "2026-04-13",
 					"recovery": "diting_ru_global-ota_full-OS3.0.2.0.VLFRUXM-user-15.0-df2b77ffa4.zip",
-					"fastboot": ""
+					"fastboot": "diting_ru_global_images_OS3.0.2.0.VLFRUXM_20260403.0000.00_15.0_ru_152a62e64c.tgz"
 				},
 				"OS3.0.1.0.VLFRUXM": {
 					"os": "OS3.0.1.0.VLFRUXM",
@@ -1289,7 +1289,7 @@
 					"android": "15.0",
 					"release": "2026-04-13",
 					"recovery": "diting_tr_global-ota_full-OS3.0.2.0.VLFTRXM-user-15.0-d24909278c.zip",
-					"fastboot": ""
+					"fastboot": "diting_tr_global_images_OS3.0.2.0.VLFTRXM_20260403.0000.00_15.0_tr_7da8023a7d.tgz"
 				},
 				"OS3.0.1.0.VLFTRXM": {
 					"os": "OS3.0.1.0.VLFTRXM",

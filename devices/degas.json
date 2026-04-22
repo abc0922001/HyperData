@@ -1165,7 +1165,7 @@
 					"android": "16.0",
 					"release": "2026-04-17",
 					"recovery": "degas_lm_cr_global-ota_full-OS3.0.2.0.WNELMCR-user-16.0-de91373d62.zip",
-					"fastboot": ""
+					"fastboot": "degas_lm_cr_global_images_OS3.0.2.0.WNELMCR_20260330.0000.00_16.0_lm_cr_2f76b4d727.tgz"
 				},
 				"OS3.0.1.0.WNELMCR": {
 					"os": "OS3.0.1.0.WNELMCR",

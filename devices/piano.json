@@ -315,7 +315,7 @@
           "android": "16.0",
           "release": "2026-04-16",
           "recovery": "piano_global-ota_full-OS3.0.302.0.WPYMIXM-user-16.0-490a8c89e9.zip",
-          "fastboot": ""
+          "fastboot": "piano_global_images_OS3.0.302.0.WPYMIXM_20260407.0000.00_16.0_global_5787c35b11.tgz"
         },
         "OS3.0.301.0.WPYMIXM": {
           "os": "OS3.0.301.0.WPYMIXM",
@@ -367,7 +367,7 @@
           "android": "16.0",
           "release": "2026-04-16",
           "recovery": "piano_eea_global-ota_full-OS3.0.303.0.WPYEUXM-user-16.0-ff772f7bc2.zip",
-          "fastboot": ""
+          "fastboot": "piano_eea_global_images_OS3.0.303.0.WPYEUXM_20260407.0000.00_16.0_eea_e8650badd6.tgz"
         },
         "OS3.0.301.0.WPYEUXM": {
           "os": "OS3.0.301.0.WPYEUXM",

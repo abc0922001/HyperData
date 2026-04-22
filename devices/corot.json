@@ -94,6 +94,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.302.0.WMLCNXM": {
+					"os": "OS3.0.302.0.WMLCNXM",
+					"android": "16.0",
+					"release": "2026-04-22",
+					"recovery": "corot-ota_full-OS3.0.302.0.WMLCNXM-user-16.0-d651215e33.zip",
+					"fastboot": "",
+					"ctelecom": ""
+				},
 				"OS3.0.4.0.WMLCNXM": {
 					"os": "OS3.0.4.0.WMLCNXM",
 					"android": "16.0",

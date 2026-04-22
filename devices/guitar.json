@@ -1,10 +1,10 @@
 {
-  "device": "yili",
+  "device": "guitar",
   "name": {
-    "zh": "REDMI K Pad 2",
-    "en": "REDMI K Pad 2"
+    "zh": "REDMI Pad 2 SE",
+    "en": "REDMI Pad 2 SE"
   },
-  "code": "AK",
+  "code": "DN",
   "suppports": [
     "OS3.0"
   ],
@@ -20,11 +20,11 @@
         "zh": "小米澎湃 OS 正式版",
         "en": "Xiaomi HyperOS Stable"
       },
-      "branchCode": "yili",
+      "branchCode": "guitar",
       "brand": "REDMI",
       "device": {
-        "zh": "REDMI K Pad 2",
-        "en": "REDMI K Pad 2"
+        "zh": "REDMI Pad 2 SE",
+        "en": "REDMI Pad 2 SE"
       },
       "idtag": "CnOO",
       "tag": "CNXM",
@@ -47,19 +47,12 @@
       "zone": "1",
       "ep": "0",
       "roms": {
-        "OS3.0.303.0.WAKCNXM": {
-          "os": "OS3.0.303.0.WAKCNXM",
+        "OS3.0.301.0.WDNCNXM": {
+          "os": "OS3.0.301.0.WDNCNXM",
           "android": "16.0",
           "release": "2026-04-21",
-          "recovery": "yili-ota_full-OS3.0.303.0.WAKCNXM-user-16.0-99c932fe27.zip",
-          "fastboot": "yili_images_OS3.0.303.0.WAKCNXM_20260415.0000.00_16.0_cn_345df1e396.tgz"
-        },
-        "OS3.0.301.0.WAKCNXM": {
-          "os": "OS3.0.301.0.WAKCNXM",
-          "android": "16.0",
-          "release": "2026-04-21",
-          "recovery": "yili-ota_full-OS3.0.301.0.WAKCNXM-user-16.0-61d5003cdc.zip",
-          "fastboot": ""
+          "recovery": "guitar-ota_full-OS3.0.301.0.WDNCNXM-user-16.0-6a50a354e4.zip",
+          "fastboot": "guitar_images_OS3.0.301.0.WDNCNXM_20260402.0000.00_16.0_cn_06ff4eedce.tgz"
         }
       }
     }
