@@ -62,6 +62,44 @@
     },
     {
       "name": {
+        "zh": "小米澎湃 OS 欧洲EEA正式版",
+        "en": "Xiaomi HyperOS Europe EEA Stable"
+      },
+      "branchCode": "arctic_eea_global",
+      "brand": "REDMI",
+      "device": {
+        "zh": "REDMI A7 Pro",
+        "en": "REDMI A7 Pro"
+      },
+      "idtag": "EEAO",
+      "tag": "EUXM",
+      "branchtag": "F",
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "eea",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.5.0.WBVEUXM": {
+          "os": "OS3.0.5.0.WBVEUXM",
+          "android": "16.0",
+          "release": "2026-03-27",
+          "recovery": "arctic_eea_global-ota_full-OS3.0.5.0.WBVEUXM-user-16.0-506f1d713d.zip",
+          "fastboot": "arctic_eea_global-images-OS3.0.5.0.WBVEUXM-user-20260318.0000.00-16.0-eea-3628698109.tgz"
+        }
+      }
+    },
+    {
+      "name": {
         "zh": "小米澎湃 OS 俄罗斯正式版",
         "en": "Xiaomi HyperOS Russia Stable"
       },

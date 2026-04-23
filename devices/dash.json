@@ -207,7 +207,7 @@
           "android": "16.0",
           "release": "2026-04-16",
           "recovery": "dash_tw_global-ota_full-OS3.0.2.0.WPLTWXM-user-16.0-c47acedfbb.zip",
-          "fastboot": ""
+          "fastboot": "dash_tw_global_images_OS3.0.2.0.WPLTWXM_20260404.0000.00_16.0_tw_967e34c0f4.tgz"
         },
         "OS3.0.1.0.WPLTWXM": {
           "os": "OS3.0.1.0.WPLTWXM",

@@ -52,6 +52,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.304.0.WNSCNXM": {
+					"os": "OS3.0.304.0.WNSCNXM",
+					"android": "16.0",
+					"release": "2026-04-22",
+					"recovery": "dizi-ota_full-OS3.0.304.0.WNSCNXM-user-16.0-45e5edf6bf.zip",
+					"fastboot": "",
+					"origin": ""
+				},
 				"OS3.0.4.0.WNSCNXM": {
 					"os": "OS3.0.4.0.WNSCNXM",
 					"android": "16.0",

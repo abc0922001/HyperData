@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-04-23 01:28:46",
+    "time": "2026-04-23 21:04:04",
     "developing": "no",
     "roms": [
       {
@@ -10,6 +10,14 @@
           "en": "Xiaomi 13 Pro"
         },
         "rom": "OS3.0.305.0.WMBCNXM"
+      },
+      {
+        "code": "dada",
+        "name": {
+          "zh": "小米 15",
+          "en": "Xiaomi 15"
+        },
+        "rom": "OS3.0.302.0.WOCCNXM; OS3.0.301.0.WOCEUXM"
       },
       {
         "code": "klimt",
@@ -97,7 +105,7 @@
           "zh": "Redmi 13 国际 / POCO M6 4G",
           "en": "Redmi 13 / POCO M6 4G"
         },
-        "rom": "OS3.0.4.0.WNTTWXM; OS3.0.3.0.WNTMIDC; OS3.0.2.0.WNTLMCR"
+        "rom": "OS3.0.4.0.WNTTWXM; OS3.0.3.0.WNTMIDC; OS3.0.4.0.WNTIDXM; OS3.0.4.0.WNTTRXM; OS3.0.2.0.WNTLMCR"
       },
       {
         "code": "air",
@@ -114,6 +122,14 @@
           "en": "Redmi Note 12 Pro / Pro+ / Discovery 5G"
         },
         "rom": "OS2.0.4.0.UMOLMCR"
+      },
+      {
+        "code": "marble",
+        "name": {
+          "zh": "Redmi Note 12 Turbo / POCO F5",
+          "en": "Redmi Note 12 Turbo / POCO F5"
+        },
+        "rom": "OS3.0.4.0.VMRCNXM"
       },
       {
         "code": "sea",
@@ -153,7 +169,7 @@
           "zh": "Redmi Note 14 5G / POCO M7 Pro 5G",
           "en": "Redmi Note 14 5G / POCO M7 Pro 5G"
         },
-        "rom": "OS3.0.305.0.WOQCNXM; OS2.0.202.0.VOQGTTG"
+        "rom": "OS3.0.305.0.WOQCNXM; OS3.0.1.0.WOQMIDC; OS2.0.202.0.VOQGTTG"
       },
       {
         "code": "malachite",
@@ -186,6 +202,14 @@
           "en": "Redmi Turbo 3 / POCO F6"
         },
         "rom": "OS3.0.303.0.WNPCNXM"
+      },
+      {
+        "code": "klee",
+        "name": {
+          "zh": "REDMI Turbo 5 / POCO X8 Pro",
+          "en": "REDMI Turbo 5 / POCO X8 Pro"
+        },
+        "rom": "OS3.0.5.0.WPJEUXM; OS3.0.5.0.WPJINXM"
       },
       {
         "code": "socrates",
@@ -225,7 +249,7 @@
           "zh": "REDMI K90 Max",
           "en": "REDMI K90 Max"
         },
-        "rom": "OS3.0.304.0.WAACNXM"
+        "rom": "OS3.0.308.0.WAACNXM; OS3.0.304.0.WAACNXM"
       },
       {
         "code": "myron",
@@ -244,6 +268,14 @@
         "rom": "OS3.0.301.0.WDNCNXM"
       },
       {
+        "code": "flare",
+        "name": {
+          "zh": "Redmi Pad SE 8.7 Wi-Fi",
+          "en": "Redmi Pad SE 8.7 Wi-Fi"
+        },
+        "rom": "OS3.0.1.0.WHXIDXM"
+      },
+      {
         "code": "koto",
         "name": {
           "zh": "REDMI 平板 2 4G",
@@ -258,6 +290,14 @@
           "en": "REDMI Pad 2"
         },
         "rom": "OS3.0.303.0.WOVCNXM; OS3.0.5.0.WOVEUXM"
+      },
+      {
+        "code": "dizi",
+        "name": {
+          "zh": "Redmi Pad Pro / 哈利·波特版 / POCO Pad",
+          "en": "Redmi Pad Pro / Special Edition featuring Harry Potter / POCO Pad"
+        },
+        "rom": "OS3.0.304.0.WNSCNXM"
       },
       {
         "code": "yili",

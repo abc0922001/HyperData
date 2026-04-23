@@ -410,6 +410,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.1.0.WHXIDXM": {
+					"os": "OS3.0.1.0.WHXIDXM",
+					"android": "16.0",
+					"release": "2026-04-23",
+					"recovery": "flare_id_global-ota_full-OS3.0.1.0.WHXIDXM-user-16.0-402a0a953a.zip",
+					"fastboot": ""
+				},
 				"OS2.0.203.0.VHXIDXM": {
 					"os": "OS2.0.203.0.VHXIDXM",
 					"android": "15.0",

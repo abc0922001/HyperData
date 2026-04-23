@@ -51,6 +51,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.4.0.VMRCNXM": {
+					"os": "OS3.0.4.0.VMRCNXM",
+					"android": "15.0",
+					"release": "2026-04-23",
+					"recovery": "marble-ota_full-OS3.0.4.0.VMRCNXM-user-15.0-749961f496.zip",
+					"fastboot": "",
+					"ctelecom": ""
+				},
 				"OS3.0.1.0.VMRCNXM": {
 					"os": "OS3.0.1.0.VMRCNXM",
 					"android": "15.0",

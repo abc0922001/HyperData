@@ -48,6 +48,14 @@
       "zone": "1",
       "ep": "0",
       "roms": {
+        "OS3.0.308.0.WAACNXM": {
+          "os": "OS3.0.308.0.WAACNXM",
+          "android": "16.0",
+          "release": "2026-04-23",
+          "recovery": "prague-ota_full-OS3.0.308.0.WAACNXM-user-16.0-2f5a830366.zip",
+          "fastboot": "",
+          "ctelecom": ""
+        },
         "OS3.0.304.0.WAACNXM": {
           "os": "OS3.0.304.0.WAACNXM",
           "android": "16.0",

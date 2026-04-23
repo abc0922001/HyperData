@@ -55,8 +55,8 @@
 					"android": "16.0",
 					"release": "2026-04-14",
 					"recovery": "rodin-ota_full-OS3.0.302.0.WOJCNXM-user-16.0-753523063d.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "rodin_images_OS3.0.302.0.WOJCNXM_20260407.0000.00_16.0_cn_3a31b3707f.tgz",
+					"ctelecom": "rodin_images_OS3.0.302.0.WOJCNXM_20260407.0000.00_16.0_cn_chinatelecom_5268e57d43.tgz"
 				},
 				"OS3.0.4.0.WOJCNXM": {
 					"os": "OS3.0.4.0.WOJCNXM",

@@ -312,6 +312,14 @@
 				"dada_images_OS2.0.12.0.VOCCNXM_20241026.0000.00_15.0_cn_chinatelecom_346b0a946b.tgz"
 			],
 			"roms": {
+				"OS3.0.302.0.WOCCNXM": {
+					"os": "OS3.0.302.0.WOCCNXM",
+					"android": "16.0",
+					"release": "2026-04-23",
+					"recovery": "dada-ota_full-OS3.0.302.0.WOCCNXM-user-16.0-5cf9a95e78.zip",
+					"fastboot": "",
+					"ctelecom": ""
+				},
 				"OS3.0.301.0.WOCCNXM": {
 					"os": "OS3.0.301.0.WOCCNXM",
 					"android": "16.0",
@@ -1185,6 +1193,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.301.0.WOCEUXM": {
+					"os": "OS3.0.301.0.WOCEUXM",
+					"android": "16.0",
+					"release": "2026-04-20",
+					"recovery": "dada_eea_global-ota_full-OS3.0.301.0.WOCEUXM-user-16.0-5d04760489.zip",
+					"fastboot": ""
+				},
 				"OS3.0.9.0.WOCEUXM": {
 					"os": "OS3.0.9.0.WOCEUXM",
 					"android": "16.0",

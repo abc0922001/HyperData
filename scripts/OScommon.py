@@ -166,8 +166,8 @@ miui_iv = b"0102030405060708"
 check_url = "https://update.miui.com/updates/miotaV3.php"
 
 
-unreleased = ['chagall','warhol', 'zephyr', 'coral']
-currentStable = ['guitar', 'yili', 'prague', 'somalia', 'zephyr', 'chagall','warhol', 'coral', 'arctic', 'dew', 'klee', 'dash', 'piano', 'yupei', 'pudding', 'nezha', 'flute', 'organ', 'spinel','charoite','annibale', 'myron',
+unreleased = ['suiren', 'chagall','warhol', 'zephyr', 'coral']
+currentStable = ['guitar', 'yili', 'prague', 'somalia', 'zephyr', 'suiren', 'chagall','warhol', 'coral', 'arctic', 'dew', 'klee', 'dash', 'piano', 'yupei', 'pudding', 'nezha', 'flute', 'organ', 'spinel','charoite','annibale', 'myron',
 								 'pandora', 'popsicle', 'tornado','goya', 'klimt', 'konghou',  'spring', 'lapis', 'kunzite',
 								 'flourite', 'creek', 'taiko', 'bixi', 'dali', 'turner', 'violin', 'koto', 'dijun', 'jinghu', 'luming', 
 								 'onyx', 'serenity', 'emerald_r', 'miro', 'zorn', 'xuanyuan', 'tanzanite', 'obsidian', 'rodin', 'warm', 'dada', 'haotian', 'uke', 'muyu', 
@@ -2404,6 +2404,7 @@ flags = {
 	"ZEUS": "zeus",
 	"lisa":"lisa",
 	"LISA":"lisa",
+	"arctic_eea_global": "arctic",
 	"pissarro": "pissarro",
 	"PISSARRO": "PISSARRO",
 	"MAYFLY": "mayfly",
@@ -2568,6 +2569,7 @@ def getDeviceCode(filename):
 			codename = flags[flag]
 			return codename
 		else:
+			writeData(filename)
 			writeFlag(flag, "")
 			return 0
 	else:
