@@ -1,7 +1,7 @@
 {
 	"device": "moon",
 	"name": {
-		"zh": "Redmi 13 / POCO M6 4G",
+		"zh": "Redmi 13 国际 / POCO M6 4G",
 		"en": "Redmi 13 / POCO M6 4G"
 	},
 	"code": "NT",
@@ -27,7 +27,7 @@
 			"branchCode": "moon_tw_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi 13 / POCO M6 4G",
+				"zh": "Redmi 13 国际 / POCO M6 4G",
 				"en": "Redmi 13 / POCO M6 4G"
 			},
 			"idtag": "CNTP",
@@ -163,7 +163,7 @@
 			"branchCode": "moon_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi 13 / POCO M6 4G",
+				"zh": "Redmi 13 国际 / POCO M6 4G",
 				"en": "Redmi 13 / POCO M6 4G"
 			},
 			"idtag": "GBOO",
@@ -334,7 +334,7 @@
 			"branchCode": "moon_dc_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi 13 / POCO M6 4G",
+				"zh": "Redmi 13 国际 / POCO M6 4G",
 				"en": "Redmi 13 / POCO M6 4G"
 			},
 			"idtag": "GBDC",
@@ -449,7 +449,7 @@
 			"branchCode": "moon_eea_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi 13 / POCO M6 4G",
+				"zh": "Redmi 13 国际 / POCO M6 4G",
 				"en": "Redmi 13 / POCO M6 4G"
 			},
 			"idtag": "EEAO",
@@ -613,7 +613,7 @@
 			"branchCode": "moon_eea_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi 13 / POCO M6 4G",
+				"zh": "Redmi 13 国际 / POCO M6 4G",
 				"en": "Redmi 13 / POCO M6 4G"
 			},
 			"idtag": "EEAD",
@@ -651,7 +651,7 @@
 			"branchCode": "moon_ru_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi 13 / POCO M6 4G",
+				"zh": "Redmi 13 国际 / POCO M6 4G",
 				"en": "Redmi 13 / POCO M6 4G"
 			},
 			"idtag": "RUSO",
@@ -801,7 +801,7 @@
 			"branchCode": "moon_id_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi 13 / POCO M6 4G",
+				"zh": "Redmi 13 国际 / POCO M6 4G",
 				"en": "Redmi 13 / POCO M6 4G"
 			},
 			"idtag": "IDSO",
@@ -951,7 +951,7 @@
 			"branchCode": "moon_id_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi 13 / POCO M6 4G",
+				"zh": "Redmi 13 国际 / POCO M6 4G",
 				"en": "Redmi 13 / POCO M6 4G"
 			},
 			"idtag": "IDDM",
@@ -989,7 +989,7 @@
 			"branchCode": "moon_tr_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi 13 / POCO M6 4G",
+				"zh": "Redmi 13 国际 / POCO M6 4G",
 				"en": "Redmi 13 / POCO M6 4G"
 			},
 			"idtag": "TRSO",
@@ -1132,7 +1132,7 @@
 			"branchCode": "moon_gt_tg_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi 13 / POCO M6 4G",
+				"zh": "Redmi 13 国际 / POCO M6 4G",
 				"en": "Redmi 13 / POCO M6 4G"
 			},
 			"idtag": "GTTG",
@@ -1191,7 +1191,7 @@
 			"branchCode": "moon_mx_at_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi 13 / POCO M6 4G",
+				"zh": "Redmi 13 国际 / POCO M6 4G",
 				"en": "Redmi 13 / POCO M6 4G"
 			},
 			"idtag": "MXAT",
@@ -1285,7 +1285,7 @@
 			"branchCode": "moon_lm_cr_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi 13 / POCO M6 4G",
+				"zh": "Redmi 13 国际 / POCO M6 4G",
 				"en": "Redmi 13 / POCO M6 4G"
 			},
 			"idtag": "LMCR",

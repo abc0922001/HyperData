@@ -1,8 +1,8 @@
 {
 	"device": "emerald",
 	"name": {
-		"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro",
-		"en": "Redmi Note 13 Pro 4G / POCO M6 Pro"
+		"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G",
+		"en": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G"
 	},
 	"code": "NF",
 	"suppports": [
@@ -27,8 +27,8 @@
 			"branchCode": "emerald_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro",
-				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro"
+				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G",
+				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G"
 			},
 			"idtag": "GBOO",
 			"tag": "MIXM",
@@ -219,8 +219,8 @@
 			"branchCode": "emerald_dc_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro",
-				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro"
+				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G",
+				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G"
 			},
 			"idtag": "GBDC",
 			"tag": "MIDC",
@@ -369,8 +369,8 @@
 			"branchCode": "emerald_eea_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro",
-				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro"
+				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G",
+				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G"
 			},
 			"idtag": "EEAO",
 			"tag": "EUXM",
@@ -554,8 +554,8 @@
 			"branchCode": "emerald_ru_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro",
-				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro"
+				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G",
+				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G"
 			},
 			"idtag": "RUSO",
 			"tag": "RUXM",
@@ -732,8 +732,8 @@
 			"branchCode": "emerald_id_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro",
-				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro"
+				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G",
+				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G"
 			},
 			"idtag": "IDSO",
 			"tag": "IDXM",
@@ -903,8 +903,8 @@
 			"branchCode": "emerald_tr_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro",
-				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro"
+				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G",
+				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G"
 			},
 			"idtag": "TRSO",
 			"tag": "TRXM",
@@ -1074,8 +1074,8 @@
 			"branchCode": "emerald_mx_at_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro",
-				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro"
+				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G",
+				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G"
 			},
 			"idtag": "MXAT",
 			"tag": "MXAT",
@@ -1161,8 +1161,8 @@
 			"branchCode": "emerald_lm_cr_global",
 			"brand": "Redmi, POCO",
 			"device": {
-				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro",
-				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro"
+				"zh": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G",
+				"en": "Redmi Note 13 Pro 4G / POCO M6 Pro 4G"
 			},
 			"idtag": "LMCR",
 			"tag": "LMCR",

@@ -1,7 +1,7 @@
 {
   "device": "jinghu",
   "name": {
-    "zh": "小米平板7 Ultra",
+    "zh": "小米平板 7 Ultra",
     "en": "Xiaomi Pad 7 Ultra"
   },
   "code": "OX",
@@ -25,7 +25,7 @@
       "branchCode": "jinghu",
       "brand": "Xiaomi",
       "device": {
-        "zh": "小米平板7 Ultra",
+        "zh": "小米平板 7 Ultra",
         "en": "Xiaomi Pad 7 Ultra"
       },
       "idtag": "CnOB",
@@ -94,7 +94,7 @@
       "branchCode": "jinghu",
       "brand": "Xiaomi",
       "device": {
-        "zh": "小米平板7 Ultra",
+        "zh": "小米平板 7 Ultra",
         "en": "Xiaomi Pad 7 Ultra"
       },
       "idtag": "CnOO",
@@ -222,7 +222,7 @@
       "branchCode": "jinghu_demo",
       "brand": "Xiaomi",
       "device": {
-        "zh": "小米平板7 Ultra",
+        "zh": "小米平板 7 Ultra",
         "en": "Xiaomi Pad 7 Ultra"
       },
       "idtag": "CnOD",

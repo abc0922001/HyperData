@@ -1,7 +1,7 @@
 {
   "device": "yupei",
   "name": {
-    "zh": "小米 Pad 8",
+    "zh": "小米平板 8",
     "en": "Xiaomi Pad 8"
   },
   "code": "",
@@ -23,7 +23,7 @@
       "branchCode": "yupei",
       "brand": "Xiaomi",
       "device": {
-        "zh": "小米 Pad 8",
+        "zh": "小米平板 8",
         "en": "Xiaomi Pad 8"
       },
       "idtag": "CnOB",
@@ -71,7 +71,7 @@
       "branchCode": "yupei",
       "brand": "Xiaomi",
       "device": {
-        "zh": "小米 Pad 8",
+        "zh": "小米平板 8",
         "en": "Xiaomi Pad 8"
       },
       "idtag": "CnOO",
@@ -175,7 +175,7 @@
       "branchCode": "yupei_demo",
       "brand": "Xiaomi",
       "device": {
-        "zh": "小米 Pad 8",
+        "zh": "小米平板 8",
         "en": "Xiaomi Pad 8"
       },
       "idtag": "CnOD",
@@ -244,7 +244,7 @@
       "branchCode": "yupei_tw_global",
       "brand": "Xiaomi",
       "device": {
-        "zh": "小米 Pad 8",
+        "zh": "小米平板 8",
         "en": "Xiaomi Pad 8"
       },
       "idtag": "CNTP",
@@ -289,7 +289,7 @@
       "branchCode": "yupei_global",
       "brand": "Xiaomi",
       "device": {
-        "zh": "小米 Pad 8",
+        "zh": "小米平板 8",
         "en": "Xiaomi Pad 8"
       },
       "idtag": "GBOO",
@@ -341,7 +341,7 @@
       "branchCode": "yupei_eea_global",
       "brand": "Xiaomi",
       "device": {
-        "zh": "小米 Pad 8",
+        "zh": "小米平板 8",
         "en": "Xiaomi Pad 8"
       },
       "idtag": "EEAO",
@@ -393,7 +393,7 @@
       "branchCode": "yupei_ru_global",
       "brand": "Xiaomi",
       "device": {
-        "zh": "小米 Pad 8",
+        "zh": "小米平板 8",
         "en": "Xiaomi Pad 8"
       },
       "idtag": "RUSO",
@@ -445,7 +445,7 @@
       "branchCode": "yupei_in_global",
       "brand": "Xiaomi",
       "device": {
-        "zh": "小米 Pad 8",
+        "zh": "小米平板 8",
         "en": "Xiaomi Pad 8"
       },
       "idtag": "INSO",
@@ -490,7 +490,7 @@
       "branchCode": "yupei_id_global",
       "brand": "Xiaomi",
       "device": {
-        "zh": "小米 Pad 8",
+        "zh": "小米平板 8",
         "en": "Xiaomi Pad 8"
       },
       "idtag": "IDSO",
@@ -535,7 +535,7 @@
       "branchCode": "yupei_id_global",
       "brand": "Xiaomi",
       "device": {
-        "zh": "小米 Pad 8",
+        "zh": "小米平板 8",
         "en": "Xiaomi Pad 8"
       },
       "idtag": "IDDM",
@@ -573,7 +573,7 @@
       "branchCode": "yupei_tr_global",
       "brand": "Xiaomi",
       "device": {
-        "zh": "小米 Pad 8",
+        "zh": "小米平板 8",
         "en": "Xiaomi Pad 8"
       },
       "idtag": "TRSO",

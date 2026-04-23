@@ -1,7 +1,7 @@
 {
 	"device": "muyu",
 	"name": {
-		"zh": "小米平板7 Pro",
+		"zh": "小米平板 7 Pro",
 		"en": "Xiaomi Pad 7 Pro"
 	},
 	"code": "OY",
@@ -25,7 +25,7 @@
 			"branchCode": "muyu",
 			"brand": "Xiaomi",
 			"device": {
-				"zh": "小米平板7 Pro",
+				"zh": "小米平板 7 Pro",
 				"en": "Xiaomi Pad 7 Pro"
 			},
 			"idtag": "CnOB",
@@ -108,7 +108,7 @@
 			"branchCode": "muyu",
 			"brand": "Xiaomi",
 			"device": {
-				"zh": "小米平板7 Pro",
+				"zh": "小米平板 7 Pro",
 				"en": "Xiaomi Pad 7 Pro"
 			},
 			"idtag": "CnOO",
@@ -289,7 +289,7 @@
 			"branchCode": "muyu_demo",
 			"brand": "Xiaomi",
 			"device": {
-				"zh": "小米平板7 Pro",
+				"zh": "小米平板 7 Pro",
 				"en": "Xiaomi Pad 7 Pro"
 			},
 			"idtag": "CnOD",
@@ -344,7 +344,7 @@
 			"branchCode": "muyu_tw_global",
 			"brand": "Xiaomi",
 			"device": {
-				"zh": "小米平板7 Pro",
+				"zh": "小米平板 7 Pro",
 				"en": "Xiaomi Pad 7 Pro"
 			},
 			"idtag": "CNTP",
@@ -445,7 +445,7 @@
 			"branchCode": "muyu_global",
 			"brand": "Xiaomi",
 			"device": {
-				"zh": "小米平板7 Pro",
+				"zh": "小米平板 7 Pro",
 				"en": "Xiaomi Pad 7 Pro"
 			},
 			"idtag": "GBOO",
@@ -553,7 +553,7 @@
 			"branchCode": "muyu_eea_global",
 			"brand": "Xiaomi",
 			"device": {
-				"zh": "小米平板7 Pro",
+				"zh": "小米平板 7 Pro",
 				"en": "Xiaomi Pad 7 Pro"
 			},
 			"idtag": "EEAO",
@@ -654,7 +654,7 @@
 			"branchCode": "muyu_eea_global",
 			"brand": "Xiaomi",
 			"device": {
-				"zh": "小米平板7 Pro",
+				"zh": "小米平板 7 Pro",
 				"en": "Xiaomi Pad 7 Pro"
 			},
 			"idtag": "EEAD",
@@ -692,7 +692,7 @@
 			"branchCode": "muyu_ru_global",
 			"brand": "Xiaomi",
 			"device": {
-				"zh": "小米平板7 Pro",
+				"zh": "小米平板 7 Pro",
 				"en": "Xiaomi Pad 7 Pro"
 			},
 			"idtag": "RUSO",
@@ -793,7 +793,7 @@
 			"branchCode": "muyu_id_global",
 			"brand": "Xiaomi",
 			"device": {
-				"zh": "小米平板7 Pro",
+				"zh": "小米平板 7 Pro",
 				"en": "Xiaomi Pad 7 Pro"
 			},
 			"idtag": "IDSO",
@@ -901,7 +901,7 @@
 			"branchCode": "muyu_tr_global",
 			"brand": "Xiaomi",
 			"device": {
-				"zh": "小米平板7 Pro",
+				"zh": "小米平板 7 Pro",
 				"en": "Xiaomi Pad 7 Pro"
 			},
 			"idtag": "TRSO",

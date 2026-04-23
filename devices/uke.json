@@ -1,7 +1,7 @@
 {
 	"device": "uke",
 	"name": {
-		"zh": "小米平板7",
+		"zh": "小米平板 7",
 		"en": "Xiaomi Pad 7"
 	},
 	"code": "OZ",
@@ -25,7 +25,7 @@
 			"branchCode": "uke",
 			"brand": "Xiaomi",
 			"device": {
-				"zh": "小米平板7",
+				"zh": "小米平板 7",
 				"en": "Xiaomi Pad 7"
 			},
 			"idtag": "CnOB",
@@ -94,7 +94,7 @@
 			"branchCode": "uke",
 			"brand": "Xiaomi",
 			"device": {
-				"zh": "小米平板7",
+				"zh": "小米平板 7",
 				"en": "Xiaomi Pad 7"
 			},
 			"idtag": "CnOO",
@@ -247,7 +247,7 @@
 			"branchCode": "uke_demo",
 			"brand": "Xiaomi",
 			"device": {
-				"zh": "小米平板7",
+				"zh": "小米平板 7",
 				"en": "Xiaomi Pad 7"
 			},
 			"idtag": "CnOD",
@@ -302,7 +302,7 @@
 			"branchCode": "uke_tw_global",
 			"brand": "Xiaomi, POCO",
 			"device": {
-				"zh": "小米平板7 / POCO Pad X1",
+				"zh": "小米平板 7 / POCO Pad X1",
 				"en": "Xiaomi Pad 7 / POCO Pad X1"
 			},
 			"idtag": "CNTP",
@@ -403,7 +403,7 @@
 			"branchCode": "uke_global",
 			"brand": "Xiaomi, POCO",
 			"device": {
-				"zh": "小米平板7 / POCO Pad X1",
+				"zh": "小米平板 7 / POCO Pad X1",
 				"en": "Xiaomi Pad 7 / POCO Pad X1"
 			},
 			"idtag": "GBOO",
@@ -511,7 +511,7 @@
 			"branchCode": "uke_eea_global",
 			"brand": "Xiaomi, POCO",
 			"device": {
-				"zh": "小米平板7 / POCO Pad X1",
+				"zh": "小米平板 7 / POCO Pad X1",
 				"en": "Xiaomi Pad 7 / POCO Pad X1"
 			},
 			"idtag": "EEAO",
@@ -619,7 +619,7 @@
 			"branchCode": "uke_eea_global",
 			"brand": "Xiaomi, POCO",
 			"device": {
-				"zh": "小米平板7 / POCO Pad X1",
+				"zh": "小米平板 7 / POCO Pad X1",
 				"en": "Xiaomi Pad 7 / POCO Pad X1"
 			},
 			"idtag": "EEAD",
@@ -657,7 +657,7 @@
 			"branchCode": "uke_ru_global",
 			"brand": "Xiaomi, POCO",
 			"device": {
-				"zh": "小米平板7 / POCO Pad X1",
+				"zh": "小米平板 7 / POCO Pad X1",
 				"en": "Xiaomi Pad 7 / POCO Pad X1"
 			},
 			"idtag": "RUSO",
@@ -758,7 +758,7 @@
 			"branchCode": "uke_in_global",
 			"brand": "Xiaomi, POCO",
 			"device": {
-				"zh": "小米平板7 / POCO Pad X1",
+				"zh": "小米平板 7 / POCO Pad X1",
 				"en": "Xiaomi Pad 7 / POCO Pad X1"
 			},
 			"idtag": "INSO",
@@ -866,7 +866,7 @@
 			"branchCode": "uke_id_global",
 			"brand": "Xiaomi, POCO",
 			"device": {
-				"zh": "小米平板7 / POCO Pad X1",
+				"zh": "小米平板 7 / POCO Pad X1",
 				"en": "Xiaomi Pad 7 / POCO Pad X1"
 			},
 			"idtag": "IDSO",
@@ -967,7 +967,7 @@
 			"branchCode": "uke_tr_global",
 			"brand": "Xiaomi, POCO",
 			"device": {
-				"zh": "小米平板7 / POCO Pad X1",
+				"zh": "小米平板 7 / POCO Pad X1",
 				"en": "Xiaomi Pad 7 / POCO Pad X1"
 			},
 			"idtag": "TRSO",
