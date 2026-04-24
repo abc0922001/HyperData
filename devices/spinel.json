@@ -46,6 +46,13 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS2.0.206.0.VPGTWXM": {
+          "os": "OS2.0.206.0.VPGTWXM",
+          "android": "15.0",
+          "release": "2026-04-20",
+          "recovery": "spinel_tw_global-ota_full-OS2.0.206.0.VPGTWXM-user-15.0-8c20040155.zip",
+          "fastboot": ""
+        },
         "OS2.0.205.0.VPGTWXM": {
           "os": "OS2.0.205.0.VPGTWXM",
           "android": "15.0",

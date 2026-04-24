@@ -640,7 +640,7 @@
 					"android": "16.0",
 					"release": "2026-04-13",
 					"recovery": "peridot_global-ota_full-OS3.0.6.0.WNPMIXM-user-16.0-b087d448c8.zip",
-					"fastboot": ""
+					"fastboot": "peridot_global_images_OS3.0.6.0.WNPMIXM_20260401.0000.00_16.0_global_e1f33cf4ad.tgz"
 				},
 				"OS3.0.5.0.WNPMIXM": {
 					"os": "OS3.0.5.0.WNPMIXM",
@@ -1183,6 +1183,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.4.0.WNPINXM": {
+					"os": "OS3.0.4.0.WNPINXM",
+					"android": "16.0",
+					"release": "2026-04-17",
+					"recovery": "peridot_in_global-ota_full-OS3.0.4.0.WNPINXM-user-16.0-b1ac377bbf.zip",
+					"fastboot": ""
+				},
 				"OS3.0.3.0.WNPINXM": {
 					"os": "OS3.0.3.0.WNPINXM",
 					"android": "16.0",

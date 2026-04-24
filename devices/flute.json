@@ -227,7 +227,7 @@
 					"android": "16.0",
 					"release": "2026-04-13",
 					"recovery": "flute_global-ota_full-OS3.0.3.0.WPWMIXM-user-16.0-230782daf4.zip",
-					"fastboot": ""
+					"fastboot": "flute_global_images_OS3.0.3.0.WPWMIXM_20260331.0000.00_16.0_global_dc01f97ca8.tgz"
 				},
 				"OS3.0.2.0.WPWMIXM": {
 					"os": "OS3.0.2.0.WPWMIXM",

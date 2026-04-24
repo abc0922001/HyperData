@@ -55,8 +55,8 @@
           "android": "16.0",
           "release": "2026-04-14",
           "recovery": "onyx-ota_full-OS3.0.302.0.WOLCNXM-user-16.0-a466255baa.zip",
-          "fastboot": "",
-          "ctelecom": ""
+          "fastboot": "onyx_images_OS3.0.302.0.WOLCNXM_20260407.0000.00_16.0_cn_807a853783.tgz",
+          "ctelecom": "onyx_images_OS3.0.302.0.WOLCNXM_20260407.0000.00_16.0_cn_chinatelecom_b9cec6580a.tgz"
         },
         "OS3.0.11.0.WOLCNXM": {
           "os": "OS3.0.11.0.WOLCNXM",

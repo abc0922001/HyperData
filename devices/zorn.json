@@ -494,6 +494,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.301.0.WOKTWXM": {
+					"os": "OS3.0.301.0.WOKTWXM",
+					"android": "16.0",
+					"release": "2026-04-20",
+					"recovery": "zorn_tw_global-ota_full-OS3.0.301.0.WOKTWXM-user-16.0-4205483ee8.zip",
+					"fastboot": ""
+				},
 				"OS3.0.3.0.WOKTWXM": {
 					"os": "OS3.0.3.0.WOKTWXM",
 					"android": "16.0",
@@ -865,7 +872,7 @@
 					"android": "16.0",
 					"release": "2026-04-17",
 					"recovery": "zorn_ru_global-ota_full-OS3.0.301.0.WOKRUXM-user-16.0-5cf314ca34.zip",
-					"fastboot": ""
+					"fastboot": "zorn_ru_global_images_OS3.0.301.0.WOKRUXM_20260408.0000.00_16.0_ru_a83a3d45f2.tgz"
 				},
 				"OS3.0.3.0.WOKRUXM": {
 					"os": "OS3.0.3.0.WOKRUXM",

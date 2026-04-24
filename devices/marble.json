@@ -314,7 +314,7 @@
 					"android": "15.0",
 					"release": "2026-04-16",
 					"recovery": "marble_tw_global-ota_full-OS3.0.1.0.VMRTWXM-user-15.0-6045c54413.zip",
-					"fastboot": ""
+					"fastboot": "marble_tw_global_images_OS3.0.1.0.VMRTWXM_20260319.0000.00_15.0_tw_ad3158d67d.tgz"
 				},
 				"OS2.0.211.0.VMRTWXM": {
 					"os": "OS2.0.211.0.VMRTWXM",
