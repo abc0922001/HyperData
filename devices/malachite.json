@@ -532,7 +532,7 @@
 					"android": "16.0",
 					"release": "2026-04-13",
 					"recovery": "malachite_global-ota_full-OS3.0.11.0.WOOMIXM-user-16.0-392b868464.zip",
-					"fastboot": ""
+					"fastboot": "malachite_global_images_OS3.0.11.0.WOOMIXM_20260330.0000.00_16.0_global_130b9c9676.tgz"
 				},
 				"OS3.0.10.0.WOOMIXM": {
 					"os": "OS3.0.10.0.WOOMIXM",
@@ -818,7 +818,7 @@
 					"android": "16.0",
 					"release": "2026-04-13",
 					"recovery": "malachite_eea_global-ota_full-OS3.0.5.0.WOOEUXM-user-16.0-18736eea25.zip",
-					"fastboot": ""
+					"fastboot": "malachite_eea_global_images_OS3.0.5.0.WOOEUXM_20260330.0000.00_16.0_eea_037e52b49d.tgz"
 				},
 				"OS3.0.4.0.WOOEUXM": {
 					"os": "OS3.0.4.0.WOOEUXM",
@@ -1010,7 +1010,7 @@
 					"android": "16.0",
 					"release": "2026-04-13",
 					"recovery": "malachite_ru_global-ota_full-OS3.0.5.0.WOORUXM-user-16.0-c2e772492c.zip",
-					"fastboot": ""
+					"fastboot": "malachite_ru_global_images_OS3.0.5.0.WOORUXM_20260330.0000.00_16.0_ru_09eb902bb2.tgz"
 				},
 				"OS3.0.4.0.WOORUXM": {
 					"os": "OS3.0.4.0.WOORUXM",
@@ -1146,7 +1146,7 @@
 					"android": "16.0",
 					"release": "2026-04-13",
 					"recovery": "malachite_in_global-ota_full-OS3.0.6.0.WOOINXM-user-16.0-bb442c48cf.zip",
-					"fastboot": ""
+					"fastboot": "malachite_in_global_images_OS3.0.6.0.WOOINXM_20260330.0000.00_16.0_in_d8ab892c8a.tgz"
 				},
 				"OS3.0.5.0.WOOINXM": {
 					"os": "OS3.0.5.0.WOOINXM",
@@ -1296,7 +1296,7 @@
 					"android": "16.0",
 					"release": "2026-04-14",
 					"recovery": "malachite_id_global-ota_full-OS3.0.4.0.WOOIDXM-user-16.0-85c50a8b36.zip",
-					"fastboot": ""
+					"fastboot": "malachite_id_global_images_OS3.0.4.0.WOOIDXM_20260403.0000.00_16.0_id_48c1839d73.tgz"
 				},
 				"OS3.0.3.0.WOOIDXM": {
 					"os": "OS3.0.3.0.WOOIDXM",

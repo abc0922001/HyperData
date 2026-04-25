@@ -1,8 +1,8 @@
 {
 	"device": "arctic",
 	"name": {
-		"zh": "REDMI A7 Pro",
-		"en": "REDMI A7 Pro"
+		"zh": "REDMI A7 Pro / POCO C81",
+		"en": "REDMI A7 Pro / POCO C81"
 	},
 	"code": "BV",
 	"suppports": [
@@ -140,6 +140,51 @@
 					"release": "2026-04-16",
 					"recovery": "arctic_ru_global-ota_full-OS3.0.4.0.WBVRUXM-user-16.0-51393ac275.zip",
 					"fastboot": "arctic_ru_global-images-OS3.0.4.0.WBVRUXM-user-20260318.0000.00-16.0-ru-1ae8366794.tgz"
+				}
+			}
+		},
+		{
+			"name": {
+				"zh": "小米澎湃 OS 印度正式版",
+				"en": "Xiaomi HyperOS India Stable"
+			},
+			"branchCode": "arctic_in_global",
+			"brand": "POCO",
+			"device": {
+				"zh": "POCO C81",
+				"en": "POCO C81"
+			},
+			"idtag": "INSO",
+			"tag": "INXM",
+			"branchtag": "F",
+			"table": [
+				"os",
+				"android",
+				"release",
+				"recovery",
+				"fastboot"
+			],
+			"show": "1",
+			"carrier": [
+				""
+			],
+			"region": "in",
+			"zone": "2",
+			"ep": "0",
+			"roms": {
+				"OS3.0.2.0.WBVINXM": {
+					"os": "OS3.0.2.0.WBVINXM",
+					"android": "16.0",
+					"release": "2026-04-24",
+					"recovery": "arctic_in_global-ota_full-OS3.0.2.0.WBVINXM-user-16.0-1fe92770f9.zip",
+					"fastboot": "arctic_in_global-images-OS3.0.2.0.WBVINXM-user-20260323.0000.00-16.0-in-1fb30dee11.tgz"
+				},
+				"OS3.0.1.0.WBVINXM": {
+					"os": "OS3.0.1.0.WBVINXM",
+					"android": "16.0",
+					"release": "2026-04-24",
+					"recovery": "arctic_in_global-ota_full-OS3.0.1.0.WBVINXM-user-16.0-ca01dc0b91.zip",
+					"fastboot": ""
 				}
 			}
 		},

@@ -136,8 +136,8 @@
 					"android": "16.0",
 					"release": "2026-04-14",
 					"recovery": "popsicle-ota_full-OS3.0.306.0.WPBCNXM-user-16.0-59bde8d0f9.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "popsicle_images_OS3.0.306.0.WPBCNXM_20260407.0000.00_16.0_cn_b85a29b14f.tgz",
+					"ctelecom": "popsicle_images_OS3.0.306.0.WPBCNXM_20260407.0000.00_16.0_cn_chinatelecom_50e30f17e3.tgz"
 				},
 				"OS3.0.305.0.WPBCNXM": {
 					"os": "OS3.0.305.0.WPBCNXM",

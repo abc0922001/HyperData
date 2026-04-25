@@ -1,8 +1,8 @@
 <!doctype html>
-<html data-n-head-ssr lang="zh-CN">
+<html data-n-head-ssr lang="zh">
 
 <head>
-  <title>HyperOS ROMS Data</title>
+  <title>HyperOS ROMS 数据</title>
   <meta charset="utf-8">
   <meta name="author" content="HegeKen">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -16,6 +16,90 @@
   <script src="https://data.miuier.com/assets/mdui/js/mdui.min.js"></script>
   <script src="https://data.miuier.com/assets/jquery/jquery.min.js"></script>
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2c63818efa744adc8db506104596506e"}'></script>
+  <script>
+    // 语言切换功能
+    function switchLanguage(lang) {
+      // 保存语言偏好到 localStorage
+      localStorage.setItem('preferred-language', lang);
+      
+      // 更新 HTML lang 属性
+      document.documentElement.lang = lang;
+      
+      // 更新所有带有 lang-text 类的元素
+      const elements = document.querySelectorAll('.lang-text');
+      elements.forEach(el => {
+        const text = el.getAttribute('data-lang-' + lang);
+        if (text) {
+          el.textContent = ' ' + text + ' ';
+        }
+      });
+      
+      // 更新设备芯片中的文本
+      const chips = document.querySelectorAll('.mdui-chip');
+      chips.forEach(chip => {
+        const span = chip.querySelector('.lang-text');
+        if (span) {
+          const text = span.getAttribute('data-lang-' + lang);
+          if (text) {
+            span.textContent = ' ' + text + ' ';
+          }
+        }
+      });
+      
+      // 更新页面标题
+      const title = lang === 'zh' ? 'HyperOS ROMS 数据' : 'HyperOS ROMS Data';
+      document.title = title;
+      document.querySelector('.mdui-typo-title').textContent = title;
+      
+      // 更新语言切换按钮文本
+      const langBtn = document.getElementById('lang-switch-btn');
+      if (langBtn) {
+        langBtn.innerHTML = '<i class="mdui-icon material-icons">language</i> ' + (lang === 'zh' ? 'English' : '中文');
+      }
+      
+      // 更新底部链接文本
+      updateFooterLinks(lang);
+      
+      // 更新免责声明
+      updateDisclaimer(lang);
+    }
+    
+    function updateFooterLinks(lang) {
+      const links = {
+        'weibo': lang === 'zh' ? '微博' : 'Weibo',
+        'community': lang === 'zh' ? '小米社区' : 'Mi Community',
+        'bilibili': lang === 'zh' ? '哔哩哔哩' : 'Bilibili',
+        'backtotop': lang === 'zh' ? '返回顶部' : 'Back to Top'
+      };
+      
+      document.querySelectorAll('.mdui-bottom-nav a label').forEach(label => {
+        const parent = label.parentElement;
+        if (parent.href.includes('weibo')) label.textContent = links.weibo;
+        else if (parent.href.includes('miui.com')) label.textContent = links.community;
+        else if (parent.href.includes('bilibili')) label.textContent = links.bilibili;
+        else if (parent.href.includes('#top')) label.textContent = links.backtotop;
+      });
+    }
+    
+    function updateDisclaimer(lang) {
+      const disclaimer = lang === 'zh' 
+        ? '2023 - 2025 -- 非小米集团旗下网站 . 我们与小米以及Hyper<span class="HyperBlue"> OS</span>开发团队没有任何联系'
+        : '2023 - 2025 -- This is NOT an official website of Xiaomi Group. We have no affiliation with Xiaomi or the HyperOS development team.';
+      
+      const fsElement = document.querySelector('.mdui-bottom-nav.fs .mdui-text-center');
+      if (fsElement) {
+        fsElement.innerHTML = disclaimer;
+      }
+    }
+    
+    // 页面加载时应用保存的语言偏好
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedLang = localStorage.getItem('preferred-language') || 'zh';
+      if (savedLang !== 'zh') {
+        switchLanguage(savedLang);
+      }
+    });
+  </script>
 </head>
 
 <body>
@@ -24,7 +108,13 @@
       <div>
         <div>
           <div class="mdui-appbar mdui-appbar-fixed mdui-color-blue-accent mdui-text-color-white">
-            <div class="mdui-toolbar"><span class="mdui-typo-title">HyperOS ROMS Data</span>
+            <div class="mdui-toolbar">
+              <span class="mdui-typo-title">HyperOS ROMS 数据</span>
+              <div class="mdui-toolbar-spacer"></div>
+              <a href="javascript:void(0)" id="lang-switch-btn" class="mdui-btn mdui-ripple mdui-text-color-white" onclick="switchLanguage(document.documentElement.lang === 'zh' ? 'en' : 'zh')">
+                <i class="mdui-icon material-icons">language</i>
+                English
+              </a>
             </div>
           </div>
           <br />
@@ -36,90 +126,90 @@
           <div mdui-panel class="mdui-panel mdui-panel-gapless mdui-shadow-0">
             <div class="mdui-panel-item mdui-panel-item-open">
               <div class="mdui-panel-item-header">
-                <div class="mdui-panel-item-title HyperBlue"> 小米手机</div> <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                <div class="mdui-panel-item-title HyperBlue lang-text" data-lang-zh="小米手机" data-lang-en="Xiaomi Phones"> 小米手机</div> <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
               </div>
               <div class="mdui-panel-item-body">
-                <div class="series HyperBlue"> 小米系列：</div>
-                <div class="mdui-chip"><a href="devices/umi.json"><span class="mdui-chip-title HyperBlue"> 小米 10(umi) </span></a></div>
-                <div class="mdui-chip"><a href="devices/cmi.json"><span class="mdui-chip-title HyperBlue"> 小米 10 Pro(cmi) </span></a></div>
-                <div class="mdui-chip"><a href="devices/cas.json"><span class="mdui-chip-title HyperBlue"> 小米 10 至尊纪念版(cas) </span></a></div>
-                <div class="mdui-chip"><a href="devices/thyme.json"><span class="mdui-chip-title HyperBlue"> 小米 10S(thyme) </span></a></div>
-                <div class="mdui-chip"><a href="devices/venus.json"><span class="mdui-chip-title HyperBlue"> 小米 11(venus) </span></a></div>
-                <div class="mdui-chip"><a href="devices/star.json"><span class="mdui-chip-title HyperBlue"> 小米 11 Pro / Ultra(star) </span></a></div>
-                <div class="mdui-chip"><a href="devices/lisa.json"><span class="mdui-chip-title HyperBlue"> 小米 11 青春活力版(lisa) </span></a></div>
-                <div class="mdui-chip"><a href="devices/lisa.json"><span class="mdui-chip-title HyperBlue"> 小米 11 Lite 5G NE(lisa) </span></a></div>
-                <div class="mdui-chip"><a href="devices/haydn.json"><span class="mdui-chip-title HyperBlue"> 小米 11i(haydn) </span></a></div>
-                <div class="mdui-chip"><a href="devices/pissarro_in.json"><span class="mdui-chip-title HyperBlue"> 小米 11i / Hypercharge(pissarro_in) </span></a></div>
-                <div class="mdui-chip"><a href="devices/agate.json"><span class="mdui-chip-title HyperBlue"> 小米 11T(agate) </span></a></div>
-                <div class="mdui-chip"><a href="devices/vili.json"><span class="mdui-chip-title HyperBlue"> 小米 11T Pro(vili) </span></a></div>
-                <div class="mdui-chip"><a href="devices/alioth.json"><span class="mdui-chip-title HyperBlue"> 小米 11X(alioth) </span></a></div>
-                <div class="mdui-chip"><a href="devices/haydn.json"><span class="mdui-chip-title HyperBlue"> 小米 11X Pro(haydn) </span></a></div>
-                <div class="mdui-chip"><a href="devices/cupid.json"><span class="mdui-chip-title HyperBlue"> 小米 12(cupid) </span></a></div>
-                <div class="mdui-chip"><a href="devices/zeus.json"><span class="mdui-chip-title HyperBlue"> 小米 12 Pro(zeus) </span></a></div>
-                <div class="mdui-chip"><a href="devices/psyche.json"><span class="mdui-chip-title HyperBlue"> 小米 12X(psyche) </span></a></div>
-                <div class="mdui-chip"><a href="devices/daumier.json"><span class="mdui-chip-title HyperBlue"> 小米 12 Pro 天玑版(daumier) </span></a></div>
-                <div class="mdui-chip"><a href="devices/taoyao.json"><span class="mdui-chip-title HyperBlue"> 小米 12 Lite(taoyao) </span></a></div>
-                <div class="mdui-chip"><a href="devices/mayfly.json"><span class="mdui-chip-title HyperBlue"> 小米 12S(mayfly) </span></a></div>
-                <div class="mdui-chip"><a href="devices/unicorn.json"><span class="mdui-chip-title HyperBlue"> 小米 12S Pro(unicorn) </span></a></div>
-                <div class="mdui-chip"><a href="devices/thor.json"><span class="mdui-chip-title HyperBlue"> 小米 12S Ultra(thor) </span></a></div>
-                <div class="mdui-chip"><a href="devices/plato.json"><span class="mdui-chip-title HyperBlue"> 小米 12T(plato) </span></a></div>
-                <div class="mdui-chip"><a href="devices/diting.json"><span class="mdui-chip-title HyperBlue"> 小米 12T Pro(diting) </span></a></div>
-                <div class="mdui-chip"><a href="devices/fuxi.json"><span class="mdui-chip-title HyperBlue"> 小米 13(fuxi) </span></a></div>
-                <div class="mdui-chip"><a href="devices/nuwa.json"><span class="mdui-chip-title HyperBlue"> 小米 13 Pro(nuwa) </span></a></div>
-                <div class="mdui-chip"><a href="devices/ishtar.json"><span class="mdui-chip-title HyperBlue"> 小米 13 Ultra(ishtar) </span></a></div>
-                <div class="mdui-chip"><a href="devices/aristotle.json"><span class="mdui-chip-title HyperBlue"> 小米 13T(aristotle) </span></a></div>
-                <div class="mdui-chip"><a href="devices/corot.json"><span class="mdui-chip-title HyperBlue"> 小米 13T Pro(corot) </span></a></div>
-                <div class="mdui-chip"><a href="devices/houji.json"><span class="mdui-chip-title HyperBlue"> 小米 14(houji) </span></a></div>
-                <div class="mdui-chip"><a href="devices/shennong.json"><span class="mdui-chip-title HyperBlue"> 小米 14 Pro / Ti / 钛金属卫星通讯版(shennong) </span></a></div>
-                <div class="mdui-chip"><a href="devices/shennong_t.json"><span class="mdui-chip-title HyperBlue"> 小米 14 Pro 钛金属卫星通讯版(shennong_t) </span></a></div>
-                <div class="mdui-chip"><a href="devices/aurora.json"><span class="mdui-chip-title HyperBlue"> 小米 14 Ultra / Ultra Ti(aurora) </span></a></div>
-                <div class="mdui-chip"><a href="devices/degas.json"><span class="mdui-chip-title HyperBlue"> 小米 14T(degas) </span></a></div>
-                <div class="mdui-chip"><a href="devices/rothko.json"><span class="mdui-chip-title HyperBlue"> 小米 14T Pro(rothko) </span></a></div>
-                <div class="mdui-chip"><a href="devices/dada.json"><span class="mdui-chip-title HyperBlue"> 小米 15(dada) </span></a></div>
-                <div class="mdui-chip"><a href="devices/haotian.json"><span class="mdui-chip-title HyperBlue"> 小米 15 Pro(haotian) </span></a></div>
-                <div class="mdui-chip"><a href="devices/xuanyuan.json"><span class="mdui-chip-title HyperBlue"> 小米 15 Ultra(xuanyuan) </span></a></div>
-                <div class="mdui-chip"><a href="devices/dijun.json"><span class="mdui-chip-title HyperBlue"> 小米 15S Pro(dijun) </span></a></div>
-                <div class="mdui-chip"><a href="devices/goya.json"><span class="mdui-chip-title HyperBlue"> 小米 15T(goya) </span></a></div>
-                <div class="mdui-chip"><a href="devices/klimt.json"><span class="mdui-chip-title HyperBlue"> 小米 15T Pro(klimt) </span></a></div>
-                <div class="mdui-chip"><a href="devices/pudding.json"><span class="mdui-chip-title HyperBlue"> 小米 17(pudding) </span></a></div>
-                <div class="mdui-chip"><a href="devices/pandora.json"><span class="mdui-chip-title HyperBlue"> 小米 17 Pro(pandora) </span></a></div>
-                <div class="mdui-chip"><a href="devices/popsicle.json"><span class="mdui-chip-title HyperBlue"> 小米 17 Pro Max(popsicle) </span></a></div>
-                <div class="mdui-chip"><a href="devices/nezha.json"><span class="mdui-chip-title HyperBlue"> 小米 17 Ultra(nezha) </span></a></div>
-                <div class="series HyperBlue"> 小米Civi系列：</div>
-                <div class="mdui-chip"><a href="devices/chenfeng.json"><span class="mdui-chip-title HyperBlue"> 小米 14 Civi(chenfeng) </span></a></div>
-                <div class="series HyperBlue"> 小米平板系列：</div>
-                <div class="mdui-chip"><a href="devices/nabu.json"><span class="mdui-chip-title HyperBlue"> 小米平板 5(nabu) </span></a></div>
-                <div class="mdui-chip"><a href="devices/enuma.json"><span class="mdui-chip-title HyperBlue"> 小米平板 5 Pro 5G(enuma) </span></a></div>
-                <div class="mdui-chip"><a href="devices/elish.json"><span class="mdui-chip-title HyperBlue"> 小米平板 5 Pro Wi-Fi(elish) </span></a></div>
-                <div class="mdui-chip"><a href="devices/dagu.json"><span class="mdui-chip-title HyperBlue"> 小米平板 5 Pro 12.4(dagu) </span></a></div>
-                <div class="mdui-chip"><a href="devices/pipa.json"><span class="mdui-chip-title HyperBlue"> 小米平板 6(pipa) </span></a></div>
-                <div class="mdui-chip"><a href="devices/liuqin.json"><span class="mdui-chip-title HyperBlue"> 小米平板 6 Pro(liuqin) </span></a></div>
-                <div class="mdui-chip"><a href="devices/yudi.json"><span class="mdui-chip-title HyperBlue"> 小米平板 6 Max 14(yudi) </span></a></div>
-                <div class="mdui-chip"><a href="devices/sheng.json"><span class="mdui-chip-title HyperBlue"> 小米平板 6S Pro 12.4(sheng) </span></a></div>
-                <div class="mdui-chip"><a href="devices/uke.json"><span class="mdui-chip-title HyperBlue"> 小米平板 7(uke) </span></a></div>
-                <div class="mdui-chip"><a href="devices/muyu.json"><span class="mdui-chip-title HyperBlue"> 小米平板 7 Pro(muyu) </span></a></div>
-                <div class="mdui-chip"><a href="devices/jinghu.json"><span class="mdui-chip-title HyperBlue"> 小米平板 7 Ultra(jinghu) </span></a></div>
-                <div class="mdui-chip"><a href="devices/violin.json"><span class="mdui-chip-title HyperBlue"> 小米平板 7S Pro 12.5(violin) </span></a></div>
-                <div class="mdui-chip"><a href="devices/yupei.json"><span class="mdui-chip-title HyperBlue"> 小米平板 8(yupei) </span></a></div>
-                <div class="mdui-chip"><a href="devices/piano.json"><span class="mdui-chip-title HyperBlue"> 小米平板 8 Pro(piano) </span></a></div>
-                <div class="mdui-chip"><a href="devices/turner.json"><span class="mdui-chip-title HyperBlue"> 小米平板 Mini(turner) </span></a></div>
-                <div class="series HyperBlue"> 小米 MIX系列：</div>
-                <div class="mdui-chip"><a href="devices/odin.json"><span class="mdui-chip-title HyperBlue"> 小米 MIX 4(odin) </span></a></div>
-                <div class="mdui-chip"><a href="devices/cetus.json"><span class="mdui-chip-title HyperBlue"> 小米 MIX FOLD(cetus) </span></a></div>
-                <div class="mdui-chip"><a href="devices/zizhan.json"><span class="mdui-chip-title HyperBlue"> 小米 MIX Fold 2(zizhan) </span></a></div>
-                <div class="mdui-chip"><a href="devices/babylon.json"><span class="mdui-chip-title HyperBlue"> 小米 MIX Fold 3(babylon) </span></a></div>
-                <div class="mdui-chip"><a href="devices/goku.json"><span class="mdui-chip-title HyperBlue"> 小米 MIX Fold 4(goku) </span></a></div>
-                <div class="mdui-chip"><a href="devices/ruyi.json"><span class="mdui-chip-title HyperBlue"> 小米 MIX Flip(ruyi) </span></a></div>
-                <div class="mdui-chip"><a href="devices/bixi.json"><span class="mdui-chip-title HyperBlue"> 小米 MIX Flip 2(bixi) </span></a></div>
-                <div class="series HyperBlue"> 小米 Civi系列：</div>
-                <div class="mdui-chip"><a href="devices/mona.json"><span class="mdui-chip-title HyperBlue"> 小米 Civi(mona) </span></a></div>
-                <div class="mdui-chip"><a href="devices/zijin.json"><span class="mdui-chip-title HyperBlue"> 小米 Civi 1S(zijin) </span></a></div>
-                <div class="mdui-chip"><a href="devices/ziyi.json"><span class="mdui-chip-title HyperBlue"> 小米 Civi 2(ziyi) </span></a></div>
-                <div class="mdui-chip"><a href="devices/yuechu.json"><span class="mdui-chip-title HyperBlue"> 小米 Civi 3(yuechu) </span></a></div>
-                <div class="mdui-chip"><a href="devices/chenfeng.json"><span class="mdui-chip-title HyperBlue"> 小米 Civi 4 Pro(chenfeng) </span></a></div>
-                <div class="mdui-chip"><a href="devices/luming.json"><span class="mdui-chip-title HyperBlue"> 小米 Civi 5 Pro(luming) </span></a></div>
-                <div class="series HyperBlue"> 其他小米设备：</div>
-                <div class="mdui-chip"><a href="devices/konghou.json"><span class="mdui-chip-title HyperBlue"> Xiaomi YU7 后排移动控制屏(konghou) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="小米系列：" data-lang-en="Xiaomi Series: "> 小米系列：</div>
+                <div class="mdui-chip" data-name-zh="小米 10(umi)" data-name-en="Xiaomi 10(umi)"><a href="devices/umi.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 10(umi)" data-lang-en="Xiaomi 10(umi)"> 小米 10(umi) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 10 Pro(cmi)" data-name-en="Xiaomi 10 Pro(cmi)"><a href="devices/cmi.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 10 Pro(cmi)" data-lang-en="Xiaomi 10 Pro(cmi)"> 小米 10 Pro(cmi) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 10 至尊纪念版(cas)" data-name-en="Xiaomi 10 Ultra(cas)"><a href="devices/cas.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 10 至尊纪念版(cas)" data-lang-en="Xiaomi 10 Ultra(cas)"> 小米 10 至尊纪念版(cas) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 10S(thyme)" data-name-en="Xiaomi 10S(thyme)"><a href="devices/thyme.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 10S(thyme)" data-lang-en="Xiaomi 10S(thyme)"> 小米 10S(thyme) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 11(venus)" data-name-en="Xiaomi 11(venus)"><a href="devices/venus.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 11(venus)" data-lang-en="Xiaomi 11(venus)"> 小米 11(venus) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 11 Pro / Ultra(star)" data-name-en="Xiaomi 11 Pro / Ultra(star)"><a href="devices/star.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 11 Pro / Ultra(star)" data-lang-en="Xiaomi 11 Pro / Ultra(star)"> 小米 11 Pro / Ultra(star) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 11 青春活力版(lisa)" data-name-en="Mi 11 LE(lisa)"><a href="devices/lisa.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 11 青春活力版(lisa)" data-lang-en="Mi 11 LE(lisa)"> 小米 11 青春活力版(lisa) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 11 Lite 5G NE(lisa)" data-name-en="Xiaomi 11 Lite 5G NE(lisa)"><a href="devices/lisa.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 11 Lite 5G NE(lisa)" data-lang-en="Xiaomi 11 Lite 5G NE(lisa)"> 小米 11 Lite 5G NE(lisa) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 11i(haydn)" data-name-en="Mi 11i(haydn)"><a href="devices/haydn.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 11i(haydn)" data-lang-en="Mi 11i(haydn)"> 小米 11i(haydn) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 11i / Hypercharge(pissarro_in)" data-name-en="Xiaomi 11i / Hypercharge(pissarro_in)"><a href="devices/pissarro_in.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 11i / Hypercharge(pissarro_in)" data-lang-en="Xiaomi 11i / Hypercharge(pissarro_in)"> 小米 11i / Hypercharge(pissarro_in) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 11T(agate)" data-name-en="Xiaomi 11T(agate)"><a href="devices/agate.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 11T(agate)" data-lang-en="Xiaomi 11T(agate)"> 小米 11T(agate) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 11T Pro(vili)" data-name-en="Xiaomi 11T Pro(vili)"><a href="devices/vili.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 11T Pro(vili)" data-lang-en="Xiaomi 11T Pro(vili)"> 小米 11T Pro(vili) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 11X(alioth)" data-name-en="Mi 11X(alioth)"><a href="devices/alioth.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 11X(alioth)" data-lang-en="Mi 11X(alioth)"> 小米 11X(alioth) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 11X Pro(haydn)" data-name-en="Mi 11X Pro(haydn)"><a href="devices/haydn.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 11X Pro(haydn)" data-lang-en="Mi 11X Pro(haydn)"> 小米 11X Pro(haydn) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 12(cupid)" data-name-en="Xiaomi 12(cupid)"><a href="devices/cupid.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 12(cupid)" data-lang-en="Xiaomi 12(cupid)"> 小米 12(cupid) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 12 Pro(zeus)" data-name-en="Xiaomi 12 Pro(zeus)"><a href="devices/zeus.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 12 Pro(zeus)" data-lang-en="Xiaomi 12 Pro(zeus)"> 小米 12 Pro(zeus) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 12X(psyche)" data-name-en="Xiaomi 12X(psyche)"><a href="devices/psyche.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 12X(psyche)" data-lang-en="Xiaomi 12X(psyche)"> 小米 12X(psyche) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 12 Pro 天玑版(daumier)" data-name-en="Xiaomi 12 Pro Dimensity(daumier)"><a href="devices/daumier.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 12 Pro 天玑版(daumier)" data-lang-en="Xiaomi 12 Pro Dimensity(daumier)"> 小米 12 Pro 天玑版(daumier) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 12 Lite(taoyao)" data-name-en="Xiaomi 12 Lite(taoyao)"><a href="devices/taoyao.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 12 Lite(taoyao)" data-lang-en="Xiaomi 12 Lite(taoyao)"> 小米 12 Lite(taoyao) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 12S(mayfly)" data-name-en="Xiaomi 12S(mayfly)"><a href="devices/mayfly.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 12S(mayfly)" data-lang-en="Xiaomi 12S(mayfly)"> 小米 12S(mayfly) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 12S Pro(unicorn)" data-name-en="Xiaomi 12S Pro(unicorn)"><a href="devices/unicorn.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 12S Pro(unicorn)" data-lang-en="Xiaomi 12S Pro(unicorn)"> 小米 12S Pro(unicorn) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 12S Ultra(thor)" data-name-en="Xiaomi 12S Ultra(thor)"><a href="devices/thor.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 12S Ultra(thor)" data-lang-en="Xiaomi 12S Ultra(thor)"> 小米 12S Ultra(thor) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 12T(plato)" data-name-en="Xiaomi 12T(plato)"><a href="devices/plato.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 12T(plato)" data-lang-en="Xiaomi 12T(plato)"> 小米 12T(plato) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 12T Pro(diting)" data-name-en="Xiaomi 12T Pro(diting)"><a href="devices/diting.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 12T Pro(diting)" data-lang-en="Xiaomi 12T Pro(diting)"> 小米 12T Pro(diting) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 13(fuxi)" data-name-en="Xiaomi 13(fuxi)"><a href="devices/fuxi.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 13(fuxi)" data-lang-en="Xiaomi 13(fuxi)"> 小米 13(fuxi) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 13 Pro(nuwa)" data-name-en="Xiaomi 13 Pro(nuwa)"><a href="devices/nuwa.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 13 Pro(nuwa)" data-lang-en="Xiaomi 13 Pro(nuwa)"> 小米 13 Pro(nuwa) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 13 Ultra(ishtar)" data-name-en="Xiaomi 13 Ultra(ishtar)"><a href="devices/ishtar.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 13 Ultra(ishtar)" data-lang-en="Xiaomi 13 Ultra(ishtar)"> 小米 13 Ultra(ishtar) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 13T(aristotle)" data-name-en="Xiaomi 13T(aristotle)"><a href="devices/aristotle.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 13T(aristotle)" data-lang-en="Xiaomi 13T(aristotle)"> 小米 13T(aristotle) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 13T Pro(corot)" data-name-en="Xiaomi 13T Pro(corot)"><a href="devices/corot.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 13T Pro(corot)" data-lang-en="Xiaomi 13T Pro(corot)"> 小米 13T Pro(corot) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 14(houji)" data-name-en="Xiaomi 14(houji)"><a href="devices/houji.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 14(houji)" data-lang-en="Xiaomi 14(houji)"> 小米 14(houji) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 14 Pro / Ti / 钛金属卫星通讯版(shennong)" data-name-en="Xiaomi 14 Pro / Ti / Satellite(shennong)"><a href="devices/shennong.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 14 Pro / Ti / 钛金属卫星通讯版(shennong)" data-lang-en="Xiaomi 14 Pro / Ti / Satellite(shennong)"> 小米 14 Pro / Ti / 钛金属卫星通讯版(shennong) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 14 Pro 钛金属卫星通讯版(shennong_t)" data-name-en="Xiaomi 14 Pro Ti Satellite(shennong_t)"><a href="devices/shennong_t.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 14 Pro 钛金属卫星通讯版(shennong_t)" data-lang-en="Xiaomi 14 Pro Ti Satellite(shennong_t)"> 小米 14 Pro 钛金属卫星通讯版(shennong_t) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 14 Ultra / Ultra Ti(aurora)" data-name-en="Xiaomi 14 Ultra / Ultra Ti(aurora)"><a href="devices/aurora.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 14 Ultra / Ultra Ti(aurora)" data-lang-en="Xiaomi 14 Ultra / Ultra Ti(aurora)"> 小米 14 Ultra / Ultra Ti(aurora) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 14T(degas)" data-name-en="Xiaomi 14T(degas)"><a href="devices/degas.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 14T(degas)" data-lang-en="Xiaomi 14T(degas)"> 小米 14T(degas) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 14T Pro(rothko)" data-name-en="Xiaomi 14T Pro(rothko)"><a href="devices/rothko.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 14T Pro(rothko)" data-lang-en="Xiaomi 14T Pro(rothko)"> 小米 14T Pro(rothko) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 15(dada)" data-name-en="Xiaomi 15(dada)"><a href="devices/dada.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 15(dada)" data-lang-en="Xiaomi 15(dada)"> 小米 15(dada) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 15 Pro(haotian)" data-name-en="Xiaomi 15 Pro(haotian)"><a href="devices/haotian.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 15 Pro(haotian)" data-lang-en="Xiaomi 15 Pro(haotian)"> 小米 15 Pro(haotian) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 15 Ultra(xuanyuan)" data-name-en="Xiaomi 15 Ultra(xuanyuan)"><a href="devices/xuanyuan.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 15 Ultra(xuanyuan)" data-lang-en="Xiaomi 15 Ultra(xuanyuan)"> 小米 15 Ultra(xuanyuan) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 15S Pro(dijun)" data-name-en="Xiaomi 15S Pro(dijun)"><a href="devices/dijun.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 15S Pro(dijun)" data-lang-en="Xiaomi 15S Pro(dijun)"> 小米 15S Pro(dijun) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 15T(goya)" data-name-en="Xiaomi 15T(goya)"><a href="devices/goya.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 15T(goya)" data-lang-en="Xiaomi 15T(goya)"> 小米 15T(goya) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 15T Pro(klimt)" data-name-en="Xiaomi 15T Pro(klimt)"><a href="devices/klimt.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 15T Pro(klimt)" data-lang-en="Xiaomi 15T Pro(klimt)"> 小米 15T Pro(klimt) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 17(pudding)" data-name-en="Xiaomi 17(pudding)"><a href="devices/pudding.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 17(pudding)" data-lang-en="Xiaomi 17(pudding)"> 小米 17(pudding) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 17 Pro(pandora)" data-name-en="Xiaomi 17 Pro(pandora)"><a href="devices/pandora.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 17 Pro(pandora)" data-lang-en="Xiaomi 17 Pro(pandora)"> 小米 17 Pro(pandora) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 17 Pro Max(popsicle)" data-name-en="Xiaomi 17 Pro Max(popsicle)"><a href="devices/popsicle.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 17 Pro Max(popsicle)" data-lang-en="Xiaomi 17 Pro Max(popsicle)"> 小米 17 Pro Max(popsicle) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 17 Ultra(nezha)" data-name-en="Xiaomi 17 Ultra by Leica(nezha)"><a href="devices/nezha.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 17 Ultra(nezha)" data-lang-en="Xiaomi 17 Ultra by Leica(nezha)"> 小米 17 Ultra(nezha) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="小米Civi系列：" data-lang-en="Xiaomi Civi Series: "> 小米Civi系列：</div>
+                <div class="mdui-chip" data-name-zh="小米 14 Civi(chenfeng)" data-name-en="Xiaomi 14 Civi(chenfeng)"><a href="devices/chenfeng.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 14 Civi(chenfeng)" data-lang-en="Xiaomi 14 Civi(chenfeng)"> 小米 14 Civi(chenfeng) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="小米平板系列：" data-lang-en="Xiaomi Pad Series: "> 小米平板系列：</div>
+                <div class="mdui-chip" data-name-zh="小米平板 5(nabu)" data-name-en="Xiaomi Pad 5(nabu)"><a href="devices/nabu.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米平板 5(nabu)" data-lang-en="Xiaomi Pad 5(nabu)"> 小米平板 5(nabu) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米平板 5 Pro 5G(enuma)" data-name-en="Xiaomi Pad 5 Pro 5G(enuma)"><a href="devices/enuma.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米平板 5 Pro 5G(enuma)" data-lang-en="Xiaomi Pad 5 Pro 5G(enuma)"> 小米平板 5 Pro 5G(enuma) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米平板 5 Pro Wi-Fi(elish)" data-name-en="Xiaomi Pad 5 Pro Wi-Fi(elish)"><a href="devices/elish.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米平板 5 Pro Wi-Fi(elish)" data-lang-en="Xiaomi Pad 5 Pro Wi-Fi(elish)"> 小米平板 5 Pro Wi-Fi(elish) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米平板 5 Pro 12.4(dagu)" data-name-en="Xiaomi Pad 5 Pro 12.4(dagu)"><a href="devices/dagu.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米平板 5 Pro 12.4(dagu)" data-lang-en="Xiaomi Pad 5 Pro 12.4(dagu)"> 小米平板 5 Pro 12.4(dagu) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米平板 6(pipa)" data-name-en="Xiaomi Pad 6(pipa)"><a href="devices/pipa.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米平板 6(pipa)" data-lang-en="Xiaomi Pad 6(pipa)"> 小米平板 6(pipa) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米平板 6 Pro(liuqin)" data-name-en="Xiaomi Pad 6 Pro(liuqin)"><a href="devices/liuqin.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米平板 6 Pro(liuqin)" data-lang-en="Xiaomi Pad 6 Pro(liuqin)"> 小米平板 6 Pro(liuqin) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米平板 6 Max 14(yudi)" data-name-en="Xiaomi Pad 6 Max 14(yudi)"><a href="devices/yudi.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米平板 6 Max 14(yudi)" data-lang-en="Xiaomi Pad 6 Max 14(yudi)"> 小米平板 6 Max 14(yudi) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米平板 6S Pro 12.4(sheng)" data-name-en="Xiaomi Pad 6S Pro 12.4(sheng)"><a href="devices/sheng.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米平板 6S Pro 12.4(sheng)" data-lang-en="Xiaomi Pad 6S Pro 12.4(sheng)"> 小米平板 6S Pro 12.4(sheng) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米平板 7(uke)" data-name-en="Xiaomi Pad 7(uke)"><a href="devices/uke.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米平板 7(uke)" data-lang-en="Xiaomi Pad 7(uke)"> 小米平板 7(uke) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米平板 7 Pro(muyu)" data-name-en="Xiaomi Pad 7 Pro(muyu)"><a href="devices/muyu.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米平板 7 Pro(muyu)" data-lang-en="Xiaomi Pad 7 Pro(muyu)"> 小米平板 7 Pro(muyu) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米平板 7 Ultra(jinghu)" data-name-en="Xiaomi Pad 7 Ultra(jinghu)"><a href="devices/jinghu.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米平板 7 Ultra(jinghu)" data-lang-en="Xiaomi Pad 7 Ultra(jinghu)"> 小米平板 7 Ultra(jinghu) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米平板 7S Pro 12.5(violin)" data-name-en="Xiaomi Pad 7S Pro 12.5(violin)"><a href="devices/violin.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米平板 7S Pro 12.5(violin)" data-lang-en="Xiaomi Pad 7S Pro 12.5(violin)"> 小米平板 7S Pro 12.5(violin) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米平板 8(yupei)" data-name-en="Xiaomi Pad 8(yupei)"><a href="devices/yupei.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米平板 8(yupei)" data-lang-en="Xiaomi Pad 8(yupei)"> 小米平板 8(yupei) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米平板 8 Pro(piano)" data-name-en="Xiaomi Pad 8 Pro(piano)"><a href="devices/piano.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米平板 8 Pro(piano)" data-lang-en="Xiaomi Pad 8 Pro(piano)"> 小米平板 8 Pro(piano) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米平板 Mini(turner)" data-name-en="Xiaomi Pad Mini(turner)"><a href="devices/turner.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米平板 Mini(turner)" data-lang-en="Xiaomi Pad Mini(turner)"> 小米平板 Mini(turner) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="小米 MIX系列：" data-lang-en="Xiaomi MIX Series: "> 小米 MIX系列：</div>
+                <div class="mdui-chip" data-name-zh="小米 MIX 4(odin)" data-name-en="MIX 4(odin)"><a href="devices/odin.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 MIX 4(odin)" data-lang-en="MIX 4(odin)"> 小米 MIX 4(odin) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 MIX FOLD(cetus)" data-name-en="MI MIX FOLD(cetus)"><a href="devices/cetus.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 MIX FOLD(cetus)" data-lang-en="MI MIX FOLD(cetus)"> 小米 MIX FOLD(cetus) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 MIX Fold 2(zizhan)" data-name-en="Xiaomi MIX Fold 2(zizhan)"><a href="devices/zizhan.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 MIX Fold 2(zizhan)" data-lang-en="Xiaomi MIX Fold 2(zizhan)"> 小米 MIX Fold 2(zizhan) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 MIX Fold 3(babylon)" data-name-en="Xiaomi MIX Fold 3(babylon)"><a href="devices/babylon.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 MIX Fold 3(babylon)" data-lang-en="Xiaomi MIX Fold 3(babylon)"> 小米 MIX Fold 3(babylon) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 MIX Fold 4(goku)" data-name-en="Xiaomi MIX Fold 4(goku)"><a href="devices/goku.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 MIX Fold 4(goku)" data-lang-en="Xiaomi MIX Fold 4(goku)"> 小米 MIX Fold 4(goku) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 MIX Flip(ruyi)" data-name-en="Xiaomi MIX Flip(ruyi)"><a href="devices/ruyi.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 MIX Flip(ruyi)" data-lang-en="Xiaomi MIX Flip(ruyi)"> 小米 MIX Flip(ruyi) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 MIX Flip 2(bixi)" data-name-en="Xiaomi MIX Flip 2(bixi)"><a href="devices/bixi.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 MIX Flip 2(bixi)" data-lang-en="Xiaomi MIX Flip 2(bixi)"> 小米 MIX Flip 2(bixi) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="小米 Civi系列：" data-lang-en="Xiaomi Civi Series: "> 小米 Civi系列：</div>
+                <div class="mdui-chip" data-name-zh="小米 Civi(mona)" data-name-en="Xiaomi Civi(mona)"><a href="devices/mona.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 Civi(mona)" data-lang-en="Xiaomi Civi(mona)"> 小米 Civi(mona) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 Civi 1S(zijin)" data-name-en="Xiaomi Civi 1S(zijin)"><a href="devices/zijin.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 Civi 1S(zijin)" data-lang-en="Xiaomi Civi 1S(zijin)"> 小米 Civi 1S(zijin) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 Civi 2(ziyi)" data-name-en="Xiaomi Civi 2(ziyi)"><a href="devices/ziyi.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 Civi 2(ziyi)" data-lang-en="Xiaomi Civi 2(ziyi)"> 小米 Civi 2(ziyi) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 Civi 3(yuechu)" data-name-en="Xiaomi Civi 3(yuechu)"><a href="devices/yuechu.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 Civi 3(yuechu)" data-lang-en="Xiaomi Civi 3(yuechu)"> 小米 Civi 3(yuechu) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 Civi 4 Pro(chenfeng)" data-name-en="Xiaomi Civi 4 Pro(chenfeng)"><a href="devices/chenfeng.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 Civi 4 Pro(chenfeng)" data-lang-en="Xiaomi Civi 4 Pro(chenfeng)"> 小米 Civi 4 Pro(chenfeng) </span></a></div>
+                <div class="mdui-chip" data-name-zh="小米 Civi 5 Pro(luming)" data-name-en="Xiaomi Civi 5 Pro(luming)"><a href="devices/luming.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="小米 Civi 5 Pro(luming)" data-lang-en="Xiaomi Civi 5 Pro(luming)"> 小米 Civi 5 Pro(luming) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="其他小米设备系列：" data-lang-en="Other Xiaomi Devices Series: "> 其他小米设备系列：</div>
+                <div class="mdui-chip" data-name-zh="Xiaomi YU7 后排移动控制屏(konghou)" data-name-en="Xiaomi YU7 Back Row Mobile Control Screen(konghou)"><a href="devices/konghou.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Xiaomi YU7 后排移动控制屏(konghou)" data-lang-en="Xiaomi YU7 Back Row Mobile Control Screen(konghou)"> Xiaomi YU7 后排移动控制屏(konghou) </span></a></div>
               </div>
             </div>
           </div>
@@ -128,122 +218,122 @@
           <div mdui-panel class="mdui-panel mdui-panel-gapless mdui-shadow-0">
             <div class="mdui-panel-item mdui-panel-item-open">
               <div class="mdui-panel-item-header">
-                <div class="mdui-panel-item-title HyperBlue"> Redmi 手机</div> <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                <div class="mdui-panel-item-title HyperBlue lang-text" data-lang-zh="Redmi 手机" data-lang-en="Redmi Phones"> Redmi 手机</div> <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
               </div>
               <div class="mdui-panel-item-body">
-                <div class="series HyperBlue"> Redmi系列：</div>
-                <div class="mdui-chip"><a href="devices/light.json"><span class="mdui-chip-title HyperBlue"> Redmi 10 5G(light) </span></a></div>
-                <div class="mdui-chip"><a href="devices/rock.json"><span class="mdui-chip-title HyperBlue"> Redmi 11 Prime 4G(rock) </span></a></div>
-                <div class="mdui-chip"><a href="devices/light.json"><span class="mdui-chip-title HyperBlue"> Redmi 11 Prime 5G(light) </span></a></div>
-                <div class="mdui-chip"><a href="devices/fire.json"><span class="mdui-chip-title HyperBlue"> Redmi 12 国际(fire) </span></a></div>
-                <div class="mdui-chip"><a href="devices/sky.json"><span class="mdui-chip-title HyperBlue"> Redmi 12 5G(sky) </span></a></div>
-                <div class="mdui-chip"><a href="devices/earth.json"><span class="mdui-chip-title HyperBlue"> Redmi 12C(earth) </span></a></div>
-                <div class="mdui-chip"><a href="devices/sky.json"><span class="mdui-chip-title HyperBlue"> Redmi 12 / 12R 5G(sky) </span></a></div>
-                <div class="mdui-chip"><a href="devices/breeze.json"><span class="mdui-chip-title HyperBlue"> Redmi 13 5G(breeze) </span></a></div>
-                <div class="mdui-chip"><a href="devices/air.json"><span class="mdui-chip-title HyperBlue"> Redmi 13R 5G(air) </span></a></div>
-                <div class="mdui-chip"><a href="devices/moon.json"><span class="mdui-chip-title HyperBlue"> Redmi 13 国际(moon) </span></a></div>
-                <div class="mdui-chip"><a href="devices/air.json"><span class="mdui-chip-title HyperBlue"> Redmi 13C / 13R 5G(air) </span></a></div>
-                <div class="mdui-chip"><a href="devices/gale.json"><span class="mdui-chip-title HyperBlue"> Redmi 13C 国际(gale) </span></a></div>
-                <div class="mdui-chip"><a href="devices/lake.json"><span class="mdui-chip-title HyperBlue"> Redmi 14C(lake) </span></a></div>
-                <div class="mdui-chip"><a href="devices/flame.json"><span class="mdui-chip-title HyperBlue"> Redmi 14R 5G(flame) </span></a></div>
-                <div class="mdui-chip"><a href="devices/creek.json"><span class="mdui-chip-title HyperBlue"> REDMI 15 4G(creek) </span></a></div>
-                <div class="mdui-chip"><a href="devices/dew.json"><span class="mdui-chip-title HyperBlue"> REDMI 15C(dew) </span></a></div>
-                <div class="mdui-chip"><a href="devices/tornado.json"><span class="mdui-chip-title HyperBlue"> REDMI 15C 5G(tornado) </span></a></div>
-                <div class="mdui-chip"><a href="devices/tornado.json"><span class="mdui-chip-title HyperBlue"> REDMI 15R 5G(tornado) </span></a></div>
-                <div class="mdui-chip"><a href="devices/spring.json"><span class="mdui-chip-title HyperBlue"> REDMI 15 5G(spring) </span></a></div>
-                <div class="series HyperBlue"> Redmi Note系列：</div>
-                <div class="mdui-chip"><a href="devices/evergo.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 11 5G / 11T 5G(evergo) </span></a></div>
-                <div class="mdui-chip"><a href="devices/light.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 11E(light) </span></a></div>
-                <div class="mdui-chip"><a href="devices/lightcm.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 11R(lightcm) </span></a></div>
-                <div class="mdui-chip"><a href="devices/veux.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 11E Pro(veux) </span></a></div>
-                <div class="mdui-chip"><a href="devices/veux.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 11 Pro 5G(veux) </span></a></div>
-                <div class="mdui-chip"><a href="devices/pissarro.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 11 Pro / Pro+ / Pro+ 5G(pissarro) </span></a></div>
-                <div class="mdui-chip"><a href="devices/xaga.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 11T Pro / Pro+(xaga) </span></a></div>
-                <div class="mdui-chip"><a href="devices/spes.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 11 国际版(spes) </span></a></div>
-                <div class="mdui-chip"><a href="devices/spesn.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 11 NFC(spesn) </span></a></div>
-                <div class="mdui-chip"><a href="devices/viva.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 11 Pro 4G(viva) </span></a></div>
-                <div class="mdui-chip"><a href="devices/vida.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 11 Pro 4G 印度版(vida) </span></a></div>
-                <div class="mdui-chip"><a href="devices/fleur.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 11S 4G(fleur) </span></a></div>
-                <div class="mdui-chip"><a href="devices/opal.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 11S 5G(opal) </span></a></div>
-                <div class="mdui-chip"><a href="devices/sky.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 12R(sky) </span></a></div>
-                <div class="mdui-chip"><a href="devices/sunstone.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 12 5G / Note 12R Pro(sunstone) </span></a></div>
-                <div class="mdui-chip"><a href="devices/ruby.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 12 Pro / Pro+ / 探索版(ruby) </span></a></div>
-                <div class="mdui-chip"><a href="devices/redwood.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 12 Pro 极速版(redwood) </span></a></div>
-                <div class="mdui-chip"><a href="devices/pearl.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 12T Pro(pearl) </span></a></div>
-                <div class="mdui-chip"><a href="devices/marble.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 12 Turbo(marble) </span></a></div>
-                <div class="mdui-chip"><a href="devices/tapas.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 12 4G(tapas) </span></a></div>
-                <div class="mdui-chip"><a href="devices/topaz.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 12 4G NFC(topaz) </span></a></div>
-                <div class="mdui-chip"><a href="devices/sweet_k6a.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 12 Pro 4G(sweet_k6a) </span></a></div>
-                <div class="mdui-chip"><a href="devices/sea.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 12S(sea) </span></a></div>
-                <div class="mdui-chip"><a href="devices/sapphire.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 13 4G(sapphire) </span></a></div>
-                <div class="mdui-chip"><a href="devices/gold.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 13 5G(gold) </span></a></div>
-                <div class="mdui-chip"><a href="devices/breeze.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 13R 5G(breeze) </span></a></div>
-                <div class="mdui-chip"><a href="devices/garnet.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 13 Pro 5G(garnet) </span></a></div>
-                <div class="mdui-chip"><a href="devices/emerald.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 13 Pro 4G(emerald) </span></a></div>
-                <div class="mdui-chip"><a href="devices/zircon.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 13 Pro+ 5G(zircon) </span></a></div>
-                <div class="mdui-chip"><a href="devices/gold.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 13R Pro(gold) </span></a></div>
-                <div class="mdui-chip"><a href="devices/sapphire.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 13 国际版(sapphire) </span></a></div>
-                <div class="mdui-chip"><a href="devices/sapphiren.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 13 NFC(sapphiren) </span></a></div>
-                <div class="mdui-chip"><a href="devices/tanzanite.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 14 4G(tanzanite) </span></a></div>
-                <div class="mdui-chip"><a href="devices/beryl.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 14 5G(beryl) </span></a></div>
-                <div class="mdui-chip"><a href="devices/obsidian.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 14 Pro 4G(obsidian) </span></a></div>
-                <div class="mdui-chip"><a href="devices/malachite.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 14 Pro(malachite) </span></a></div>
-                <div class="mdui-chip"><a href="devices/amethyst.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 14 Pro+(amethyst) </span></a></div>
-                <div class="mdui-chip"><a href="devices/emerald_r.json"><span class="mdui-chip-title HyperBlue"> Redmi Note 14s(emerald_r) </span></a></div>
-                <div class="mdui-chip"><a href="devices/spring.json"><span class="mdui-chip-title HyperBlue"> REDMI Note 15R 5G(spring) </span></a></div>
-                <div class="mdui-chip"><a href="devices/kunzite.json"><span class="mdui-chip-title HyperBlue"> REDMI Note 15 5G(kunzite) </span></a></div>
-                <div class="mdui-chip"><a href="devices/lapis.json"><span class="mdui-chip-title HyperBlue"> REDMI Note 15 Pro 5G(lapis) </span></a></div>
-                <div class="mdui-chip"><a href="devices/flourite.json"><span class="mdui-chip-title HyperBlue"> REDMI Note 15 Pro+ 5G(flourite) </span></a></div>
-                <div class="mdui-chip"><a href="devices/spinel.json"><span class="mdui-chip-title HyperBlue"> REDMI Note 15 4G(spinel) </span></a></div>
-                <div class="mdui-chip"><a href="devices/charoite.json"><span class="mdui-chip-title HyperBlue"> REDMI Note 15 Pro 4G(charoite) </span></a></div>
-                <div class="series HyperBlue"> Redmi Turbo系列：</div>
-                <div class="mdui-chip"><a href="devices/peridot.json"><span class="mdui-chip-title HyperBlue"> Redmi Turbo 3(peridot) </span></a></div>
-                <div class="mdui-chip"><a href="devices/rodin.json"><span class="mdui-chip-title HyperBlue"> REDMI Turbo 4(rodin) </span></a></div>
-                <div class="mdui-chip"><a href="devices/onyx.json"><span class="mdui-chip-title HyperBlue"> REDMI Turbo 4 Pro(onyx) </span></a></div>
-                <div class="mdui-chip"><a href="devices/klee.json"><span class="mdui-chip-title HyperBlue"> REDMI Turbo 5(klee) </span></a></div>
-                <div class="mdui-chip"><a href="devices/dash.json"><span class="mdui-chip-title HyperBlue"> REDMI Turbo 5 MAX(dash) </span></a></div>
-                <div class="series HyperBlue"> Redmi K系列：</div>
-                <div class="mdui-chip"><a href="devices/alioth.json"><span class="mdui-chip-title HyperBlue"> Redmi K40(alioth) </span></a></div>
-                <div class="mdui-chip"><a href="devices/haydn.json"><span class="mdui-chip-title HyperBlue"> Redmi K40 Pro/Pro+(haydn) </span></a></div>
-                <div class="mdui-chip"><a href="devices/ares.json"><span class="mdui-chip-title HyperBlue"> Redmi K40 游戏增强版(ares) </span></a></div>
-                <div class="mdui-chip"><a href="devices/munch.json"><span class="mdui-chip-title HyperBlue"> Redmi K40S(munch) </span></a></div>
-                <div class="mdui-chip"><a href="devices/rubens.json"><span class="mdui-chip-title HyperBlue"> Redmi K50(rubens) </span></a></div>
-                <div class="mdui-chip"><a href="devices/matisse.json"><span class="mdui-chip-title HyperBlue"> Redmi K50 Pro(matisse) </span></a></div>
-                <div class="mdui-chip"><a href="devices/xaga.json"><span class="mdui-chip-title HyperBlue"> Redmi K50i(xaga) </span></a></div>
-                <div class="mdui-chip"><a href="devices/ingres.json"><span class="mdui-chip-title HyperBlue"> Redmi K50 电竞版(ingres) </span></a></div>
-                <div class="mdui-chip"><a href="devices/diting.json"><span class="mdui-chip-title HyperBlue"> Redmi K50 至尊版(diting) </span></a></div>
-                <div class="mdui-chip"><a href="devices/rembrandt.json"><span class="mdui-chip-title HyperBlue"> Redmi K60E(rembrandt) </span></a></div>
-                <div class="mdui-chip"><a href="devices/mondrian.json"><span class="mdui-chip-title HyperBlue"> Redmi K60(mondrian) </span></a></div>
-                <div class="mdui-chip"><a href="devices/socrates.json"><span class="mdui-chip-title HyperBlue"> Redmi K60 Pro(socrates) </span></a></div>
-                <div class="mdui-chip"><a href="devices/corot.json"><span class="mdui-chip-title HyperBlue"> Redmi K60 至尊版(corot) </span></a></div>
-                <div class="mdui-chip"><a href="devices/duchamp.json"><span class="mdui-chip-title HyperBlue"> Redmi K70E(duchamp) </span></a></div>
-                <div class="mdui-chip"><a href="devices/vermeer.json"><span class="mdui-chip-title HyperBlue"> Redmi K70(vermeer) </span></a></div>
-                <div class="mdui-chip"><a href="devices/manet.json"><span class="mdui-chip-title HyperBlue"> Redmi K70 Pro(manet) </span></a></div>
-                <div class="mdui-chip"><a href="devices/rothko.json"><span class="mdui-chip-title HyperBlue"> Redmi K70 至尊版(rothko) </span></a></div>
-                <div class="mdui-chip"><a href="devices/zorn.json"><span class="mdui-chip-title HyperBlue"> REDMI K80(zorn) </span></a></div>
-                <div class="mdui-chip"><a href="devices/miro.json"><span class="mdui-chip-title HyperBlue"> REDMI K80 Pro(miro) </span></a></div>
-                <div class="mdui-chip"><a href="devices/dali.json"><span class="mdui-chip-title HyperBlue"> REDMI K80 至尊版(dali) </span></a></div>
-                <div class="mdui-chip"><a href="devices/annibale.json"><span class="mdui-chip-title HyperBlue"> REDMI K90(annibale) </span></a></div>
-                <div class="mdui-chip"><a href="devices/prague.json"><span class="mdui-chip-title HyperBlue"> REDMI K90 Max(prague) </span></a></div>
-                <div class="mdui-chip"><a href="devices/myron.json"><span class="mdui-chip-title HyperBlue"> REDMI K90 Pro Max(myron) </span></a></div>
-                <div class="series HyperBlue"> REDMI 平板系列：</div>
-                <div class="mdui-chip"><a href="devices/yunluo.json"><span class="mdui-chip-title HyperBlue"> Redmi 平板(yunluo) </span></a></div>
-                <div class="mdui-chip"><a href="devices/xun.json"><span class="mdui-chip-title HyperBlue"> Redmi 平板 SE(xun) </span></a></div>
-                <div class="mdui-chip"><a href="devices/spark.json"><span class="mdui-chip-title HyperBlue"> Redmi 平板 SE 4G 8.7(spark) </span></a></div>
-                <div class="mdui-chip"><a href="devices/flare.json"><span class="mdui-chip-title HyperBlue"> Redmi Pad SE 8.7 Wi-Fi(flare) </span></a></div>
-                <div class="mdui-chip"><a href="devices/guitar.json"><span class="mdui-chip-title HyperBlue"> REDMI Pad 2 SE(guitar) </span></a></div>
-                <div class="mdui-chip"><a href="devices/dizi.json"><span class="mdui-chip-title HyperBlue"> Redmi Pad Pro / 哈利·波特版(dizi) </span></a></div>
-                <div class="mdui-chip"><a href="devices/ruan.json"><span class="mdui-chip-title HyperBlue"> Redmi Pad Pro 5G(ruan) </span></a></div>
-                <div class="mdui-chip"><a href="devices/koto.json"><span class="mdui-chip-title HyperBlue"> Redmi 平板 2 4G(koto) </span></a></div>
-                <div class="mdui-chip"><a href="devices/taiko.json"><span class="mdui-chip-title HyperBlue"> REDMI 平板 2(taiko) </span></a></div>
-                <div class="mdui-chip"><a href="devices/flute.json"><span class="mdui-chip-title HyperBlue"> REDMI 平板 2 Pro(flute) </span></a></div>
-                <div class="mdui-chip"><a href="devices/organ.json"><span class="mdui-chip-title HyperBlue"> REDMI 平板 2 Pro 5G(organ) </span></a></div>
-                <div class="mdui-chip"><a href="devices/turner.json"><span class="mdui-chip-title HyperBlue"> REDMI K Pad(turner) </span></a></div>
-                <div class="mdui-chip"><a href="devices/yili.json"><span class="mdui-chip-title HyperBlue"> REDMI K Pad 2(yili) </span></a></div>
-                <div class="series HyperBlue"> Redmi A系列：</div>
-                <div class="mdui-chip"><a href="devices/warm.json"><span class="mdui-chip-title HyperBlue"> Redmi A4 5G(warm) </span></a></div>
-                <div class="mdui-chip"><a href="devices/serenity.json"><span class="mdui-chip-title HyperBlue"> REDMI A5(serenity) </span></a></div>
-                <div class="mdui-chip"><a href="devices/arctic.json"><span class="mdui-chip-title HyperBlue"> REDMI A7 Pro(arctic) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="Redmi系列：" data-lang-en="Redmi Series: "> Redmi系列：</div>
+                <div class="mdui-chip" data-name-zh="Redmi 10 5G(light)" data-name-en="Redmi 10 5G(light)"><a href="devices/light.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 10 5G(light)" data-lang-en="Redmi 10 5G(light)"> Redmi 10 5G(light) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 11 Prime 4G(rock)" data-name-en="Redmi 11 Prime 4G(rock)"><a href="devices/rock.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 11 Prime 4G(rock)" data-lang-en="Redmi 11 Prime 4G(rock)"> Redmi 11 Prime 4G(rock) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 11 Prime 5G(light)" data-name-en="Redmi 11 Prime 5G(light)"><a href="devices/light.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 11 Prime 5G(light)" data-lang-en="Redmi 11 Prime 5G(light)"> Redmi 11 Prime 5G(light) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 12 国际(fire)" data-name-en="Redmi 12(fire)"><a href="devices/fire.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 12 国际(fire)" data-lang-en="Redmi 12(fire)"> Redmi 12 国际(fire) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 12 5G(sky)" data-name-en="Redmi 12 5G(sky)"><a href="devices/sky.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 12 5G(sky)" data-lang-en="Redmi 12 5G(sky)"> Redmi 12 5G(sky) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 12C(earth)" data-name-en="Redmi 12C(earth)"><a href="devices/earth.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 12C(earth)" data-lang-en="Redmi 12C(earth)"> Redmi 12C(earth) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 12 / 12R 5G(sky)" data-name-en="Redmi 12 / 12R 5G(sky)"><a href="devices/sky.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 12 / 12R 5G(sky)" data-lang-en="Redmi 12 / 12R 5G(sky)"> Redmi 12 / 12R 5G(sky) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 13 5G(breeze)" data-name-en="Redmi 13 5G(breeze)"><a href="devices/breeze.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 13 5G(breeze)" data-lang-en="Redmi 13 5G(breeze)"> Redmi 13 5G(breeze) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 13R 5G(air)" data-name-en="Redmi 13R 5G(air)"><a href="devices/air.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 13R 5G(air)" data-lang-en="Redmi 13R 5G(air)"> Redmi 13R 5G(air) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 13 国际(moon)" data-name-en="Redmi 13(moon)"><a href="devices/moon.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 13 国际(moon)" data-lang-en="Redmi 13(moon)"> Redmi 13 国际(moon) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 13C / 13R 5G(air)" data-name-en="Redmi 13C / 13R 5G(air)"><a href="devices/air.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 13C / 13R 5G(air)" data-lang-en="Redmi 13C / 13R 5G(air)"> Redmi 13C / 13R 5G(air) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 13C 国际(gale)" data-name-en="Redmi 13C(gale)"><a href="devices/gale.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 13C 国际(gale)" data-lang-en="Redmi 13C(gale)"> Redmi 13C 国际(gale) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 14C(lake)" data-name-en="Redmi 14C(lake)"><a href="devices/lake.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 14C(lake)" data-lang-en="Redmi 14C(lake)"> Redmi 14C(lake) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 14R 5G(flame)" data-name-en="Redmi 14R 5G(flame)"><a href="devices/flame.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 14R 5G(flame)" data-lang-en="Redmi 14R 5G(flame)"> Redmi 14R 5G(flame) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI 15 4G(creek)" data-name-en="REDMI 15 4G(creek)"><a href="devices/creek.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI 15 4G(creek)" data-lang-en="REDMI 15 4G(creek)"> REDMI 15 4G(creek) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI 15C(dew)" data-name-en="REDMI 15C(dew)"><a href="devices/dew.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI 15C(dew)" data-lang-en="REDMI 15C(dew)"> REDMI 15C(dew) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI 15C 5G(tornado)" data-name-en="REDMI 15C 5G(tornado)"><a href="devices/tornado.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI 15C 5G(tornado)" data-lang-en="REDMI 15C 5G(tornado)"> REDMI 15C 5G(tornado) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI 15R 5G(tornado)" data-name-en="REDMI 15R 5G(tornado)"><a href="devices/tornado.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI 15R 5G(tornado)" data-lang-en="REDMI 15R 5G(tornado)"> REDMI 15R 5G(tornado) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI 15 5G(spring)" data-name-en="REDMI 15 5G(spring)"><a href="devices/spring.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI 15 5G(spring)" data-lang-en="REDMI 15 5G(spring)"> REDMI 15 5G(spring) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="Redmi Note系列：" data-lang-en="Redmi Note Series: "> Redmi Note系列：</div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 11 5G / 11T 5G(evergo)" data-name-en="Redmi Note 11 5G / 11T 5G(evergo)"><a href="devices/evergo.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 11 5G / 11T 5G(evergo)" data-lang-en="Redmi Note 11 5G / 11T 5G(evergo)"> Redmi Note 11 5G / 11T 5G(evergo) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 11E(light)" data-name-en="Redmi Note 11E(light)"><a href="devices/light.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 11E(light)" data-lang-en="Redmi Note 11E(light)"> Redmi Note 11E(light) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 11R(lightcm)" data-name-en="Redmi Note 11R(lightcm)"><a href="devices/lightcm.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 11R(lightcm)" data-lang-en="Redmi Note 11R(lightcm)"> Redmi Note 11R(lightcm) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 11E Pro(veux)" data-name-en="Redmi Note 11E Pro(veux)"><a href="devices/veux.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 11E Pro(veux)" data-lang-en="Redmi Note 11E Pro(veux)"> Redmi Note 11E Pro(veux) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 11 Pro 5G(veux)" data-name-en="Redmi Note 11 Pro 5G(veux)"><a href="devices/veux.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 11 Pro 5G(veux)" data-lang-en="Redmi Note 11 Pro 5G(veux)"> Redmi Note 11 Pro 5G(veux) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 11 Pro / Pro+ / Pro+ 5G(pissarro)" data-name-en="Redmi Note 11 Pro / Pro+ / Pro+ 5G(pissarro)"><a href="devices/pissarro.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 11 Pro / Pro+ / Pro+ 5G(pissarro)" data-lang-en="Redmi Note 11 Pro / Pro+ / Pro+ 5G(pissarro)"> Redmi Note 11 Pro / Pro+ / Pro+ 5G(pissarro) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 11T Pro / Pro+(xaga)" data-name-en="Redmi Note 11T Pro / Pro+(xaga)"><a href="devices/xaga.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 11T Pro / Pro+(xaga)" data-lang-en="Redmi Note 11T Pro / Pro+(xaga)"> Redmi Note 11T Pro / Pro+(xaga) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 11 国际版(spes)" data-name-en="Redmi Note 11(spes)"><a href="devices/spes.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 11 国际版(spes)" data-lang-en="Redmi Note 11(spes)"> Redmi Note 11 国际版(spes) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 11 NFC(spesn)" data-name-en="Redmi Note 11 NFC(spesn)"><a href="devices/spesn.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 11 NFC(spesn)" data-lang-en="Redmi Note 11 NFC(spesn)"> Redmi Note 11 NFC(spesn) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 11 Pro 4G(viva)" data-name-en="Redmi Note 11 Pro 4G(viva)"><a href="devices/viva.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 11 Pro 4G(viva)" data-lang-en="Redmi Note 11 Pro 4G(viva)"> Redmi Note 11 Pro 4G(viva) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 11 Pro 4G 印度版(vida)" data-name-en="Redmi Note 11 Pro 4G India(vida)"><a href="devices/vida.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 11 Pro 4G 印度版(vida)" data-lang-en="Redmi Note 11 Pro 4G India(vida)"> Redmi Note 11 Pro 4G 印度版(vida) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 11S 4G(fleur)" data-name-en="Redmi Note 11S 4G(fleur)"><a href="devices/fleur.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 11S 4G(fleur)" data-lang-en="Redmi Note 11S 4G(fleur)"> Redmi Note 11S 4G(fleur) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 11S 5G(opal)" data-name-en="Redmi Note 11S 5G(opal)"><a href="devices/opal.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 11S 5G(opal)" data-lang-en="Redmi Note 11S 5G(opal)"> Redmi Note 11S 5G(opal) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 12R(sky)" data-name-en="Redmi Note 12R(sky)"><a href="devices/sky.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 12R(sky)" data-lang-en="Redmi Note 12R(sky)"> Redmi Note 12R(sky) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 12 5G / Note 12R Pro(sunstone)" data-name-en="Redmi Note 12 5G / Note 12R Pro(sunstone)"><a href="devices/sunstone.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 12 5G / Note 12R Pro(sunstone)" data-lang-en="Redmi Note 12 5G / Note 12R Pro(sunstone)"> Redmi Note 12 5G / Note 12R Pro(sunstone) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 12 Pro / Pro+ / 探索版(ruby)" data-name-en="Redmi Note 12 Pro / Pro+ / Discovery 5G(ruby)"><a href="devices/ruby.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 12 Pro / Pro+ / 探索版(ruby)" data-lang-en="Redmi Note 12 Pro / Pro+ / Discovery 5G(ruby)"> Redmi Note 12 Pro / Pro+ / 探索版(ruby) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 12 Pro 极速版(redwood)" data-name-en="Redmi Note 12 Pro Speed(redwood)"><a href="devices/redwood.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 12 Pro 极速版(redwood)" data-lang-en="Redmi Note 12 Pro Speed(redwood)"> Redmi Note 12 Pro 极速版(redwood) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 12T Pro(pearl)" data-name-en="Redmi Note 12T Pro(pearl)"><a href="devices/pearl.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 12T Pro(pearl)" data-lang-en="Redmi Note 12T Pro(pearl)"> Redmi Note 12T Pro(pearl) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 12 Turbo(marble)" data-name-en="Redmi Note 12 Turbo(marble)"><a href="devices/marble.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 12 Turbo(marble)" data-lang-en="Redmi Note 12 Turbo(marble)"> Redmi Note 12 Turbo(marble) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 12 4G(tapas)" data-name-en="Redmi Note 12 4G(tapas)"><a href="devices/tapas.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 12 4G(tapas)" data-lang-en="Redmi Note 12 4G(tapas)"> Redmi Note 12 4G(tapas) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 12 4G NFC(topaz)" data-name-en="Redmi Note 12 4G NFC(topaz)"><a href="devices/topaz.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 12 4G NFC(topaz)" data-lang-en="Redmi Note 12 4G NFC(topaz)"> Redmi Note 12 4G NFC(topaz) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 12 Pro 4G(sweet_k6a)" data-name-en="Redmi Note 12 Pro 4G(sweet_k6a)"><a href="devices/sweet_k6a.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 12 Pro 4G(sweet_k6a)" data-lang-en="Redmi Note 12 Pro 4G(sweet_k6a)"> Redmi Note 12 Pro 4G(sweet_k6a) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 12S(sea)" data-name-en="Redmi Note 12S(sea)"><a href="devices/sea.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 12S(sea)" data-lang-en="Redmi Note 12S(sea)"> Redmi Note 12S(sea) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 13 4G(sapphire)" data-name-en="Redmi Note 13 4G(sapphire)"><a href="devices/sapphire.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 13 4G(sapphire)" data-lang-en="Redmi Note 13 4G(sapphire)"> Redmi Note 13 4G(sapphire) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 13 5G(gold)" data-name-en="Redmi Note 13 5G(gold)"><a href="devices/gold.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 13 5G(gold)" data-lang-en="Redmi Note 13 5G(gold)"> Redmi Note 13 5G(gold) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 13R 5G(breeze)" data-name-en="Redmi Note 13R 5G(breeze)"><a href="devices/breeze.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 13R 5G(breeze)" data-lang-en="Redmi Note 13R 5G(breeze)"> Redmi Note 13R 5G(breeze) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 13 Pro 5G(garnet)" data-name-en="Redmi Note 13 Pro 5G(garnet)"><a href="devices/garnet.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 13 Pro 5G(garnet)" data-lang-en="Redmi Note 13 Pro 5G(garnet)"> Redmi Note 13 Pro 5G(garnet) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 13 Pro 4G(emerald)" data-name-en="Redmi Note 13 Pro 4G(emerald)"><a href="devices/emerald.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 13 Pro 4G(emerald)" data-lang-en="Redmi Note 13 Pro 4G(emerald)"> Redmi Note 13 Pro 4G(emerald) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 13 Pro+ 5G(zircon)" data-name-en="Redmi Note 13 Pro+ 5G(zircon)"><a href="devices/zircon.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 13 Pro+ 5G(zircon)" data-lang-en="Redmi Note 13 Pro+ 5G(zircon)"> Redmi Note 13 Pro+ 5G(zircon) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 13R Pro(gold)" data-name-en="Redmi Note 13R Pro(gold)"><a href="devices/gold.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 13R Pro(gold)" data-lang-en="Redmi Note 13R Pro(gold)"> Redmi Note 13R Pro(gold) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 13 国际版(sapphire)" data-name-en="Redmi Note 13(sapphire)"><a href="devices/sapphire.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 13 国际版(sapphire)" data-lang-en="Redmi Note 13(sapphire)"> Redmi Note 13 国际版(sapphire) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 13 NFC(sapphiren)" data-name-en="Redmi Note 13 NFC(sapphiren)"><a href="devices/sapphiren.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 13 NFC(sapphiren)" data-lang-en="Redmi Note 13 NFC(sapphiren)"> Redmi Note 13 NFC(sapphiren) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 14 4G(tanzanite)" data-name-en="Redmi Note 14 4G(tanzanite)"><a href="devices/tanzanite.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 14 4G(tanzanite)" data-lang-en="Redmi Note 14 4G(tanzanite)"> Redmi Note 14 4G(tanzanite) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 14 5G(beryl)" data-name-en="Redmi Note 14 5G(beryl)"><a href="devices/beryl.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 14 5G(beryl)" data-lang-en="Redmi Note 14 5G(beryl)"> Redmi Note 14 5G(beryl) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 14 Pro 4G(obsidian)" data-name-en="Redmi Note 14 Pro 4G(obsidian)"><a href="devices/obsidian.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 14 Pro 4G(obsidian)" data-lang-en="Redmi Note 14 Pro 4G(obsidian)"> Redmi Note 14 Pro 4G(obsidian) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 14 Pro(malachite)" data-name-en="Redmi Note 14 Pro(malachite)"><a href="devices/malachite.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 14 Pro(malachite)" data-lang-en="Redmi Note 14 Pro(malachite)"> Redmi Note 14 Pro(malachite) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 14 Pro+(amethyst)" data-name-en="Redmi Note 14 Pro+(amethyst)"><a href="devices/amethyst.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 14 Pro+(amethyst)" data-lang-en="Redmi Note 14 Pro+(amethyst)"> Redmi Note 14 Pro+(amethyst) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Note 14s(emerald_r)" data-name-en="Redmi Note 14s(emerald_r)"><a href="devices/emerald_r.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Note 14s(emerald_r)" data-lang-en="Redmi Note 14s(emerald_r)"> Redmi Note 14s(emerald_r) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI Note 15R 5G(spring)" data-name-en="REDMI Note 15R 5G(spring)"><a href="devices/spring.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI Note 15R 5G(spring)" data-lang-en="REDMI Note 15R 5G(spring)"> REDMI Note 15R 5G(spring) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI Note 15 5G(kunzite)" data-name-en="REDMI Note 15 5G(kunzite)"><a href="devices/kunzite.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI Note 15 5G(kunzite)" data-lang-en="REDMI Note 15 5G(kunzite)"> REDMI Note 15 5G(kunzite) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI Note 15 Pro 5G(lapis)" data-name-en="REDMI Note 15 Pro 5G(lapis)"><a href="devices/lapis.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI Note 15 Pro 5G(lapis)" data-lang-en="REDMI Note 15 Pro 5G(lapis)"> REDMI Note 15 Pro 5G(lapis) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI Note 15 Pro+ 5G(flourite)" data-name-en="REDMI Note 15 Pro+ 5G(flourite)"><a href="devices/flourite.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI Note 15 Pro+ 5G(flourite)" data-lang-en="REDMI Note 15 Pro+ 5G(flourite)"> REDMI Note 15 Pro+ 5G(flourite) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI Note 15 4G(spinel)" data-name-en="REDMI Note 15 4G(spinel)"><a href="devices/spinel.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI Note 15 4G(spinel)" data-lang-en="REDMI Note 15 4G(spinel)"> REDMI Note 15 4G(spinel) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI Note 15 Pro 4G(charoite)" data-name-en="REDMI Note 15 Pro 4G(charoite)"><a href="devices/charoite.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI Note 15 Pro 4G(charoite)" data-lang-en="REDMI Note 15 Pro 4G(charoite)"> REDMI Note 15 Pro 4G(charoite) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="Redmi Turbo系列：" data-lang-en="Redmi Turbo Series: "> Redmi Turbo系列：</div>
+                <div class="mdui-chip" data-name-zh="Redmi Turbo 3(peridot)" data-name-en="Redmi Turbo 3(peridot)"><a href="devices/peridot.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Turbo 3(peridot)" data-lang-en="Redmi Turbo 3(peridot)"> Redmi Turbo 3(peridot) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI Turbo 4(rodin)" data-name-en="REDMI Turbo 4(rodin)"><a href="devices/rodin.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI Turbo 4(rodin)" data-lang-en="REDMI Turbo 4(rodin)"> REDMI Turbo 4(rodin) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI Turbo 4 Pro(onyx)" data-name-en="REDMI Turbo 4 Pro(onyx)"><a href="devices/onyx.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI Turbo 4 Pro(onyx)" data-lang-en="REDMI Turbo 4 Pro(onyx)"> REDMI Turbo 4 Pro(onyx) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI Turbo 5(klee)" data-name-en="REDMI Turbo 5(klee)"><a href="devices/klee.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI Turbo 5(klee)" data-lang-en="REDMI Turbo 5(klee)"> REDMI Turbo 5(klee) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI Turbo 5 MAX(dash)" data-name-en="REDMI Turbo 5 MAX(dash)"><a href="devices/dash.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI Turbo 5 MAX(dash)" data-lang-en="REDMI Turbo 5 MAX(dash)"> REDMI Turbo 5 MAX(dash) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="Redmi K系列：" data-lang-en="Redmi K Series: "> Redmi K系列：</div>
+                <div class="mdui-chip" data-name-zh="Redmi K40(alioth)" data-name-en="Redmi K40(alioth)"><a href="devices/alioth.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K40(alioth)" data-lang-en="Redmi K40(alioth)"> Redmi K40(alioth) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K40 Pro/Pro+(haydn)" data-name-en="Redmi K40 Pro/Pro+(haydn)"><a href="devices/haydn.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K40 Pro/Pro+(haydn)" data-lang-en="Redmi K40 Pro/Pro+(haydn)"> Redmi K40 Pro/Pro+(haydn) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K40 游戏增强版(ares)" data-name-en="Redmi K40 Gaming(ares)"><a href="devices/ares.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K40 游戏增强版(ares)" data-lang-en="Redmi K40 Gaming(ares)"> Redmi K40 游戏增强版(ares) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K40S(munch)" data-name-en="Redmi K40S(munch)"><a href="devices/munch.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K40S(munch)" data-lang-en="Redmi K40S(munch)"> Redmi K40S(munch) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K50(rubens)" data-name-en="Redmi K50(rubens)"><a href="devices/rubens.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K50(rubens)" data-lang-en="Redmi K50(rubens)"> Redmi K50(rubens) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K50 Pro(matisse)" data-name-en="Redmi K50 Pro(matisse)"><a href="devices/matisse.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K50 Pro(matisse)" data-lang-en="Redmi K50 Pro(matisse)"> Redmi K50 Pro(matisse) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K50i(xaga)" data-name-en="Redmi K50i(xaga)"><a href="devices/xaga.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K50i(xaga)" data-lang-en="Redmi K50i(xaga)"> Redmi K50i(xaga) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K50 电竞版(ingres)" data-name-en="Redmi K50G(ingres)"><a href="devices/ingres.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K50 电竞版(ingres)" data-lang-en="Redmi K50G(ingres)"> Redmi K50 电竞版(ingres) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K50 至尊版(diting)" data-name-en="Redmi K50 Ultra(diting)"><a href="devices/diting.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K50 至尊版(diting)" data-lang-en="Redmi K50 Ultra(diting)"> Redmi K50 至尊版(diting) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K60E(rembrandt)" data-name-en="Redmi K60E(rembrandt)"><a href="devices/rembrandt.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K60E(rembrandt)" data-lang-en="Redmi K60E(rembrandt)"> Redmi K60E(rembrandt) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K60(mondrian)" data-name-en="Redmi K60(mondrian)"><a href="devices/mondrian.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K60(mondrian)" data-lang-en="Redmi K60(mondrian)"> Redmi K60(mondrian) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K60 Pro(socrates)" data-name-en="Redmi K60 Pro(socrates)"><a href="devices/socrates.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K60 Pro(socrates)" data-lang-en="Redmi K60 Pro(socrates)"> Redmi K60 Pro(socrates) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K60 至尊版(corot)" data-name-en="Redmi K60 Ultra(corot)"><a href="devices/corot.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K60 至尊版(corot)" data-lang-en="Redmi K60 Ultra(corot)"> Redmi K60 至尊版(corot) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K70E(duchamp)" data-name-en="Redmi K70E(duchamp)"><a href="devices/duchamp.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K70E(duchamp)" data-lang-en="Redmi K70E(duchamp)"> Redmi K70E(duchamp) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K70(vermeer)" data-name-en="Redmi K70(vermeer)"><a href="devices/vermeer.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K70(vermeer)" data-lang-en="Redmi K70(vermeer)"> Redmi K70(vermeer) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K70 Pro(manet)" data-name-en="Redmi K70 Pro(manet)"><a href="devices/manet.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K70 Pro(manet)" data-lang-en="Redmi K70 Pro(manet)"> Redmi K70 Pro(manet) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi K70 至尊版(rothko)" data-name-en="Redmi K70 Ultra(rothko)"><a href="devices/rothko.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi K70 至尊版(rothko)" data-lang-en="Redmi K70 Ultra(rothko)"> Redmi K70 至尊版(rothko) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI K80(zorn)" data-name-en="REDMI K80(zorn)"><a href="devices/zorn.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI K80(zorn)" data-lang-en="REDMI K80(zorn)"> REDMI K80(zorn) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI K80 Pro(miro)" data-name-en="REDMI K80 Pro(miro)"><a href="devices/miro.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI K80 Pro(miro)" data-lang-en="REDMI K80 Pro(miro)"> REDMI K80 Pro(miro) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI K80 至尊版(dali)" data-name-en="REDMI K80 Ultra(dali)"><a href="devices/dali.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI K80 至尊版(dali)" data-lang-en="REDMI K80 Ultra(dali)"> REDMI K80 至尊版(dali) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI K90(annibale)" data-name-en="REDMI K90(annibale)"><a href="devices/annibale.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI K90(annibale)" data-lang-en="REDMI K90(annibale)"> REDMI K90(annibale) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI K90 Max(prague)" data-name-en="REDMI K90 Max(prague)"><a href="devices/prague.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI K90 Max(prague)" data-lang-en="REDMI K90 Max(prague)"> REDMI K90 Max(prague) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI K90 Pro Max(myron)" data-name-en="REDMI K90 Pro Max(myron)"><a href="devices/myron.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI K90 Pro Max(myron)" data-lang-en="REDMI K90 Pro Max(myron)"> REDMI K90 Pro Max(myron) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="REDMI 平板系列：" data-lang-en="REDMI Pad Series: "> REDMI 平板系列：</div>
+                <div class="mdui-chip" data-name-zh="Redmi 平板(yunluo)" data-name-en="Redmi Pad(yunluo)"><a href="devices/yunluo.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 平板(yunluo)" data-lang-en="Redmi Pad(yunluo)"> Redmi 平板(yunluo) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 平板 SE(xun)" data-name-en="Redmi Pad SE(xun)"><a href="devices/xun.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 平板 SE(xun)" data-lang-en="Redmi Pad SE(xun)"> Redmi 平板 SE(xun) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 平板 SE 4G 8.7(spark)" data-name-en="Redmi Pad SE 4G 8.7(spark)"><a href="devices/spark.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 平板 SE 4G 8.7(spark)" data-lang-en="Redmi Pad SE 4G 8.7(spark)"> Redmi 平板 SE 4G 8.7(spark) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Pad SE 8.7 Wi-Fi(flare)" data-name-en="Redmi Pad SE 8.7 Wi-Fi(flare)"><a href="devices/flare.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Pad SE 8.7 Wi-Fi(flare)" data-lang-en="Redmi Pad SE 8.7 Wi-Fi(flare)"> Redmi Pad SE 8.7 Wi-Fi(flare) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI Pad 2 SE(guitar)" data-name-en="REDMI Pad 2 SE(guitar)"><a href="devices/guitar.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI Pad 2 SE(guitar)" data-lang-en="REDMI Pad 2 SE(guitar)"> REDMI Pad 2 SE(guitar) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Pad Pro / 哈利·波特版(dizi)" data-name-en="Redmi Pad Pro / Special Edition featuring Harry Potter(dizi)"><a href="devices/dizi.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Pad Pro / 哈利·波特版(dizi)" data-lang-en="Redmi Pad Pro / Special Edition featuring Harry Potter(dizi)"> Redmi Pad Pro / 哈利·波特版(dizi) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi Pad Pro 5G(ruan)" data-name-en="Redmi Pad Pro 5G(ruan)"><a href="devices/ruan.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi Pad Pro 5G(ruan)" data-lang-en="Redmi Pad Pro 5G(ruan)"> Redmi Pad Pro 5G(ruan) </span></a></div>
+                <div class="mdui-chip" data-name-zh="Redmi 平板 2 4G(koto)" data-name-en="Redmi Pad 2 4G(koto)"><a href="devices/koto.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi 平板 2 4G(koto)" data-lang-en="Redmi Pad 2 4G(koto)"> Redmi 平板 2 4G(koto) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI 平板 2(taiko)" data-name-en="REDMI Pad 2(taiko)"><a href="devices/taiko.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI 平板 2(taiko)" data-lang-en="REDMI Pad 2(taiko)"> REDMI 平板 2(taiko) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI 平板 2 Pro(flute)" data-name-en="REDMI Pad 2 Pro(flute)"><a href="devices/flute.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI 平板 2 Pro(flute)" data-lang-en="REDMI Pad 2 Pro(flute)"> REDMI 平板 2 Pro(flute) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI 平板 2 Pro 5G(organ)" data-name-en="REDMI Pad 2 Pro 5G(organ)"><a href="devices/organ.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI 平板 2 Pro 5G(organ)" data-lang-en="REDMI Pad 2 Pro 5G(organ)"> REDMI 平板 2 Pro 5G(organ) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI K Pad(turner)" data-name-en="REDMI K Pad(turner)"><a href="devices/turner.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI K Pad(turner)" data-lang-en="REDMI K Pad(turner)"> REDMI K Pad(turner) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI K Pad 2(yili)" data-name-en="REDMI K Pad 2(yili)"><a href="devices/yili.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI K Pad 2(yili)" data-lang-en="REDMI K Pad 2(yili)"> REDMI K Pad 2(yili) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="Redmi A系列：" data-lang-en="Redmi A Series: "> Redmi A系列：</div>
+                <div class="mdui-chip" data-name-zh="Redmi A4 5G(warm)" data-name-en="Redmi A4 5G(warm)"><a href="devices/warm.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="Redmi A4 5G(warm)" data-lang-en="Redmi A4 5G(warm)"> Redmi A4 5G(warm) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI A5(serenity)" data-name-en="REDMI A5(serenity)"><a href="devices/serenity.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI A5(serenity)" data-lang-en="REDMI A5(serenity)"> REDMI A5(serenity) </span></a></div>
+                <div class="mdui-chip" data-name-zh="REDMI A7 Pro(arctic)" data-name-en="REDMI A7 Pro(arctic)"><a href="devices/arctic.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="REDMI A7 Pro(arctic)" data-lang-en="REDMI A7 Pro(arctic)"> REDMI A7 Pro(arctic) </span></a></div>
               </div>
             </div>
           </div>
@@ -252,67 +342,74 @@
           <div mdui-panel class="mdui-panel mdui-panel-gapless mdui-shadow-0">
             <div class="mdui-panel-item mdui-panel-item-open">
               <div class="mdui-panel-item-header">
-                <div class="mdui-panel-item-title HyperBlue"> POCO 手机</div> <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                <div class="mdui-panel-item-title HyperBlue lang-text" data-lang-zh="POCO 手机" data-lang-en="POCO Phones"> POCO 手机</div> <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
               </div>
               <div class="mdui-panel-item-body">
-                <div class="series HyperBlue"> POCO C系列：</div>
-                <div class="mdui-chip"><a href="devices/earth.json"><span class="mdui-chip-title HyperBlue"> POCO C55(earth) </span></a></div>
-                <div class="mdui-chip"><a href="devices/gale.json"><span class="mdui-chip-title HyperBlue"> POCO C65(gale) </span></a></div>
-                <div class="mdui-chip"><a href="devices/serenity.json"><span class="mdui-chip-title HyperBlue"> POCO C71(serenity) </span></a></div>
-                <div class="mdui-chip"><a href="devices/warm.json"><span class="mdui-chip-title HyperBlue"> POCO C75 5G(warm) </span></a></div>
-                <div class="mdui-chip"><a href="devices/dew.json"><span class="mdui-chip-title HyperBlue"> POCO C85(dew) </span></a></div>
-                <div class="mdui-chip"><a href="devices/somalia.json"><span class="mdui-chip-title HyperBlue"> POCO C85x 5G(somalia) </span></a></div>
-                <div class="mdui-chip"><a href="devices/dew.json"><span class="mdui-chip-title HyperBlue"> POCO C85(dew) </span></a></div>
-                <div class="series HyperBlue"> POCO F系列：</div>
-                <div class="mdui-chip"><a href="devices/alioth.json"><span class="mdui-chip-title HyperBlue"> POCO F3(alioth) </span></a></div>
-                <div class="mdui-chip"><a href="devices/ares.json"><span class="mdui-chip-title HyperBlue"> POCO F3 GT(ares) </span></a></div>
-                <div class="mdui-chip"><a href="devices/munch.json"><span class="mdui-chip-title HyperBlue"> POCO F4(munch) </span></a></div>
-                <div class="mdui-chip"><a href="devices/ingres.json"><span class="mdui-chip-title HyperBlue"> POCO F4 GT(ingres) </span></a></div>
-                <div class="mdui-chip"><a href="devices/marble.json"><span class="mdui-chip-title HyperBlue"> POCO F5(marble) </span></a></div>
-                <div class="mdui-chip"><a href="devices/mondrian.json"><span class="mdui-chip-title HyperBlue"> POCO F5 Pro(mondrian) </span></a></div>
-                <div class="mdui-chip"><a href="devices/peridot.json"><span class="mdui-chip-title HyperBlue"> POCO F6(peridot) </span></a></div>
-                <div class="mdui-chip"><a href="devices/vermeer.json"><span class="mdui-chip-title HyperBlue"> POCO F6 Pro(vermeer) </span></a></div>
-                <div class="mdui-chip"><a href="devices/onyx.json"><span class="mdui-chip-title HyperBlue"> POCO F7(onyx) </span></a></div>
-                <div class="mdui-chip"><a href="devices/zorn.json"><span class="mdui-chip-title HyperBlue"> POCO F7 Pro(zorn) </span></a></div>
-                <div class="mdui-chip"><a href="devices/miro.json"><span class="mdui-chip-title HyperBlue"> POCO F7 Ultra(miro) </span></a></div>
-                <div class="mdui-chip"><a href="devices/annibale.json"><span class="mdui-chip-title HyperBlue"> POCO F8 Pro(annibale) </span></a></div>
-                <div class="mdui-chip"><a href="devices/myron.json"><span class="mdui-chip-title HyperBlue"> POCO F8 Ultra(myron) </span></a></div>
-                <div class="series HyperBlue"> POCO M系列：</div>
-                <div class="mdui-chip"><a href="devices/fleur.json"><span class="mdui-chip-title HyperBlue"> POCO M4 Pro 4G(fleur) </span></a></div>
-                <div class="mdui-chip"><a href="devices/light.json"><span class="mdui-chip-title HyperBlue"> POCO M4 5G(light) </span></a></div>
-                <div class="mdui-chip"><a href="devices/evergreen.json"><span class="mdui-chip-title HyperBlue"> POCO M4 Pro 5G(evergreen) </span></a></div>
-                <div class="mdui-chip"><a href="devices/rock.json"><span class="mdui-chip-title HyperBlue"> POCO M5(rock) </span></a></div>
-                <div class="mdui-chip"><a href="devices/moon.json"><span class="mdui-chip-title HyperBlue"> POCO M6 4G(moon) </span></a></div>
-                <div class="mdui-chip"><a href="devices/air.json"><span class="mdui-chip-title HyperBlue"> POCO M6 5G(air) </span></a></div>
-                <div class="mdui-chip"><a href="devices/breeze.json"><span class="mdui-chip-title HyperBlue"> POCO M6 Plus 5G(breeze) </span></a></div>
-                <div class="mdui-chip"><a href="devices/emerald.json"><span class="mdui-chip-title HyperBlue"> POCO M6 Pro 4G(emerald) </span></a></div>
-                <div class="mdui-chip"><a href="devices/sky.json"><span class="mdui-chip-title HyperBlue"> POCO M6 Pro 5G(sky) </span></a></div>
-                <div class="mdui-chip"><a href="devices/flame.json"><span class="mdui-chip-title HyperBlue"> POCO M7 5G(flame) </span></a></div>
-                <div class="mdui-chip"><a href="devices/beryl.json"><span class="mdui-chip-title HyperBlue"> POCO M7 Pro 5G(beryl) </span></a></div>
-                <div class="mdui-chip"><a href="devices/flourite.json"><span class="mdui-chip-title HyperBlue"> POCO M8 Pro(flourite) </span></a></div>
-                <div class="series HyperBlue"> POCO X系列：</div>
-                <div class="mdui-chip"><a href="devices/xaga.json"><span class="mdui-chip-title HyperBlue"> POCO X4 GT / Pro(xaga) </span></a></div>
-                <div class="mdui-chip"><a href="devices/veux.json"><span class="mdui-chip-title HyperBlue"> POCO X4 Pro 5G(veux) </span></a></div>
-                <div class="mdui-chip"><a href="devices/redwood.json"><span class="mdui-chip-title HyperBlue"> POCO X5 Pro 5G(redwood) </span></a></div>
-                <div class="mdui-chip"><a href="devices/moonstone.json"><span class="mdui-chip-title HyperBlue"> POCO X5 5G(moonstone) </span></a></div>
-                <div class="mdui-chip"><a href="devices/gold.json"><span class="mdui-chip-title HyperBlue"> POCO X6 Neo 5G(gold) </span></a></div>
-                <div class="mdui-chip"><a href="devices/garnet.json"><span class="mdui-chip-title HyperBlue"> POCO X6 5G(garnet) </span></a></div>
-                <div class="mdui-chip"><a href="devices/duchamp.json"><span class="mdui-chip-title HyperBlue"> POCO X6 Pro 5G(duchamp) </span></a></div>
-                <div class="mdui-chip"><a href="devices/malachite.json"><span class="mdui-chip-title HyperBlue"> POCO X7(malachite) </span></a></div>
-                <div class="mdui-chip"><a href="devices/rodin.json"><span class="mdui-chip-title HyperBlue"> POCO X7 Pro(rodin) </span></a></div>
-                <div class="mdui-chip"><a href="devices/klee.json"><span class="mdui-chip-title HyperBlue"> POCO X8 Pro(klee) </span></a></div>
-                <div class="mdui-chip"><a href="devices/dash.json"><span class="mdui-chip-title HyperBlue"> POCO X8 Pro Max(dash) </span></a></div>
-                <div class="series HyperBlue"> POCO Pad系列：</div>
-                <div class="mdui-chip"><a href="devices/dizi.json"><span class="mdui-chip-title HyperBlue"> POCO Pad(dizi) </span></a></div>
-                <div class="mdui-chip"><a href="devices/uke.json"><span class="mdui-chip-title HyperBlue"> POCO Pad X1(uke) </span></a></div>
-                <div class="mdui-chip"><a href="devices/ruan.json"><span class="mdui-chip-title HyperBlue"> POCO Pad 5G(ruan) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="POCO C系列：" data-lang-en="POCO C Series: "> POCO C系列：</div>
+                <div class="mdui-chip" data-name-zh="POCO C55(earth)" data-name-en="POCO C55(earth)"><a href="devices/earth.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO C55(earth)" data-lang-en="POCO C55(earth)"> POCO C55(earth) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO C65(gale)" data-name-en="POCO C65(gale)"><a href="devices/gale.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO C65(gale)" data-lang-en="POCO C65(gale)"> POCO C65(gale) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO C71(serenity)" data-name-en="POCO C71(serenity)"><a href="devices/serenity.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO C71(serenity)" data-lang-en="POCO C71(serenity)"> POCO C71(serenity) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO C75 5G(warm)" data-name-en="POCO C75 5G(warm)"><a href="devices/warm.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO C75 5G(warm)" data-lang-en="POCO C75 5G(warm)"> POCO C75 5G(warm) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO C85(dew)" data-name-en="POCO C85(dew)"><a href="devices/dew.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO C85(dew)" data-lang-en="POCO C85(dew)"> POCO C85(dew) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO C85x 5G(somalia)" data-name-en="POCO C85x 5G(somalia)"><a href="devices/somalia.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO C85x 5G(somalia)" data-lang-en="POCO C85x 5G(somalia)"> POCO C85x 5G(somalia) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO C85(dew)" data-name-en="POCO C85(dew)"><a href="devices/dew.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO C85(dew)" data-lang-en="POCO C85(dew)"> POCO C85(dew) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="POCO F系列：" data-lang-en="POCO F Series: "> POCO F系列：</div>
+                <div class="mdui-chip" data-name-zh="POCO F3(alioth)" data-name-en="POCO F3(alioth)"><a href="devices/alioth.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO F3(alioth)" data-lang-en="POCO F3(alioth)"> POCO F3(alioth) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO F3 GT(ares)" data-name-en="POCO F3 GT(ares)"><a href="devices/ares.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO F3 GT(ares)" data-lang-en="POCO F3 GT(ares)"> POCO F3 GT(ares) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO F4(munch)" data-name-en="POCO F4(munch)"><a href="devices/munch.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO F4(munch)" data-lang-en="POCO F4(munch)"> POCO F4(munch) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO F4 GT(ingres)" data-name-en="POCO F4 GT(ingres)"><a href="devices/ingres.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO F4 GT(ingres)" data-lang-en="POCO F4 GT(ingres)"> POCO F4 GT(ingres) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO F5(marble)" data-name-en="POCO F5(marble)"><a href="devices/marble.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO F5(marble)" data-lang-en="POCO F5(marble)"> POCO F5(marble) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO F5 Pro(mondrian)" data-name-en="POCO F5 Pro(mondrian)"><a href="devices/mondrian.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO F5 Pro(mondrian)" data-lang-en="POCO F5 Pro(mondrian)"> POCO F5 Pro(mondrian) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO F6(peridot)" data-name-en="POCO F6(peridot)"><a href="devices/peridot.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO F6(peridot)" data-lang-en="POCO F6(peridot)"> POCO F6(peridot) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO F6 Pro(vermeer)" data-name-en="POCO F6 Pro(vermeer)"><a href="devices/vermeer.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO F6 Pro(vermeer)" data-lang-en="POCO F6 Pro(vermeer)"> POCO F6 Pro(vermeer) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO F7(onyx)" data-name-en="POCO F7(onyx)"><a href="devices/onyx.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO F7(onyx)" data-lang-en="POCO F7(onyx)"> POCO F7(onyx) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO F7 Pro(zorn)" data-name-en="POCO F7 Pro(zorn)"><a href="devices/zorn.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO F7 Pro(zorn)" data-lang-en="POCO F7 Pro(zorn)"> POCO F7 Pro(zorn) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO F7 Ultra(miro)" data-name-en="POCO F7 Ultra(miro)"><a href="devices/miro.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO F7 Ultra(miro)" data-lang-en="POCO F7 Ultra(miro)"> POCO F7 Ultra(miro) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO F8 Pro(annibale)" data-name-en="POCO F8 Pro(annibale)"><a href="devices/annibale.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO F8 Pro(annibale)" data-lang-en="POCO F8 Pro(annibale)"> POCO F8 Pro(annibale) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO F8 Ultra(myron)" data-name-en="POCO F8 Ultra(myron)"><a href="devices/myron.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO F8 Ultra(myron)" data-lang-en="POCO F8 Ultra(myron)"> POCO F8 Ultra(myron) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="POCO M系列：" data-lang-en="POCO M Series: "> POCO M系列：</div>
+                <div class="mdui-chip" data-name-zh="POCO M4 Pro 4G(fleur)" data-name-en="POCO M4 Pro 4G(fleur)"><a href="devices/fleur.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO M4 Pro 4G(fleur)" data-lang-en="POCO M4 Pro 4G(fleur)"> POCO M4 Pro 4G(fleur) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO M4 5G(light)" data-name-en="POCO M4 5G(light)"><a href="devices/light.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO M4 5G(light)" data-lang-en="POCO M4 5G(light)"> POCO M4 5G(light) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO M4 Pro 5G(evergreen)" data-name-en="POCO M4 Pro 5G(evergreen)"><a href="devices/evergreen.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO M4 Pro 5G(evergreen)" data-lang-en="POCO M4 Pro 5G(evergreen)"> POCO M4 Pro 5G(evergreen) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO M5(rock)" data-name-en="POCO M5(rock)"><a href="devices/rock.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO M5(rock)" data-lang-en="POCO M5(rock)"> POCO M5(rock) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO M6 4G(moon)" data-name-en="POCO M6 4G(moon)"><a href="devices/moon.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO M6 4G(moon)" data-lang-en="POCO M6 4G(moon)"> POCO M6 4G(moon) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO M6 5G(air)" data-name-en="POCO M6 5G(air)"><a href="devices/air.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO M6 5G(air)" data-lang-en="POCO M6 5G(air)"> POCO M6 5G(air) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO M6 Plus 5G(breeze)" data-name-en="POCO M6 Plus 5G(breeze)"><a href="devices/breeze.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO M6 Plus 5G(breeze)" data-lang-en="POCO M6 Plus 5G(breeze)"> POCO M6 Plus 5G(breeze) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO M6 Pro 4G(emerald)" data-name-en="POCO M6 Pro 4G(emerald)"><a href="devices/emerald.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO M6 Pro 4G(emerald)" data-lang-en="POCO M6 Pro 4G(emerald)"> POCO M6 Pro 4G(emerald) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO M6 Pro 5G(sky)" data-name-en="POCO M6 Pro 5G(sky)"><a href="devices/sky.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO M6 Pro 5G(sky)" data-lang-en="POCO M6 Pro 5G(sky)"> POCO M6 Pro 5G(sky) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO M7 5G(flame)" data-name-en="POCO M7 5G(flame)"><a href="devices/flame.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO M7 5G(flame)" data-lang-en="POCO M7 5G(flame)"> POCO M7 5G(flame) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO M7 Pro 5G(beryl)" data-name-en="POCO M7 Pro 5G(beryl)"><a href="devices/beryl.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO M7 Pro 5G(beryl)" data-lang-en="POCO M7 Pro 5G(beryl)"> POCO M7 Pro 5G(beryl) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO M8 Pro(flourite)" data-name-en="POCO M8 Pro(flourite)"><a href="devices/flourite.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO M8 Pro(flourite)" data-lang-en="POCO M8 Pro(flourite)"> POCO M8 Pro(flourite) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="POCO X系列：" data-lang-en="POCO X Series: "> POCO X系列：</div>
+                <div class="mdui-chip" data-name-zh="POCO X4 GT / Pro(xaga)" data-name-en="POCO X4 GT / Pro(xaga)"><a href="devices/xaga.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO X4 GT / Pro(xaga)" data-lang-en="POCO X4 GT / Pro(xaga)"> POCO X4 GT / Pro(xaga) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO X4 Pro 5G(veux)" data-name-en="POCO X4 Pro 5G(veux)"><a href="devices/veux.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO X4 Pro 5G(veux)" data-lang-en="POCO X4 Pro 5G(veux)"> POCO X4 Pro 5G(veux) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO X5 Pro 5G(redwood)" data-name-en="POCO X5 Pro 5G(redwood)"><a href="devices/redwood.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO X5 Pro 5G(redwood)" data-lang-en="POCO X5 Pro 5G(redwood)"> POCO X5 Pro 5G(redwood) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO X5 5G(moonstone)" data-name-en="POCO X5 5G(moonstone)"><a href="devices/moonstone.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO X5 5G(moonstone)" data-lang-en="POCO X5 5G(moonstone)"> POCO X5 5G(moonstone) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO X6 Neo 5G(gold)" data-name-en="POCO X6 Neo 5G(gold)"><a href="devices/gold.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO X6 Neo 5G(gold)" data-lang-en="POCO X6 Neo 5G(gold)"> POCO X6 Neo 5G(gold) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO X6 5G(garnet)" data-name-en="POCO X6 5G(garnet)"><a href="devices/garnet.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO X6 5G(garnet)" data-lang-en="POCO X6 5G(garnet)"> POCO X6 5G(garnet) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO X6 Pro 5G(duchamp)" data-name-en="POCO X6 Pro 5G(duchamp)"><a href="devices/duchamp.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO X6 Pro 5G(duchamp)" data-lang-en="POCO X6 Pro 5G(duchamp)"> POCO X6 Pro 5G(duchamp) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO X7(malachite)" data-name-en="POCO X7(malachite)"><a href="devices/malachite.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO X7(malachite)" data-lang-en="POCO X7(malachite)"> POCO X7(malachite) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO X7 Pro(rodin)" data-name-en="POCO X7 Pro(rodin)"><a href="devices/rodin.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO X7 Pro(rodin)" data-lang-en="POCO X7 Pro(rodin)"> POCO X7 Pro(rodin) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO X8 Pro(klee)" data-name-en="POCO X8 Pro(klee)"><a href="devices/klee.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO X8 Pro(klee)" data-lang-en="POCO X8 Pro(klee)"> POCO X8 Pro(klee) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO X8 Pro Max(dash)" data-name-en="POCO X8 Pro Max(dash)"><a href="devices/dash.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO X8 Pro Max(dash)" data-lang-en="POCO X8 Pro Max(dash)"> POCO X8 Pro Max(dash) </span></a></div>
+                <div class="series HyperBlue lang-text" data-lang-zh="POCO Pad系列：" data-lang-en="POCO Pad Series: "> POCO Pad系列：</div>
+                <div class="mdui-chip" data-name-zh="POCO Pad(dizi)" data-name-en="POCO Pad(dizi)"><a href="devices/dizi.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO Pad(dizi)" data-lang-en="POCO Pad(dizi)"> POCO Pad(dizi) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO Pad X1(uke)" data-name-en="POCO Pad X1(uke)"><a href="devices/uke.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO Pad X1(uke)" data-lang-en="POCO Pad X1(uke)"> POCO Pad X1(uke) </span></a></div>
+                <div class="mdui-chip" data-name-zh="POCO Pad 5G(ruan)" data-name-en="POCO Pad 5G(ruan)"><a href="devices/ruan.json"><span class="mdui-chip-title HyperBlue lang-text" data-lang-zh="POCO Pad 5G(ruan)" data-lang-en="POCO Pad 5G(ruan)"> POCO Pad 5G(ruan) </span></a></div>
               </div>
             </div>
           </div>
         </div>
         <!-- 此处结束自动化替换 -->
         <div><br> <br> <br>
-          <div class="mdui-bottom-nav footer mdui-color-grey-100"><a href="https://github.com/HegeKen" class="mdui-ripple mdui-bottom-nav-active"><i class="mdui-icon icon-GitHub fic"></i><label>GitHub</label></a> <a href="https://gitlab.com/HegeKen" class="mdui-ripple mdui-bottom-nav-active"><i class="mdui-icon icon-gitlab fic"></i><label>GitLab</label></a> <a href="https://weibo.com/Heliljan" class="mdui-ripple mdui-bottom-nav-active"><i class="mdui-icon icon-weibo fic"></i><label>微博</label></a> <a href="https://web.vip.miui.com/page/info/mio/mio/homePage?uid=311975809" class="mdui-ripple mdui-bottom-nav-active"><i class="mdui-icon icon-MiBBS fic"></i><label>小米社区</label></a> <a href="https://space.bilibili.com/19940729" class="mdui-ripple mdui-bottom-nav-active"><i class="mdui-icon icon-bilibili fic"></i><label>哔哩哔哩</label></a> <a href="#top" class="mdui-ripple mdui-bottom-nav-active"><i class="mdui-icon material-icons">arrow_upward</i><label>返回顶部</label></a></div>
+          <div class="mdui-bottom-nav footer mdui-color-grey-100">
+            <a href="https://github.com/HegeKen" class="mdui-ripple mdui-bottom-nav-active"><i class="mdui-icon icon-GitHub fic"></i><label>GitHub</label></a> 
+            <a href="https://gitlab.com/HegeKen" class="mdui-ripple mdui-bottom-nav-active"><i class="mdui-icon icon-gitlab fic"></i><label>GitLab</label></a> 
+            <a href="https://weibo.com/Heliljan" class="mdui-ripple mdui-bottom-nav-active"><i class="mdui-icon icon-weibo fic"></i><label>微博</label></a> 
+            <a href="https://web.vip.miui.com/page/info/mio/mio/homePage?uid=311975809" class="mdui-ripple mdui-bottom-nav-active"><i class="mdui-icon icon-MiBBS fic"></i><label>小米社区</label></a> 
+            <a href="https://space.bilibili.com/19940729" class="mdui-ripple mdui-bottom-nav-active"><i class="mdui-icon icon-bilibili fic"></i><label>哔哩哔哩</label></a> 
+            <a href="#top" class="mdui-ripple mdui-bottom-nav-active"><i class="mdui-icon material-icons">arrow_upward</i><label>返回顶部</label></a>
+          </div>
           <div class="mdui-bottom-nav footer mdui-color-grey-100 fs">
             <div class="mdui-center mdui-text-center">2023 - 2025 -- 非小米集团旗下网站 . 我们与小米以及Hyper<span class="HyperBlue"> OS</span>开发团队没有任何联系</div>
           </div>

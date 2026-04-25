@@ -466,6 +466,7 @@ flags = {
 	"HOUJIGlobal": "houji",
 	"myron": "myron",
 	"koto_id_global": "koto",
+	"arctic_in_global": "arctic",
 	"spring_tr_global": "spring",
 	"charoite_global": "charoite",
 	"charoite_eea_global": "charoite",
@@ -2668,11 +2669,24 @@ def getData(filename):
 		
 		def parse_fastboot(fname):
 				"""解析线刷包格式"""
-				# 格式1: CODE-images-VERSION-TYPE-ANDROID-DATE.tgz (HyperOS新格式)
-				# 例: dew_mx_at_global_images_OS2.0.207.0.VBNMXAT_202507e28a.tgz
+				# 新格式: CODE-images-VERSION-TYPE-DATE-ANDROID-REGION-HASH.tgz (带区域标识)
+				# 例: arctic_eea_global-images-OS3.0.6.0.WBVEUXM-user-20260409.0000.00-16.0-eea-8581295ba6.tgz
+				# 例: arctic_in_global-images-OS3.0.2.0.WBVINXM-user-20260323.0000.00-16.0-in-1fb30dee11.tgz
 				if '-images' in fname:
-						pattern = r'^([a-z0-9_]+)-images-([A-Z0-9\.]+)-[^-]+-(\d+\.\d+)-.*\.tgz$'
-						match = re.match(pattern, fname)
+						# 先尝试匹配新格式（带区域标识）
+						pattern_new = r'^([a-z0-9_]+)-images-([A-Z0-9\.]+)-[^-]+-(\d{8}\.\d+\.\d+)-(\d+\.\d+)-([a-z]+)-[a-f0-9]+\.tgz$'
+						match = re.match(pattern_new, fname)
+						if match:
+								return {
+										'code': match.group(1),
+										'version': match.group(2),
+										'android': match.group(4),
+										'filetype': 'fastboot'
+								}
+						
+						# 回退到旧格式: CODE-images-VERSION-TYPE-ANDROID-DATE.tgz
+						pattern_old = r'^([a-z0-9_]+)-images-([A-Z0-9\.]+)-[^-]+-(\d+\.\d+)-.*\.tgz$'
+						match = re.match(pattern_old, fname)
 						if match:
 								return {
 										'code': match.group(1),
@@ -2681,16 +2695,28 @@ def getData(filename):
 										'filetype': 'fastboot'
 								}
 				
-				# 格式2: CODE_images_VERSION_TYPE_ANDROID_DATE.tgz (MIUI旧格式)
-				# 例: umi_images_V14.0.4.0.QJBCNXM_20230705.0000.00_11.0_cn_6a6a7d6b5f.tgz
+				# 格式2: CODE_images_VERSION_DATE.tgz (简化格式，无Android版本)
+				# 例: dew_mx_at_global_images_OS2.0.207.0.VBNMXAT_202507e28a.tgz
 				elif '_images' in fname:
-						pattern = r'^([a-z0-9_]+)_images_([A-Z0-9\.]+)_[^_]+_(\d+\.\d+)_.*\.tgz$'
-						match = re.match(pattern, fname)
+						# 先尝试完整格式: CODE_images_VERSION_TYPE_ANDROID_HASH.tgz
+						pattern_full = r'^([a-z0-9_]+)_images_([A-Z0-9\.]+)_[^_]+_(\d+\.\d+)_.*\.tgz$'
+						match = re.match(pattern_full, fname)
 						if match:
 								return {
 										'code': match.group(1),
 										'version': match.group(2),
 										'android': match.group(3),
+										'filetype': 'fastboot'
+								}
+						
+						# 回退到简化格式: CODE_images_VERSION_HASH.tgz
+						pattern_simple = r'^([a-z0-9_]+)_images_([A-Z0-9\.]+)_.+\.tgz$'
+						match = re.match(pattern_simple, fname)
+						if match:
+								return {
+										'code': match.group(1),
+										'version': match.group(2),
+										'android': None,  # 无法从文件名获取，需要后续处理
 										'filetype': 'fastboot'
 								}
 				return None
@@ -2850,8 +2876,25 @@ def getData(filename):
 		version = parsed.get('version')
 		filetype = parsed.get('filetype')
 		
-		# 验证必需字段
-		if not all([code, device, android, version, filetype]):
+		# 如果 android 为空，尝试从版本号推断
+		if not android and version:
+				if version.startswith('OS'):
+						try:
+								major_version = int(version.split('.')[0][2:])
+								if major_version == 1:
+										android = '14.0'
+								elif major_version == 2:
+										android = '15.0'
+								elif major_version >= 3:
+										android = '16.0'
+						except (ValueError, IndexError):
+								pass
+				elif version.startswith('V'):
+						# MIUI 版本无法准确推断，保持 None
+						pass
+		
+		# 验证必需字段（允许 android 为空，后续可以从数据库获取）
+		if not all([code, device, version, filetype]):
 				return 0
 		
 		# 确定版本类型和大版本

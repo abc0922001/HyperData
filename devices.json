@@ -11,7 +11,16 @@
 					"zh": "小米 10",
 					"en": "Xiaomi 10"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "cmi",
@@ -20,7 +29,16 @@
 					"zh": "小米 10 Pro",
 					"en": "Xiaomi 10 Pro"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "cas",
@@ -29,7 +47,16 @@
 					"zh": "小米 10 至尊纪念版",
 					"en": "Xiaomi 10 Ultra"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "thyme",
@@ -38,7 +65,16 @@
 					"zh": "小米 10S",
 					"en": "Xiaomi 10S"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "venus",
@@ -47,7 +83,17 @@
 					"zh": "小米 11",
 					"en": "Xiaomi 11"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "star",
@@ -56,7 +102,17 @@
 					"zh": "小米 11 Pro / Ultra",
 					"en": "Xiaomi 11 Pro / Ultra"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "lisa",
@@ -65,7 +121,17 @@
 					"zh": "小米 11 青春活力版",
 					"en": "Mi 11 LE"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "lisa",
@@ -74,7 +140,17 @@
 					"zh": "小米 11 Lite 5G NE",
 					"en": "Xiaomi 11 Lite 5G NE"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "haydn",
@@ -83,7 +159,16 @@
 					"zh": "小米 11i",
 					"en": "Mi 11i"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "pissarro_in",
@@ -92,7 +177,16 @@
 					"zh": "小米 11i / Hypercharge",
 					"en": "Xiaomi 11i / Hypercharge"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "agate",
@@ -101,7 +195,16 @@
 					"zh": "小米 11T",
 					"en": "Xiaomi 11T"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "vili",
@@ -110,7 +213,16 @@
 					"zh": "小米 11T Pro",
 					"en": "Xiaomi 11T Pro"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "alioth",
@@ -119,7 +231,16 @@
 					"zh": "小米 11X",
 					"en": "Mi 11X"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "haydn",
@@ -128,7 +249,16 @@
 					"zh": "小米 11X Pro",
 					"en": "Mi 11X Pro"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "cupid",
@@ -137,7 +267,19 @@
 					"zh": "小米 12",
 					"en": "Xiaomi 12"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "zeus",
@@ -146,7 +288,19 @@
 					"zh": "小米 12 Pro",
 					"en": "Xiaomi 12 Pro"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "psyche",
@@ -155,7 +309,16 @@
 					"zh": "小米 12X",
 					"en": "Xiaomi 12X"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "daumier",
@@ -164,7 +327,17 @@
 					"zh": "小米 12 Pro 天玑版",
 					"en": "Xiaomi 12 Pro Dimensity"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "taoyao",
@@ -173,7 +346,16 @@
 					"zh": "小米 12 Lite",
 					"en": "Xiaomi 12 Lite"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "mayfly",
@@ -182,7 +364,19 @@
 					"zh": "小米 12S",
 					"en": "Xiaomi 12S"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "unicorn",
@@ -191,7 +385,19 @@
 					"zh": "小米 12S Pro",
 					"en": "Xiaomi 12S Pro"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "thor",
@@ -200,7 +406,19 @@
 					"zh": "小米 12S Ultra",
 					"en": "Xiaomi 12S Ultra"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "plato",
@@ -209,7 +427,18 @@
 					"zh": "小米 12T",
 					"en": "Xiaomi 12T"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "diting",
@@ -218,7 +447,19 @@
 					"zh": "小米 12T Pro",
 					"en": "Xiaomi 12T Pro"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "fuxi",
@@ -227,7 +468,20 @@
 					"zh": "小米 13",
 					"en": "Xiaomi 13"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "nuwa",
@@ -236,7 +490,20 @@
 					"zh": "小米 13 Pro",
 					"en": "Xiaomi 13 Pro"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "ishtar",
@@ -245,7 +512,20 @@
 					"zh": "小米 13 Ultra",
 					"en": "Xiaomi 13 Ultra"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "aristotle",
@@ -254,7 +534,18 @@
 					"zh": "小米 13T",
 					"en": "Xiaomi 13T"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "corot",
@@ -263,7 +554,21 @@
 					"zh": "小米 13T Pro",
 					"en": "Xiaomi 13T Pro"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS1.1",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "houji",
@@ -272,7 +577,21 @@
 					"zh": "小米 14",
 					"en": "Xiaomi 14"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS1.1",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "shennong",
@@ -281,7 +600,20 @@
 					"zh": "小米 14 Pro / Ti / 钛金属卫星通讯版",
 					"en": "Xiaomi 14 Pro / Ti / Satellite"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "shennong_t",
@@ -290,7 +622,16 @@
 					"zh": "小米 14 Pro 钛金属卫星通讯版",
 					"en": "Xiaomi 14 Pro Ti Satellite"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "chenfeng",
@@ -299,7 +640,20 @@
 					"zh": "小米 14 Civi",
 					"en": "Xiaomi 14 Civi"
 				},
-				"series": "小米Civi系列"
+				"series": {
+					"zh": "小米Civi系列",
+					"en": "Xiaomi Civi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "aurora",
@@ -308,7 +662,20 @@
 					"zh": "小米 14 Ultra / Ultra Ti",
 					"en": "Xiaomi 14 Ultra / Ultra Ti"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "degas",
@@ -317,7 +684,20 @@
 					"zh": "小米 14T",
 					"en": "Xiaomi 14T"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "rothko",
@@ -326,7 +706,20 @@
 					"zh": "小米 14T Pro",
 					"en": "Xiaomi 14T Pro"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "dada",
@@ -335,7 +728,18 @@
 					"zh": "小米 15",
 					"en": "Xiaomi 15"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "haotian",
@@ -344,7 +748,18 @@
 					"zh": "小米 15 Pro",
 					"en": "Xiaomi 15 Pro"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "xuanyuan",
@@ -353,7 +768,18 @@
 					"zh": "小米 15 Ultra",
 					"en": "Xiaomi 15 Ultra"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "dijun",
@@ -362,7 +788,18 @@
 					"zh": "小米 15S Pro",
 					"en": "Xiaomi 15S Pro"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "goya",
@@ -371,7 +808,18 @@
 					"zh": "小米 15T",
 					"en": "Xiaomi 15T"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "klimt",
@@ -380,7 +828,18 @@
 					"zh": "小米 15T Pro",
 					"en": "Xiaomi 15T Pro"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "pudding",
@@ -389,7 +848,16 @@
 					"zh": "小米 17",
 					"en": "Xiaomi 17"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "pandora",
@@ -398,7 +866,16 @@
 					"zh": "小米 17 Pro",
 					"en": "Xiaomi 17 Pro"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "popsicle",
@@ -407,7 +884,16 @@
 					"zh": "小米 17 Pro Max",
 					"en": "Xiaomi 17 Pro Max"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "nezha",
@@ -416,7 +902,16 @@
 					"zh": "小米 17 Ultra",
 					"en": "Xiaomi 17 Ultra by Leica"
 				},
-				"series": "小米系列"
+				"series": {
+					"zh": "小米系列",
+					"en": "Xiaomi Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "nabu",
@@ -425,7 +920,16 @@
 					"zh": "小米平板 5",
 					"en": "Xiaomi Pad 5"
 				},
-				"series": "小米平板系列"
+				"series": {
+					"zh": "小米平板系列",
+					"en": "Xiaomi Pad Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "enuma",
@@ -434,7 +938,16 @@
 					"zh": "小米平板 5 Pro 5G",
 					"en": "Xiaomi Pad 5 Pro 5G"
 				},
-				"series": "小米平板系列"
+				"series": {
+					"zh": "小米平板系列",
+					"en": "Xiaomi Pad Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "elish",
@@ -443,7 +956,16 @@
 					"zh": "小米平板 5 Pro Wi-Fi",
 					"en": "Xiaomi Pad 5 Pro Wi-Fi"
 				},
-				"series": "小米平板系列"
+				"series": {
+					"zh": "小米平板系列",
+					"en": "Xiaomi Pad Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "dagu",
@@ -452,7 +974,17 @@
 					"zh": "小米平板 5 Pro 12.4",
 					"en": "Xiaomi Pad 5 Pro 12.4"
 				},
-				"series": "小米平板系列"
+				"series": {
+					"zh": "小米平板系列",
+					"en": "Xiaomi Pad Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "pipa",
@@ -461,7 +993,17 @@
 					"zh": "小米平板 6",
 					"en": "Xiaomi Pad 6"
 				},
-				"series": "小米平板系列"
+				"series": {
+					"zh": "小米平板系列",
+					"en": "Xiaomi Pad Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "liuqin",
@@ -470,7 +1012,19 @@
 					"zh": "小米平板 6 Pro",
 					"en": "Xiaomi Pad 6 Pro"
 				},
-				"series": "小米平板系列"
+				"series": {
+					"zh": "小米平板系列",
+					"en": "Xiaomi Pad Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "yudi",
@@ -479,7 +1033,19 @@
 					"zh": "小米平板 6 Max 14",
 					"en": "Xiaomi Pad 6 Max 14"
 				},
-				"series": "小米平板系列"
+				"series": {
+					"zh": "小米平板系列",
+					"en": "Xiaomi Pad Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "sheng",
@@ -488,7 +1054,21 @@
 					"zh": "小米平板 6S Pro 12.4",
 					"en": "Xiaomi Pad 6S Pro 12.4"
 				},
-				"series": "小米平板系列"
+				"series": {
+					"zh": "小米平板系列",
+					"en": "Xiaomi Pad Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS1.1",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "uke",
@@ -497,7 +1077,18 @@
 					"zh": "小米平板 7",
 					"en": "Xiaomi Pad 7"
 				},
-				"series": "小米平板系列"
+				"series": {
+					"zh": "小米平板系列",
+					"en": "Xiaomi Pad Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "muyu",
@@ -506,7 +1097,18 @@
 					"zh": "小米平板 7 Pro",
 					"en": "Xiaomi Pad 7 Pro"
 				},
-				"series": "小米平板系列"
+				"series": {
+					"zh": "小米平板系列",
+					"en": "Xiaomi Pad Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "jinghu",
@@ -515,7 +1117,18 @@
 					"zh": "小米平板 7 Ultra",
 					"en": "Xiaomi Pad 7 Ultra"
 				},
-				"series": "小米平板系列"
+				"series": {
+					"zh": "小米平板系列",
+					"en": "Xiaomi Pad Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "violin",
@@ -524,7 +1137,18 @@
 					"zh": "小米平板 7S Pro 12.5",
 					"en": "Xiaomi Pad 7S Pro 12.5"
 				},
-				"series": "小米平板系列"
+				"series": {
+					"zh": "小米平板系列",
+					"en": "Xiaomi Pad Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "yupei",
@@ -533,7 +1157,16 @@
 					"zh": "小米平板 8",
 					"en": "Xiaomi Pad 8"
 				},
-				"series": "小米平板系列"
+				"series": {
+					"zh": "小米平板系列",
+					"en": "Xiaomi Pad Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "piano",
@@ -542,7 +1175,16 @@
 					"zh": "小米平板 8 Pro",
 					"en": "Xiaomi Pad 8 Pro"
 				},
-				"series": "小米平板系列"
+				"series": {
+					"zh": "小米平板系列",
+					"en": "Xiaomi Pad Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "turner",
@@ -551,7 +1193,18 @@
 					"zh": "小米平板 Mini",
 					"en": "Xiaomi Pad Mini"
 				},
-				"series": "小米平板系列"
+				"series": {
+					"zh": "小米平板系列",
+					"en": "Xiaomi Pad Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "odin",
@@ -560,7 +1213,16 @@
 					"zh": "小米 MIX 4",
 					"en": "MIX 4"
 				},
-				"series": "小米 MIX系列"
+				"series": {
+					"zh": "小米 MIX系列",
+					"en": "Xiaomi MIX Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "cetus",
@@ -569,7 +1231,16 @@
 					"zh": "小米 MIX FOLD",
 					"en": "MI MIX FOLD"
 				},
-				"series": "小米 MIX系列"
+				"series": {
+					"zh": "小米 MIX系列",
+					"en": "Xiaomi MIX Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "zizhan",
@@ -578,7 +1249,19 @@
 					"zh": "小米 MIX Fold 2",
 					"en": "Xiaomi MIX Fold 2"
 				},
-				"series": "小米 MIX系列"
+				"series": {
+					"zh": "小米 MIX系列",
+					"en": "Xiaomi MIX Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "babylon",
@@ -587,7 +1270,20 @@
 					"zh": "小米 MIX Fold 3",
 					"en": "Xiaomi MIX Fold 3"
 				},
-				"series": "小米 MIX系列"
+				"series": {
+					"zh": "小米 MIX系列",
+					"en": "Xiaomi MIX Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "goku",
@@ -596,7 +1292,20 @@
 					"zh": "小米 MIX Fold 4",
 					"en": "Xiaomi MIX Fold 4"
 				},
-				"series": "小米 MIX系列"
+				"series": {
+					"zh": "小米 MIX系列",
+					"en": "Xiaomi MIX Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "ruyi",
@@ -605,7 +1314,20 @@
 					"zh": "小米 MIX Flip",
 					"en": "Xiaomi MIX Flip"
 				},
-				"series": "小米 MIX系列"
+				"series": {
+					"zh": "小米 MIX系列",
+					"en": "Xiaomi MIX Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "bixi",
@@ -614,7 +1336,18 @@
 					"zh": "小米 MIX Flip 2",
 					"en": "Xiaomi MIX Flip 2"
 				},
-				"series": "小米 MIX系列"
+				"series": {
+					"zh": "小米 MIX系列",
+					"en": "Xiaomi MIX Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "mona",
@@ -623,7 +1356,16 @@
 					"zh": "小米 Civi",
 					"en": "Xiaomi Civi"
 				},
-				"series": "小米 Civi系列"
+				"series": {
+					"zh": "小米 Civi系列",
+					"en": "Xiaomi Civi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "zijin",
@@ -632,7 +1374,16 @@
 					"zh": "小米 Civi 1S",
 					"en": "Xiaomi Civi 1S"
 				},
-				"series": "小米 Civi系列"
+				"series": {
+					"zh": "小米 Civi系列",
+					"en": "Xiaomi Civi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "ziyi",
@@ -641,7 +1392,19 @@
 					"zh": "小米 Civi 2",
 					"en": "Xiaomi Civi 2"
 				},
-				"series": "小米 Civi系列"
+				"series": {
+					"zh": "小米 Civi系列",
+					"en": "Xiaomi Civi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "yuechu",
@@ -650,7 +1413,19 @@
 					"zh": "小米 Civi 3",
 					"en": "Xiaomi Civi 3"
 				},
-				"series": "小米 Civi系列"
+				"series": {
+					"zh": "小米 Civi系列",
+					"en": "Xiaomi Civi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "chenfeng",
@@ -659,7 +1434,20 @@
 					"zh": "小米 Civi 4 Pro",
 					"en": "Xiaomi Civi 4 Pro"
 				},
-				"series": "小米 Civi系列"
+				"series": {
+					"zh": "小米 Civi系列",
+					"en": "Xiaomi Civi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "luming",
@@ -668,7 +1456,18 @@
 					"zh": "小米 Civi 5 Pro",
 					"en": "Xiaomi Civi 5 Pro"
 				},
-				"series": "小米 Civi系列"
+				"series": {
+					"zh": "小米 Civi系列",
+					"en": "Xiaomi Civi Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "konghou",
@@ -677,7 +1476,16 @@
 					"zh": "Xiaomi YU7 后排移动控制屏",
 					"en": "Xiaomi YU7 Back Row Mobile Control Screen"
 				},
-				"series": "其他小米设备"
+				"series": {
+					"zh": "其他小米设备",
+					"en": "Other Xiaomi Devices"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			}
 		]
 	},
@@ -693,7 +1501,16 @@
 					"zh": "Redmi 10 5G",
 					"en": "Redmi 10 5G"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "rock",
@@ -702,7 +1519,16 @@
 					"zh": "Redmi 11 Prime 4G",
 					"en": "Redmi 11 Prime 4G"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "light",
@@ -711,7 +1537,16 @@
 					"zh": "Redmi 11 Prime 5G",
 					"en": "Redmi 11 Prime 5G"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "fire",
@@ -720,7 +1555,18 @@
 					"zh": "Redmi 12 国际",
 					"en": "Redmi 12"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "sky",
@@ -729,7 +1575,18 @@
 					"zh": "Redmi 12 5G",
 					"en": "Redmi 12 5G"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "earth",
@@ -738,7 +1595,16 @@
 					"zh": "Redmi 12C",
 					"en": "Redmi 12C"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "sky",
@@ -747,7 +1613,18 @@
 					"zh": "Redmi 12 / 12R 5G",
 					"en": "Redmi 12 / 12R 5G"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "breeze",
@@ -756,7 +1633,20 @@
 					"zh": "Redmi 13 5G",
 					"en": "Redmi 13 5G"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "air",
@@ -765,7 +1655,18 @@
 					"zh": "Redmi 13R 5G",
 					"en": "Redmi 13R 5G"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "moon",
@@ -774,7 +1675,20 @@
 					"zh": "Redmi 13 国际",
 					"en": "Redmi 13"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "air",
@@ -783,7 +1697,18 @@
 					"zh": "Redmi 13C / 13R 5G",
 					"en": "Redmi 13C / 13R 5G"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "gale",
@@ -792,7 +1717,18 @@
 					"zh": "Redmi 13C 国际",
 					"en": "Redmi 13C"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "lake",
@@ -801,7 +1737,20 @@
 					"zh": "Redmi 14C",
 					"en": "Redmi 14C"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "flame",
@@ -810,7 +1759,20 @@
 					"zh": "Redmi 14R 5G",
 					"en": "Redmi 14R 5G"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "creek",
@@ -819,7 +1781,18 @@
 					"zh": "REDMI 15 4G",
 					"en": "REDMI 15 4G"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "dew",
@@ -828,7 +1801,18 @@
 					"zh": "REDMI 15C",
 					"en": "REDMI 15C"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "tornado",
@@ -837,7 +1821,18 @@
 					"zh": "REDMI 15C 5G",
 					"en": "REDMI 15C 5G"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "tornado",
@@ -846,7 +1841,18 @@
 					"zh": "REDMI 15R 5G",
 					"en": "REDMI 15R 5G"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "spring",
@@ -855,7 +1861,18 @@
 					"zh": "REDMI 15 5G",
 					"en": "REDMI 15 5G"
 				},
-				"series": "Redmi系列"
+				"series": {
+					"zh": "Redmi系列",
+					"en": "Redmi Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "evergo",
@@ -864,7 +1881,16 @@
 					"zh": "Redmi Note 11 5G / 11T 5G",
 					"en": "Redmi Note 11 5G / 11T 5G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "light",
@@ -873,7 +1899,16 @@
 					"zh": "Redmi Note 11E",
 					"en": "Redmi Note 11E"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "lightcm",
@@ -882,7 +1917,16 @@
 					"zh": "Redmi Note 11R",
 					"en": "Redmi Note 11R"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "veux",
@@ -891,7 +1935,16 @@
 					"zh": "Redmi Note 11E Pro",
 					"en": "Redmi Note 11E Pro"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "veux",
@@ -900,7 +1953,16 @@
 					"zh": "Redmi Note 11 Pro 5G",
 					"en": "Redmi Note 11 Pro 5G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "pissarro",
@@ -909,7 +1971,16 @@
 					"zh": "Redmi Note 11 Pro / Pro+ / Pro+ 5G",
 					"en": "Redmi Note 11 Pro / Pro+ / Pro+ 5G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "xaga",
@@ -918,7 +1989,17 @@
 					"zh": "Redmi Note 11T Pro / Pro+",
 					"en": "Redmi Note 11T Pro / Pro+"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "spes",
@@ -927,7 +2008,16 @@
 					"zh": "Redmi Note 11 国际版",
 					"en": "Redmi Note 11"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "spesn",
@@ -936,7 +2026,16 @@
 					"zh": "Redmi Note 11 NFC",
 					"en": "Redmi Note 11 NFC"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "viva",
@@ -945,7 +2044,16 @@
 					"zh": "Redmi Note 11 Pro 4G",
 					"en": "Redmi Note 11 Pro 4G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "vida",
@@ -954,7 +2062,16 @@
 					"zh": "Redmi Note 11 Pro 4G 印度版",
 					"en": "Redmi Note 11 Pro 4G India"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "fleur",
@@ -963,7 +2080,16 @@
 					"zh": "Redmi Note 11S 4G",
 					"en": "Redmi Note 11S 4G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "opal",
@@ -972,7 +2098,16 @@
 					"zh": "Redmi Note 11S 5G",
 					"en": "Redmi Note 11S 5G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "sky",
@@ -981,7 +2116,18 @@
 					"zh": "Redmi Note 12R",
 					"en": "Redmi Note 12R"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "sunstone",
@@ -990,7 +2136,17 @@
 					"zh": "Redmi Note 12 5G / Note 12R Pro",
 					"en": "Redmi Note 12 5G / Note 12R Pro"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "ruby",
@@ -999,7 +2155,17 @@
 					"zh": "Redmi Note 12 Pro / Pro+ / 探索版",
 					"en": "Redmi Note 12 Pro / Pro+ / Discovery 5G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "redwood",
@@ -1008,7 +2174,17 @@
 					"zh": "Redmi Note 12 Pro 极速版",
 					"en": "Redmi Note 12 Pro Speed"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "pearl",
@@ -1017,7 +2193,19 @@
 					"zh": "Redmi Note 12T Pro",
 					"en": "Redmi Note 12T Pro"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "marble",
@@ -1026,7 +2214,19 @@
 					"zh": "Redmi Note 12 Turbo",
 					"en": "Redmi Note 12 Turbo"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "tapas",
@@ -1035,7 +2235,18 @@
 					"zh": "Redmi Note 12 4G",
 					"en": "Redmi Note 12 4G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "topaz",
@@ -1044,7 +2255,18 @@
 					"zh": "Redmi Note 12 4G NFC",
 					"en": "Redmi Note 12 4G NFC"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "sweet_k6a",
@@ -1053,7 +2275,16 @@
 					"zh": "Redmi Note 12 Pro 4G",
 					"en": "Redmi Note 12 Pro 4G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "sea",
@@ -1062,7 +2293,18 @@
 					"zh": "Redmi Note 12S",
 					"en": "Redmi Note 12S"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "sapphire",
@@ -1071,7 +2313,18 @@
 					"zh": "Redmi Note 13 4G",
 					"en": "Redmi Note 13 4G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "gold",
@@ -1080,7 +2333,19 @@
 					"zh": "Redmi Note 13 5G",
 					"en": "Redmi Note 13 5G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "breeze",
@@ -1089,7 +2354,20 @@
 					"zh": "Redmi Note 13R 5G",
 					"en": "Redmi Note 13R 5G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "garnet",
@@ -1098,7 +2376,20 @@
 					"zh": "Redmi Note 13 Pro 5G",
 					"en": "Redmi Note 13 Pro 5G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "emerald",
@@ -1107,7 +2398,20 @@
 					"zh": "Redmi Note 13 Pro 4G",
 					"en": "Redmi Note 13 Pro 4G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "zircon",
@@ -1116,7 +2420,20 @@
 					"zh": "Redmi Note 13 Pro+ 5G",
 					"en": "Redmi Note 13 Pro+ 5G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "gold",
@@ -1125,7 +2442,19 @@
 					"zh": "Redmi Note 13R Pro",
 					"en": "Redmi Note 13R Pro"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "sapphire",
@@ -1134,7 +2463,18 @@
 					"zh": "Redmi Note 13 国际版",
 					"en": "Redmi Note 13"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "sapphiren",
@@ -1143,7 +2483,18 @@
 					"zh": "Redmi Note 13 NFC",
 					"en": "Redmi Note 13 NFC"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "tanzanite",
@@ -1152,7 +2503,20 @@
 					"zh": "Redmi Note 14 4G",
 					"en": "Redmi Note 14 4G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "beryl",
@@ -1161,7 +2525,20 @@
 					"zh": "Redmi Note 14 5G",
 					"en": "Redmi Note 14 5G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "obsidian",
@@ -1170,7 +2547,20 @@
 					"zh": "Redmi Note 14 Pro 4G",
 					"en": "Redmi Note 14 Pro 4G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "malachite",
@@ -1179,7 +2569,20 @@
 					"zh": "Redmi Note 14 Pro",
 					"en": "Redmi Note 14 Pro"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "amethyst",
@@ -1188,7 +2591,20 @@
 					"zh": "Redmi Note 14 Pro+",
 					"en": "Redmi Note 14 Pro+"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "emerald_r",
@@ -1197,7 +2613,20 @@
 					"zh": "Redmi Note 14s",
 					"en": "Redmi Note 14s"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "spring",
@@ -1206,7 +2635,18 @@
 					"zh": "REDMI Note 15R 5G",
 					"en": "REDMI Note 15R 5G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "kunzite",
@@ -1215,7 +2655,18 @@
 					"zh": "REDMI Note 15 5G",
 					"en": "REDMI Note 15 5G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "lapis",
@@ -1224,7 +2675,18 @@
 					"zh": "REDMI Note 15 Pro 5G",
 					"en": "REDMI Note 15 Pro 5G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "flourite",
@@ -1233,7 +2695,18 @@
 					"zh": "REDMI Note 15 Pro+ 5G",
 					"en": "REDMI Note 15 Pro+ 5G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "spinel",
@@ -1242,7 +2715,18 @@
 					"zh": "REDMI Note 15 4G",
 					"en": "REDMI Note 15 4G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "charoite",
@@ -1251,7 +2735,18 @@
 					"zh": "REDMI Note 15 Pro 4G",
 					"en": "REDMI Note 15 Pro 4G"
 				},
-				"series": "Redmi Note系列"
+				"series": {
+					"zh": "Redmi Note系列",
+					"en": "Redmi Note Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "peridot",
@@ -1260,7 +2755,20 @@
 					"zh": "Redmi Turbo 3",
 					"en": "Redmi Turbo 3"
 				},
-				"series": "Redmi Turbo系列"
+				"series": {
+					"zh": "Redmi Turbo系列",
+					"en": "Redmi Turbo Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "rodin",
@@ -1269,7 +2777,18 @@
 					"zh": "REDMI Turbo 4",
 					"en": "REDMI Turbo 4"
 				},
-				"series": "Redmi Turbo系列"
+				"series": {
+					"zh": "Redmi Turbo系列",
+					"en": "Redmi Turbo Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "onyx",
@@ -1278,7 +2797,18 @@
 					"zh": "REDMI Turbo 4 Pro",
 					"en": "REDMI Turbo 4 Pro"
 				},
-				"series": "Redmi Turbo系列"
+				"series": {
+					"zh": "Redmi Turbo系列",
+					"en": "Redmi Turbo Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "klee",
@@ -1287,7 +2817,16 @@
 					"zh": "REDMI Turbo 5",
 					"en": "REDMI Turbo 5"
 				},
-				"series": "Redmi Turbo系列"
+				"series": {
+					"zh": "Redmi Turbo系列",
+					"en": "Redmi Turbo Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "dash",
@@ -1296,7 +2835,16 @@
 					"zh": "REDMI Turbo 5 MAX",
 					"en": "REDMI Turbo 5 MAX"
 				},
-				"series": "Redmi Turbo系列"
+				"series": {
+					"zh": "Redmi Turbo系列",
+					"en": "Redmi Turbo Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "alioth",
@@ -1305,7 +2853,16 @@
 					"zh": "Redmi K40",
 					"en": "Redmi K40"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "haydn",
@@ -1314,7 +2871,16 @@
 					"zh": "Redmi K40 Pro/Pro+",
 					"en": "Redmi K40 Pro/Pro+"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "ares",
@@ -1323,7 +2889,16 @@
 					"zh": "Redmi K40 游戏增强版",
 					"en": "Redmi K40 Gaming"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "munch",
@@ -1332,7 +2907,16 @@
 					"zh": "Redmi K40S",
 					"en": "Redmi K40S"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "rubens",
@@ -1341,7 +2925,17 @@
 					"zh": "Redmi K50",
 					"en": "Redmi K50"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "matisse",
@@ -1350,7 +2944,17 @@
 					"zh": "Redmi K50 Pro",
 					"en": "Redmi K50 Pro"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "xaga",
@@ -1359,7 +2963,17 @@
 					"zh": "Redmi K50i",
 					"en": "Redmi K50i"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "ingres",
@@ -1368,7 +2982,17 @@
 					"zh": "Redmi K50 电竞版",
 					"en": "Redmi K50G"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "diting",
@@ -1377,7 +3001,19 @@
 					"zh": "Redmi K50 至尊版",
 					"en": "Redmi K50 Ultra"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "rembrandt",
@@ -1386,7 +3022,17 @@
 					"zh": "Redmi K60E",
 					"en": "Redmi K60E"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "mondrian",
@@ -1395,7 +3041,19 @@
 					"zh": "Redmi K60",
 					"en": "Redmi K60"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "socrates",
@@ -1404,7 +3062,20 @@
 					"zh": "Redmi K60 Pro",
 					"en": "Redmi K60 Pro"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "corot",
@@ -1413,7 +3084,21 @@
 					"zh": "Redmi K60 至尊版",
 					"en": "Redmi K60 Ultra"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS1.1",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "duchamp",
@@ -1422,7 +3107,20 @@
 					"zh": "Redmi K70E",
 					"en": "Redmi K70E"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "vermeer",
@@ -1431,7 +3129,20 @@
 					"zh": "Redmi K70",
 					"en": "Redmi K70"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "manet",
@@ -1440,7 +3151,20 @@
 					"zh": "Redmi K70 Pro",
 					"en": "Redmi K70 Pro"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "rothko",
@@ -1449,7 +3173,20 @@
 					"zh": "Redmi K70 至尊版",
 					"en": "Redmi K70 Ultra"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "zorn",
@@ -1458,7 +3195,18 @@
 					"zh": "REDMI K80",
 					"en": "REDMI K80"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "miro",
@@ -1467,7 +3215,18 @@
 					"zh": "REDMI K80 Pro",
 					"en": "REDMI K80 Pro"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "dali",
@@ -1476,7 +3235,18 @@
 					"zh": "REDMI K80 至尊版",
 					"en": "REDMI K80 Ultra"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "annibale",
@@ -1485,7 +3255,16 @@
 					"zh": "REDMI K90",
 					"en": "REDMI K90"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "prague",
@@ -1494,7 +3273,16 @@
 					"zh": "REDMI K90 Max",
 					"en": "REDMI K90 Max"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "myron",
@@ -1503,7 +3291,16 @@
 					"zh": "REDMI K90 Pro Max",
 					"en": "REDMI K90 Pro Max"
 				},
-				"series": "Redmi K系列"
+				"series": {
+					"zh": "Redmi K系列",
+					"en": "Redmi K Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "yunluo",
@@ -1512,7 +3309,16 @@
 					"zh": "Redmi 平板",
 					"en": "Redmi Pad"
 				},
-				"series": "REDMI 平板系列"
+				"series": {
+					"zh": "REDMI 平板系列",
+					"en": "REDMI Pad Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "xun",
@@ -1521,7 +3327,18 @@
 					"zh": "Redmi 平板 SE",
 					"en": "Redmi Pad SE"
 				},
-				"series": "REDMI 平板系列"
+				"series": {
+					"zh": "REDMI 平板系列",
+					"en": "REDMI Pad Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "spark",
@@ -1530,7 +3347,20 @@
 					"zh": "Redmi 平板 SE 4G 8.7",
 					"en": "Redmi Pad SE 4G 8.7"
 				},
-				"series": "REDMI 平板系列"
+				"series": {
+					"zh": "REDMI 平板系列",
+					"en": "REDMI Pad Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "flare",
@@ -1539,7 +3369,20 @@
 					"zh": "Redmi Pad SE 8.7 Wi-Fi",
 					"en": "Redmi Pad SE 8.7 Wi-Fi"
 				},
-				"series": "REDMI 平板系列"
+				"series": {
+					"zh": "REDMI 平板系列",
+					"en": "REDMI Pad Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "guitar",
@@ -1548,7 +3391,16 @@
 					"zh": "REDMI Pad 2 SE",
 					"en": "REDMI Pad 2 SE"
 				},
-				"series": "REDMI 平板系列"
+				"series": {
+					"zh": "REDMI 平板系列",
+					"en": "REDMI Pad Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "dizi",
@@ -1557,7 +3409,20 @@
 					"zh": "Redmi Pad Pro / 哈利·波特版",
 					"en": "Redmi Pad Pro / Special Edition featuring Harry Potter"
 				},
-				"series": "REDMI 平板系列"
+				"series": {
+					"zh": "REDMI 平板系列",
+					"en": "REDMI Pad Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "ruan",
@@ -1566,7 +3431,20 @@
 					"zh": "Redmi Pad Pro 5G",
 					"en": "Redmi Pad Pro 5G"
 				},
-				"series": "REDMI 平板系列"
+				"series": {
+					"zh": "REDMI 平板系列",
+					"en": "REDMI Pad Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "koto",
@@ -1575,7 +3453,18 @@
 					"zh": "Redmi 平板 2 4G",
 					"en": "Redmi Pad 2 4G"
 				},
-				"series": "REDMI 平板系列"
+				"series": {
+					"zh": "REDMI 平板系列",
+					"en": "REDMI Pad Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "taiko",
@@ -1584,7 +3473,18 @@
 					"zh": "REDMI 平板 2",
 					"en": "REDMI Pad 2"
 				},
-				"series": "REDMI 平板系列"
+				"series": {
+					"zh": "REDMI 平板系列",
+					"en": "REDMI Pad Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "flute",
@@ -1593,7 +3493,18 @@
 					"zh": "REDMI 平板 2 Pro",
 					"en": "REDMI Pad 2 Pro"
 				},
-				"series": "REDMI 平板系列"
+				"series": {
+					"zh": "REDMI 平板系列",
+					"en": "REDMI Pad Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "organ",
@@ -1602,7 +3513,18 @@
 					"zh": "REDMI 平板 2 Pro 5G",
 					"en": "REDMI Pad 2 Pro 5G"
 				},
-				"series": "REDMI 平板系列"
+				"series": {
+					"zh": "REDMI 平板系列",
+					"en": "REDMI Pad Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "turner",
@@ -1611,7 +3533,18 @@
 					"zh": "REDMI K Pad",
 					"en": "REDMI K Pad"
 				},
-				"series": "REDMI 平板系列"
+				"series": {
+					"zh": "REDMI 平板系列",
+					"en": "REDMI Pad Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "yili",
@@ -1620,7 +3553,16 @@
 					"zh": "REDMI K Pad 2",
 					"en": "REDMI K Pad 2"
 				},
-				"series": "REDMI 平板系列"
+				"series": {
+					"zh": "REDMI 平板系列",
+					"en": "REDMI Pad Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "warm",
@@ -1629,7 +3571,20 @@
 					"zh": "Redmi A4 5G",
 					"en": "Redmi A4 5G"
 				},
-				"series": "Redmi A系列"
+				"series": {
+					"zh": "Redmi A系列",
+					"en": "Redmi A Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "serenity",
@@ -1638,7 +3593,16 @@
 					"zh": "REDMI A5",
 					"en": "REDMI A5"
 				},
-				"series": "Redmi A系列"
+				"series": {
+					"zh": "Redmi A系列",
+					"en": "Redmi A Series"
+				},
+				"supports": [
+					"A15.0"
+				],
+				"android": [
+					"15.0"
+				]
 			},
 			{
 				"code": "arctic",
@@ -1647,7 +3611,16 @@
 					"zh": "REDMI A7 Pro",
 					"en": "REDMI A7 Pro"
 				},
-				"series": "Redmi A系列"
+				"series": {
+					"zh": "Redmi A系列",
+					"en": "Redmi A Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			}
 		]
 	},
@@ -1663,7 +3636,16 @@
 					"zh": "POCO C55",
 					"en": "POCO C55"
 				},
-				"series": "POCO C系列"
+				"series": {
+					"zh": "POCO C系列",
+					"en": "POCO C Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "gale",
@@ -1672,7 +3654,18 @@
 					"zh": "POCO C65",
 					"en": "POCO C65"
 				},
-				"series": "POCO C系列"
+				"series": {
+					"zh": "POCO C系列",
+					"en": "POCO C Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "serenity",
@@ -1681,7 +3674,16 @@
 					"zh": "POCO C71",
 					"en": "POCO C71"
 				},
-				"series": "POCO C系列"
+				"series": {
+					"zh": "POCO C系列",
+					"en": "POCO C Series"
+				},
+				"supports": [
+					"A15.0"
+				],
+				"android": [
+					"15.0"
+				]
 			},
 			{
 				"code": "warm",
@@ -1690,7 +3692,20 @@
 					"zh": "POCO C75 5G",
 					"en": "POCO C75 5G"
 				},
-				"series": "POCO C系列"
+				"series": {
+					"zh": "POCO C系列",
+					"en": "POCO C Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "dew",
@@ -1699,7 +3714,18 @@
 					"zh": "POCO C85",
 					"en": "POCO C85"
 				},
-				"series": "POCO C系列"
+				"series": {
+					"zh": "POCO C系列",
+					"en": "POCO C Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "somalia",
@@ -1708,7 +3734,16 @@
 					"zh": "POCO C85x 5G",
 					"en": "POCO C85x 5G"
 				},
-				"series": "POCO C系列"
+				"series": {
+					"zh": "POCO C系列",
+					"en": "POCO C Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "dew",
@@ -1717,7 +3752,18 @@
 					"zh": "POCO C85",
 					"en": "POCO C85"
 				},
-				"series": "POCO C系列"
+				"series": {
+					"zh": "POCO C系列",
+					"en": "POCO C Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "alioth",
@@ -1726,7 +3772,16 @@
 					"zh": "POCO F3",
 					"en": "POCO F3"
 				},
-				"series": "POCO F系列"
+				"series": {
+					"zh": "POCO F系列",
+					"en": "POCO F Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "ares",
@@ -1735,7 +3790,16 @@
 					"zh": "POCO F3 GT",
 					"en": "POCO F3 GT"
 				},
-				"series": "POCO F系列"
+				"series": {
+					"zh": "POCO F系列",
+					"en": "POCO F Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "munch",
@@ -1744,7 +3808,16 @@
 					"zh": "POCO F4",
 					"en": "POCO F4"
 				},
-				"series": "POCO F系列"
+				"series": {
+					"zh": "POCO F系列",
+					"en": "POCO F Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "ingres",
@@ -1753,7 +3826,17 @@
 					"zh": "POCO F4 GT",
 					"en": "POCO F4 GT"
 				},
-				"series": "POCO F系列"
+				"series": {
+					"zh": "POCO F系列",
+					"en": "POCO F Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "marble",
@@ -1762,7 +3845,19 @@
 					"zh": "POCO F5",
 					"en": "POCO F5"
 				},
-				"series": "POCO F系列"
+				"series": {
+					"zh": "POCO F系列",
+					"en": "POCO F Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "mondrian",
@@ -1771,7 +3866,19 @@
 					"zh": "POCO F5 Pro",
 					"en": "POCO F5 Pro"
 				},
-				"series": "POCO F系列"
+				"series": {
+					"zh": "POCO F系列",
+					"en": "POCO F Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "peridot",
@@ -1780,7 +3887,20 @@
 					"zh": "POCO F6",
 					"en": "POCO F6"
 				},
-				"series": "POCO F系列"
+				"series": {
+					"zh": "POCO F系列",
+					"en": "POCO F Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "vermeer",
@@ -1789,7 +3909,20 @@
 					"zh": "POCO F6 Pro",
 					"en": "POCO F6 Pro"
 				},
-				"series": "POCO F系列"
+				"series": {
+					"zh": "POCO F系列",
+					"en": "POCO F Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "onyx",
@@ -1798,7 +3931,18 @@
 					"zh": "POCO F7",
 					"en": "POCO F7"
 				},
-				"series": "POCO F系列"
+				"series": {
+					"zh": "POCO F系列",
+					"en": "POCO F Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "zorn",
@@ -1807,7 +3951,18 @@
 					"zh": "POCO F7 Pro",
 					"en": "POCO F7 Pro"
 				},
-				"series": "POCO F系列"
+				"series": {
+					"zh": "POCO F系列",
+					"en": "POCO F Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "miro",
@@ -1816,7 +3971,18 @@
 					"zh": "POCO F7 Ultra",
 					"en": "POCO F7 Ultra"
 				},
-				"series": "POCO F系列"
+				"series": {
+					"zh": "POCO F系列",
+					"en": "POCO F Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "annibale",
@@ -1825,7 +3991,16 @@
 					"zh": "POCO F8 Pro",
 					"en": "POCO F8 Pro"
 				},
-				"series": "POCO F系列"
+				"series": {
+					"zh": "POCO F系列",
+					"en": "POCO F Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "myron",
@@ -1834,7 +4009,16 @@
 					"zh": "POCO F8 Ultra",
 					"en": "POCO F8 Ultra"
 				},
-				"series": "POCO F系列"
+				"series": {
+					"zh": "POCO F系列",
+					"en": "POCO F Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "fleur",
@@ -1843,7 +4027,16 @@
 					"zh": "POCO M4 Pro 4G",
 					"en": "POCO M4 Pro 4G"
 				},
-				"series": "POCO M系列"
+				"series": {
+					"zh": "POCO M系列",
+					"en": "POCO M Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "light",
@@ -1852,7 +4045,16 @@
 					"zh": "POCO M4 5G",
 					"en": "POCO M4 5G"
 				},
-				"series": "POCO M系列"
+				"series": {
+					"zh": "POCO M系列",
+					"en": "POCO M Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "evergreen",
@@ -1861,7 +4063,16 @@
 					"zh": "POCO M4 Pro 5G",
 					"en": "POCO M4 Pro 5G"
 				},
-				"series": "POCO M系列"
+				"series": {
+					"zh": "POCO M系列",
+					"en": "POCO M Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "rock",
@@ -1870,7 +4081,16 @@
 					"zh": "POCO M5",
 					"en": "POCO M5"
 				},
-				"series": "POCO M系列"
+				"series": {
+					"zh": "POCO M系列",
+					"en": "POCO M Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "moon",
@@ -1879,7 +4099,20 @@
 					"zh": "POCO M6 4G",
 					"en": "POCO M6 4G"
 				},
-				"series": "POCO M系列"
+				"series": {
+					"zh": "POCO M系列",
+					"en": "POCO M Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "air",
@@ -1888,7 +4121,18 @@
 					"zh": "POCO M6 5G",
 					"en": "POCO M6 5G"
 				},
-				"series": "POCO M系列"
+				"series": {
+					"zh": "POCO M系列",
+					"en": "POCO M Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "breeze",
@@ -1897,7 +4141,20 @@
 					"zh": "POCO M6 Plus 5G",
 					"en": "POCO M6 Plus 5G"
 				},
-				"series": "POCO M系列"
+				"series": {
+					"zh": "POCO M系列",
+					"en": "POCO M Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "emerald",
@@ -1906,7 +4163,20 @@
 					"zh": "POCO M6 Pro 4G",
 					"en": "POCO M6 Pro 4G"
 				},
-				"series": "POCO M系列"
+				"series": {
+					"zh": "POCO M系列",
+					"en": "POCO M Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "sky",
@@ -1915,7 +4185,18 @@
 					"zh": "POCO M6 Pro 5G",
 					"en": "POCO M6 Pro 5G"
 				},
-				"series": "POCO M系列"
+				"series": {
+					"zh": "POCO M系列",
+					"en": "POCO M Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "flame",
@@ -1924,7 +4205,20 @@
 					"zh": "POCO M7 5G",
 					"en": "POCO M7 5G"
 				},
-				"series": "POCO M系列"
+				"series": {
+					"zh": "POCO M系列",
+					"en": "POCO M Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "beryl",
@@ -1933,7 +4227,20 @@
 					"zh": "POCO M7 Pro 5G",
 					"en": "POCO M7 Pro 5G"
 				},
-				"series": "POCO M系列"
+				"series": {
+					"zh": "POCO M系列",
+					"en": "POCO M Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "xaga",
@@ -1942,7 +4249,17 @@
 					"zh": "POCO X4 GT / Pro",
 					"en": "POCO X4 GT / Pro"
 				},
-				"series": "POCO X系列"
+				"series": {
+					"zh": "POCO X系列",
+					"en": "POCO X Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "flourite",
@@ -1951,7 +4268,18 @@
 					"zh": "POCO M8 Pro",
 					"en": "POCO M8 Pro"
 				},
-				"series": "POCO M系列"
+				"series": {
+					"zh": "POCO M系列",
+					"en": "POCO M Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "veux",
@@ -1960,7 +4288,16 @@
 					"zh": "POCO X4 Pro 5G",
 					"en": "POCO X4 Pro 5G"
 				},
-				"series": "POCO X系列"
+				"series": {
+					"zh": "POCO X系列",
+					"en": "POCO X Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"13.0"
+				]
 			},
 			{
 				"code": "redwood",
@@ -1969,7 +4306,17 @@
 					"zh": "POCO X5 Pro 5G",
 					"en": "POCO X5 Pro 5G"
 				},
-				"series": "POCO X系列"
+				"series": {
+					"zh": "POCO X系列",
+					"en": "POCO X Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "moonstone",
@@ -1978,7 +4325,16 @@
 					"zh": "POCO X5 5G",
 					"en": "POCO X5 5G"
 				},
-				"series": "POCO X系列"
+				"series": {
+					"zh": "POCO X系列",
+					"en": "POCO X Series"
+				},
+				"supports": [
+					"OS1.0"
+				],
+				"android": [
+					"14.0"
+				]
 			},
 			{
 				"code": "gold",
@@ -1987,7 +4343,19 @@
 					"zh": "POCO X6 Neo 5G",
 					"en": "POCO X6 Neo 5G"
 				},
-				"series": "POCO X系列"
+				"series": {
+					"zh": "POCO X系列",
+					"en": "POCO X Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0"
+				]
 			},
 			{
 				"code": "garnet",
@@ -1996,7 +4364,20 @@
 					"zh": "POCO X6 5G",
 					"en": "POCO X6 5G"
 				},
-				"series": "POCO X系列"
+				"series": {
+					"zh": "POCO X系列",
+					"en": "POCO X Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "duchamp",
@@ -2005,7 +4386,20 @@
 					"zh": "POCO X6 Pro 5G",
 					"en": "POCO X6 Pro 5G"
 				},
-				"series": "POCO X系列"
+				"series": {
+					"zh": "POCO X系列",
+					"en": "POCO X Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "malachite",
@@ -2014,7 +4408,20 @@
 					"zh": "POCO X7",
 					"en": "POCO X7"
 				},
-				"series": "POCO X系列"
+				"series": {
+					"zh": "POCO X系列",
+					"en": "POCO X Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "rodin",
@@ -2023,7 +4430,18 @@
 					"zh": "POCO X7 Pro",
 					"en": "POCO X7 Pro"
 				},
-				"series": "POCO X系列"
+				"series": {
+					"zh": "POCO X系列",
+					"en": "POCO X Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "klee",
@@ -2032,7 +4450,16 @@
 					"zh": "POCO X8 Pro",
 					"en": "POCO X8 Pro"
 				},
-				"series": "POCO X系列"
+				"series": {
+					"zh": "POCO X系列",
+					"en": "POCO X Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "dash",
@@ -2041,7 +4468,16 @@
 					"zh": "POCO X8 Pro Max",
 					"en": "POCO X8 Pro Max"
 				},
-				"series": "POCO X系列"
+				"series": {
+					"zh": "POCO X系列",
+					"en": "POCO X Series"
+				},
+				"supports": [
+					"OS3.0"
+				],
+				"android": [
+					"16.0"
+				]
 			},
 			{
 				"code": "dizi",
@@ -2050,7 +4486,20 @@
 					"zh": "POCO Pad",
 					"en": "POCO Pad"
 				},
-				"series": "POCO Pad系列"
+				"series": {
+					"zh": "POCO Pad系列",
+					"en": "POCO Pad Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "uke",
@@ -2059,7 +4508,18 @@
 					"zh": "POCO Pad X1",
 					"en": "POCO Pad X1"
 				},
-				"series": "POCO Pad系列"
+				"series": {
+					"zh": "POCO Pad系列",
+					"en": "POCO Pad Series"
+				},
+				"supports": [
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"15.0",
+					"16.0"
+				]
 			},
 			{
 				"code": "ruan",
@@ -2068,7 +4528,20 @@
 					"zh": "POCO Pad 5G",
 					"en": "POCO Pad 5G"
 				},
-				"series": "POCO Pad系列"
+				"series": {
+					"zh": "POCO Pad系列",
+					"en": "POCO Pad Series"
+				},
+				"supports": [
+					"OS1.0",
+					"OS2.0",
+					"OS3.0"
+				],
+				"android": [
+					"14.0",
+					"15.0",
+					"16.0"
+				]
 			}
 		]
 	}

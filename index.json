@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-04-24 18:08:57",
+    "time": "2026-04-25 02:48:02",
     "developing": "no",
     "roms": {
       "nuwa": {
@@ -432,6 +432,10 @@
           {
             "release_date": "2026-04-21",
             "version": "OS3.0.302.0.WNNCNXM"
+          },
+          {
+            "release_date": "2026-04-21",
+            "version": "OS3.0.3.0.WNNTWXM"
           }
         ]
       },

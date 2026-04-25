@@ -79,6 +79,45 @@ for device in OScommon.currentStable:
 if 1 in list(set(errors)):
 	print("数据有误，请核实后提交git")
 else:
+	print("开始更新 devices.json 中的 supports 和 android 字段...")
+	
+	# 读取 devices.json
+	devices_json_path = 'public/data/devices.json'
+	with open(devices_json_path, 'r', encoding='utf-8') as f:
+		devices_data = json.load(f)
+	updated_count = 0
+	for brand_key in devices_data:
+		brand_info = devices_data[brand_key]
+		if 'devices' not in brand_info:
+			continue
+		for device_idx, device_info in enumerate(brand_info['devices']):
+			code = device_info.get('code')
+			if not code:
+				continue
+			device_file_path = f'public/data/devices/{code}.json'
+			if not os.path.exists(device_file_path):
+				print(f"  ⚠ 警告: 设备文件不存在 - {device_file_path}")
+				continue
+			
+			try:
+				with open(device_file_path, 'r', encoding='utf-8') as f:
+					device_data = json.load(f)
+				supports = device_data.get('suppports', [])
+				android = device_data.get('android', [])
+				
+				if supports or android:
+					devices_data[brand_key]['devices'][device_idx]['supports'] = supports
+					devices_data[brand_key]['devices'][device_idx]['android'] = android
+					updated_count += 1
+					
+			except Exception as e:
+				print(f"  ✗ 错误: 处理 {code} 时出错 - {str(e)}")
+				continue
+	with open(devices_json_path, 'w', encoding='utf-8') as f:
+		json.dump(devices_data, f, ensure_ascii=False, indent='\t')
+	
+	print(f"✓ 完成！共更新了 {updated_count} 个设备的 supports 和 android 字段")
+	print()
 	os.system(f"cd public/data && git add . && git commit -m {updates['recent']['time'].replace(" " , "-")} && git push origin main")
 	time.sleep(8)
 	os.system(f"curl -X POST \"{config.deploy_url}\"")

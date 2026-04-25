@@ -259,8 +259,8 @@
 					"android": "16.0",
 					"release": "2026-04-10",
 					"recovery": "aurora-ota_full-OS3.0.304.0.WNACNXM-user-16.0-528f7ee338.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "aurora_images_OS3.0.304.0.WNACNXM_20260403.0000.00_16.0_cn_8fe44eba70.tgz",
+					"ctelecom": "aurora_images_OS3.0.304.0.WNACNXM_20260403.0000.00_16.0_cn_chinatelecom_6d90b6e83c.tgz"
 				},
 				"OS3.0.7.0.WNACNXM": {
 					"os": "OS3.0.7.0.WNACNXM",

@@ -694,6 +694,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.3.0.WNNTWXM": {
+					"os": "OS3.0.3.0.WNNTWXM",
+					"android": "16.0",
+					"release": "2026-04-21",
+					"recovery": "rothko_tw_global-ota_full-OS3.0.3.0.WNNTWXM-user-16.0-157a57f607.zip",
+					"fastboot": ""
+				},
 				"OS3.0.1.0.WNNTWXM": {
 					"os": "OS3.0.1.0.WNNTWXM",
 					"android": "16.0",
