@@ -49,6 +49,13 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.301.4.WONCNXM": {
+					"os": "OS3.0.301.4.WONCNXM",
+					"android": "16.0",
+					"release": "2026-03-30",
+					"recovery": "dali-ota_full-OS3.0.301.4.WONCNXM-user-16.0-cc3beab8dc.zip",
+					"fastboot": ""
+				},
 				"OS3.0.300.6.WONCNXM": {
 					"os": "OS3.0.300.6.WONCNXM",
 					"android": "16.0",
