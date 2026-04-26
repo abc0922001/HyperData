@@ -53,8 +53,8 @@
           "android": "16.0",
           "release": "2026-04-23",
           "recovery": "prague-ota_full-OS3.0.308.0.WAACNXM-user-16.0-2f5a830366.zip",
-          "fastboot": "",
-          "ctelecom": ""
+          "fastboot": "prague_images_OS3.0.308.0.WAACNXM_20260422.0000.00_16.0_cn_ac260be858.tgz",
+          "ctelecom": "prague_images_OS3.0.308.0.WAACNXM_20260422.0000.00_16.0_cn_chinatelecom_0f749fb8bf.tgz"
         },
         "OS3.0.304.0.WAACNXM": {
           "os": "OS3.0.304.0.WAACNXM",

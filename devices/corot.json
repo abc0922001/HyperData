@@ -905,7 +905,7 @@
 					"android": "16.0",
 					"release": "2026-04-09",
 					"recovery": "corot_eea_global-ota_full-OS3.0.5.0.WMLEUXM-user-16.0-5b33ededee.zip",
-					"fastboot": ""
+					"fastboot": "corot_eea_global_images_OS3.0.5.0.WMLEUXM_20260331.0000.00_16.0_eea_86bbe01221.tgz"
 				},
 				"OS3.0.4.0.WMLEUXM": {
 					"os": "OS3.0.4.0.WMLEUXM",

@@ -1628,6 +1628,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.3.0.WNOJPXM": {
+					"os": "OS3.0.3.0.WNOJPXM",
+					"android": "16.0",
+					"release": "2026-04-25",
+					"recovery": "zircon_jp_global-ota_full-OS3.0.3.0.WNOJPXM-user-16.0-6d7c4d6c21.zip",
+					"fastboot": ""
+				},
 				"OS3.0.2.0.WNOJPXM": {
 					"os": "OS3.0.2.0.WNOJPXM",
 					"android": "16.0",

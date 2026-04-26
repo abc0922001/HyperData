@@ -229,7 +229,7 @@
           "android": "16.0",
           "release": "2026-04-17",
           "recovery": "klee_global-ota_full-OS3.0.5.0.WPJMIXM-user-16.0-fdcd033531.zip",
-          "fastboot": ""
+          "fastboot": "klee_global_images_OS3.0.5.0.WPJMIXM_20260328.0000.00_16.0_global_8fdfad0755.tgz"
         },
         "OS3.0.4.0.WPJMIXM": {
           "os": "OS3.0.4.0.WPJMIXM",
@@ -319,7 +319,7 @@
           "android": "16.0",
           "release": "2026-04-17",
           "recovery": "klee_ru_global-ota_full-OS3.0.4.0.WPJRUXM-user-16.0-24fc42d167.zip",
-          "fastboot": ""
+          "fastboot": "klee_ru_global_images_OS3.0.4.0.WPJRUXM_20260328.0000.00_16.0_ru_a26ce9c05c.tgz"
         },
         "OS3.0.3.0.WPJRUXM": {
           "os": "OS3.0.3.0.WPJRUXM",

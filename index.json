@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-04-25 11:14:32",
+    "time": "2026-04-25 23:46:43",
     "developing": "no",
     "roms": {
       "nuwa": {
@@ -276,6 +276,10 @@
           {
             "release_date": "2026-04-22",
             "version": "OS3.0.303.0.WNOCNXM"
+          },
+          {
+            "release_date": "2026-04-25",
+            "version": "OS3.0.3.0.WNOJPXM"
           }
         ]
       },
@@ -384,6 +388,18 @@
           {
             "release_date": "2026-04-20",
             "version": "OS3.0.5.0.WPJINXM"
+          }
+        ]
+      },
+      "dash": {
+        "name": {
+          "zh": "REDMI Turbo 5 MAX / POCO X8 Pro MAX",
+          "en": "REDMI Turbo 5 MAX / POCO X8 Pro MAX"
+        },
+        "versions": [
+          {
+            "release_date": "2026-04-22",
+            "version": "OS3.0.3.0.WPLEUXM"
           }
         ]
       },
@@ -561,6 +577,10 @@
           "en": "REDMI K Pad 2"
         },
         "versions": [
+          {
+            "release_date": "2026-04-24",
+            "version": "OS3.0.304.0.WAKCNXM"
+          },
           {
             "release_date": "2026-04-21",
             "version": "OS3.0.303.0.WAKCNXM"
