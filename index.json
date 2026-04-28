@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-04-27 22:22:54",
+    "time": "2026-04-28 16:16:21",
     "developing": "no",
     "roms": {
       "pudding": {
@@ -27,6 +27,34 @@
           }
         ]
       },
+      "spring": {
+        "name": {
+          "zh": "REDMI 15 5G / REDMI Note 15R 5G",
+          "en": "REDMI 15 5G / REDMI Note 15R 5G"
+        },
+        "versions": [
+          {
+            "release_date": "2026-04-28",
+            "version": "OS3.0.1.0.WOUMIDC"
+          }
+        ]
+      },
+      "gold": {
+        "name": {
+          "zh": "Redmi Note 13 5G / 13R Pro / POCO X6 Neo 5G",
+          "en": "Redmi Note 13 5G / 13R Pro / POCO X6 Neo 5G"
+        },
+        "versions": [
+          {
+            "release_date": "2026-04-28",
+            "version": "OS3.0.2.0.VNQMIDC"
+          },
+          {
+            "release_date": "2026-04-28",
+            "version": "OS3.0.2.0.VNQTRXM"
+          }
+        ]
+      },
       "breeze": {
         "name": {
           "zh": "Redmi Note 13R 5G / Redmi 13 5G / POCO M6 Plus 5G",
@@ -48,6 +76,42 @@
           {
             "release_date": "2026-04-27",
             "version": "OS2.0.204.0.VNHMIDC"
+          }
+        ]
+      },
+      "emerald_r": {
+        "name": {
+          "zh": "Redmi Note 14s",
+          "en": "Redmi Note 14s"
+        },
+        "versions": [
+          {
+            "release_date": "2026-04-28",
+            "version": "OS3.0.2.0.WFOTRXM"
+          }
+        ]
+      },
+      "flourite": {
+        "name": {
+          "zh": "REDMI Note 15 Pro+ 5G",
+          "en": "REDMI Note 15 Pro+ 5G"
+        },
+        "versions": [
+          {
+            "release_date": "2026-04-28",
+            "version": "OS3.0.307.0.WPRCNXM"
+          }
+        ]
+      },
+      "guitar": {
+        "name": {
+          "zh": "REDMI Pad 2 SE",
+          "en": "REDMI Pad 2 SE"
+        },
+        "versions": [
+          {
+            "release_date": "2026-04-28",
+            "version": "OS3.0.302.0.WDNMIXM"
           }
         ]
       },
