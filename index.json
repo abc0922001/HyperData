@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-04-29 20:28:39",
+    "time": "2026-05-01 03:49:06",
     "developing": "no",
     "roms": {
       "dada": {
@@ -39,6 +39,22 @@
           }
         ]
       },
+      "goya": {
+        "name": {
+          "zh": "小米 15T",
+          "en": "Xiaomi 15T"
+        },
+        "versions": [
+          {
+            "release_date": "2026-04-27",
+            "version": "OS3.0.300.0.WOEIDXM"
+          },
+          {
+            "release_date": "2026-04-27",
+            "version": "OS3.0.300.0.WOETRXM"
+          }
+        ]
+      },
       "pudding": {
         "name": {
           "zh": "小米 17",
@@ -51,6 +67,18 @@
           }
         ]
       },
+      "nezha": {
+        "name": {
+          "zh": "小米 17 Ultra",
+          "en": "Xiaomi 17 Ultra"
+        },
+        "versions": [
+          {
+            "release_date": "2026-04-30",
+            "version": "OS3.0.306.0.WPACNXM"
+          }
+        ]
+      },
       "piano": {
         "name": {
           "zh": "小米平板 8 Pro",
@@ -60,6 +88,18 @@
           {
             "release_date": "2026-04-29",
             "version": "OS3.0.305.0.WPYCNXM"
+          }
+        ]
+      },
+      "yupei": {
+        "name": {
+          "zh": "小米平板 8",
+          "en": "Xiaomi Pad 8"
+        },
+        "versions": [
+          {
+            "release_date": "2026-04-29",
+            "version": "OS3.0.305.0.WPZCNXM"
           }
         ]
       },
@@ -195,6 +235,18 @@
           }
         ]
       },
+      "rodin": {
+        "name": {
+          "zh": "REDMI Turbo 4 / POCO X7 Pro",
+          "en": "REDMI Turbo 4 / POCO X7 Pro"
+        },
+        "versions": [
+          {
+            "release_date": "2026-04-27",
+            "version": "OS3.0.300.0.WOJEUXM"
+          }
+        ]
+      },
       "onyx": {
         "name": {
           "zh": "REDMI Turbo 4 Pro / POCO F7",
@@ -292,6 +344,30 @@
           {
             "release_date": "2026-04-28",
             "version": "OS3.0.301.0.WDNTRXM"
+          }
+        ]
+      },
+      "organ": {
+        "name": {
+          "zh": "REDMI 平板 2 Pro 5G",
+          "en": "REDMI Pad 2 Pro 5G"
+        },
+        "versions": [
+          {
+            "release_date": "2026-04-30",
+            "version": "OS3.0.302.0.WPXCNXM"
+          }
+        ]
+      },
+      "turner": {
+        "name": {
+          "zh": "REDMI K Pad / Xiaomi Pad Mini",
+          "en": "REDMI K Pad / Xiaomi Pad Mini"
+        },
+        "versions": [
+          {
+            "release_date": "2026-04-29",
+            "version": "OS3.0.305.0.WAOCNXM"
           }
         ]
       },
