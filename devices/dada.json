@@ -324,8 +324,8 @@
 					"android": "16.0",
 					"release": "2026-04-23",
 					"recovery": "dada-ota_full-OS3.0.302.0.WOCCNXM-user-16.0-5cf9a95e78.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "dada_images_OS3.0.302.0.WOCCNXM_20260407.0000.00_16.0_cn_03b5f57e46.tgz",
+					"ctelecom": "dada_images_OS3.0.302.0.WOCCNXM_20260407.0000.00_16.0_cn_chinatelecom_62c0351f92.tgz"
 				},
 				"OS3.0.301.0.WOCCNXM": {
 					"os": "OS3.0.301.0.WOCCNXM",
@@ -1343,6 +1343,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.301.0.WOCRUXM": {
+					"os": "OS3.0.301.0.WOCRUXM",
+					"android": "16.0",
+					"release": "2026-04-30",
+					"recovery": "dada_ru_global-ota_full-OS3.0.301.0.WOCRUXM-user-16.0-02b288b2b8.zip",
+					"fastboot": ""
+				},
 				"OS3.0.2.0.WOCRUXM": {
 					"os": "OS3.0.2.0.WOCRUXM",
 					"android": "16.0",
@@ -1552,6 +1559,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.301.0.WOCIDXM": {
+					"os": "OS3.0.301.0.WOCIDXM",
+					"android": "16.0",
+					"release": "2026-04-30",
+					"recovery": "dada_id_global-ota_full-OS3.0.301.0.WOCIDXM-user-16.0-305db674ab.zip",
+					"fastboot": ""
+				},
 				"OS3.0.3.0.WOCIDXM": {
 					"os": "OS3.0.3.0.WOCIDXM",
 					"android": "16.0",
