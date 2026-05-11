@@ -413,7 +413,7 @@
 					"android": "15.0",
 					"release": "2026-04-28",
 					"recovery": "gold_tw_global-ota_full-OS3.0.2.0.VNQTWXM-user-15.0-99bda67097.zip",
-					"fastboot": ""
+					"fastboot": "gold_tw_global_images_OS3.0.2.0.VNQTWXM_20260407.0000.00_15.0_tw_34cf1a0f16.tgz"
 				},
 				"OS2.0.208.0.VNQTWXM": {
 					"os": "OS2.0.208.0.VNQTWXM",
@@ -579,6 +579,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.3.0.VNQMIXM": {
+					"os": "OS3.0.3.0.VNQMIXM",
+					"android": "15.0",
+					"release": "2026-05-08",
+					"recovery": "gold_global-ota_full-OS3.0.3.0.VNQMIXM-user-15.0-ef9d46e151.zip",
+					"fastboot": ""
+				},
 				"OS3.0.2.0.VNQMIXM": {
 					"os": "OS3.0.2.0.VNQMIXM",
 					"android": "15.0",
@@ -886,6 +893,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.4.0.VNQEUXM": {
+					"os": "OS3.0.4.0.VNQEUXM",
+					"android": "15.0",
+					"release": "2026-05-08",
+					"recovery": "gold_eea_global-ota_full-OS3.0.4.0.VNQEUXM-user-15.0-2a7a630b74.zip",
+					"fastboot": ""
+				},
 				"OS3.0.2.0.VNQEUXM": {
 					"os": "OS3.0.2.0.VNQEUXM",
 					"android": "15.0",
