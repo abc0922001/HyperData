@@ -1,8 +1,20 @@
 {
   "recent": {
-    "time": "2026-05-12 23:30:07",
+    "time": "2026-05-13 22:23:11",
     "developing": "no",
     "roms": {
+      "ishtar": {
+        "name": {
+          "zh": "小米 13 Ultra",
+          "en": "Xiaomi 13 Ultra"
+        },
+        "versions": [
+          {
+            "release_date": "2026-05-13",
+            "version": "OS3.0.305.0.WMACNXM"
+          }
+        ]
+      },
       "shennong": {
         "name": {
           "zh": "小米 14 Pro / Ti / 钛金属卫星通讯版",
@@ -51,6 +63,18 @@
           }
         ]
       },
+      "tornado": {
+        "name": {
+          "zh": "REDMI 15C 5G / REDMI 15R 5G",
+          "en": "REDMI 15C 5G / REDMI 15R 5G"
+        },
+        "versions": [
+          {
+            "release_date": "2026-05-13",
+            "version": "OS2.0.207.0.VPOMIXM"
+          }
+        ]
+      },
       "charoite": {
         "name": {
           "zh": "REDMI Note 15 Pro 4G",
@@ -63,12 +87,28 @@
           }
         ]
       },
+      "guitar": {
+        "name": {
+          "zh": "REDMI Pad 2 SE",
+          "en": "REDMI Pad 2 SE"
+        },
+        "versions": [
+          {
+            "release_date": "2026-05-13",
+            "version": "OS3.0.302.0.WDNEUXM"
+          }
+        ]
+      },
       "somalia": {
         "name": {
           "zh": "REDMI R70 / REDMI R70m / POCO C85x 5G",
           "en": "REDMI R70 / REDMI R70m / POCO C85x 5G"
         },
         "versions": [
+          {
+            "release_date": "2026-05-12",
+            "version": "OS3.0.10.0.WBWCNXM"
+          },
           {
             "release_date": "2026-05-11",
             "version": "OS3.0.9.0.WBWINXM"
