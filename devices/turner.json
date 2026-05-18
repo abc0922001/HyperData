@@ -109,7 +109,7 @@
 					"android": "16.0",
 					"release": "2026-04-29",
 					"recovery": "turner-ota_full-OS3.0.305.0.WAOCNXM-user-16.0-34ce2cd6bc.zip",
-					"fastboot": ""
+					"fastboot": "turner_images_OS3.0.305.0.WAOCNXM_20260424.0000.00_16.0_cn_fb6545f30e.tgz"
 				},
 				"OS3.0.304.0.WAOCNXM": {
 					"os": "OS3.0.304.0.WAOCNXM",
@@ -316,6 +316,13 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.301.0.WAOTWXM": {
+					"os": "OS3.0.301.0.WAOTWXM",
+					"android": "16.0",
+					"release": "2026-05-12",
+					"recovery": "turner_tw_global-ota_full-OS3.0.301.0.WAOTWXM-user-16.0-e58d3f5732.zip",
+					"fastboot": ""
+				},
 				"OS3.0.2.0.WAOTWXM": {
 					"os": "OS3.0.2.0.WAOTWXM",
 					"android": "16.0",
