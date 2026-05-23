@@ -1,8 +1,20 @@
 {
   "recent": {
-    "time": "2026-05-22 17:53:22",
+    "time": "2026-05-23 04:10:03",
     "developing": "no",
     "roms": {
+      "psyche": {
+        "name": {
+          "zh": "小米 12X",
+          "en": "Xiaomi 12X"
+        },
+        "versions": [
+          {
+            "release_date": "2026-05-19",
+            "version": "OS1.0.9.0.TLDMIXM"
+          }
+        ]
+      },
       "nuwa": {
         "name": {
           "zh": "小米 13 Pro",
@@ -82,6 +94,10 @@
         },
         "versions": [
           {
+            "release_date": "2026-05-19",
+            "version": "OS3.0.301.0.WOSTWXM"
+          },
+          {
             "release_date": "2026-05-20",
             "version": "OS3.0.4.0.WOSMXAT"
           },
@@ -112,6 +128,18 @@
           {
             "release_date": "2026-05-19",
             "version": "OS3.0.303.0.WMVCNXM"
+          }
+        ]
+      },
+      "air": {
+        "name": {
+          "zh": "Redmi 13C/R 5G / POCO M6 5G",
+          "en": "Redmi 13C/R 5G / POCO M6 5G"
+        },
+        "versions": [
+          {
+            "release_date": "2026-05-22",
+            "version": "OS2.0.206.0.VGQMIDC"
           }
         ]
       },
@@ -210,6 +238,10 @@
         },
         "versions": [
           {
+            "release_date": "2026-05-22",
+            "version": "OS3.0.301.0.WOFMIDC"
+          },
+          {
             "release_date": "2026-05-19",
             "version": "OS3.0.1.0.WOFLMCR"
           }
@@ -236,6 +268,18 @@
           {
             "release_date": "2026-05-19",
             "version": "OS2.0.203.0.VNGLMCR"
+          }
+        ]
+      },
+      "emerald_r": {
+        "name": {
+          "zh": "Redmi Note 14s",
+          "en": "Redmi Note 14s"
+        },
+        "versions": [
+          {
+            "release_date": "2026-05-22",
+            "version": "OS3.0.301.0.WFOTRXM"
           }
         ]
       },
