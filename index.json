@@ -1,8 +1,32 @@
 {
   "recent": {
-    "time": "2026-06-08 12:04:50",
+    "time": "2026-06-08 17:04:36",
     "developing": "no",
     "roms": {
+      "chagall": {
+        "name": {
+          "zh": "Xiaomi 17T",
+          "en": "Xiaomi 17T"
+        },
+        "versions": [
+          {
+            "release_date": "2026-06-08",
+            "version": "OS3.0.304.0.WPTCNXM"
+          }
+        ]
+      },
+      "warhol": {
+        "name": {
+          "zh": "Xiaomi 17T Pro",
+          "en": "Xiaomi 17T Pro"
+        },
+        "versions": [
+          {
+            "release_date": "2026-06-08",
+            "version": "OS3.0.306.0.WPSCNXM"
+          }
+        ]
+      },
       "lake": {
         "name": {
           "zh": "Redmi 14C",
