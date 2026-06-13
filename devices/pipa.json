@@ -34,6 +34,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -52,6 +53,7 @@
 					"os": "OS2.0.20.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2026-06-08",
+					"aspatch": "2026-04-01",
 					"recovery": "pipa-ota_full-OS2.0.20.0.UMZCNXM-user-14.0-cc45265ce4.zip",
 					"fastboot": ""
 				},
@@ -59,6 +61,7 @@
 					"os": "OS2.0.19.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2026-01-30",
+					"aspatch": "2026-01-01",
 					"recovery": "pipa-ota_full-OS2.0.19.0.UMZCNXM-user-14.0-e1ea6f0555.zip",
 					"fastboot": "pipa_images_OS2.0.19.0.UMZCNXM_20260116.0000.00_14.0_cn_9a875e880b.tgz"
 				},
@@ -66,6 +69,7 @@
 					"os": "OS2.0.16.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2025-12-24",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa-ota_full-OS2.0.16.0.UMZCNXM-user-14.0-53795f260f.zip",
 					"fastboot": "pipa_images_OS2.0.16.0.UMZCNXM_20251215.0000.00_14.0_cn_d07ae98ff4.tgz"
 				},
@@ -73,6 +77,7 @@
 					"os": "OS2.0.14.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2025-11-21",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa-ota_full-OS2.0.14.0.UMZCNXM-user-14.0-349da6a77c.zip",
 					"fastboot": "pipa_images_OS2.0.14.0.UMZCNXM_20251030.0000.00_14.0_cn_5c164abca2.tgz"
 				},
@@ -80,6 +85,7 @@
 					"os": "OS2.0.13.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2025-10-14",
+					"aspatch": "2025-09-01",
 					"recovery": "pipa-ota_full-OS2.0.13.0.UMZCNXM-user-14.0-a905ad5ecc.zip",
 					"fastboot": "pipa_images_OS2.0.13.0.UMZCNXM_20250928.0000.00_14.0_cn_dd5d214609.tgz"
 				},
@@ -87,6 +93,7 @@
 					"os": "OS2.0.12.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2025-09-17",
+					"aspatch": "2025-08-01",
 					"recovery": "pipa-ota_full-OS2.0.12.0.UMZCNXM-user-14.0-9c6e11f700.zip",
 					"fastboot": "pipa_images_OS2.0.12.0.UMZCNXM_20250827.0000.00_14.0_cn_138b9ff0d3.tgz"
 				},
@@ -94,6 +101,7 @@
 					"os": "OS2.0.11.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2025-08-19",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa-ota_full-OS2.0.11.0.UMZCNXM-user-14.0-d7c9759768.zip",
 					"fastboot": "pipa_images_OS2.0.11.0.UMZCNXM_20250809.0000.00_14.0_cn_f46a0a8b4b.tgz"
 				},
@@ -101,6 +109,7 @@
 					"os": "OS2.0.10.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2025-07-16",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa-ota_full-OS2.0.10.0.UMZCNXM-user-14.0-0d89d2e7bf.zip",
 					"fastboot": "pipa_images_OS2.0.10.0.UMZCNXM_20250702.0000.00_14.0_cn_4a387ba157.tgz"
 				},
@@ -108,6 +117,7 @@
 					"os": "OS2.0.9.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2025-06-14",
+					"aspatch": "2025-06-01",
 					"recovery": "pipa-ota_full-OS2.0.9.0.UMZCNXM-user-14.0-501bddd6c2.zip",
 					"fastboot": "pipa_images_OS2.0.9.0.UMZCNXM_20250528.0000.00_14.0_cn_eba5f3dd43.tgz"
 				},
@@ -115,6 +125,7 @@
 					"os": "OS2.0.8.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2025-05-23",
+					"aspatch": "2025-05-01",
 					"recovery": "pipa-ota_full-OS2.0.8.0.UMZCNXM-user-14.0-dee3af6e7b.zip",
 					"fastboot": "pipa_images_OS2.0.8.0.UMZCNXM_20250513.0000.00_14.0_cn_26d09ee45b.tgz"
 				},
@@ -122,6 +133,7 @@
 					"os": "OS2.0.7.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2025-04-17",
+					"aspatch": "2025-03-01",
 					"recovery": "pipa-ota_full-OS2.0.7.0.UMZCNXM-user-14.0-1c66b29248.zip",
 					"fastboot": "pipa_images_OS2.0.7.0.UMZCNXM_20250326.0000.00_14.0_cn_90ee6e1d1e.tgz"
 				},
@@ -129,6 +141,7 @@
 					"os": "OS2.0.6.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2025-03-24",
+					"aspatch": "2025-03-01",
 					"recovery": "pipa-ota_full-OS2.0.6.0.UMZCNXM-user-14.0-564470a7dd.zip",
 					"fastboot": "pipa_images_OS2.0.6.0.UMZCNXM_20250319.0000.00_14.0_cn_e844eea743.tgz"
 				},
@@ -136,6 +149,7 @@
 					"os": "OS2.0.4.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2025-02-11",
+					"aspatch": "2025-01-01",
 					"recovery": "pipa-ota_full-OS2.0.4.0.UMZCNXM-user-14.0-2a7d3a6314.zip",
 					"fastboot": "pipa_images_OS2.0.4.0.UMZCNXM_20250205.0000.00_14.0_cn_2ae77107f8.tgz"
 				},
@@ -143,6 +157,7 @@
 					"os": "OS1.0.14.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2025-01-07",
+					"aspatch": "2025-01-01",
 					"recovery": "miui_PIPA_OS1.0.14.0.UMZCNXM_d457f60f7f_14.0.zip",
 					"fastboot": "pipa_images_OS1.0.14.0.UMZCNXM_20241230.0000.00_14.0_cn_ba95bf6766.tgz"
 				},
@@ -150,6 +165,7 @@
 					"os": "OS1.0.13.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2024-12-06",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_PIPA_OS1.0.13.0.UMZCNXM_2cdf324013_14.0.zip",
 					"fastboot": "pipa_images_OS1.0.13.0.UMZCNXM_20241126.0000.00_14.0_cn_9116c9eedd.tgz"
 				},
@@ -157,6 +173,7 @@
 					"os": "OS1.0.12.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2024-11-06",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_PIPA_OS1.0.12.0.UMZCNXM_c8d7ab829f_14.0.zip",
 					"fastboot": "pipa_images_OS1.0.12.0.UMZCNXM_20241028.0000.00_14.0_cn_6360eb27bd.tgz"
 				},
@@ -164,6 +181,7 @@
 					"os": "OS1.0.11.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2024-09-30",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_PIPA_OS1.0.11.0.UMZCNXM_6b841f0114_14.0.zip",
 					"fastboot": "pipa_images_OS1.0.11.0.UMZCNXM_20240923.0000.00_14.0_cn_1a2a70c566.tgz"
 				},
@@ -171,6 +189,7 @@
 					"os": "OS1.0.10.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2024-09-03",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_PIPA_OS1.0.10.0.UMZCNXM_248f4b583b_14.0.zip",
 					"fastboot": "pipa_images_OS1.0.10.0.UMZCNXM_20240827.0000.00_14.0_cn_c25e4d8e0d.tgz"
 				},
@@ -178,6 +197,7 @@
 					"os": "OS1.0.8.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2024-08-08",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_PIPA_OS1.0.8.0.UMZCNXM_183443e0a5_14.0.zip",
 					"fastboot": "pipa_images_OS1.0.8.0.UMZCNXM_20240725.0000.00_14.0_cn_e1287bd621.tgz"
 				},
@@ -185,6 +205,7 @@
 					"os": "OS1.0.7.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2024-06-19",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_PIPA_OS1.0.7.0.UMZCNXM_a0d8c7820c_14.0.zip",
 					"fastboot": "pipa_images_OS1.0.7.0.UMZCNXM_20240528.0000.00_14.0_cn_e156f9db71.tgz"
 				},
@@ -192,6 +213,7 @@
 					"os": "OS1.0.5.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2024-04-02",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_PIPA_OS1.0.5.0.UMZCNXM_aa9825df2f_14.0.zip",
 					"fastboot": "pipa_images_OS1.0.5.0.UMZCNXM_20240315.0000.00_14.0_cn_2b567d1820.tgz"
 				},
@@ -199,6 +221,7 @@
 					"os": "OS1.0.4.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2024-01-27",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_PIPA_OS1.0.4.0.UMZCNXM_45e70ba86c_14.0.zip",
 					"fastboot": "pipa_images_OS1.0.4.0.UMZCNXM_20240123.0000.00_14.0_cn_5ac31ad581.tgz"
 				},
@@ -206,6 +229,7 @@
 					"os": "OS1.0.2.0.UMZCNXM",
 					"android": "14.0",
 					"release": "2023-12-21",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_PIPA_OS1.0.2.0.UMZCNXM_55ebca72a7_14.0.zip",
 					"fastboot": "pipa_images_OS1.0.2.0.UMZCNXM_20231214.0000.00_14.0_cn_c56da969e9.tgz"
 				}
@@ -229,6 +253,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -247,6 +272,7 @@
 					"os": "OS1.0.24.4.11.EP.STDEE.M82",
 					"android": "14.0",
 					"release": "2024-06-03",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_PIPAEPSTDEE_OS1.0.24.4.11.EP.STDEE.M82_4dea0d780c_14.0.zip",
 					"fastboot": "pipa_ep_stdee_images_OS1.0.24.4.11.EP.STDEE.M82_20240411.0000.00_14.0_cn_7d7a9eaa8b.tgz"
 				}
@@ -270,6 +296,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -288,6 +315,7 @@
 					"os": "OS1.0.2.0.UMZCNDM",
 					"android": "14.0",
 					"release": "2023-12-19",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_PIPADEMO_OS1.0.2.0.UMZCNDM_a663b5c25d_14.0.zip",
 					"fastboot": "pipa_demo_images_OS1.0.2.0.UMZCNDM_20231219.0000.00_14.0_cn_511733fd2d.tgz"
 				}
@@ -311,6 +339,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -326,6 +355,7 @@
 					"os": "OS2.0.13.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2026-05-10",
+					"aspatch": "2026-04-01",
 					"recovery": "pipa_tw_global-ota_full-OS2.0.13.0.UMZTWXM-user-14.0-cab7384c4f.zip",
 					"fastboot": "pipa_tw_global_images_OS2.0.13.0.UMZTWXM_20260414.0000.00_14.0_tw_b3d9b85956.tgz"
 				},
@@ -333,6 +363,7 @@
 					"os": "OS2.0.12.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2026-02-02",
+					"aspatch": "2026-01-01",
 					"recovery": "pipa_tw_global-ota_full-OS2.0.12.0.UMZTWXM-user-14.0-1135eff34a.zip",
 					"fastboot": "pipa_tw_global_images_OS2.0.12.0.UMZTWXM_20260122.0000.00_14.0_tw_b9c8526e91.tgz"
 				},
@@ -340,6 +371,7 @@
 					"os": "OS2.0.11.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2025-12-27",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa_tw_global-ota_full-OS2.0.11.0.UMZTWXM-user-14.0-c1122d55a3.zip",
 					"fastboot": "pipa_tw_global_images_OS2.0.11.0.UMZTWXM_20251216.0000.00_14.0_tw_d79b3298ed.tgz"
 				},
@@ -347,6 +379,7 @@
 					"os": "OS2.0.9.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2025-11-24",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa_tw_global-ota_full-OS2.0.9.0.UMZTWXM-user-14.0-b956adcc39.zip",
 					"fastboot": "pipa_tw_global_images_OS2.0.9.0.UMZTWXM_20251105.0000.00_14.0_tw_916700a144.tgz"
 				},
@@ -354,6 +387,7 @@
 					"os": "OS2.0.8.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2025-10-19",
+					"aspatch": "2025-09-01",
 					"recovery": "pipa_tw_global-ota_full-OS2.0.8.0.UMZTWXM-user-14.0-4610b67b42.zip",
 					"fastboot": "pipa_tw_global_images_OS2.0.8.0.UMZTWXM_20250928.0000.00_14.0_tw_5726f4f751.tgz"
 				},
@@ -361,6 +395,7 @@
 					"os": "OS2.0.7.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2025-09-22",
+					"aspatch": "2025-08-01",
 					"recovery": "pipa_tw_global-ota_full-OS2.0.7.0.UMZTWXM-user-14.0-f21bad9a17.zip",
 					"fastboot": "pipa_tw_global_images_OS2.0.7.0.UMZTWXM_20250906.0000.00_14.0_tw_c39080f39d.tgz"
 				},
@@ -368,6 +403,7 @@
 					"os": "OS2.0.6.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2025-08-22",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa_tw_global-ota_full-OS2.0.6.0.UMZTWXM-user-14.0-2e8dc07a19.zip",
 					"fastboot": "pipa_tw_global_images_OS2.0.6.0.UMZTWXM_20250809.0000.00_14.0_tw_f3fc721232.tgz"
 				},
@@ -375,6 +411,7 @@
 					"os": "OS2.0.5.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2025-07-21",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa_tw_global-ota_full-OS2.0.5.0.UMZTWXM-user-14.0-1dfb909f67.zip",
 					"fastboot": "pipa_tw_global_images_OS2.0.5.0.UMZTWXM_20250703.0000.00_14.0_tw_32ca67131f.tgz"
 				},
@@ -382,6 +419,7 @@
 					"os": "OS2.0.4.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2025-06-18",
+					"aspatch": "2025-06-01",
 					"recovery": "pipa_tw_global-ota_full-OS2.0.4.0.UMZTWXM-user-14.0-6cb3d61d73.zip",
 					"fastboot": "pipa_tw_global_images_OS2.0.4.0.UMZTWXM_20250528.0000.00_14.0_tw_da22db7995.tgz"
 				},
@@ -389,6 +427,7 @@
 					"os": "OS2.0.3.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2025-05-27",
+					"aspatch": "2025-05-01",
 					"recovery": "pipa_tw_global-ota_full-OS2.0.3.0.UMZTWXM-user-14.0-912118b5ea.zip",
 					"fastboot": "pipa_tw_global_images_OS2.0.3.0.UMZTWXM_20250513.0000.00_14.0_tw_a44b1659c3.tgz"
 				},
@@ -396,6 +435,7 @@
 					"os": "OS2.0.2.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2025-04-11",
+					"aspatch": "2025-03-01",
 					"recovery": "pipa_tw_global-ota_full-OS2.0.2.0.UMZTWXM-user-14.0-35b257d43d.zip",
 					"fastboot": "pipa_tw_global_images_OS2.0.2.0.UMZTWXM_20250324.0000.00_14.0_tw_f655a29fee.tgz"
 				},
@@ -403,6 +443,7 @@
 					"os": "OS2.0.1.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2025-03-17",
+					"aspatch": "2025-02-01",
 					"recovery": "pipa_tw_global-ota_full-OS2.0.1.0.UMZTWXM-user-14.0-424086b781.zip",
 					"fastboot": "pipa_tw_global_images_OS2.0.1.0.UMZTWXM_20250225.0000.00_14.0_tw_de4d103f7d.tgz"
 				},
@@ -410,6 +451,7 @@
 					"os": "OS1.0.12.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2025-02-06",
+					"aspatch": "2025-01-01",
 					"recovery": "miui_PIPATWGlobal_OS1.0.12.0.UMZTWXM_03715889f0_14.0.zip",
 					"fastboot": "pipa_tw_global_images_OS1.0.12.0.UMZTWXM_20250117.0000.00_14.0_tw_4758cd32b4.tgz"
 				},
@@ -417,6 +459,7 @@
 					"os": "OS1.0.11.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2024-12-23",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_PIPATWGlobal_OS1.0.11.0.UMZTWXM_b3e51cea83_14.0.zip",
 					"fastboot": "pipa_tw_global_images_OS1.0.11.0.UMZTWXM_20241210.0000.00_14.0_tw_8b8e318514.tgz"
 				},
@@ -424,6 +467,7 @@
 					"os": "OS1.0.10.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2024-12-02",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_PIPATWGlobal_OS1.0.10.0.UMZTWXM_b48a7d7078_14.0.zip",
 					"fastboot": "pipa_tw_global_images_OS1.0.10.0.UMZTWXM_20241114.0000.00_14.0_tw_13ce351bd6.tgz"
 				},
@@ -431,6 +475,7 @@
 					"os": "OS1.0.8.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2024-10-22",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_PIPATWGlobal_OS1.0.8.0.UMZTWXM_cca5891496_14.0.zip",
 					"fastboot": "pipa_tw_global_images_OS1.0.8.0.UMZTWXM_20241011.0000.00_14.0_tw_7314b573d1.tgz"
 				},
@@ -438,6 +483,7 @@
 					"os": "OS1.0.7.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2024-09-18",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_PIPATWGlobal_OS1.0.7.0.UMZTWXM_72161cf843_14.0.zip",
 					"fastboot": "pipa_tw_global_images_OS1.0.7.0.UMZTWXM_20240902.0000.00_14.0_tw_8284cb1c97.tgz"
 				},
@@ -445,6 +491,7 @@
 					"os": "OS1.0.6.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2024-09-02",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_PIPATWGlobal_OS1.0.6.0.UMZTWXM_54178306bf_14.0.zip",
 					"fastboot": "pipa_tw_global_images_OS1.0.6.0.UMZTWXM_20240816.0000.00_14.0_tw_15205a04c5.tgz"
 				},
@@ -452,6 +499,7 @@
 					"os": "OS1.0.5.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2024-08-06",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_PIPATWGlobal_OS1.0.5.0.UMZTWXM_15257c3a62_14.0.zip",
 					"fastboot": "pipa_tw_global_images_OS1.0.5.0.UMZTWXM_20240712.0000.00_14.0_tw_b025318ce1.tgz"
 				},
@@ -459,6 +507,7 @@
 					"os": "OS1.0.4.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2024-05-24",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_PIPATWGlobal_OS1.0.4.0.UMZTWXM_fdd5929bb2_14.0.zip",
 					"fastboot": "pipa_tw_global_images_OS1.0.4.0.UMZTWXM_20240509.0000.00_14.0_tw_db5d921316.tgz"
 				},
@@ -466,6 +515,7 @@
 					"os": "OS1.0.3.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2024-04-03",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_PIPATWGlobal_OS1.0.3.0.UMZTWXM_dc7f1bb2b3_14.0.zip",
 					"fastboot": "pipa_tw_global_images_OS1.0.3.0.UMZTWXM_20240314.0000.00_14.0_tw_3259f84b4f.tgz"
 				},
@@ -473,6 +523,7 @@
 					"os": "OS1.0.2.0.UMZTWXM",
 					"android": "14.0",
 					"release": "2024-01-30",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_PIPATWGlobal_OS1.0.2.0.UMZTWXM_4ce44aad33_14.0.zip",
 					"fastboot": "pipa_tw_global_images_OS1.0.2.0.UMZTWXM_20240112.0000.00_14.0_tw_d326e331a7.tgz"
 				}
@@ -496,6 +547,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -511,6 +563,7 @@
 					"os": "OS2.0.16.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2026-05-09",
+					"aspatch": "2026-04-01",
 					"recovery": "pipa_global-ota_full-OS2.0.16.0.UMZMIXM-user-14.0-c378f929ad.zip",
 					"fastboot": "pipa_global_images_OS2.0.16.0.UMZMIXM_20260414.0000.00_14.0_global_5f1e2b108a.tgz"
 				},
@@ -518,6 +571,7 @@
 					"os": "OS2.0.14.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2026-02-02",
+					"aspatch": "2026-01-01",
 					"recovery": "pipa_global-ota_full-OS2.0.14.0.UMZMIXM-user-14.0-bccb34f4ea.zip",
 					"fastboot": "pipa_global_images_OS2.0.14.0.UMZMIXM_20260116.0000.00_14.0_global_6d8440e54d.tgz"
 				},
@@ -525,6 +579,7 @@
 					"os": "OS2.0.12.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2025-12-27",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa_global-ota_full-OS2.0.12.0.UMZMIXM-user-14.0-8fcacb8b31.zip",
 					"fastboot": "pipa_global_images_OS2.0.12.0.UMZMIXM_20251224.0000.00_14.0_global_00b5a3adf0.tgz"
 				},
@@ -532,6 +587,7 @@
 					"os": "OS2.0.10.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2025-11-24",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa_global-ota_full-OS2.0.10.0.UMZMIXM-user-14.0-4d3ac858b3.zip",
 					"fastboot": "pipa_global_images_OS2.0.10.0.UMZMIXM_20251030.0000.00_14.0_global_2b5a90da77.tgz"
 				},
@@ -539,6 +595,7 @@
 					"os": "OS2.0.9.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2025-10-20",
+					"aspatch": "2025-09-01",
 					"recovery": "pipa_global-ota_full-OS2.0.9.0.UMZMIXM-user-14.0-a27578818c.zip",
 					"fastboot": "pipa_global_images_OS2.0.9.0.UMZMIXM_20250928.0000.00_14.0_global_771366f750.tgz"
 				},
@@ -546,6 +603,7 @@
 					"os": "OS2.0.8.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2025-09-19",
+					"aspatch": "2025-08-01",
 					"recovery": "pipa_global-ota_full-OS2.0.8.0.UMZMIXM-user-14.0-610b6849c0.zip",
 					"fastboot": "pipa_global_images_OS2.0.8.0.UMZMIXM_20250906.0000.00_14.0_global_f5ad4b647c.tgz"
 				},
@@ -553,6 +611,7 @@
 					"os": "OS2.0.7.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2025-08-23",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa_global-ota_full-OS2.0.7.0.UMZMIXM-user-14.0-f1e80d0d53.zip",
 					"fastboot": "pipa_global_images_OS2.0.7.0.UMZMIXM_20250809.0000.00_14.0_global_54bc45aa65.tgz"
 				},
@@ -560,6 +619,7 @@
 					"os": "OS2.0.6.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2025-07-21",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa_global-ota_full-OS2.0.6.0.UMZMIXM-user-14.0-3e015606b3.zip",
 					"fastboot": "pipa_global_images_OS2.0.6.0.UMZMIXM_20250703.0000.00_14.0_global_c8460575ad.tgz"
 				},
@@ -567,6 +627,7 @@
 					"os": "OS2.0.5.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2025-06-18",
+					"aspatch": "2025-06-01",
 					"recovery": "pipa_global-ota_full-OS2.0.5.0.UMZMIXM-user-14.0-dc3e883449.zip",
 					"fastboot": "pipa_global_images_OS2.0.5.0.UMZMIXM_20250528.0000.00_14.0_global_4ae3b982d4.tgz"
 				},
@@ -574,6 +635,7 @@
 					"os": "OS2.0.4.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2025-05-22",
+					"aspatch": "2025-05-01",
 					"recovery": "pipa_global-ota_full-OS2.0.4.0.UMZMIXM-user-14.0-7285a708c4.zip",
 					"fastboot": "pipa_global_images_OS2.0.4.0.UMZMIXM_20250507.0000.00_14.0_global_ad6119155d.tgz"
 				},
@@ -581,6 +643,7 @@
 					"os": "OS2.0.3.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2025-04-11",
+					"aspatch": "2025-03-01",
 					"recovery": "pipa_global-ota_full-OS2.0.3.0.UMZMIXM-user-14.0-b32e833a2a.zip",
 					"fastboot": "pipa_global_images_OS2.0.3.0.UMZMIXM_20250324.0000.00_14.0_global_3e41291806.tgz"
 				},
@@ -588,6 +651,7 @@
 					"os": "OS2.0.2.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2025-02-28",
+					"aspatch": "2025-02-01",
 					"recovery": "pipa_global-ota_full-OS2.0.2.0.UMZMIXM-user-14.0-66c0cc1906.zip",
 					"fastboot": "pipa_global_images_OS2.0.2.0.UMZMIXM_20250213.0000.00_14.0_global_1150dd75ca.tgz"
 				},
@@ -595,6 +659,7 @@
 					"os": "OS1.0.16.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2025-02-06",
+					"aspatch": "2025-01-01",
 					"recovery": "miui_PIPAGlobal_OS1.0.16.0.UMZMIXM_3d3c4350ca_14.0.zip",
 					"fastboot": "pipa_global_images_OS1.0.16.0.UMZMIXM_20250114.0000.00_14.0_global_fa58b46449.tgz"
 				},
@@ -602,6 +667,7 @@
 					"os": "OS1.0.15.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2024-12-23",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_PIPAGlobal_OS1.0.15.0.UMZMIXM_d2ba6c0171_14.0.zip",
 					"fastboot": "pipa_global_images_OS1.0.15.0.UMZMIXM_20241209.0000.00_14.0_global_fef4bbcf21.tgz"
 				},
@@ -609,6 +675,7 @@
 					"os": "OS1.0.14.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2024-11-25",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_PIPAGlobal_OS1.0.14.0.UMZMIXM_24018df224_14.0.zip",
 					"fastboot": "pipa_global_images_OS1.0.14.0.UMZMIXM_20241107.0000.00_14.0_global_8dc2d7b79e.tgz"
 				},
@@ -616,6 +683,7 @@
 					"os": "OS1.0.12.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2024-10-22",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_PIPAGlobal_OS1.0.12.0.UMZMIXM_c0c7848806_14.0.zip",
 					"fastboot": "pipa_global_images_OS1.0.12.0.UMZMIXM_20241008.0000.00_14.0_global_6e2cb9a67f.tgz"
 				},
@@ -623,6 +691,7 @@
 					"os": "OS1.0.11.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2024-09-13",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_PIPAGlobal_OS1.0.11.0.UMZMIXM_54d4d8650c_14.0.zip",
 					"fastboot": "pipa_global_images_OS1.0.11.0.UMZMIXM_20240828.0000.00_14.0_global_cbcb197c1c.tgz"
 				},
@@ -630,6 +699,7 @@
 					"os": "OS1.0.10.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2024-08-26",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_PIPAGlobal_OS1.0.10.0.UMZMIXM_e8c09738d8_14.0.zip",
 					"fastboot": "pipa_global_images_OS1.0.10.0.UMZMIXM_20240813.0000.00_14.0_global_cc7e628cf2.tgz"
 				},
@@ -637,6 +707,7 @@
 					"os": "OS1.0.9.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2024-07-22",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_PIPAGlobal_OS1.0.9.0.UMZMIXM_7c75835663_14.0.zip",
 					"fastboot": "pipa_global_images_OS1.0.9.0.UMZMIXM_20240710.0000.00_14.0_global_5fe55e80b3.tgz"
 				},
@@ -644,6 +715,7 @@
 					"os": "OS1.0.7.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2024-06-04",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_PIPAGlobal_OS1.0.7.0.UMZMIXM_147ec54539_14.0.zip",
 					"fastboot": "pipa_global_images_OS1.0.7.0.UMZMIXM_20240522.0000.00_14.0_global_f396c1dfef.tgz"
 				},
@@ -651,6 +723,7 @@
 					"os": "OS1.0.6.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2024-03-22",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_PIPAGlobal_OS1.0.6.0.UMZMIXM_cb615bac0c_14.0.zip",
 					"fastboot": "pipa_global_images_OS1.0.6.0.UMZMIXM_20240306.0000.00_14.0_global_1c9afc4106.tgz"
 				},
@@ -658,6 +731,7 @@
 					"os": "OS1.0.4.0.UMZMIXM",
 					"android": "14.0",
 					"release": "2024-01-22",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_PIPAGlobal_OS1.0.4.0.UMZMIXM_55c8110a52_14.0.zip",
 					"fastboot": "pipa_global_images_OS1.0.4.0.UMZMIXM_20240109.0000.00_14.0_global_fbbfc5cb41.tgz"
 				}
@@ -681,6 +755,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -696,6 +771,7 @@
 					"os": "OS2.0.14.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2026-05-09",
+					"aspatch": "2026-04-01",
 					"recovery": "pipa_eea_global-ota_full-OS2.0.14.0.UMZEUXM-user-14.0-06796fd8fc.zip",
 					"fastboot": "pipa_eea_global_images_OS2.0.14.0.UMZEUXM_20260414.0000.00_14.0_eea_554754cac5.tgz"
 				},
@@ -703,6 +779,7 @@
 					"os": "OS2.0.12.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2026-02-02",
+					"aspatch": "2026-01-01",
 					"recovery": "pipa_eea_global-ota_full-OS2.0.12.0.UMZEUXM-user-14.0-9f43dde015.zip",
 					"fastboot": "pipa_eea_global_images_OS2.0.12.0.UMZEUXM_20260122.0000.00_14.0_eea_9b370c35d2.tgz"
 				},
@@ -710,6 +787,7 @@
 					"os": "OS2.0.11.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2025-12-25",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa_eea_global-ota_full-OS2.0.11.0.UMZEUXM-user-14.0-0136f7c11e.zip",
 					"fastboot": "pipa_eea_global_images_OS2.0.11.0.UMZEUXM_20251216.0000.00_14.0_eea_587b6631e3.tgz"
 				},
@@ -717,6 +795,7 @@
 					"os": "OS2.0.9.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2025-11-24",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa_eea_global-ota_full-OS2.0.9.0.UMZEUXM-user-14.0-967dbff8b5.zip",
 					"fastboot": "pipa_eea_global_images_OS2.0.9.0.UMZEUXM_20251105.0000.00_14.0_eea_78f9c55956.tgz"
 				},
@@ -724,6 +803,7 @@
 					"os": "OS2.0.8.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2025-10-19",
+					"aspatch": "2025-09-01",
 					"recovery": "pipa_eea_global-ota_full-OS2.0.8.0.UMZEUXM-user-14.0-2f2613b1e3.zip",
 					"fastboot": "pipa_eea_global_images_OS2.0.8.0.UMZEUXM_20250928.0000.00_14.0_eea_b975d124a1.tgz"
 				},
@@ -731,6 +811,7 @@
 					"os": "OS2.0.7.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2025-09-19",
+					"aspatch": "2025-08-01",
 					"recovery": "pipa_eea_global-ota_full-OS2.0.7.0.UMZEUXM-user-14.0-4fc578c84f.zip",
 					"fastboot": "pipa_eea_global_images_OS2.0.7.0.UMZEUXM_20250906.0000.00_14.0_eea_deb631996d.tgz"
 				},
@@ -738,6 +819,7 @@
 					"os": "OS2.0.6.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2025-08-22",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa_eea_global-ota_full-OS2.0.6.0.UMZEUXM-user-14.0-7656845f25.zip",
 					"fastboot": "pipa_eea_global_images_OS2.0.6.0.UMZEUXM_20250809.0000.00_14.0_eea_71abef779b.tgz"
 				},
@@ -745,6 +827,7 @@
 					"os": "OS2.0.5.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2025-07-21",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa_eea_global-ota_full-OS2.0.5.0.UMZEUXM-user-14.0-7046488e17.zip",
 					"fastboot": "pipa_eea_global_images_OS2.0.5.0.UMZEUXM_20250702.0000.00_14.0_eea_db8f912aae.tgz"
 				},
@@ -752,6 +835,7 @@
 					"os": "OS2.0.4.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2025-06-20",
+					"aspatch": "2025-06-01",
 					"recovery": "pipa_eea_global-ota_full-OS2.0.4.0.UMZEUXM-user-14.0-affac95d65.zip",
 					"fastboot": "pipa_eea_global_images_OS2.0.4.0.UMZEUXM_20250528.0000.00_14.0_eea_3140b44144.tgz"
 				},
@@ -759,6 +843,7 @@
 					"os": "OS2.0.3.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2025-05-27",
+					"aspatch": "2025-05-01",
 					"recovery": "pipa_eea_global-ota_full-OS2.0.3.0.UMZEUXM-user-14.0-b5f4b111ca.zip",
 					"fastboot": "pipa_eea_global_images_OS2.0.3.0.UMZEUXM_20250513.0000.00_14.0_eea_a79e8f7896.tgz"
 				},
@@ -766,6 +851,7 @@
 					"os": "OS2.0.2.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2025-04-11",
+					"aspatch": "2025-03-01",
 					"recovery": "pipa_eea_global-ota_full-OS2.0.2.0.UMZEUXM-user-14.0-faf2cf15b3.zip",
 					"fastboot": "pipa_eea_global_images_OS2.0.2.0.UMZEUXM_20250324.0000.00_14.0_eea_575baeff0d.tgz"
 				},
@@ -773,6 +859,7 @@
 					"os": "OS2.0.1.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2025-03-12",
+					"aspatch": "2025-02-01",
 					"recovery": "pipa_eea_global-ota_full-OS2.0.1.0.UMZEUXM-user-14.0-e9ed4c28a3.zip",
 					"fastboot": "pipa_eea_global_images_OS2.0.1.0.UMZEUXM_20250218.0000.00_14.0_eea_1670077de8.tgz"
 				},
@@ -780,6 +867,7 @@
 					"os": "OS1.0.14.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2025-02-06",
+					"aspatch": "2025-01-01",
 					"recovery": "miui_PIPAEEAGlobal_OS1.0.14.0.UMZEUXM_e235a522b2_14.0.zip",
 					"fastboot": "pipa_eea_global_images_OS1.0.14.0.UMZEUXM_20250117.0000.00_14.0_eea_b43e56dad2.tgz"
 				},
@@ -787,6 +875,7 @@
 					"os": "OS1.0.13.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2024-12-23",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_PIPAEEAGlobal_OS1.0.13.0.UMZEUXM_879701ac46_14.0.zip",
 					"fastboot": "pipa_eea_global_images_OS1.0.13.0.UMZEUXM_20241210.0000.00_14.0_eea_0f6fadf207.tgz"
 				},
@@ -794,6 +883,7 @@
 					"os": "OS1.0.12.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2024-12-02",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_PIPAEEAGlobal_OS1.0.12.0.UMZEUXM_30a25b7646_14.0.zip",
 					"fastboot": "pipa_eea_global_images_OS1.0.12.0.UMZEUXM_20241113.0000.00_14.0_eea_3fed9d83ed.tgz"
 				},
@@ -801,6 +891,7 @@
 					"os": "OS1.0.10.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2024-10-22",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_PIPAEEAGlobal_OS1.0.10.0.UMZEUXM_03114f7b45_14.0.zip",
 					"fastboot": "pipa_eea_global_images_OS1.0.10.0.UMZEUXM_20241011.0000.00_14.0_eea_cc1b8aa7dd.tgz"
 				},
@@ -808,6 +899,7 @@
 					"os": "OS1.0.9.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2024-09-14",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_PIPAEEAGlobal_OS1.0.9.0.UMZEUXM_68acfcc49c_14.0.zip",
 					"fastboot": "pipa_eea_global_images_OS1.0.9.0.UMZEUXM_20240828.0000.00_14.0_eea_5ea9fe9a45.tgz"
 				},
@@ -815,6 +907,7 @@
 					"os": "OS1.0.8.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2024-09-04",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_PIPAEEAGlobal_OS1.0.8.0.UMZEUXM_a7f70827e8_14.0.zip",
 					"fastboot": "pipa_eea_global_images_OS1.0.8.0.UMZEUXM_20240816.0000.00_14.0_eea_d03b6fc2c4.tgz"
 				},
@@ -822,6 +915,7 @@
 					"os": "OS1.0.7.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2024-08-06",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_PIPAEEAGlobal_OS1.0.7.0.UMZEUXM_51f6323c13_14.0.zip",
 					"fastboot": "pipa_eea_global_images_OS1.0.7.0.UMZEUXM_20240718.0000.00_14.0_eea_ff857aba2d.tgz"
 				},
@@ -829,6 +923,7 @@
 					"os": "OS1.0.6.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2024-06-04",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_PIPAEEAGlobal_OS1.0.6.0.UMZEUXM_abe5e4ddbd_14.0.zip",
 					"fastboot": "pipa_eea_global_images_OS1.0.6.0.UMZEUXM_20240522.0000.00_14.0_eea_beab1e9fe9.tgz"
 				},
@@ -836,6 +931,7 @@
 					"os": "OS1.0.5.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2024-04-16",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_PIPAEEAGlobal_OS1.0.5.0.UMZEUXM_175e04075b_14.0.zip",
 					"fastboot": "pipa_eea_global_images_OS1.0.5.0.UMZEUXM_20240320.0000.00_14.0_eea_a8efc7c827.tgz"
 				},
@@ -843,6 +939,7 @@
 					"os": "OS1.0.4.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2024-02-18",
+					"aspatch": "2024-01-01",
 					"recovery": "miui_PIPAEEAGlobal_OS1.0.4.0.UMZEUXM_81e4f605a8_14.0.zip",
 					"fastboot": "pipa_eea_global_images_OS1.0.4.0.UMZEUXM_20240131.0000.00_14.0_eea_6ae9c39542.tgz"
 				},
@@ -850,6 +947,7 @@
 					"os": "OS1.0.3.0.UMZEUXM",
 					"android": "14.0",
 					"release": "2024-01-17",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_PIPAEEAGlobal_OS1.0.3.0.UMZEUXM_a9b435c82f_14.0.zip",
 					"fastboot": "pipa_eea_global_images_OS1.0.3.0.UMZEUXM_20240109.0000.00_14.0_eea_5aa65e0eb0.tgz"
 				}
@@ -873,6 +971,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -888,6 +987,7 @@
 					"os": "OS2.0.15.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2026-05-12",
+					"aspatch": "2026-04-01",
 					"recovery": "pipa_ru_global-ota_full-OS2.0.15.0.UMZRUXM-user-14.0-7b61f7ebcb.zip",
 					"fastboot": "pipa_ru_global_images_OS2.0.15.0.UMZRUXM_20260414.0000.00_14.0_ru_717c6f50d6.tgz"
 				},
@@ -895,6 +995,7 @@
 					"os": "OS2.0.12.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2026-02-02",
+					"aspatch": "2026-01-01",
 					"recovery": "pipa_ru_global-ota_full-OS2.0.12.0.UMZRUXM-user-14.0-c05de94845.zip",
 					"fastboot": "pipa_ru_global_images_OS2.0.12.0.UMZRUXM_20260122.0000.00_14.0_ru_d2a68b5310.tgz"
 				},
@@ -902,6 +1003,7 @@
 					"os": "OS2.0.11.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2025-12-25",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa_ru_global-ota_full-OS2.0.11.0.UMZRUXM-user-14.0-6f7a41cce5.zip",
 					"fastboot": "pipa_ru_global_images_OS2.0.11.0.UMZRUXM_20251216.0000.00_14.0_ru_c0aab52507.tgz"
 				},
@@ -909,6 +1011,7 @@
 					"os": "OS2.0.9.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2025-11-24",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa_ru_global-ota_full-OS2.0.9.0.UMZRUXM-user-14.0-055e147068.zip",
 					"fastboot": "pipa_ru_global_images_OS2.0.9.0.UMZRUXM_20251105.0000.00_14.0_ru_058a937700.tgz"
 				},
@@ -916,6 +1019,7 @@
 					"os": "OS2.0.8.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2025-10-19",
+					"aspatch": "2025-09-01",
 					"recovery": "pipa_ru_global-ota_full-OS2.0.8.0.UMZRUXM-user-14.0-f759ef126d.zip",
 					"fastboot": "pipa_ru_global_images_OS2.0.8.0.UMZRUXM_20250928.0000.00_14.0_ru_2f5a7ab4ea.tgz"
 				},
@@ -923,6 +1027,7 @@
 					"os": "OS2.0.7.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2025-09-22",
+					"aspatch": "2025-08-01",
 					"recovery": "pipa_ru_global-ota_full-OS2.0.7.0.UMZRUXM-user-14.0-a4579e466b.zip",
 					"fastboot": "pipa_ru_global_images_OS2.0.7.0.UMZRUXM_20250906.0000.00_14.0_ru_d171575313.tgz"
 				},
@@ -930,6 +1035,7 @@
 					"os": "OS2.0.6.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2025-08-22",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa_ru_global-ota_full-OS2.0.6.0.UMZRUXM-user-14.0-2bec2bf7f6.zip",
 					"fastboot": "pipa_ru_global_images_OS2.0.6.0.UMZRUXM_20250809.0000.00_14.0_ru_c2134fa596.tgz"
 				},
@@ -937,6 +1043,7 @@
 					"os": "OS2.0.5.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2025-07-21",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa_ru_global-ota_full-OS2.0.5.0.UMZRUXM-user-14.0-16023ab090.zip",
 					"fastboot": "pipa_ru_global_images_OS2.0.5.0.UMZRUXM_20250703.0000.00_14.0_ru_45723785d0.tgz"
 				},
@@ -944,6 +1051,7 @@
 					"os": "OS2.0.4.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2025-06-18",
+					"aspatch": "2025-06-01",
 					"recovery": "pipa_ru_global-ota_full-OS2.0.4.0.UMZRUXM-user-14.0-d3005cb5a7.zip",
 					"fastboot": "pipa_ru_global_images_OS2.0.4.0.UMZRUXM_20250528.0000.00_14.0_ru_12c21ef348.tgz"
 				},
@@ -951,6 +1059,7 @@
 					"os": "OS2.0.3.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2025-05-27",
+					"aspatch": "2025-05-01",
 					"recovery": "pipa_ru_global-ota_full-OS2.0.3.0.UMZRUXM-user-14.0-d23667b6d2.zip",
 					"fastboot": "pipa_ru_global_images_OS2.0.3.0.UMZRUXM_20250513.0000.00_14.0_ru_e996bb015f.tgz"
 				},
@@ -958,6 +1067,7 @@
 					"os": "OS2.0.2.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2025-04-11",
+					"aspatch": "2025-03-01",
 					"recovery": "pipa_ru_global-ota_full-OS2.0.2.0.UMZRUXM-user-14.0-5db0ec01dc.zip",
 					"fastboot": "pipa_ru_global_images_OS2.0.2.0.UMZRUXM_20250324.0000.00_14.0_ru_b5bf5d3e98.tgz"
 				},
@@ -965,6 +1075,7 @@
 					"os": "OS2.0.1.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2025-03-17",
+					"aspatch": "2025-02-01",
 					"recovery": "pipa_ru_global-ota_full-OS2.0.1.0.UMZRUXM-user-14.0-8321bdfd26.zip",
 					"fastboot": "pipa_ru_global_images_OS2.0.1.0.UMZRUXM_20250224.0000.00_14.0_ru_4d7c4f59e1.tgz"
 				},
@@ -972,6 +1083,7 @@
 					"os": "OS1.0.14.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2025-02-06",
+					"aspatch": "2025-01-01",
 					"recovery": "miui_PIPARUGlobal_OS1.0.14.0.UMZRUXM_5508ce5f70_14.0.zip",
 					"fastboot": "pipa_ru_global_images_OS1.0.14.0.UMZRUXM_20250117.0000.00_14.0_ru_a4da7b124d.tgz"
 				},
@@ -979,6 +1091,7 @@
 					"os": "OS1.0.13.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2024-12-23",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_PIPARUGlobal_OS1.0.13.0.UMZRUXM_43616cf8c3_14.0.zip",
 					"fastboot": "pipa_ru_global_images_OS1.0.13.0.UMZRUXM_20241210.0000.00_14.0_ru_343b85434f.tgz"
 				},
@@ -986,6 +1099,7 @@
 					"os": "OS1.0.12.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2024-12-02",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_PIPARUGlobal_OS1.0.12.0.UMZRUXM_5f3c23ba49_14.0.zip",
 					"fastboot": "pipa_ru_global_images_OS1.0.12.0.UMZRUXM_20241113.0000.00_14.0_ru_85582c5e2b.tgz"
 				},
@@ -993,6 +1107,7 @@
 					"os": "OS1.0.10.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2024-10-21",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_PIPARUGlobal_OS1.0.10.0.UMZRUXM_73e73600cc_14.0.zip",
 					"fastboot": "pipa_ru_global_images_OS1.0.10.0.UMZRUXM_20241011.0000.00_14.0_ru_d062e1a59b.tgz"
 				},
@@ -1000,6 +1115,7 @@
 					"os": "OS1.0.9.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2024-09-18",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_PIPARUGlobal_OS1.0.9.0.UMZRUXM_91a0e0f5ec_14.0.zip",
 					"fastboot": "pipa_ru_global_images_OS1.0.9.0.UMZRUXM_20240902.0000.00_14.0_ru_a962549805.tgz"
 				},
@@ -1007,6 +1123,7 @@
 					"os": "OS1.0.8.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2024-09-02",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_PIPARUGlobal_OS1.0.8.0.UMZRUXM_e146615b97_14.0.zip",
 					"fastboot": "pipa_ru_global_images_OS1.0.8.0.UMZRUXM_20240816.0000.00_14.0_ru_b5406274a6.tgz"
 				},
@@ -1014,6 +1131,7 @@
 					"os": "OS1.0.7.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2024-07-30",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_PIPARUGlobal_OS1.0.7.0.UMZRUXM_9ac92e91bd_14.0.zip",
 					"fastboot": "pipa_ru_global_images_OS1.0.7.0.UMZRUXM_20240712.0000.00_14.0_ru_7c5429f3b9.tgz"
 				},
@@ -1021,6 +1139,7 @@
 					"os": "OS1.0.6.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2024-05-24",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_PIPARUGlobal_OS1.0.6.0.UMZRUXM_84aad7c02b_14.0.zip",
 					"fastboot": "pipa_ru_global_images_OS1.0.6.0.UMZRUXM_20240510.0000.00_14.0_ru_6c4ee28340.tgz"
 				},
@@ -1028,6 +1147,7 @@
 					"os": "OS1.0.4.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2024-04-22",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_PIPARUGlobal_OS1.0.4.0.UMZRUXM_f73ca222e5_14.0.zip",
 					"fastboot": "pipa_ru_global_images_OS1.0.4.0.UMZRUXM_20240320.0000.00_14.0_ru_3f402b9cd3.tgz"
 				},
@@ -1035,6 +1155,7 @@
 					"os": "OS1.0.3.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2024-02-27",
+					"aspatch": "2024-01-01",
 					"recovery": "miui_PIPARUGlobal_OS1.0.3.0.UMZRUXM_c48bd73009_14.0.zip",
 					"fastboot": "pipa_ru_global_images_OS1.0.3.0.UMZRUXM_20240218.0000.00_14.0_ru_7a174a69d1.tgz"
 				},
@@ -1042,6 +1163,7 @@
 					"os": "OS1.0.2.0.UMZRUXM",
 					"android": "14.0",
 					"release": "2024-02-08",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_PIPARUGlobal_OS1.0.2.0.UMZRUXM_b7727987f3_14.0.zip",
 					"fastboot": "pipa_ru_global_images_OS1.0.2.0.UMZRUXM_20240112.0000.00_14.0_ru_0f6d6caae9.tgz"
 				}
@@ -1065,6 +1187,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -1080,6 +1203,7 @@
 					"os": "OS2.0.14.0.UMZINXM",
 					"android": "14.0",
 					"release": "2026-05-09",
+					"aspatch": "2026-04-01",
 					"recovery": "pipa_in_global-ota_full-OS2.0.14.0.UMZINXM-user-14.0-00783b8e7f.zip",
 					"fastboot": "pipa_in_global_images_OS2.0.14.0.UMZINXM_20260414.0000.00_14.0_in_2a8218ddf5.tgz"
 				},
@@ -1087,6 +1211,7 @@
 					"os": "OS2.0.12.0.UMZINXM",
 					"android": "14.0",
 					"release": "2026-02-02",
+					"aspatch": "2026-01-01",
 					"recovery": "pipa_in_global-ota_full-OS2.0.12.0.UMZINXM-user-14.0-0055c699ab.zip",
 					"fastboot": "pipa_in_global_images_OS2.0.12.0.UMZINXM_20260122.0000.00_14.0_in_bcf8c69eec.tgz"
 				},
@@ -1094,6 +1219,7 @@
 					"os": "OS2.0.11.0.UMZINXM",
 					"android": "14.0",
 					"release": "2025-12-25",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa_in_global-ota_full-OS2.0.11.0.UMZINXM-user-14.0-57cc803616.zip",
 					"fastboot": "pipa_in_global_images_OS2.0.11.0.UMZINXM_20251216.0000.00_14.0_in_f05f6b91b9.tgz"
 				},
@@ -1101,6 +1227,7 @@
 					"os": "OS2.0.9.0.UMZINXM",
 					"android": "14.0",
 					"release": "2025-11-24",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa_in_global-ota_full-OS2.0.9.0.UMZINXM-user-14.0-fd6320aeca.zip",
 					"fastboot": "pipa_in_global_images_OS2.0.9.0.UMZINXM_20251105.0000.00_14.0_in_dcd1d8979b.tgz"
 				},
@@ -1108,6 +1235,7 @@
 					"os": "OS2.0.8.0.UMZINXM",
 					"android": "14.0",
 					"release": "2025-10-19",
+					"aspatch": "2025-09-01",
 					"recovery": "pipa_in_global-ota_full-OS2.0.8.0.UMZINXM-user-14.0-765329ddd2.zip",
 					"fastboot": "pipa_in_global_images_OS2.0.8.0.UMZINXM_20250928.0000.00_14.0_in_103f5a2a4e.tgz"
 				},
@@ -1115,6 +1243,7 @@
 					"os": "OS2.0.7.0.UMZINXM",
 					"android": "14.0",
 					"release": "2025-09-22",
+					"aspatch": "2025-08-01",
 					"recovery": "pipa_in_global-ota_full-OS2.0.7.0.UMZINXM-user-14.0-4f2a31ad2a.zip",
 					"fastboot": "pipa_in_global_images_OS2.0.7.0.UMZINXM_20250906.0000.00_14.0_in_3eb098e285.tgz"
 				},
@@ -1122,6 +1251,7 @@
 					"os": "OS2.0.6.0.UMZINXM",
 					"android": "14.0",
 					"release": "2025-08-22",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa_in_global-ota_full-OS2.0.6.0.UMZINXM-user-14.0-48291e1f94.zip",
 					"fastboot": "pipa_in_global_images_OS2.0.6.0.UMZINXM_20250809.0000.00_14.0_in_395fa31c8e.tgz"
 				},
@@ -1129,6 +1259,7 @@
 					"os": "OS2.0.5.0.UMZINXM",
 					"android": "14.0",
 					"release": "2025-07-21",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa_in_global-ota_full-OS2.0.5.0.UMZINXM-user-14.0-192126a9e9.zip",
 					"fastboot": "pipa_in_global_images_OS2.0.5.0.UMZINXM_20250703.0000.00_14.0_in_ee3a5c1011.tgz"
 				},
@@ -1136,6 +1267,7 @@
 					"os": "OS2.0.4.0.UMZINXM",
 					"android": "14.0",
 					"release": "2025-06-18",
+					"aspatch": "2025-06-01",
 					"recovery": "pipa_in_global-ota_full-OS2.0.4.0.UMZINXM-user-14.0-1fa977add0.zip",
 					"fastboot": "pipa_in_global_images_OS2.0.4.0.UMZINXM_20250528.0000.00_14.0_in_8d139aae12.tgz"
 				},
@@ -1143,6 +1275,7 @@
 					"os": "OS2.0.3.0.UMZINXM",
 					"android": "14.0",
 					"release": "2025-05-27",
+					"aspatch": "2025-05-01",
 					"recovery": "pipa_in_global-ota_full-OS2.0.3.0.UMZINXM-user-14.0-25635373f3.zip",
 					"fastboot": "pipa_in_global_images_OS2.0.3.0.UMZINXM_20250513.0000.00_14.0_in_5accc47e72.tgz"
 				},
@@ -1150,6 +1283,7 @@
 					"os": "OS2.0.2.0.UMZINXM",
 					"android": "14.0",
 					"release": "2025-04-11",
+					"aspatch": "2025-03-01",
 					"recovery": "pipa_in_global-ota_full-OS2.0.2.0.UMZINXM-user-14.0-0e3c907b51.zip",
 					"fastboot": "pipa_in_global_images_OS2.0.2.0.UMZINXM_20250324.0000.00_14.0_in_61e4c5374b.tgz"
 				},
@@ -1157,6 +1291,7 @@
 					"os": "OS2.0.1.0.UMZINXM",
 					"android": "14.0",
 					"release": "2025-03-12",
+					"aspatch": "2025-02-01",
 					"recovery": "pipa_in_global-ota_full-OS2.0.1.0.UMZINXM-user-14.0-42941f8a5b.zip",
 					"fastboot": "pipa_in_global_images_OS2.0.1.0.UMZINXM_20250218.0000.00_14.0_in_f9fdd37186.tgz"
 				},
@@ -1164,6 +1299,7 @@
 					"os": "OS1.0.12.0.UMZINXM",
 					"android": "14.0",
 					"release": "2025-02-17",
+					"aspatch": "2025-01-01",
 					"recovery": "miui_PIPAINGlobal_OS1.0.12.0.UMZINXM_8b7412709d_14.0.zip",
 					"fastboot": "pipa_in_global_images_OS1.0.12.0.UMZINXM_20250117.0000.00_14.0_in_8d2cc4fb30.tgz"
 				},
@@ -1171,6 +1307,7 @@
 					"os": "OS1.0.11.0.UMZINXM",
 					"android": "14.0",
 					"release": "2025-01-21",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_PIPAINGlobal_OS1.0.11.0.UMZINXM_339b01ef9a_14.0.zip",
 					"fastboot": "pipa_in_global_images_OS1.0.11.0.UMZINXM_20241210.0000.00_14.0_in_edaafb07be.tgz"
 				},
@@ -1178,6 +1315,7 @@
 					"os": "OS1.0.10.0.UMZINXM",
 					"android": "14.0",
 					"release": "2024-12-02",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_PIPAINGlobal_OS1.0.10.0.UMZINXM_ad54334022_14.0.zip",
 					"fastboot": "pipa_in_global_images_OS1.0.10.0.UMZINXM_20241113.0000.00_14.0_in_495641d1a7.tgz"
 				},
@@ -1185,6 +1323,7 @@
 					"os": "OS1.0.8.0.UMZINXM",
 					"android": "14.0",
 					"release": "2024-10-22",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_PIPAINGlobal_OS1.0.8.0.UMZINXM_02c2bf35c4_14.0.zip",
 					"fastboot": "pipa_in_global_images_OS1.0.8.0.UMZINXM_20241011.0000.00_14.0_in_192f31ec5c.tgz"
 				},
@@ -1192,6 +1331,7 @@
 					"os": "OS1.0.7.0.UMZINXM",
 					"android": "14.0",
 					"release": "2024-09-18",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_PIPAINGlobal_OS1.0.7.0.UMZINXM_636e32163f_14.0.zip",
 					"fastboot": "pipa_in_global_images_OS1.0.7.0.UMZINXM_20240902.0000.00_14.0_in_7a88d6d2ae.tgz"
 				},
@@ -1199,6 +1339,7 @@
 					"os": "OS1.0.6.0.UMZINXM",
 					"android": "14.0",
 					"release": "2024-08-27",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_PIPAINGlobal_OS1.0.6.0.UMZINXM_750d0ea1c8_14.0.zip",
 					"fastboot": "pipa_in_global_images_OS1.0.6.0.UMZINXM_20240816.0000.00_14.0_in_b892d66ff1.tgz"
 				},
@@ -1206,6 +1347,7 @@
 					"os": "OS1.0.5.0.UMZINXM",
 					"android": "14.0",
 					"release": "2024-07-30",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_PIPAINGlobal_OS1.0.5.0.UMZINXM_98b65c88cf_14.0.zip",
 					"fastboot": "pipa_in_global_images_OS1.0.5.0.UMZINXM_20240710.0000.00_14.0_in_f03d8b07ce.tgz"
 				},
@@ -1213,6 +1355,7 @@
 					"os": "OS1.0.4.0.UMZINXM",
 					"android": "14.0",
 					"release": "2024-05-20",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_PIPAINGlobal_OS1.0.4.0.UMZINXM_5f6b24384d_14.0.zip",
 					"fastboot": "pipa_in_global_images_OS1.0.4.0.UMZINXM_20240509.0000.00_14.0_in_03b6986e52.tgz"
 				},
@@ -1220,6 +1363,7 @@
 					"os": "OS1.0.3.0.UMZINXM",
 					"android": "14.0",
 					"release": "2024-03-21",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_PIPAINGlobal_OS1.0.3.0.UMZINXM_53efbe0084_14.0.zip",
 					"fastboot": "pipa_in_global_images_OS1.0.3.0.UMZINXM_20240311.0000.00_14.0_in_ca0bbebb23.tgz"
 				},
@@ -1227,6 +1371,7 @@
 					"os": "OS1.0.2.0.UMZINXM",
 					"android": "14.0",
 					"release": "2024-01-22",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_PIPAINGlobal_OS1.0.2.0.UMZINXM_c1b291134f_14.0.zip",
 					"fastboot": "pipa_in_global_images_OS1.0.2.0.UMZINXM_20240112.0000.00_14.0_in_be7eecefa4.tgz"
 				}
@@ -1250,6 +1395,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -1265,6 +1411,7 @@
 					"os": "OS2.0.15.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2026-05-10",
+					"aspatch": "2026-04-01",
 					"recovery": "pipa_id_global-ota_full-OS2.0.15.0.UMZIDXM-user-14.0-2d2051799d.zip",
 					"fastboot": "pipa_id_global_images_OS2.0.15.0.UMZIDXM_20260414.0000.00_14.0_id_a55321e1e4.tgz"
 				},
@@ -1272,6 +1419,7 @@
 					"os": "OS2.0.13.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2026-02-02",
+					"aspatch": "2026-01-01",
 					"recovery": "pipa_id_global-ota_full-OS2.0.13.0.UMZIDXM-user-14.0-f8f7ffce74.zip",
 					"fastboot": "pipa_id_global_images_OS2.0.13.0.UMZIDXM_20260122.0000.00_14.0_id_5b58c31483.tgz"
 				},
@@ -1279,6 +1427,7 @@
 					"os": "OS2.0.12.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2025-12-25",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa_id_global-ota_full-OS2.0.12.0.UMZIDXM-user-14.0-afefa82871.zip",
 					"fastboot": "pipa_id_global_images_OS2.0.12.0.UMZIDXM_20251216.0000.00_14.0_id_36de8a26d3.tgz"
 				},
@@ -1286,6 +1435,7 @@
 					"os": "OS2.0.10.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2025-11-24",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa_id_global-ota_full-OS2.0.10.0.UMZIDXM-user-14.0-b6f4057a1b.zip",
 					"fastboot": "pipa_id_global_images_OS2.0.10.0.UMZIDXM_20251105.0000.00_14.0_id_17a27219f4.tgz"
 				},
@@ -1293,6 +1443,7 @@
 					"os": "OS2.0.9.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2025-10-19",
+					"aspatch": "2025-09-01",
 					"recovery": "pipa_id_global-ota_full-OS2.0.9.0.UMZIDXM-user-14.0-2532e36b88.zip",
 					"fastboot": "pipa_id_global_images_OS2.0.9.0.UMZIDXM_20250928.0000.00_14.0_id_132ebbe26a.tgz"
 				},
@@ -1300,6 +1451,7 @@
 					"os": "OS2.0.8.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2025-09-22",
+					"aspatch": "2025-08-01",
 					"recovery": "pipa_id_global-ota_full-OS2.0.8.0.UMZIDXM-user-14.0-49e61ed344.zip",
 					"fastboot": "pipa_id_global_images_OS2.0.8.0.UMZIDXM_20250906.0000.00_14.0_id_28c453d9a3.tgz"
 				},
@@ -1307,6 +1459,7 @@
 					"os": "OS2.0.7.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2025-08-22",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa_id_global-ota_full-OS2.0.7.0.UMZIDXM-user-14.0-7f73e4c2e0.zip",
 					"fastboot": "pipa_id_global_images_OS2.0.7.0.UMZIDXM_20250809.0000.00_14.0_id_4bbccb31e4.tgz"
 				},
@@ -1314,6 +1467,7 @@
 					"os": "OS2.0.6.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2025-07-21",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa_id_global-ota_full-OS2.0.6.0.UMZIDXM-user-14.0-8f66b7f937.zip",
 					"fastboot": "pipa_id_global_images_OS2.0.6.0.UMZIDXM_20250703.0000.00_14.0_id_7210163fdc.tgz"
 				},
@@ -1321,6 +1475,7 @@
 					"os": "OS2.0.5.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2025-06-18",
+					"aspatch": "2025-06-01",
 					"recovery": "pipa_id_global-ota_full-OS2.0.5.0.UMZIDXM-user-14.0-44a161d7fc.zip",
 					"fastboot": "pipa_id_global_images_OS2.0.5.0.UMZIDXM_20250528.0000.00_14.0_id_143ccf9559.tgz"
 				},
@@ -1328,6 +1483,7 @@
 					"os": "OS2.0.4.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2025-05-27",
+					"aspatch": "2025-05-01",
 					"recovery": "pipa_id_global-ota_full-OS2.0.4.0.UMZIDXM-user-14.0-cf2fa73d54.zip",
 					"fastboot": "pipa_id_global_images_OS2.0.4.0.UMZIDXM_20250513.0000.00_14.0_id_078227bcae.tgz"
 				},
@@ -1335,6 +1491,7 @@
 					"os": "OS2.0.3.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2025-04-21",
+					"aspatch": "2025-03-01",
 					"recovery": "pipa_id_global-ota_full-OS2.0.3.0.UMZIDXM-user-14.0-984d32662f.zip",
 					"fastboot": "pipa_id_global_images_OS2.0.3.0.UMZIDXM_20250410.0000.00_14.0_id_1605293058.tgz"
 				},
@@ -1342,6 +1499,7 @@
 					"os": "OS2.0.1.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2025-03-12",
+					"aspatch": "2025-02-01",
 					"recovery": "pipa_id_global-ota_full-OS2.0.1.0.UMZIDXM-user-14.0-abd787b1da.zip",
 					"fastboot": "pipa_id_global_images_OS2.0.1.0.UMZIDXM_20250218.0000.00_14.0_id_17e700187f.tgz"
 				},
@@ -1349,6 +1507,7 @@
 					"os": "OS1.0.12.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2025-02-06",
+					"aspatch": "2025-01-01",
 					"recovery": "miui_PIPAIDGlobal_OS1.0.12.0.UMZIDXM_95be081a6a_14.0.zip",
 					"fastboot": "pipa_id_global_images_OS1.0.12.0.UMZIDXM_20250117.0000.00_14.0_id_407150ff64.tgz"
 				},
@@ -1356,6 +1515,7 @@
 					"os": "OS1.0.11.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2024-12-23",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_PIPAIDGlobal_OS1.0.11.0.UMZIDXM_9f8f8fa136_14.0.zip",
 					"fastboot": "pipa_id_global_images_OS1.0.11.0.UMZIDXM_20241210.0000.00_14.0_id_ac9c4b2e2d.tgz"
 				},
@@ -1363,6 +1523,7 @@
 					"os": "OS1.0.10.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2024-12-02",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_PIPAIDGlobal_OS1.0.10.0.UMZIDXM_d92776c5fe_14.0.zip",
 					"fastboot": "pipa_id_global_images_OS1.0.10.0.UMZIDXM_20241113.0000.00_14.0_id_5838717ee7.tgz"
 				},
@@ -1370,6 +1531,7 @@
 					"os": "OS1.0.8.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2024-10-22",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_PIPAIDGlobal_OS1.0.8.0.UMZIDXM_728630a0e6_14.0.zip",
 					"fastboot": "pipa_id_global_images_OS1.0.8.0.UMZIDXM_20241011.0000.00_14.0_id_6df89cdd61.tgz"
 				},
@@ -1377,6 +1539,7 @@
 					"os": "OS1.0.7.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2024-09-18",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_PIPAIDGlobal_OS1.0.7.0.UMZIDXM_7cd85aabaa_14.0.zip",
 					"fastboot": "pipa_id_global_images_OS1.0.7.0.UMZIDXM_20240902.0000.00_14.0_id_3d376d8403.tgz"
 				},
@@ -1384,6 +1547,7 @@
 					"os": "OS1.0.6.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2024-08-27",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_PIPAIDGlobal_OS1.0.6.0.UMZIDXM_adc87be4a9_14.0.zip",
 					"fastboot": "pipa_id_global_images_OS1.0.6.0.UMZIDXM_20240816.0000.00_14.0_id_665008e79d.tgz"
 				},
@@ -1391,6 +1555,7 @@
 					"os": "OS1.0.5.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2024-07-30",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_PIPAIDGlobal_OS1.0.5.0.UMZIDXM_6aead76039_14.0.zip",
 					"fastboot": "pipa_id_global_images_OS1.0.5.0.UMZIDXM_20240710.0000.00_14.0_id_673a8f62fe.tgz"
 				},
@@ -1398,6 +1563,7 @@
 					"os": "OS1.0.4.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2024-05-20",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_PIPAIDGlobal_OS1.0.4.0.UMZIDXM_0c3f0a60e4_14.0.zip",
 					"fastboot": "pipa_id_global_images_OS1.0.4.0.UMZIDXM_20240509.0000.00_14.0_id_50c93332d0.tgz"
 				},
@@ -1405,6 +1571,7 @@
 					"os": "OS1.0.3.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2024-04-07",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_PIPAIDGlobal_OS1.0.3.0.UMZIDXM_9c58adfaf0_14.0.zip",
 					"fastboot": "pipa_id_global_images_OS1.0.3.0.UMZIDXM_20240311.0000.00_14.0_id_54462e93db.tgz"
 				},
@@ -1412,6 +1579,7 @@
 					"os": "OS1.0.2.0.UMZIDXM",
 					"android": "14.0",
 					"release": "2024-02-02",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_PIPAIDGlobal_OS1.0.2.0.UMZIDXM_40ef0812d6_14.0.zip",
 					"fastboot": "pipa_id_global_images_OS1.0.2.0.UMZIDXM_20240112.0000.00_14.0_id_13df3bddf2.tgz"
 				}
@@ -1435,6 +1603,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -1450,6 +1619,7 @@
 					"os": "OS2.0.13.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2026-05-09",
+					"aspatch": "2026-04-01",
 					"recovery": "pipa_tr_global-ota_full-OS2.0.13.0.UMZTRXM-user-14.0-16b416828c.zip",
 					"fastboot": "pipa_tr_global_images_OS2.0.13.0.UMZTRXM_20260414.0000.00_14.0_tr_a1b7b36bf7.tgz"
 				},
@@ -1457,6 +1627,7 @@
 					"os": "OS2.0.12.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2026-01-30",
+					"aspatch": "2026-01-01",
 					"recovery": "pipa_tr_global-ota_full-OS2.0.12.0.UMZTRXM-user-14.0-f8d199895e.zip",
 					"fastboot": "pipa_tr_global_images_OS2.0.12.0.UMZTRXM_20260122.0000.00_14.0_tr_bd153bdbad.tgz"
 				},
@@ -1464,6 +1635,7 @@
 					"os": "OS2.0.11.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2025-12-24",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa_tr_global-ota_full-OS2.0.11.0.UMZTRXM-user-14.0-4e0ce44c90.zip",
 					"fastboot": "pipa_tr_global_images_OS2.0.11.0.UMZTRXM_20251216.0000.00_14.0_tr_108d77b833.tgz"
 				},
@@ -1471,6 +1643,7 @@
 					"os": "OS2.0.9.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2025-11-21",
+					"aspatch": "2025-11-01",
 					"recovery": "pipa_tr_global-ota_full-OS2.0.9.0.UMZTRXM-user-14.0-53a90da66c.zip",
 					"fastboot": "pipa_tr_global_images_OS2.0.9.0.UMZTRXM_20251105.0000.00_14.0_tr_612fa8a3a0.tgz"
 				},
@@ -1478,6 +1651,7 @@
 					"os": "OS2.0.8.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2025-10-15",
+					"aspatch": "2025-09-01",
 					"recovery": "pipa_tr_global-ota_full-OS2.0.8.0.UMZTRXM-user-14.0-8a4eb1eea7.zip",
 					"fastboot": "pipa_tr_global_images_OS2.0.8.0.UMZTRXM_20250928.0000.00_14.0_tr_7c2ddd33c4.tgz"
 				},
@@ -1485,6 +1659,7 @@
 					"os": "OS2.0.7.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2025-09-18",
+					"aspatch": "2025-08-01",
 					"recovery": "pipa_tr_global-ota_full-OS2.0.7.0.UMZTRXM-user-14.0-e05d2ead3a.zip",
 					"fastboot": "pipa_tr_global_images_OS2.0.7.0.UMZTRXM_20250906.0000.00_14.0_tr_42befb9537.tgz"
 				},
@@ -1492,6 +1667,7 @@
 					"os": "OS2.0.6.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2025-08-19",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa_tr_global-ota_full-OS2.0.6.0.UMZTRXM-user-14.0-1161d345be.zip",
 					"fastboot": "pipa_tr_global_images_OS2.0.6.0.UMZTRXM_20250809.0000.00_14.0_tr_6c1b2c62ab.tgz"
 				},
@@ -1499,6 +1675,7 @@
 					"os": "OS2.0.5.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2025-07-17",
+					"aspatch": "2025-07-01",
 					"recovery": "pipa_tr_global-ota_full-OS2.0.5.0.UMZTRXM-user-14.0-7f630d013d.zip",
 					"fastboot": "pipa_tr_global_images_OS2.0.5.0.UMZTRXM_20250703.0000.00_14.0_tr_5ed902cb18.tgz"
 				},
@@ -1506,6 +1683,7 @@
 					"os": "OS2.0.4.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2025-06-14",
+					"aspatch": "2025-06-01",
 					"recovery": "pipa_tr_global-ota_full-OS2.0.4.0.UMZTRXM-user-14.0-8d66506202.zip",
 					"fastboot": "pipa_tr_global_images_OS2.0.4.0.UMZTRXM_20250528.0000.00_14.0_tr_a3454c7d88.tgz"
 				},
@@ -1513,6 +1691,7 @@
 					"os": "OS2.0.3.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2025-05-24",
+					"aspatch": "2025-05-01",
 					"recovery": "pipa_tr_global-ota_full-OS2.0.3.0.UMZTRXM-user-14.0-15b8dfac1a.zip",
 					"fastboot": "pipa_tr_global_images_OS2.0.3.0.UMZTRXM_20250513.0000.00_14.0_tr_05e99bbf14.tgz"
 				},
@@ -1520,6 +1699,7 @@
 					"os": "OS2.0.2.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2025-04-08",
+					"aspatch": "2025-03-01",
 					"recovery": "pipa_tr_global-ota_full-OS2.0.2.0.UMZTRXM-user-14.0-2bd1ff6b6c.zip",
 					"fastboot": "pipa_tr_global_images_OS2.0.2.0.UMZTRXM_20250324.0000.00_14.0_tr_aa392f32f2.tgz"
 				},
@@ -1527,6 +1707,7 @@
 					"os": "OS2.0.1.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2025-03-12",
+					"aspatch": "2025-02-01",
 					"recovery": "pipa_tr_global-ota_full-OS2.0.1.0.UMZTRXM-user-14.0-79487dee5a.zip",
 					"fastboot": "pipa_tr_global_images_OS2.0.1.0.UMZTRXM_20250225.0000.00_14.0_tr_adea4ba240.tgz"
 				},
@@ -1534,6 +1715,7 @@
 					"os": "OS1.0.12.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2025-01-24",
+					"aspatch": "2025-01-01",
 					"recovery": "miui_PIPATRGlobal_OS1.0.12.0.UMZTRXM_733d7147a7_14.0.zip",
 					"fastboot": "pipa_tr_global_images_OS1.0.12.0.UMZTRXM_20250117.0000.00_14.0_tr_b5514a15aa.tgz"
 				},
@@ -1541,6 +1723,7 @@
 					"os": "OS1.0.11.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2024-12-18",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_PIPATRGlobal_OS1.0.11.0.UMZTRXM_dfd6448a10_14.0.zip",
 					"fastboot": "pipa_tr_global_images_OS1.0.11.0.UMZTRXM_20241210.0000.00_14.0_tr_3a7fd1684d.tgz"
 				},
@@ -1548,6 +1731,7 @@
 					"os": "OS1.0.10.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2024-11-27",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_PIPATRGlobal_OS1.0.10.0.UMZTRXM_1b867bcdc9_14.0.zip",
 					"fastboot": "pipa_tr_global_images_OS1.0.10.0.UMZTRXM_20241114.0000.00_14.0_tr_2dfc1b059c.tgz"
 				},
@@ -1555,6 +1739,7 @@
 					"os": "OS1.0.8.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2024-10-19",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_PIPATRGlobal_OS1.0.8.0.UMZTRXM_1f4e6f4e25_14.0.zip",
 					"fastboot": "pipa_tr_global_images_OS1.0.8.0.UMZTRXM_20241011.0000.00_14.0_tr_fd31cf5541.tgz"
 				},
@@ -1562,6 +1747,7 @@
 					"os": "OS1.0.7.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2024-09-13",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_PIPATRGlobal_OS1.0.7.0.UMZTRXM_aa33ba04d5_14.0.zip",
 					"fastboot": "pipa_tr_global_images_OS1.0.7.0.UMZTRXM_20240902.0000.00_14.0_tr_062932aa2c.tgz"
 				},
@@ -1569,6 +1755,7 @@
 					"os": "OS1.0.6.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2024-08-23",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_PIPATRGlobal_OS1.0.6.0.UMZTRXM_5345115cc9_14.0.zip",
 					"fastboot": "pipa_tr_global_images_OS1.0.6.0.UMZTRXM_20240816.0000.00_14.0_tr_ed50b848dd.tgz"
 				},
@@ -1576,6 +1763,7 @@
 					"os": "OS1.0.5.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2024-08-02",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_PIPATRGlobal_OS1.0.5.0.UMZTRXM_a9b1370475_14.0.zip",
 					"fastboot": "pipa_tr_global_images_OS1.0.5.0.UMZTRXM_20240712.0000.00_14.0_tr_c3d69120a2.tgz"
 				},
@@ -1583,6 +1771,7 @@
 					"os": "OS1.0.4.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2024-05-21",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_PIPATRGlobal_OS1.0.4.0.UMZTRXM_628e82a6a0_14.0.zip",
 					"fastboot": "pipa_tr_global_images_OS1.0.4.0.UMZTRXM_20240509.0000.00_14.0_tr_981a1e0d3e.tgz"
 				},
@@ -1590,6 +1779,7 @@
 					"os": "OS1.0.3.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2024-04-09",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_PIPATRGlobal_OS1.0.3.0.UMZTRXM_26ce21795e_14.0.zip",
 					"fastboot": "pipa_tr_global_images_OS1.0.3.0.UMZTRXM_20240314.0000.00_14.0_tr_26f74ceea4.tgz"
 				},
@@ -1597,6 +1787,7 @@
 					"os": "OS1.0.2.0.UMZTRXM",
 					"android": "14.0",
 					"release": "2024-01-24",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_PIPATRGlobal_OS1.0.2.0.UMZTRXM_d5041ca518_14.0.zip",
 					"fastboot": "pipa_tr_global_images_OS1.0.2.0.UMZTRXM_20240112.0000.00_14.0_tr_9dac04d11b.tgz"
 				}

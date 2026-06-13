@@ -33,6 +33,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -51,6 +52,7 @@
 					"os": "OS3.0.302.0.WDNCNXM",
 					"android": "16.0",
 					"release": "2026-05-25",
+					"aspatch": "2026-05-01",
 					"recovery": "guitar-ota_full-OS3.0.302.0.WDNCNXM-user-16.0-d20c040027.zip",
 					"fastboot": "guitar_images_OS3.0.302.0.WDNCNXM_20260512.0000.00_16.0_cn_b44c0e5598.tgz"
 				},
@@ -58,6 +60,7 @@
 					"os": "OS3.0.301.0.WDNCNXM",
 					"android": "16.0",
 					"release": "2026-04-21",
+					"aspatch": "2026-03-01",
 					"recovery": "guitar-ota_full-OS3.0.301.0.WDNCNXM-user-16.0-6a50a354e4.zip",
 					"fastboot": "guitar_images_OS3.0.301.0.WDNCNXM_20260402.0000.00_16.0_cn_06ff4eedce.tgz"
 				}
@@ -81,6 +84,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -96,6 +100,7 @@
 					"os": "OS3.0.302.0.WDNTWXM",
 					"android": "16.0",
 					"release": "2026-05-08",
+					"aspatch": "2026-03-01",
 					"recovery": "guitar_tw_global-ota_full-OS3.0.302.0.WDNTWXM-user-16.0-56117f7273.zip",
 					"fastboot": "guitar_tw_global_images_OS3.0.302.0.WDNTWXM_20260421.0000.00_16.0_tw_27deb59423.tgz"
 				},
@@ -103,6 +108,7 @@
 					"os": "OS3.0.301.0.WDNTWXM",
 					"android": "16.0",
 					"release": "2026-04-28",
+					"aspatch": "2026-03-01",
 					"recovery": "guitar_tw_global-ota_full-OS3.0.301.0.WDNTWXM-user-16.0-dc8e45b3a4.zip",
 					"fastboot": "guitar_tw_global_images_OS3.0.301.0.WDNTWXM_20260331.0000.00_16.0_tw_9581d35f46.tgz"
 				}
@@ -126,6 +132,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -141,6 +148,7 @@
 					"os": "OS3.0.304.0.WDNMIXM",
 					"android": "16.0",
 					"release": "2026-05-15",
+					"aspatch": "2026-05-01",
 					"recovery": "guitar_global-ota_full-OS3.0.304.0.WDNMIXM-user-16.0-aa748d3d9c.zip",
 					"fastboot": "guitar_global_images_OS3.0.304.0.WDNMIXM_20260509.0000.00_16.0_global_3e97704523.tgz"
 				},
@@ -148,6 +156,7 @@
 					"os": "OS3.0.303.0.WDNMIXM",
 					"android": "16.0",
 					"release": "2026-05-08",
+					"aspatch": "2026-04-01",
 					"recovery": "guitar_global-ota_full-OS3.0.303.0.WDNMIXM-user-16.0-b3bd133291.zip",
 					"fastboot": "guitar_global_images_OS3.0.303.0.WDNMIXM_20260421.0000.00_16.0_global_7f7e617855.tgz"
 				},
@@ -155,6 +164,7 @@
 					"os": "OS3.0.302.0.WDNMIXM",
 					"android": "16.0",
 					"release": "2026-04-28",
+					"aspatch": "2026-02-01",
 					"recovery": "guitar_global-ota_full-OS3.0.302.0.WDNMIXM-user-16.0-4ead8da3f9.zip",
 					"fastboot": "guitar_global_images_OS3.0.302.0.WDNMIXM_20260326.0000.00_16.0_global_db1923ecca.tgz"
 				}
@@ -178,6 +188,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -193,6 +204,7 @@
 					"os": "OS3.0.302.0.WDNEUXM",
 					"android": "16.0",
 					"release": "2026-05-13",
+					"aspatch": "2026-03-01",
 					"recovery": "guitar_eea_global-ota_full-OS3.0.302.0.WDNEUXM-user-16.0-5830872b81.zip",
 					"fastboot": "guitar_eea_global_images_OS3.0.302.0.WDNEUXM_20260414.0000.00_16.0_eea_7cb02de6e1.tgz"
 				}
@@ -216,6 +228,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -231,6 +244,7 @@
 					"os": "OS3.0.301.0.WDNEUDM",
 					"android": "16.0",
 					"release": "2026-04-28",
+					"aspatch": "2026-03-01",
 					"recovery": "guitar_eea_global-ota_full-OS3.0.301.0.WDNEUDM-user-16.0-33f002a654.zip",
 					"fastboot": "guitar_eea_global_images_OS3.0.301.0.WDNEUDM_20260324.0000.00_16.0_eea_45f8b47620.tgz"
 				}
@@ -254,6 +268,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -269,6 +284,7 @@
 					"os": "OS3.0.304.0.WDNRUXM",
 					"android": "16.0",
 					"release": "2026-05-08",
+					"aspatch": "2026-04-01",
 					"recovery": "guitar_ru_global-ota_full-OS3.0.304.0.WDNRUXM-user-16.0-16e4525d75.zip",
 					"fastboot": "guitar_ru_global_images_OS3.0.304.0.WDNRUXM_20260430.0000.00_16.0_ru_fd1aac384d.tgz"
 				},
@@ -276,6 +292,7 @@
 					"os": "OS3.0.301.0.WDNRUXM",
 					"android": "16.0",
 					"release": "2026-04-28",
+					"aspatch": "2026-03-01",
 					"recovery": "guitar_ru_global-ota_full-OS3.0.301.0.WDNRUXM-user-16.0-6af39223bc.zip",
 					"fastboot": "guitar_ru_global_images_OS3.0.301.0.WDNRUXM_20260317.0000.00_16.0_ru_17248ccafe.tgz"
 				}
@@ -299,6 +316,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -314,6 +332,7 @@
 					"os": "OS3.0.302.0.WDNIDXM",
 					"android": "16.0",
 					"release": "2026-05-18",
+					"aspatch": "2026-04-01",
 					"recovery": "guitar_id_global-ota_full-OS3.0.302.0.WDNIDXM-user-16.0-492f906156.zip",
 					"fastboot": "guitar_id_global_images_OS3.0.302.0.WDNIDXM_20260507.0000.00_16.0_id_acc33a5a84.tgz"
 				},
@@ -321,6 +340,7 @@
 					"os": "OS3.0.301.0.WDNIDXM",
 					"android": "16.0",
 					"release": "2026-04-28",
+					"aspatch": "2026-03-01",
 					"recovery": "guitar_id_global-ota_full-OS3.0.301.0.WDNIDXM-user-16.0-04832270c9.zip",
 					"fastboot": "guitar_id_global_images_OS3.0.301.0.WDNIDXM_20260326.0000.00_16.0_id_b6060d0c47.tgz"
 				}
@@ -344,6 +364,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -359,6 +380,7 @@
 					"os": "OS3.0.303.0.WDNTRXM",
 					"android": "16.0",
 					"release": "2026-05-08",
+					"aspatch": "2026-04-01",
 					"recovery": "guitar_tr_global-ota_full-OS3.0.303.0.WDNTRXM-user-16.0-8094068335.zip",
 					"fastboot": "guitar_tr_global_images_OS3.0.303.0.WDNTRXM_20260427.0000.00_16.0_tr_9a39a9606b.tgz"
 				},
@@ -366,6 +388,7 @@
 					"os": "OS3.0.301.0.WDNTRXM",
 					"android": "16.0",
 					"release": "2026-04-28",
+					"aspatch": "2026-03-01",
 					"recovery": "guitar_tr_global-ota_full-OS3.0.301.0.WDNTRXM-user-16.0-13e691ca0c.zip",
 					"fastboot": "guitar_tr_global_images_OS3.0.301.0.WDNTRXM_20260401.0000.00_16.0_tr_20875fc380.tgz"
 				}

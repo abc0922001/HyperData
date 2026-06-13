@@ -33,6 +33,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -51,6 +52,7 @@
 					"os": "OS3.0.305.0.WAKCNXM",
 					"android": "16.0",
 					"release": "2026-05-21",
+					"aspatch": "2026-05-01",
 					"recovery": "yili-ota_full-OS3.0.305.0.WAKCNXM-user-16.0-3f8bef59c0.zip",
 					"fastboot": "yili_images_OS3.0.305.0.WAKCNXM_20260507.0000.00_16.0_cn_e6b1dc8453.tgz"
 				},
@@ -58,6 +60,7 @@
 					"os": "OS3.0.304.0.WAKCNXM",
 					"android": "16.0",
 					"release": "2026-04-24",
+					"aspatch": "2026-04-01",
 					"recovery": "yili-ota_full-OS3.0.304.0.WAKCNXM-user-16.0-9b56e687ff.zip",
 					"fastboot": "yili_images_OS3.0.304.0.WAKCNXM_20260421.0000.00_16.0_cn_6e405e8896.tgz"
 				},
@@ -65,6 +68,7 @@
 					"os": "OS3.0.303.0.WAKCNXM",
 					"android": "16.0",
 					"release": "2026-04-21",
+					"aspatch": "2026-04-01",
 					"recovery": "yili-ota_full-OS3.0.303.0.WAKCNXM-user-16.0-99c932fe27.zip",
 					"fastboot": "yili_images_OS3.0.303.0.WAKCNXM_20260415.0000.00_16.0_cn_345df1e396.tgz"
 				},
@@ -72,6 +76,7 @@
 					"os": "OS3.0.301.0.WAKCNXM",
 					"android": "16.0",
 					"release": "2026-04-21",
+					"aspatch": "2026-03-01",
 					"recovery": "yili-ota_full-OS3.0.301.0.WAKCNXM-user-16.0-61d5003cdc.zip",
 					"fastboot": ""
 				}

@@ -37,6 +37,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -52,6 +53,7 @@
 					"os": "OS3.0.302.0.WNFMIXM",
 					"android": "16.0",
 					"release": "2026-05-11",
+					"aspatch": "2026-04-01",
 					"recovery": "emerald_global-ota_full-OS3.0.302.0.WNFMIXM-user-16.0-3537a89ba5.zip",
 					"fastboot": "emerald_global_images_OS3.0.302.0.WNFMIXM_20260417.0000.00_16.0_global_93da2b7026.tgz"
 				},
@@ -59,6 +61,7 @@
 					"os": "OS3.0.5.0.WNFMIXM",
 					"android": "16.0",
 					"release": "2026-02-24",
+					"aspatch": "2026-02-01",
 					"recovery": "emerald_global-ota_full-OS3.0.5.0.WNFMIXM-user-16.0-2b4863679f.zip",
 					"fastboot": "emerald_global_images_OS3.0.5.0.WNFMIXM_20260206.0000.00_16.0_global_1eb1e97d13.tgz"
 				},
@@ -66,6 +69,7 @@
 					"os": "OS3.0.4.0.WNFMIXM",
 					"android": "16.0",
 					"release": "2025-12-28",
+					"aspatch": "2025-11-01",
 					"recovery": "emerald_global-ota_full-OS3.0.4.0.WNFMIXM-user-16.0-f81cdd34b9.zip",
 					"fastboot": "emerald_global_images_OS3.0.4.0.WNFMIXM_20251219.0000.00_16.0_global_61844c83f0.tgz"
 				},
@@ -73,6 +77,7 @@
 					"os": "OS2.0.212.0.VNFMIXM",
 					"android": "15.0",
 					"release": "2026-01-01",
+					"aspatch": "2025-12-01",
 					"recovery": "emerald_global-ota_full-OS2.0.212.0.VNFMIXM-user-15.0-d749cb3f85.zip",
 					"fastboot": "emerald_global_images_OS2.0.212.0.VNFMIXM_20251223.0000.00_15.0_global_e6b23b0305.tgz"
 				},
@@ -80,6 +85,7 @@
 					"os": "OS2.0.211.0.VNFMIXM",
 					"android": "15.0",
 					"release": "2025-12-15",
+					"aspatch": "2025-11-01",
 					"recovery": "emerald_global-ota_full-OS2.0.211.0.VNFMIXM-user-15.0-7f7f5d4d1d.zip",
 					"fastboot": "emerald_global_images_OS2.0.211.0.VNFMIXM_20251127.0000.00_15.0_global_d5ec80760e.tgz"
 				},
@@ -87,6 +93,7 @@
 					"os": "OS2.0.210.0.VNFMIXM",
 					"android": "15.0",
 					"release": "2025-11-10",
+					"aspatch": "2025-11-01",
 					"recovery": "emerald_global-ota_full-OS2.0.210.0.VNFMIXM-user-15.0-8316c0506d.zip",
 					"fastboot": "emerald_global_images_OS2.0.210.0.VNFMIXM_20251031.0000.00_15.0_global_fcc7e91ffc.tgz"
 				},
@@ -94,6 +101,7 @@
 					"os": "OS2.0.209.0.VNFMIXM",
 					"android": "15.0",
 					"release": "2025-10-21",
+					"aspatch": "2025-09-01",
 					"recovery": "emerald_global-ota_full-OS2.0.209.0.VNFMIXM-user-15.0-fac9f9ae74.zip",
 					"fastboot": "emerald_global_images_OS2.0.209.0.VNFMIXM_20251010.0000.00_15.0_global_1b45750338.tgz"
 				},
@@ -101,6 +109,7 @@
 					"os": "OS2.0.208.0.VNFMIXM",
 					"android": "15.0",
 					"release": "2025-09-19",
+					"aspatch": "2025-09-01",
 					"recovery": "emerald_global-ota_full-OS2.0.208.0.VNFMIXM-user-15.0-65621a4b2c.zip",
 					"fastboot": "emerald_global_images_OS2.0.208.0.VNFMIXM_20250910.0000.00_15.0_global_f7288b258d.tgz"
 				},
@@ -108,6 +117,7 @@
 					"os": "OS2.0.206.0.VNFMIXM",
 					"android": "15.0",
 					"release": "2025-08-21",
+					"aspatch": "2025-08-01",
 					"recovery": "emerald_global-ota_full-OS2.0.206.0.VNFMIXM-user-15.0-d86456795c.zip",
 					"fastboot": "emerald_global_images_OS2.0.206.0.VNFMIXM_20250812.0000.00_15.0_global_62c7b8eac8.tgz"
 				},
@@ -115,6 +125,7 @@
 					"os": "OS2.0.204.0.VNFMIXM",
 					"android": "15.0",
 					"release": "2025-07-22",
+					"aspatch": "2025-06-01",
 					"recovery": "emerald_global-ota_full-OS2.0.204.0.VNFMIXM-user-15.0-be68108adf.zip",
 					"fastboot": "emerald_global_images_OS2.0.204.0.VNFMIXM_20250714.0000.00_15.0_global_7fc6243e0d.tgz"
 				},
@@ -122,6 +133,7 @@
 					"os": "OS2.0.202.0.VNFMIXM",
 					"android": "15.0",
 					"release": "2025-07-07",
+					"aspatch": "2025-06-01",
 					"recovery": "emerald_global-ota_full-OS2.0.202.0.VNFMIXM-user-15.0-b96bd97796.zip",
 					"fastboot": ""
 				},
@@ -129,6 +141,7 @@
 					"os": "OS2.0.7.0.VNFMIXM",
 					"android": "15.0",
 					"release": "2025-06-16",
+					"aspatch": "2025-05-01",
 					"recovery": "emerald_global-ota_full-OS2.0.7.0.VNFMIXM-user-15.0-f407db24ed.zip",
 					"fastboot": "emerald_global_images_OS2.0.7.0.VNFMIXM_20250520.0000.00_15.0_global_65c90ceead.tgz"
 				},
@@ -136,6 +149,7 @@
 					"os": "OS2.0.6.0.VNFMIXM",
 					"android": "15.0",
 					"release": "2025-05-23",
+					"aspatch": "2025-05-01",
 					"recovery": "emerald_global-ota_full-OS2.0.6.0.VNFMIXM-user-15.0-6aeb35fc99.zip",
 					"fastboot": "emerald_global_images_OS2.0.6.0.VNFMIXM_20250514.0000.00_15.0_global_a23d110396.tgz"
 				},
@@ -143,6 +157,7 @@
 					"os": "OS2.0.5.0.VNFMIXM",
 					"android": "15.0",
 					"release": "2025-04-27",
+					"aspatch": "2025-04-01",
 					"recovery": "emerald_global-ota_full-OS2.0.5.0.VNFMIXM-user-15.0-33fc5d166b.zip",
 					"fastboot": "emerald_global_images_OS2.0.5.0.VNFMIXM_20250414.0000.00_15.0_global_18530ae9e0.tgz"
 				},
@@ -150,6 +165,7 @@
 					"os": "OS2.0.4.0.VNFMIXM",
 					"android": "15.0",
 					"release": "2025-03-11",
+					"aspatch": "2025-02-01",
 					"recovery": "emerald_global-ota_full-OS2.0.4.0.VNFMIXM-user-15.0-2332928b70.zip",
 					"fastboot": "emerald_global_images_OS2.0.4.0.VNFMIXM_20250220.0000.00_15.0_global_dd173b3135.tgz"
 				},
@@ -157,6 +173,7 @@
 					"os": "OS2.0.2.0.VNFMIXM",
 					"android": "15.0",
 					"release": "2025-01-16",
+					"aspatch": "2024-12-01",
 					"recovery": "emerald_global-ota_full-OS2.0.2.0.VNFMIXM-user-15.0-c61adec515.zip",
 					"fastboot": "emerald_global_images_OS2.0.2.0.VNFMIXM_20241230.0000.00_15.0_global_89f03f74f5.tgz"
 				},
@@ -164,6 +181,7 @@
 					"os": "OS1.0.10.0.UNFMIXM",
 					"android": "14.0",
 					"release": "2024-12-23",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_EMERALDGlobal_OS1.0.10.0.UNFMIXM_b99b009f3d_14.0.zip",
 					"fastboot": "emerald_global_images_OS1.0.10.0.UNFMIXM_20241210.0000.00_14.0_global_6dc04f0b07.tgz"
 				},
@@ -171,6 +189,7 @@
 					"os": "OS1.0.9.0.UNFMIXM",
 					"android": "14.0",
 					"release": "2024-11-26",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_EMERALDGlobal_OS1.0.9.0.UNFMIXM_c3c33acdc9_14.0.zip",
 					"fastboot": "emerald_global_images_OS1.0.9.0.UNFMIXM_20241113.0000.00_14.0_global_823159f568.tgz"
 				},
@@ -178,6 +197,7 @@
 					"os": "OS1.0.7.0.UNFMIXM",
 					"android": "14.0",
 					"release": "2024-10-14",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_EMERALDGlobal_OS1.0.7.0.UNFMIXM_5007a2d96e_14.0.zip",
 					"fastboot": "emerald_global_images_OS1.0.7.0.UNFMIXM_20240927.0000.00_14.0_global_9f448ee014.tgz"
 				},
@@ -185,6 +205,7 @@
 					"os": "OS1.0.6.0.UNFMIXM",
 					"android": "14.0",
 					"release": "2024-09-23",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_EMERALDGlobal_OS1.0.6.0.UNFMIXM_0f0c0947bc_14.0.zip",
 					"fastboot": "emerald_global_images_OS1.0.6.0.UNFMIXM_20240909.0000.00_14.0_global_0fddcba975.tgz"
 				},
@@ -192,6 +213,7 @@
 					"os": "OS1.0.5.0.UNFMIXM",
 					"android": "14.0",
 					"release": "2024-08-30",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_EMERALDGlobal_OS1.0.5.0.UNFMIXM_74c2396ed4_14.0.zip",
 					"fastboot": "emerald_global_images_OS1.0.5.0.UNFMIXM_20240813.0000.00_14.0_global_9f856a8071.tgz"
 				},
@@ -199,6 +221,7 @@
 					"os": "OS1.0.4.0.UNFMIXM",
 					"android": "14.0",
 					"release": "2024-08-13",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_EMERALDGlobal_OS1.0.4.0.UNFMIXM_9ad81db509_14.0.zip",
 					"fastboot": "emerald_global_images_OS1.0.4.0.UNFMIXM_20240731.0000.00_14.0_global_60b7f84982.tgz"
 				},
@@ -206,6 +229,7 @@
 					"os": "OS1.0.3.0.UNFMIXM",
 					"android": "14.0",
 					"release": "2024-05-16",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_EMERALDGlobal_OS1.0.3.0.UNFMIXM_68eb6f61a9_14.0.zip",
 					"fastboot": "emerald_global_images_OS1.0.3.0.UNFMIXM_20240429.0000.00_14.0_global_5301c68bb0.tgz"
 				},
@@ -213,6 +237,7 @@
 					"os": "OS1.0.1.0.UNFMIXM",
 					"android": "14.0",
 					"release": "2024-02-22",
+					"aspatch": "2024-02-01",
 					"recovery": "miui_EMERALDGlobal_OS1.0.1.0.UNFMIXM_69840715c1_14.0.zip",
 					"fastboot": "emerald_global_images_OS1.0.1.0.UNFMIXM_20240228.0000.00_14.0_global_5335b1d3d2.tgz"
 				}
@@ -236,6 +261,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -251,6 +277,7 @@
 					"os": "OS3.0.301.0.WNFMIDC",
 					"android": "16.0",
 					"release": "2026-05-19",
+					"aspatch": "2026-05-01",
 					"recovery": "emerald_dc_global-ota_full-OS3.0.301.0.WNFMIDC-user-16.0-cd757955f0.zip",
 					"fastboot": "emerald_dc_global_images_OS3.0.301.0.WNFMIDC_20260512.0000.00_16.0_global_dc_6dd17de62f.tgz"
 				},
@@ -258,6 +285,7 @@
 					"os": "OS3.0.2.0.WNFMIDC",
 					"android": "16.0",
 					"release": "2026-03-31",
+					"aspatch": "2026-03-01",
 					"recovery": "emerald_dc_global-ota_full-OS3.0.2.0.WNFMIDC-user-16.0-0c7cbc57eb.zip",
 					"fastboot": "emerald_dc_global_images_OS3.0.2.0.WNFMIDC_20260325.0000.00_16.0_global_dc_2bb5e44506.tgz"
 				},
@@ -265,6 +293,7 @@
 					"os": "OS3.0.1.0.WNFMIDC",
 					"android": "16.0",
 					"release": "2026-02-25",
+					"aspatch": "2026-01-01",
 					"recovery": "emerald_dc_global-ota_full-OS3.0.1.0.WNFMIDC-user-16.0-e3bd398891.zip",
 					"fastboot": "emerald_dc_global_images_OS3.0.1.0.WNFMIDC_20260129.0000.00_16.0_global_dc_226bec7ec3.tgz"
 				},
@@ -272,6 +301,7 @@
 					"os": "OS2.0.210.0.VNFMIDC",
 					"android": "15.0",
 					"release": "2026-03-06",
+					"aspatch": "2026-02-01",
 					"recovery": "emerald_dc_global-ota_full-OS2.0.210.0.VNFMIDC-user-15.0-6ee785c6b4.zip",
 					"fastboot": ""
 				},
@@ -279,6 +309,7 @@
 					"os": "OS2.0.209.0.VNFMIDC",
 					"android": "15.0",
 					"release": "2025-12-09",
+					"aspatch": "2025-11-01",
 					"recovery": "emerald_dc_global-ota_full-OS2.0.209.0.VNFMIDC-user-15.0-6a2713ca96.zip",
 					"fastboot": "emerald_dc_global_images_OS2.0.209.0.VNFMIDC_20251127.0000.00_15.0_global_dc_1a8a48874c.tgz"
 				},
@@ -286,6 +317,7 @@
 					"os": "OS2.0.207.0.VNFMIDC",
 					"android": "15.0",
 					"release": "2025-11-03",
+					"aspatch": "2025-10-01",
 					"recovery": "emerald_dc_global-ota_full-OS2.0.207.0.VNFMIDC-user-15.0-9cd3868a7f.zip",
 					"fastboot": "emerald_dc_global_images_OS2.0.207.0.VNFMIDC_20251022.0000.00_15.0_global_dc_abcffde0a0.tgz"
 				},
@@ -293,6 +325,7 @@
 					"os": "OS2.0.206.0.VNFMIDC",
 					"android": "15.0",
 					"release": "2025-10-15",
+					"aspatch": "2025-09-01",
 					"recovery": "emerald_dc_global-ota_full-OS2.0.206.0.VNFMIDC-user-15.0-490abed5e8.zip",
 					"fastboot": "emerald_dc_global_images_OS2.0.206.0.VNFMIDC_20250926.0000.00_15.0_global_dc_391c0f1f80.tgz"
 				},
@@ -300,6 +333,7 @@
 					"os": "OS2.0.205.0.VNFMIDC",
 					"android": "15.0",
 					"release": "2025-09-16",
+					"aspatch": "2025-08-01",
 					"recovery": "emerald_dc_global-ota_full-OS2.0.205.0.VNFMIDC-user-15.0-23e7b3ce48.zip",
 					"fastboot": "emerald_dc_global_images_OS2.0.205.0.VNFMIDC_20250910.0000.00_15.0_global_dc_68fe97a1d5.tgz"
 				},
@@ -307,6 +341,7 @@
 					"os": "OS2.0.203.0.VNFMIDC",
 					"android": "15.0",
 					"release": "2025-08-20",
+					"aspatch": "2025-08-01",
 					"recovery": "emerald_dc_global-ota_full-OS2.0.203.0.VNFMIDC-user-15.0-86f7cacd20.zip",
 					"fastboot": "emerald_dc_global_images_OS2.0.203.0.VNFMIDC_20250812.0000.00_15.0_global_dc_939b4d1785.tgz"
 				},
@@ -314,6 +349,7 @@
 					"os": "OS2.0.202.0.VNFMIDC",
 					"android": "15.0",
 					"release": "2025-08-06",
+					"aspatch": "2025-07-01",
 					"recovery": "emerald_dc_global-ota_full-OS2.0.202.0.VNFMIDC-user-15.0-968035c800.zip",
 					"fastboot": "emerald_dc_global_images_OS2.0.202.0.VNFMIDC_20250731.0000.00_15.0_global_dc_3ca82f5af6.tgz"
 				},
@@ -321,6 +357,7 @@
 					"os": "OS2.0.4.0.VNFMIDC",
 					"android": "15.0",
 					"release": "2025-06-12",
+					"aspatch": "2025-05-01",
 					"recovery": "emerald_dc_global-ota_full-OS2.0.4.0.VNFMIDC-user-15.0-30745673ae.zip",
 					"fastboot": "emerald_dc_global_images_OS2.0.4.0.VNFMIDC_20250522.0000.00_15.0_global_dc_b6adac4ad8.tgz"
 				},
@@ -328,6 +365,7 @@
 					"os": "OS2.0.3.0.VNFMIDC",
 					"android": "15.0",
 					"release": "2025-04-23",
+					"aspatch": "2025-03-01",
 					"recovery": "emerald_dc_global-ota_full-OS2.0.3.0.VNFMIDC-user-15.0-892bce8fdd.zip",
 					"fastboot": "emerald_dc_global_images_OS2.0.3.0.VNFMIDC_20250330.0000.00_15.0_global_dc_fd60675e64.tgz"
 				},
@@ -335,6 +373,7 @@
 					"os": "OS2.0.1.0.VNFMIDC",
 					"android": "15.0",
 					"release": "2025-03-04",
+					"aspatch": "2025-01-01",
 					"recovery": "emerald_dc_global-ota_full-OS2.0.1.0.VNFMIDC-user-15.0-80f442d537.zip",
 					"fastboot": "emerald_dc_global_images_OS2.0.1.0.VNFMIDC_20250205.0000.00_15.0_global_dc_495b015d1e.tgz"
 				},
@@ -342,6 +381,7 @@
 					"os": "OS1.0.9.0.UNFMIDC",
 					"android": "14.0",
 					"release": "2025-01-06",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_EMERALDDCGlobal_OS1.0.9.0.UNFMIDC_9285956a6f_14.0.zip",
 					"fastboot": "emerald_dc_global_images_OS1.0.9.0.UNFMIDC_20241213.0000.00_14.0_global_dc_db1bd3d7c5.tgz"
 				},
@@ -349,6 +389,7 @@
 					"os": "OS1.0.7.0.UNFMIDC",
 					"android": "14.0",
 					"release": "2024-12-04",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_EMERALDDCGlobal_OS1.0.7.0.UNFMIDC_99346598db_14.0.zip",
 					"fastboot": "emerald_dc_global_images_OS1.0.7.0.UNFMIDC_20241125.0000.00_14.0_global_dc_7cece348e9.tgz"
 				},
@@ -356,6 +397,7 @@
 					"os": "OS1.0.6.0.UNFMIDC",
 					"android": "14.0",
 					"release": "2024-11-15",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_EMERALDDCGlobal_OS1.0.6.0.UNFMIDC_b4cea540eb_14.0.zip",
 					"fastboot": ""
 				},
@@ -363,6 +405,7 @@
 					"os": "OS1.0.5.0.UNFMIDC",
 					"android": "14.0",
 					"release": "2024-11-15",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_EMERALDDCGlobal_OS1.0.5.0.UNFMIDC_95777f5d01_14.0.zip",
 					"fastboot": ""
 				},
@@ -370,6 +413,7 @@
 					"os": "OS1.0.3.0.UNFMIDC",
 					"android": "14.0",
 					"release": "2024-11-15",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_EMERALDDCGlobal_OS1.0.3.0.UNFMIDC_70a75d7b4f_14.0.zip",
 					"fastboot": ""
 				}
@@ -393,6 +437,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -408,6 +453,7 @@
 					"os": "OS3.0.301.0.WNFEUXM",
 					"android": "16.0",
 					"release": "2026-05-19",
+					"aspatch": "2026-05-01",
 					"recovery": "emerald_eea_global-ota_full-OS3.0.301.0.WNFEUXM-user-16.0-0dd9713f55.zip",
 					"fastboot": "emerald_eea_global_images_OS3.0.301.0.WNFEUXM_20260512.0000.00_16.0_eea_eb414385fd.tgz"
 				},
@@ -415,6 +461,7 @@
 					"os": "OS3.0.2.0.WNFEUXM",
 					"android": "16.0",
 					"release": "2026-03-27",
+					"aspatch": "2026-03-01",
 					"recovery": "emerald_eea_global-ota_full-OS3.0.2.0.WNFEUXM-user-16.0-2078516d37.zip",
 					"fastboot": "emerald_eea_global_images_OS3.0.2.0.WNFEUXM_20260317.0000.00_16.0_eea_ab954558c7.tgz"
 				},
@@ -422,6 +469,7 @@
 					"os": "OS3.0.1.0.WNFEUXM",
 					"android": "16.0",
 					"release": "2026-02-24",
+					"aspatch": "2026-01-01",
 					"recovery": "emerald_eea_global-ota_full-OS3.0.1.0.WNFEUXM-user-16.0-a4320b0054.zip",
 					"fastboot": "emerald_eea_global_images_OS3.0.1.0.WNFEUXM_20260128.0000.00_16.0_eea_8a16ceab2f.tgz"
 				},
@@ -429,6 +477,7 @@
 					"os": "OS2.0.211.0.VNFEUXM",
 					"android": "15.0",
 					"release": "2026-01-05",
+					"aspatch": "2025-12-01",
 					"recovery": "emerald_eea_global-ota_full-OS2.0.211.0.VNFEUXM-user-15.0-b671faefdb.zip",
 					"fastboot": "emerald_eea_global_images_OS2.0.211.0.VNFEUXM_20251224.0000.00_15.0_eea_896beaac23.tgz"
 				},
@@ -436,6 +485,7 @@
 					"os": "OS2.0.210.0.VNFEUXM",
 					"android": "15.0",
 					"release": "2025-12-13",
+					"aspatch": "2025-11-01",
 					"recovery": "emerald_eea_global-ota_full-OS2.0.210.0.VNFEUXM-user-15.0-60b7e39377.zip",
 					"fastboot": "emerald_eea_global_images_OS2.0.210.0.VNFEUXM_20251126.0000.00_15.0_eea_84f88f8a6a.tgz"
 				},
@@ -443,6 +493,7 @@
 					"os": "OS2.0.209.0.VNFEUXM",
 					"android": "15.0",
 					"release": "2025-11-17",
+					"aspatch": "2025-11-01",
 					"recovery": "emerald_eea_global-ota_full-OS2.0.209.0.VNFEUXM-user-15.0-2f2a741b10.zip",
 					"fastboot": "emerald_eea_global_images_OS2.0.209.0.VNFEUXM_20251105.0000.00_15.0_eea_0f3a767870.tgz"
 				},
@@ -450,6 +501,7 @@
 					"os": "OS2.0.208.0.VNFEUXM",
 					"android": "15.0",
 					"release": "2025-10-20",
+					"aspatch": "2025-09-01",
 					"recovery": "emerald_eea_global-ota_full-OS2.0.208.0.VNFEUXM-user-15.0-c115f785ea.zip",
 					"fastboot": "emerald_eea_global_images_OS2.0.208.0.VNFEUXM_20251011.0000.00_15.0_eea_f2c4ddff40.tgz"
 				},
@@ -457,6 +509,7 @@
 					"os": "OS2.0.207.0.VNFEUXM",
 					"android": "15.0",
 					"release": "2025-09-19",
+					"aspatch": "2025-09-01",
 					"recovery": "emerald_eea_global-ota_full-OS2.0.207.0.VNFEUXM-user-15.0-bdba6bdef8.zip",
 					"fastboot": "emerald_eea_global_images_OS2.0.207.0.VNFEUXM_20250910.0000.00_15.0_eea_637f929389.tgz"
 				},
@@ -464,6 +517,7 @@
 					"os": "OS2.0.205.0.VNFEUXM",
 					"android": "15.0",
 					"release": "2025-08-21",
+					"aspatch": "2025-08-01",
 					"recovery": "emerald_eea_global-ota_full-OS2.0.205.0.VNFEUXM-user-15.0-39337e55f1.zip",
 					"fastboot": "emerald_eea_global_images_OS2.0.205.0.VNFEUXM_20250811.0000.00_15.0_eea_0825746887.tgz"
 				},
@@ -471,6 +525,7 @@
 					"os": "OS2.0.202.0.VNFEUXM",
 					"android": "15.0",
 					"release": "2025-06-30",
+					"aspatch": "2025-06-01",
 					"recovery": "emerald_eea_global-ota_full-OS2.0.202.0.VNFEUXM-user-15.0-cd7afc8979.zip",
 					"fastboot": "emerald_eea_global_images_OS2.0.202.0.VNFEUXM_20250619.0000.00_15.0_eea_84b4ed8d6a.tgz"
 				},
@@ -478,6 +533,7 @@
 					"os": "OS2.0.4.0.VNFEUXM",
 					"android": "15.0",
 					"release": "2025-06-19",
+					"aspatch": "2025-05-01",
 					"recovery": "emerald_eea_global-ota_full-OS2.0.4.0.VNFEUXM-user-15.0-180a9cf640.zip",
 					"fastboot": "emerald_eea_global_images_OS2.0.4.0.VNFEUXM_20250528.0000.00_15.0_eea_e8379fca7b.tgz"
 				},
@@ -485,6 +541,7 @@
 					"os": "OS2.0.3.0.VNFEUXM",
 					"android": "15.0",
 					"release": "2025-05-23",
+					"aspatch": "2025-05-01",
 					"recovery": "emerald_eea_global-ota_full-OS2.0.3.0.VNFEUXM-user-15.0-55b8e52514.zip",
 					"fastboot": "emerald_eea_global_images_OS2.0.3.0.VNFEUXM_20250509.0000.00_15.0_eea_d64bf1be25.tgz"
 				},
@@ -492,6 +549,7 @@
 					"os": "OS2.0.2.0.VNFEUXM",
 					"android": "15.0",
 					"release": "2025-04-01",
+					"aspatch": "2025-03-01",
 					"recovery": "emerald_eea_global-ota_full-OS2.0.2.0.VNFEUXM-user-15.0-7c6118e589.zip",
 					"fastboot": "emerald_eea_global_images_OS2.0.2.0.VNFEUXM_20250305.0000.00_15.0_eea_0989fd5b6a.tgz"
 				},
@@ -499,6 +557,7 @@
 					"os": "OS2.0.1.0.VNFEUXM",
 					"android": "15.0",
 					"release": "2025-02-24",
+					"aspatch": "2025-01-01",
 					"recovery": "emerald_eea_global-ota_full-OS2.0.1.0.VNFEUXM-user-15.0-22aa28182b.zip",
 					"fastboot": "emerald_eea_global_images_OS2.0.1.0.VNFEUXM_20250123.0000.00_15.0_eea_5d89f4cece.tgz"
 				},
@@ -506,6 +565,7 @@
 					"os": "OS1.0.9.0.UNFEUXM",
 					"android": "14.0",
 					"release": "2025-01-20",
+					"aspatch": "2025-01-01",
 					"recovery": "miui_EMERALDEEAGlobal_OS1.0.9.0.UNFEUXM_ba8d7309c7_14.0.zip",
 					"fastboot": "emerald_eea_global_images_OS1.0.9.0.UNFEUXM_20250107.0000.00_14.0_eea_3346aeb083.tgz"
 				},
@@ -513,6 +573,7 @@
 					"os": "OS1.0.8.0.UNFEUXM",
 					"android": "14.0",
 					"release": "2025-01-06",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_EMERALDEEAGlobal_OS1.0.8.0.UNFEUXM_187b557dea_14.0.zip",
 					"fastboot": "emerald_eea_global_images_OS1.0.8.0.UNFEUXM_20241220.0000.00_14.0_eea_e2f31dd68f.tgz"
 				},
@@ -520,6 +581,7 @@
 					"os": "OS1.0.7.0.UNFEUXM",
 					"android": "14.0",
 					"release": "2024-12-09",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_EMERALDEEAGlobal_OS1.0.7.0.UNFEUXM_ebc53bb5c8_14.0.zip",
 					"fastboot": "emerald_eea_global_images_OS1.0.7.0.UNFEUXM_20241127.0000.00_14.0_eea_06b7243f4a.tgz"
 				},
@@ -527,6 +589,7 @@
 					"os": "OS1.0.6.0.UNFEUXM",
 					"android": "14.0",
 					"release": "2024-10-28",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_EMERALDEEAGlobal_OS1.0.6.0.UNFEUXM_6d286f8c36_14.0.zip",
 					"fastboot": "emerald_eea_global_images_OS1.0.6.0.UNFEUXM_20241014.0000.00_14.0_eea_f19f14a682.tgz"
 				},
@@ -534,6 +597,7 @@
 					"os": "OS1.0.5.0.UNFEUXM",
 					"android": "14.0",
 					"release": "2024-09-27",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_EMERALDEEAGlobal_OS1.0.5.0.UNFEUXM_d438dc07c5_14.0.zip",
 					"fastboot": "emerald_eea_global_images_OS1.0.5.0.UNFEUXM_20240912.0000.00_14.0_eea_a83882417d.tgz"
 				},
@@ -541,6 +605,7 @@
 					"os": "OS1.0.4.0.UNFEUXM",
 					"android": "14.0",
 					"release": "2024-08-23",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_EMERALDEEAGlobal_OS1.0.4.0.UNFEUXM_dae8157bf9_14.0.zip",
 					"fastboot": "emerald_eea_global_images_OS1.0.4.0.UNFEUXM_20240805.0000.00_14.0_eea_d44eac21e8.tgz"
 				},
@@ -548,6 +613,7 @@
 					"os": "OS1.0.3.0.UNFEUXM",
 					"android": "14.0",
 					"release": "2024-07-26",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_EMERALDEEAGlobal_OS1.0.3.0.UNFEUXM_e4402fa6fe_14.0.zip",
 					"fastboot": "emerald_eea_global_images_OS1.0.3.0.UNFEUXM_20240711.0000.00_14.0_eea_ec7473d10a.tgz"
 				},
@@ -555,6 +621,7 @@
 					"os": "OS1.0.2.0.UNFEUXM",
 					"android": "14.0",
 					"release": "2024-06-12",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_EMERALDEEAGlobal_OS1.0.2.0.UNFEUXM_1d3de83f72_14.0.zip",
 					"fastboot": "emerald_eea_global_images_OS1.0.2.0.UNFEUXM_20240516.0000.00_14.0_eea_fc95c9d284.tgz"
 				},
@@ -562,6 +629,7 @@
 					"os": "OS1.0.1.0.UNFEUXM",
 					"android": "14.0",
 					"release": "2024-04-12",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_EMERALDEEAGlobal_OS1.0.1.0.UNFEUXM_1085ee4a08_14.0.zip",
 					"fastboot": "emerald_eea_global_images_OS1.0.1.0.UNFEUXM_20240325.0000.00_14.0_eea_45935693cf.tgz"
 				}
@@ -585,6 +653,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -600,6 +669,7 @@
 					"os": "OS3.0.301.0.WNFRUXM",
 					"android": "16.0",
 					"release": "2026-05-27",
+					"aspatch": "2026-05-01",
 					"recovery": "emerald_ru_global-ota_full-OS3.0.301.0.WNFRUXM-user-16.0-a892f95134.zip",
 					"fastboot": "emerald_ru_global_images_OS3.0.301.0.WNFRUXM_20260520.0000.00_16.0_ru_017d2c8326.tgz"
 				},
@@ -607,6 +677,7 @@
 					"os": "OS3.0.2.0.WNFRUXM",
 					"android": "16.0",
 					"release": "2026-04-28",
+					"aspatch": "2026-04-01",
 					"recovery": "emerald_ru_global-ota_full-OS3.0.2.0.WNFRUXM-user-16.0-faa96051b1.zip",
 					"fastboot": "emerald_ru_global_images_OS3.0.2.0.WNFRUXM_20260423.0000.00_16.0_ru_ecc5f21798.tgz"
 				},
@@ -614,6 +685,7 @@
 					"os": "OS3.0.1.0.WNFRUXM",
 					"android": "16.0",
 					"release": "2026-03-16",
+					"aspatch": "2026-02-01",
 					"recovery": "emerald_ru_global-ota_full-OS3.0.1.0.WNFRUXM-user-16.0-b3cc1f1b5f.zip",
 					"fastboot": "emerald_ru_global_images_OS3.0.1.0.WNFRUXM_20260304.0000.00_16.0_ru_422d2cbeb0.tgz"
 				},
@@ -621,6 +693,7 @@
 					"os": "OS2.0.214.0.VNFRUXM",
 					"android": "15.0",
 					"release": "2026-02-23",
+					"aspatch": "2026-01-01",
 					"recovery": "emerald_ru_global-ota_full-OS2.0.214.0.VNFRUXM-user-15.0-c39e71d82e.zip",
 					"fastboot": "emerald_ru_global_images_OS2.0.214.0.VNFRUXM_20260206.0000.00_15.0_ru_abc5fa297d.tgz"
 				},
@@ -628,6 +701,7 @@
 					"os": "OS2.0.213.0.VNFRUXM",
 					"android": "15.0",
 					"release": "2025-12-13",
+					"aspatch": "2025-11-01",
 					"recovery": "emerald_ru_global-ota_full-OS2.0.213.0.VNFRUXM-user-15.0-0544eaed02.zip",
 					"fastboot": "emerald_ru_global_images_OS2.0.213.0.VNFRUXM_20251123.0000.00_15.0_ru_7d3801e755.tgz"
 				},
@@ -635,6 +709,7 @@
 					"os": "OS2.0.212.0.VNFRUXM",
 					"android": "15.0",
 					"release": "2025-11-17",
+					"aspatch": "2025-11-01",
 					"recovery": "emerald_ru_global-ota_full-OS2.0.212.0.VNFRUXM-user-15.0-55e0d56d7d.zip",
 					"fastboot": "emerald_ru_global_images_OS2.0.212.0.VNFRUXM_20251105.0000.00_15.0_ru_43e3a71104.tgz"
 				},
@@ -642,6 +717,7 @@
 					"os": "OS2.0.211.0.VNFRUXM",
 					"android": "15.0",
 					"release": "2025-10-16",
+					"aspatch": "2025-09-01",
 					"recovery": "emerald_ru_global-ota_full-OS2.0.211.0.VNFRUXM-user-15.0-12fdbceddf.zip",
 					"fastboot": "emerald_ru_global_images_OS2.0.211.0.VNFRUXM_20250917.0000.00_15.0_ru_c7c7dc7365.tgz"
 				},
@@ -649,6 +725,7 @@
 					"os": "OS2.0.210.0.VNFRUXM",
 					"android": "15.0",
 					"release": "2025-09-18",
+					"aspatch": "2025-08-01",
 					"recovery": "emerald_ru_global-ota_full-OS2.0.210.0.VNFRUXM-user-15.0-a94777f473.zip",
 					"fastboot": "emerald_ru_global_images_OS2.0.210.0.VNFRUXM_20250910.0000.00_15.0_ru_20bbc306b5.tgz"
 				},
@@ -656,6 +733,7 @@
 					"os": "OS2.0.208.0.VNFRUXM",
 					"android": "15.0",
 					"release": "2025-08-24",
+					"aspatch": "2025-08-01",
 					"recovery": "emerald_ru_global-ota_full-OS2.0.208.0.VNFRUXM-user-15.0-bfd18e6644.zip",
 					"fastboot": "emerald_ru_global_images_OS2.0.208.0.VNFRUXM_20250812.0000.00_15.0_ru_3304195804.tgz"
 				},
@@ -663,6 +741,7 @@
 					"os": "OS2.0.206.0.VNFRUXM",
 					"android": "15.0",
 					"release": "2025-07-22",
+					"aspatch": "2025-06-01",
 					"recovery": "emerald_ru_global-ota_full-OS2.0.206.0.VNFRUXM-user-15.0-19c83e4427.zip",
 					"fastboot": "emerald_ru_global_images_OS2.0.206.0.VNFRUXM_20250714.0000.00_15.0_ru_4b2a7b12b4.tgz"
 				},
@@ -670,6 +749,7 @@
 					"os": "OS2.0.7.0.VNFRUXM",
 					"android": "15.0",
 					"release": "2025-06-16",
+					"aspatch": "2025-05-01",
 					"recovery": "emerald_ru_global-ota_full-OS2.0.7.0.VNFRUXM-user-15.0-c9bbb9d853.zip",
 					"fastboot": "emerald_ru_global_images_OS2.0.7.0.VNFRUXM_20250520.0000.00_15.0_ru_52d0a3d4c1.tgz"
 				},
@@ -677,6 +757,7 @@
 					"os": "OS2.0.6.0.VNFRUXM",
 					"android": "15.0",
 					"release": "2025-05-23",
+					"aspatch": "2025-05-01",
 					"recovery": "emerald_ru_global-ota_full-OS2.0.6.0.VNFRUXM-user-15.0-38b28b6bcf.zip",
 					"fastboot": "emerald_ru_global_images_OS2.0.6.0.VNFRUXM_20250511.0000.00_15.0_ru_7c48ac4207.tgz"
 				},
@@ -684,6 +765,7 @@
 					"os": "OS2.0.5.0.VNFRUXM",
 					"android": "15.0",
 					"release": "2025-04-23",
+					"aspatch": "2025-04-01",
 					"recovery": "emerald_ru_global-ota_full-OS2.0.5.0.VNFRUXM-user-15.0-bcbd1290de.zip",
 					"fastboot": "emerald_ru_global_images_OS2.0.5.0.VNFRUXM_20250414.0000.00_15.0_ru_4648dac365.tgz"
 				},
@@ -691,6 +773,7 @@
 					"os": "OS2.0.1.0.VNFRUXM",
 					"android": "15.0",
 					"release": "2025-03-07",
+					"aspatch": "2025-01-01",
 					"recovery": "emerald_ru_global-ota_full-OS2.0.1.0.VNFRUXM-user-15.0-faa2f2c84f.zip",
 					"fastboot": "emerald_ru_global_images_OS2.0.1.0.VNFRUXM_20250217.0000.00_15.0_ru_af48702659.tgz"
 				},
@@ -698,6 +781,7 @@
 					"os": "OS1.0.9.0.UNFRUXM",
 					"android": "14.0",
 					"release": "2025-02-05",
+					"aspatch": "2025-01-01",
 					"recovery": "miui_EMERALDRUGlobal_OS1.0.9.0.UNFRUXM_65ef6d3820_14.0.zip",
 					"fastboot": "emerald_ru_global_images_OS1.0.9.0.UNFRUXM_20250113.0000.00_14.0_ru_20259a7338.tgz"
 				},
@@ -705,6 +789,7 @@
 					"os": "OS1.0.8.0.UNFRUXM",
 					"android": "14.0",
 					"release": "2024-12-31",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_EMERALDRUGlobal_OS1.0.8.0.UNFRUXM_89f2ec8702_14.0.zip",
 					"fastboot": "emerald_ru_global_images_OS1.0.8.0.UNFRUXM_20241217.0000.00_14.0_ru_2bf9c9a706.tgz"
 				},
@@ -712,6 +797,7 @@
 					"os": "OS1.0.7.0.UNFRUXM",
 					"android": "14.0",
 					"release": "2024-12-09",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_EMERALDRUGlobal_OS1.0.7.0.UNFRUXM_3b9d553c7c_14.0.zip",
 					"fastboot": "emerald_ru_global_images_OS1.0.7.0.UNFRUXM_20241120.0000.00_14.0_ru_27f724a093.tgz"
 				},
@@ -719,6 +805,7 @@
 					"os": "OS1.0.6.0.UNFRUXM",
 					"android": "14.0",
 					"release": "2024-10-28",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_EMERALDRUGlobal_OS1.0.6.0.UNFRUXM_06156beea4_14.0.zip",
 					"fastboot": "emerald_ru_global_images_OS1.0.6.0.UNFRUXM_20241014.0000.00_14.0_ru_c1f237587a.tgz"
 				},
@@ -726,6 +813,7 @@
 					"os": "OS1.0.5.0.UNFRUXM",
 					"android": "14.0",
 					"release": "2024-10-08",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_EMERALDRUGlobal_OS1.0.5.0.UNFRUXM_0bdf043bf6_14.0.zip",
 					"fastboot": "emerald_ru_global_images_OS1.0.5.0.UNFRUXM_20240920.0000.00_14.0_ru_8b9ac74111.tgz"
 				},
@@ -733,6 +821,7 @@
 					"os": "OS1.0.4.0.UNFRUXM",
 					"android": "14.0",
 					"release": "2024-08-29",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_EMERALDRUGlobal_OS1.0.4.0.UNFRUXM_c2567936d8_14.0.zip",
 					"fastboot": "emerald_ru_global_images_OS1.0.4.0.UNFRUXM_20240818.0000.00_14.0_ru_7ae4def234.tgz"
 				},
@@ -740,6 +829,7 @@
 					"os": "OS1.0.3.0.UNFRUXM",
 					"android": "14.0",
 					"release": "2024-08-13",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_EMERALDRUGlobal_OS1.0.3.0.UNFRUXM_ab9435d1ae_14.0.zip",
 					"fastboot": "emerald_ru_global_images_OS1.0.3.0.UNFRUXM_20240717.0000.00_14.0_ru_fa499f8573.tgz"
 				},
@@ -747,6 +837,7 @@
 					"os": "OS1.0.2.0.UNFRUXM",
 					"android": "14.0",
 					"release": "2024-06-17",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_EMERALDRUGlobal_OS1.0.2.0.UNFRUXM_535997a0b0_14.0.zip",
 					"fastboot": "emerald_ru_global_images_OS1.0.2.0.UNFRUXM_20240522.0000.00_14.0_ru_635f015c95.tgz"
 				},
@@ -754,6 +845,7 @@
 					"os": "OS1.0.1.0.UNFRUXM",
 					"android": "14.0",
 					"release": "2024-04-12",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_EMERALDRUGlobal_OS1.0.1.0.UNFRUXM_7a15ac57f3_14.0.zip",
 					"fastboot": "emerald_ru_global_images_OS1.0.1.0.UNFRUXM_20240401.0000.00_14.0_ru_36c58a995b.tgz"
 				}
@@ -777,6 +869,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -792,6 +885,7 @@
 					"os": "OS3.0.301.0.WNFIDXM",
 					"android": "16.0",
 					"release": "2026-05-26",
+					"aspatch": "2026-05-01",
 					"recovery": "emerald_id_global-ota_full-OS3.0.301.0.WNFIDXM-user-16.0-a8179efc2e.zip",
 					"fastboot": "emerald_id_global_images_OS3.0.301.0.WNFIDXM_20260520.0000.00_16.0_id_91d35fa4cb.tgz"
 				},
@@ -799,6 +893,7 @@
 					"os": "OS3.0.3.0.WNFIDXM",
 					"android": "16.0",
 					"release": "2026-04-03",
+					"aspatch": "2026-03-01",
 					"recovery": "emerald_id_global-ota_full-OS3.0.3.0.WNFIDXM-user-16.0-2ab6400035.zip",
 					"fastboot": "emerald_id_global_images_OS3.0.3.0.WNFIDXM_20260324.0000.00_16.0_id_a5652caa85.tgz"
 				},
@@ -806,6 +901,7 @@
 					"os": "OS3.0.2.0.WNFIDXM",
 					"android": "16.0",
 					"release": "2026-02-24",
+					"aspatch": "2026-01-01",
 					"recovery": "emerald_id_global-ota_full-OS3.0.2.0.WNFIDXM-user-16.0-a724426e57.zip",
 					"fastboot": "emerald_id_global_images_OS3.0.2.0.WNFIDXM_20260210.0000.00_16.0_id_e4e3c8cedc.tgz"
 				},
@@ -813,6 +909,7 @@
 					"os": "OS2.0.210.0.VNFIDXM",
 					"android": "15.0",
 					"release": "2025-11-27",
+					"aspatch": "2025-11-01",
 					"recovery": "emerald_id_global-ota_full-OS2.0.210.0.VNFIDXM-user-15.0-72adf91f7a.zip",
 					"fastboot": "emerald_id_global_images_OS2.0.210.0.VNFIDXM_20251117.0000.00_15.0_id_5c74f3b0cc.tgz"
 				},
@@ -820,6 +917,7 @@
 					"os": "OS2.0.209.0.VNFIDXM",
 					"android": "15.0",
 					"release": "2025-11-17",
+					"aspatch": "2025-11-01",
 					"recovery": "emerald_id_global-ota_full-OS2.0.209.0.VNFIDXM-user-15.0-59f2d4301e.zip",
 					"fastboot": "emerald_id_global_images_OS2.0.209.0.VNFIDXM_20251105.0000.00_15.0_id_b4483207df.tgz"
 				},
@@ -827,6 +925,7 @@
 					"os": "OS2.0.208.0.VNFIDXM",
 					"android": "15.0",
 					"release": "2025-10-16",
+					"aspatch": "2025-09-01",
 					"recovery": "emerald_id_global-ota_full-OS2.0.208.0.VNFIDXM-user-15.0-57716d438a.zip",
 					"fastboot": "emerald_id_global_images_OS2.0.208.0.VNFIDXM_20250917.0000.00_15.0_id_8660020ea0.tgz"
 				},
@@ -834,6 +933,7 @@
 					"os": "OS2.0.207.0.VNFIDXM",
 					"android": "15.0",
 					"release": "2025-09-18",
+					"aspatch": "2025-08-01",
 					"recovery": "emerald_id_global-ota_full-OS2.0.207.0.VNFIDXM-user-15.0-bccba449ce.zip",
 					"fastboot": "emerald_id_global_images_OS2.0.207.0.VNFIDXM_20250910.0000.00_15.0_id_790fc010bc.tgz"
 				},
@@ -841,6 +941,7 @@
 					"os": "OS2.0.205.0.VNFIDXM",
 					"android": "15.0",
 					"release": "2025-08-21",
+					"aspatch": "2025-08-01",
 					"recovery": "emerald_id_global-ota_full-OS2.0.205.0.VNFIDXM-user-15.0-99cf5c113c.zip",
 					"fastboot": "emerald_id_global_images_OS2.0.205.0.VNFIDXM_20250811.0000.00_15.0_id_912b3daff3.tgz"
 				},
@@ -848,6 +949,7 @@
 					"os": "OS2.0.203.0.VNFIDXM",
 					"android": "15.0",
 					"release": "2025-07-22",
+					"aspatch": "2025-06-01",
 					"recovery": "emerald_id_global-ota_full-OS2.0.203.0.VNFIDXM-user-15.0-724e508bce.zip",
 					"fastboot": "emerald_id_global_images_OS2.0.203.0.VNFIDXM_20250714.0000.00_15.0_id_c1044a561f.tgz"
 				},
@@ -855,6 +957,7 @@
 					"os": "OS2.0.4.0.VNFIDXM",
 					"android": "15.0",
 					"release": "2025-06-12",
+					"aspatch": "2025-05-01",
 					"recovery": "emerald_id_global-ota_full-OS2.0.4.0.VNFIDXM-user-15.0-0407623c1e.zip",
 					"fastboot": "emerald_id_global_images_OS2.0.4.0.VNFIDXM_20250520.0000.00_15.0_id_5884c9e25a.tgz"
 				},
@@ -862,6 +965,7 @@
 					"os": "OS2.0.3.0.VNFIDXM",
 					"android": "15.0",
 					"release": "2025-05-23",
+					"aspatch": "2025-05-01",
 					"recovery": "emerald_id_global-ota_full-OS2.0.3.0.VNFIDXM-user-15.0-1723582a35.zip",
 					"fastboot": "emerald_id_global_images_OS2.0.3.0.VNFIDXM_20250514.0000.00_15.0_id_106d8917b6.tgz"
 				},
@@ -869,6 +973,7 @@
 					"os": "OS2.0.2.0.VNFIDXM",
 					"android": "15.0",
 					"release": "2025-04-07",
+					"aspatch": "2025-03-01",
 					"recovery": "emerald_id_global-ota_full-OS2.0.2.0.VNFIDXM-user-15.0-dd8f90784d.zip",
 					"fastboot": "emerald_id_global_images_OS2.0.2.0.VNFIDXM_20250317.0000.00_15.0_id_18c5891b1f.tgz"
 				},
@@ -876,6 +981,7 @@
 					"os": "OS2.0.1.0.VNFIDXM",
 					"android": "15.0",
 					"release": "2025-02-24",
+					"aspatch": "2025-01-01",
 					"recovery": "emerald_id_global-ota_full-OS2.0.1.0.VNFIDXM-user-15.0-63c6880f21.zip",
 					"fastboot": "emerald_id_global_images_OS2.0.1.0.VNFIDXM_20250205.0000.00_15.0_id_fb9e3b2d1a.tgz"
 				},
@@ -883,6 +989,7 @@
 					"os": "OS1.0.10.0.UNFIDXM",
 					"android": "14.0",
 					"release": "2025-02-05",
+					"aspatch": "2025-01-01",
 					"recovery": "miui_EMERALDIDGlobal_OS1.0.10.0.UNFIDXM_2c9080b2d0_14.0.zip",
 					"fastboot": "emerald_id_global_images_OS1.0.10.0.UNFIDXM_20250113.0000.00_14.0_id_5ca8385307.tgz"
 				},
@@ -890,6 +997,7 @@
 					"os": "OS1.0.9.0.UNFIDXM",
 					"android": "14.0",
 					"release": "2025-01-06",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_EMERALDIDGlobal_OS1.0.9.0.UNFIDXM_f37acbff3f_14.0.zip",
 					"fastboot": "emerald_id_global_images_OS1.0.9.0.UNFIDXM_20241220.0000.00_14.0_id_19b8c36786.tgz"
 				},
@@ -897,6 +1005,7 @@
 					"os": "OS1.0.8.0.UNFIDXM",
 					"android": "14.0",
 					"release": "2024-12-05",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_EMERALDIDGlobal_OS1.0.8.0.UNFIDXM_fc405b153f_14.0.zip",
 					"fastboot": "emerald_id_global_images_OS1.0.8.0.UNFIDXM_20241120.0000.00_14.0_id_3700491830.tgz"
 				},
@@ -904,6 +1013,7 @@
 					"os": "OS1.0.7.0.UNFIDXM",
 					"android": "14.0",
 					"release": "2024-11-12",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_EMERALDIDGlobal_OS1.0.7.0.UNFIDXM_0b08f9ed11_14.0.zip",
 					"fastboot": "emerald_id_global_images_OS1.0.7.0.UNFIDXM_20241017.0000.00_14.0_id_0fa2ce8584.tgz"
 				},
@@ -911,6 +1021,7 @@
 					"os": "OS1.0.6.0.UNFIDXM",
 					"android": "14.0",
 					"release": "2024-10-08",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_EMERALDIDGlobal_OS1.0.6.0.UNFIDXM_5350967713_14.0.zip",
 					"fastboot": "emerald_id_global_images_OS1.0.6.0.UNFIDXM_20240920.0000.00_14.0_id_f7f8074c90.tgz"
 				},
@@ -918,6 +1029,7 @@
 					"os": "OS1.0.4.0.UNFIDXM",
 					"android": "14.0",
 					"release": "2024-09-09",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_EMERALDIDGlobal_OS1.0.4.0.UNFIDXM_b94b9c1654_14.0.zip",
 					"fastboot": "emerald_id_global_images_OS1.0.4.0.UNFIDXM_20240828.0000.00_14.0_id_546ab3a5b6.tgz"
 				},
@@ -925,6 +1037,7 @@
 					"os": "OS1.0.3.0.UNFIDXM",
 					"android": "14.0",
 					"release": "2024-08-18",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_EMERALDIDGlobal_OS1.0.3.0.UNFIDXM_8458bed4c1_14.0.zip",
 					"fastboot": "emerald_id_global_images_OS1.0.3.0.UNFIDXM_20240801.0000.00_14.0_id_61d10f830f.tgz"
 				},
@@ -932,6 +1045,7 @@
 					"os": "OS1.0.1.0.UNFIDXM",
 					"android": "14.0",
 					"release": "2024-04-10",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_EMERALDIDGlobal_OS1.0.1.0.UNFIDXM_91d6c19044_14.0.zip",
 					"fastboot": "emerald_id_global_images_OS1.0.1.0.UNFIDXM_20240325.0000.00_14.0_id_21992e993f.tgz"
 				}
@@ -955,6 +1069,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -970,6 +1085,7 @@
 					"os": "OS3.0.301.0.WNFTRXM",
 					"android": "16.0",
 					"release": "2026-05-27",
+					"aspatch": "2026-05-01",
 					"recovery": "emerald_tr_global-ota_full-OS3.0.301.0.WNFTRXM-user-16.0-a1ae3cc36a.zip",
 					"fastboot": "emerald_tr_global_images_OS3.0.301.0.WNFTRXM_20260520.0000.00_16.0_tr_4160ab0722.tgz"
 				},
@@ -977,6 +1093,7 @@
 					"os": "OS3.0.2.0.WNFTRXM",
 					"android": "16.0",
 					"release": "2026-04-28",
+					"aspatch": "2026-04-01",
 					"recovery": "emerald_tr_global-ota_full-OS3.0.2.0.WNFTRXM-user-16.0-1cdfd90b23.zip",
 					"fastboot": "emerald_tr_global_images_OS3.0.2.0.WNFTRXM_20260423.0000.00_16.0_tr_3de8e848b3.tgz"
 				},
@@ -984,6 +1101,7 @@
 					"os": "OS3.0.1.0.WNFTRXM",
 					"android": "16.0",
 					"release": "2026-03-16",
+					"aspatch": "2026-02-01",
 					"recovery": "emerald_tr_global-ota_full-OS3.0.1.0.WNFTRXM-user-16.0-d9f81a6d28.zip",
 					"fastboot": "emerald_tr_global_images_OS3.0.1.0.WNFTRXM_20260304.0000.00_16.0_tr_e596e11a9e.tgz"
 				},
@@ -991,6 +1109,7 @@
 					"os": "OS2.0.211.0.VNFTRXM",
 					"android": "15.0",
 					"release": "2025-12-13",
+					"aspatch": "2025-11-01",
 					"recovery": "emerald_tr_global-ota_full-OS2.0.211.0.VNFTRXM-user-15.0-935d4ef960.zip",
 					"fastboot": "emerald_tr_global_images_OS2.0.211.0.VNFTRXM_20251123.0000.00_15.0_tr_0f1a7057a0.tgz"
 				},
@@ -998,6 +1117,7 @@
 					"os": "OS2.0.210.0.VNFTRXM",
 					"android": "15.0",
 					"release": "2025-11-21",
+					"aspatch": "2025-11-01",
 					"recovery": "emerald_tr_global-ota_full-OS2.0.210.0.VNFTRXM-user-15.0-882ce220b9.zip",
 					"fastboot": "emerald_tr_global_images_OS2.0.210.0.VNFTRXM_20251105.0000.00_15.0_tr_7a171587f3.tgz"
 				},
@@ -1005,6 +1125,7 @@
 					"os": "OS2.0.209.0.VNFTRXM",
 					"android": "15.0",
 					"release": "2025-10-20",
+					"aspatch": "2025-09-01",
 					"recovery": "emerald_tr_global-ota_full-OS2.0.209.0.VNFTRXM-user-15.0-b83f75d5d8.zip",
 					"fastboot": "emerald_tr_global_images_OS2.0.209.0.VNFTRXM_20250926.0000.00_15.0_tr_6b151d5bd1.tgz"
 				},
@@ -1012,6 +1133,7 @@
 					"os": "OS2.0.208.0.VNFTRXM",
 					"android": "15.0",
 					"release": "2025-09-19",
+					"aspatch": "2025-08-01",
 					"recovery": "emerald_tr_global-ota_full-OS2.0.208.0.VNFTRXM-user-15.0-214a367bd3.zip",
 					"fastboot": "emerald_tr_global_images_OS2.0.208.0.VNFTRXM_20250910.0000.00_15.0_tr_02224441b0.tgz"
 				},
@@ -1019,6 +1141,7 @@
 					"os": "OS2.0.205.0.VNFTRXM",
 					"android": "15.0",
 					"release": "2025-08-24",
+					"aspatch": "2025-08-01",
 					"recovery": "emerald_tr_global-ota_full-OS2.0.205.0.VNFTRXM-user-15.0-6d7ab6a688.zip",
 					"fastboot": "emerald_tr_global_images_OS2.0.205.0.VNFTRXM_20250812.0000.00_15.0_tr_a52548f055.tgz"
 				},
@@ -1026,6 +1149,7 @@
 					"os": "OS2.0.203.0.VNFTRXM",
 					"android": "15.0",
 					"release": "2025-07-22",
+					"aspatch": "2025-06-01",
 					"recovery": "emerald_tr_global-ota_full-OS2.0.203.0.VNFTRXM-user-15.0-a67e13feb3.zip",
 					"fastboot": "emerald_tr_global_images_OS2.0.203.0.VNFTRXM_20250714.0000.00_15.0_tr_c9aadc359c.tgz"
 				},
@@ -1033,6 +1157,7 @@
 					"os": "OS2.0.6.0.VNFTRXM",
 					"android": "15.0",
 					"release": "2025-06-16",
+					"aspatch": "2025-05-01",
 					"recovery": "emerald_tr_global-ota_full-OS2.0.6.0.VNFTRXM-user-15.0-5f60df1987.zip",
 					"fastboot": "emerald_tr_global_images_OS2.0.6.0.VNFTRXM_20250520.0000.00_15.0_tr_803da3ceb9.tgz"
 				},
@@ -1040,6 +1165,7 @@
 					"os": "OS2.0.5.0.VNFTRXM",
 					"android": "15.0",
 					"release": "2025-05-23",
+					"aspatch": "2025-05-01",
 					"recovery": "emerald_tr_global-ota_full-OS2.0.5.0.VNFTRXM-user-15.0-357d0c4bc9.zip",
 					"fastboot": "emerald_tr_global_images_OS2.0.5.0.VNFTRXM_20250514.0000.00_15.0_tr_f5be34e431.tgz"
 				},
@@ -1047,6 +1173,7 @@
 					"os": "OS2.0.4.0.VNFTRXM",
 					"android": "15.0",
 					"release": "2025-04-25",
+					"aspatch": "2025-04-01",
 					"recovery": "emerald_tr_global-ota_full-OS2.0.4.0.VNFTRXM-user-15.0-af3656e18f.zip",
 					"fastboot": "emerald_tr_global_images_OS2.0.4.0.VNFTRXM_20250415.0000.00_15.0_tr_6ce703751e.tgz"
 				},
@@ -1054,6 +1181,7 @@
 					"os": "OS2.0.1.0.VNFTRXM",
 					"android": "15.0",
 					"release": "2025-03-07",
+					"aspatch": "2025-01-01",
 					"recovery": "emerald_tr_global-ota_full-OS2.0.1.0.VNFTRXM-user-15.0-515148b139.zip",
 					"fastboot": "emerald_tr_global_images_OS2.0.1.0.VNFTRXM_20250217.0000.00_15.0_tr_1bf1e5da7d.tgz"
 				},
@@ -1061,6 +1189,7 @@
 					"os": "OS1.0.9.0.UNFTRXM",
 					"android": "14.0",
 					"release": "2025-02-05",
+					"aspatch": "2025-01-01",
 					"recovery": "miui_EMERALDTRGlobal_OS1.0.9.0.UNFTRXM_a3aab26ad4_14.0.zip",
 					"fastboot": "emerald_tr_global_images_OS1.0.9.0.UNFTRXM_20250113.0000.00_14.0_tr_a1f56a8faa.tgz"
 				},
@@ -1068,6 +1197,7 @@
 					"os": "OS1.0.8.0.UNFTRXM",
 					"android": "14.0",
 					"release": "2024-12-31",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_EMERALDTRGlobal_OS1.0.8.0.UNFTRXM_553a42eef1_14.0.zip",
 					"fastboot": "emerald_tr_global_images_OS1.0.8.0.UNFTRXM_20241217.0000.00_14.0_tr_33da18d545.tgz"
 				},
@@ -1075,6 +1205,7 @@
 					"os": "OS1.0.7.0.UNFTRXM",
 					"android": "14.0",
 					"release": "2024-12-06",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_EMERALDTRGlobal_OS1.0.7.0.UNFTRXM_4f27095279_14.0.zip",
 					"fastboot": "emerald_tr_global_images_OS1.0.7.0.UNFTRXM_20241120.0000.00_14.0_tr_4a96e90252.tgz"
 				},
@@ -1082,6 +1213,7 @@
 					"os": "OS1.0.6.0.UNFTRXM",
 					"android": "14.0",
 					"release": "2024-11-04",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_EMERALDTRGlobal_OS1.0.6.0.UNFTRXM_458e756b28_14.0.zip",
 					"fastboot": "emerald_tr_global_images_OS1.0.6.0.UNFTRXM_20241017.0000.00_14.0_tr_5e702913b7.tgz"
 				},
@@ -1089,6 +1221,7 @@
 					"os": "OS1.0.5.0.UNFTRXM",
 					"android": "14.0",
 					"release": "2024-10-08",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_EMERALDTRGlobal_OS1.0.5.0.UNFTRXM_4dbe72eda8_14.0.zip",
 					"fastboot": "emerald_tr_global_images_OS1.0.5.0.UNFTRXM_20240920.0000.00_14.0_tr_6709aa38d2.tgz"
 				},
@@ -1096,6 +1229,7 @@
 					"os": "OS1.0.4.0.UNFTRXM",
 					"android": "14.0",
 					"release": "2024-08-26",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_EMERALDTRGlobal_OS1.0.4.0.UNFTRXM_a9b032edc7_14.0.zip",
 					"fastboot": "emerald_tr_global_images_OS1.0.4.0.UNFTRXM_20240818.0000.00_14.0_tr_1a936b98da.tgz"
 				},
@@ -1103,6 +1237,7 @@
 					"os": "OS1.0.3.0.UNFTRXM",
 					"android": "14.0",
 					"release": "2024-08-07",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_EMERALDTRGlobal_OS1.0.3.0.UNFTRXM_c96a606135_14.0.zip",
 					"fastboot": "emerald_tr_global_images_OS1.0.3.0.UNFTRXM_20240719.0000.00_14.0_tr_172eaf7c34.tgz"
 				},
@@ -1110,6 +1245,7 @@
 					"os": "OS1.0.2.0.UNFTRXM",
 					"android": "14.0",
 					"release": "2024-06-13",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_EMERALDTRGlobal_OS1.0.2.0.UNFTRXM_b7b17c942f_14.0.zip",
 					"fastboot": "emerald_tr_global_images_OS1.0.2.0.UNFTRXM_20240522.0000.00_14.0_tr_140406c411.tgz"
 				},
@@ -1117,6 +1253,7 @@
 					"os": "OS1.0.1.0.UNFTRXM",
 					"android": "14.0",
 					"release": "2024-04-12",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_EMERALDTRGlobal_OS1.0.1.0.UNFTRXM_cc7dc83793_14.0.zip",
 					"fastboot": "emerald_tr_global_images_OS1.0.1.0.UNFTRXM_20240401.0000.00_14.0_tr_1dedbeee57.tgz"
 				}
@@ -1140,6 +1277,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -1155,6 +1293,7 @@
 					"os": "OS2.0.205.0.VNFMXAT",
 					"android": "15.0",
 					"release": "2026-02-06",
+					"aspatch": "2026-02-01",
 					"recovery": "emerald_mx_at_global-ota_full-OS2.0.205.0.VNFMXAT-user-15.0-72d48650d5.zip",
 					"fastboot": "emerald_mx_at_global_images_OS2.0.205.0.VNFMXAT_20260120.0000.00_15.0_mx_at_4577704bf3.tgz"
 				},
@@ -1162,6 +1301,7 @@
 					"os": "OS2.0.204.0.VNFMXAT",
 					"android": "15.0",
 					"release": "2025-12-02",
+					"aspatch": "2025-11-01",
 					"recovery": "emerald_mx_at_global-ota_full-OS2.0.204.0.VNFMXAT-user-15.0-073065a1ea.zip",
 					"fastboot": "emerald_mx_at_global_images_OS2.0.204.0.VNFMXAT_20251031.0000.00_15.0_mx_at_cac13ca800.tgz"
 				},
@@ -1169,6 +1309,7 @@
 					"os": "OS2.0.203.0.VNFMXAT",
 					"android": "15.0",
 					"release": "2025-10-11",
+					"aspatch": "2025-09-01",
 					"recovery": "emerald_mx_at_global-ota_full-OS2.0.203.0.VNFMXAT-user-15.0-3ff4cdee19.zip",
 					"fastboot": "emerald_mx_at_global_images_OS2.0.203.0.VNFMXAT_20250918.0000.00_15.0_mx_at_343977ce9e.tgz"
 				},
@@ -1176,6 +1317,7 @@
 					"os": "OS2.0.202.0.VNFMXAT",
 					"android": "15.0",
 					"release": "2025-08-22",
+					"aspatch": "2025-07-01",
 					"recovery": "emerald_mx_at_global-ota_full-OS2.0.202.0.VNFMXAT-user-15.0-4031dec390.zip",
 					"fastboot": "emerald_mx_at_global_images_OS2.0.202.0.VNFMXAT_20250716.0000.00_15.0_mx_at_7f23de9ab3.tgz"
 				},
@@ -1183,6 +1325,7 @@
 					"os": "OS2.0.2.0.VNFMXAT",
 					"android": "15.0",
 					"release": "2025-06-25",
+					"aspatch": "2025-04-01",
 					"recovery": "emerald_mx_at_global-ota_full-OS2.0.2.0.VNFMXAT-user-15.0-ba94a3005c.zip",
 					"fastboot": "emerald_mx_at_global_images_OS2.0.2.0.VNFMXAT_20250410.0000.00_15.0_mx_at_c60ec96b1e.tgz"
 				},
@@ -1190,6 +1333,7 @@
 					"os": "OS1.0.8.0.UNFMXAT",
 					"android": "14.0",
 					"release": "2025-03-10",
+					"aspatch": "2025-02-01",
 					"recovery": "miui_EMERALDMXATGlobal_OS1.0.8.0.UNFMXAT_44cf709a67_14.0.zip",
 					"fastboot": "emerald_mx_at_global_images_OS1.0.8.0.UNFMXAT_20250218.0000.00_14.0_mx_at_653e642722.tgz"
 				},
@@ -1197,6 +1341,7 @@
 					"os": "OS1.0.7.0.UNFMXAT",
 					"android": "14.0",
 					"release": "2024-12-27",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_EMERALDMXATGlobal_OS1.0.7.0.UNFMXAT_a947708dd6_14.0.zip",
 					"fastboot": "emerald_mx_at_global_images_OS1.0.7.0.UNFMXAT_20241210.0000.00_14.0_mx_at_eeca57f585.tgz"
 				},
@@ -1204,6 +1349,7 @@
 					"os": "OS1.0.5.0.UNFMXAT",
 					"android": "14.0",
 					"release": "2024-11-15",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_EMERALDMXATGlobal_OS1.0.5.0.UNFMXAT_7d8605c7ad_14.0.zip",
 					"fastboot": "emerald_mx_at_global_images_OS1.0.5.0.UNFMXAT_20241016.0000.00_14.0_mx_at_df48607a1d.tgz"
 				}
@@ -1227,6 +1373,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -1242,6 +1389,7 @@
 					"os": "OS2.0.204.0.VNFLMCR",
 					"android": "15.0",
 					"release": "2026-02-05",
+					"aspatch": "2026-02-01",
 					"recovery": "emerald_lm_cr_global-ota_full-OS2.0.204.0.VNFLMCR-user-15.0-c9b883e0d4.zip",
 					"fastboot": "emerald_lm_cr_global_images_OS2.0.204.0.VNFLMCR_20260126.0000.00_15.0_lm_cr_6b9827ae83.tgz"
 				},
@@ -1249,6 +1397,7 @@
 					"os": "OS2.0.203.0.VNFLMCR",
 					"android": "15.0",
 					"release": "2025-12-18",
+					"aspatch": "2025-12-01",
 					"recovery": "emerald_lm_cr_global-ota_full-OS2.0.203.0.VNFLMCR-user-15.0-8038f7b545.zip",
 					"fastboot": "emerald_lm_cr_global_images_OS2.0.203.0.VNFLMCR_20251210.0000.00_15.0_lm_cr_379b134e35.tgz"
 				},
@@ -1256,6 +1405,7 @@
 					"os": "OS2.0.202.0.VNFLMCR",
 					"android": "15.0",
 					"release": "2025-10-13",
+					"aspatch": "2025-10-01",
 					"recovery": "emerald_lm_cr_global-ota_full-OS2.0.202.0.VNFLMCR-user-15.0-26504e8275.zip",
 					"fastboot": "emerald_lm_cr_global_images_OS2.0.202.0.VNFLMCR_20250928.0000.00_15.0_lm_cr_4b3d412d82.tgz"
 				},
@@ -1263,6 +1413,7 @@
 					"os": "OS2.0.201.0.VNFLMCR",
 					"android": "15.0",
 					"release": "2025-08-13",
+					"aspatch": "2025-08-01",
 					"recovery": "emerald_lm_cr_global-ota_full-OS2.0.201.0.VNFLMCR-user-15.0-a3a44a3df3.zip",
 					"fastboot": "emerald_lm_cr_global_images_OS2.0.201.0.VNFLMCR_20250730.0000.00_15.0_lm_cr_2af9ec9282.tgz"
 				},
@@ -1270,6 +1421,7 @@
 					"os": "OS2.0.2.0.VNFLMCR",
 					"android": "15.0",
 					"release": "2025-06-13",
+					"aspatch": "2025-06-01",
 					"recovery": "emerald_lm_cr_global-ota_full-OS2.0.2.0.VNFLMCR-user-15.0-89f854eab0.zip",
 					"fastboot": "emerald_lm_cr_global_images_OS2.0.2.0.VNFLMCR_20250526.0000.00_15.0_lm_cr_d8b9ebcc36.tgz"
 				},
@@ -1277,6 +1429,7 @@
 					"os": "OS2.0.1.0.VNFLMCR",
 					"android": "15.0",
 					"release": "2025-05-21",
+					"aspatch": "2025-04-01",
 					"recovery": "emerald_lm_cr_global-ota_full-OS2.0.1.0.VNFLMCR-user-15.0-96563b3cc0.zip",
 					"fastboot": "emerald_lm_cr_global_images_OS2.0.1.0.VNFLMCR_20250425.0000.00_15.0_lm_cr_01cd00f75f.tgz"
 				},
@@ -1284,6 +1437,7 @@
 					"os": "OS1.0.6.0.UNFLMCR",
 					"android": "14.0",
 					"release": "2025-02-25",
+					"aspatch": "2025-02-01",
 					"recovery": "miui_EMERALDLMCRGlobal_OS1.0.6.0.UNFLMCR_be2e1d7f4c_14.0.zip",
 					"fastboot": "emerald_lm_cr_global_images_OS1.0.6.0.UNFLMCR_20250217.0000.00_14.0_lm_cr_ef06d58c96.tgz"
 				},
@@ -1291,6 +1445,7 @@
 					"os": "OS1.0.5.0.UNFLMCR",
 					"android": "14.0",
 					"release": "2024-12-18",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_EMERALDLMCRGlobal_OS1.0.5.0.UNFLMCR_22cbfb28b6_14.0.zip",
 					"fastboot": "emerald_lm_cr_global_images_OS1.0.5.0.UNFLMCR_20241210.0000.00_14.0_lm_cr_9c430410ff.tgz"
 				},
@@ -1298,6 +1453,7 @@
 					"os": "OS1.0.4.0.UNFLMCR",
 					"android": "14.0",
 					"release": "2024-11-20",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_EMERALDLMCRGlobal_OS1.0.4.0.UNFLMCR_efc3cd65f4_14.0.zip",
 					"fastboot": "emerald_lm_cr_global_images_OS1.0.4.0.UNFLMCR_20240926.0000.00_14.0_lm_cr_1aa4f210be.tgz"
 				},
@@ -1305,6 +1461,7 @@
 					"os": "OS1.0.3.0.UNFLMCR",
 					"android": "14.0",
 					"release": "2024-11-20",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_EMERALDLMCRGlobal_OS1.0.3.0.UNFLMCR_0272e9369b_14.0.zip",
 					"fastboot": ""
 				},
@@ -1312,6 +1469,7 @@
 					"os": "OS1.0.2.0.UNFLMCR",
 					"android": "14.0",
 					"release": "2024-11-20",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_EMERALDLMCRGlobal_OS1.0.2.0.UNFLMCR_5293f81c88_14.0.zip",
 					"fastboot": ""
 				},
@@ -1319,6 +1477,7 @@
 					"os": "OS1.0.1.0.UNFLMCR",
 					"android": "14.0",
 					"release": "2024-11-15",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_EMERALDLMCRGlobal_OS1.0.1.0.UNFLMCR_6854eb4533_14.0.zip",
 					"fastboot": ""
 				}

@@ -37,6 +37,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -55,6 +56,7 @@
 					"os": "OS2.0.200.11.VMACNXM",
 					"android": "15.0",
 					"release": "2025-05-27",
+					"aspatch": "2025-05-01",
 					"recovery": "ishtar-ota_full-OS2.0.200.11.VMACNXM-user-15.0-eed5b966f2.zip",
 					"fastboot": ""
 				},
@@ -62,6 +64,7 @@
 					"os": "OS2.0.200.7.VMACNXM",
 					"android": "15.0",
 					"release": "2025-05-15",
+					"aspatch": "2025-05-01",
 					"recovery": "ishtar-ota_full-OS2.0.200.7.VMACNXM-user-15.0-87f5f2e8c8.zip",
 					"fastboot": ""
 				},
@@ -69,6 +72,7 @@
 					"os": "OS2.0.0.18.VMACNXM",
 					"android": "15.0",
 					"release": "2024-12-06",
+					"aspatch": "2024-12-01",
 					"recovery": "ishtar-ota_full-OS2.0.0.18.VMACNXM-user-15.0-a577917369.zip",
 					"fastboot": ""
 				}
@@ -85,6 +89,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -110,6 +115,7 @@
 					"os": "OS1.0.24.7.28.DEV",
 					"android": "14.0",
 					"release": "2024-08-02",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.7.28.DEV_c39599acc1_14.0.zip",
 					"fastboot": ""
 				},
@@ -117,6 +123,7 @@
 					"os": "OS1.0.24.7.27.DEV",
 					"android": "14.0",
 					"release": "2024-07-27",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.7.27.DEV_3886d50b52_14.0.zip",
 					"fastboot": ""
 				},
@@ -124,6 +131,7 @@
 					"os": "OS1.0.24.7.26.DEV",
 					"android": "14.0",
 					"release": "2024-07-26",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.7.26.DEV_2dcab32b7a_14.0.zip",
 					"fastboot": ""
 				},
@@ -131,6 +139,7 @@
 					"os": "OS1.0.24.7.25.DEV",
 					"android": "14.0",
 					"release": "2024-07-25",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.7.25.DEV_6ddbbe3a2d_14.0.zip",
 					"fastboot": ""
 				},
@@ -138,6 +147,7 @@
 					"os": "OS1.0.24.7.24.DEV",
 					"android": "14.0",
 					"release": "2024-07-24",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.7.24.DEV_d44b554d8d_14.0.zip",
 					"fastboot": ""
 				},
@@ -145,6 +155,7 @@
 					"os": "OS1.0.24.7.15.DEV",
 					"android": "14.0",
 					"release": "2024-07-19",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.7.15.DEV_2f1f39783c_14.0.zip",
 					"fastboot": ""
 				},
@@ -152,6 +163,7 @@
 					"os": "OS1.0.24.7.8.DEV",
 					"android": "14.0",
 					"release": "2024-07-12",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.7.8.DEV_d62a5ef21e_14.0.zip",
 					"fastboot": ""
 				},
@@ -159,6 +171,7 @@
 					"os": "OS1.0.24.7.1.DEV",
 					"android": "14.0",
 					"release": "2024-07-05",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.7.1.DEV_fbb84fcb40_14.0.zip",
 					"fastboot": ""
 				},
@@ -166,6 +179,7 @@
 					"os": "OS1.0.24.6.24.DEV",
 					"android": "14.0",
 					"release": "2024-06-28",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.6.24.DEV_34d3d63062_14.0.zip",
 					"fastboot": ""
 				},
@@ -173,6 +187,7 @@
 					"os": "OS1.0.24.6.17.DEV",
 					"android": "14.0",
 					"release": "2024-06-21",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.6.17.DEV_4d59f6d73c_14.0.zip",
 					"fastboot": ""
 				},
@@ -180,6 +195,7 @@
 					"os": "OS1.0.24.6.10.DEV",
 					"android": "14.0",
 					"release": "2024-06-14",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.6.10.DEV_ac8ea8f9ff_14.0.zip",
 					"fastboot": ""
 				},
@@ -187,6 +203,7 @@
 					"os": "OS1.0.24.6.3.DEV",
 					"android": "14.0",
 					"release": "2024-06-07",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.6.3.DEV_783d19729f_14.0.zip",
 					"fastboot": ""
 				},
@@ -194,6 +211,7 @@
 					"os": "OS1.0.24.5.27.DEV",
 					"android": "14.0",
 					"release": "2024-05-31",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.5.27.DEV_8122071171_14.0.zip",
 					"fastboot": ""
 				},
@@ -201,6 +219,7 @@
 					"os": "OS1.0.24.5.21.DEV",
 					"android": "14.0",
 					"release": "2024-05-24",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.5.21.DEV_bc181cd550_14.0.zip",
 					"fastboot": ""
 				},
@@ -208,6 +227,7 @@
 					"os": "OS1.0.24.5.13.DEV",
 					"android": "14.0",
 					"release": "2024-05-17",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.5.13.DEV_b6562210f8_14.0.zip",
 					"fastboot": ""
 				},
@@ -215,6 +235,7 @@
 					"os": "OS1.0.24.5.6.DEV",
 					"android": "14.0",
 					"release": "2024-05-10",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.5.6.DEV_e6cd8610cb_14.0.zip",
 					"fastboot": ""
 				},
@@ -222,6 +243,7 @@
 					"os": "OS1.0.24.4.22.DEV",
 					"android": "14.0",
 					"release": "2024-04-26",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.4.22.DEV_02f3d23a0e_14.0.zip",
 					"fastboot": ""
 				},
@@ -229,6 +251,7 @@
 					"os": "OS1.0.24.4.15.DEV",
 					"android": "14.0",
 					"release": "2024-04-19",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.4.15.DEV_547464bdf9_14.0.zip",
 					"fastboot": ""
 				},
@@ -236,6 +259,7 @@
 					"os": "OS1.0.24.4.8.DEV",
 					"android": "14.0",
 					"release": "2024-04-12",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.4.8.DEV_ceef45ecad_14.0.zip",
 					"fastboot": ""
 				},
@@ -243,6 +267,7 @@
 					"os": "OS1.0.24.3.25.DEV",
 					"android": "14.0",
 					"release": "2024-03-29",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.3.25.DEV_a9a6dd6a25_14.0.zip",
 					"fastboot": ""
 				},
@@ -250,6 +275,7 @@
 					"os": "OS1.0.24.3.18.DEV",
 					"android": "14.0",
 					"release": "2024-03-22",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.3.18.DEV_174dd0afca_14.0.zip",
 					"fastboot": ""
 				},
@@ -257,6 +283,7 @@
 					"os": "OS1.0.24.3.11.DEV",
 					"android": "14.0",
 					"release": "2024-03-15",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.3.11.DEV_146e96ad14_14.0.zip",
 					"fastboot": ""
 				},
@@ -264,6 +291,7 @@
 					"os": "OS1.0.24.3.4.DEV",
 					"android": "14.0",
 					"release": "2024-03-08",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.3.4.DEV_6d556c53d9_14.0.zip",
 					"fastboot": ""
 				},
@@ -271,6 +299,7 @@
 					"os": "OS1.0.24.2.26.DEV",
 					"android": "14.0",
 					"release": "2024-03-01",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.2.26.DEV_830e82b1a2_14.0.zip",
 					"fastboot": ""
 				},
@@ -278,6 +307,7 @@
 					"os": "OS1.0.24.2.20.DEV",
 					"android": "14.0",
 					"release": "2024-02-23",
+					"aspatch": "2024-02-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.2.20.DEV_18abad3d28_14.0.zip",
 					"fastboot": ""
 				},
@@ -285,6 +315,7 @@
 					"os": "OS1.0.24.1.29.DEV",
 					"android": "14.0",
 					"release": "2024-02-02",
+					"aspatch": "2024-02-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.1.29.DEV_de89244611_14.0.zip",
 					"fastboot": ""
 				},
@@ -292,6 +323,7 @@
 					"os": "OS1.0.24.1.22.DEV",
 					"android": "14.0",
 					"release": "2024-01-26",
+					"aspatch": "2024-01-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.1.22.DEV_c8ccd780d9_14.0.zip",
 					"fastboot": ""
 				},
@@ -299,6 +331,7 @@
 					"os": "OS1.0.24.1.15.DEV",
 					"android": "14.0",
 					"release": "2024-01-19",
+					"aspatch": "2024-01-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.1.15.DEV_24f35e1c79_14.0.zip",
 					"fastboot": ""
 				},
@@ -306,6 +339,7 @@
 					"os": "OS1.0.24.1.8.DEV",
 					"android": "14.0",
 					"release": "2024-01-12",
+					"aspatch": "2024-01-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.1.8.DEV_44f0664b01_14.0.zip",
 					"fastboot": ""
 				},
@@ -313,6 +347,7 @@
 					"os": "OS1.0.24.1.1.DEV",
 					"android": "14.0",
 					"release": "2024-01-05",
+					"aspatch": "2024-01-01",
 					"recovery": "miui_ISHTAR_OS1.0.24.1.1.DEV_cabefcb2a8_14.0.zip",
 					"fastboot": ""
 				},
@@ -320,6 +355,7 @@
 					"os": "OS1.0.23.12.28.DEV",
 					"android": "14.0",
 					"release": "2023-12-29",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_ISHTAR_OS1.0.23.12.28.DEV_1c92ec69ef_14.0.zip",
 					"fastboot": ""
 				},
@@ -327,6 +363,7 @@
 					"os": "OS1.0.23.12.18.DEV",
 					"android": "14.0",
 					"release": "2023-12-22",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_ISHTAR_OS1.0.23.12.18.DEV_caeb412ffa_14.0.zip",
 					"fastboot": ""
 				},
@@ -334,6 +371,7 @@
 					"os": "OS1.0.23.12.11.DEV",
 					"android": "14.0",
 					"release": "2023-12-15",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_ISHTAR_OS1.0.23.12.11.DEV_73d2cc9d6b_14.0.zip",
 					"fastboot": ""
 				},
@@ -341,6 +379,7 @@
 					"os": "OS1.0.23.12.4.DEV",
 					"android": "14.0",
 					"release": "2023-12-08",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_ISHTAR_OS1.0.23.12.4.DEV_87ecdce7b8_14.0.zip",
 					"fastboot": ""
 				},
@@ -348,6 +387,7 @@
 					"os": "OS1.0.23.11.27.DEV",
 					"android": "14.0",
 					"release": "2023-12-01",
+					"aspatch": "2023-11-01",
 					"recovery": "miui_ISHTAR_OS1.0.23.11.27.DEV_12021bcb05_14.0.zip",
 					"fastboot": ""
 				},
@@ -355,6 +395,7 @@
 					"os": "OS1.0.23.11.19.DEV",
 					"android": "14.0",
 					"release": "2023-11-21",
+					"aspatch": "2023-11-01",
 					"recovery": "miui_ISHTAR_OS1.0.23.11.19.DEV_ffe3075ca2_14.0.zip",
 					"fastboot": ""
 				},
@@ -362,6 +403,7 @@
 					"os": "OS1.0.23.11.8.DEV",
 					"android": "14.0",
 					"release": "2023-11-08",
+					"aspatch": "2023-11-01",
 					"recovery": "miui_ISHTAR_OS1.0.23.11.8.DEV_b8a5193d86_14.0.zip",
 					"fastboot": ""
 				}
@@ -385,6 +427,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot",
 				"ctelecom"
@@ -404,6 +447,7 @@
 					"os": "OS3.0.305.0.WMACNXM",
 					"android": "16.0",
 					"release": "2026-05-13",
+					"aspatch": "2026-04-01",
 					"recovery": "ishtar-ota_full-OS3.0.305.0.WMACNXM-user-16.0-55b26ae2a5.zip",
 					"fastboot": "ishtar_images_OS3.0.305.0.WMACNXM_20260508.0000.00_16.0_cn_8d1a92462e.tgz",
 					"ctelecom": "ishtar_images_OS3.0.305.0.WMACNXM_20260508.0000.00_16.0_cn_chinatelecom_7726a3d77f.tgz"
@@ -412,6 +456,7 @@
 					"os": "OS3.0.304.0.WMACNXM",
 					"android": "16.0",
 					"release": "2026-05-06",
+					"aspatch": "2026-04-01",
 					"recovery": "ishtar-ota_full-OS3.0.304.0.WMACNXM-user-16.0-5a6e09e4f1.zip",
 					"fastboot": "",
 					"ctelecom": ""
@@ -420,6 +465,7 @@
 					"os": "OS3.0.303.0.WMACNXM",
 					"android": "16.0",
 					"release": "2026-04-16",
+					"aspatch": "2026-04-01",
 					"recovery": "ishtar-ota_full-OS3.0.303.0.WMACNXM-user-16.0-0d3948d738.zip",
 					"fastboot": "ishtar_images_OS3.0.303.0.WMACNXM_20260412.0000.00_16.0_cn_f5e8e8d314.tgz",
 					"ctelecom": "ishtar_images_OS3.0.303.0.WMACNXM_20260412.0000.00_16.0_cn_chinatelecom_c0bcd12052.tgz"
@@ -428,6 +474,7 @@
 					"os": "OS3.0.302.0.WMACNXM",
 					"android": "16.0",
 					"release": "2026-04-17",
+					"aspatch": "",
 					"recovery": "ishtar-ota_full-OS3.0.302.0.WMACNXM-user-16.0-9d9004c9fa.zip",
 					"fastboot": "",
 					"ctelecom": ""
@@ -436,6 +483,7 @@
 					"os": "OS3.0.4.0.WMACNXM",
 					"android": "16.0",
 					"release": "2026-01-30",
+					"aspatch": "2026-01-01",
 					"recovery": "ishtar-ota_full-OS3.0.4.0.WMACNXM-user-16.0-5bfdd1e4f5.zip",
 					"fastboot": "ishtar_images_OS3.0.4.0.WMACNXM_20260120.0000.00_16.0_cn_4891bf803c.tgz",
 					"ctelecom": "ishtar_images_OS3.0.4.0.WMACNXM_20260120.0000.00_16.0_cn_chinatelecom_6ac450dc4c.tgz"
@@ -444,6 +492,7 @@
 					"os": "OS3.0.3.0.WMACNXM",
 					"android": "16.0",
 					"release": "2025-12-10",
+					"aspatch": "2025-11-01",
 					"recovery": "ishtar-ota_full-OS3.0.3.0.WMACNXM-user-16.0-7592563019.zip",
 					"fastboot": "ishtar_images_OS3.0.3.0.WMACNXM_20251202.0000.00_16.0_cn_3614ef8aba.tgz",
 					"ctelecom": "ishtar_images_OS3.0.3.0.WMACNXM_20251202.0000.00_16.0_cn_chinatelecom_440628fbf6.tgz"
@@ -452,6 +501,7 @@
 					"os": "OS2.0.210.0.VMACNXM",
 					"android": "15.0",
 					"release": "2025-11-18",
+					"aspatch": "2025-11-01",
 					"recovery": "ishtar-ota_full-OS2.0.210.0.VMACNXM-user-15.0-139ea346cd.zip",
 					"fastboot": "ishtar_images_OS2.0.210.0.VMACNXM_20251114.0000.00_15.0_cn_12e2e8fb10.tgz",
 					"ctelecom": "ishtar_images_OS2.0.210.0.VMACNXM_20251114.0000.00_15.0_cn_chinatelecom_a6ba896806.tgz"
@@ -460,6 +510,7 @@
 					"os": "OS2.0.208.0.VMACNXM",
 					"android": "15.0",
 					"release": "2025-11-05",
+					"aspatch": "2025-11-01",
 					"recovery": "ishtar-ota_full-OS2.0.208.0.VMACNXM-user-15.0-acb0a577a5.zip",
 					"fastboot": "ishtar_images_OS2.0.208.0.VMACNXM_20251024.0000.00_15.0_cn_cc49832e74.tgz",
 					"ctelecom": "ishtar_images_OS2.0.208.0.VMACNXM_20251024.0000.00_15.0_cn_chinatelecom_5761f3e012.tgz"
@@ -468,6 +519,7 @@
 					"os": "OS2.0.207.0.VMACNXM",
 					"android": "15.0",
 					"release": "2025-09-30",
+					"aspatch": "2025-09-01",
 					"recovery": "ishtar-ota_full-OS2.0.207.0.VMACNXM-user-15.0-d6d72ca58c.zip",
 					"fastboot": "ishtar_images_OS2.0.207.0.VMACNXM_20250923.0000.00_15.0_cn_283cd2983a.tgz",
 					"ctelecom": "ishtar_images_OS2.0.207.0.VMACNXM_20250923.0000.00_15.0_cn_chinatelecom_fdccfdc426.tgz"
@@ -476,6 +528,7 @@
 					"os": "OS2.0.206.0.VMACNXM",
 					"android": "15.0",
 					"release": "2025-09-11",
+					"aspatch": "2025-08-01",
 					"recovery": "ishtar-ota_full-OS2.0.206.0.VMACNXM-user-15.0-c0e39c2592.zip",
 					"fastboot": "ishtar_images_OS2.0.206.0.VMACNXM_20250902.0000.00_15.0_cn_f9a894c86a.tgz",
 					"ctelecom": "ishtar_images_OS2.0.206.0.VMACNXM_20250902.0000.00_15.0_cn_chinatelecom_e96f31a5e1.tgz"
@@ -484,6 +537,7 @@
 					"os": "OS2.0.205.0.VMACNXM",
 					"android": "15.0",
 					"release": "2025-08-20",
+					"aspatch": "2025-08-01",
 					"recovery": "ishtar-ota_full-OS2.0.205.0.VMACNXM-user-15.0-c46a333251.zip",
 					"fastboot": "ishtar_images_OS2.0.205.0.VMACNXM_20250811.0000.00_15.0_cn_bd5c4fa409.tgz",
 					"ctelecom": "ishtar_images_OS2.0.205.0.VMACNXM_20250811.0000.00_15.0_cn_chinatelecom_0ee44592db.tgz"
@@ -492,6 +546,7 @@
 					"os": "OS2.0.203.0.VMACNXM",
 					"android": "15.0",
 					"release": "2025-07-07",
+					"aspatch": "2025-07-01",
 					"recovery": "ishtar-ota_full-OS2.0.203.0.VMACNXM-user-15.0-51df8bc3dd.zip",
 					"fastboot": "ishtar_images_OS2.0.203.0.VMACNXM_20250630.0000.00_15.0_cn_185f61e00c.tgz",
 					"ctelecom": "ishtar_images_OS2.0.203.0.VMACNXM_20250630.0000.00_15.0_cn_chinatelecom_f6b911d413.tgz"
@@ -500,6 +555,7 @@
 					"os": "OS2.0.202.0.VMACNXM",
 					"android": "15.0",
 					"release": "2025-06-14",
+					"aspatch": "2025-05-01",
 					"recovery": "ishtar-ota_full-OS2.0.202.0.VMACNXM-user-15.0-6e94d3a05c.zip",
 					"fastboot": "ishtar_images_OS2.0.202.0.VMACNXM_20250610.0000.00_15.0_cn_85019a0280.tgz",
 					"ctelecom": "ishtar_images_OS2.0.202.0.VMACNXM_20250610.0000.00_15.0_cn_chinatelecom_18e358bbcd.tgz"
@@ -508,6 +564,7 @@
 					"os": "OS2.0.109.0.VMACNXM",
 					"android": "15.0",
 					"release": "2025-05-07",
+					"aspatch": "2025-04-01",
 					"recovery": "ishtar-ota_full-OS2.0.109.0.VMACNXM-user-15.0-fda44c9dd8.zip",
 					"fastboot": "ishtar_images_OS2.0.109.0.VMACNXM_20250421.0000.00_15.0_cn_eac33aa5ac.tgz",
 					"ctelecom": "ishtar_images_OS2.0.109.0.VMACNXM_20250421.0000.00_15.0_cn_chinatelecom_d64bbe484e.tgz"
@@ -516,6 +573,7 @@
 					"os": "OS2.0.108.0.VMACNXM",
 					"android": "15.0",
 					"release": "2025-03-27",
+					"aspatch": "2025-02-01",
 					"recovery": "ishtar-ota_full-OS2.0.108.0.VMACNXM-user-15.0-2c25a16f22.zip",
 					"fastboot": "ishtar_images_OS2.0.108.0.VMACNXM_20250324.0000.00_15.0_cn_26e7f66e6f.tgz",
 					"ctelecom": "ishtar_images_OS2.0.108.0.VMACNXM_20250324.0000.00_15.0_cn_chinatelecom_cc2c7b2fb8.tgz"
@@ -524,6 +582,7 @@
 					"os": "OS2.0.103.0.VMACNXM",
 					"android": "15.0",
 					"release": "2025-02-25",
+					"aspatch": "2025-02-01",
 					"recovery": "ishtar-ota_full-OS2.0.103.0.VMACNXM-user-15.0-93237cf114.zip",
 					"fastboot": "",
 					"ctelecom": ""
@@ -532,6 +591,7 @@
 					"os": "OS2.0.102.0.VMACNXM",
 					"android": "15.0",
 					"release": "2025-02-18",
+					"aspatch": "2025-02-01",
 					"recovery": "ishtar-ota_full-OS2.0.102.0.VMACNXM-user-15.0-415a486721.zip",
 					"fastboot": "ishtar_images_OS2.0.102.0.VMACNXM_20250212.0000.00_15.0_cn_9328de0907.tgz",
 					"ctelecom": "ishtar_images_OS2.0.102.0.VMACNXM_20250212.0000.00_15.0_cn_chinatelecom_87150a0760.tgz"
@@ -540,6 +600,7 @@
 					"os": "OS2.0.100.0.VMACNXM",
 					"android": "15.0",
 					"release": "2025-01-17",
+					"aspatch": "2025-01-01",
 					"recovery": "ishtar-ota_full-OS2.0.100.0.VMACNXM-user-15.0-5af877fc7e.zip",
 					"fastboot": "ishtar_images_OS2.0.100.0.VMACNXM_20250109.0000.00_15.0_cn_584b06848b.tgz",
 					"ctelecom": "ishtar_images_OS2.0.100.0.VMACNXM_20250109.0000.00_15.0_cn_chinatelecom_4020b572d4.tgz"
@@ -548,6 +609,7 @@
 					"os": "OS2.0.3.0.VMACNXM",
 					"android": "15.0",
 					"release": "2024-12-22",
+					"aspatch": "2024-12-01",
 					"recovery": "ishtar-ota_full-OS2.0.3.0.VMACNXM-user-15.0-d68e1afecf.zip",
 					"fastboot": "ishtar_images_OS2.0.3.0.VMACNXM_20241220.0000.00_15.0_cn_989d8b4ad5.tgz",
 					"ctelecom": "ishtar_images_OS2.0.3.0.VMACNXM_20241220.0000.00_15.0_cn_chinatelecom_3eb3ac9da3.tgz"
@@ -556,6 +618,7 @@
 					"os": "OS1.0.20.0.UMACNXM",
 					"android": "14.0",
 					"release": "2024-11-25",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_ISHTAR_OS1.0.20.0.UMACNXM_371076313a_14.0.zip",
 					"fastboot": "ishtar_images_OS1.0.20.0.UMACNXM_20241120.0000.00_14.0_cn_f3a34cff5e.tgz",
 					"ctelecom": "ishtar_images_OS1.0.20.0.UMACNXM_20241120.0000.00_14.0_cn_chinatelecom_f94548c79d.tgz"
@@ -564,6 +627,7 @@
 					"os": "OS1.0.17.0.UMACNXM",
 					"android": "14.0",
 					"release": "2024-10-18",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_ISHTAR_OS1.0.17.0.UMACNXM_f2bedf1aeb_14.0.zip",
 					"fastboot": "ishtar_images_OS1.0.17.0.UMACNXM_20241012.0000.00_14.0_cn_838b03875a.tgz",
 					"ctelecom": "ishtar_images_OS1.0.17.0.UMACNXM_20241012.0000.00_14.0_cn_chinatelecom_203d0ae5c6.tgz"
@@ -572,6 +636,7 @@
 					"os": "OS1.0.16.0.UMACNXM",
 					"android": "14.0",
 					"release": "2024-09-12",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_ISHTAR_OS1.0.16.0.UMACNXM_579dd9cbfa_14.0.zip",
 					"fastboot": "ishtar_images_OS1.0.16.0.UMACNXM_20240905.0000.00_14.0_cn_a38b8ce2a6.tgz",
 					"ctelecom": "ishtar_images_OS1.0.16.0.UMACNXM_20240905.0000.00_14.0_cn_chinatelecom_b45e91dc54.tgz"
@@ -580,6 +645,7 @@
 					"os": "OS1.0.15.0.UMACNXM",
 					"android": "14.0",
 					"release": "2024-08-19",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_ISHTAR_OS1.0.15.0.UMACNXM_adc943f023_14.0.zip",
 					"fastboot": "ishtar_images_OS1.0.15.0.UMACNXM_20240808.0000.00_14.0_cn_6f6728b0a4.tgz",
 					"ctelecom": "ishtar_images_OS1.0.15.0.UMACNXM_20240808.0000.00_14.0_cn_chinatelecom_e6d13fbfe6.tgz"
@@ -588,6 +654,7 @@
 					"os": "OS1.0.12.0.UMACNXM",
 					"android": "14.0",
 					"release": "2024-07-20",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_ISHTAR_OS1.0.12.0.UMACNXM_e5de640ccc_14.0.zip",
 					"fastboot": "ishtar_images_OS1.0.12.0.UMACNXM_20240712.0000.00_14.0_cn_878cc6a7ce.tgz",
 					"ctelecom": "ishtar_images_OS1.0.12.0.UMACNXM_20240712.0000.00_14.0_cn_chinatelecom_42cfa82f01.tgz"
@@ -596,6 +663,7 @@
 					"os": "OS1.0.9.0.UMACNXM",
 					"android": "14.0",
 					"release": "2024-05-11",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_ISHTAR_OS1.0.9.0.UMACNXM_a6fadf1e8b_14.0.zip",
 					"fastboot": "ishtar_images_OS1.0.9.0.UMACNXM_20240429.0000.00_14.0_cn_c20314b48c.tgz",
 					"ctelecom": "ishtar_images_OS1.0.9.0.UMACNXM_20240429.0000.00_14.0_cn_chinatelecom_47ba33c917.tgz"
@@ -604,6 +672,7 @@
 					"os": "OS1.0.8.0.UMACNXM",
 					"android": "14.0",
 					"release": "2024-04-01",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_ISHTAR_OS1.0.8.0.UMACNXM_b64fcd4cdb_14.0.zip",
 					"fastboot": "ishtar_images_OS1.0.8.0.UMACNXM_20240325.0000.00_14.0_cn_66840a235c.tgz",
 					"ctelecom": "ishtar_images_OS1.0.8.0.UMACNXM_20240325.0000.00_14.0_cn_chinatelecom_f340b0db88.tgz"
@@ -612,6 +681,7 @@
 					"os": "OS1.0.6.0.UMACNXM",
 					"android": "14.0",
 					"release": "2024-01-26",
+					"aspatch": "2024-01-01",
 					"recovery": "miui_ISHTAR_OS1.0.6.0.UMACNXM_a4f5ee8a7c_14.0.zip",
 					"fastboot": "ishtar_images_OS1.0.6.0.UMACNXM_20240119.0000.00_14.0_cn_91e65845e2.tgz",
 					"ctelecom": "ishtar_images_OS1.0.6.0.UMACNXM_20240119.0000.00_14.0_cn_chinatelecom_5afba463a2.tgz"
@@ -620,6 +690,7 @@
 					"os": "OS1.0.4.0.UMACNXM",
 					"android": "14.0",
 					"release": "2023-12-08",
+					"aspatch": "2023-11-01",
 					"recovery": "miui_ISHTAR_OS1.0.4.0.UMACNXM_0801f3ef9d_14.0.zip",
 					"fastboot": "ishtar_images_OS1.0.4.0.UMACNXM_20231208.0000.00_14.0_cn_7c393332f6.tgz",
 					"ctelecom": "ishtar_images_OS1.0.4.0.UMACNXM_20231208.0000.00_14.0_cn_chinatelecom_2d6b6880e6.tgz"
@@ -628,6 +699,7 @@
 					"os": "OS1.0.3.0.UMACNXM",
 					"android": "14.0",
 					"release": "2023-12-01",
+					"aspatch": "2023-11-01",
 					"recovery": "miui_ISHTAR_OS1.0.3.0.UMACNXM_0c07956c1f_14.0.zip",
 					"fastboot": "",
 					"ctelecom": ""
@@ -652,6 +724,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot",
 				"ctelecom"
@@ -671,6 +744,7 @@
 					"os": "OS1.0.1.0.UMACNDM",
 					"android": "14.0",
 					"release": "2023-12-27",
+					"aspatch": "2023-11-01",
 					"recovery": "miui_ISHTARDEMO_OS1.0.1.0.UMACNDM_03ddb52acc_14.0.zip",
 					"fastboot": "ishtar_demo_images_OS1.0.1.0.UMACNDM_20231218.0000.00_14.0_cn_347b0be2aa.tgz",
 					"ctelecom": "ishtar_demo_images_OS1.0.1.0.UMACNDM_20231218.0000.00_14.0_cn_chinatelecom_97e1dcc2c8.tgz"
@@ -695,6 +769,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot",
 				"ctelecom"
@@ -714,6 +789,7 @@
 					"os": "OS1.0.24.2.20.EP.STDEE.M1",
 					"android": "14.0",
 					"release": "2024-03-22",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_ISHTAREPSTDEE_OS1.0.24.2.20.EP.STDEE.M1_2e5f8d7f56_14.0.zip",
 					"fastboot": "ishtar_ep_stdee_images_OS1.0.24.2.20.EP.STDEE.M1_20240220.0000.00_14.0_cn_3d0f994b9a.tgz",
 					"ctelecom": "ishtar_ep_stdee_images_OS1.0.24.2.20.EP.STDEE.M1_20240220.0000.00_14.0_cn_chinatelecom_ee0e66d9ce.tgz"
@@ -738,6 +814,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -753,6 +830,7 @@
 					"os": "OS3.0.301.0.WMATWXM",
 					"android": "16.0",
 					"release": "2026-05-19",
+					"aspatch": "2026-05-01",
 					"recovery": "ishtar_tw_global-ota_full-OS3.0.301.0.WMATWXM-user-16.0-3a6fba3c23.zip",
 					"fastboot": "ishtar_tw_global_images_OS3.0.301.0.WMATWXM_20260511.0000.00_16.0_tw_5fda2c72e6.tgz"
 				},
@@ -760,6 +838,7 @@
 					"os": "OS3.0.2.0.WMATWXM",
 					"android": "16.0",
 					"release": "2026-03-23",
+					"aspatch": "2026-02-01",
 					"recovery": "ishtar_tw_global-ota_full-OS3.0.2.0.WMATWXM-user-16.0-2407c08e85.zip",
 					"fastboot": "ishtar_tw_global_images_OS3.0.2.0.WMATWXM_20260312.0000.00_16.0_tw_cf7df9ebcb.tgz"
 				},
@@ -767,6 +846,7 @@
 					"os": "OS3.0.1.0.WMATWXM",
 					"android": "16.0",
 					"release": "2026-01-26",
+					"aspatch": "2026-01-01",
 					"recovery": "ishtar_tw_global-ota_full-OS3.0.1.0.WMATWXM-user-16.0-1e407fd5bd.zip",
 					"fastboot": "ishtar_tw_global_images_OS3.0.1.0.WMATWXM_20260109.0000.00_16.0_tw_f305a492ac.tgz"
 				},
@@ -774,6 +854,7 @@
 					"os": "OS2.0.204.0.VMATWXM",
 					"android": "15.0",
 					"release": "2025-12-13",
+					"aspatch": "2025-11-01",
 					"recovery": "ishtar_tw_global-ota_full-OS2.0.204.0.VMATWXM-user-15.0-f2cc99c21d.zip",
 					"fastboot": "ishtar_tw_global_images_OS2.0.204.0.VMATWXM_20251203.0000.00_15.0_tw_af283e79a9.tgz"
 				},
@@ -781,6 +862,7 @@
 					"os": "OS2.0.203.0.VMATWXM",
 					"android": "15.0",
 					"release": "2025-11-10",
+					"aspatch": "2025-11-01",
 					"recovery": "ishtar_tw_global-ota_full-OS2.0.203.0.VMATWXM-user-15.0-4468987b23.zip",
 					"fastboot": "ishtar_tw_global_images_OS2.0.203.0.VMATWXM_20251027.0000.00_15.0_tw_02d7bffcd1.tgz"
 				},
@@ -788,6 +870,7 @@
 					"os": "OS2.0.202.0.VMATWXM",
 					"android": "15.0",
 					"release": "2025-10-20",
+					"aspatch": "2025-09-01",
 					"recovery": "ishtar_tw_global-ota_full-OS2.0.202.0.VMATWXM-user-15.0-1c7cd5fb87.zip",
 					"fastboot": "ishtar_tw_global_images_OS2.0.202.0.VMATWXM_20250918.0000.00_15.0_tw_7a7307b0a3.tgz"
 				},
@@ -795,6 +878,7 @@
 					"os": "OS2.0.201.0.VMATWXM",
 					"android": "15.0",
 					"release": "2025-09-06",
+					"aspatch": "2025-08-01",
 					"recovery": "ishtar_tw_global-ota_full-OS2.0.201.0.VMATWXM-user-15.0-f515312708.zip",
 					"fastboot": "ishtar_tw_global_images_OS2.0.201.0.VMATWXM_20250821.0000.00_15.0_tw_25260ed295.tgz"
 				},
@@ -802,6 +886,7 @@
 					"os": "OS2.0.200.0.VMATWXM",
 					"android": "15.0",
 					"release": "2025-08-19",
+					"aspatch": "2025-06-01",
 					"recovery": "ishtar_tw_global-ota_full-OS2.0.200.0.VMATWXM-user-15.0-d481680778.zip",
 					"fastboot": "ishtar_tw_global_images_OS2.0.200.0.VMATWXM_20250715.0000.00_15.0_tw_5896a25414.tgz"
 				},
@@ -809,6 +894,7 @@
 					"os": "OS2.0.103.0.VMATWXM",
 					"android": "15.0",
 					"release": "2025-07-01",
+					"aspatch": "2025-06-01",
 					"recovery": "ishtar_tw_global-ota_full-OS2.0.103.0.VMATWXM-user-15.0-6018ad9dc0.zip",
 					"fastboot": "ishtar_tw_global_images_OS2.0.103.0.VMATWXM_20250527.0000.00_15.0_tw_70e4f974df.tgz"
 				},
@@ -816,6 +902,7 @@
 					"os": "OS2.0.102.0.VMATWXM",
 					"android": "15.0",
 					"release": "2025-05-30",
+					"aspatch": "2025-05-01",
 					"recovery": "ishtar_tw_global-ota_full-OS2.0.102.0.VMATWXM-user-15.0-ef458ddb22.zip",
 					"fastboot": "ishtar_tw_global_images_OS2.0.102.0.VMATWXM_20250513.0000.00_15.0_tw_804c03f3d0.tgz"
 				},
@@ -823,6 +910,7 @@
 					"os": "OS2.0.101.0.VMATWXM",
 					"android": "15.0",
 					"release": "2025-04-21",
+					"aspatch": "2025-04-01",
 					"recovery": "ishtar_tw_global-ota_full-OS2.0.101.0.VMATWXM-user-15.0-4de8821394.zip",
 					"fastboot": "ishtar_tw_global_images_OS2.0.101.0.VMATWXM_20250408.0000.00_15.0_tw_52ec6e17e5.tgz"
 				},
@@ -830,6 +918,7 @@
 					"os": "OS2.0.100.0.VMATWXM",
 					"android": "15.0",
 					"release": "2025-03-21",
+					"aspatch": "2025-02-01",
 					"recovery": "ishtar_tw_global-ota_full-OS2.0.100.0.VMATWXM-user-15.0-ef3c97641c.zip",
 					"fastboot": "ishtar_tw_global_images_OS2.0.100.0.VMATWXM_20250218.0000.00_15.0_tw_d4f9c53281.tgz"
 				},
@@ -837,6 +926,7 @@
 					"os": "OS2.0.1.0.VMATWXM",
 					"android": "15.0",
 					"release": "2025-02-06",
+					"aspatch": "2024-12-01",
 					"recovery": "ishtar_tw_global-ota_full-OS2.0.1.0.VMATWXM-user-15.0-48eff47398.zip",
 					"fastboot": "ishtar_tw_global_images_OS2.0.1.0.VMATWXM_20250105.0000.00_15.0_tw_3cd911507c.tgz"
 				},
@@ -844,6 +934,7 @@
 					"os": "OS1.0.14.0.UMATWXM",
 					"android": "14.0",
 					"release": "2025-01-03",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_ISHTARTWGlobal_OS1.0.14.0.UMATWXM_894a7869c9_14.0.zip",
 					"fastboot": "ishtar_tw_global_images_OS1.0.14.0.UMATWXM_20241224.0000.00_14.0_tw_3ad887b4b2.tgz"
 				},
@@ -851,6 +942,7 @@
 					"os": "OS1.0.11.0.UMATWXM",
 					"android": "14.0",
 					"release": "2024-12-09",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_ISHTARTWGlobal_OS1.0.11.0.UMATWXM_c61a391996_14.0.zip",
 					"fastboot": "ishtar_tw_global_images_OS1.0.11.0.UMATWXM_20241121.0000.00_14.0_tw_918110df6e.tgz"
 				},
@@ -858,6 +950,7 @@
 					"os": "OS1.0.10.0.UMATWXM",
 					"android": "14.0",
 					"release": "2024-11-04",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_ISHTARTWGlobal_OS1.0.10.0.UMATWXM_802dc9d6f2_14.0.zip",
 					"fastboot": "ishtar_tw_global_images_OS1.0.10.0.UMATWXM_20241022.0000.00_14.0_tw_350634cc37.tgz"
 				},
@@ -865,6 +958,7 @@
 					"os": "OS1.0.9.0.UMATWXM",
 					"android": "14.0",
 					"release": "2024-10-12",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_ISHTARTWGlobal_OS1.0.9.0.UMATWXM_a3ccb5e70d_14.0.zip",
 					"fastboot": "ishtar_tw_global_images_OS1.0.9.0.UMATWXM_20240926.0000.00_14.0_tw_f88329ac7a.tgz"
 				},
@@ -872,6 +966,7 @@
 					"os": "OS1.0.6.0.UMATWXM",
 					"android": "14.0",
 					"release": "2024-08-05",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_ISHTARTWGlobal_OS1.0.6.0.UMATWXM_9b7a1ecc68_14.0.zip",
 					"fastboot": "ishtar_tw_global_images_OS1.0.6.0.UMATWXM_20240718.0000.00_14.0_tw_25635bbafc.tgz"
 				},
@@ -879,6 +974,7 @@
 					"os": "OS1.0.4.0.UMATWXM",
 					"android": "14.0",
 					"release": "2024-05-05",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_ISHTARTWGlobal_OS1.0.4.0.UMATWXM_305a4a4d78_14.0.zip",
 					"fastboot": "ishtar_tw_global_images_OS1.0.4.0.UMATWXM_20240419.0000.00_14.0_tw_ec566f6ddc.tgz"
 				},
@@ -886,6 +982,7 @@
 					"os": "OS1.0.3.0.UMATWXM",
 					"android": "14.0",
 					"release": "2024-03-22",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_ISHTARTWGlobal_OS1.0.3.0.UMATWXM_d56f9ecba1_14.0.zip",
 					"fastboot": "ishtar_tw_global_images_OS1.0.3.0.UMATWXM_20240301.0000.00_14.0_tw_7c98a345fd.tgz"
 				},
@@ -893,6 +990,7 @@
 					"os": "OS1.0.1.0.UMATWXM",
 					"android": "14.0",
 					"release": "2024-01-02",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_ISHTARTWGlobal_OS1.0.1.0.UMATWXM_a0944d81ad_14.0.zip",
 					"fastboot": "ishtar_tw_global_images_OS1.0.1.0.UMATWXM_20231215.0000.00_14.0_tw_ac8520c5ed.tgz"
 				}
@@ -916,6 +1014,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -931,6 +1030,7 @@
 					"os": "OS3.0.301.0.WMAMIXM",
 					"android": "16.0",
 					"release": "2026-05-16",
+					"aspatch": "2026-05-01",
 					"recovery": "ishtar_global-ota_full-OS3.0.301.0.WMAMIXM-user-16.0-d09c044380.zip",
 					"fastboot": "ishtar_global_images_OS3.0.301.0.WMAMIXM_20260507.0000.00_16.0_global_c9f93c7a16.tgz"
 				},
@@ -938,6 +1038,7 @@
 					"os": "OS3.0.4.0.WMAMIXM",
 					"android": "16.0",
 					"release": "2026-03-23",
+					"aspatch": "2026-02-01",
 					"recovery": "ishtar_global-ota_full-OS3.0.4.0.WMAMIXM-user-16.0-a9eb6009d9.zip",
 					"fastboot": "ishtar_global_images_OS3.0.4.0.WMAMIXM_20260306.0000.00_16.0_global_7535505e12.tgz"
 				},
@@ -945,6 +1046,7 @@
 					"os": "OS3.0.2.0.WMAMIXM",
 					"android": "16.0",
 					"release": "2026-01-20",
+					"aspatch": "2026-01-01",
 					"recovery": "ishtar_global-ota_full-OS3.0.2.0.WMAMIXM-user-16.0-90c6168969.zip",
 					"fastboot": "ishtar_global_images_OS3.0.2.0.WMAMIXM_20260109.0000.00_16.0_global_da623b5c7f.tgz"
 				},
@@ -952,6 +1054,7 @@
 					"os": "OS3.0.1.0.WMAMIXM",
 					"android": "16.0",
 					"release": "2026-01-04",
+					"aspatch": "2025-12-01",
 					"recovery": "ishtar_global-ota_full-OS3.0.1.0.WMAMIXM-user-16.0-65c90c621b.zip",
 					"fastboot": "ishtar_global_images_OS3.0.1.0.WMAMIXM_20251216.0000.00_16.0_global_9bd5994e97.tgz"
 				},
@@ -959,6 +1062,7 @@
 					"os": "OS2.0.210.0.VMAMIXM",
 					"android": "15.0",
 					"release": "2025-12-24",
+					"aspatch": "2025-11-01",
 					"recovery": "ishtar_global-ota_full-OS2.0.210.0.VMAMIXM-user-15.0-4b9d1b0dca.zip",
 					"fastboot": "ishtar_global_images_OS2.0.210.0.VMAMIXM_20251216.0000.00_15.0_global_c77553eb55.tgz"
 				},
@@ -966,6 +1070,7 @@
 					"os": "OS2.0.208.0.VMAMIXM",
 					"android": "15.0",
 					"release": "2025-11-10",
+					"aspatch": "2025-11-01",
 					"recovery": "ishtar_global-ota_full-OS2.0.208.0.VMAMIXM-user-15.0-a205ba7bf8.zip",
 					"fastboot": "ishtar_global_images_OS2.0.208.0.VMAMIXM_20251024.0000.00_15.0_global_2081c9f3c3.tgz"
 				},
@@ -973,6 +1078,7 @@
 					"os": "OS2.0.207.0.VMAMIXM",
 					"android": "15.0",
 					"release": "2025-10-17",
+					"aspatch": "2025-10-01",
 					"recovery": "ishtar_global-ota_full-OS2.0.207.0.VMAMIXM-user-15.0-0c9c2cb2e4.zip",
 					"fastboot": "ishtar_global_images_OS2.0.207.0.VMAMIXM_20250929.0000.00_15.0_global_a55bb30f6c.tgz"
 				},
@@ -980,6 +1086,7 @@
 					"os": "OS2.0.206.0.VMAMIXM",
 					"android": "15.0",
 					"release": "2025-09-15",
+					"aspatch": "2025-08-01",
 					"recovery": "ishtar_global-ota_full-OS2.0.206.0.VMAMIXM-user-15.0-fda8e05084.zip",
 					"fastboot": "ishtar_global_images_OS2.0.206.0.VMAMIXM_20250902.0000.00_15.0_global_0978609c52.tgz"
 				},
@@ -987,6 +1094,7 @@
 					"os": "OS2.0.205.0.VMAMIXM",
 					"android": "15.0",
 					"release": "2025-08-25",
+					"aspatch": "2025-08-01",
 					"recovery": "ishtar_global-ota_full-OS2.0.205.0.VMAMIXM-user-15.0-f2109431e1.zip",
 					"fastboot": "ishtar_global_images_OS2.0.205.0.VMAMIXM_20250813.0000.00_15.0_global_76af13b8b4.tgz"
 				},
@@ -994,6 +1102,7 @@
 					"os": "OS2.0.203.0.VMAMIXM",
 					"android": "15.0",
 					"release": "2025-07-21",
+					"aspatch": "2025-06-01",
 					"recovery": "ishtar_global-ota_full-OS2.0.203.0.VMAMIXM-user-15.0-36fa1f984b.zip",
 					"fastboot": "ishtar_global_images_OS2.0.203.0.VMAMIXM_20250709.0000.00_15.0_global_e3c7822222.tgz"
 				},
@@ -1001,6 +1110,7 @@
 					"os": "OS2.0.105.0.VMAMIXM",
 					"android": "15.0",
 					"release": "2025-06-13",
+					"aspatch": "2025-06-01",
 					"recovery": "ishtar_global-ota_full-OS2.0.105.0.VMAMIXM-user-15.0-03576f7427.zip",
 					"fastboot": "ishtar_global_images_OS2.0.105.0.VMAMIXM_20250527.0000.00_15.0_global_aa1d7c1665.tgz"
 				},
@@ -1008,6 +1118,7 @@
 					"os": "OS2.0.104.0.VMAMIXM",
 					"android": "15.0",
 					"release": "2025-05-20",
+					"aspatch": "2025-05-01",
 					"recovery": "ishtar_global-ota_full-OS2.0.104.0.VMAMIXM-user-15.0-950e807716.zip",
 					"fastboot": "ishtar_global_images_OS2.0.104.0.VMAMIXM_20250506.0000.00_15.0_global_4c7f9825db.tgz"
 				},
@@ -1015,6 +1126,7 @@
 					"os": "OS2.0.103.0.VMAMIXM",
 					"android": "15.0",
 					"release": "2025-04-14",
+					"aspatch": "2025-04-01",
 					"recovery": "ishtar_global-ota_full-OS2.0.103.0.VMAMIXM-user-15.0-3e525727e9.zip",
 					"fastboot": "ishtar_global_images_OS2.0.103.0.VMAMIXM_20250402.0000.00_15.0_global_93f3687104.tgz"
 				},
@@ -1022,6 +1134,7 @@
 					"os": "OS2.0.101.0.VMAMIXM",
 					"android": "15.0",
 					"release": "2025-03-07",
+					"aspatch": "2025-02-01",
 					"recovery": "ishtar_global-ota_full-OS2.0.101.0.VMAMIXM-user-15.0-7be47ad890.zip",
 					"fastboot": "ishtar_global_images_OS2.0.101.0.VMAMIXM_20250218.0000.00_15.0_global_f396336a18.tgz"
 				},
@@ -1029,6 +1142,7 @@
 					"os": "OS2.0.2.0.VMAMIXM",
 					"android": "15.0",
 					"release": "2025-01-11",
+					"aspatch": "2024-12-01",
 					"recovery": "ishtar_global-ota_full-OS2.0.2.0.VMAMIXM-user-15.0-458d7cc414.zip",
 					"fastboot": "ishtar_global_images_OS2.0.2.0.VMAMIXM_20250101.0000.00_15.0_global_4acd3a6200.tgz"
 				},
@@ -1036,6 +1150,7 @@
 					"os": "OS1.0.16.0.UMAMIXM",
 					"android": "14.0",
 					"release": "2024-12-02",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_ISHTARGlobal_OS1.0.16.0.UMAMIXM_c0849b42c0_14.0.zip",
 					"fastboot": "ishtar_global_images_OS1.0.16.0.UMAMIXM_20241120.0000.00_14.0_global_f21ae9413a.tgz"
 				},
@@ -1043,6 +1158,7 @@
 					"os": "OS1.0.14.0.UMAMIXM",
 					"android": "14.0",
 					"release": "2024-11-04",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_ISHTARGlobal_OS1.0.14.0.UMAMIXM_7a7e11eedf_14.0.zip",
 					"fastboot": "ishtar_global_images_OS1.0.14.0.UMAMIXM_20241022.0000.00_14.0_global_7cf6fe4f8b.tgz"
 				},
@@ -1050,6 +1166,7 @@
 					"os": "OS1.0.12.0.UMAMIXM",
 					"android": "14.0",
 					"release": "2024-09-30",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_ISHTARGlobal_OS1.0.12.0.UMAMIXM_e3c2a16cbf_14.0.zip",
 					"fastboot": "ishtar_global_images_OS1.0.12.0.UMAMIXM_20240913.0000.00_14.0_global_3af3334dab.tgz"
 				},
@@ -1057,6 +1174,7 @@
 					"os": "OS1.0.8.0.UMAMIXM",
 					"android": "14.0",
 					"release": "2024-07-28",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_ISHTARGlobal_OS1.0.8.0.UMAMIXM_223430792c_14.0.zip",
 					"fastboot": "ishtar_global_images_OS1.0.8.0.UMAMIXM_20240712.0000.00_14.0_global_12a1ba3c8c.tgz"
 				},
@@ -1064,6 +1182,7 @@
 					"os": "OS1.0.7.0.UMAMIXM",
 					"android": "14.0",
 					"release": "2024-06-25",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_ISHTARGlobal_OS1.0.7.0.UMAMIXM_4162714934_14.0.zip",
 					"fastboot": "ishtar_global_images_OS1.0.7.0.UMAMIXM_20240614.0000.00_14.0_global_c3ad68b612.tgz"
 				},
@@ -1071,6 +1190,7 @@
 					"os": "OS1.0.6.0.UMAMIXM",
 					"android": "14.0",
 					"release": "2024-04-23",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_ISHTARGlobal_OS1.0.6.0.UMAMIXM_701344d13f_14.0.zip",
 					"fastboot": "ishtar_global_images_OS1.0.6.0.UMAMIXM_20240411.0000.00_14.0_global_0f51fc72a7.tgz"
 				},
@@ -1078,6 +1198,7 @@
 					"os": "OS1.0.5.0.UMAMIXM",
 					"android": "14.0",
 					"release": "2024-02-29",
+					"aspatch": "2024-02-01",
 					"recovery": "miui_ISHTARGlobal_OS1.0.5.0.UMAMIXM_c5739993c8_14.0.zip",
 					"fastboot": "ishtar_global_images_OS1.0.5.0.UMAMIXM_20240202.0000.00_14.0_global_62b04303ec.tgz"
 				},
@@ -1085,6 +1206,7 @@
 					"os": "OS1.0.4.0.UMAMIXM",
 					"android": "14.0",
 					"release": "2023-12-29",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_ISHTARGlobal_OS1.0.4.0.UMAMIXM_2835e1645d_14.0.zip",
 					"fastboot": "ishtar_global_images_OS1.0.4.0.UMAMIXM_20231216.0000.00_14.0_global_6fec907a05.tgz"
 				}
@@ -1108,6 +1230,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -1123,6 +1246,7 @@
 					"os": "OS3.0.301.0.WMAEUXM",
 					"android": "16.0",
 					"release": "2026-05-18",
+					"aspatch": "2026-05-01",
 					"recovery": "ishtar_eea_global-ota_full-OS3.0.301.0.WMAEUXM-user-16.0-7290d8ebdc.zip",
 					"fastboot": "ishtar_eea_global_images_OS3.0.301.0.WMAEUXM_20260511.0000.00_16.0_eea_534c0cd2a2.tgz"
 				},
@@ -1130,6 +1254,7 @@
 					"os": "OS3.0.4.0.WMAEUXM",
 					"android": "16.0",
 					"release": "2026-03-23",
+					"aspatch": "2026-02-01",
 					"recovery": "ishtar_eea_global-ota_full-OS3.0.4.0.WMAEUXM-user-16.0-a210d39da3.zip",
 					"fastboot": "ishtar_eea_global_images_OS3.0.4.0.WMAEUXM_20260312.0000.00_16.0_eea_11f471c7e2.tgz"
 				},
@@ -1137,6 +1262,7 @@
 					"os": "OS3.0.3.0.WMAEUXM",
 					"android": "16.0",
 					"release": "2026-03-02",
+					"aspatch": "2026-02-01",
 					"recovery": "ishtar_eea_global-ota_full-OS3.0.3.0.WMAEUXM-user-16.0-5dbc89150f.zip",
 					"fastboot": "ishtar_eea_global_images_OS3.0.3.0.WMAEUXM_20260130.0000.00_16.0_eea_02d280ca34.tgz"
 				},
@@ -1144,6 +1270,7 @@
 					"os": "OS3.0.2.0.WMAEUXM",
 					"android": "16.0",
 					"release": "2026-01-09",
+					"aspatch": "2025-12-01",
 					"recovery": "ishtar_eea_global-ota_full-OS3.0.2.0.WMAEUXM-user-16.0-d712d0cd49.zip",
 					"fastboot": "ishtar_eea_global_images_OS3.0.2.0.WMAEUXM_20251230.0000.00_16.0_eea_51a748a4de.tgz"
 				},
@@ -1151,6 +1278,7 @@
 					"os": "OS3.0.1.0.WMAEUXM",
 					"android": "16.0",
 					"release": "2026-01-04",
+					"aspatch": "2025-12-01",
 					"recovery": "ishtar_eea_global-ota_full-OS3.0.1.0.WMAEUXM-user-16.0-1ab83dffa7.zip",
 					"fastboot": "ishtar_eea_global_images_OS3.0.1.0.WMAEUXM_20251216.0000.00_16.0_eea_400549b29c.tgz"
 				},
@@ -1158,6 +1286,7 @@
 					"os": "OS2.0.206.0.VMAEUXM",
 					"android": "15.0",
 					"release": "2025-12-24",
+					"aspatch": "2025-11-01",
 					"recovery": "ishtar_eea_global-ota_full-OS2.0.206.0.VMAEUXM-user-15.0-bf1cbe5969.zip",
 					"fastboot": "ishtar_eea_global_images_OS2.0.206.0.VMAEUXM_20251215.0000.00_15.0_eea_d355b8bd9d.tgz"
 				},
@@ -1165,6 +1294,7 @@
 					"os": "OS2.0.204.0.VMAEUXM",
 					"android": "15.0",
 					"release": "2025-11-10",
+					"aspatch": "2025-11-01",
 					"recovery": "ishtar_eea_global-ota_full-OS2.0.204.0.VMAEUXM-user-15.0-37620b25f0.zip",
 					"fastboot": "ishtar_eea_global_images_OS2.0.204.0.VMAEUXM_20251027.0000.00_15.0_eea_29282e8c66.tgz"
 				},
@@ -1172,6 +1302,7 @@
 					"os": "OS2.0.203.0.VMAEUXM",
 					"android": "15.0",
 					"release": "2025-10-20",
+					"aspatch": "2025-09-01",
 					"recovery": "ishtar_eea_global-ota_full-OS2.0.203.0.VMAEUXM-user-15.0-098c303ab1.zip",
 					"fastboot": "ishtar_eea_global_images_OS2.0.203.0.VMAEUXM_20250915.0000.00_15.0_eea_29e3f6a243.tgz"
 				},
@@ -1179,6 +1310,7 @@
 					"os": "OS2.0.202.0.VMAEUXM",
 					"android": "15.0",
 					"release": "2025-09-06",
+					"aspatch": "2025-08-01",
 					"recovery": "ishtar_eea_global-ota_full-OS2.0.202.0.VMAEUXM-user-15.0-ec5c8c1545.zip",
 					"fastboot": "ishtar_eea_global_images_OS2.0.202.0.VMAEUXM_20250821.0000.00_15.0_eea_8e713a5b4a.tgz"
 				},
@@ -1186,6 +1318,7 @@
 					"os": "OS2.0.201.0.VMAEUXM",
 					"android": "15.0",
 					"release": "2025-08-19",
+					"aspatch": "2025-07-01",
 					"recovery": "ishtar_eea_global-ota_full-OS2.0.201.0.VMAEUXM-user-15.0-4a618f10b6.zip",
 					"fastboot": "ishtar_eea_global_images_OS2.0.201.0.VMAEUXM_20250722.0000.00_15.0_eea_f51e003a27.tgz"
 				},
@@ -1193,6 +1326,7 @@
 					"os": "OS2.0.103.0.VMAEUXM",
 					"android": "15.0",
 					"release": "2025-07-01",
+					"aspatch": "2025-06-01",
 					"recovery": "ishtar_eea_global-ota_full-OS2.0.103.0.VMAEUXM-user-15.0-d463482cad.zip",
 					"fastboot": "ishtar_eea_global_images_OS2.0.103.0.VMAEUXM_20250527.0000.00_15.0_eea_3c493c0375.tgz"
 				},
@@ -1200,6 +1334,7 @@
 					"os": "OS2.0.102.0.VMAEUXM",
 					"android": "15.0",
 					"release": "2025-05-30",
+					"aspatch": "2025-05-01",
 					"recovery": "ishtar_eea_global-ota_full-OS2.0.102.0.VMAEUXM-user-15.0-1befd4df12.zip",
 					"fastboot": "ishtar_eea_global_images_OS2.0.102.0.VMAEUXM_20250513.0000.00_15.0_eea_9f0dda2cc7.tgz"
 				},
@@ -1207,6 +1342,7 @@
 					"os": "OS2.0.101.0.VMAEUXM",
 					"android": "15.0",
 					"release": "2025-04-21",
+					"aspatch": "2025-04-01",
 					"recovery": "ishtar_eea_global-ota_full-OS2.0.101.0.VMAEUXM-user-15.0-be444dfec6.zip",
 					"fastboot": "ishtar_eea_global_images_OS2.0.101.0.VMAEUXM_20250408.0000.00_15.0_eea_91162ca038.tgz"
 				},
@@ -1214,6 +1350,7 @@
 					"os": "OS2.0.100.0.VMAEUXM",
 					"android": "15.0",
 					"release": "2025-03-21",
+					"aspatch": "2025-02-01",
 					"recovery": "ishtar_eea_global-ota_full-OS2.0.100.0.VMAEUXM-user-15.0-ccd0f93c44.zip",
 					"fastboot": "ishtar_eea_global_images_OS2.0.100.0.VMAEUXM_20250218.0000.00_15.0_eea_3d092db773.tgz"
 				},
@@ -1221,6 +1358,7 @@
 					"os": "OS2.0.1.0.VMAEUXM",
 					"android": "15.0",
 					"release": "2025-01-20",
+					"aspatch": "2024-12-01",
 					"recovery": "ishtar_eea_global-ota_full-OS2.0.1.0.VMAEUXM-user-15.0-dcfc73f319.zip",
 					"fastboot": "ishtar_eea_global_images_OS2.0.1.0.VMAEUXM_20250105.0000.00_15.0_eea_fe8fe05d72.tgz"
 				},
@@ -1228,6 +1366,7 @@
 					"os": "OS1.0.18.0.UMAEUXM",
 					"android": "14.0",
 					"release": "2025-01-03",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_ISHTAREEAGlobal_OS1.0.18.0.UMAEUXM_9916d79f65_14.0.zip",
 					"fastboot": "ishtar_eea_global_images_OS1.0.18.0.UMAEUXM_20241224.0000.00_14.0_eea_88165d0dee.tgz"
 				},
@@ -1235,6 +1374,7 @@
 					"os": "OS1.0.15.0.UMAEUXM",
 					"android": "14.0",
 					"release": "2024-12-05",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_ISHTAREEAGlobal_OS1.0.15.0.UMAEUXM_cfb7acd2e7_14.0.zip",
 					"fastboot": "ishtar_eea_global_images_OS1.0.15.0.UMAEUXM_20241120.0000.00_14.0_eea_e9613e7955.tgz"
 				},
@@ -1242,6 +1382,7 @@
 					"os": "OS1.0.13.0.UMAEUXM",
 					"android": "14.0",
 					"release": "2024-10-28",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_ISHTAREEAGlobal_OS1.0.13.0.UMAEUXM_eb7594965e_14.0.zip",
 					"fastboot": "ishtar_eea_global_images_OS1.0.13.0.UMAEUXM_20241016.0000.00_14.0_eea_2bee4f1d24.tgz"
 				},
@@ -1249,6 +1390,7 @@
 					"os": "OS1.0.12.0.UMAEUXM",
 					"android": "14.0",
 					"release": "2024-10-12",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_ISHTAREEAGlobal_OS1.0.12.0.UMAEUXM_2deecf46fd_14.0.zip",
 					"fastboot": "ishtar_eea_global_images_OS1.0.12.0.UMAEUXM_20240911.0000.00_14.0_eea_5ddd8ff6a3.tgz"
 				},
@@ -1256,6 +1398,7 @@
 					"os": "OS1.0.11.0.UMAEUXM",
 					"android": "14.0",
 					"release": "2024-08-25",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_ISHTAREEAGlobal_OS1.0.11.0.UMAEUXM_52ce413c30_14.0.zip",
 					"fastboot": "ishtar_eea_global_images_OS1.0.11.0.UMAEUXM_20240811.0000.00_14.0_eea_0241a4b0fe.tgz"
 				},
@@ -1263,6 +1406,7 @@
 					"os": "OS1.0.10.0.UMAEUXM",
 					"android": "14.0",
 					"release": "2024-08-06",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_ISHTAREEAGlobal_OS1.0.10.0.UMAEUXM_d8b0f359b8_14.0.zip",
 					"fastboot": "ishtar_eea_global_images_OS1.0.10.0.UMAEUXM_20240725.0000.00_14.0_eea_de09c5c0f3.tgz"
 				},
@@ -1270,6 +1414,7 @@
 					"os": "OS1.0.9.0.UMAEUXM",
 					"android": "14.0",
 					"release": "2024-07-01",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_ISHTAREEAGlobal_OS1.0.9.0.UMAEUXM_e22e179fd8_14.0.zip",
 					"fastboot": "ishtar_eea_global_images_OS1.0.9.0.UMAEUXM_20240614.0000.00_14.0_eea_f28dd42f90.tgz"
 				},
@@ -1277,6 +1422,7 @@
 					"os": "OS1.0.8.0.UMAEUXM",
 					"android": "14.0",
 					"release": "2024-04-28",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_ISHTAREEAGlobal_OS1.0.8.0.UMAEUXM_324d3c1c41_14.0.zip",
 					"fastboot": "ishtar_eea_global_images_OS1.0.8.0.UMAEUXM_20240416.0000.00_14.0_eea_46bdf6a38f.tgz"
 				},
@@ -1284,6 +1430,7 @@
 					"os": "OS1.0.6.0.UMAEUXM",
 					"android": "14.0",
 					"release": "2024-03-04",
+					"aspatch": "2024-01-01",
 					"recovery": "miui_ISHTAREEAGlobal_OS1.0.6.0.UMAEUXM_2baffd7962_14.0.zip",
 					"fastboot": "ishtar_eea_global_images_OS1.0.6.0.UMAEUXM_20240125.0000.00_14.0_eea_fbd58ed854.tgz"
 				},
@@ -1291,6 +1438,7 @@
 					"os": "OS1.0.5.0.UMAEUXM",
 					"android": "14.0",
 					"release": "2023-12-18",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_ISHTAREEAGlobal_OS1.0.5.0.UMAEUXM_70d6c1e142_14.0.zip",
 					"fastboot": "ishtar_eea_global_images_OS1.0.5.0.UMAEUXM_20231216.0000.00_14.0_eea_46e868df60.tgz"
 				}
@@ -1314,6 +1462,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -1329,6 +1478,7 @@
 					"os": "OS3.0.301.0.WMARUXM",
 					"android": "16.0",
 					"release": "2026-05-19",
+					"aspatch": "2026-05-01",
 					"recovery": "ishtar_ru_global-ota_full-OS3.0.301.0.WMARUXM-user-16.0-1f406954a7.zip",
 					"fastboot": "ishtar_ru_global_images_OS3.0.301.0.WMARUXM_20260511.0000.00_16.0_ru_4a19e76a3c.tgz"
 				},
@@ -1336,6 +1486,7 @@
 					"os": "OS3.0.2.0.WMARUXM",
 					"android": "16.0",
 					"release": "2026-03-23",
+					"aspatch": "2026-02-01",
 					"recovery": "ishtar_ru_global-ota_full-OS3.0.2.0.WMARUXM-user-16.0-39de3b9cc2.zip",
 					"fastboot": "ishtar_ru_global_images_OS3.0.2.0.WMARUXM_20260312.0000.00_16.0_ru_5165c72fb9.tgz"
 				},
@@ -1343,6 +1494,7 @@
 					"os": "OS3.0.1.0.WMARUXM",
 					"android": "16.0",
 					"release": "2026-01-26",
+					"aspatch": "2026-01-01",
 					"recovery": "ishtar_ru_global-ota_full-OS3.0.1.0.WMARUXM-user-16.0-ea09a334db.zip",
 					"fastboot": "ishtar_ru_global_images_OS3.0.1.0.WMARUXM_20260109.0000.00_16.0_ru_2c9d346de9.tgz"
 				},
@@ -1350,6 +1502,7 @@
 					"os": "OS2.0.204.0.VMARUXM",
 					"android": "15.0",
 					"release": "2025-12-13",
+					"aspatch": "2025-11-01",
 					"recovery": "ishtar_ru_global-ota_full-OS2.0.204.0.VMARUXM-user-15.0-3332f88a81.zip",
 					"fastboot": "ishtar_ru_global_images_OS2.0.204.0.VMARUXM_20251203.0000.00_15.0_ru_6dbbf2b6a8.tgz"
 				},
@@ -1357,6 +1510,7 @@
 					"os": "OS2.0.203.0.VMARUXM",
 					"android": "15.0",
 					"release": "2025-11-10",
+					"aspatch": "2025-11-01",
 					"recovery": "ishtar_ru_global-ota_full-OS2.0.203.0.VMARUXM-user-15.0-0787151490.zip",
 					"fastboot": "ishtar_ru_global_images_OS2.0.203.0.VMARUXM_20251027.0000.00_15.0_ru_d9305fca2d.tgz"
 				},
@@ -1364,6 +1518,7 @@
 					"os": "OS2.0.202.0.VMARUXM",
 					"android": "15.0",
 					"release": "2025-10-20",
+					"aspatch": "2025-09-01",
 					"recovery": "ishtar_ru_global-ota_full-OS2.0.202.0.VMARUXM-user-15.0-bffff75ed7.zip",
 					"fastboot": "ishtar_ru_global_images_OS2.0.202.0.VMARUXM_20250918.0000.00_15.0_ru_85e88b1932.tgz"
 				},
@@ -1371,6 +1526,7 @@
 					"os": "OS2.0.201.0.VMARUXM",
 					"android": "15.0",
 					"release": "2025-09-06",
+					"aspatch": "2025-08-01",
 					"recovery": "ishtar_ru_global-ota_full-OS2.0.201.0.VMARUXM-user-15.0-8810c2d106.zip",
 					"fastboot": "ishtar_ru_global_images_OS2.0.201.0.VMARUXM_20250821.0000.00_15.0_ru_b01a901104.tgz"
 				},
@@ -1378,6 +1534,7 @@
 					"os": "OS2.0.200.0.VMARUXM",
 					"android": "15.0",
 					"release": "2025-08-19",
+					"aspatch": "2025-06-01",
 					"recovery": "ishtar_ru_global-ota_full-OS2.0.200.0.VMARUXM-user-15.0-732a7d201f.zip",
 					"fastboot": "ishtar_ru_global_images_OS2.0.200.0.VMARUXM_20250715.0000.00_15.0_ru_9f3f79bd78.tgz"
 				},
@@ -1385,6 +1542,7 @@
 					"os": "OS2.0.103.0.VMARUXM",
 					"android": "15.0",
 					"release": "2025-07-01",
+					"aspatch": "2025-06-01",
 					"recovery": "ishtar_ru_global-ota_full-OS2.0.103.0.VMARUXM-user-15.0-bb20d3c8c4.zip",
 					"fastboot": "ishtar_ru_global_images_OS2.0.103.0.VMARUXM_20250527.0000.00_15.0_ru_33dc05d0ba.tgz"
 				},
@@ -1392,6 +1550,7 @@
 					"os": "OS2.0.102.0.VMARUXM",
 					"android": "15.0",
 					"release": "2025-05-31",
+					"aspatch": "2025-05-01",
 					"recovery": "ishtar_ru_global-ota_full-OS2.0.102.0.VMARUXM-user-15.0-453dbbfa77.zip",
 					"fastboot": "ishtar_ru_global_images_OS2.0.102.0.VMARUXM_20250513.0000.00_15.0_ru_4c83b01ddb.tgz"
 				},
@@ -1399,6 +1558,7 @@
 					"os": "OS2.0.101.0.VMARUXM",
 					"android": "15.0",
 					"release": "2025-04-21",
+					"aspatch": "2025-04-01",
 					"recovery": "ishtar_ru_global-ota_full-OS2.0.101.0.VMARUXM-user-15.0-f0120aefc5.zip",
 					"fastboot": "ishtar_ru_global_images_OS2.0.101.0.VMARUXM_20250408.0000.00_15.0_ru_46c1203f28.tgz"
 				},
@@ -1406,6 +1566,7 @@
 					"os": "OS2.0.100.0.VMARUXM",
 					"android": "15.0",
 					"release": "2025-03-29",
+					"aspatch": "2025-02-01",
 					"recovery": "ishtar_ru_global-ota_full-OS2.0.100.0.VMARUXM-user-15.0-282ee42c7d.zip",
 					"fastboot": "ishtar_ru_global_images_OS2.0.100.0.VMARUXM_20250218.0000.00_15.0_ru_3f72785120.tgz"
 				},
@@ -1413,6 +1574,7 @@
 					"os": "OS2.0.1.0.VMARUXM",
 					"android": "15.0",
 					"release": "2025-01-20",
+					"aspatch": "2024-12-01",
 					"recovery": "ishtar_ru_global-ota_full-OS2.0.1.0.VMARUXM-user-15.0-c920023a63.zip",
 					"fastboot": "ishtar_ru_global_images_OS2.0.1.0.VMARUXM_20250106.0000.00_15.0_ru_53bd7ddd69.tgz"
 				},
@@ -1420,6 +1582,7 @@
 					"os": "OS1.0.14.0.UMARUXM",
 					"android": "14.0",
 					"release": "2025-01-07",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_ISHTARRUGlobal_OS1.0.14.0.UMARUXM_5c74c2c1ef_14.0.zip",
 					"fastboot": "ishtar_ru_global_images_OS1.0.14.0.UMARUXM_20241224.0000.00_14.0_ru_95744c71f6.tgz"
 				},
@@ -1427,6 +1590,7 @@
 					"os": "OS1.0.11.0.UMARUXM",
 					"android": "14.0",
 					"release": "2024-12-09",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_ISHTARRUGlobal_OS1.0.11.0.UMARUXM_c24e01278b_14.0.zip",
 					"fastboot": "ishtar_ru_global_images_OS1.0.11.0.UMARUXM_20241122.0000.00_14.0_ru_8db53dcb56.tgz"
 				},
@@ -1434,6 +1598,7 @@
 					"os": "OS1.0.10.0.UMARUXM",
 					"android": "14.0",
 					"release": "2024-11-04",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_ISHTARRUGlobal_OS1.0.10.0.UMARUXM_1cb073d87b_14.0.zip",
 					"fastboot": "ishtar_ru_global_images_OS1.0.10.0.UMARUXM_20241022.0000.00_14.0_ru_3955284584.tgz"
 				},
@@ -1441,6 +1606,7 @@
 					"os": "OS1.0.9.0.UMARUXM",
 					"android": "14.0",
 					"release": "2024-10-15",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_ISHTARRUGlobal_OS1.0.9.0.UMARUXM_566c716da2_14.0.zip",
 					"fastboot": "ishtar_ru_global_images_OS1.0.9.0.UMARUXM_20240926.0000.00_14.0_ru_0df725d715.tgz"
 				},
@@ -1448,6 +1614,7 @@
 					"os": "OS1.0.7.0.UMARUXM",
 					"android": "14.0",
 					"release": "2024-09-10",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_ISHTARRUGlobal_OS1.0.7.0.UMARUXM_30509d0acc_14.0.zip",
 					"fastboot": "ishtar_ru_global_images_OS1.0.7.0.UMARUXM_20240820.0000.00_14.0_ru_33e6c83621.tgz"
 				},
@@ -1455,6 +1622,7 @@
 					"os": "OS1.0.6.0.UMARUXM",
 					"android": "14.0",
 					"release": "2024-08-02",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_ISHTARRUGlobal_OS1.0.6.0.UMARUXM_962963d8b3_14.0.zip",
 					"fastboot": "ishtar_ru_global_images_OS1.0.6.0.UMARUXM_20240718.0000.00_14.0_ru_e9b064264a.tgz"
 				},
@@ -1462,6 +1630,7 @@
 					"os": "OS1.0.4.0.UMARUXM",
 					"android": "14.0",
 					"release": "2024-05-06",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_ISHTARRUGlobal_OS1.0.4.0.UMARUXM_18fe556ffb_14.0.zip",
 					"fastboot": "ishtar_ru_global_images_OS1.0.4.0.UMARUXM_20240419.0000.00_14.0_ru_9c5de89f56.tgz"
 				},
@@ -1469,6 +1638,7 @@
 					"os": "OS1.0.3.0.UMARUXM",
 					"android": "14.0",
 					"release": "2024-03-22",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_ISHTARRUGlobal_OS1.0.3.0.UMARUXM_48f9a76bd3_14.0.zip",
 					"fastboot": "ishtar_ru_global_images_OS1.0.3.0.UMARUXM_20240301.0000.00_14.0_ru_e7ee45accd.tgz"
 				},
@@ -1476,6 +1646,7 @@
 					"os": "OS1.0.1.0.UMARUXM",
 					"android": "14.0",
 					"release": "2024-01-02",
+					"aspatch": "2023-12-01",
 					"recovery": "miui_ISHTARRUGlobal_OS1.0.1.0.UMARUXM_01b4b76de1_14.0.zip",
 					"fastboot": "ishtar_ru_global_images_OS1.0.1.0.UMARUXM_20231215.0000.00_14.0_ru_c011d31aae.tgz"
 				}

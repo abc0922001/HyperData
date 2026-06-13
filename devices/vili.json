@@ -33,6 +33,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -48,6 +49,7 @@
 					"os": "OS1.0.20.0.UKDTWXM",
 					"android": "14.0",
 					"release": "2025-09-26",
+					"aspatch": "2025-09-01",
 					"recovery": "miui_VILITWGlobal_OS1.0.20.0.UKDTWXM_071a550596_14.0.zip",
 					"fastboot": "vili_tw_global_images_OS1.0.20.0.UKDTWXM_20250918.0000.00_14.0_tw_978eabbca4.tgz"
 				},
@@ -55,6 +57,7 @@
 					"os": "OS1.0.19.0.UKDTWXM",
 					"android": "14.0",
 					"release": "2025-08-25",
+					"aspatch": "2025-08-01",
 					"recovery": "miui_VILITWGlobal_OS1.0.19.0.UKDTWXM_69748e44e4_14.0.zip",
 					"fastboot": "vili_tw_global_images_OS1.0.19.0.UKDTWXM_20250815.0000.00_14.0_tw_eba54147a8.tgz"
 				},
@@ -62,6 +65,7 @@
 					"os": "OS1.0.16.0.UKDTWXM",
 					"android": "14.0",
 					"release": "2025-07-14",
+					"aspatch": "2025-06-01",
 					"recovery": "miui_VILITWGlobal_OS1.0.16.0.UKDTWXM_95168ebcf1_14.0.zip",
 					"fastboot": "vili_tw_global_images_OS1.0.16.0.UKDTWXM_20250626.0000.00_14.0_tw_668df3ce1d.tgz"
 				},
@@ -69,6 +73,7 @@
 					"os": "OS1.0.13.0.UKDTWXM",
 					"android": "14.0",
 					"release": "2025-06-09",
+					"aspatch": "2025-05-01",
 					"recovery": "miui_VILITWGlobal_OS1.0.13.0.UKDTWXM_a924db3b7a_14.0.zip",
 					"fastboot": "vili_tw_global_images_OS1.0.13.0.UKDTWXM_20250523.0000.00_14.0_tw_432795789f.tgz"
 				},
@@ -76,6 +81,7 @@
 					"os": "OS1.0.12.0.UKDTWXM",
 					"android": "14.0",
 					"release": "2025-05-19",
+					"aspatch": "2025-04-01",
 					"recovery": "miui_VILITWGlobal_OS1.0.12.0.UKDTWXM_145aad26a2_14.0.zip",
 					"fastboot": "vili_tw_global_images_OS1.0.12.0.UKDTWXM_20250421.0000.00_14.0_tw_5764b9d6f1.tgz"
 				},
@@ -83,6 +89,7 @@
 					"os": "OS1.0.10.0.UKDTWXM",
 					"android": "14.0",
 					"release": "2025-04-07",
+					"aspatch": "2025-03-01",
 					"recovery": "miui_VILITWGlobal_OS1.0.10.0.UKDTWXM_74ac73d3de_14.0.zip",
 					"fastboot": "vili_tw_global_images_OS1.0.10.0.UKDTWXM_20250305.0000.00_14.0_tw_2087c6e356.tgz"
 				},
@@ -90,6 +97,7 @@
 					"os": "OS1.0.9.0.UKDTWXM",
 					"android": "14.0",
 					"release": "2025-02-28",
+					"aspatch": "2025-02-01",
 					"recovery": "miui_VILITWGlobal_OS1.0.9.0.UKDTWXM_6977b3ee15_14.0.zip",
 					"fastboot": "vili_tw_global_images_OS1.0.9.0.UKDTWXM_20250217.0000.00_14.0_tw_4091766809.tgz"
 				},
@@ -97,6 +105,7 @@
 					"os": "OS1.0.7.0.UKDTWXM",
 					"android": "14.0",
 					"release": "2024-12-10",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_VILITWGlobal_OS1.0.7.0.UKDTWXM_8dc320ccf7_14.0.zip",
 					"fastboot": "vili_tw_global_images_OS1.0.7.0.UKDTWXM_20241113.0000.00_14.0_tw_09647be218.tgz"
 				},
@@ -104,6 +113,7 @@
 					"os": "OS1.0.6.0.UKDTWXM",
 					"android": "14.0",
 					"release": "2024-11-16",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_VILITWGlobal_OS1.0.6.0.UKDTWXM_87ee219fc1_14.0.zip",
 					"fastboot": "vili_tw_global_images_OS1.0.6.0.UKDTWXM_20241012.0000.00_14.0_tw_e011995837.tgz"
 				},
@@ -111,6 +121,7 @@
 					"os": "OS1.0.5.0.UKDTWXM",
 					"android": "14.0",
 					"release": "2024-10-14",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_VILITWGlobal_OS1.0.5.0.UKDTWXM_965ca2f614_14.0.zip",
 					"fastboot": "vili_tw_global_images_OS1.0.5.0.UKDTWXM_20240909.0000.00_14.0_tw_69abcba60e.tgz"
 				},
@@ -118,6 +129,7 @@
 					"os": "OS1.0.4.0.UKDTWXM",
 					"android": "14.0",
 					"release": "2024-09-11",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VILITWGlobal_OS1.0.4.0.UKDTWXM_e598f23007_14.0.zip",
 					"fastboot": "vili_tw_global_images_OS1.0.4.0.UKDTWXM_20240819.0000.00_14.0_tw_1140f0ff1d.tgz"
 				},
@@ -125,6 +137,7 @@
 					"os": "OS1.0.3.0.UKDTWXM",
 					"android": "14.0",
 					"release": "2024-08-09",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_VILITWGlobal_OS1.0.3.0.UKDTWXM_e9e7500b49_14.0.zip",
 					"fastboot": "vili_tw_global_images_OS1.0.3.0.UKDTWXM_20240718.0000.00_14.0_tw_517491b888.tgz"
 				},
@@ -132,6 +145,7 @@
 					"os": "OS1.0.2.0.UKDTWXM",
 					"android": "14.0",
 					"release": "2024-07-19",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_VILITWGlobal_OS1.0.2.0.UKDTWXM_705652b8c1_14.0.zip",
 					"fastboot": "vili_tw_global_images_OS1.0.2.0.UKDTWXM_20240701.0000.00_14.0_tw_27a2b7fae7.tgz"
 				},
@@ -139,6 +153,7 @@
 					"os": "OS1.0.1.0.UKDTWXM",
 					"android": "14.0",
 					"release": "2024-05-20",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_VILITWGlobal_OS1.0.1.0.UKDTWXM_12eed7cc85_14.0.zip",
 					"fastboot": "vili_tw_global_images_OS1.0.1.0.UKDTWXM_20240510.0000.00_14.0_tw_b3e5acb2e2.tgz"
 				}
@@ -162,6 +177,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -177,6 +193,7 @@
 					"os": "OS1.0.22.0.UKDMIXM",
 					"android": "14.0",
 					"release": "2025-09-22",
+					"aspatch": "2025-08-01",
 					"recovery": "miui_VILIGlobal_OS1.0.22.0.UKDMIXM_c8ed341b17_14.0.zip",
 					"fastboot": "vili_global_images_OS1.0.22.0.UKDMIXM_20250829.0000.00_14.0_global_d86945d660.tgz"
 				},
@@ -184,6 +201,7 @@
 					"os": "OS1.0.21.0.UKDMIXM",
 					"android": "14.0",
 					"release": "2025-08-25",
+					"aspatch": "2025-08-01",
 					"recovery": "miui_VILIGlobal_OS1.0.21.0.UKDMIXM_7bf3b06718_14.0.zip",
 					"fastboot": "vili_global_images_OS1.0.21.0.UKDMIXM_20250819.0000.00_14.0_global_cf01728d79.tgz"
 				},
@@ -191,6 +209,7 @@
 					"os": "OS1.0.17.0.UKDMIXM",
 					"android": "14.0",
 					"release": "2025-07-14",
+					"aspatch": "2025-06-01",
 					"recovery": "miui_VILIGlobal_OS1.0.17.0.UKDMIXM_c197324d45_14.0.zip",
 					"fastboot": "vili_global_images_OS1.0.17.0.UKDMIXM_20250625.0000.00_14.0_global_4ebd64588a.tgz"
 				},
@@ -198,6 +217,7 @@
 					"os": "OS1.0.14.0.UKDMIXM",
 					"android": "14.0",
 					"release": "2025-06-09",
+					"aspatch": "2025-05-01",
 					"recovery": "miui_VILIGlobal_OS1.0.14.0.UKDMIXM_7328d3271e_14.0.zip",
 					"fastboot": "vili_global_images_OS1.0.14.0.UKDMIXM_20250520.0000.00_14.0_global_d9d00e06bf.tgz"
 				},
@@ -205,6 +225,7 @@
 					"os": "OS1.0.13.0.UKDMIXM",
 					"android": "14.0",
 					"release": "2025-05-19",
+					"aspatch": "2025-04-01",
 					"recovery": "miui_VILIGlobal_OS1.0.13.0.UKDMIXM_bcccfd8ec2_14.0.zip",
 					"fastboot": "vili_global_images_OS1.0.13.0.UKDMIXM_20250422.0000.00_14.0_global_9055bd6f02.tgz"
 				},
@@ -212,6 +233,7 @@
 					"os": "OS1.0.11.0.UKDMIXM",
 					"android": "14.0",
 					"release": "2025-04-07",
+					"aspatch": "2025-03-01",
 					"recovery": "miui_VILIGlobal_OS1.0.11.0.UKDMIXM_1b12f59c4c_14.0.zip",
 					"fastboot": "vili_global_images_OS1.0.11.0.UKDMIXM_20250305.0000.00_14.0_global_92b65c0612.tgz"
 				},
@@ -219,6 +241,7 @@
 					"os": "OS1.0.10.0.UKDMIXM",
 					"android": "14.0",
 					"release": "2025-02-28",
+					"aspatch": "2025-02-01",
 					"recovery": "miui_VILIGlobal_OS1.0.10.0.UKDMIXM_0a1d5a3368_14.0.zip",
 					"fastboot": "vili_global_images_OS1.0.10.0.UKDMIXM_20250217.0000.00_14.0_global_cf7cb17ef6.tgz"
 				},
@@ -226,6 +249,7 @@
 					"os": "OS1.0.8.0.UKDMIXM",
 					"android": "14.0",
 					"release": "2024-12-10",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_VILIGlobal_OS1.0.8.0.UKDMIXM_508d3c7c44_14.0.zip",
 					"fastboot": "vili_global_images_OS1.0.8.0.UKDMIXM_20241113.0000.00_14.0_global_be06a8281d.tgz"
 				},
@@ -233,6 +257,7 @@
 					"os": "OS1.0.7.0.UKDMIXM",
 					"android": "14.0",
 					"release": "2024-11-16",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_VILIGlobal_OS1.0.7.0.UKDMIXM_727d12856c_14.0.zip",
 					"fastboot": "vili_global_images_OS1.0.7.0.UKDMIXM_20241012.0000.00_14.0_global_f28c6f4b76.tgz"
 				},
@@ -240,6 +265,7 @@
 					"os": "OS1.0.6.0.UKDMIXM",
 					"android": "14.0",
 					"release": "2024-10-14",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_VILIGlobal_OS1.0.6.0.UKDMIXM_3344f36bac_14.0.zip",
 					"fastboot": "vili_global_images_OS1.0.6.0.UKDMIXM_20240911.0000.00_14.0_global_191c3b92e9.tgz"
 				},
@@ -247,6 +273,7 @@
 					"os": "OS1.0.5.0.UKDMIXM",
 					"android": "14.0",
 					"release": "2024-09-11",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VILIGlobal_OS1.0.5.0.UKDMIXM_b2de419592_14.0.zip",
 					"fastboot": "vili_global_images_OS1.0.5.0.UKDMIXM_20240827.0000.00_14.0_global_031e277ae7.tgz"
 				},
@@ -254,6 +281,7 @@
 					"os": "OS1.0.4.0.UKDMIXM",
 					"android": "14.0",
 					"release": "2024-08-19",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_VILIGlobal_OS1.0.4.0.UKDMIXM_4d9b862c7d_14.0.zip",
 					"fastboot": "vili_global_images_OS1.0.4.0.UKDMIXM_20240723.0000.00_14.0_global_f95d396b58.tgz"
 				},
@@ -261,6 +289,7 @@
 					"os": "OS1.0.3.0.UKDMIXM",
 					"android": "14.0",
 					"release": "2024-07-11",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_VILIGlobal_OS1.0.3.0.UKDMIXM_ae3a8389bb_14.0.zip",
 					"fastboot": "vili_global_images_OS1.0.3.0.UKDMIXM_20240618.0000.00_14.0_global_dc0995d501.tgz"
 				},
@@ -268,6 +297,7 @@
 					"os": "OS1.0.2.0.UKDMIXM",
 					"android": "14.0",
 					"release": "2024-05-09",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_VILIGlobal_OS1.0.2.0.UKDMIXM_4666382f76_14.0.zip",
 					"fastboot": "vili_global_images_OS1.0.2.0.UKDMIXM_20240422.0000.00_14.0_global_34279256f0.tgz"
 				}
@@ -291,6 +321,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -306,6 +337,7 @@
 					"os": "OS1.0.27.0.UKDEUXM",
 					"android": "14.0",
 					"release": "2025-12-20",
+					"aspatch": "2025-11-01",
 					"recovery": "miui_VILIEEAGlobal_OS1.0.27.0.UKDEUXM_8ba52acb32_14.0.zip",
 					"fastboot": "vili_eea_global_images_OS1.0.27.0.UKDEUXM_20251110.0000.00_14.0_eea_d314e3429f.tgz"
 				},
@@ -313,6 +345,7 @@
 					"os": "OS1.0.26.0.UKDEUXM",
 					"android": "14.0",
 					"release": "2025-10-20",
+					"aspatch": "2025-10-01",
 					"recovery": "miui_VILIEEAGlobal_OS1.0.26.0.UKDEUXM_2550c1923b_14.0.zip",
 					"fastboot": "vili_eea_global_images_OS1.0.26.0.UKDEUXM_20250930.0000.00_14.0_eea_6eaba4ebbd.tgz"
 				},
@@ -320,6 +353,7 @@
 					"os": "OS1.0.24.0.UKDEUXM",
 					"android": "14.0",
 					"release": "2025-08-25",
+					"aspatch": "2025-08-01",
 					"recovery": "miui_VILIEEAGlobal_OS1.0.24.0.UKDEUXM_9aaf4a8c2d_14.0.zip",
 					"fastboot": "vili_eea_global_images_OS1.0.24.0.UKDEUXM_20250819.0000.00_14.0_eea_472fb3ef99.tgz"
 				},
@@ -327,6 +361,7 @@
 					"os": "OS1.0.20.0.UKDEUXM",
 					"android": "14.0",
 					"release": "2025-07-14",
+					"aspatch": "2025-06-01",
 					"recovery": "miui_VILIEEAGlobal_OS1.0.20.0.UKDEUXM_1018c33eaa_14.0.zip",
 					"fastboot": "vili_eea_global_images_OS1.0.20.0.UKDEUXM_20250626.0000.00_14.0_eea_3454039caf.tgz"
 				},
@@ -334,6 +369,7 @@
 					"os": "OS1.0.17.0.UKDEUXM",
 					"android": "14.0",
 					"release": "2025-06-09",
+					"aspatch": "2025-05-01",
 					"recovery": "miui_VILIEEAGlobal_OS1.0.17.0.UKDEUXM_001d524705_14.0.zip",
 					"fastboot": "vili_eea_global_images_OS1.0.17.0.UKDEUXM_20250523.0000.00_14.0_eea_ca6d8b05da.tgz"
 				},
@@ -341,6 +377,7 @@
 					"os": "OS1.0.16.0.UKDEUXM",
 					"android": "14.0",
 					"release": "2025-04-29",
+					"aspatch": "2025-04-01",
 					"recovery": "miui_VILIEEAGlobal_OS1.0.16.0.UKDEUXM_585c024665_14.0.zip",
 					"fastboot": "vili_eea_global_images_OS1.0.16.0.UKDEUXM_20250415.0000.00_14.0_eea_f0eefaaaeb.tgz"
 				},
@@ -348,6 +385,7 @@
 					"os": "OS1.0.14.0.UKDEUXM",
 					"android": "14.0",
 					"release": "2025-04-07",
+					"aspatch": "2025-03-01",
 					"recovery": "miui_VILIEEAGlobal_OS1.0.14.0.UKDEUXM_4b37a41fb2_14.0.zip",
 					"fastboot": "vili_eea_global_images_OS1.0.14.0.UKDEUXM_20250305.0000.00_14.0_eea_95304b9a6a.tgz"
 				},
@@ -355,6 +393,7 @@
 					"os": "OS1.0.12.0.UKDEUXM",
 					"android": "14.0",
 					"release": "2025-02-28",
+					"aspatch": "2025-02-01",
 					"recovery": "miui_VILIEEAGlobal_OS1.0.12.0.UKDEUXM_10150f6b6d_14.0.zip",
 					"fastboot": "vili_eea_global_images_OS1.0.12.0.UKDEUXM_20250217.0000.00_14.0_eea_bd2fbf16d8.tgz"
 				},
@@ -362,6 +401,7 @@
 					"os": "OS1.0.9.0.UKDEUXM",
 					"android": "14.0",
 					"release": "2024-12-10",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_VILIEEAGlobal_OS1.0.9.0.UKDEUXM_b7c8c5c29a_14.0.zip",
 					"fastboot": "vili_eea_global_images_OS1.0.9.0.UKDEUXM_20241107.0000.00_14.0_eea_8e2a93d7f6.tgz"
 				},
@@ -369,6 +409,7 @@
 					"os": "OS1.0.6.0.UKDEUXM",
 					"android": "14.0",
 					"release": "2024-11-19",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_VILIEEAGlobal_OS1.0.6.0.UKDEUXM_9e1bd1559e_14.0.zip",
 					"fastboot": "vili_eea_global_images_OS1.0.6.0.UKDEUXM_20240929.0000.00_14.0_eea_b1d65b4f44.tgz"
 				},
@@ -376,6 +417,7 @@
 					"os": "OS1.0.5.0.UKDEUXM",
 					"android": "14.0",
 					"release": "2024-09-18",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_VILIEEAGlobal_OS1.0.5.0.UKDEUXM_f2de5f6b2f_14.0.zip",
 					"fastboot": "vili_eea_global_images_OS1.0.5.0.UKDEUXM_20240830.0000.00_14.0_eea_6566d26e61.tgz"
 				},
@@ -383,6 +425,7 @@
 					"os": "OS1.0.4.0.UKDEUXM",
 					"android": "14.0",
 					"release": "2024-08-19",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VILIEEAGlobal_OS1.0.4.0.UKDEUXM_24f8aca75f_14.0.zip",
 					"fastboot": "vili_eea_global_images_OS1.0.4.0.UKDEUXM_20240724.0000.00_14.0_eea_4b8e039064.tgz"
 				},
@@ -390,6 +433,7 @@
 					"os": "OS1.0.3.0.UKDEUXM",
 					"android": "14.0",
 					"release": "2024-07-17",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_VILIEEAGlobal_OS1.0.3.0.UKDEUXM_4a34e11f69_14.0.zip",
 					"fastboot": "vili_eea_global_images_OS1.0.3.0.UKDEUXM_20240625.0000.00_14.0_eea_6bc64b8b00.tgz"
 				},
@@ -397,6 +441,7 @@
 					"os": "OS1.0.2.0.UKDEUXM",
 					"android": "14.0",
 					"release": "2024-05-06",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_VILIEEAGlobal_OS1.0.2.0.UKDEUXM_bc09d1ca3c_14.0.zip",
 					"fastboot": "vili_eea_global_images_OS1.0.2.0.UKDEUXM_20240422.0000.00_14.0_eea_e07ef08003.tgz"
 				}
@@ -420,6 +465,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -435,6 +481,7 @@
 					"os": "OS1.0.16.0.UKDEUVF",
 					"android": "14.0",
 					"release": "2025-08-26",
+					"aspatch": "2025-08-01",
 					"recovery": "miui_VILIEEAVFGlobal_OS1.0.16.0.UKDEUVF_516137f62b_14.0.zip",
 					"fastboot": "vili_eea_vf_global_images_OS1.0.16.0.UKDEUVF_20250807.0000.00_14.0_eea_vodafone_65e3bf9bf5.tgz"
 				},
@@ -442,6 +489,7 @@
 					"os": "OS1.0.15.0.UKDEUVF",
 					"android": "14.0",
 					"release": "2025-07-25",
+					"aspatch": "2025-07-01",
 					"recovery": "miui_VILIEEAVFGlobal_OS1.0.15.0.UKDEUVF_f6ec08f7a7_14.0.zip",
 					"fastboot": "vili_eea_vf_global_images_OS1.0.15.0.UKDEUVF_20250710.0000.00_14.0_eea_vodafone_19eaa3cf13.tgz"
 				},
@@ -449,6 +497,7 @@
 					"os": "OS1.0.11.0.UKDEUVF",
 					"android": "14.0",
 					"release": "2025-05-13",
+					"aspatch": "2025-04-01",
 					"recovery": "miui_VILIEEAVFGlobal_OS1.0.11.0.UKDEUVF_444a61f5b9_14.0.zip",
 					"fastboot": "vili_eea_vf_global_images_OS1.0.11.0.UKDEUVF_20250421.0000.00_14.0_eea_vodafone_59d7e4c941.tgz"
 				},
@@ -456,6 +505,7 @@
 					"os": "OS1.0.9.0.UKDEUVF",
 					"android": "14.0",
 					"release": "2025-03-03",
+					"aspatch": "2025-02-01",
 					"recovery": "miui_VILIEEAVFGlobal_OS1.0.9.0.UKDEUVF_28581a5b1b_14.0.zip",
 					"fastboot": "vili_eea_vf_global_images_OS1.0.9.0.UKDEUVF_20250216.0000.00_14.0_eea_vodafone_8315879804.tgz"
 				},
@@ -463,6 +513,7 @@
 					"os": "OS1.0.8.0.UKDEUVF",
 					"android": "14.0",
 					"release": "2025-01-26",
+					"aspatch": "2025-01-01",
 					"recovery": "miui_VILIEEAVFGlobal_OS1.0.8.0.UKDEUVF_50c4bab453_14.0.zip",
 					"fastboot": "vili_eea_vf_global_images_OS1.0.8.0.UKDEUVF_20250113.0000.00_14.0_eea_vodafone_35422cea70.tgz"
 				},
@@ -470,6 +521,7 @@
 					"os": "OS1.0.6.0.UKDEUVF",
 					"android": "14.0",
 					"release": "2024-12-03",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_VILIEEAVFGlobal_OS1.0.6.0.UKDEUVF_9a04612350_14.0.zip",
 					"fastboot": "vili_eea_vf_global_images_OS1.0.6.0.UKDEUVF_20241120.0000.00_14.0_eea_vodafone_7d49b6cba8.tgz"
 				},
@@ -477,6 +529,7 @@
 					"os": "OS1.0.4.0.UKDEUVF",
 					"android": "14.0",
 					"release": "2024-09-30",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_VILIEEAVFGlobal_OS1.0.4.0.UKDEUVF_541cd169f3_14.0.zip",
 					"fastboot": "vili_eea_vf_global_images_OS1.0.4.0.UKDEUVF_20240911.0000.00_14.0_eea_vodafone_cf97ebdf64.tgz"
 				},
@@ -484,6 +537,7 @@
 					"os": "OS1.0.2.0.UKDEUVF",
 					"android": "14.0",
 					"release": "2024-07-31",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_VILIEEAVFGlobal_OS1.0.2.0.UKDEUVF_502147ae9e_14.0.zip",
 					"fastboot": ""
 				},
@@ -491,6 +545,7 @@
 					"os": "OS1.0.1.0.UKDEUVF",
 					"android": "14.0",
 					"release": "2024-07-01",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_VILIEEAVFGlobal_OS1.0.1.0.UKDEUVF_14948444bf_14.0.zip",
 					"fastboot": ""
 				}
@@ -514,6 +569,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -529,6 +585,7 @@
 					"os": "OS1.0.13.0.UKDEUTF",
 					"android": "14.0",
 					"release": "2025-09-09",
+					"aspatch": "2025-08-01",
 					"recovery": "miui_VILIEEATFGlobal_OS1.0.13.0.UKDEUTF_e2d27e7a9f_14.0.zip",
 					"fastboot": "vili_eea_tf_global_images_OS1.0.13.0.UKDEUTF_20250808.0000.00_14.0_eea_tf_f2e6be1365.tgz"
 				},
@@ -536,6 +593,7 @@
 					"os": "OS1.0.12.0.UKDEUTF",
 					"android": "14.0",
 					"release": "2025-08-20",
+					"aspatch": "2025-07-01",
 					"recovery": "miui_VILIEEATFGlobal_OS1.0.12.0.UKDEUTF_7ae9d9e78e_14.0.zip",
 					"fastboot": "vili_eea_tf_global_images_OS1.0.12.0.UKDEUTF_20250710.0000.00_14.0_eea_tf_e122fefcc6.tgz"
 				},
@@ -543,6 +601,7 @@
 					"os": "OS1.0.9.0.UKDEUTF",
 					"android": "14.0",
 					"release": "2025-06-06",
+					"aspatch": "2025-04-01",
 					"recovery": "miui_VILIEEATFGlobal_OS1.0.9.0.UKDEUTF_dd6210ced3_14.0.zip",
 					"fastboot": "vili_eea_tf_global_images_OS1.0.9.0.UKDEUTF_20250421.0000.00_14.0_eea_tf_a2b2dd8cea.tgz"
 				},
@@ -550,6 +609,7 @@
 					"os": "OS1.0.5.0.UKDEUTF",
 					"android": "14.0",
 					"release": "2024-12-06",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_VILIEEATFGlobal_OS1.0.5.0.UKDEUTF_dddd786ddb_14.0.zip",
 					"fastboot": "vili_eea_tf_global_images_OS1.0.5.0.UKDEUTF_20241123.0000.00_14.0_eea_tf_d9d68d5261.tgz"
 				},
@@ -557,6 +617,7 @@
 					"os": "OS1.0.4.0.UKDEUTF",
 					"android": "14.0",
 					"release": "2024-09-26",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_VILIEEATFGlobal_OS1.0.4.0.UKDEUTF_6ae939b72a_14.0.zip",
 					"fastboot": "vili_eea_tf_global_images_OS1.0.4.0.UKDEUTF_20240911.0000.00_14.0_eea_tf_9ec2f4f313.tgz"
 				},
@@ -564,6 +625,7 @@
 					"os": "OS1.0.2.0.UKDEUTF",
 					"android": "14.0",
 					"release": "2024-07-30",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_VILIEEATFGlobal_OS1.0.2.0.UKDEUTF_9ee79582c4_14.0.zip",
 					"fastboot": ""
 				},
@@ -571,6 +633,7 @@
 					"os": "OS1.0.1.0.UKDEUTF",
 					"android": "14.0",
 					"release": "2024-05-29",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_VILIEEATFGlobal_OS1.0.1.0.UKDEUTF_e84955d2c6_14.0.zip",
 					"fastboot": ""
 				}
@@ -594,6 +657,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -609,6 +673,7 @@
 					"os": "OS1.0.8.0.UKDEUOR",
 					"android": "14.0",
 					"release": "2025-05-22",
+					"aspatch": "2025-04-01",
 					"recovery": "miui_VILIEEAORGlobal_OS1.0.8.0.UKDEUOR_17222cff4f_14.0.zip",
 					"fastboot": "vili_eea_or_global_images_OS1.0.8.0.UKDEUOR_20250422.0000.00_14.0_eea_orange_5cc4d10267.tgz"
 				},
@@ -616,6 +681,7 @@
 					"os": "OS1.0.7.0.UKDEUOR",
 					"android": "14.0",
 					"release": "2025-03-07",
+					"aspatch": "2025-02-01",
 					"recovery": "miui_VILIEEAORGlobal_OS1.0.7.0.UKDEUOR_7e11023582_14.0.zip",
 					"fastboot": "vili_eea_or_global_images_OS1.0.7.0.UKDEUOR_20250219.0000.00_14.0_eea_orange_082ac342af.tgz"
 				},
@@ -623,6 +689,7 @@
 					"os": "OS1.0.6.0.UKDEUOR",
 					"android": "14.0",
 					"release": "2025-01-14",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_VILIEEAORGlobal_OS1.0.6.0.UKDEUOR_6a44309907_14.0.zip",
 					"fastboot": "vili_eea_or_global_images_OS1.0.6.0.UKDEUOR_20241224.0000.00_14.0_eea_orange_19a20ed5c2.tgz"
 				},
@@ -630,6 +697,7 @@
 					"os": "OS1.0.4.0.UKDEUOR",
 					"android": "14.0",
 					"release": "2024-10-30",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_VILIEEAORGlobal_OS1.0.4.0.UKDEUOR_e2816d9df1_14.0.zip",
 					"fastboot": "vili_eea_or_global_images_OS1.0.4.0.UKDEUOR_20241010.0000.00_14.0_eea_orange_925ec73030.tgz"
 				},
@@ -637,6 +705,7 @@
 					"os": "OS1.0.3.0.UKDEUOR",
 					"android": "14.0",
 					"release": "2024-08-23",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VILIEEAORGlobal_OS1.0.3.0.UKDEUOR_653c6557ed_14.0.zip",
 					"fastboot": "vili_eea_or_global_images_OS1.0.3.0.UKDEUOR_20240809.0000.00_14.0_eea_orange_49b201a9cf.tgz"
 				},
@@ -644,6 +713,7 @@
 					"os": "OS1.0.2.0.UKDEUOR",
 					"android": "14.0",
 					"release": "2024-07-30",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_VILIEEAORGlobal_OS1.0.2.0.UKDEUOR_c17eedab44_14.0.zip",
 					"fastboot": ""
 				},
@@ -651,6 +721,7 @@
 					"os": "OS1.0.1.0.UKDEUOR",
 					"android": "14.0",
 					"release": "2024-06-18",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_VILIEEAORGlobal_OS1.0.1.0.UKDEUOR_c5a8a9b5d8_14.0.zip",
 					"fastboot": ""
 				}
@@ -674,6 +745,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -689,6 +761,7 @@
 					"os": "OS1.0.3.0.UKDEUSF",
 					"android": "14.0",
 					"release": "2025-01-14",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_VILIEEASFGlobal_OS1.0.3.0.UKDEUSF_61aa1772fd_14.0.zip",
 					"fastboot": "vili_eea_sf_global_images_OS1.0.3.0.UKDEUSF_20241122.0000.00_14.0_eea_sfr_e445422ee0.tgz"
 				},
@@ -696,6 +769,7 @@
 					"os": "OS1.0.2.0.UKDEUSF",
 					"android": "14.0",
 					"release": "2024-09-13",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VILIEEASFGlobal_OS1.0.2.0.UKDEUSF_3d4bbc8f56_14.0.zip",
 					"fastboot": "vili_eea_sf_global_images_OS1.0.2.0.UKDEUSF_20240823.0000.00_14.0_eea_sfr_a0d9902fad.tgz"
 				},
@@ -703,6 +777,7 @@
 					"os": "OS1.0.1.0.UKDEUSF",
 					"android": "14.0",
 					"release": "2024-07-04",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_VILIEEASFGlobal_OS1.0.1.0.UKDEUSF_372fada7b2_14.0.zip",
 					"fastboot": ""
 				}
@@ -726,6 +801,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -741,6 +817,7 @@
 					"os": "OS1.0.20.0.UKDRUXM",
 					"android": "14.0",
 					"release": "2025-09-26",
+					"aspatch": "2025-09-01",
 					"recovery": "miui_VILIRUGlobal_OS1.0.20.0.UKDRUXM_08ef5cab14_14.0.zip",
 					"fastboot": "vili_ru_global_images_OS1.0.20.0.UKDRUXM_20250917.0000.00_14.0_ru_8ab3b07463.tgz"
 				},
@@ -748,6 +825,7 @@
 					"os": "OS1.0.19.0.UKDRUXM",
 					"android": "14.0",
 					"release": "2025-08-25",
+					"aspatch": "2025-08-01",
 					"recovery": "miui_VILIRUGlobal_OS1.0.19.0.UKDRUXM_53676c20bb_14.0.zip",
 					"fastboot": "vili_ru_global_images_OS1.0.19.0.UKDRUXM_20250816.0000.00_14.0_ru_710d64e33a.tgz"
 				},
@@ -755,6 +833,7 @@
 					"os": "OS1.0.16.0.UKDRUXM",
 					"android": "14.0",
 					"release": "2025-07-14",
+					"aspatch": "2025-06-01",
 					"recovery": "miui_VILIRUGlobal_OS1.0.16.0.UKDRUXM_5e76727528_14.0.zip",
 					"fastboot": "vili_ru_global_images_OS1.0.16.0.UKDRUXM_20250626.0000.00_14.0_ru_012ac8cedb.tgz"
 				},
@@ -762,6 +841,7 @@
 					"os": "OS1.0.13.0.UKDRUXM",
 					"android": "14.0",
 					"release": "2025-06-09",
+					"aspatch": "2025-05-01",
 					"recovery": "miui_VILIRUGlobal_OS1.0.13.0.UKDRUXM_be78ff8e8e_14.0.zip",
 					"fastboot": "vili_ru_global_images_OS1.0.13.0.UKDRUXM_20250523.0000.00_14.0_ru_154b52413a.tgz"
 				},
@@ -769,6 +849,7 @@
 					"os": "OS1.0.12.0.UKDRUXM",
 					"android": "14.0",
 					"release": "2025-05-19",
+					"aspatch": "2025-04-01",
 					"recovery": "miui_VILIRUGlobal_OS1.0.12.0.UKDRUXM_ea813da070_14.0.zip",
 					"fastboot": "vili_ru_global_images_OS1.0.12.0.UKDRUXM_20250421.0000.00_14.0_ru_f426644c2c.tgz"
 				},
@@ -776,6 +857,7 @@
 					"os": "OS1.0.11.0.UKDRUXM",
 					"android": "14.0",
 					"release": "2025-04-07",
+					"aspatch": "2025-03-01",
 					"recovery": "miui_VILIRUGlobal_OS1.0.11.0.UKDRUXM_9df09b13e4_14.0.zip",
 					"fastboot": "vili_ru_global_images_OS1.0.11.0.UKDRUXM_20250305.0000.00_14.0_ru_cd51c23ca1.tgz"
 				},
@@ -783,6 +865,7 @@
 					"os": "OS1.0.9.0.UKDRUXM",
 					"android": "14.0",
 					"release": "2025-03-04",
+					"aspatch": "2025-02-01",
 					"recovery": "miui_VILIRUGlobal_OS1.0.9.0.UKDRUXM_35dca34e23_14.0.zip",
 					"fastboot": "vili_ru_global_images_OS1.0.9.0.UKDRUXM_20250217.0000.00_14.0_ru_44469b5baa.tgz"
 				},
@@ -790,6 +873,7 @@
 					"os": "OS1.0.7.0.UKDRUXM",
 					"android": "14.0",
 					"release": "2024-12-10",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_VILIRUGlobal_OS1.0.7.0.UKDRUXM_0a3048b52a_14.0.zip",
 					"fastboot": "vili_ru_global_images_OS1.0.7.0.UKDRUXM_20241113.0000.00_14.0_ru_0dce87bfb7.tgz"
 				},
@@ -797,6 +881,7 @@
 					"os": "OS1.0.6.0.UKDRUXM",
 					"android": "14.0",
 					"release": "2024-11-16",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_VILIRUGlobal_OS1.0.6.0.UKDRUXM_c2a7d672c6_14.0.zip",
 					"fastboot": "vili_ru_global_images_OS1.0.6.0.UKDRUXM_20241012.0000.00_14.0_ru_45f6fb88e6.tgz"
 				},
@@ -804,6 +889,7 @@
 					"os": "OS1.0.5.0.UKDRUXM",
 					"android": "14.0",
 					"release": "2024-10-14",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_VILIRUGlobal_OS1.0.5.0.UKDRUXM_6ca5a2789f_14.0.zip",
 					"fastboot": "vili_ru_global_images_OS1.0.5.0.UKDRUXM_20240910.0000.00_14.0_ru_b974bbed33.tgz"
 				},
@@ -811,6 +897,7 @@
 					"os": "OS1.0.4.0.UKDRUXM",
 					"android": "14.0",
 					"release": "2024-09-11",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VILIRUGlobal_OS1.0.4.0.UKDRUXM_e691d3c765_14.0.zip",
 					"fastboot": "vili_ru_global_images_OS1.0.4.0.UKDRUXM_20240827.0000.00_14.0_ru_cb70669f71.tgz"
 				},
@@ -818,6 +905,7 @@
 					"os": "OS1.0.3.0.UKDRUXM",
 					"android": "14.0",
 					"release": "2024-08-09",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_VILIRUGlobal_OS1.0.3.0.UKDRUXM_3d1e786c75_14.0.zip",
 					"fastboot": "vili_ru_global_images_OS1.0.3.0.UKDRUXM_20240722.0000.00_14.0_ru_815ba04d89.tgz"
 				},
@@ -825,6 +913,7 @@
 					"os": "OS1.0.2.0.UKDRUXM",
 					"android": "14.0",
 					"release": "2024-07-12",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_VILIRUGlobal_OS1.0.2.0.UKDRUXM_14df11bac2_14.0.zip",
 					"fastboot": "vili_ru_global_images_OS1.0.2.0.UKDRUXM_20240625.0000.00_14.0_ru_4db6df1b0f.tgz"
 				},
@@ -832,6 +921,7 @@
 					"os": "OS1.0.1.0.UKDRUXM",
 					"android": "14.0",
 					"release": "2024-05-20",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_VILIRUGlobal_OS1.0.1.0.UKDRUXM_891f5d0169_14.0.zip",
 					"fastboot": "vili_ru_global_images_OS1.0.1.0.UKDRUXM_20240430.0000.00_14.0_ru_c4a19924f7.tgz"
 				}
@@ -855,6 +945,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -870,6 +961,7 @@
 					"os": "OS1.0.22.0.UKDINXM",
 					"android": "14.0",
 					"release": "2025-11-11",
+					"aspatch": "2025-11-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.22.0.UKDINXM_d9eadba1be_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.22.0.UKDINXM_20251030.0000.00_14.0_in_abfbf8a27f.tgz"
 				},
@@ -877,6 +969,7 @@
 					"os": "OS1.0.21.0.UKDINXM",
 					"android": "14.0",
 					"release": "2025-10-18",
+					"aspatch": "2025-10-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.21.0.UKDINXM_6d5ef48c3c_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.21.0.UKDINXM_20250930.0000.00_14.0_in_d0c813fb8f.tgz"
 				},
@@ -884,6 +977,7 @@
 					"os": "OS1.0.20.0.UKDINXM",
 					"android": "14.0",
 					"release": "2025-09-24",
+					"aspatch": "2025-09-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.20.0.UKDINXM_6374f3ba52_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.20.0.UKDINXM_20250917.0000.00_14.0_in_df0432f039.tgz"
 				},
@@ -891,6 +985,7 @@
 					"os": "OS1.0.19.0.UKDINXM",
 					"android": "14.0",
 					"release": "2025-08-25",
+					"aspatch": "2025-08-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.19.0.UKDINXM_30e92cdf40_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.19.0.UKDINXM_20250816.0000.00_14.0_in_2cd71b51df.tgz"
 				},
@@ -898,6 +993,7 @@
 					"os": "OS1.0.16.0.UKDINXM",
 					"android": "14.0",
 					"release": "2025-07-14",
+					"aspatch": "2025-06-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.16.0.UKDINXM_3414c59c53_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.16.0.UKDINXM_20250626.0000.00_14.0_in_d956b6991c.tgz"
 				},
@@ -905,6 +1001,7 @@
 					"os": "OS1.0.13.0.UKDINXM",
 					"android": "14.0",
 					"release": "2025-06-09",
+					"aspatch": "2025-05-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.13.0.UKDINXM_cac4248446_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.13.0.UKDINXM_20250523.0000.00_14.0_in_90b55e2af3.tgz"
 				},
@@ -912,6 +1009,7 @@
 					"os": "OS1.0.12.0.UKDINXM",
 					"android": "14.0",
 					"release": "2025-05-19",
+					"aspatch": "2025-04-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.12.0.UKDINXM_e7b2a6f6ac_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.12.0.UKDINXM_20250421.0000.00_14.0_in_70baefa4bb.tgz"
 				},
@@ -919,6 +1017,7 @@
 					"os": "OS1.0.11.0.UKDINXM",
 					"android": "14.0",
 					"release": "2025-04-07",
+					"aspatch": "2025-03-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.11.0.UKDINXM_018783da81_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.11.0.UKDINXM_20250305.0000.00_14.0_in_257a502911.tgz"
 				},
@@ -926,6 +1025,7 @@
 					"os": "OS1.0.10.0.UKDINXM",
 					"android": "14.0",
 					"release": "2025-02-28",
+					"aspatch": "2025-02-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.10.0.UKDINXM_6c4b650ae1_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.10.0.UKDINXM_20250217.0000.00_14.0_in_6451f2a423.tgz"
 				},
@@ -933,6 +1033,7 @@
 					"os": "OS1.0.8.0.UKDINXM",
 					"android": "14.0",
 					"release": "2024-12-16",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.8.0.UKDINXM_d5b97bfaf3_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.8.0.UKDINXM_20241113.0000.00_14.0_in_05a0f5853e.tgz"
 				},
@@ -940,6 +1041,7 @@
 					"os": "OS1.0.7.0.UKDINXM",
 					"android": "14.0",
 					"release": "2024-11-16",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.7.0.UKDINXM_76fc0268c3_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.7.0.UKDINXM_20241012.0000.00_14.0_in_2945f0205c.tgz"
 				},
@@ -947,6 +1049,7 @@
 					"os": "OS1.0.6.0.UKDINXM",
 					"android": "14.0",
 					"release": "2024-10-14",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.6.0.UKDINXM_5311363744_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.6.0.UKDINXM_20240911.0000.00_14.0_in_a0c8bad887.tgz"
 				},
@@ -954,6 +1057,7 @@
 					"os": "OS1.0.5.0.UKDINXM",
 					"android": "14.0",
 					"release": "2024-09-18",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.5.0.UKDINXM_a8f176f44b_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.5.0.UKDINXM_20240827.0000.00_14.0_in_ad54e20bfe.tgz"
 				},
@@ -961,6 +1065,7 @@
 					"os": "OS1.0.4.0.UKDINXM",
 					"android": "14.0",
 					"release": "2024-08-06",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.4.0.UKDINXM_286f6fab8d_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.4.0.UKDINXM_20240722.0000.00_14.0_in_64beb0548b.tgz"
 				},
@@ -968,6 +1073,7 @@
 					"os": "OS1.0.3.0.UKDINXM",
 					"android": "14.0",
 					"release": "2024-07-05",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.3.0.UKDINXM_933252bc96_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.3.0.UKDINXM_20240618.0000.00_14.0_in_98e33cd39c.tgz"
 				},
@@ -975,6 +1081,7 @@
 					"os": "OS1.0.2.0.UKDINXM",
 					"android": "14.0",
 					"release": "2024-05-09",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_VILIINGlobal_OS1.0.2.0.UKDINXM_5f7f6dfacf_14.0.zip",
 					"fastboot": "vili_in_global_images_OS1.0.2.0.UKDINXM_20240423.0000.00_14.0_in_7137dcca82.tgz"
 				}
@@ -998,6 +1105,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -1013,6 +1121,7 @@
 					"os": "OS1.0.20.0.UKDIDXM",
 					"android": "14.0",
 					"release": "2025-09-26",
+					"aspatch": "2025-09-01",
 					"recovery": "miui_VILIIDGlobal_OS1.0.20.0.UKDIDXM_6c7091f942_14.0.zip",
 					"fastboot": "vili_id_global_images_OS1.0.20.0.UKDIDXM_20250917.0000.00_14.0_id_c4241170ff.tgz"
 				},
@@ -1020,6 +1129,7 @@
 					"os": "OS1.0.18.0.UKDIDXM",
 					"android": "14.0",
 					"release": "2025-08-25",
+					"aspatch": "2025-08-01",
 					"recovery": "miui_VILIIDGlobal_OS1.0.18.0.UKDIDXM_bd9fd4e513_14.0.zip",
 					"fastboot": "vili_id_global_images_OS1.0.18.0.UKDIDXM_20250815.0000.00_14.0_id_a3cd29e3ee.tgz"
 				},
@@ -1027,6 +1137,7 @@
 					"os": "OS1.0.15.0.UKDIDXM",
 					"android": "14.0",
 					"release": "2025-07-14",
+					"aspatch": "2025-06-01",
 					"recovery": "miui_VILIIDGlobal_OS1.0.15.0.UKDIDXM_6e496693f8_14.0.zip",
 					"fastboot": "vili_id_global_images_OS1.0.15.0.UKDIDXM_20250626.0000.00_14.0_id_9779454dec.tgz"
 				},
@@ -1034,6 +1145,7 @@
 					"os": "OS1.0.12.0.UKDIDXM",
 					"android": "14.0",
 					"release": "2025-06-09",
+					"aspatch": "2025-05-01",
 					"recovery": "miui_VILIIDGlobal_OS1.0.12.0.UKDIDXM_e527a9507b_14.0.zip",
 					"fastboot": "vili_id_global_images_OS1.0.12.0.UKDIDXM_20250523.0000.00_14.0_id_ec8aed778b.tgz"
 				},
@@ -1041,6 +1153,7 @@
 					"os": "OS1.0.11.0.UKDIDXM",
 					"android": "14.0",
 					"release": "2025-05-19",
+					"aspatch": "2025-04-01",
 					"recovery": "miui_VILIIDGlobal_OS1.0.11.0.UKDIDXM_41136a3850_14.0.zip",
 					"fastboot": "vili_id_global_images_OS1.0.11.0.UKDIDXM_20250421.0000.00_14.0_id_a3a3eae386.tgz"
 				},
@@ -1048,6 +1161,7 @@
 					"os": "OS1.0.10.0.UKDIDXM",
 					"android": "14.0",
 					"release": "2025-04-07",
+					"aspatch": "2025-03-01",
 					"recovery": "miui_VILIIDGlobal_OS1.0.10.0.UKDIDXM_49271a8d29_14.0.zip",
 					"fastboot": "vili_id_global_images_OS1.0.10.0.UKDIDXM_20250305.0000.00_14.0_id_fc95a71d7a.tgz"
 				},
@@ -1055,6 +1169,7 @@
 					"os": "OS1.0.9.0.UKDIDXM",
 					"android": "14.0",
 					"release": "2025-02-28",
+					"aspatch": "2025-02-01",
 					"recovery": "miui_VILIIDGlobal_OS1.0.9.0.UKDIDXM_e3214c3989_14.0.zip",
 					"fastboot": "vili_id_global_images_OS1.0.9.0.UKDIDXM_20250217.0000.00_14.0_id_e191547ad9.tgz"
 				},
@@ -1062,6 +1177,7 @@
 					"os": "OS1.0.7.0.UKDIDXM",
 					"android": "14.0",
 					"release": "2024-12-10",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_VILIIDGlobal_OS1.0.7.0.UKDIDXM_0cfb575daf_14.0.zip",
 					"fastboot": "vili_id_global_images_OS1.0.7.0.UKDIDXM_20241113.0000.00_14.0_id_a90f0efa87.tgz"
 				},
@@ -1069,6 +1185,7 @@
 					"os": "OS1.0.6.0.UKDIDXM",
 					"android": "14.0",
 					"release": "2024-11-19",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_VILIIDGlobal_OS1.0.6.0.UKDIDXM_39ef508df9_14.0.zip",
 					"fastboot": "vili_id_global_images_OS1.0.6.0.UKDIDXM_20241012.0000.00_14.0_id_08dec5b151.tgz"
 				},
@@ -1076,6 +1193,7 @@
 					"os": "OS1.0.5.0.UKDIDXM",
 					"android": "14.0",
 					"release": "2024-10-14",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_VILIIDGlobal_OS1.0.5.0.UKDIDXM_fbf4eff547_14.0.zip",
 					"fastboot": "vili_id_global_images_OS1.0.5.0.UKDIDXM_20240910.0000.00_14.0_id_3d8a08f802.tgz"
 				},
@@ -1083,6 +1201,7 @@
 					"os": "OS1.0.4.0.UKDIDXM",
 					"android": "14.0",
 					"release": "2024-09-11",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VILIIDGlobal_OS1.0.4.0.UKDIDXM_4ae9cc893b_14.0.zip",
 					"fastboot": "vili_id_global_images_OS1.0.4.0.UKDIDXM_20240827.0000.00_14.0_id_7af430c032.tgz"
 				},
@@ -1090,6 +1209,7 @@
 					"os": "OS1.0.3.0.UKDIDXM",
 					"android": "14.0",
 					"release": "2024-08-06",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_VILIIDGlobal_OS1.0.3.0.UKDIDXM_46cddd05a4_14.0.zip",
 					"fastboot": "vili_id_global_images_OS1.0.3.0.UKDIDXM_20240722.0000.00_14.0_id_a40dbdc15a.tgz"
 				},
@@ -1097,6 +1217,7 @@
 					"os": "OS1.0.2.0.UKDIDXM",
 					"android": "14.0",
 					"release": "2024-07-12",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_VILIIDGlobal_OS1.0.2.0.UKDIDXM_6e70cf3b14_14.0.zip",
 					"fastboot": "vili_id_global_images_OS1.0.2.0.UKDIDXM_20240625.0000.00_14.0_id_b6bc058080.tgz"
 				},
@@ -1104,6 +1225,7 @@
 					"os": "OS1.0.1.0.UKDIDXM",
 					"android": "14.0",
 					"release": "2024-05-20",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_VILIIDGlobal_OS1.0.1.0.UKDIDXM_31470aa673_14.0.zip",
 					"fastboot": "vili_id_global_images_OS1.0.1.0.UKDIDXM_20240430.0000.00_14.0_id_00ded244e7.tgz"
 				}
@@ -1127,6 +1249,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -1142,6 +1265,7 @@
 					"os": "OS1.0.19.0.UKDTRXM",
 					"android": "14.0",
 					"release": "2025-09-26",
+					"aspatch": "2025-09-01",
 					"recovery": "miui_VILITRGlobal_OS1.0.19.0.UKDTRXM_b71fb2bdf7_14.0.zip",
 					"fastboot": "vili_tr_global_images_OS1.0.19.0.UKDTRXM_20250918.0000.00_14.0_tr_2a593b7076.tgz"
 				},
@@ -1149,6 +1273,7 @@
 					"os": "OS1.0.18.0.UKDTRXM",
 					"android": "14.0",
 					"release": "2025-08-25",
+					"aspatch": "2025-08-01",
 					"recovery": "miui_VILITRGlobal_OS1.0.18.0.UKDTRXM_ce5d502efc_14.0.zip",
 					"fastboot": "vili_tr_global_images_OS1.0.18.0.UKDTRXM_20250815.0000.00_14.0_tr_e337bddbff.tgz"
 				},
@@ -1156,6 +1281,7 @@
 					"os": "OS1.0.15.0.UKDTRXM",
 					"android": "14.0",
 					"release": "2025-07-14",
+					"aspatch": "2025-06-01",
 					"recovery": "miui_VILITRGlobal_OS1.0.15.0.UKDTRXM_07fff3bb84_14.0.zip",
 					"fastboot": "vili_tr_global_images_OS1.0.15.0.UKDTRXM_20250626.0000.00_14.0_tr_2fa47cf8c8.tgz"
 				},
@@ -1163,6 +1289,7 @@
 					"os": "OS1.0.12.0.UKDTRXM",
 					"android": "14.0",
 					"release": "2025-06-09",
+					"aspatch": "2025-05-01",
 					"recovery": "miui_VILITRGlobal_OS1.0.12.0.UKDTRXM_e4957558ec_14.0.zip",
 					"fastboot": "vili_tr_global_images_OS1.0.12.0.UKDTRXM_20250523.0000.00_14.0_tr_a268a3ece8.tgz"
 				},
@@ -1170,6 +1297,7 @@
 					"os": "OS1.0.11.0.UKDTRXM",
 					"android": "14.0",
 					"release": "2025-05-19",
+					"aspatch": "2025-04-01",
 					"recovery": "miui_VILITRGlobal_OS1.0.11.0.UKDTRXM_a546c70fe1_14.0.zip",
 					"fastboot": "vili_tr_global_images_OS1.0.11.0.UKDTRXM_20250421.0000.00_14.0_tr_b182ad17a6.tgz"
 				},
@@ -1177,6 +1305,7 @@
 					"os": "OS1.0.10.0.UKDTRXM",
 					"android": "14.0",
 					"release": "2025-04-07",
+					"aspatch": "2025-03-01",
 					"recovery": "miui_VILITRGlobal_OS1.0.10.0.UKDTRXM_9d85a6233f_14.0.zip",
 					"fastboot": "vili_tr_global_images_OS1.0.10.0.UKDTRXM_20250305.0000.00_14.0_tr_c519b37d22.tgz"
 				},
@@ -1184,6 +1313,7 @@
 					"os": "OS1.0.9.0.UKDTRXM",
 					"android": "14.0",
 					"release": "2025-03-04",
+					"aspatch": "2025-02-01",
 					"recovery": "miui_VILITRGlobal_OS1.0.9.0.UKDTRXM_44c8ffbd14_14.0.zip",
 					"fastboot": "vili_tr_global_images_OS1.0.9.0.UKDTRXM_20250217.0000.00_14.0_tr_fc250cf86c.tgz"
 				},
@@ -1191,6 +1321,7 @@
 					"os": "OS1.0.7.0.UKDTRXM",
 					"android": "14.0",
 					"release": "2024-12-10",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_VILITRGlobal_OS1.0.7.0.UKDTRXM_6773cf12c0_14.0.zip",
 					"fastboot": "vili_tr_global_images_OS1.0.7.0.UKDTRXM_20241113.0000.00_14.0_tr_7590465f40.tgz"
 				},
@@ -1198,6 +1329,7 @@
 					"os": "OS1.0.6.0.UKDTRXM",
 					"android": "14.0",
 					"release": "2024-11-16",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_VILITRGlobal_OS1.0.6.0.UKDTRXM_4fcf588dbd_14.0.zip",
 					"fastboot": "vili_tr_global_images_OS1.0.6.0.UKDTRXM_20241012.0000.00_14.0_tr_36bb596150.tgz"
 				},
@@ -1205,6 +1337,7 @@
 					"os": "OS1.0.5.0.UKDTRXM",
 					"android": "14.0",
 					"release": "2024-10-14",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_VILITRGlobal_OS1.0.5.0.UKDTRXM_00bae414e2_14.0.zip",
 					"fastboot": "vili_tr_global_images_OS1.0.5.0.UKDTRXM_20240910.0000.00_14.0_tr_70981b78a3.tgz"
 				},
@@ -1212,6 +1345,7 @@
 					"os": "OS1.0.4.0.UKDTRXM",
 					"android": "14.0",
 					"release": "2024-09-11",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VILITRGlobal_OS1.0.4.0.UKDTRXM_6903646dec_14.0.zip",
 					"fastboot": "vili_tr_global_images_OS1.0.4.0.UKDTRXM_20240827.0000.00_14.0_tr_4b3d1b7cac.tgz"
 				},
@@ -1219,6 +1353,7 @@
 					"os": "OS1.0.3.0.UKDTRXM",
 					"android": "14.0",
 					"release": "2024-08-06",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_VILITRGlobal_OS1.0.3.0.UKDTRXM_c9f0617fd1_14.0.zip",
 					"fastboot": "vili_tr_global_images_OS1.0.3.0.UKDTRXM_20240719.0000.00_14.0_tr_3428788f75.tgz"
 				},
@@ -1226,6 +1361,7 @@
 					"os": "OS1.0.2.0.UKDTRXM",
 					"android": "14.0",
 					"release": "2024-07-19",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_VILITRGlobal_OS1.0.2.0.UKDTRXM_ea3863c9cf_14.0.zip",
 					"fastboot": "vili_tr_global_images_OS1.0.2.0.UKDTRXM_20240701.0000.00_14.0_tr_bf5cdf755d.tgz"
 				},
@@ -1233,6 +1369,7 @@
 					"os": "OS1.0.1.0.UKDTRXM",
 					"android": "14.0",
 					"release": "2024-05-20",
+					"aspatch": "2024-04-01",
 					"recovery": "miui_VILITRGlobal_OS1.0.1.0.UKDTRXM_dc88f0e294_14.0.zip",
 					"fastboot": "vili_tr_global_images_OS1.0.1.0.UKDTRXM_20240509.0000.00_14.0_tr_7f38f70988.tgz"
 				}
@@ -1256,6 +1393,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -1271,6 +1409,7 @@
 					"os": "OS1.0.20.0.UKDJPXM",
 					"android": "14.0",
 					"release": "2025-09-26",
+					"aspatch": "2025-09-01",
 					"recovery": "miui_VILIJPGlobal_OS1.0.20.0.UKDJPXM_034a0d3a00_14.0.zip",
 					"fastboot": "vili_jp_global_images_OS1.0.20.0.UKDJPXM_20250918.0000.00_14.0_jp_14d1aea510.tgz"
 				},
@@ -1278,6 +1417,7 @@
 					"os": "OS1.0.19.0.UKDJPXM",
 					"android": "14.0",
 					"release": "2025-08-25",
+					"aspatch": "2025-08-01",
 					"recovery": "miui_VILIJPGlobal_OS1.0.19.0.UKDJPXM_b993178fb6_14.0.zip",
 					"fastboot": "vili_jp_global_images_OS1.0.19.0.UKDJPXM_20250819.0000.00_14.0_jp_beca4770c7.tgz"
 				},
@@ -1285,6 +1425,7 @@
 					"os": "OS1.0.15.0.UKDJPXM",
 					"android": "14.0",
 					"release": "2025-07-14",
+					"aspatch": "2025-06-01",
 					"recovery": "miui_VILIJPGlobal_OS1.0.15.0.UKDJPXM_53f1bc8e77_14.0.zip",
 					"fastboot": "vili_jp_global_images_OS1.0.15.0.UKDJPXM_20250626.0000.00_14.0_jp_4e4e882db0.tgz"
 				},
@@ -1292,6 +1433,7 @@
 					"os": "OS1.0.12.0.UKDJPXM",
 					"android": "14.0",
 					"release": "2025-06-09",
+					"aspatch": "2025-05-01",
 					"recovery": "miui_VILIJPGlobal_OS1.0.12.0.UKDJPXM_ed294f6623_14.0.zip",
 					"fastboot": "vili_jp_global_images_OS1.0.12.0.UKDJPXM_20250523.0000.00_14.0_jp_057aae2b24.tgz"
 				},
@@ -1299,6 +1441,7 @@
 					"os": "OS1.0.11.0.UKDJPXM",
 					"android": "14.0",
 					"release": "2025-05-20",
+					"aspatch": "2025-04-01",
 					"recovery": "miui_VILIJPGlobal_OS1.0.11.0.UKDJPXM_6a7e383799_14.0.zip",
 					"fastboot": "vili_jp_global_images_OS1.0.11.0.UKDJPXM_20250421.0000.00_14.0_jp_3a234a6d73.tgz"
 				},
@@ -1306,6 +1449,7 @@
 					"os": "OS1.0.10.0.UKDJPXM",
 					"android": "14.0",
 					"release": "2025-04-07",
+					"aspatch": "2025-03-01",
 					"recovery": "miui_VILIJPGlobal_OS1.0.10.0.UKDJPXM_f0e68f428f_14.0.zip",
 					"fastboot": "vili_jp_global_images_OS1.0.10.0.UKDJPXM_20250305.0000.00_14.0_jp_abdd980fe3.tgz"
 				},
@@ -1313,6 +1457,7 @@
 					"os": "OS1.0.9.0.UKDJPXM",
 					"android": "14.0",
 					"release": "2025-03-04",
+					"aspatch": "2025-02-01",
 					"recovery": "miui_VILIJPGlobal_OS1.0.9.0.UKDJPXM_824efb6593_14.0.zip",
 					"fastboot": "vili_jp_global_images_OS1.0.9.0.UKDJPXM_20250217.0000.00_14.0_jp_b59aa7aa83.tgz"
 				},
@@ -1320,6 +1465,7 @@
 					"os": "OS1.0.7.0.UKDJPXM",
 					"android": "14.0",
 					"release": "2024-12-10",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_VILIJPGlobal_OS1.0.7.0.UKDJPXM_afd8509b1e_14.0.zip",
 					"fastboot": "vili_jp_global_images_OS1.0.7.0.UKDJPXM_20241113.0000.00_14.0_jp_a550830a7e.tgz"
 				},
@@ -1327,6 +1473,7 @@
 					"os": "OS1.0.6.0.UKDJPXM",
 					"android": "14.0",
 					"release": "2024-11-16",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_VILIJPGlobal_OS1.0.6.0.UKDJPXM_8bc16f3094_14.0.zip",
 					"fastboot": "vili_jp_global_images_OS1.0.6.0.UKDJPXM_20241012.0000.00_14.0_jp_21b1bcf73f.tgz"
 				},
@@ -1334,6 +1481,7 @@
 					"os": "OS1.0.5.0.UKDJPXM",
 					"android": "14.0",
 					"release": "2024-10-14",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_VILIJPGlobal_OS1.0.5.0.UKDJPXM_fb101932b1_14.0.zip",
 					"fastboot": "vili_jp_global_images_OS1.0.5.0.UKDJPXM_20240910.0000.00_14.0_jp_9c34285cf4.tgz"
 				},
@@ -1341,6 +1489,7 @@
 					"os": "OS1.0.4.0.UKDJPXM",
 					"android": "14.0",
 					"release": "2024-09-11",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VILIJPGlobal_OS1.0.4.0.UKDJPXM_e7ab91bd9b_14.0.zip",
 					"fastboot": "vili_jp_global_images_OS1.0.4.0.UKDJPXM_20240827.0000.00_14.0_jp_4386dc293f.tgz"
 				},
@@ -1348,6 +1497,7 @@
 					"os": "OS1.0.3.0.UKDJPXM",
 					"android": "14.0",
 					"release": "2024-08-09",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_VILIJPGlobal_OS1.0.3.0.UKDJPXM_8415d3d796_14.0.zip",
 					"fastboot": "vili_jp_global_images_OS1.0.3.0.UKDJPXM_20240722.0000.00_14.0_jp_6cbdbdbbad.tgz"
 				},
@@ -1355,6 +1505,7 @@
 					"os": "OS1.0.2.0.UKDJPXM",
 					"android": "14.0",
 					"release": "2024-07-12",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_VILIJPGlobal_OS1.0.2.0.UKDJPXM_669243dde5_14.0.zip",
 					"fastboot": "vili_jp_global_images_OS1.0.2.0.UKDJPXM_20240625.0000.00_14.0_jp_1ec30d7196.tgz"
 				}
@@ -1378,6 +1529,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -1393,6 +1545,7 @@
 					"os": "OS1.0.4.0.UKDCLEN",
 					"android": "14.0",
 					"release": "2025-12-02",
+					"aspatch": "2025-09-01",
 					"recovery": "miui_VILICLENGlobal_OS1.0.4.0.UKDCLEN_8dcab6f859_14.0.zip",
 					"fastboot": "vili_cl_en_global_images_OS1.0.4.0.UKDCLEN_20250925.0000.00_14.0_cl_en_8b411a05e1.tgz"
 				},
@@ -1400,6 +1553,7 @@
 					"os": "OS1.0.2.0.UKDCLEN",
 					"android": "14.0",
 					"release": "2024-10-29",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_VILICLENGlobal_OS1.0.2.0.UKDCLEN_df93abcc28_14.0.zip",
 					"fastboot": "vili_cl_en_global_images_OS1.0.2.0.UKDCLEN_20240902.0000.00_14.0_cl_en_5fed15a6b0.tgz"
 				},
@@ -1407,6 +1561,7 @@
 					"os": "OS1.0.1.0.UKDCLEN",
 					"android": "14.0",
 					"release": "2024-10-29",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_VILICLENGlobal_OS1.0.1.0.UKDCLEN_7505315ac8_14.0.zip",
 					"fastboot": ""
 				}
@@ -1430,6 +1585,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -1445,6 +1601,7 @@
 					"os": "OS1.0.11.0.UKDMXAT",
 					"android": "14.0",
 					"release": "2025-09-30",
+					"aspatch": "2025-09-01",
 					"recovery": "miui_VILIMXATGlobal_OS1.0.11.0.UKDMXAT_048c5cd4fe_14.0.zip",
 					"fastboot": "vili_mx_at_global_images_OS1.0.11.0.UKDMXAT_20250918.0000.00_14.0_mx_at_b13688e344.tgz"
 				},
@@ -1452,6 +1609,7 @@
 					"os": "OS1.0.10.0.UKDMXAT",
 					"android": "14.0",
 					"release": "2025-07-07",
+					"aspatch": "2025-06-01",
 					"recovery": "miui_VILIMXATGlobal_OS1.0.10.0.UKDMXAT_3c1d8b0a95_14.0.zip",
 					"fastboot": "vili_mx_at_global_images_OS1.0.10.0.UKDMXAT_20250610.0000.00_14.0_mx_at_86e036509d.tgz"
 				},
@@ -1459,6 +1617,7 @@
 					"os": "OS1.0.9.0.UKDMXAT",
 					"android": "14.0",
 					"release": "2025-05-07",
+					"aspatch": "2025-04-01",
 					"recovery": "miui_VILIMXATGlobal_OS1.0.9.0.UKDMXAT_5a133e09a3_14.0.zip",
 					"fastboot": "vili_mx_at_global_images_OS1.0.9.0.UKDMXAT_20250422.0000.00_14.0_mx_at_1d544bec28.tgz"
 				},
@@ -1466,6 +1625,7 @@
 					"os": "OS1.0.7.0.UKDMXAT",
 					"android": "14.0",
 					"release": "2025-03-11",
+					"aspatch": "2025-02-01",
 					"recovery": "miui_VILIMXATGlobal_OS1.0.7.0.UKDMXAT_eb96bff013_14.0.zip",
 					"fastboot": "vili_mx_at_global_images_OS1.0.7.0.UKDMXAT_20250216.0000.00_14.0_mx_at_ff865253aa.tgz"
 				},
@@ -1473,6 +1633,7 @@
 					"os": "OS1.0.5.0.UKDMXAT",
 					"android": "14.0",
 					"release": "2024-11-28",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_VILIMXATGlobal_OS1.0.5.0.UKDMXAT_d41804c178_14.0.zip",
 					"fastboot": "vili_mx_at_global_images_OS1.0.5.0.UKDMXAT_20241107.0000.00_14.0_mx_at_aa5ce1f4ec.tgz"
 				},
@@ -1480,6 +1641,7 @@
 					"os": "OS1.0.4.0.UKDMXAT",
 					"android": "14.0",
 					"release": "2024-10-29",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_VILIMXATGlobal_OS1.0.4.0.UKDMXAT_0747da7a1e_14.0.zip",
 					"fastboot": "vili_mx_at_global_images_OS1.0.4.0.UKDMXAT_20240910.0000.00_14.0_mx_at_0266cf6f9c.tgz"
 				}

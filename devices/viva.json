@@ -33,6 +33,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -48,6 +49,7 @@
 					"os": "OS1.0.4.0.TGDTWXM",
 					"android": "13.0",
 					"release": "2024-08-27",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VIVATWGlobal_OS1.0.4.0.TGDTWXM_deac47ed0a_13.0.zip",
 					"fastboot": "viva_tw_global_images_OS1.0.4.0.TGDTWXM_20240813.0000.00_13.0_tw_6a1e6ee617.tgz"
 				},
@@ -55,6 +57,7 @@
 					"os": "OS1.0.3.0.TGDTWXM",
 					"android": "13.0",
 					"release": "2024-04-01",
+					"aspatch": "2024-02-01",
 					"recovery": "miui_VIVATWGlobal_OS1.0.3.0.TGDTWXM_545d0a19eb_13.0.zip",
 					"fastboot": "viva_tw_global_images_OS1.0.3.0.TGDTWXM_20240301.0000.00_13.0_tw_9764a27853.tgz"
 				}
@@ -78,6 +81,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -93,6 +97,7 @@
 					"os": "OS1.0.4.0.TGDMIXM",
 					"android": "13.0",
 					"release": "2024-08-16",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VIVAGlobal_OS1.0.4.0.TGDMIXM_711b120a23_13.0.zip",
 					"fastboot": "viva_global_images_OS1.0.4.0.TGDMIXM_20240805.0000.00_13.0_global_edef5baf9d.tgz"
 				},
@@ -100,6 +105,7 @@
 					"os": "OS1.0.3.0.TGDMIXM",
 					"android": "13.0",
 					"release": "2024-04-03",
+					"aspatch": "2024-02-01",
 					"recovery": "miui_VIVAGlobal_OS1.0.3.0.TGDMIXM_6f1ff58bc0_13.0.zip",
 					"fastboot": "viva_global_images_OS1.0.3.0.TGDMIXM_20240301.0000.00_13.0_global_2657be30f8.tgz"
 				},
@@ -107,6 +113,7 @@
 					"os": "OS1.0.2.0.TGDMIXM",
 					"android": "13.0",
 					"release": "2024-02-22",
+					"aspatch": "2024-02-01",
 					"recovery": "miui_VIVAGlobal_OS1.0.2.0.TGDMIXM_b2b4099a55_13.0.zip",
 					"fastboot": "viva_global_images_OS1.0.2.0.TGDMIXM_20240202.0000.00_13.0_global_065c043ff0.tgz"
 				}
@@ -130,6 +137,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -145,6 +153,7 @@
 					"os": "OS1.0.3.0.TGDEUXM",
 					"android": "13.0",
 					"release": "2024-08-30",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VIVAEEAGlobal_OS1.0.3.0.TGDEUXM_cfb1447ae6_13.0.zip",
 					"fastboot": "viva_eea_global_images_OS1.0.3.0.TGDEUXM_20240814.0000.00_13.0_eea_0d502d8d07.tgz"
 				},
@@ -152,6 +161,7 @@
 					"os": "OS1.0.1.0.TGDEUXM",
 					"android": "13.0",
 					"release": "2024-03-21",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_VIVAEEAGlobal_OS1.0.1.0.TGDEUXM_953e751d21_13.0.zip",
 					"fastboot": "viva_eea_global_images_OS1.0.1.0.TGDEUXM_20240311.0000.00_13.0_eea_d4c878f503.tgz"
 				}
@@ -175,6 +185,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -190,6 +201,7 @@
 					"os": "OS1.0.1.0.TGDRUXM",
 					"android": "13.0",
 					"release": "2024-04-15",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_VIVARUGlobal_OS1.0.1.0.TGDRUXM_fbc1f2a776_13.0.zip",
 					"fastboot": "viva_ru_global_images_OS1.0.1.0.TGDRUXM_20240321.0000.00_13.0_ru_efb0898fe9.tgz"
 				}
@@ -213,6 +225,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -228,6 +241,7 @@
 					"os": "OS1.0.2.0.TGDIDXM",
 					"android": "13.0",
 					"release": "2024-09-08",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VIVAIDGlobal_OS1.0.2.0.TGDIDXM_b86bb8743a_13.0.zip",
 					"fastboot": "viva_id_global_images_OS1.0.2.0.TGDIDXM_20240822.0000.00_13.0_id_e8fd28444d.tgz"
 				},
@@ -235,6 +249,7 @@
 					"os": "OS1.0.1.0.TGDIDXM",
 					"android": "13.0",
 					"release": "2024-04-02",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_VIVAIDGlobal_OS1.0.1.0.TGDIDXM_ae8e78d145_13.0.zip",
 					"fastboot": "viva_id_global_images_OS1.0.1.0.TGDIDXM_20240311.0000.00_13.0_id_3d0167e86f.tgz"
 				}
@@ -258,6 +273,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -273,6 +289,7 @@
 					"os": "OS1.0.1.0.TGDTRXM",
 					"android": "13.0",
 					"release": "2024-04-06",
+					"aspatch": "2024-03-01",
 					"recovery": "miui_VIVATRGlobal_OS1.0.1.0.TGDTRXM_62e13eefde_13.0.zip",
 					"fastboot": "viva_tr_global_images_OS1.0.1.0.TGDTRXM_20240321.0000.00_13.0_tr_013bbbcdb5.tgz"
 				}
@@ -296,6 +313,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -311,6 +329,7 @@
 					"os": "OS1.0.5.0.TGDZAMT",
 					"android": "13.0",
 					"release": "2024-12-18",
+					"aspatch": "2024-10-01",
 					"recovery": "miui_VIVAZAMTGlobal_OS1.0.5.0.TGDZAMT_09404496d7_13.0.zip",
 					"fastboot": "viva_za_mt_global_images_OS1.0.5.0.TGDZAMT_20241105.0000.00_13.0_za_mt_eb290c9e69.tgz"
 				},
@@ -318,6 +337,7 @@
 					"os": "OS1.0.3.0.TGDZAMT",
 					"android": "13.0",
 					"release": "2024-09-20",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VIVAZAMTGlobal_OS1.0.3.0.TGDZAMT_7c204ecacd_13.0.zip",
 					"fastboot": "viva_za_mt_global_images_OS1.0.3.0.TGDZAMT_20240823.0000.00_13.0_za_mt_1931a25440.tgz"
 				},
@@ -325,6 +345,7 @@
 					"os": "OS1.0.1.0.TGDZAMT",
 					"android": "13.0",
 					"release": "2024-07-03",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_VIVAZAMTGlobal_OS1.0.1.0.TGDZAMT_89eb5b6f05_13.0.zip",
 					"fastboot": ""
 				}
@@ -348,6 +369,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -363,6 +385,7 @@
 					"os": "OS1.0.2.0.TGDLMMS",
 					"android": "13.0",
 					"release": "2025-03-25",
+					"aspatch": "2024-12-01",
 					"recovery": "miui_VIVALMMSGlobal_OS1.0.2.0.TGDLMMS_d6dc6fd5ea_13.0.zip",
 					"fastboot": "viva_lm_ms_global_images_OS1.0.2.0.TGDLMMS_20241127.0000.00_13.0_lm_movistar_1ee7c31ec2.tgz"
 				},
@@ -370,6 +393,7 @@
 					"os": "OS1.0.1.0.TGDLMMS",
 					"android": "13.0",
 					"release": "2024-11-23",
+					"aspatch": "2024-08-01",
 					"recovery": "miui_VIVALMMSGlobal_OS1.0.1.0.TGDLMMS_60d3bd2cd4_13.0.zip",
 					"fastboot": "viva_lm_ms_global_images_OS1.0.1.0.TGDLMMS_20240821.0000.00_13.0_lm_movistar_d1053ce356.tgz"
 				}

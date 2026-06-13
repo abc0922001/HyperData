@@ -37,6 +37,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -52,6 +53,7 @@
 					"os": "OS3.0.1.0.WHYTWXM",
 					"android": "16.0",
 					"release": "2026-03-30",
+					"aspatch": "2026-03-01",
 					"recovery": "spark_tw_global-ota_full-OS3.0.1.0.WHYTWXM-user-16.0-54f5d9e460.zip",
 					"fastboot": "spark_tw_global_images_OS3.0.1.0.WHYTWXM_20260318.0000.00_16.0_tw_cc4fc14fbf.tgz"
 				},
@@ -59,6 +61,7 @@
 					"os": "OS2.0.1.0.VHYTWXM",
 					"android": "15.0",
 					"release": "2025-03-31",
+					"aspatch": "2025-02-01",
 					"recovery": "spark_tw_global-ota_full-OS2.0.1.0.VHYTWXM-user-15.0-f96296bf9d.zip",
 					"fastboot": "spark_tw_global_images_OS2.0.1.0.VHYTWXM_20250318.0000.00_15.0_tw_cce8d0f602.tgz"
 				},
@@ -66,6 +69,7 @@
 					"os": "OS1.0.4.0.UHYTWXM",
 					"android": "14.0",
 					"release": "2024-12-12",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_SPARKTWGlobal_OS1.0.4.0.UHYTWXM_f1b7e1f9b2_14.0.zip",
 					"fastboot": "spark_tw_global_images_OS1.0.4.0.UHYTWXM_20241127.0000.00_14.0_tw_7d67bad231.tgz"
 				},
@@ -73,6 +77,7 @@
 					"os": "OS1.0.3.0.UHYTWXM",
 					"android": "14.0",
 					"release": "2024-10-22",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_SPARKTWGlobal_OS1.0.3.0.UHYTWXM_6f3030a9ad_14.0.zip",
 					"fastboot": "spark_tw_global_images_OS1.0.3.0.UHYTWXM_20241008.0000.00_14.0_tw_550b82388a.tgz"
 				},
@@ -80,6 +85,7 @@
 					"os": "OS1.0.2.0.UHYTWXM",
 					"android": "14.0",
 					"release": "2024-08-27",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_SPARKTWGlobal_OS1.0.2.0.UHYTWXM_597e2dac3e_14.0.zip",
 					"fastboot": "spark_tw_global_images_OS1.0.2.0.UHYTWXM_20240713.0000.00_14.0_tw_c9799b96f2.tgz"
 				}
@@ -103,6 +109,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -118,6 +125,7 @@
 					"os": "OS3.0.302.0.WHYMIXM",
 					"android": "16.0",
 					"release": "2026-05-25",
+					"aspatch": "2026-05-01",
 					"recovery": "spark_global-ota_full-OS3.0.302.0.WHYMIXM-user-16.0-b20ca63525.zip",
 					"fastboot": "spark_global_images_OS3.0.302.0.WHYMIXM_20260514.0000.00_16.0_global_cd3fb5bfcc.tgz"
 				},
@@ -125,6 +133,7 @@
 					"os": "OS3.0.3.0.WHYMIXM",
 					"android": "16.0",
 					"release": "2026-04-27",
+					"aspatch": "2026-04-01",
 					"recovery": "spark_global-ota_full-OS3.0.3.0.WHYMIXM-user-16.0-53ffa0a36f.zip",
 					"fastboot": "spark_global_images_OS3.0.3.0.WHYMIXM_20260420.0000.00_16.0_global_644d503d74.tgz"
 				},
@@ -132,6 +141,7 @@
 					"os": "OS3.0.2.0.WHYMIXM",
 					"android": "16.0",
 					"release": "2026-03-09",
+					"aspatch": "2026-02-01",
 					"recovery": "spark_global-ota_full-OS3.0.2.0.WHYMIXM-user-16.0-1a2cd1dcf1.zip",
 					"fastboot": "spark_global_images_OS3.0.2.0.WHYMIXM_20260209.0000.00_16.0_global_8a0bd39544.tgz"
 				},
@@ -139,6 +149,7 @@
 					"os": "OS3.0.1.0.WHYMIXM",
 					"android": "16.0",
 					"release": "2026-01-01",
+					"aspatch": "2025-12-01",
 					"recovery": "spark_global-ota_full-OS3.0.1.0.WHYMIXM-user-16.0-1ad45807a6.zip",
 					"fastboot": ""
 				},
@@ -146,6 +157,7 @@
 					"os": "OS2.0.206.0.VHYMIXM",
 					"android": "15.0",
 					"release": "2025-12-27",
+					"aspatch": "2025-12-01",
 					"recovery": "spark_global-ota_full-OS2.0.206.0.VHYMIXM-user-15.0-27ae98649f.zip",
 					"fastboot": "spark_global_images_OS2.0.206.0.VHYMIXM_20251219.0000.00_15.0_global_7e1b27c7aa.tgz"
 				},
@@ -153,6 +165,7 @@
 					"os": "OS2.0.205.0.VHYMIXM",
 					"android": "15.0",
 					"release": "2025-12-13",
+					"aspatch": "2025-11-01",
 					"recovery": "spark_global-ota_full-OS2.0.205.0.VHYMIXM-user-15.0-624ef979f7.zip",
 					"fastboot": "spark_global_images_OS2.0.205.0.VHYMIXM_20251127.0000.00_15.0_global_5abbd93cba.tgz"
 				},
@@ -160,6 +173,7 @@
 					"os": "OS2.0.203.0.VHYMIXM",
 					"android": "15.0",
 					"release": "2025-10-28",
+					"aspatch": "2025-09-01",
 					"recovery": "spark_global-ota_full-OS2.0.203.0.VHYMIXM-user-15.0-e290dd20fb.zip",
 					"fastboot": "spark_global_images_OS2.0.203.0.VHYMIXM_20250922.0000.00_15.0_global_fd07ac76b0.tgz"
 				},
@@ -167,6 +181,7 @@
 					"os": "OS2.0.202.0.VHYMIXM",
 					"android": "15.0",
 					"release": "2025-08-25",
+					"aspatch": "2025-08-01",
 					"recovery": "spark_global-ota_full-OS2.0.202.0.VHYMIXM-user-15.0-cde269dafd.zip",
 					"fastboot": "spark_global_images_OS2.0.202.0.VHYMIXM_20250805.0000.00_15.0_global_4bd0cae147.tgz"
 				},
@@ -174,6 +189,7 @@
 					"os": "OS2.0.4.0.VHYMIXM",
 					"android": "15.0",
 					"release": "2025-06-20",
+					"aspatch": "2025-05-01",
 					"recovery": "spark_global-ota_full-OS2.0.4.0.VHYMIXM-user-15.0-8cf0c885ee.zip",
 					"fastboot": "spark_global_images_OS2.0.4.0.VHYMIXM_20250609.0000.00_15.0_global_e69c7e7af3.tgz"
 				},
@@ -181,6 +197,7 @@
 					"os": "OS2.0.3.0.VHYMIXM",
 					"android": "15.0",
 					"release": "2025-04-21",
+					"aspatch": "2025-03-01",
 					"recovery": "spark_global-ota_full-OS2.0.3.0.VHYMIXM-user-15.0-04daf4d61a.zip",
 					"fastboot": "spark_global_images_OS2.0.3.0.VHYMIXM_20250415.0000.00_15.0_global_8ac48dedf2.tgz"
 				},
@@ -188,6 +205,7 @@
 					"os": "OS2.0.1.0.VHYMIXM",
 					"android": "15.0",
 					"release": "2025-01-20",
+					"aspatch": "2025-01-01",
 					"recovery": "spark_global-ota_full-OS2.0.1.0.VHYMIXM-user-15.0-a5e6472834.zip",
 					"fastboot": "spark_global_images_OS2.0.1.0.VHYMIXM_20250108.0000.00_15.0_global_a0f98c9e87.tgz"
 				},
@@ -195,6 +213,7 @@
 					"os": "OS1.0.6.0.UHYMIXM",
 					"android": "14.0",
 					"release": "2024-11-11",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_SPARKGlobal_OS1.0.6.0.UHYMIXM_ccf7c0404c_14.0.zip",
 					"fastboot": "spark_global_images_OS1.0.6.0.UHYMIXM_20241029.0000.00_14.0_global_3e220d2cb9.tgz"
 				},
@@ -202,6 +221,7 @@
 					"os": "OS1.0.5.0.UHYMIXM",
 					"android": "14.0",
 					"release": "2024-09-23",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_SPARKGlobal_OS1.0.5.0.UHYMIXM_af8a808687_14.0.zip",
 					"fastboot": "spark_global_images_OS1.0.5.0.UHYMIXM_20240912.0000.00_14.0_global_72fad42c28.tgz"
 				},
@@ -209,6 +229,7 @@
 					"os": "OS1.0.4.0.UHYMIXM",
 					"android": "14.0",
 					"release": "2024-08-27",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_SPARKGlobal_OS1.0.4.0.UHYMIXM_63079818cf_14.0.zip",
 					"fastboot": "spark_global_images_OS1.0.4.0.UHYMIXM_20240723.0000.00_14.0_global_8fec62b516.tgz"
 				},
@@ -216,6 +237,7 @@
 					"os": "OS1.0.1.0.UHYMIXM",
 					"android": "14.0",
 					"release": "2024-08-27",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_SPARKGlobal_OS1.0.1.0.UHYMIXM_778eac43e8_14.0.zip",
 					"fastboot": ""
 				}
@@ -239,6 +261,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -254,6 +277,7 @@
 					"os": "OS3.0.5.0.WHYEUXM",
 					"android": "16.0",
 					"release": "2026-05-26",
+					"aspatch": "2026-05-01",
 					"recovery": "spark_eea_global-ota_full-OS3.0.5.0.WHYEUXM-user-16.0-3518092a3a.zip",
 					"fastboot": "spark_eea_global_images_OS3.0.5.0.WHYEUXM_20260514.0000.00_16.0_eea_8e24864df3.tgz"
 				},
@@ -261,6 +285,7 @@
 					"os": "OS3.0.3.0.WHYEUXM",
 					"android": "16.0",
 					"release": "2026-03-02",
+					"aspatch": "2026-02-01",
 					"recovery": "spark_eea_global-ota_full-OS3.0.3.0.WHYEUXM-user-16.0-b9fa4272ee.zip",
 					"fastboot": "spark_eea_global_images_OS3.0.3.0.WHYEUXM_20260204.0000.00_16.0_eea_02b4575aff.tgz"
 				},
@@ -268,6 +293,7 @@
 					"os": "OS2.0.206.0.VHYEUXM",
 					"android": "15.0",
 					"release": "2026-01-01",
+					"aspatch": "2025-12-01",
 					"recovery": "spark_eea_global-ota_full-OS2.0.206.0.VHYEUXM-user-15.0-635a214979.zip",
 					"fastboot": "spark_eea_global_images_OS2.0.206.0.VHYEUXM_20251226.0000.00_15.0_eea_0053033273.tgz"
 				},
@@ -275,6 +301,7 @@
 					"os": "OS2.0.205.0.VHYEUXM",
 					"android": "15.0",
 					"release": "2025-11-07",
+					"aspatch": "2025-10-01",
 					"recovery": "spark_eea_global-ota_full-OS2.0.205.0.VHYEUXM-user-15.0-a7f84559e1.zip",
 					"fastboot": "spark_eea_global_images_OS2.0.205.0.VHYEUXM_20251024.0000.00_15.0_eea_32613b5443.tgz"
 				},
@@ -282,6 +309,7 @@
 					"os": "OS2.0.203.0.VHYEUXM",
 					"android": "15.0",
 					"release": "2025-08-25",
+					"aspatch": "2025-08-01",
 					"recovery": "spark_eea_global-ota_full-OS2.0.203.0.VHYEUXM-user-15.0-142f635b25.zip",
 					"fastboot": "spark_eea_global_images_OS2.0.203.0.VHYEUXM_20250812.0000.00_15.0_eea_d070aea51d.tgz"
 				},
@@ -289,6 +317,7 @@
 					"os": "OS2.0.201.0.VHYEUXM",
 					"android": "15.0",
 					"release": "2025-07-01",
+					"aspatch": "2025-05-01",
 					"recovery": "spark_eea_global-ota_full-OS2.0.201.0.VHYEUXM-user-15.0-522a3ae83f.zip",
 					"fastboot": "spark_eea_global_images_OS2.0.201.0.VHYEUXM_20250617.0000.00_15.0_eea_7b6d4da3cc.tgz"
 				},
@@ -296,6 +325,7 @@
 					"os": "OS2.0.3.0.VHYEUXM",
 					"android": "15.0",
 					"release": "2025-05-12",
+					"aspatch": "2025-04-01",
 					"recovery": "spark_eea_global-ota_full-OS2.0.3.0.VHYEUXM-user-15.0-1c4ed59a35.zip",
 					"fastboot": "spark_eea_global_images_OS2.0.3.0.VHYEUXM_20250422.0000.00_15.0_eea_4bcbc2c227.tgz"
 				},
@@ -303,6 +333,7 @@
 					"os": "OS2.0.2.0.VHYEUXM",
 					"android": "15.0",
 					"release": "2025-03-11",
+					"aspatch": "2025-02-01",
 					"recovery": "spark_eea_global-ota_full-OS2.0.2.0.VHYEUXM-user-15.0-3cd32adf16.zip",
 					"fastboot": "spark_eea_global_images_OS2.0.2.0.VHYEUXM_20250219.0000.00_15.0_eea_648d3f1747.tgz"
 				},
@@ -310,6 +341,7 @@
 					"os": "OS1.0.6.0.UHYEUXM",
 					"android": "14.0",
 					"release": "2024-11-22",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_SPARKEEAGlobal_OS1.0.6.0.UHYEUXM_f7ee269ca8_14.0.zip",
 					"fastboot": "spark_eea_global_images_OS1.0.6.0.UHYEUXM_20241111.0000.00_14.0_eea_36e9df7efb.tgz"
 				},
@@ -317,6 +349,7 @@
 					"os": "OS1.0.5.0.UHYEUXM",
 					"android": "14.0",
 					"release": "2024-09-14",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_SPARKEEAGlobal_OS1.0.5.0.UHYEUXM_699d2d9fc9_14.0.zip",
 					"fastboot": "spark_eea_global_images_OS1.0.5.0.UHYEUXM_20240909.0000.00_14.0_eea_a1b56b86b0.tgz"
 				},
@@ -324,6 +357,7 @@
 					"os": "OS1.0.4.0.UHYEUXM",
 					"android": "14.0",
 					"release": "2024-08-27",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_SPARKEEAGlobal_OS1.0.4.0.UHYEUXM_15cba1d451_14.0.zip",
 					"fastboot": "spark_eea_global_images_OS1.0.4.0.UHYEUXM_20240725.0000.00_14.0_eea_5c81967b73.tgz"
 				},
@@ -331,6 +365,7 @@
 					"os": "OS1.0.1.0.UHYEUXM",
 					"android": "14.0",
 					"release": "2024-08-27",
+					"aspatch": "2024-05-01",
 					"recovery": "miui_SPARKEEAGlobal_OS1.0.1.0.UHYEUXM_a7ccff8fa0_14.0.zip",
 					"fastboot": ""
 				}
@@ -354,6 +389,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -369,6 +405,7 @@
 					"os": "OS3.0.2.0.WHYRUXM",
 					"android": "16.0",
 					"release": "2026-03-05",
+					"aspatch": "2026-02-01",
 					"recovery": "spark_ru_global-ota_full-OS3.0.2.0.WHYRUXM-user-16.0-6f66b56993.zip",
 					"fastboot": "spark_ru_global_images_OS3.0.2.0.WHYRUXM_20260209.0000.00_16.0_ru_5815a2d0d5.tgz"
 				},
@@ -376,6 +413,7 @@
 					"os": "OS2.0.2.0.VHYRUXM",
 					"android": "15.0",
 					"release": "2025-03-18",
+					"aspatch": "2025-02-01",
 					"recovery": "spark_ru_global-ota_full-OS2.0.2.0.VHYRUXM-user-15.0-788d242f83.zip",
 					"fastboot": "spark_ru_global_images_OS2.0.2.0.VHYRUXM_20250311.0000.00_15.0_ru_f16e41e7d1.tgz"
 				},
@@ -383,6 +421,7 @@
 					"os": "OS1.0.4.0.UHYRUXM",
 					"android": "14.0",
 					"release": "2024-11-22",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_SPARKRUGlobal_OS1.0.4.0.UHYRUXM_faf3d87b0d_14.0.zip",
 					"fastboot": "spark_ru_global_images_OS1.0.4.0.UHYRUXM_20241115.0000.00_14.0_ru_e094c131c4.tgz"
 				},
@@ -390,6 +429,7 @@
 					"os": "OS1.0.3.0.UHYRUXM",
 					"android": "14.0",
 					"release": "2024-10-08",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_SPARKRUGlobal_OS1.0.3.0.UHYRUXM_ed06ded932_14.0.zip",
 					"fastboot": "spark_ru_global_images_OS1.0.3.0.UHYRUXM_20240918.0000.00_14.0_ru_2a694d1f8e.tgz"
 				}
@@ -413,6 +453,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -428,6 +469,7 @@
 					"os": "OS3.0.2.0.WHYINXM",
 					"android": "16.0",
 					"release": "2026-04-01",
+					"aspatch": "2026-02-01",
 					"recovery": "spark_in_global-ota_full-OS3.0.2.0.WHYINXM-user-16.0-e02c032f6f.zip",
 					"fastboot": "spark_in_global_images_OS3.0.2.0.WHYINXM_20260318.0000.00_16.0_in_80830bf2ff.tgz"
 				},
@@ -435,6 +477,7 @@
 					"os": "OS3.0.1.0.WHYINXM",
 					"android": "16.0",
 					"release": "2026-03-14",
+					"aspatch": "2026-02-01",
 					"recovery": "spark_in_global-ota_full-OS3.0.1.0.WHYINXM-user-16.0-66ff27dcaf.zip",
 					"fastboot": "spark_in_global_images_OS3.0.1.0.WHYINXM_20260227.0000.00_16.0_in_1569b412fe.tgz"
 				},
@@ -442,6 +485,7 @@
 					"os": "OS2.0.203.0.VHYINXM",
 					"android": "15.0",
 					"release": "2026-01-29",
+					"aspatch": "2026-01-01",
 					"recovery": "spark_in_global-ota_full-OS2.0.203.0.VHYINXM-user-15.0-4984081d5b.zip",
 					"fastboot": "spark_in_global_images_OS2.0.203.0.VHYINXM_20260115.0000.00_15.0_in_42f139b517.tgz"
 				},
@@ -449,6 +493,7 @@
 					"os": "OS2.0.202.0.VHYINXM",
 					"android": "15.0",
 					"release": "2025-09-28",
+					"aspatch": "2025-09-01",
 					"recovery": "spark_in_global-ota_full-OS2.0.202.0.VHYINXM-user-15.0-e828c225b9.zip",
 					"fastboot": "spark_in_global_images_OS2.0.202.0.VHYINXM_20250917.0000.00_15.0_in_e8b568f490.tgz"
 				},
@@ -456,6 +501,7 @@
 					"os": "OS2.0.1.0.VHYINXM",
 					"android": "15.0",
 					"release": "2025-04-21",
+					"aspatch": "2025-03-01",
 					"recovery": "spark_in_global-ota_full-OS2.0.1.0.VHYINXM-user-15.0-151b597a89.zip",
 					"fastboot": "spark_in_global_images_OS2.0.1.0.VHYINXM_20250403.0000.00_15.0_in_51279ca73b.tgz"
 				},
@@ -463,6 +509,7 @@
 					"os": "OS1.0.4.0.UHYINXM",
 					"android": "14.0",
 					"release": "2024-12-21",
+					"aspatch": "2024-11-01",
 					"recovery": "miui_SPARKINGlobal_OS1.0.4.0.UHYINXM_0d9976cc94_14.0.zip",
 					"fastboot": "spark_in_global_images_OS1.0.4.0.UHYINXM_20241203.0000.00_14.0_in_134321ae0b.tgz"
 				},
@@ -470,6 +517,7 @@
 					"os": "OS1.0.3.0.UHYINXM",
 					"android": "14.0",
 					"release": "2024-10-10",
+					"aspatch": "2024-09-01",
 					"recovery": "miui_SPARKINGlobal_OS1.0.3.0.UHYINXM_1d4ec22cf4_14.0.zip",
 					"fastboot": "spark_in_global_images_OS1.0.3.0.UHYINXM_20240926.0000.00_14.0_in_eb4bb86107.tgz"
 				},
@@ -477,6 +525,7 @@
 					"os": "OS1.0.2.0.UHYINXM",
 					"android": "14.0",
 					"release": "2024-08-13",
+					"aspatch": "2024-07-01",
 					"recovery": "miui_SPARKINGlobal_OS1.0.2.0.UHYINXM_9c5c84380e_14.0.zip",
 					"fastboot": "spark_in_global_images_OS1.0.2.0.UHYINXM_20240805.0000.00_14.0_in_c6133cb2de.tgz"
 				},
@@ -484,6 +533,7 @@
 					"os": "OS1.0.1.0.UHYINXM",
 					"android": "14.0",
 					"release": "2024-08-13",
+					"aspatch": "2024-06-01",
 					"recovery": "miui_SPARKINGlobal_OS1.0.1.0.UHYINXM_f28cb21b53_14.0.zip",
 					"fastboot": "spark_in_global_images_OS1.0.1.0.UHYINXM_20240704.0000.00_14.0_in_90bb2d2f9f.tgz"
 				}

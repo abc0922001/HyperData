@@ -33,6 +33,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot",
 				"ctelecom"
@@ -52,6 +53,7 @@
 					"os": "OS3.0.306.0.WPSCNXM",
 					"android": "16.0",
 					"release": "2026-06-08",
+					"aspatch": "2026-05-01",
 					"recovery": "warhol-ota_full-OS3.0.306.0.WPSCNXM-user-16.0-fa6de8c867.zip",
 					"fastboot": "warhol_images_OS3.0.306.0.WPSCNXM_20260605.0000.00_16.0_cn_2359ee8ba9.tgz",
 					"ctelecom": "warhol_images_OS3.0.306.0.WPSCNXM_20260605.0000.00_16.0_cn_chinatelecom_253c120740.tgz"
@@ -60,6 +62,7 @@
 					"os": "OS3.0.302.0.WPSCNXM",
 					"android": "16.0",
 					"release": "2026-06-08",
+					"aspatch": "2026-05-01",
 					"recovery": "warhol-ota_full-OS3.0.302.0.WPSCNXM-user-16.0-25d1cf39e2.zip",
 					"fastboot": "",
 					"ctelecom": "warhol_images_OS3.0.302.0.WPSCNXM_20260516.0000.00_16.0_cn_chinatelecom_98fede418a.tgz"
@@ -84,6 +87,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot",
 				"ctelecom"
@@ -103,6 +107,7 @@
 					"os": "OS3.0.302.0.WPSCNDM",
 					"android": "16.0",
 					"release": "2026-06-08",
+					"aspatch": "2026-05-01",
 					"recovery": "warhol_demo-ota_full-OS3.0.302.0.WPSCNDM-user-16.0-82eeb00521.zip",
 					"fastboot": "warhol_demo_images_OS3.0.302.0.WPSCNDM_20260604.0000.00_16.0_cn_cc83983882.tgz",
 					"ctelecom": "warhol_demo_images_OS3.0.302.0.WPSCNDM_20260604.0000.00_16.0_cn_chinatelecom_71ce0e4a08.tgz"
@@ -127,6 +132,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -142,6 +148,7 @@
 					"os": "OS3.0.303.0.WPSTWXM",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-04-01",
 					"recovery": "warhol_tw_global-ota_full-OS3.0.303.0.WPSTWXM-user-16.0-aaaace1dcd.zip",
 					"fastboot": "warhol_tw_global_images_OS3.0.303.0.WPSTWXM_20260525.0000.00_16.0_tw_018ac2a60e.tgz"
 				},
@@ -149,6 +156,7 @@
 					"os": "OS3.0.302.0.WPSTWXM",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-04-01",
 					"recovery": "warhol_tw_global-ota_full-OS3.0.302.0.WPSTWXM-user-16.0-5fea2390b9.zip",
 					"fastboot": ""
 				},
@@ -156,6 +164,7 @@
 					"os": "OS3.0.301.0.WPSTWXM",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-03-01",
 					"recovery": "warhol_tw_global-ota_full-OS3.0.301.0.WPSTWXM-user-16.0-bc454ca25c.zip",
 					"fastboot": ""
 				}
@@ -179,6 +188,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -194,6 +204,7 @@
 					"os": "OS3.0.305.0.WPSMIXM",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-04-01",
 					"recovery": "warhol_global-ota_full-OS3.0.305.0.WPSMIXM-user-16.0-8c0f373638.zip",
 					"fastboot": ""
 				},
@@ -201,6 +212,7 @@
 					"os": "OS3.0.304.0.WPSMIXM",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-04-01",
 					"recovery": "warhol_global-ota_full-OS3.0.304.0.WPSMIXM-user-16.0-c5a7b09a77.zip",
 					"fastboot": ""
 				},
@@ -208,6 +220,7 @@
 					"os": "OS3.0.303.0.WPSMIXM",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-03-01",
 					"recovery": "warhol_global-ota_full-OS3.0.303.0.WPSMIXM-user-16.0-243b8be516.zip",
 					"fastboot": ""
 				},
@@ -215,6 +228,7 @@
 					"os": "OS3.0.302.0.WPSMIXM",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-03-01",
 					"recovery": "warhol_global-ota_full-OS3.0.302.0.WPSMIXM-user-16.0-47c65dd806.zip",
 					"fastboot": ""
 				}
@@ -238,6 +252,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -253,6 +268,7 @@
 					"os": "OS3.0.302.0.WPSMIDM",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-04-01",
 					"recovery": "warhol_global-ota_full-OS3.0.302.0.WPSMIDM-user-16.0-1fa331df2a.zip",
 					"fastboot": "warhol_global_images_OS3.0.302.0.WPSMIDM_20260521.0000.00_16.0_global_a613af4de1.tgz"
 				}
@@ -276,6 +292,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -291,6 +308,7 @@
 					"os": "OS3.0.304.0.WPSMIDC",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-04-01",
 					"recovery": "warhol_dc_global-ota_full-OS3.0.304.0.WPSMIDC-user-16.0-28960bc53e.zip",
 					"fastboot": "warhol_dc_global_images_OS3.0.304.0.WPSMIDC_20260515.0000.00_16.0_global_dc_84cf9922cc.tgz"
 				}
@@ -314,6 +332,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -329,6 +348,7 @@
 					"os": "OS3.0.308.0.WPSEUXM",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-04-01",
 					"recovery": "warhol_eea_global-ota_full-OS3.0.308.0.WPSEUXM-user-16.0-10ed3675ba.zip",
 					"fastboot": ""
 				},
@@ -336,6 +356,7 @@
 					"os": "OS3.0.306.0.WPSEUXM",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-03-01",
 					"recovery": "warhol_eea_global-ota_full-OS3.0.306.0.WPSEUXM-user-16.0-cd67c356c9.zip",
 					"fastboot": ""
 				},
@@ -343,6 +364,7 @@
 					"os": "OS3.0.302.0.WPSEUXM",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-03-01",
 					"recovery": "warhol_eea_global-ota_full-OS3.0.302.0.WPSEUXM-user-16.0-0858dfacdf.zip",
 					"fastboot": ""
 				}
@@ -366,6 +388,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -381,6 +404,7 @@
 					"os": "OS3.0.303.0.WPSEUDM",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-04-01",
 					"recovery": "warhol_eea_global-ota_full-OS3.0.303.0.WPSEUDM-user-16.0-533731e5f6.zip",
 					"fastboot": "warhol_eea_global_images_OS3.0.303.0.WPSEUDM_20260521.0000.00_16.0_eea_da9ee4b692.tgz"
 				}
@@ -404,6 +428,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -419,6 +444,7 @@
 					"os": "OS3.0.303.0.WPSRUXM",
 					"android": "16.0",
 					"release": "2026-05-29",
+					"aspatch": "2026-04-01",
 					"recovery": "warhol_ru_global-ota_full-OS3.0.303.0.WPSRUXM-user-16.0-6eac91c77a.zip",
 					"fastboot": "warhol_ru_global_images_OS3.0.303.0.WPSRUXM_20260520.0000.00_16.0_ru_98d383004d.tgz"
 				}
@@ -442,6 +468,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -472,6 +499,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -487,6 +515,7 @@
 					"os": "OS3.0.302.0.WPSIDDM",
 					"android": "16.0",
 					"release": "2026-06-04",
+					"aspatch": "2026-04-01",
 					"recovery": "warhol_id_global-ota_full-OS3.0.302.0.WPSIDDM-user-16.0-ec76305ec1.zip",
 					"fastboot": "warhol_id_global_images_OS3.0.302.0.WPSIDDM_20260526.0000.00_16.0_id_52618f6c3d.tgz"
 				},
@@ -494,6 +523,7 @@
 					"os": "OS3.0.301.0.WPSIDDM",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-03-01",
 					"recovery": "warhol_id_global-ota_full-OS3.0.301.0.WPSIDDM-user-16.0-d845894a07.zip",
 					"fastboot": "warhol_id_global_images_OS3.0.301.0.WPSIDDM_20260401.0000.00_16.0_id_751add1134.tgz"
 				}
@@ -517,6 +547,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -532,6 +563,7 @@
 					"os": "OS3.0.302.0.WPSTRXM",
 					"android": "16.0",
 					"release": "2026-06-03",
+					"aspatch": "2026-04-01",
 					"recovery": "warhol_tr_global-ota_full-OS3.0.302.0.WPSTRXM-user-16.0-8c5d2eff43.zip",
 					"fastboot": "warhol_tr_global_images_OS3.0.302.0.WPSTRXM_20260520.0000.00_16.0_tr_54af58ea26.tgz"
 				}
@@ -555,6 +587,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -570,6 +603,7 @@
 					"os": "OS3.0.303.0.WPSJPXM",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-04-01",
 					"recovery": "warhol_jp_global-ota_full-OS3.0.303.0.WPSJPXM-user-16.0-29c031b740.zip",
 					"fastboot": "warhol_jp_global_images_OS3.0.303.0.WPSJPXM_20260518.0000.00_16.0_jp_94feedbe69.tgz"
 				}
@@ -593,6 +627,7 @@
 				"os",
 				"android",
 				"release",
+				"aspatch",
 				"recovery",
 				"fastboot"
 			],
@@ -608,6 +643,7 @@
 					"os": "OS3.0.302.0.WPSLMCR",
 					"android": "16.0",
 					"release": "2026-05-28",
+					"aspatch": "2026-04-01",
 					"recovery": "warhol_lm_cr_global-ota_full-OS3.0.302.0.WPSLMCR-user-16.0-0b80037016.zip",
 					"fastboot": "warhol_lm_cr_global_images_OS3.0.302.0.WPSLMCR_20260415.0000.00_16.0_lm_cr_398fc83105.tgz"
 				}
