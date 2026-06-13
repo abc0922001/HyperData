@@ -79,6 +79,8 @@ def extract_flag_from_filename(filename):
 	return flag
 
 sdk = {
+	"17.0": "37",
+	"17": "37",
 	"16.0": "36",
 	"16": "36",
 	"15": "35",
@@ -120,6 +122,8 @@ sdk = {
 }
 
 def android(ver):
+	if ver == "17.0":
+		return "X"
 	if ver == "16.0":
 		return "W"
 	if ver == "15.0":
@@ -508,6 +512,11 @@ flags = {
 	"nezha_tr_global": "nezha",
 	"somalia_demo": "somalia",
 	"byron": "byron",
+	"nezha_dpp": "nezha",
+	"pudding_dpp": "pudding",
+	"pudding_dpp_global": "pudding",
+	"nezha_dpp_global": "nezha",
+	"klimt_dpp_global": "klimt",
 	"byron_demo": "byron",
 	"flourite_lm_cr_global": "flourite",
 	"kunzite_global": "kunzite",
@@ -2696,7 +2705,8 @@ def getData(filename):
 		
 		def parse_hyperos_recovery(fname):
 				"""解析 HyperOS 格式卡刷包: CODE-ota_full-VERSION-user-ANDROID-HASH.zip"""
-				# 例: lapis-ota_full-OS3.0.302.0.WPPCNXM-user-16.0-3ee16184b4.zip
+				# 例1: lapis-ota_full-OS3.0.302.0.WPPCNXM-user-16.0-3ee16184b4.zip
+				# 例2: nezha_dpp-ota_full-OS3.3.260422.2.XPACNXM.STABLE-DPP-user-17.0-871d44f4c2.zip
 				pattern = r'^([a-z0-9_]+)-ota_full-([A-Z0-9\.]+)-user-(\d+\.\d+)-[a-z0-9]+\.zip$'
 				match = re.match(pattern, fname)
 				if match:
@@ -2704,6 +2714,16 @@ def getData(filename):
 								'code': match.group(1),
 								'version': match.group(2),
 								'android': match.group(3),
+								'filetype': 'recovery'
+						}
+				# 尝试匹配带 STABLE-DPP 等后缀的版本号
+				pattern2 = r'^([a-z0-9_]+)-ota_full-([A-Z0-9\.\-]+)-user-(\d+\.\d+)-[a-z0-9]+\.zip$'
+				match2 = re.match(pattern2, fname)
+				if match2:
+						return {
+								'code': match2.group(1),
+								'version': match2.group(2),
+								'android': match2.group(3),
 								'filetype': 'recovery'
 						}
 				return None
@@ -2817,8 +2837,13 @@ def getData(filename):
 								build_num = int(parts[3]) if len(parts) > 3 else 0
 								revision_num = int(parts[2]) if len(parts) > 2 else 0
 								
+								if 'STABLE-DPP' in ver:
+										tag = 'ADPC'  # 稳定版
 								# build为0且revision<300是正式版(CnOO)，否则是测试版(CnOB)
-								tag = 'CnOO' if build_num == 0 else 'CnOB'
+								elif build_num == 0:
+										tag = 'CnOO'
+								else:
+										tag = 'CnOB'
 						except (ValueError, IndexError):
 								tag = 'CnOB'
 						return 'cn', tag, 1
@@ -2828,6 +2853,9 @@ def getData(filename):
 				data = db_job_latest(info_sql)
 				
 				if data and len(data) == 3:
+						# 开发者预览版 (PRE-DPP)
+						if 'STABLE-DPP' in ver:
+								return data[0], 'ADPG', data[2]
 						return data[0], data[1], data[2]
 				
 				# 回退到 devices 表查询
@@ -2836,6 +2864,8 @@ def getData(filename):
 				
 				if data and len(data) == 2:
 						region, tag = data
+						if 'STABLE-DPP' in ver:
+								tag = 'ADPG'
 						zone = 1 if region == 'cn' else 2
 						return region, tag, zone
 				
@@ -3073,7 +3103,14 @@ def add_rom_to_json(device, code, android, version, filetype, filename, devdata=
 	if "CNXM" in version:
 		try:
 			version_parts = version.split(".")
-			if len(version_parts) >= 4:
+			
+			# 优先检查特殊版本标识
+			if 'STABLE-DPP' in filename:
+				if "global" in filename:
+					target_idtag = "ADPG"
+				else:
+					target_idtag = "ADPC"
+			elif len(version_parts) >= 4:
 				build_number = int(version_parts[3])
 				revision_number = int(version_parts[2])
 				
@@ -3096,39 +3133,51 @@ def add_rom_to_json(device, code, android, version, filetype, filename, devdata=
 
 	# 只有当 idtag 匹配失败时，才尝试 code 匹配
 	if target_branch is None:
-		# 如果 idtag 匹配失败，再尝试 code 匹配
-		matching_branches_by_code = []
-		for idx, branch_info in enumerate(devdata.get("branches", [])):
-			if branch_info.get("branchCode") == code:
-				matching_branches_by_code.append((idx, branch_info))
+		# 对于非CNXM版本，检查特殊版本标识
+		if 'PRE-DPP' in version or 'PRE_DPP' in version:
+			# 国际版开发者预览版，寻找 ADPG 分支
+			for idx, branch_info in enumerate(devdata.get("branches", [])):
+				if branch_info.get("idtag") == "ADPG":
+					target_branch_idx = idx
+					target_branch = branch_info
+					match_method = f"idtag:ADPG (PRE-DPP)"
+					break
 		
-		# 如果找到多个匹配的分支（branchCode不唯一），则使用版本号中的tag来进一步筛选
-		if len(matching_branches_by_code) > 0:
-			# 从版本号中提取tag，例如从 OS3.0.302.0.WPSIDDM 提取 "IDDM"
-			# 版本号格式通常是 OS主版本.次版本.修订版本.构建号.TAG
-			version_parts = version.split(".")
-			version_tag = None
+		# 如果仍未找到，尝试 code 匹配
+		if target_branch is None:
+			# 如果 idtag 匹配失败，再尝试 code 匹配
+			matching_branches_by_code = []
+			for idx, branch_info in enumerate(devdata.get("branches", [])):
+				if branch_info.get("branchCode") == code:
+					matching_branches_by_code.append((idx, branch_info))
 			
-			if len(version_parts) >= 5:
-				# 获取第五部分，如 WPSIDDM
-				full_tag = version_parts[4]
-				# 提取最后4位，如 IDDM
-				if len(full_tag) >= 4:
-					version_tag = full_tag[-4:]
-			
-			# 如果提取到了版本标签，尝试精确匹配
-			if version_tag:
-				for idx, branch_info in matching_branches_by_code:
-					if branch_info.get("tag") == version_tag:
-						target_branch_idx = idx
-						target_branch = branch_info
-						match_method = f"code:{code} + tag:{version_tag}"
-						break
-			
-			# 如果通过版本标签没有找到匹配，但只有一个分支，则使用它
-			if target_branch is None and len(matching_branches_by_code) == 1:
-				target_branch_idx, target_branch = matching_branches_by_code[0]
-				match_method = f"code:{code} (only one)"
+			# 如果找到多个匹配的分支（branchCode不唯一），则使用版本号中的tag来进一步筛选
+			if len(matching_branches_by_code) > 0:
+				# 从版本号中提取tag，例如从 OS3.0.302.0.WPSIDDM 提取 "IDDM"
+				# 版本号格式通常是 OS主版本.次版本.修订版本.构建号.TAG
+				version_parts = version.split(".")
+				version_tag = None
+				
+				if len(version_parts) >= 5:
+					# 获取第五部分，如 WPSIDDM
+					full_tag = version_parts[4]
+					# 提取最后4位，如 IDDM
+					if len(full_tag) >= 4:
+						version_tag = full_tag[-4:]
+				
+				# 如果提取到了版本标签，尝试精确匹配
+				if version_tag:
+					for idx, branch_info in matching_branches_by_code:
+						if branch_info.get("tag") == version_tag:
+							target_branch_idx = idx
+							target_branch = branch_info
+							match_method = f"code:{code} + tag:{version_tag}"
+							break
+				
+				# 如果通过版本标签没有找到匹配，但只有一个分支，则使用它
+				if target_branch is None and len(matching_branches_by_code) == 1:
+					target_branch_idx, target_branch = matching_branches_by_code[0]
+					match_method = f"code:{code} (only one)"
 	
 	# 如果仍然没有找到匹配的分支，尝试单独使用tag匹配（针对海外分支）
 	if target_branch is None:
@@ -3710,9 +3759,12 @@ def entryChecker(data,device):
 								# 检查分支的idtag是否与预期相符（仅当expected_tag已设置时）
 								actual_idtag = branch.get('idtag')
 								if actual_idtag is not None and expected_tag is not None and actual_idtag != expected_tag:
-									print(device, bname, os_version, f"版本号标识不匹配: 期望 {expected_tag}, 实际 {actual_idtag}")
-									# 注意：这里暂时注释掉检查，因为在实际数据中可能存在合理的差异
-									# check.append(1)
+									if actual_idtag == "ADPC" or actual_idtag == "ADPG" or actual_idtag == "STDEE":
+										i = 0
+									else:
+										print(device, bname, os_version, f"版本号标识不匹配: 期望 {expected_tag}, 实际 {actual_idtag}")
+										# 注意：这里暂时注释掉检查，因为在实际数据中可能存在合理的差异
+										# check.append(1)
 							
 							# 如果不是CNXM版本且expected_tag未设置，则跳过idtag检查
 							else:
@@ -3739,7 +3791,13 @@ def entryChecker(data,device):
 										if "miui" in rom_info['recovery']:
 											android = rom_info['recovery'].split("_")[4].split(".zip")[0]
 										else:
-											android = rom_info['recovery'].split("ota_full-")[1].split("-")[2]
+											# 使用正则表达式提取 Android 版本号，支持 STABLE-DPP 等特殊版本
+											# 例: CODE-ota_full-VERSION-user-ANDROID-HASH.zip
+											recovery_match = re.search(r'-ota_full-[A-Za-z0-9\.\-]+-user-(\d+\.\d+)-[a-z0-9]+\.zip$', rom_info['recovery'])
+											if recovery_match:
+												android = recovery_match.group(1)
+											else:
+												android = rom_info['recovery'].split("ota_full-")[1].split("-")[2]
 									else:
 										android = rom_info['recovery'].split("images_")[1].split("_")[2]
 									if rom_info['android'] != android:
@@ -4168,10 +4226,39 @@ def extract_ota_metadata(url,filetype, timeout=20):
 							print("无法获取文件长度")
 							return None
 
-					# 2. 读取文件末尾字节查找中央目录
-					actual_end_size = min(file_length, END_BYTES_SIZE)
-					end_bytes = read_range(url, file_length - actual_end_size, int(actual_end_size), timeout)
-					if end_bytes is None:
+					# 2. 使用阶梯策略读取文件末尾字节查找中央目录
+					# 从小到大逐步增加读取大小，直到找到 EOCD 签名
+					step_sizes = [4*1024, 16*1024, 64*1024, 256*1024, 512*1024]  # 4KB, 16KB, 64KB, 256KB, 512KB
+					end_bytes = None
+					actual_end_size = 0
+					
+					for step_size in step_sizes:
+							actual_end_size = min(file_length, step_size)
+							if actual_end_size <= 0:
+									continue
+							
+							end_bytes = read_range(url, file_length - actual_end_size, int(actual_end_size), timeout)
+							if end_bytes is None:
+									continue
+							
+							# 检查是否包含 EOCD 签名
+							ENDSIG = 0x06054b50  # "PK\005\006"
+							pos = len(end_bytes) - ENDHDR
+							while pos >= 0:
+									if pos + 4 <= len(end_bytes):
+											sig = int.from_bytes(end_bytes[pos:pos+4], 'little')
+											if sig == ENDSIG:
+													# 找到 EOCD 签名，缩短 end_bytes 到当前位置
+													end_bytes = end_bytes[pos:]
+													print(f"读取 ZIP 末尾 {actual_end_size} 字节成功找到 EOCD")
+													break
+									pos -= 1
+							else:
+									# 未找到签名，继续尝试更大的读取大小
+									continue
+							break  # 找到签名，退出循环
+					
+					if end_bytes is None or len(end_bytes) == 0:
 							print("无法读取文件末尾字节")
 							return None
 
