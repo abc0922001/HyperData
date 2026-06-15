@@ -1,7 +1,68 @@
 {
   "recent": {
-    "time": "2026-06-15 10:35:32",
+    "time": "2026-06-15 23:14:05",
     "developing": "no",
-    "roms": {}
+    "roms": {
+      "dada": {
+        "name": {
+          "zh": "小米 15",
+          "en": "Xiaomi 15"
+        },
+        "versions": [
+          {
+            "release_date": "2026-06-15",
+            "version": "OS3.0.302.0.WOCMIDC"
+          }
+        ]
+      },
+      "pudding": {
+        "name": {
+          "zh": "小米 17",
+          "en": "Xiaomi 17"
+        },
+        "versions": [
+          {
+            "release_date": "2026-06-15",
+            "version": "OS3.0.315.0.WPCCNXM"
+          }
+        ]
+      },
+      "byron": {
+        "name": {
+          "zh": "Xiaomi 17 Max",
+          "en": "Xiaomi 17 Max"
+        },
+        "versions": [
+          {
+            "release_date": "2026-06-15",
+            "version": "OS3.0.307.0.WAFCNXM"
+          }
+        ]
+      },
+      "ruyi": {
+        "name": {
+          "zh": "小米 MIX Flip",
+          "en": "Xiaomi MIX Flip"
+        },
+        "versions": [
+          {
+            "release_date": "2026-06-15",
+            "version": "OS3.0.305.0.WNICNXM"
+          }
+        ]
+      },
+      "zorn": {
+        "name": {
+          "zh": "REDMI K80 / POCO F7 Pro",
+          "en": "REDMI K80 / POCO F7 Pro"
+        },
+        "versions": [
+          {
+            "release_date": "2026-06-15",
+            "version": "OS3.0.305.0.WOKCNXM"
+          }
+        ]
+      }
+    }
   }
 }
