@@ -172,8 +172,8 @@ miui_iv = b"0102030405060708"
 check_url = "https://update.miui.com/updates/miotaV3.php"
 
 
-unreleased = ['moscow', 'brussels', 'chicago', 'pond', 'warsaw', 'suiren', 'zephyr', 'coral']
-currentStable = ['moscow', 'brussels', 'chicago', 'pond', 'warsaw', 'chagall','warhol', 'erhu', 'byron', 'guitar', 'yili', 'prague', 'somalia', 'zephyr', 'suiren', 'coral', 'arctic', 'dew', 'klee', 'dash', 'piano', 'yupei', 'pudding', 'nezha', 'flute', 'organ', 'spinel','charoite','annibale', 'myron',
+unreleased = ['mist', 'iolite', 'moscow', 'brussels', 'chicago', 'pond', 'warsaw', 'suiren', 'zephyr', 'coral']
+currentStable = ['mist', 'iolite', 'moscow', 'brussels', 'chicago', 'pond', 'warsaw', 'chagall','warhol', 'erhu', 'byron', 'guitar', 'yili', 'prague', 'somalia', 'zephyr', 'suiren', 'coral', 'arctic', 'dew', 'klee', 'dash', 'piano', 'yupei', 'pudding', 'nezha', 'flute', 'organ', 'spinel','charoite','annibale', 'myron',
 								 'pandora', 'popsicle', 'tornado','goya', 'klimt', 'konghou',  'spring', 'lapis', 'kunzite',
 								 'flourite', 'creek', 'taiko', 'bixi', 'dali', 'turner', 'violin', 'koto', 'dijun', 'jinghu', 'luming', 
 								 'onyx', 'serenity', 'emerald_r', 'miro', 'zorn', 'xuanyuan', 'tanzanite', 'obsidian', 'rodin', 'warm', 'dada', 'haotian', 'uke', 'muyu', 
@@ -208,7 +208,7 @@ order = ['umi', 'cmi', 'cas', 'thyme', 'venus', 'star', 'lisa', 'pissarro_in', '
 				 'fire', 'earth', 'sky', 'gale', 'moon', 'air', 'lake', 'flame', 'creek', 'dew', 'tornado', 'spring', 'evergo', 'light', 'lightcm', 'veux', 'xaga', 'pissarro',
 				 'spes', 'spesn', 'viva', 'vida', 'fleur', 'opal', 'sunstone', 'ruby', 'redwood', 'pearl', 'marble', 'tapas', 'topaz',
 				 'sweet_k6a', 'sea', 'gold', 'breeze', 'garnet', 'emerald', 'zircon', 'tanzanite', 'obsidian', 'beryl', 'malachite', 'amethyst', 'sapphire', 'sapphiren', 'emerald_r', 'spinel',
-				 'kunzite', 'lapis', 'coral', 'flourite', 'peridot', 'rodin', 'onyx', 'klee', 'dash', 'alioth',
+				 'kunzite', 'lapis', 'coral', 'flourite', 'mist', 'iolite', 'peridot', 'rodin', 'onyx', 'klee', 'dash', 'alioth',
 				 'charoite', 'haydn', 'ares', 'munch', 'rubens', 'matisse', 'ingres', 'diting', 'rembrandt', 'mondrian', 'socrates', 'corot', 'duchamp',
 				 'vermeer', 'manet', 'rothko', 'zorn', 'miro', 'dali', 'annibale', 'prague', 'warsaw', 'myron',
 				 'yunluo', 'xun', 'erhu', 'guitar', 'flare', 'spark', 'koto', 'taiko', 'flute', 'organ', 'dizi', 'ruan', 'turner', 'yili', 'warm', 'serenity', 'arctic', 'somalia', 'evergreen', 'rock', 'moonstone']
@@ -462,6 +462,10 @@ branches = [
 ]
 
 flags = {
+	"mist": "mist",
+	"mist_demo": "mist",
+	"iolite": "iolite",
+	"iolite_demo": "iolite",
 	"HOUJI": "houji",
 	"HOUJIDEMO": "houji",
 	"houji": "houji",
@@ -3040,7 +3044,7 @@ def checkDatabase(device, code, android, version, rom_type, bigver, region,tag,z
 			checkpoint = "cnunicom"
 			d_check = "cunicom"
 		elif "chinamobile" in filename:
-			checkpoint = "cnmobile"
+			checkpoint = "cmobile"
 			d_check = "cmobile"
 		else:
 			checkpoint = "fastboot"
@@ -3088,7 +3092,7 @@ def checkDatabase(device, code, android, version, rom_type, bigver, region,tag,z
 		release_date = stringify(date.today().strftime("%Y-%m-%d"))
 		if filetype == "fastboot":
 			public_date = stringify(get_time(form_url(filename,version)))
-			ins_sql = f"INSERT INTO roms (zone,device,code,android,version,type,bigver,region,tag,branch,{checkpoint},release_date,insdate, public_date, aspatch) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)" % (stringify(zone), stringify(device), stringify(code), stringify(android), stringify(version), stringify(rom_type), stringify(bigver), stringify(region), stringify(tag), stringify(branch), stringify(filename), release_date, insdate, public_date)
+			ins_sql = f"INSERT INTO roms (zone,device,code,android,version,type,bigver,region,tag,branch,{checkpoint},release_date,insdate, public_date) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)" % (stringify(zone), stringify(device), stringify(code), stringify(android), stringify(version), stringify(rom_type), stringify(bigver), stringify(region), stringify(tag), stringify(branch), stringify(filename), release_date, insdate, public_date)
 		else:
 			beta_date = stringify(get_time(form_url(filename,version)))
 			public_date = stringify(None)
