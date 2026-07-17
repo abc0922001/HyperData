@@ -59,8 +59,8 @@
 					"release": "2026-07-03",
 					"aspatch": "2026-06-01",
 					"recovery": "amethyst-ota_full-OS3.0.304.0.WOPCNXM-user-16.0-559bc18769.zip",
-					"fastboot": "",
-					"ctelecom": ""
+					"fastboot": "amethyst_images_OS3.0.304.0.WOPCNXM_20260623.0000.00_16.0_cn_a4f1ed084c.tgz",
+					"ctelecom": "amethyst_images_OS3.0.304.0.WOPCNXM_20260623.0000.00_16.0_cn_chinatelecom_f91ee9cebe.tgz"
 				},
 				"OS3.0.303.0.WOPCNXM": {
 					"os": "OS3.0.303.0.WOPCNXM",
@@ -973,7 +973,7 @@
 					"release": "2026-07-06",
 					"aspatch": "2026-06-01",
 					"recovery": "amethyst_ru_global-ota_full-OS3.0.302.0.WOPRUXM-user-16.0-e8ceb6aafe.zip",
-					"fastboot": ""
+					"fastboot": "amethyst_ru_global_images_OS3.0.302.0.WOPRUXM_20260624.0000.00_16.0_ru_40062e2876.tgz"
 				},
 				"OS3.0.2.0.WOPRUXM": {
 					"os": "OS3.0.2.0.WOPRUXM",
