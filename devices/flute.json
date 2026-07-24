@@ -56,7 +56,7 @@
 					"release": "2026-07-15",
 					"aspatch": "2026-06-01",
 					"recovery": "flute-ota_full-OS3.0.307.0.WPWCNXM-user-16.0-f73d132345.zip",
-					"fastboot": ""
+					"fastboot": "flute_images_OS3.0.307.0.WPWCNXM_20260703.0000.00_16.0_cn_40e0ca8df7.tgz"
 				},
 				"OS3.0.305.0.WPWCNXM": {
 					"os": "OS3.0.305.0.WPWCNXM",
@@ -627,7 +627,7 @@
 					"release": "2026-07-17",
 					"aspatch": "2026-07-01",
 					"recovery": "flute_in_global-ota_full-OS3.0.301.0.WPWINXM-user-16.0-04b8968551.zip",
-					"fastboot": ""
+					"fastboot": "flute_in_global_images_OS3.0.301.0.WPWINXM_20260701.0000.00_16.0_in_d331f6e71f.tgz"
 				},
 				"OS3.0.2.0.WPWINXM": {
 					"os": "OS3.0.2.0.WPWINXM",

@@ -17,6 +17,49 @@
 	"branches": [
 		{
 			"name": {
+				"zh": "小米澎湃 OS Beta",
+				"en": "Xiaomi HyperOS Beta"
+			},
+			"branchCode": "chagall",
+			"brand": "Xiaomi",
+			"device": {
+				"zh": "Xiaomi 17T",
+				"en": "Xiaomi 17T"
+			},
+			"idtag": "CnOB",
+			"tag": "CNXM",
+			"branchtag": "F",
+			"table": [
+				"os",
+				"android",
+				"release",
+				"aspatch",
+				"recovery",
+				"fastboot"
+			],
+			"show": "1",
+			"carrier": [
+				"",
+				"chinatelecom",
+				"chinamobile",
+				"chinaunicom"
+			],
+			"region": "cn",
+			"zone": "1",
+			"ep": "0",
+			"roms": {
+				"OS3.0.307.5.WPTCNXM": {
+					"os": "OS3.0.307.5.WPTCNXM",
+					"android": "16.0",
+					"release": "2026-06-30",
+					"aspatch": "2026-06-01",
+					"recovery": "chagall-ota_full-OS3.0.307.5.WPTCNXM-user-16.0-54f10a18f9.zip",
+					"fastboot": ""
+				}
+			}
+		},
+		{
+			"name": {
 				"zh": "小米澎湃 OS 正式版",
 				"en": "Xiaomi HyperOS Stable"
 			},
@@ -215,7 +258,7 @@
 					"release": "2026-07-14",
 					"aspatch": "2026-07-01",
 					"recovery": "chagall_global-ota_full-OS3.0.306.0.WPTMIXM-user-16.0-08bb195663.zip",
-					"fastboot": ""
+					"fastboot": "chagall_global_images_OS3.0.306.0.WPTMIXM_20260703.0000.00_16.0_global_d60a55717a.tgz"
 				},
 				"OS3.0.303.0.WPTMIXM": {
 					"os": "OS3.0.303.0.WPTMIXM",
@@ -305,6 +348,14 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.315.0.WPTEUXM": {
+					"os": "OS3.0.315.0.WPTEUXM",
+					"android": "16.0",
+					"release": "2026-07-20",
+					"aspatch": "2026-07-01",
+					"recovery": "chagall_eea_global-ota_full-OS3.0.315.0.WPTEUXM-user-16.0-762ad0dd16.zip",
+					"fastboot": ""
+				},
 				"OS3.0.313.0.WPTEUXM": {
 					"os": "OS3.0.313.0.WPTEUXM",
 					"android": "16.0",
