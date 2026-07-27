@@ -569,6 +569,14 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.302.0.WNTEUXM": {
+					"os": "OS3.0.302.0.WNTEUXM",
+					"android": "16.0",
+					"release": "2026-07-24",
+					"aspatch": "2026-07-01",
+					"recovery": "moon_eea_global-ota_full-OS3.0.302.0.WNTEUXM-user-16.0-5a6c918c34.zip",
+					"fastboot": ""
+				},
 				"OS3.0.301.0.WNTEUXM": {
 					"os": "OS3.0.301.0.WNTEUXM",
 					"android": "16.0",
@@ -1223,7 +1231,7 @@
 					"release": "2026-07-16",
 					"aspatch": "2026-07-01",
 					"recovery": "moon_tr_global-ota_full-OS3.0.302.0.WNTTRXM-user-16.0-f30203077e.zip",
-					"fastboot": ""
+					"fastboot": "moon_tr_global_images_OS3.0.302.0.WNTTRXM_20260708.0000.00_16.0_tr_9952196990.tgz"
 				},
 				"OS3.0.301.0.WNTTRXM": {
 					"os": "OS3.0.301.0.WNTTRXM",

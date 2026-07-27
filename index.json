@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-07-27 10:51:56",
+    "time": "2026-07-27 21:03:10",
     "developing": "no",
     "roms": {
       "yudi": {
@@ -198,6 +198,10 @@
             "version": "OS2.0.208.0.VGPMIXM"
           },
           {
+            "insert_date": "2026-07-27",
+            "version": "OS2.0.206.0.VGPMXAT"
+          },
+          {
             "insert_date": "2026-07-22",
             "version": "OS2.0.209.0.VGPMIDC"
           }
@@ -212,6 +216,10 @@
           {
             "insert_date": "2026-07-27",
             "version": "OS3.0.302.0.WNTRUXM"
+          },
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.302.0.WNTEUXM"
           }
         ]
       },
@@ -247,6 +255,122 @@
           }
         ]
       },
+      "creek": {
+        "name": {
+          "zh": "REDMI 15 4G",
+          "en": "REDMI 15 4G"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.303.0.WBOMXAT"
+          }
+        ]
+      },
+      "taiko": {
+        "name": {
+          "zh": "REDMI 平板 2",
+          "en": "REDMI Pad 2"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.302.0.WOVEUXM"
+          },
+          {
+            "insert_date": "2026-07-24",
+            "version": "OS3.0.301.0.WOVTWXM"
+          }
+        ]
+      },
+      "turner": {
+        "name": {
+          "zh": "REDMI K Pad / Xiaomi Pad Mini",
+          "en": "REDMI K Pad / Xiaomi Pad Mini"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.302.0.WAOTWXM"
+          },
+          {
+            "insert_date": "2026-07-24",
+            "version": "OS3.0.307.0.WAOCNXM"
+          }
+        ]
+      },
+      "flute": {
+        "name": {
+          "zh": "REDMI 平板 2 Pro",
+          "en": "REDMI Pad 2 Pro"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.301.0.WPWTWXM"
+          }
+        ]
+      },
+      "organ": {
+        "name": {
+          "zh": "REDMI 平板 2 Pro 5G",
+          "en": "REDMI Pad 2 Pro 5G"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.301.0.WPXTWXM"
+          },
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.302.0.WPXEUXM"
+          }
+        ]
+      },
+      "spring": {
+        "name": {
+          "zh": "REDMI 15 5G / REDMI Note 15R 5G",
+          "en": "REDMI 15 5G / REDMI Note 15R 5G"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.301.0.WOUJPXM"
+          }
+        ]
+      },
+      "dizi": {
+        "name": {
+          "zh": "Redmi Pad Pro / 哈利·波特版 / POCO Pad",
+          "en": "Redmi Pad Pro / Special Edition featuring Harry Potter / POCO Pad"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.302.0.WNSEUXM"
+          },
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.302.0.WNSINXM"
+          }
+        ]
+      },
+      "degas": {
+        "name": {
+          "zh": "小米 14T",
+          "en": "Xiaomi 14T"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.301.0.WNELMCR"
+          },
+          {
+            "insert_date": "2026-07-24",
+            "version": "OS3.0.304.0.WNEIDXM"
+          }
+        ]
+      },
       "flame": {
         "name": {
           "zh": "Redmi 14R 5G / POCO M7 5G",
@@ -254,12 +378,252 @@
         },
         "versions": [
           {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.302.0.WGUINXM"
+          },
+          {
             "insert_date": "2026-07-24",
             "version": "OS2.0.205.0.VGUCNXM"
           },
           {
             "insert_date": "2026-07-23",
             "version": "OS3.0.302.0.WGUCNXM"
+          }
+        ]
+      },
+      "lake": {
+        "name": {
+          "zh": "Redmi 14C",
+          "en": "Redmi 14C"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.301.0.WGTIDXM"
+          },
+          {
+            "insert_date": "2026-07-24",
+            "version": "OS3.0.301.0.WGTTRXM"
+          },
+          {
+            "insert_date": "2026-07-23",
+            "version": "OS3.0.306.0.WGTMIXM"
+          }
+        ]
+      },
+      "iolite": {
+        "name": {
+          "zh": "REDMI Note 17 Pro 5G",
+          "en": "REDMI Note 17 Pro 5G"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.307.0.WDQCNXM"
+          }
+        ]
+      },
+      "arctic": {
+        "name": {
+          "zh": "REDMI A7 Pro / POCO C81",
+          "en": "REDMI A7 Pro / POCO C81"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.11.0.WBVMIXM"
+          },
+          {
+            "insert_date": "2026-07-21",
+            "version": "OS3.0.4.0.WBVINXM"
+          }
+        ]
+      },
+      "dew": {
+        "name": {
+          "zh": "REDMI 15C / POCO C85",
+          "en": "REDMI 15C / POCO C85"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.301.0.WBNIDXM"
+          }
+        ]
+      },
+      "annibale": {
+        "name": {
+          "zh": "REDMI K90 / POCO F8 Pro",
+          "en": "REDMI K90 / POCO F8 Pro"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.301.0.WPKMIXM"
+          }
+        ]
+      },
+      "tornado": {
+        "name": {
+          "zh": "REDMI 15C 5G / REDMI 15R 5G",
+          "en": "REDMI 15C 5G / REDMI 15R 5G"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.303.0.WPOMIXM"
+          }
+        ]
+      },
+      "diting": {
+        "name": {
+          "zh": "Redmi K50 至尊版 / 小米 12T Pro",
+          "en": "Redmi K50 Ultra / Xiaomi 12T Pro"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.5.0.VLFMIXM"
+          },
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.4.0.VLFEUXM"
+          }
+        ]
+      },
+      "zircon": {
+        "name": {
+          "zh": "Redmi Note 13 Pro+ 5G",
+          "en": "Redmi Note 13 Pro+ 5G"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.301.0.WNOTRXM"
+          },
+          {
+            "insert_date": "2026-07-24",
+            "version": "OS3.0.303.0.WNOJPXM"
+          }
+        ]
+      },
+      "nezha": {
+        "name": {
+          "zh": "小米 17 Ultra",
+          "en": "Xiaomi 17 Ultra"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.305.0.WPATWXM"
+          },
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.305.0.WPAMIDC"
+          },
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.305.0.WPARUXM"
+          },
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.305.0.WPAIDXM"
+          },
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.305.0.WPATRXM"
+          },
+          {
+            "insert_date": "2026-07-24",
+            "version": "OS3.0.309.0.WPACNXM"
+          }
+        ]
+      },
+      "goya": {
+        "name": {
+          "zh": "小米 15T",
+          "en": "Xiaomi 15T"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.301.0.WOETWXM"
+          }
+        ]
+      },
+      "xuanyuan": {
+        "name": {
+          "zh": "小米 15 Ultra",
+          "en": "Xiaomi 15 Ultra"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.303.0.WOAEUXM"
+          }
+        ]
+      },
+      "beryl": {
+        "name": {
+          "zh": "Redmi Note 14 5G / POCO M7 Pro 5G",
+          "en": "Redmi Note 14 5G / POCO M7 Pro 5G"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.302.0.WOQMIXM"
+          }
+        ]
+      },
+      "gold": {
+        "name": {
+          "zh": "Redmi Note 13 5G / 13R Pro / POCO X6 Neo 5G",
+          "en": "Redmi Note 13 5G / 13R Pro / POCO X6 Neo 5G"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.10.0.VNQCNXM"
+          }
+        ]
+      },
+      "serenity": {
+        "name": {
+          "zh": "REDMI A5 / POCO C71",
+          "en": "REDMI A5 / POCO C71"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "A15.0.5.0.VGWZAMT"
+          },
+          {
+            "insert_date": "2026-07-24",
+            "version": "A15.0.10.0.VGWMXAT"
+          },
+          {
+            "insert_date": "2026-07-22",
+            "version": "A15.0.28.0.VGWMIXM"
+          },
+          {
+            "insert_date": "2026-07-22",
+            "version": "A15.0.12.0.VGWEUBY"
+          },
+          {
+            "insert_date": "2026-07-22",
+            "version": "A15.0.4.0.VGWZAVC"
+          }
+        ]
+      },
+      "ruan": {
+        "name": {
+          "zh": "Redmi Pad Pro 5G / POCO Pad 5G",
+          "en": "Redmi Pad Pro 5G / POCO Pad 5G"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-07-27",
+            "version": "OS3.0.304.0.WFSRUXM"
           }
         ]
       },
@@ -287,18 +651,6 @@
           }
         ]
       },
-      "taiko": {
-        "name": {
-          "zh": "REDMI 平板 2",
-          "en": "REDMI Pad 2"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-07-24",
-            "version": "OS3.0.301.0.WOVTWXM"
-          }
-        ]
-      },
       "bixi": {
         "name": {
           "zh": "小米 MIX Flip 2",
@@ -308,22 +660,6 @@
           {
             "insert_date": "2026-07-24",
             "version": "OS3.0.304.0.WOHCNXM"
-          }
-        ]
-      },
-      "lake": {
-        "name": {
-          "zh": "Redmi 14C",
-          "en": "Redmi 14C"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-07-24",
-            "version": "OS3.0.301.0.WGTTRXM"
-          },
-          {
-            "insert_date": "2026-07-23",
-            "version": "OS3.0.306.0.WGTMIXM"
           }
         ]
       },
@@ -344,18 +680,6 @@
           {
             "insert_date": "2026-07-24",
             "version": "OS3.0.302.0.WPPTRXM"
-          }
-        ]
-      },
-      "nezha": {
-        "name": {
-          "zh": "小米 17 Ultra",
-          "en": "Xiaomi 17 Ultra"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-07-24",
-            "version": "OS3.0.309.0.WPACNXM"
           }
         ]
       },
@@ -399,54 +723,6 @@
           }
         ]
       },
-      "degas": {
-        "name": {
-          "zh": "小米 14T",
-          "en": "Xiaomi 14T"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-07-24",
-            "version": "OS3.0.304.0.WNEIDXM"
-          }
-        ]
-      },
-      "zircon": {
-        "name": {
-          "zh": "Redmi Note 13 Pro+ 5G",
-          "en": "Redmi Note 13 Pro+ 5G"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-07-24",
-            "version": "OS3.0.303.0.WNOJPXM"
-          }
-        ]
-      },
-      "serenity": {
-        "name": {
-          "zh": "REDMI A5 / POCO C71",
-          "en": "REDMI A5 / POCO C71"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-07-24",
-            "version": "A15.0.10.0.VGWMXAT"
-          },
-          {
-            "insert_date": "2026-07-22",
-            "version": "A15.0.28.0.VGWMIXM"
-          },
-          {
-            "insert_date": "2026-07-22",
-            "version": "A15.0.12.0.VGWEUBY"
-          },
-          {
-            "insert_date": "2026-07-22",
-            "version": "A15.0.4.0.VGWZAVC"
-          }
-        ]
-      },
       "spark": {
         "name": {
           "zh": "Redmi 平板 SE 4G 8.7",
@@ -484,18 +760,6 @@
           {
             "insert_date": "2026-07-24",
             "version": "OS3.0.308.0.WPMCNXM"
-          }
-        ]
-      },
-      "turner": {
-        "name": {
-          "zh": "REDMI K Pad / Xiaomi Pad Mini",
-          "en": "REDMI K Pad / Xiaomi Pad Mini"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-07-24",
-            "version": "OS3.0.307.0.WAOCNXM"
           }
         ]
       },
@@ -724,18 +988,6 @@
           {
             "insert_date": "2026-07-21",
             "version": "OS3.0.304.0.WMKCNXM"
-          }
-        ]
-      },
-      "arctic": {
-        "name": {
-          "zh": "REDMI A7 Pro / POCO C81",
-          "en": "REDMI A7 Pro / POCO C81"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-07-21",
-            "version": "OS3.0.4.0.WBVINXM"
           }
         ]
       }
