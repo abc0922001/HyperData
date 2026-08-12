@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-08-12 02:52:33",
+    "time": "2026-08-12 17:49:18",
     "developing": "no",
     "roms": {
       "athens": {
@@ -51,6 +51,86 @@
           }
         ]
       },
+      "steppe": {
+        "name": {
+          "zh": "REDMI M100",
+          "en": "REDMI M100"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-08-12",
+            "version": "OS3.0.305.0.WAVEUXM"
+          },
+          {
+            "insert_date": "2026-08-11",
+            "version": "OS3.0.304.0.WAVMIXM"
+          },
+          {
+            "insert_date": "2026-08-11",
+            "version": "OS3.0.305.0.WAVMIXM"
+          },
+          {
+            "insert_date": "2026-08-10",
+            "version": "OS3.0.307.0.WAVMIXM"
+          }
+        ]
+      },
+      "moon": {
+        "name": {
+          "zh": "Redmi 13 国际 / POCO M6 4G",
+          "en": "Redmi 13 / POCO M6 4G"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-08-12",
+            "version": "OS3.0.301.0.WNTLMCR"
+          }
+        ]
+      },
+      "malachite": {
+        "name": {
+          "zh": "Redmi Note 14 Pro / POCO X7",
+          "en": "Redmi Note 14 Pro / POCO X7"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-08-12",
+            "version": "OS3.0.301.0.WOOMXAT"
+          }
+        ]
+      },
+      "uke": {
+        "name": {
+          "zh": "小米平板 7",
+          "en": "Xiaomi Pad 7"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-08-12",
+            "version": "OS3.0.303.0.WOZRUXM"
+          },
+          {
+            "insert_date": "2026-08-12",
+            "version": "OS3.0.303.0.WOZIDXM"
+          }
+        ]
+      },
+      "sapphire": {
+        "name": {
+          "zh": "Redmi Note 13 4G",
+          "en": "Redmi Note 13 4G"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-08-12",
+            "version": "OS2.0.204.0.VNGLMCR"
+          },
+          {
+            "insert_date": "2026-08-07",
+            "version": "OS2.0.209.0.VNGMIDC"
+          }
+        ]
+      },
       "shennong": {
         "name": {
           "zh": "小米 14 Pro / Ti / 钛金属卫星通讯版",
@@ -96,26 +176,6 @@
           {
             "insert_date": "2026-08-07",
             "version": "OS3.0.305.0.WPZEUXM"
-          }
-        ]
-      },
-      "steppe": {
-        "name": {
-          "zh": "REDMI M100",
-          "en": "REDMI M100"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-08-11",
-            "version": "OS3.0.304.0.WAVMIXM"
-          },
-          {
-            "insert_date": "2026-08-11",
-            "version": "OS3.0.305.0.WAVMIXM"
-          },
-          {
-            "insert_date": "2026-08-10",
-            "version": "OS3.0.307.0.WAVMIXM"
           }
         ]
       },
@@ -652,18 +712,6 @@
           {
             "insert_date": "2026-08-07",
             "version": "OS3.0.301.0.WOELMCR"
-          }
-        ]
-      },
-      "sapphire": {
-        "name": {
-          "zh": "Redmi Note 13 4G",
-          "en": "Redmi Note 13 4G"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-08-07",
-            "version": "OS2.0.209.0.VNGMIDC"
           }
         ]
       },
