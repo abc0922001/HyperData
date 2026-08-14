@@ -3294,6 +3294,7 @@ def add_rom_to_json(device, code, android, version, filetype, filename, devdata=
 		
 		if not updated:
 			print(f"ROM 数据已完整: {version}")
+		check_devices_supports(device, android, version, devdata)
 		return devdata
 	
 	# 获取table字段列表
@@ -3371,7 +3372,70 @@ def add_rom_to_json(device, code, android, version, filetype, filename, devdata=
 	# 更新 index.json
 	update_index_json(device, devdata, version)
 	
+	# 核查设备的 supports 和 android 字段（修改 devdata，由调用方写回文件）
+	check_devices_supports(device, android, version, devdata)
+	
 	return devdata
+
+
+def check_devices_supports(device, android, version, devdata=None):
+	"""核查设备的 supports 与 android 字段，缺失则补充
+	传入 devdata 时修改内存数据，由调用方统一写回文件；否则直接读写文件"""
+	
+	# 提取 OS 大版本，如 OS3.0.302.0.WPQCNXM -> OS3.0
+	os_major = None
+	if version.startswith("OS") and "." in version:
+		parts = version.split(".")
+		if len(parts) >= 2:
+			os_major = parts[0] + "." + parts[1]
+	elif version.startswith("V816") and "." in version:
+		# V816 对应 HyperOS 1
+		os_major = "OS1.0"
+	
+	# 规范化安卓版本，如 16 -> 16.0
+	android_ver = None
+	if android:
+		android_ver = android.split(".")[0] + ".0"
+	
+	if not os_major and not android_ver:
+		return False
+	
+	from_file = False
+	if devdata is None:
+		device_path = get_platform_path(f"public/data/devices/{device}.json")
+		try:
+			with open(device_path, 'r', encoding='utf-8') as f:
+				devdata = json.load(f)
+		except Exception as e:
+			print(f"读取设备文件错误: {e}")
+			return False
+		from_file = True
+	
+	changed = False
+	if os_major:
+		supports = devdata.setdefault("supports", [])
+		if os_major not in supports:
+			supports.append(os_major)
+			changed = True
+	
+	if android_ver:
+		androids = devdata.setdefault("android", [])
+		if android_ver not in androids:
+			androids.append(android_ver)
+			changed = True
+	
+	if changed and from_file:
+		try:
+			with open(device_path, 'w', encoding='utf-8') as f:
+				json.dump(devdata, f, ensure_ascii=False, indent='\t', sort_keys=False)
+		except Exception as e:
+			print(f"写入设备文件错误: {e}")
+			return False
+	
+	if changed:
+		print(f"{device} 已更新: supports={os_major} android={android_ver}")
+	
+	return changed
 
 
 def update_index_json(device, devdata, version):
@@ -3938,7 +4002,7 @@ def entryChecker(data,device):
 									print(device, bname, os_version, f"版本号标识不匹配: 期望 {expected_tag}, 实际 {actual_idtag}")
 									# 注意：这里暂时注释掉检查，因为在实际数据中可能存在合理的差异
 									check.append(1)
-							if os_version[:5] not in data['suppports']:
+							if os_version[:5] not in data['supports']:
 								if "Developer" in branch['name']['en']:
 									i = 0
 								else:
