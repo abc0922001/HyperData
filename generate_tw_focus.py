@@ -12,6 +12,7 @@ gen_time = now_tw.strftime("%Y-%m-%d %H:%M")
 
 # 設定路徑
 devices_dir = 'devices'
+images_dir = os.path.join('assets', 'images')
 output_file = 'tw.html'
 
 # 定義要抓取的目標分支
@@ -502,6 +503,22 @@ for device in final_list:
     tw_ver = tw['os']
     tw_date = tw['release']
     tw_history = device['tw']['history']
+    image_filename = f'{device["code"]}.png'
+    image_file_path = os.path.join(images_dir, image_filename)
+
+    if os.path.isfile(image_file_path):
+        device_visual_html = (
+            f'<img src="assets/images/{image_filename}" alt="{device["name"]} 機身圖" '
+            f'width="64" height="80" loading="lazy" decoding="async" '
+            f'class="h-20 w-16 object-contain flex-shrink-0">'
+        )
+    else:
+        device_visual_html = (
+            f'<div class="h-12 w-12 rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 '
+            f'dark:from-slate-700 dark:to-slate-600 flex items-center justify-center text-slate-700 '
+            f'dark:text-slate-200 font-bold text-xl flex-shrink-0 shadow-inner" aria-hidden="true">'
+            f'{device["name"][0]}</div>'
+        )
     
     # Header Info
     ago_html = ""
@@ -542,7 +559,7 @@ for device in final_list:
         
         f'<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-2">'
         f'<div class="flex items-start gap-4">'
-        f'<div class="h-12 w-12 rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-700 dark:to-slate-600 flex items-center justify-center text-slate-700 dark:text-slate-200 font-bold text-xl flex-shrink-0 shadow-inner" aria-hidden="true">{device["name"][0]}</div>'
+        f'{device_visual_html}'
         f'<div>'
         f'<h2 class="text-xl font-bold text-slate-900 dark:text-white leading-tight device-title tracking-tight">{device["name"]}</h2>'
         f'<div class="flex items-center gap-2 mt-1.5">'
