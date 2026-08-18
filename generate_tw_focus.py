@@ -153,6 +153,7 @@ for file_path in json_files:
                 {
                     'os': v.get('os', k),
                     'android': v.get('android', ''),
+                    'aspatch': v.get('aspatch', ''),
                     'release': v.get('release', '1970-01-01')
                 }
                 for k, v in roms.items()
@@ -216,7 +217,7 @@ def generate_history_html(history_list, type_class, panel_id):
         '<table class="w-full text-xs text-left whitespace-nowrap" role="table">',
         '<thead class="text-gray-400 dark:text-slate-500 font-medium border-b border-gray-50 dark:border-slate-700"><tr>',
         '<th scope="col" class="py-2 pl-2">版本</th><th scope="col" class="py-2">日期</th>',
-        '<th scope="col" class="py-2 text-center">間隔</th><th scope="col" class="py-2 text-right pr-2">Android</th>',
+        '<th scope="col" class="py-2 text-center">間隔</th><th scope="col" class="py-2 text-right">Android</th><th scope="col" class="py-2 text-right pr-2">安全性更新</th>',
         '</tr></thead><tbody class="divide-y divide-gray-50 dark:divide-slate-700/50">'
     ]
     
@@ -247,7 +248,8 @@ def generate_history_html(history_list, type_class, panel_id):
             f'<td class="py-2.5 pl-2 font-mono text-gray-700 dark:text-slate-300 font-medium">{rom["os"]}</td>'
             f'<td class="py-2.5 text-gray-500 dark:text-slate-400">{rom["release"]}</td>'
             f'<td class="py-2.5 text-center">{interval_html}</td>'
-            f'<td class="py-2.5 text-right pr-2 text-gray-500 dark:text-slate-400">{rom["android"]}</td>'
+            f'<td class="py-2.5 text-right text-gray-500 dark:text-slate-400">{rom["android"]}</td>'
+            f'<td class="py-2.5 text-right pr-2 text-gray-500 dark:text-slate-400">{rom["aspatch"] or "—"}</td>'
             f'</tr>'
         )
     
@@ -328,6 +330,7 @@ def generate_card_html(info, region_label, region_type, tw_ver_str=None):
         f'<div>'
         f'<div class="text-sm font-mono text-gray-900 dark:text-slate-100 font-bold tracking-tight">{ver_str}</div>'
         f'<div class="text-[10px] text-gray-500 dark:text-slate-500 font-medium mt-0.5">Android {latest["android"]}</div>'
+        f'<div class="text-[10px] text-gray-500 dark:text-slate-500 font-medium mt-0.5">安全性更新：{latest["aspatch"] or "—"}</div>'
         f'</div>'
         
         f'<div class="flex flex-col items-end">'
