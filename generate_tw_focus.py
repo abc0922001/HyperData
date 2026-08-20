@@ -47,8 +47,7 @@ def get_region_label(branch_name_zh):
     core_name = name.replace("正式版", "").replace("版", "").strip()
     if core_name in REGION_MAPPING:
         return REGION_MAPPING[core_name]
-    if core_name == "EEA": return "歐洲 EEA"
-    if core_name == "欧洲EEA": return "歐洲 EEA"
+    if core_name in ("EEA", "欧洲EEA"): return "歐洲 EEA"
 
     processed_name = core_name
     for sc, tc in REGION_MAPPING.items():
@@ -202,73 +201,37 @@ brand_count = len(all_brands)
 
 print(f"Collected {total_devices} devices.")
 
-# === 優化 4: 批次生成 HTML (使用 list) ===
-# 全域計數器用於產生唯一 ID
+# 全域計數器與歷史資料儲存
 _panel_counter = 0
+rom_history_store = {}
 
 def _next_panel_id():
     global _panel_counter
     _panel_counter += 1
-    return f"history-panel-{_panel_counter}"
+    return f"p{_panel_counter}"
 
-def generate_history_html(history_list, type_class, panel_id):
-    parts = [
-        f'<div id="{panel_id}" role="region" aria-label="歷史版本列表" class="hidden mt-3 border-t border-gray-100 dark:border-slate-700 pt-3 animate-fade-in" data-type="{type_class}">',
-        '<div class="overflow-x-auto">',
-        '<table class="w-full text-xs text-left whitespace-nowrap" role="table">',
-        '<thead class="text-gray-400 dark:text-slate-500 font-medium border-b border-gray-50 dark:border-slate-700"><tr>',
-        '<th scope="col" class="py-2 pl-2">版本</th><th scope="col" class="py-2">日期</th>',
-        '<th scope="col" class="py-2 text-center">間隔</th><th scope="col" class="py-2 text-right">Android</th><th scope="col" class="py-2 text-right pr-2">安全性更新</th>',
-        '</tr></thead><tbody class="divide-y divide-gray-50 dark:divide-slate-700/50">'
+def register_history(history_list):
+    pid = _next_panel_id()
+    # 壓縮為陣列格式: [os, release, android, aspatch]
+    rom_history_store[pid] = [
+        [r['os'], r['release'], r['android'], r['aspatch']]
+        for r in history_list
     ]
-    
-    for i, rom in enumerate(history_list):
-        interval_html = '<span class="text-gray-300 dark:text-slate-600" aria-label="無資料">-</span>'
-        
-        if i < len(history_list) - 1:
-            try:
-                current_date = datetime.strptime(rom['release'], "%Y-%m-%d")
-                prev_date = datetime.strptime(history_list[i+1]['release'], "%Y-%m-%d")
-                delta_days = (current_date - prev_date).days
-                
-                if delta_days > 90: 
-                    bg_color = "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400"
-                elif delta_days < 30: 
-                    bg_color = "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400"
-                else: 
-                    bg_color = "bg-gray-100 text-gray-600 dark:bg-slate-700 dark:text-slate-400"
-                    
-                interval_html = f'<span class="px-2 py-0.5 rounded-full text-[10px] font-medium {bg_color}">{delta_days} 天</span>'
-            except: 
-                pass
-        else:
-            interval_html = '<span class="text-[10px] font-medium text-blue-600 bg-blue-50 dark:text-blue-400 dark:bg-blue-900/30 px-2 py-0.5 rounded-full">首版</span>'
-
-        parts.append(
-            f'<tr class="hover:bg-gray-50 dark:hover:bg-slate-700/50 transition-colors">'
-            f'<td class="py-2.5 pl-2 font-mono text-gray-700 dark:text-slate-300 font-medium">{rom["os"]}</td>'
-            f'<td class="py-2.5 text-gray-500 dark:text-slate-400">{rom["release"]}</td>'
-            f'<td class="py-2.5 text-center">{interval_html}</td>'
-            f'<td class="py-2.5 text-right text-gray-500 dark:text-slate-400">{rom["android"]}</td>'
-            f'<td class="py-2.5 text-right pr-2 text-gray-500 dark:text-slate-400">{rom["aspatch"] or "—"}</td>'
-            f'</tr>'
-        )
-    
-    parts.append('</tbody></table></div></div>')
-    return ''.join(parts)
+    return pid
 
 def generate_card_html(info, region_label, region_type, tw_ver_str=None):
     if not info:
         if region_type == 'global':
             return (
-                '<div class="flex items-center justify-center p-4 rounded-xl border border-dashed border-gray-200 dark:border-slate-700 bg-gray-50/50 dark:bg-slate-800/50 h-[104px]">'
-                '<span class="text-xs text-gray-400 dark:text-slate-500 font-medium italic">無國際版資料</span>'
+                '<div class="flex items-center justify-center p-4 rounded-xl border border-dashed border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-800/50 h-[104px]">'
+                '<span class="text-xs text-slate-500 dark:text-slate-400 font-medium italic">無國際版資料</span>'
                 '</div>'
             )
         return ""
 
     latest = info['latest']
     ver_str = latest['os']
+    panel_id = register_history(info['history'])
     
     # Version Comparison Logic
     ver_status_tag = ""
@@ -276,44 +239,41 @@ def generate_card_html(info, region_label, region_type, tw_ver_str=None):
         tw_tup = version_to_tuple(tw_ver_str)
         curr_tup = version_to_tuple(ver_str)
         if tw_tup < curr_tup:
-            ver_status_tag = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full text-green-700 bg-green-100 border border-green-200 shadow-sm dark:text-green-400 dark:bg-green-900/30 dark:border-green-800" role="status">領先</span>'
+            ver_status_tag = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full text-emerald-800 bg-emerald-100 border border-emerald-200 shadow-sm dark:text-emerald-300 dark:bg-emerald-950/60 dark:border-emerald-800" role="status">領先</span>'
         elif tw_tup > curr_tup:
-            ver_status_tag = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full text-rose-700 bg-rose-100 border border-rose-200 shadow-sm dark:text-rose-400 dark:bg-rose-900/30 dark:border-rose-800" role="status">落後</span>'
+            ver_status_tag = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full text-rose-800 bg-rose-100 border border-rose-200 shadow-sm dark:text-rose-300 dark:bg-rose-950/60 dark:border-rose-800" role="status">落後</span>'
         else:
-            ver_status_tag = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full text-gray-600 bg-gray-100 border border-gray-200 dark:text-slate-400 dark:bg-slate-700 dark:border-slate-600" role="status">同步</span>'
+            ver_status_tag = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full text-slate-700 bg-slate-100 border border-slate-200 dark:text-slate-200 dark:bg-slate-700 dark:border-slate-600" role="status">同步</span>'
 
-    # Style Configuration
+    # Style Configuration with WCAG AA compliant contrast ratios
     styles = {
         'tw': (
             'bg-gradient-to-br from-blue-50 to-white dark:from-blue-950/40 dark:to-slate-800',
-            'border-blue-100 dark:border-blue-800/50',
-            'bg-blue-100 dark:bg-blue-900/40', 'text-blue-700 dark:text-blue-400',
+            'border-blue-200 dark:border-blue-800/50',
+            'bg-blue-100 dark:bg-blue-900/60', 'text-blue-800 dark:text-blue-300',
             'hover:border-blue-300 dark:hover:border-blue-700', 'group/tw'
         ),
         'global': (
             'bg-white dark:bg-slate-800',
-            'border-gray-200 dark:border-slate-700',
-            'bg-gray-100 dark:bg-slate-700', 'text-gray-600 dark:text-slate-400',
-            'hover:border-gray-300 dark:hover:border-slate-600', 'group/gl'
+            'border-slate-200 dark:border-slate-700',
+            'bg-slate-100 dark:bg-slate-700', 'text-slate-700 dark:text-slate-200',
+            'hover:border-slate-300 dark:hover:border-slate-600', 'group/gl'
         ),
         'other': (
             'bg-purple-50/30 dark:bg-purple-950/20',
-            'border-purple-100 dark:border-purple-800/40',
-            'bg-purple-100 dark:bg-purple-900/40', 'text-purple-700 dark:text-purple-400',
+            'border-purple-200 dark:border-purple-800/40',
+            'bg-purple-100 dark:bg-purple-900/60', 'text-purple-800 dark:text-purple-300',
             'hover:border-purple-300 dark:hover:border-purple-700', 'group/ot'
         )
     }
     bg_color, border_color, badge_bg, badge_text, hover_border, group_class = styles[region_type]
 
-    panel_id = _next_panel_id()
-    history_html = generate_history_html(info['history'], f'{region_type}-history', panel_id)
-    
     # Calculate Days Ago
     ago_html = ""
     try:
         dt = datetime.strptime(latest['release'], "%Y-%m-%d").replace(tzinfo=tz_tw)
         days = (now_tw - dt).days
-        ago_html = f'<div class="text-[10px] text-gray-500 dark:text-slate-500 font-medium mt-1">({days} 天前)</div>'
+        ago_html = f'<div class="text-[10px] text-slate-600 dark:text-slate-300 font-medium mt-1">({days} 天前)</div>'
     except: 
         pass
 
@@ -329,24 +289,26 @@ def generate_card_html(info, region_label, region_type, tw_ver_str=None):
         
         f'<div class="flex items-end justify-between w-full">'
         f'<div>'
-        f'<div class="text-sm font-mono text-gray-900 dark:text-slate-100 font-bold tracking-tight">{ver_str}</div>'
-        f'<div class="text-[10px] text-gray-500 dark:text-slate-500 font-medium mt-0.5">Android {latest["android"]}</div>'
-        f'<div class="text-[10px] text-gray-500 dark:text-slate-500 font-medium mt-0.5">安全性更新：{latest["aspatch"] or "—"}</div>'
+        f'<div class="text-sm font-mono text-slate-900 dark:text-slate-100 font-bold tracking-tight">{ver_str}</div>'
+        f'<div class="text-[10px] text-slate-600 dark:text-slate-300 font-medium mt-0.5">Android {latest["android"]}</div>'
+        f'<div class="text-[10px] text-slate-600 dark:text-slate-300 font-medium mt-0.5">安全性更新：{latest["aspatch"] or "—"}</div>'
         f'</div>'
         
         f'<div class="flex flex-col items-end">'
         f'<div class="flex items-center gap-1.5">'
-        f'<div class="text-xs font-semibold text-gray-700 dark:text-slate-300">{latest["release"]}</div>'
-        f'<svg class="w-3.5 h-3.5 text-gray-400 dark:text-slate-500 transition-transform duration-200 arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>'
+        f'<div class="text-xs font-semibold text-slate-700 dark:text-slate-200">{latest["release"]}</div>'
+        f'<svg class="w-3.5 h-3.5 text-slate-500 dark:text-slate-400 transition-transform duration-200 arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>'
         f'</div>'
         f'{ago_html}'
         f'</div>'
         f'</div>'
         
-        f'</button>{history_html}</div>'
+        f'</button>'
+        f'<div id="{panel_id}" role="region" aria-label="{region_label} 歷史版本列表" class="hidden mt-3 border-t border-slate-200 dark:border-slate-700 pt-3 animate-fade-in" data-type="{region_type}-history"></div>'
+        f'</div>'
     )
 
-# === 優化 5: 主 HTML 使用 list 累積 ===
+# === 主 HTML 結構 ===
 html_parts = [f"""<!DOCTYPE html>
 <html lang="zh-TW" class="scroll-smooth">
 <head>
@@ -373,12 +335,17 @@ html_parts = [f"""<!DOCTYPE html>
     <meta name="theme-color" content="#ff6900" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
 
-    <!-- Preload critical resources -->
-    <link rel="preload" href="assets/css/tw.css" as="style">
+    <!-- Font optimization: Preconnect and asynchronous stylesheet loading to avoid render blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+    </noscript>
+
+    <!-- Critical CSS -->
+    <link rel="preload" href="assets/css/tw.css" as="style">
     <link rel="stylesheet" href="assets/css/tw.css">
 
     <!-- JSON-LD Structured Data -->
@@ -402,7 +369,7 @@ html_parts = [f"""<!DOCTYPE html>
     </script>
 </head>
 <body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 antialiased min-h-screen pb-20 selection:bg-orange-100 selection:text-orange-900 dark:selection:bg-orange-900/40 dark:selection:text-orange-200 transition-colors duration-300">
-    <a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:z-[60] focus:p-4 focus:bg-white dark:focus:bg-slate-800 focus:text-blue-600 dark:focus:text-blue-400 focus:ring-2 focus:ring-blue-500 rounded-lg m-4">跳至主要內容</a>
+    <a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:z-[60] focus:p-4 focus:bg-white dark:focus:bg-slate-800 focus:text-blue-700 dark:focus:text-blue-300 focus:ring-2 focus:ring-blue-500 rounded-lg m-4">跳至主要內容</a>
     
     <header class="sticky top-0 z-50 glass-header transition-all duration-300" role="banner">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -413,7 +380,7 @@ html_parts = [f"""<!DOCTYPE html>
                     </div>
                     <div>
                         <h1 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight leading-none">HyperOS <span class="text-mi-orange">Tracker</span></h1>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 font-medium">
+                        <p class="text-xs text-slate-600 dark:text-slate-300 mt-1 font-medium">
                             <time datetime="{now_tw.strftime('%Y-%m-%dT%H:%M')}">{gen_time}</time> (UTC+8)
                         </p>
                     </div>
@@ -422,33 +389,33 @@ html_parts = [f"""<!DOCTYPE html>
                 <div class="flex items-center gap-2">
                     <!-- Dark mode toggle -->
                     <button type="button" id="themeToggle" aria-label="切換深色模式"
-                        class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition-all border border-transparent hover:border-slate-200 dark:hover:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500/30">
+                        class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition-all border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500/30">
                         <svg id="themeIconSun" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
                         <svg id="themeIconMoon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
                     </button>
                 </div>
             </div>
 
-            <nav class="mt-4" aria-label="篩選選項" role="search">
+            <div class="mt-4" role="search" aria-label="機型搜尋與篩選">
                 <div class="flex flex-col sm:flex-row gap-2 w-full">
                     <div class="relative flex-grow sm:max-w-xs group">
                         <label for="searchInput" class="sr-only">搜尋機型名稱或代號</label>
                         <input type="search" id="searchInput" autocomplete="off"
-                            class="w-full bg-slate-100/50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-800 focus:bg-white dark:focus:bg-slate-800 text-slate-700 dark:text-slate-200 py-2.5 pl-10 pr-4 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:focus:ring-blue-400/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all border border-transparent focus:shadow-sm placeholder-slate-400 dark:placeholder-slate-500" 
+                            class="w-full bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200/60 dark:hover:bg-slate-800 focus:bg-white dark:focus:bg-slate-800 text-slate-800 dark:text-slate-100 py-2.5 pl-10 pr-4 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:focus:ring-blue-400/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all border border-slate-200 dark:border-slate-700 focus:shadow-sm placeholder-slate-500 dark:placeholder-slate-400" 
                             placeholder="搜尋機型...">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400 group-focus-within:text-blue-500 dark:group-focus-within:text-blue-400 transition-colors" aria-hidden="true">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-500 dark:text-slate-400 group-focus-within:text-blue-600 dark:group-focus-within:text-blue-400 transition-colors" aria-hidden="true">
                             <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                         </div>
                     </div>
                     
                     <div class="flex gap-2 overflow-x-auto pb-1 sm:pb-0 no-scrollbar">
                         <label for="brandFilter" class="sr-only">品牌篩選</label>
-                        <select id="brandFilter" class="bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 py-2.5 px-4 pr-8 rounded-xl text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:focus:ring-blue-400/20 border border-slate-200 dark:border-slate-700 cursor-pointer transition-all shadow-sm">
+                        <select id="brandFilter" class="bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 py-2.5 px-4 pr-8 rounded-xl text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:focus:ring-blue-400/20 border border-slate-300 dark:border-slate-600 cursor-pointer transition-all shadow-sm">
                             {brand_options}
                         </select>
                         
                         <label for="daysFilter" class="sr-only">時間範圍篩選</label>
-                        <select id="daysFilter" class="bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 py-2.5 px-4 pr-8 rounded-xl text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:focus:ring-blue-400/20 border border-slate-200 dark:border-slate-700 cursor-pointer transition-all shadow-sm">
+                        <select id="daysFilter" class="bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 py-2.5 px-4 pr-8 rounded-xl text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:focus:ring-blue-400/20 border border-slate-300 dark:border-slate-600 cursor-pointer transition-all shadow-sm">
                             <option value="7">7 天</option>
                             <option value="14">14 天</option>
                             <option value="30" selected>30 天</option>
@@ -457,37 +424,37 @@ html_parts = [f"""<!DOCTYPE html>
                             <option value="365">1 年</option>
                         </select>
                         
-                        <label class="inline-flex items-center cursor-pointer bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all select-none border border-slate-200 dark:border-slate-700 shadow-sm active:scale-95">
+                        <label class="inline-flex items-center cursor-pointer bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all select-none border border-slate-300 dark:border-slate-600 shadow-sm active:scale-95">
                             <input type="checkbox" id="recentFilter" class="sr-only">
-                            <div id="checkboxBox" class="w-4 h-4 rounded border-2 border-slate-300 dark:border-slate-600 mr-2 flex items-center justify-center transition-all bg-slate-50 dark:bg-slate-700" aria-hidden="true">
+                            <div id="checkboxBox" class="w-4 h-4 rounded border-2 border-slate-400 dark:border-slate-500 mr-2 flex items-center justify-center transition-all bg-slate-100 dark:bg-slate-700" aria-hidden="true">
                                 <svg id="checkmark" class="w-3 h-3 text-white scale-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <span class="text-slate-700 dark:text-slate-200">最近</span>
+                            <span class="text-slate-800 dark:text-slate-100">最近</span>
                         </label>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
     </header>
 
     <!-- Stats Bar -->
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" role="region" aria-label="統計摘要">
-            <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 ring-1 ring-gray-900/5 dark:ring-slate-700/50 shadow-sm">
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 ring-1 ring-slate-200 dark:ring-slate-700/50 shadow-sm">
                 <div class="text-2xl font-bold text-slate-900 dark:text-white">{total_devices}</div>
-                <div class="text-xs text-slate-500 dark:text-slate-400 font-medium mt-0.5">追蹤機型</div>
+                <div class="text-xs text-slate-600 dark:text-slate-300 font-medium mt-0.5">追蹤機型</div>
             </div>
-            <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 ring-1 ring-gray-900/5 dark:ring-slate-700/50 shadow-sm">
-                <div class="text-2xl font-bold text-green-600 dark:text-green-400">{recent_7d}</div>
-                <div class="text-xs text-slate-500 dark:text-slate-400 font-medium mt-0.5">7 天內更新</div>
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 ring-1 ring-slate-200 dark:ring-slate-700/50 shadow-sm">
+                <div class="text-2xl font-bold text-emerald-700 dark:text-emerald-400">{recent_7d}</div>
+                <div class="text-xs text-slate-600 dark:text-slate-300 font-medium mt-0.5">7 天內更新</div>
             </div>
-            <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 ring-1 ring-gray-900/5 dark:ring-slate-700/50 shadow-sm">
-                <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">{recent_30d}</div>
-                <div class="text-xs text-slate-500 dark:text-slate-400 font-medium mt-0.5">30 天內更新</div>
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 ring-1 ring-slate-200 dark:ring-slate-700/50 shadow-sm">
+                <div class="text-2xl font-bold text-blue-700 dark:text-blue-400">{recent_30d}</div>
+                <div class="text-xs text-slate-600 dark:text-slate-300 font-medium mt-0.5">30 天內更新</div>
             </div>
-            <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 ring-1 ring-gray-900/5 dark:ring-slate-700/50 shadow-sm">
+            <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 ring-1 ring-slate-200 dark:ring-slate-700/50 shadow-sm">
                 <div class="text-2xl font-bold text-mi-orange">{brand_count}</div>
-                <div class="text-xs text-slate-500 dark:text-slate-400 font-medium mt-0.5">品牌數</div>
+                <div class="text-xs text-slate-600 dark:text-slate-300 font-medium mt-0.5">品牌數</div>
             </div>
         </div>
     </div>
@@ -498,7 +465,7 @@ html_parts = [f"""<!DOCTYPE html>
     <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 space-y-6" id="content" role="main">"""]
 
 # 生成設備卡片
-for device in final_list:
+for index, device in enumerate(final_list):
     tw = device['tw']['latest']
     tw_ver = tw['os']
     tw_date = tw['release']
@@ -506,16 +473,22 @@ for device in final_list:
     image_filename = f'{device["code"]}.png'
     image_file_path = os.path.join(images_dir, image_filename)
 
+    # 針對前 4 個卡片 (首屏可視區域) 使用 eager / fetchpriority=high，其餘使用 lazy loading
+    if index < 4:
+        img_loading_attr = 'loading="eager" fetchpriority="high"'
+    else:
+        img_loading_attr = 'loading="lazy" fetchpriority="auto"'
+
     if os.path.isfile(image_file_path):
         device_visual_html = (
             f'<img src="assets/images/{image_filename}" alt="{device["name"]} 機身圖" '
-            f'width="64" height="80" loading="lazy" decoding="async" '
+            f'width="64" height="80" {img_loading_attr} decoding="async" '
             f'class="h-20 w-16 object-contain flex-shrink-0">'
         )
     else:
         device_visual_html = (
             f'<div class="h-12 w-12 rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 '
-            f'dark:from-slate-700 dark:to-slate-600 flex items-center justify-center text-slate-700 '
+            f'dark:from-slate-700 dark:to-slate-600 flex items-center justify-center text-slate-800 '
             f'dark:text-slate-200 font-bold text-xl flex-shrink-0 shadow-inner" aria-hidden="true">'
             f'{device["name"][0]}</div>'
         )
@@ -530,19 +503,19 @@ for device in final_list:
         is_abandoned = threshold_days > 0 and days_ago > threshold_days
 
         if is_abandoned:
-            ago_html = f'<span class="text-xs font-medium px-1.5 py-0.5 rounded mt-1 text-white" style="background-color: #6b7280;" role="status" aria-label="疑似棄更，已 {days_ago} 天未更新">疑似棄更 ({days_ago} 天)</span>'
+            ago_html = f'<span class="text-xs font-medium px-2 py-0.5 rounded mt-1 text-white bg-slate-700 dark:bg-slate-700" role="status" aria-label="疑似棄更，已 {days_ago} 天未更新">疑似棄更 ({days_ago} 天)</span>'
         else:
             status_text = f"已過 {days_ago} 天"
             if threshold_days > 0:
                 status_text += f" / 棄更門檻 {threshold_days} 天"
 
             if days_ago > 90: 
-                ago_color = "text-orange-700 bg-orange-50 dark:text-orange-400 dark:bg-orange-900/30"
+                ago_color = "text-orange-800 bg-orange-100 dark:text-orange-300 dark:bg-orange-950/60"
             elif days_ago > 30: 
-                ago_color = "text-gray-600 bg-gray-100 dark:text-slate-400 dark:bg-slate-700"
+                ago_color = "text-slate-700 bg-slate-100 dark:text-slate-200 dark:bg-slate-700"
             else: 
-                ago_color = "text-green-700 bg-green-50 dark:text-green-400 dark:bg-green-900/30"
-            ago_html = f'<span class="text-xs font-medium px-1.5 py-0.5 rounded mt-1 {ago_color}">{status_text}</span>'
+                ago_color = "text-emerald-800 bg-emerald-100 dark:text-emerald-300 dark:bg-emerald-950/60"
+            ago_html = f'<span class="text-xs font-medium px-2 py-0.5 rounded mt-1 {ago_color}">{status_text}</span>'
     except: 
         pass
 
@@ -555,7 +528,7 @@ for device in final_list:
     ) if device['others'] else ""
 
     html_parts.append(
-        f'<article class="device-card bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-sm ring-1 ring-gray-900/5 dark:ring-slate-700/50 hover:shadow-xl dark:hover:shadow-lg dark:hover:shadow-black/20 hover:ring-gray-900/10 dark:hover:ring-slate-600/50 transition-all duration-300 transform hover:-translate-y-1" data-brand="{device["brand"]}" data-date="{tw_date}" aria-label="{device["name"]} 更新資訊">'
+        f'<article class="device-card bg-white dark:bg-slate-800 rounded-3xl p-6 shadow-sm ring-1 ring-slate-200/80 dark:ring-slate-700/50 hover:shadow-xl dark:hover:shadow-lg dark:hover:shadow-black/20 hover:ring-slate-300 dark:hover:ring-slate-600/50 transition-all duration-300 transform hover:-translate-y-1" data-brand="{device["brand"]}" data-date="{tw_date}" aria-label="{device["name"]} 更新資訊">'
         
         f'<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-2">'
         f'<div class="flex items-start gap-4">'
@@ -563,16 +536,16 @@ for device in final_list:
         f'<div>'
         f'<h2 class="text-xl font-bold text-slate-900 dark:text-white leading-tight device-title tracking-tight">{device["name"]}</h2>'
         f'<div class="flex items-center gap-2 mt-1.5">'
-        f'<span class="text-[11px] font-mono font-medium text-slate-500 dark:text-slate-400 bg-slate-50 dark:bg-slate-700 px-2 py-1 rounded-lg border border-slate-100 dark:border-slate-600 device-code">{device["code"]}</span>'
-        f'<span class="text-[11px] font-bold text-slate-500 dark:text-slate-400 bg-slate-50 dark:bg-slate-700 px-2 py-1 rounded-lg border border-slate-100 dark:border-slate-600 uppercase tracking-wide">{device["brand"]}</span>'
+        f'<span class="text-[11px] font-mono font-medium text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-700/80 px-2 py-1 rounded-lg border border-slate-200 dark:border-slate-600 device-code">{device["code"]}</span>'
+        f'<span class="text-[11px] font-bold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-700/80 px-2 py-1 rounded-lg border border-slate-200 dark:border-slate-600 uppercase tracking-wide">{device["brand"]}</span>'
         f'</div>'
         f'</div>'
         f'</div>'
         
         f'<div class="flex flex-col items-end">'
         f'<div class="flex items-center gap-2">'
-        f'<span class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">更新於</span>'
-        f'<time datetime="{tw_date}" class="text-sm font-bold text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-700 px-2.5 py-1 rounded-lg border border-slate-100 dark:border-slate-600 font-mono">{tw_date}</time>'
+        f'<span class="text-xs font-bold text-slate-600 dark:text-slate-300 uppercase tracking-wider">更新於</span>'
+        f'<time datetime="{tw_date}" class="text-sm font-bold text-slate-800 dark:text-slate-100 bg-slate-100 dark:bg-slate-700/80 px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-600 font-mono">{tw_date}</time>'
         f'</div>'
         f'{ago_html}'
         f'</div>'
@@ -584,16 +557,19 @@ for device in final_list:
         f'</article>'
     )
 
+# 歷史資料序列化為緊湊 JSON
+history_json_str = json.dumps(rom_history_store, ensure_ascii=False, separators=(',', ':'))
+
 html_parts.append(f"""
     </main>
     
     <!-- Empty state (hidden by default) -->
     <div id="emptyState" class="hidden max-w-5xl mx-auto px-4 py-20 text-center">
-        <svg class="mx-auto h-16 w-16 text-slate-300 dark:text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <svg class="mx-auto h-16 w-16 text-slate-400 dark:text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
         </svg>
-        <h3 class="mt-4 text-lg font-semibold text-slate-700 dark:text-slate-300">找不到符合的機型</h3>
-        <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">請嘗試調整搜尋條件或篩選設定</p>
+        <h3 class="mt-4 text-lg font-semibold text-slate-800 dark:text-slate-200">找不到符合的機型</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">請嘗試調整搜尋條件或篩選設定</p>
     </div>
 
     <!-- Back to top button -->
@@ -603,10 +579,15 @@ html_parts.append(f"""
     
     <footer class="mt-20 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900" role="contentinfo">
         <div class="max-w-5xl mx-auto px-4 py-12 text-center">
-            <p class="text-slate-500 dark:text-slate-400 text-sm font-medium">由 GitHub Actions 自動生成</p>
-            <p class="text-slate-400 dark:text-slate-500 text-xs mt-2">共追蹤 {total_devices} 款機型</p>
+            <p class="text-slate-600 dark:text-slate-300 text-sm font-medium">由 GitHub Actions 自動生成</p>
+            <p class="text-slate-500 dark:text-slate-400 text-xs mt-2">共追蹤 {total_devices} 款機型</p>
         </div>
     </footer>
+
+    <!-- ROM History Data -->
+    <script id="romHistoryData" type="application/json">
+    {history_json_str}
+    </script>
 
     <script>
         /* === Theme Toggle === */
@@ -653,10 +634,88 @@ html_parts.append(f"""
             }});
         }})();
 
+        /* === On-Demand History Table Rendering === */
+        let romHistoryCache = null;
+        function getRomHistory(panelId) {{
+            if (!romHistoryCache) {{
+                const dataEl = document.getElementById('romHistoryData');
+                if (dataEl) {{
+                    try {{
+                        romHistoryCache = JSON.parse(dataEl.textContent);
+                    }} catch (e) {{
+                        romHistoryCache = {{}};
+                    }}
+                }} else {{
+                    romHistoryCache = {{}};
+                }}
+            }}
+            return romHistoryCache[panelId] || null;
+        }}
+
+        function renderHistoryTable(container, romList) {{
+            if (!romList || !romList.length) return;
+            let rowsHtml = '';
+            for (let i = 0; i < romList.length; i++) {{
+                const [os, release, android, aspatch] = romList[i];
+                let intervalHtml = '<span class="text-slate-500 dark:text-slate-400 font-medium" aria-label="無資料">—</span>';
+                if (i < romList.length - 1) {{
+                    try {{
+                        const cur = new Date(release);
+                        const prev = new Date(romList[i+1][1]);
+                        const diffDays = Math.round((cur - prev) / (1000 * 60 * 60 * 24));
+                        if (diffDays >= 0) {{
+                            let colorClass = 'bg-slate-100 text-slate-700 dark:bg-slate-700/80 dark:text-slate-200';
+                            if (diffDays > 90) colorClass = 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300';
+                            else if (diffDays < 30) colorClass = 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300';
+                            intervalHtml = `<span class="px-2 py-0.5 rounded-full text-[10px] font-medium ${{colorClass}}">${{diffDays}} 天</span>`;
+                        }}
+                    }} catch(e) {{}}
+                }} else {{
+                    intervalHtml = '<span class="text-[10px] font-medium text-blue-800 bg-blue-100 dark:text-blue-300 dark:bg-blue-950/60 px-2 py-0.5 rounded-full">首版</span>';
+                }}
+                rowsHtml += `
+                    <tr class="hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors">
+                        <td class="py-2.5 pl-2 font-mono text-slate-800 dark:text-slate-200 font-medium">${{os}}</td>
+                        <td class="py-2.5 text-slate-600 dark:text-slate-300">${{release}}</td>
+                        <td class="py-2.5 text-center">${{intervalHtml}}</td>
+                        <td class="py-2.5 text-right text-slate-600 dark:text-slate-300">${{android || '—'}}</td>
+                        <td class="py-2.5 text-right pr-2 text-slate-600 dark:text-slate-300">${{aspatch || '—'}}</td>
+                    </tr>
+                `;
+            }}
+
+            container.innerHTML = `
+                <div class="overflow-x-auto">
+                    <table class="w-full text-xs text-left whitespace-nowrap" role="table">
+                        <thead class="text-slate-600 dark:text-slate-300 font-semibold border-b border-slate-200 dark:border-slate-700">
+                            <tr>
+                                <th scope="col" class="py-2 pl-2">版本</th>
+                                <th scope="col" class="py-2">日期</th>
+                                <th scope="col" class="py-2 text-center">間隔</th>
+                                <th scope="col" class="py-2 text-right">Android</th>
+                                <th scope="col" class="py-2 text-right pr-2">安全性更新</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 dark:divide-slate-700/50">
+                            ${{rowsHtml}}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+            container.dataset.rendered = "true";
+        }}
+
         /* === History Toggle === */
         function toggleHistory(element) {{
             const historyDiv = element.nextElementSibling;
             if (historyDiv) {{
+                if (historyDiv.dataset.rendered !== 'true') {{
+                    const panelId = historyDiv.id;
+                    const roms = getRomHistory(panelId);
+                    if (roms) {{
+                        renderHistoryTable(historyDiv, roms);
+                    }}
+                }}
                 const isHidden = historyDiv.classList.toggle('hidden');
                 element.setAttribute('aria-expanded', !isHidden);
                 const arrow = element.querySelector('.arrow-icon');
@@ -814,7 +873,6 @@ html_parts.append(f"""
 </body>
 </html>
 """)
-
 
 # 一次性寫入
 with open(output_file, 'w', encoding='utf-8') as f:
