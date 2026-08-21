@@ -59,7 +59,7 @@
 					"release": "2026-08-12",
 					"aspatch": "2026-08-01",
 					"recovery": "beryl-ota_full-OS3.0.306.0.WOQCNXM-user-16.0-429fcb7dd3.zip",
-					"fastboot": "",
+					"fastboot": "beryl_images_OS3.0.306.0.WOQCNXM_20260731.0000.00_16.0_cn_1bcb453c43.tgz",
 					"ctelecom": ""
 				},
 				"OS3.0.305.0.WOQCNXM": {
@@ -1346,7 +1346,7 @@
 					"release": "2026-08-05",
 					"aspatch": "2026-08-01",
 					"recovery": "beryl_id_global-ota_full-OS3.0.302.0.WOQIDXM-user-16.0-f03a6b1b15.zip",
-					"fastboot": ""
+					"fastboot": "beryl_id_global_images_OS3.0.302.0.WOQIDXM_20260724.0000.00_16.0_id_32b3030879.tgz"
 				},
 				"OS3.0.301.0.WOQIDXM": {
 					"os": "OS3.0.301.0.WOQIDXM",
