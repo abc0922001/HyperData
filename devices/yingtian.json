@@ -1,14 +1,16 @@
 {
-	"device": "lhasa",
+	"device": "yingtian",
 	"name": {
-		"zh": "小米 18 Fold",
-		"en": "Xiaomi 18 Fold"
+		"zh": "小米平板 9 Pro Max",
+		"en": "Xiaomi Pad 9 Pro Max"
 	},
-	"code": "PN",
+	"code": "",
 	"supports": [
+		"OS3.0",
 		"OS4.0"
 	],
 	"android": [
+		"16.0",
 		"17.0"
 	],
 	"type": "phone",
@@ -20,11 +22,11 @@
 				"zh": "小米澎湃 OS 正式版",
 				"en": "Xiaomi HyperOS Stable"
 			},
-			"branchCode": "lhasa",
+			"branchCode": "yingtian",
 			"brand": "Xiaomi",
 			"device": {
-				"zh": "小米 18 Fold",
-				"en": "Xiaomi 18 Fold"
+				"zh": "小米平板 9 Pro Max",
+				"en": "Xiaomi Pad 9 Pro Max"
 			},
 			"idtag": "CnOO",
 			"tag": "CNXM",
@@ -34,8 +36,7 @@
 				"android",
 				"release",
 				"recovery",
-				"fastboot",
-				"ctelecom"
+				"fastboot"
 			],
 			"show": "1",
 			"carrier": [
@@ -48,13 +49,12 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
-				"OS4.0.6.0.XPNCNXM": {
-					"os": "OS4.0.6.0.XPNCNXM",
+				"OS4.0.10.0.XBMCNXM": {
+					"os": "OS4.0.10.0.XBMCNXM",
 					"android": "17.0",
 					"release": "2026-09-07",
-					"recovery": "lhasa-ota_full-OS4.0.6.0.XPNCNXM-user-17.0-cd2cf6d748.zip",
-					"fastboot": "lhasa-images-OS4.0.6.0.XPNCNXM-user-20260818.0000.00-17.0-cn-0713b2db15.tgz",
-					"ctelecom": ""
+					"recovery": "yingtian-ota_full-OS4.0.10.0.XBMCNXM-user-17.0-b8fd7d392d.zip",
+					"fastboot": "yingtian-images-OS4.0.10.0.XBMCNXM-user-20260905.0000.00-17.0-cn-6e79a1ed86.tgz"
 				}
 			}
 		},
@@ -63,11 +63,11 @@
 				"zh": "小米澎湃 OS 演示机系统",
 				"en": "Xiaomi HyperOS China MiStore Demo"
 			},
-			"branchCode": "lhasa_demo",
+			"branchCode": "yingtian_demo",
 			"brand": "Xiaomi",
 			"device": {
-				"zh": "小米 18 Fold",
-				"en": "Xiaomi 18 Fold"
+				"zh": "小米平板 9 Pro Max",
+				"en": "Xiaomi Pad 9 Pro Max"
 			},
 			"idtag": "CnOD",
 			"tag": "CNDM",
@@ -91,13 +91,13 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
-				"OS4.0.3.0.XPNCNDM": {
-					"os": "OS4.0.3.0.XPNCNDM",
+				"OS4.0.3.0.XBMCNDM": {
+					"os": "OS4.0.3.0.XBMCNDM",
 					"android": "17.0",
 					"release": "2026-09-07",
 					"aspatch": "2026-08-01",
-					"recovery": "lhasa_demo-ota_full-OS4.0.3.0.XPNCNDM-user-17.0-cc8c1836a2.zip",
-					"fastboot": "lhasa_demo-images-OS4.0.3.0.XPNCNDM-user-20260903.0000.00-17.0-cn-90304778f1.tgz"
+					"recovery": "yingtian_demo-ota_full-OS4.0.3.0.XBMCNDM-user-17.0-55d52529f0.zip",
+					"fastboot": "yingtian_demo-images-OS4.0.3.0.XBMCNDM-user-20260905.0000.00-17.0-cn-ec22b4f68c.tgz"
 				}
 			}
 		}
