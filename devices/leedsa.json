@@ -93,6 +93,14 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.310.0.WDTMIXM": {
+					"os": "OS3.0.310.0.WDTMIXM",
+					"android": "16.0",
+					"release": "2026-09-15",
+					"aspatch": "2026-08-01",
+					"recovery": "leedsa_global-ota_full-OS3.0.310.0.WDTMIXM-user-16.0-f5f1553b2a.zip",
+					"fastboot": ""
+				},
 				"OS3.0.308.0.WDTMIXM": {
 					"os": "OS3.0.308.0.WDTMIXM",
 					"android": "16.0",
@@ -277,6 +285,14 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.304.0.WDTRUXM": {
+					"os": "OS3.0.304.0.WDTRUXM",
+					"android": "16.0",
+					"release": "2026-09-14",
+					"aspatch": "2026-07-01",
+					"recovery": "leedsa_ru_global-ota_full-OS3.0.304.0.WDTRUXM-user-16.0-35dfc7bee3.zip",
+					"fastboot": ""
+				},
 				"OS3.0.302.0.WDTRUXM": {
 					"os": "OS3.0.302.0.WDTRUXM",
 					"android": "16.0",
@@ -332,6 +348,86 @@
 					"aspatch": "2026-08-01",
 					"recovery": "leedsa_id_global-ota_full-OS3.0.302.0.WDTIDXM-user-16.0-0e221dd6b7.zip",
 					"fastboot": "leedsa_id_global_images_OS3.0.302.0.WDTIDXM_20260818.0000.00_16.0_id_5b8d64fb90.tgz"
+				}
+			}
+		},
+		{
+			"name": {
+				"zh": "小米澎湃 OS 印度尼西亚 Demo",
+				"en": "Xiaomi HyperOS Indonesia MiStore Demo"
+			},
+			"branchCode": "leedsa_id_global",
+			"brand": "Xiaomi, REDMI, POCO",
+			"device": {
+				"zh": "",
+				"en": ""
+			},
+			"idtag": "IDDM",
+			"tag": "IDDM",
+			"branchtag": "F",
+			"table": [
+				"os",
+				"android",
+				"release",
+				"aspatch",
+				"recovery",
+				"fastboot"
+			],
+			"show": "0",
+			"carrier": [
+				""
+			],
+			"region": "id",
+			"zone": "2",
+			"ep": "0",
+			"roms": {
+				"OS3.0.302.0.WDTIDDM": {
+					"os": "OS3.0.302.0.WDTIDDM",
+					"android": "16.0",
+					"release": "2026-09-14",
+					"aspatch": "2026-08-01",
+					"recovery": "leedsa_id_global-ota_full-OS3.0.302.0.WDTIDDM-user-16.0-2524607d64.zip",
+					"fastboot": "leedsa_id_global_images_OS3.0.302.0.WDTIDDM_20260904.0000.00_16.0_id_d5387ba28b.tgz"
+				}
+			}
+		},
+		{
+			"name": {
+				"zh": "小米澎湃 OS 土耳其正式版",
+				"en": "Xiaomi HyperOS Turkey Stable"
+			},
+			"branchCode": "leedsa_tr_global",
+			"brand": "REDMI, POCO",
+			"device": {
+				"zh": "REDMI 17 / POCO C95 Pro",
+				"en": "REDMI 17 / POCO C95 Pro"
+			},
+			"idtag": "TRSO",
+			"tag": "TRXM",
+			"branchtag": "F",
+			"table": [
+				"os",
+				"android",
+				"release",
+				"aspatch",
+				"recovery",
+				"fastboot"
+			],
+			"show": "1",
+			"carrier": [
+				""
+			],
+			"region": "tr",
+			"zone": "2",
+			"ep": "0",
+			"roms": {
+				"OS3.0.303.0.WDTTRXM": {
+					"os": "OS3.0.303.0.WDTTRXM",
+					"android": "16.0",
+					"release": "2026-09-15",
+					"aspatch": "2026-08-01",
+					"recovery": "leedsa_tr_global-ota_full-OS3.0.303.0.WDTTRXM-user-16.0-26e5d41145.zip",
+					"fastboot": "leedsa_tr_global_images_OS3.0.303.0.WDTTRXM_20260817.0000.00_16.0_tr_c36891fb2b.tgz"
 				}
 			}
 		},

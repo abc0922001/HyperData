@@ -3,4 +3,5 @@ scripts/database/config.py
 scripts/config.py
 assets/.DS_Store
 .DS_Store
+scripts/logs/*
 node_modules/

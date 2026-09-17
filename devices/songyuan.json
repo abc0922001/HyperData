@@ -122,6 +122,17 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS3.0.304.0.WGNCNDM": {
+					"os": "OS3.0.304.0.WGNCNDM",
+					"android": "16.0",
+					"release": "2026-09-16",
+					"aspatch": "",
+					"recovery": "",
+					"fastboot": "songyuan_demo_images_OS3.0.304.0.WGNCNDM_20260904.0000.00_16.0_cn_f77a322785.tgz",
+					"ctelecom": "",
+					"cnmobile": "",
+					"cnunicom": ""
+				},
 				"OS3.0.303.0.WGNCNDM": {
 					"os": "OS3.0.303.0.WGNCNDM",
 					"android": "16.0",
@@ -216,6 +227,14 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.307.0.WGNMIXM": {
+					"os": "OS3.0.307.0.WGNMIXM",
+					"android": "16.0",
+					"release": "2026-09-14",
+					"aspatch": "2026-08-01",
+					"recovery": "songyuan_global-ota_full-OS3.0.307.0.WGNMIXM-user-16.0-b993252252.zip",
+					"fastboot": ""
+				},
 				"OS3.0.306.0.WGNMIXM": {
 					"os": "OS3.0.306.0.WGNMIXM",
 					"android": "16.0",
@@ -272,6 +291,14 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.308.0.WGNEUXM": {
+					"os": "OS3.0.308.0.WGNEUXM",
+					"android": "16.0",
+					"release": "2026-09-14",
+					"aspatch": "2026-08-01",
+					"recovery": "songyuan_eea_global-ota_full-OS3.0.308.0.WGNEUXM-user-16.0-0e7e06c7d4.zip",
+					"fastboot": ""
+				},
 				"OS3.0.305.0.WGNEUXM": {
 					"os": "OS3.0.305.0.WGNEUXM",
 					"android": "16.0",

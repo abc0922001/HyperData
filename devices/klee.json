@@ -234,6 +234,14 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.304.0.WPJTWXM": {
+					"os": "OS3.0.304.0.WPJTWXM",
+					"android": "16.0",
+					"release": "2026-09-09",
+					"aspatch": "2026-08-01",
+					"recovery": "klee_tw_global-ota_full-OS3.0.304.0.WPJTWXM-user-16.0-cd07b143c7.zip",
+					"fastboot": "klee_tw_global_images_OS3.0.304.0.WPJTWXM_20260828.0000.00_16.0_tw_fddacb7c15.tgz"
+				},
 				"OS3.0.303.0.WPJTWXM": {
 					"os": "OS3.0.303.0.WPJTWXM",
 					"android": "16.0",
@@ -608,7 +616,7 @@
 					"release": "2026-09-03",
 					"aspatch": "2026-08-01",
 					"recovery": "klee_id_global-ota_full-OS3.0.304.0.WPJIDXM-user-16.0-bbe5f369d5.zip",
-					"fastboot": ""
+					"fastboot": "klee_id_global_images_OS3.0.304.0.WPJIDXM_20260825.0000.00_16.0_id_2271c52931.tgz"
 				},
 				"OS3.0.303.0.WPJIDXM": {
 					"os": "OS3.0.303.0.WPJIDXM",

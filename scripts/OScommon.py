@@ -173,8 +173,8 @@ miui_iv = b"0102030405060708"
 check_url = "https://update.miui.com/updates/miotaV3.php"
 
 
-unreleased = ['lhasa', 'moscow', 'brussels', 'chicago', 'pond', 'suiren', 'zephyr', 'coral']
-currentStable = ['lhasa', 'yingtian', 'brussels', 'chicago', 'athens', 'songyuan', 'steppe', 'leedsa', 'mist', 'iolite', 'moscow',  'pond',
+unreleased = ['moscow', 'brussels', 'chicago', 'pond', 'suiren', 'zephyr', 'coral']
+currentStable = ['yupei_d', 'donghai', 'shuntian', 'lhasa', 'yingtian', 'brussels', 'chicago', 'athens', 'songyuan', 'steppe', 'leedsa', 'mist', 'iolite', 'moscow',  'pond',
 								 'warsaw', 'chagall','warhol', 'erhu', 'byron', 'guitar', 'yili', 'prague', 'somalia', 'zephyr', 'suiren', 'coral', 'arctic', 'dew',
 								 'klee', 'dash', 'piano', 'yupei', 'pudding', 'nezha', 'flute', 'organ', 'spinel','charoite','annibale', 'myron',
 								 'pandora', 'popsicle', 'tornado','goya', 'klimt', 'konghou',  'spring', 'lapis', 'kunzite',
@@ -674,6 +674,8 @@ flags = {
 	"goya_lm_cr_global": "goya",
 	"flute_tw_global": "flute",
 	"flute_ru_global": "flute",
+	"leedsa_tr_global": "leedsa",
+	"iolite_in_global": "iolite",
 	"flute_tr_global": "flute",
 	"klimt_dc_global": "klimt",
 	"goya_mx_at_global": "goya",
