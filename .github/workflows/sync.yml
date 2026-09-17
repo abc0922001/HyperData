@@ -1,0 +1,35 @@
+name: Upstream Sync
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  sync_latest_from_upstream:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout target repo
+        uses: actions/checkout@v4
+        with:
+          ref: tw_version
+          fetch-depth: 0
+
+      - name: Sync upstream changes
+        id: sync
+        uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
+        with:
+          upstream_sync_repo: HegeKen/HyperData
+          upstream_sync_branch: main
+          target_sync_branch: tw_version
+          target_repo_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Log sync result
+        run: |
+          [ "${{ steps.sync.outputs.has_new_commits }}" == "true" ] \
+            && echo "New commits were found to sync." \
+            || echo "There were no new commits."
