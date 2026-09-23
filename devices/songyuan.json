@@ -50,6 +50,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS4.0.0.10.XGNCNXM": {
+					"os": "OS4.0.0.10.XGNCNXM",
+					"android": "17.0",
+					"release": "2026-09-22",
+					"aspatch": "2026-09-01",
+					"recovery": "songyuan-ota_full-OS4.0.0.10.XGNCNXM-user-17.0-8a10ab75d5.zip",
+					"fastboot": ""
+				},
 				"OS4.0.0.8.XGNCNXM": {
 					"os": "OS4.0.0.8.XGNCNXM",
 					"android": "17.0",
@@ -342,7 +350,7 @@
 					"release": "2026-09-14",
 					"aspatch": "2026-08-01",
 					"recovery": "songyuan_eea_global-ota_full-OS3.0.308.0.WGNEUXM-user-16.0-0e7e06c7d4.zip",
-					"fastboot": ""
+					"fastboot": "songyuan_eea_global_images_OS3.0.308.0.WGNEUXM_20260912.0000.00_16.0_eea_b93089e61a.tgz"
 				},
 				"OS3.0.305.0.WGNEUXM": {
 					"os": "OS3.0.305.0.WGNEUXM",

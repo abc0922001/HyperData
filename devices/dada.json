@@ -52,6 +52,14 @@
 			"zone": "1",
 			"ep": "0",
 			"roms": {
+				"OS4.0.0.19.XOCCNXM": {
+					"os": "OS4.0.0.19.XOCCNXM",
+					"android": "17.0",
+					"release": "2026-09-22",
+					"aspatch": "2026-09-01",
+					"recovery": "dada-ota_full-OS4.0.0.19.XOCCNXM-user-17.0-8a8cfe8324.zip",
+					"fastboot": ""
+				},
 				"OS4.0.0.16.XOCCNXM": {
 					"os": "OS4.0.0.16.XOCCNXM",
 					"android": "17.0",
@@ -1458,6 +1466,14 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.305.0.WOCEUXM": {
+					"os": "OS3.0.305.0.WOCEUXM",
+					"android": "16.0",
+					"release": "2026-09-21",
+					"aspatch": "2026-08-01",
+					"recovery": "dada_eea_global-ota_full-OS3.0.305.0.WOCEUXM-user-16.0-c9e2da12e4.zip",
+					"fastboot": ""
+				},
 				"OS3.0.304.0.WOCEUXM": {
 					"os": "OS3.0.304.0.WOCEUXM",
 					"android": "16.0",
