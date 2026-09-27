@@ -1,17 +1,101 @@
 {
   "recent": {
-    "time": "2026-09-26 13:32:37",
+    "time": "2026-09-27 23:43:09",
     "developing": "no",
     "roms": {
-      "fire": {
+      "chenfeng": {
         "name": {
-          "zh": "Redmi 12 国际",
-          "en": "Redmi 12"
+          "zh": "小米 Civi 4 Pro / 小米 14 Civi",
+          "en": "Xiaomi Civi 4 Pro / Xiaomi 14 Civi"
         },
         "versions": [
           {
-            "insert_date": "2026-09-26",
-            "version": "OS2.0.210.0.VMXMIXM"
+            "insert_date": "2026-09-27",
+            "version": "OS3.0.303.0.WNJINXM"
+          }
+        ]
+      },
+      "lhasa": {
+        "name": {
+          "zh": "小米 18 Fold",
+          "en": "Xiaomi 18 Fold"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-09-27",
+            "version": "OS4.0.21.0.XPNCNXM"
+          }
+        ]
+      },
+      "ziyi": {
+        "name": {
+          "zh": "小米 Civi 2",
+          "en": "Xiaomi Civi 2"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-09-27",
+            "version": "OS3.0.5.0.VLLMIXM"
+          }
+        ]
+      },
+      "hongkong": {
+        "name": {
+          "zh": "小米 18 Pro",
+          "en": "Xiaomi 18 Pro"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-09-27",
+            "version": "OS4.0.11.0.XFRCNXM"
+          },
+          {
+            "insert_date": "2026-09-24",
+            "version": "OS4.0.4.0.XFRCNXM"
+          },
+          {
+            "insert_date": "2026-09-24",
+            "version": "OS4.0.9.0.XFRCNXM"
+          }
+        ]
+      },
+      "madrid": {
+        "name": {
+          "zh": "小米 18 Pro Max",
+          "en": "Xiaomi 18 Pro Max"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-09-27",
+            "version": "OS4.0.11.0.XEOCNXM"
+          },
+          {
+            "insert_date": "2026-09-24",
+            "version": "OS4.0.5.0.XEOCNXM"
+          },
+          {
+            "insert_date": "2026-09-24",
+            "version": "OS4.0.9.0.XEOCNXM"
+          }
+        ]
+      },
+      "songyuan": {
+        "name": {
+          "zh": "REDMI K100 Pro Max",
+          "en": "REDMI K100 Pro Max"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-09-27",
+            "version": "OS3.0.303.0.WGNTWXM"
+          },
+          {
+            "insert_date": "2026-09-25",
+            "version": "OS3.0.308.0.WGNJPXM"
+          },
+          {
+            "insert_date": "2026-09-23",
+            "version": "OS4.0.0.10.XGNCNXM"
           }
         ]
       },
@@ -21,6 +105,14 @@
           "en": "REDMI Note 17 4G"
         },
         "versions": [
+          {
+            "insert_date": "2026-09-27",
+            "version": "OS3.0.305.0.WBUMIDC"
+          },
+          {
+            "insert_date": "2026-09-27",
+            "version": "OS3.0.306.0.WBUIDXM"
+          },
           {
             "insert_date": "2026-09-26",
             "version": "OS3.0.307.0.WBUEUXM"
@@ -36,6 +128,78 @@
           {
             "insert_date": "2026-09-25",
             "version": "OS3.0.305.0.WBUIDXM"
+          }
+        ]
+      },
+      "piano": {
+        "name": {
+          "zh": "小米平板 8 Pro",
+          "en": "Xiaomi Pad 8 Pro"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-09-27",
+            "version": "OS3.0.304.0.WPYMIXM"
+          },
+          {
+            "insert_date": "2026-09-21",
+            "version": "OS3.0.309.0.WPYCNXM"
+          }
+        ]
+      },
+      "yupei": {
+        "name": {
+          "zh": "小米平板8 / 小米平板 9",
+          "en": "Xiaomi Pad 8 / Xiaomi Pad 9"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-09-27",
+            "version": "OS3.0.305.0.WPZMIXM"
+          }
+        ]
+      },
+      "ruyi": {
+        "name": {
+          "zh": "小米 MIX Flip",
+          "en": "Xiaomi MIX Flip"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-09-27",
+            "version": "OS3.0.303.0.WNIRUXM"
+          },
+          {
+            "insert_date": "2026-09-21",
+            "version": "OS3.0.306.0.WNICNXM"
+          }
+        ]
+      },
+      "sheng": {
+        "name": {
+          "zh": "小米平板 6S Pro 12.4",
+          "en": "Xiaomi Pad 6S Pro 12.4"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-09-27",
+            "version": "OS3.0.305.0.WNXMIXM"
+          },
+          {
+            "insert_date": "2026-09-21",
+            "version": "OS3.0.306.0.WNXCNXM"
+          }
+        ]
+      },
+      "fire": {
+        "name": {
+          "zh": "Redmi 12 国际",
+          "en": "Redmi 12"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-09-26",
+            "version": "OS2.0.210.0.VMXMIXM"
           }
         ]
       },
@@ -284,10 +448,6 @@
           {
             "insert_date": "2026-09-23",
             "version": "OS4.0.0.12.XOKCNXM"
-          },
-          {
-            "insert_date": "2026-09-20",
-            "version": "OS4.0.0.9.XOKCNXM"
           }
         ]
       },
@@ -387,22 +547,6 @@
           }
         ]
       },
-      "songyuan": {
-        "name": {
-          "zh": "REDMI K100 Pro Max",
-          "en": "REDMI K100 Pro Max"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-09-25",
-            "version": "OS3.0.308.0.WGNJPXM"
-          },
-          {
-            "insert_date": "2026-09-23",
-            "version": "OS4.0.0.10.XGNCNXM"
-          }
-        ]
-      },
       "shuntian": {
         "name": {
           "zh": "小米 Pad 9 Pro",
@@ -444,38 +588,6 @@
           {
             "insert_date": "2026-09-24",
             "version": "OS2.0.210.0.VGPMIDC"
-          }
-        ]
-      },
-      "madrid": {
-        "name": {
-          "zh": "小米 18 Pro Max",
-          "en": "Xiaomi 18 Pro Max"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-09-24",
-            "version": "OS4.0.5.0.XEOCNXM"
-          },
-          {
-            "insert_date": "2026-09-24",
-            "version": "OS4.0.9.0.XEOCNXM"
-          }
-        ]
-      },
-      "hongkong": {
-        "name": {
-          "zh": "小米 18 Pro",
-          "en": "Xiaomi 18 Pro"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-09-24",
-            "version": "OS4.0.4.0.XFRCNXM"
-          },
-          {
-            "insert_date": "2026-09-24",
-            "version": "OS4.0.9.0.XFRCNXM"
           }
         ]
       },
@@ -524,10 +636,6 @@
           {
             "insert_date": "2026-09-23",
             "version": "OS4.0.0.10.XOMCNXM"
-          },
-          {
-            "insert_date": "2026-09-20",
-            "version": "OS4.0.0.9.XOMCNXM"
           }
         ]
       },
@@ -540,10 +648,6 @@
           {
             "insert_date": "2026-09-23",
             "version": "OS4.0.0.8.XONCNXM"
-          },
-          {
-            "insert_date": "2026-09-20",
-            "version": "OS3.0.307.0.WONCNXM"
           }
         ]
       },
@@ -623,42 +727,6 @@
           }
         ]
       },
-      "sheng": {
-        "name": {
-          "zh": "小米平板 6S Pro 12.4",
-          "en": "Xiaomi Pad 6S Pro 12.4"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-09-21",
-            "version": "OS3.0.306.0.WNXCNXM"
-          }
-        ]
-      },
-      "piano": {
-        "name": {
-          "zh": "小米平板 8 Pro",
-          "en": "Xiaomi Pad 8 Pro"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-09-21",
-            "version": "OS3.0.309.0.WPYCNXM"
-          }
-        ]
-      },
-      "ruyi": {
-        "name": {
-          "zh": "小米 MIX Flip",
-          "en": "Xiaomi MIX Flip"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-09-21",
-            "version": "OS3.0.306.0.WNICNXM"
-          }
-        ]
-      },
       "sapphire": {
         "name": {
           "zh": "Redmi Note 13 4G",
@@ -668,46 +736,6 @@
           {
             "insert_date": "2026-09-21",
             "version": "OS2.0.206.0.VNGLMCR"
-          }
-        ]
-      },
-      "goya": {
-        "name": {
-          "zh": "小米 15T",
-          "en": "Xiaomi 15T"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-09-20",
-            "version": "OS3.0.310.0.WOEEUXM"
-          }
-        ]
-      },
-      "dash": {
-        "name": {
-          "zh": "REDMI Turbo 5 MAX / POCO X8 Pro MAX",
-          "en": "REDMI Turbo 5 MAX / POCO X8 Pro MAX"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-09-20",
-            "version": "OS3.0.306.0.WPLCNXM"
-          }
-        ]
-      },
-      "rothko": {
-        "name": {
-          "zh": "Redmi K70 至尊版 / 小米 14T Pro",
-          "en": "Redmi K70 Ultra / Xiaomi 14T Pro"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-09-20",
-            "version": "OS3.0.303.0.WNNMIXM"
-          },
-          {
-            "insert_date": "2026-09-20",
-            "version": "OS3.0.305.0.WNNEUXM"
           }
         ]
       }
