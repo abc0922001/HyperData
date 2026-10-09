@@ -1,6 +1,6 @@
 {
   "recent": {
-    "time": "2026-10-09 11:53:14",
+    "time": "2026-10-09 23:30:47",
     "developing": "no",
     "roms": {
       "malachite": {
@@ -27,12 +27,60 @@
           }
         ]
       },
+      "dijun": {
+        "name": {
+          "zh": "小米 15S Pro",
+          "en": "Xiaomi 15S Pro"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-10-09",
+            "version": "OS3.0.304.0.WODCNXM"
+          }
+        ]
+      },
+      "plato": {
+        "name": {
+          "zh": "小米 12T",
+          "en": "Xiaomi 12T"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-10-09",
+            "version": "OS2.0.219.0.VLQMIXM"
+          },
+          {
+            "insert_date": "2026-10-09",
+            "version": "OS2.0.218.0.VLQEUXM"
+          }
+        ]
+      },
+      "hongkong": {
+        "name": {
+          "zh": "小米 18 Pro",
+          "en": "Xiaomi 18 Pro"
+        },
+        "versions": [
+          {
+            "insert_date": "2026-10-09",
+            "version": "OS4.0.24.0.XFRCNXM"
+          },
+          {
+            "insert_date": "2026-10-04",
+            "version": "OS4.0.18.0.XFRCNXM"
+          }
+        ]
+      },
       "madrid": {
         "name": {
           "zh": "小米 18 Pro Max",
           "en": "Xiaomi 18 Pro Max"
         },
         "versions": [
+          {
+            "insert_date": "2026-10-09",
+            "version": "OS4.0.24.0.XEOCNXM"
+          },
           {
             "insert_date": "2026-10-08",
             "version": "OS4.0.22.0.XEOCNXM"
@@ -396,18 +444,6 @@
           {
             "insert_date": "2026-10-04",
             "version": "OS3.0.312.0.WMBCNXM"
-          }
-        ]
-      },
-      "hongkong": {
-        "name": {
-          "zh": "小米 18 Pro",
-          "en": "Xiaomi 18 Pro"
-        },
-        "versions": [
-          {
-            "insert_date": "2026-10-04",
-            "version": "OS4.0.18.0.XFRCNXM"
           }
         ]
       }
