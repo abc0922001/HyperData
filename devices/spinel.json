@@ -357,7 +357,7 @@
 					"release": "2026-10-12",
 					"aspatch": "2026-09-01",
 					"recovery": "spinel_eea_global-ota_full-OS3.0.302.0.WPGEUXM-user-16.0-2ac8f2c1a1.zip",
-					"fastboot": ""
+					"fastboot": "spinel_eea_global_images_OS3.0.302.0.WPGEUXM_20260923.0000.00_16.0_eea_4483395282.tgz"
 				},
 				"OS3.0.301.0.WPGEUXM": {
 					"os": "OS3.0.301.0.WPGEUXM",
@@ -469,7 +469,7 @@
 					"release": "2026-10-12",
 					"aspatch": "2026-09-01",
 					"recovery": "spinel_ru_global-ota_full-OS3.0.302.0.WPGRUXM-user-16.0-d17860fe79.zip",
-					"fastboot": ""
+					"fastboot": "spinel_ru_global_images_OS3.0.302.0.WPGRUXM_20260923.0000.00_16.0_ru_54b01648ac.tgz"
 				},
 				"OS3.0.301.0.WPGRUXM": {
 					"os": "OS3.0.301.0.WPGRUXM",
@@ -575,6 +575,14 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.302.0.WPGIDXM": {
+					"os": "OS3.0.302.0.WPGIDXM",
+					"android": "16.0",
+					"release": "2026-10-20",
+					"aspatch": "2026-10-01",
+					"recovery": "spinel_id_global-ota_full-OS3.0.302.0.WPGIDXM-user-16.0-1cd7cada14.zip",
+					"fastboot": ""
+				},
 				"OS3.0.301.0.WPGIDXM": {
 					"os": "OS3.0.301.0.WPGIDXM",
 					"android": "16.0",
@@ -663,6 +671,14 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.302.0.WPGTRXM": {
+					"os": "OS3.0.302.0.WPGTRXM",
+					"android": "16.0",
+					"release": "2026-10-20",
+					"aspatch": "2026-10-01",
+					"recovery": "spinel_tr_global-ota_full-OS3.0.302.0.WPGTRXM-user-16.0-5acf71afa1.zip",
+					"fastboot": ""
+				},
 				"OS3.0.301.0.WPGTRXM": {
 					"os": "OS3.0.301.0.WPGTRXM",
 					"android": "16.0",
@@ -749,7 +765,7 @@
 					"release": "2026-10-16",
 					"aspatch": "2026-10-01",
 					"recovery": "spinel_lm_cr_global-ota_full-OS3.0.4.0.WPGLMCR-user-16.0-c7416da362.zip",
-					"fastboot": ""
+					"fastboot": "spinel_lm_cr_global_images_OS3.0.4.0.WPGLMCR_20261010.0000.00_16.0_lm_cr_1ee9f26d8b.tgz"
 				},
 				"OS3.0.3.0.WPGLMCR": {
 					"os": "OS3.0.3.0.WPGLMCR",

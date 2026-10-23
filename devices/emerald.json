@@ -727,7 +727,7 @@
 					"release": "2026-10-12",
 					"aspatch": "2026-09-01",
 					"recovery": "emerald_ru_global-ota_full-OS3.0.303.0.WNFRUXM-user-16.0-de7445bfc9.zip",
-					"fastboot": ""
+					"fastboot": "emerald_ru_global_images_OS3.0.303.0.WNFRUXM_20260923.0000.00_16.0_ru_fd2d9ee35f.tgz"
 				},
 				"OS3.0.302.0.WNFRUXM": {
 					"os": "OS3.0.302.0.WNFRUXM",
@@ -1175,7 +1175,7 @@
 					"release": "2026-10-12",
 					"aspatch": "2026-09-01",
 					"recovery": "emerald_tr_global-ota_full-OS3.0.303.0.WNFTRXM-user-16.0-0264d9510a.zip",
-					"fastboot": ""
+					"fastboot": "emerald_tr_global_images_OS3.0.303.0.WNFTRXM_20260923.0000.00_16.0_tr_28750a255a.tgz"
 				},
 				"OS3.0.302.0.WNFTRXM": {
 					"os": "OS3.0.302.0.WNFTRXM",
@@ -1393,6 +1393,14 @@
 			"zone": "2",
 			"ep": "0",
 			"roms": {
+				"OS3.0.303.0.WNFMXAT": {
+					"os": "OS3.0.303.0.WNFMXAT",
+					"android": "16.0",
+					"release": "2026-10-21",
+					"aspatch": "2026-10-01",
+					"recovery": "emerald_mx_at_global-ota_full-OS3.0.303.0.WNFMXAT-user-16.0-31f495e853.zip",
+					"fastboot": ""
+				},
 				"OS3.0.302.0.WNFMXAT": {
 					"os": "OS3.0.302.0.WNFMXAT",
 					"android": "16.0",
