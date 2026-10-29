@@ -1106,7 +1106,7 @@
 					"release": "2026-08-31",
 					"aspatch": "2026-08-01",
 					"recovery": "miui_EARTHEEAVFGlobal_OS1.0.23.0.UCVEUVF_542511d6d8_14.0.zip",
-					"fastboot": ""
+					"fastboot": "earth_eea_vf_global_images_OS1.0.23.0.UCVEUVF_20260825.0000.00_14.0_eea_vodafone_1edac090c4.tgz"
 				},
 				"OS1.0.22.0.UCVEUVF": {
 					"os": "OS1.0.22.0.UCVEUVF",
@@ -2306,6 +2306,46 @@
 					"release": "2024-10-29",
 					"aspatch": "2024-02-01",
 					"recovery": "miui_EARTHLMMSGlobal_OS1.0.1.0.UCVLMMS_39e018e13b_14.0.zip",
+					"fastboot": ""
+				}
+			}
+		},
+		{
+			"name": {
+				"zh": "小米澎湃 OS 墨西哥Telcel运营商定制版",
+				"en": "Xiaomi HyperOS Mexico Telcel Carrier Edtion"
+			},
+			"branchCode": "earth_mx_tc_global",
+			"brand": "Redmi",
+			"device": {
+				"zh": "Redmi 12C / POCO C55",
+				"en": "Redmi 12C / POCO C55"
+			},
+			"idtag": "MXTC",
+			"tag": "MXTC",
+			"branchtag": "F",
+			"table": [
+				"os",
+				"android",
+				"release",
+				"aspatch",
+				"recovery",
+				"fastboot"
+			],
+			"show": "1",
+			"carrier": [
+				"tc"
+			],
+			"region": "mx",
+			"zone": "2",
+			"ep": "0",
+			"roms": {
+				"OS1.0.8.0.UCVMXTC": {
+					"os": "OS1.0.8.0.UCVMXTC",
+					"android": "14.0",
+					"release": "2025-04-23",
+					"aspatch": "2025-04-01",
+					"recovery": "miui_EARTHMXTCGlobal_OS1.0.8.0.UCVMXTC_2fe8eadf50_14.0.zip",
 					"fastboot": ""
 				}
 			}

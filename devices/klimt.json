@@ -861,7 +861,7 @@
 					"release": "2026-10-20",
 					"aspatch": "2026-10-01",
 					"recovery": "klimt_tr_global-ota_full-OS3.0.303.0.WOSTRXM-user-16.0-648b2ff852.zip",
-					"fastboot": ""
+					"fastboot": "klimt_tr_global_images_OS3.0.303.0.WOSTRXM_20261013.0000.00_16.0_tr_9606fdb5d8.tgz"
 				},
 				"OS3.0.302.0.WOSTRXM": {
 					"os": "OS3.0.302.0.WOSTRXM",
@@ -965,7 +965,7 @@
 					"release": "2026-10-22",
 					"aspatch": "2026-10-01",
 					"recovery": "klimt_jp_global-ota_full-OS3.0.303.0.WOSJPXM-user-16.0-b4393b58e8.zip",
-					"fastboot": ""
+					"fastboot": "klimt_jp_global_images_OS3.0.303.0.WOSJPXM_20261016.0000.00_16.0_jp_6ae1347294.tgz"
 				},
 				"OS3.0.302.0.WOSJPXM": {
 					"os": "OS3.0.302.0.WOSJPXM",
@@ -1190,6 +1190,46 @@
 					"aspatch": "2025-08-01",
 					"recovery": "klimt_lm_cr_global-ota_full-OS2.0.202.0.VOSLMCR-user-15.0-f845bf7c4c.zip",
 					"fastboot": "klimt_lm_cr_global_images_OS2.0.202.0.VOSLMCR_20250810.0000.00_15.0_lm_cr_e8510efffe.tgz"
+				}
+			}
+		},
+		{
+			"name": {
+				"zh": "小米澎湃 OS 墨西哥Telcel运营商定制版",
+				"en": "Xiaomi HyperOS Mexico Telcel Carrier Edition"
+			},
+			"branchCode": "klimt_mx_tc_global",
+			"brand": "Xiaomi",
+			"device": {
+				"zh": "小米 15T Pro",
+				"en": "Xiaomi 15T Pro"
+			},
+			"idtag": "MXTC",
+			"tag": "MXTC",
+			"branchtag": "F",
+			"table": [
+				"os",
+				"android",
+				"release",
+				"aspatch",
+				"recovery",
+				"fastboot"
+			],
+			"show": "1",
+			"carrier": [
+				"tc"
+			],
+			"region": "mx",
+			"zone": "2",
+			"ep": "0",
+			"roms": {
+				"OS3.0.303.0.WOSMXTC": {
+					"os": "OS3.0.303.0.WOSMXTC",
+					"android": "16.0",
+					"release": "2026-09-22",
+					"aspatch": "2026-09-01",
+					"recovery": "klimt_mx_tc_global-ota_full-OS3.0.303.0.WOSMXTC-user-16.0-1ca47b6a32.zip",
+					"fastboot": ""
 				}
 			}
 		}
