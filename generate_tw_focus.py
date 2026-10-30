@@ -33,9 +33,14 @@ def version_to_tuple(v_str):
 # === 優化 2: 預編譯地區對照表 ===
 REGION_MAPPING = {
     "欧洲": "歐洲", "俄罗斯": "俄羅斯", "印度尼西亚": "印尼",
-    "土耳其": "土耳其", "韩国": "韓國", "中国大陆": "中國",
-    "中国": "中國", "演示机": "演示機", "运营商": "電信商",
-    "定制": "客製", "政企标准": "政企標準", "政企": "政企"
+    "土耳其": "土耳其", "韩国": "韓國", "泰国": "泰國",
+    "危地马拉": "瓜地馬拉", "秘鲁": "秘魯",
+    "中国大陆": "中國", "中国": "中國", "大陆": "中國",
+    "国际": "國際", "演示机": "演示機", "系统": "系統",
+    "运营商": "電信商", "定制": "客製",
+    "政企标准": "政企標準", "政企": "政企",
+    "体验增强": "體驗增強", "开发者": "開發者", "预览": "預覽",
+    "每日构建": "每日建置"
 }
 
 def get_region_label(branch_name_zh):
@@ -44,7 +49,7 @@ def get_region_label(branch_name_zh):
     if name == "开发版": return "開發版"
     if name == "Beta": return "Beta"
     
-    core_name = name.replace("正式版", "").replace("版", "").strip()
+    core_name = name.replace("正式版", "").replace("版本", "").replace("版", "").strip()
     if core_name in REGION_MAPPING:
         return REGION_MAPPING[core_name]
     if core_name in ("EEA", "欧洲EEA"): return "歐洲 EEA"
