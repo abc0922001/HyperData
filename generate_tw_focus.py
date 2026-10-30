@@ -59,6 +59,20 @@ def get_region_label(branch_name_zh):
         processed_name = processed_name.replace(sc, tc)
     return processed_name
 
+DEVICE_NAME_MAPPING = {
+    "国际": "國際", "电竞": "電競", "极速": "極速",
+    "游戏": "遊戲", "增强": "增強", "纪念": "紀念",
+    "天玑": "天璣", "钛金属": "鈦金屬", "卫星通讯": "衛星通訊",
+    "后排": "後排", "移动": "移動", "控制屏": "控制螢幕",
+    "智能座舱": "智慧座艙", "标准": "標準", "长焦": "長焦",
+    "闪充": "閃充", "冠军": "冠軍", "骁龙": "驍龍"
+}
+
+def get_device_name(name_zh):
+    for sc, tc in DEVICE_NAME_MAPPING.items():
+        name_zh = name_zh.replace(sc, tc)
+    return name_zh
+
 # === 優化 3: 預解析日期避免重複轉換 ===
 def parse_history_dates(history_list):
     """提取並解析所有日期一次"""
@@ -117,7 +131,7 @@ for file_path in json_files:
         with open(file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
-        device_name = data.get('name', {}).get('zh', 'Unknown Device')
+        device_name = get_device_name(data.get('name', {}).get('zh', 'Unknown Device'))
         device_code = data.get('device', '')
         
         if device_code not in devices_map:
