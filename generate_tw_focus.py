@@ -242,7 +242,7 @@ def generate_card_html(info, region_label, region_type, tw_ver_str=None):
     if not info:
         if region_type == 'global':
             return (
-                '<div class="flex items-center justify-center p-4 rounded-xl border border-dashed border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-800/50 h-[104px]">'
+                '<div class="flex items-center justify-center p-4 rounded-xl border border-dashed border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-800/50 min-h-[6.5rem]">'
                 '<span class="text-xs text-slate-500 dark:text-slate-400 font-medium italic">無國際版資料</span>'
                 '</div>'
             )
@@ -258,11 +258,11 @@ def generate_card_html(info, region_label, region_type, tw_ver_str=None):
         tw_tup = version_to_tuple(tw_ver_str)
         curr_tup = version_to_tuple(ver_str)
         if tw_tup < curr_tup:
-            ver_status_tag = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full text-emerald-800 bg-emerald-100 border border-emerald-200 shadow-sm dark:text-emerald-300 dark:bg-emerald-950/60 dark:border-emerald-800" role="status">領先</span>'
+            ver_status_tag = '<span class="text-[0.625rem] font-bold px-2 py-0.5 rounded-full text-emerald-800 bg-emerald-100 border border-emerald-200 shadow-sm dark:text-emerald-300 dark:bg-emerald-950/60 dark:border-emerald-800" role="status">領先</span>'
         elif tw_tup > curr_tup:
-            ver_status_tag = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full text-rose-800 bg-rose-100 border border-rose-200 shadow-sm dark:text-rose-300 dark:bg-rose-950/60 dark:border-rose-800" role="status">落後</span>'
+            ver_status_tag = '<span class="text-[0.625rem] font-bold px-2 py-0.5 rounded-full text-rose-800 bg-rose-100 border border-rose-200 shadow-sm dark:text-rose-300 dark:bg-rose-950/60 dark:border-rose-800" role="status">落後</span>'
         else:
-            ver_status_tag = '<span class="text-[10px] font-bold px-2 py-0.5 rounded-full text-slate-700 bg-slate-100 border border-slate-200 dark:text-slate-200 dark:bg-slate-700 dark:border-slate-600" role="status">同步</span>'
+            ver_status_tag = '<span class="text-[0.625rem] font-bold px-2 py-0.5 rounded-full text-slate-700 bg-slate-100 border border-slate-200 dark:text-slate-200 dark:bg-slate-700 dark:border-slate-600" role="status">同步</span>'
 
     # Style Configuration with WCAG AA compliant contrast ratios
     styles = {
@@ -292,30 +292,30 @@ def generate_card_html(info, region_label, region_type, tw_ver_str=None):
     try:
         dt = datetime.strptime(latest['release'], "%Y-%m-%d").replace(tzinfo=tz_tw)
         days = (now_tw - dt).days
-        ago_html = f'<div class="text-[10px] text-slate-600 dark:text-slate-300 font-medium mt-1">({days} 天前)</div>'
+        ago_html = f'<div class="text-[0.625rem] text-slate-600 dark:text-slate-300 font-medium mt-1 tabular-nums">({days} 天前)</div>'
     except: 
         pass
 
     return (
         f'<div class="{group_class} relative">'
-        f'<button type="button" onclick="toggleHistory(this)" aria-expanded="false" aria-controls="{panel_id}" '
-        f'class="w-full text-left cursor-pointer flex flex-col p-4 rounded-xl {bg_color} border {border_color} {hover_border} transition-all duration-200 shadow-sm hover:shadow-md dark:shadow-none dark:hover:shadow-lg dark:hover:shadow-black/10 relative select-none focus:outline-none focus:ring-2 focus:ring-blue-500/30 dark:focus:ring-blue-400/30">'
+        f'<button type="button" data-history-toggle aria-expanded="false" aria-controls="{panel_id}" '
+        f'class="w-full text-left cursor-pointer flex flex-col p-4 rounded-xl {bg_color} border {border_color} {hover_border} transition-all duration-200 shadow-sm hover:shadow-md dark:shadow-none dark:hover:shadow-lg dark:hover:shadow-black/10 relative select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:focus-visible:ring-blue-400">'
         
         f'<div class="flex items-center justify-between w-full mb-2">'
-        f'<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wide {badge_bg} {badge_text}">{region_label}</span>'
+        f'<span class="inline-flex items-center px-2 py-0.5 rounded text-[0.625rem] font-bold uppercase tracking-wide {badge_bg} {badge_text}">{region_label}</span>'
         f'{ver_status_tag}'
         f'</div>'
         
         f'<div class="flex items-end justify-between w-full">'
         f'<div>'
-        f'<div class="text-sm font-mono text-slate-900 dark:text-slate-100 font-bold tracking-tight">{ver_str}</div>'
-        f'<div class="text-[10px] text-slate-600 dark:text-slate-300 font-medium mt-0.5">Android {latest["android"]}</div>'
-        f'<div class="text-[10px] text-slate-600 dark:text-slate-300 font-medium mt-0.5">安全性更新：{latest["aspatch"] or "—"}</div>'
+        f'<div class="text-sm font-mono tabular-nums text-slate-900 dark:text-slate-100 font-bold tracking-tight">{ver_str}</div>'
+        f'<div class="text-[0.625rem] text-slate-600 dark:text-slate-300 font-medium mt-0.5">Android {latest["android"]}</div>'
+        f'<div class="text-[0.625rem] text-slate-600 dark:text-slate-300 font-medium mt-0.5">安全性更新：{latest["aspatch"] or "—"}</div>'
         f'</div>'
         
         f'<div class="flex flex-col items-end">'
         f'<div class="flex items-center gap-1.5">'
-        f'<div class="text-xs font-semibold text-slate-700 dark:text-slate-200">{latest["release"]}</div>'
+        f'<div class="text-xs font-semibold tabular-nums text-slate-700 dark:text-slate-200">{latest["release"]}</div>'
         f'<svg class="w-3.5 h-3.5 text-slate-500 dark:text-slate-400 transition-transform duration-200 arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>'
         f'</div>'
         f'{ago_html}'
@@ -351,6 +351,19 @@ html_parts = [f"""<!DOCTYPE html>
     <meta name="twitter:description" content="追蹤 {total_devices} 款小米機型的 HyperOS 台灣版 ROM 更新狀態。">
 
     <link rel="canonical" href="https://hyperos.fans/tw.html">
+    <meta name="color-scheme" content="light dark">
+    <script>
+        (function() {{
+            try {{
+                const saved = localStorage.getItem('theme');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const isDark = saved === 'dark' || (!saved && prefersDark);
+                document.documentElement.classList.toggle('dark', isDark);
+                document.querySelector('meta[name="color-scheme"]').content = saved || 'light dark';
+            }} catch (e) {{}}
+        }})();
+    </script>
+    <meta name="text-scale" content="scale">
     <meta name="theme-color" content="#ff6900" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
 
@@ -364,7 +377,6 @@ html_parts = [f"""<!DOCTYPE html>
     </noscript>
 
     <!-- Critical CSS -->
-    <link rel="preload" href="assets/css/tw.css" as="style">
     <link rel="stylesheet" href="assets/css/tw.css">
 
     <!-- JSON-LD Structured Data -->
@@ -390,7 +402,7 @@ html_parts = [f"""<!DOCTYPE html>
 <body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 antialiased min-h-screen pb-20 selection:bg-orange-100 selection:text-orange-900 dark:selection:bg-orange-900/40 dark:selection:text-orange-200 transition-colors duration-300">
     <a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:z-[60] focus:p-4 focus:bg-white dark:focus:bg-slate-800 focus:text-blue-700 dark:focus:text-blue-300 focus:ring-2 focus:ring-blue-500 rounded-lg m-4">跳至主要內容</a>
     
-    <header class="sticky top-0 z-50 glass-header transition-all duration-300" role="banner">
+    <header class="sticky top-0 z-50 glass-header transition-all duration-300">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div class="flex items-center gap-3">
@@ -399,7 +411,7 @@ html_parts = [f"""<!DOCTYPE html>
                     </div>
                     <div>
                         <h1 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight leading-none">HyperOS <span class="text-mi-orange">Tracker</span></h1>
-                        <p class="text-xs text-slate-600 dark:text-slate-300 mt-1 font-medium">
+                        <p class="text-xs text-slate-600 dark:text-slate-300 mt-1 font-medium tabular-nums">
                             <time datetime="{now_tw.strftime('%Y-%m-%dT%H:%M')}">{gen_time}</time> (UTC+8)
                         </p>
                     </div>
@@ -408,19 +420,19 @@ html_parts = [f"""<!DOCTYPE html>
                 <div class="flex items-center gap-2">
                     <!-- Dark mode toggle -->
                     <button type="button" id="themeToggle" aria-label="切換深色模式"
-                        class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition-all border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500/30">
+                        class="min-h-[44px] min-w-[44px] flex items-center justify-center p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition-all border border-slate-200 dark:border-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:focus-visible:ring-blue-400">
                         <svg id="themeIconSun" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
                         <svg id="themeIconMoon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
                     </button>
                 </div>
             </div>
 
-            <div class="mt-4" role="search" aria-label="機型搜尋與篩選">
+            <search class="mt-4 block" aria-label="機型搜尋與篩選">
                 <div class="flex flex-col sm:flex-row gap-2 w-full">
                     <div class="relative flex-grow sm:max-w-xs group">
                         <label for="searchInput" class="sr-only">搜尋機型名稱或代號</label>
                         <input type="search" id="searchInput" autocomplete="off"
-                            class="w-full bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200/60 dark:hover:bg-slate-800 focus:bg-white dark:focus:bg-slate-800 text-slate-800 dark:text-slate-100 py-2.5 pl-10 pr-4 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:focus:ring-blue-400/20 focus:border-blue-500 dark:focus:border-blue-400 transition-all border border-slate-200 dark:border-slate-700 focus:shadow-sm placeholder-slate-500 dark:placeholder-slate-400" 
+                            class="w-full min-h-[44px] bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200/60 dark:hover:bg-slate-800 focus:bg-white dark:focus:bg-slate-800 text-slate-800 dark:text-slate-100 py-2.5 pl-10 pr-4 rounded-xl text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:focus-visible:ring-blue-400 focus:border-blue-500 dark:focus:border-blue-400 transition-all border border-slate-200 dark:border-slate-700 focus:shadow-sm placeholder-slate-500 dark:placeholder-slate-400" 
                             placeholder="搜尋機型...">
                         <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-500 dark:text-slate-400 group-focus-within:text-blue-600 dark:group-focus-within:text-blue-400 transition-colors" aria-hidden="true">
                             <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
@@ -429,12 +441,12 @@ html_parts = [f"""<!DOCTYPE html>
                     
                     <div class="flex gap-2 overflow-x-auto pb-1 sm:pb-0 no-scrollbar">
                         <label for="brandFilter" class="sr-only">品牌篩選</label>
-                        <select id="brandFilter" class="bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 py-2.5 px-4 pr-8 rounded-xl text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:focus:ring-blue-400/20 border border-slate-300 dark:border-slate-600 cursor-pointer transition-all shadow-sm">
+                        <select id="brandFilter" class="min-h-[44px] bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 py-2.5 px-4 pr-8 rounded-xl text-sm font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:focus-visible:ring-blue-400 border border-slate-300 dark:border-slate-600 cursor-pointer transition-all shadow-sm">
                             {brand_options}
                         </select>
                         
                         <label for="daysFilter" class="sr-only">時間範圍篩選</label>
-                        <select id="daysFilter" class="bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 py-2.5 px-4 pr-8 rounded-xl text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:focus:ring-blue-400/20 border border-slate-300 dark:border-slate-600 cursor-pointer transition-all shadow-sm">
+                        <select id="daysFilter" class="min-h-[44px] bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-100 py-2.5 px-4 pr-8 rounded-xl text-sm font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 dark:focus-visible:ring-blue-400 border border-slate-300 dark:border-slate-600 cursor-pointer transition-all shadow-sm">
                             <option value="7">7 天</option>
                             <option value="14">14 天</option>
                             <option value="30" selected>30 天</option>
@@ -443,36 +455,36 @@ html_parts = [f"""<!DOCTYPE html>
                             <option value="365">1 年</option>
                         </select>
                         
-                        <label class="inline-flex items-center cursor-pointer bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all select-none border border-slate-300 dark:border-slate-600 shadow-sm active:scale-95">
-                            <input type="checkbox" id="recentFilter" class="sr-only">
-                            <div id="checkboxBox" class="w-4 h-4 rounded border-2 border-slate-400 dark:border-slate-500 mr-2 flex items-center justify-center transition-all bg-slate-100 dark:bg-slate-700" aria-hidden="true">
+                        <label for="recentFilter" class="min-h-[44px] inline-flex items-center cursor-pointer bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 px-4 py-2.5 rounded-xl text-sm font-semibold transition-all select-none border border-slate-300 dark:border-slate-600 shadow-sm active:scale-95">
+                            <input type="checkbox" id="recentFilter" class="sr-only peer">
+                            <span id="checkboxBox" class="w-4 h-4 rounded border-2 border-slate-400 dark:border-slate-500 mr-2 flex items-center justify-center transition-all bg-slate-100 dark:bg-slate-700 peer-checked:bg-mi-orange peer-checked:border-mi-orange peer-focus-visible:ring-2 peer-focus-visible:ring-blue-500 dark:peer-focus-visible:ring-blue-400 peer-focus-visible:ring-offset-2 peer-checked:[&>svg]:scale-100" aria-hidden="true">
                                 <svg id="checkmark" class="w-3 h-3 text-white scale-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                            </div>
+                            </span>
                             <span class="text-slate-800 dark:text-slate-100">最近</span>
                         </label>
                     </div>
                 </div>
-            </div>
+            </search>
         </div>
     </header>
 
     <!-- Stats Bar -->
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+    <div id="statsBar" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" role="region" aria-label="統計摘要">
             <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 ring-1 ring-slate-200 dark:ring-slate-700/50 shadow-sm">
-                <div class="text-2xl font-bold text-slate-900 dark:text-white">{total_devices}</div>
+                <div class="text-2xl font-bold tabular-nums text-slate-900 dark:text-white">{total_devices}</div>
                 <div class="text-xs text-slate-600 dark:text-slate-300 font-medium mt-0.5">追蹤機型</div>
             </div>
             <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 ring-1 ring-slate-200 dark:ring-slate-700/50 shadow-sm">
-                <div class="text-2xl font-bold text-emerald-700 dark:text-emerald-400">{recent_7d}</div>
+                <div class="text-2xl font-bold tabular-nums text-emerald-700 dark:text-emerald-400">{recent_7d}</div>
                 <div class="text-xs text-slate-600 dark:text-slate-300 font-medium mt-0.5">7 天內更新</div>
             </div>
             <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 ring-1 ring-slate-200 dark:ring-slate-700/50 shadow-sm">
-                <div class="text-2xl font-bold text-blue-700 dark:text-blue-400">{recent_30d}</div>
+                <div class="text-2xl font-bold tabular-nums text-blue-700 dark:text-blue-400">{recent_30d}</div>
                 <div class="text-xs text-slate-600 dark:text-slate-300 font-medium mt-0.5">30 天內更新</div>
             </div>
             <div class="bg-white dark:bg-slate-800 rounded-2xl p-4 ring-1 ring-slate-200 dark:ring-slate-700/50 shadow-sm">
-                <div class="text-2xl font-bold text-mi-orange">{brand_count}</div>
+                <div class="text-2xl font-bold tabular-nums text-mi-orange">{brand_count}</div>
                 <div class="text-xs text-slate-600 dark:text-slate-300 font-medium mt-0.5">品牌數</div>
             </div>
         </div>
@@ -481,7 +493,7 @@ html_parts = [f"""<!DOCTYPE html>
     <!-- Live region for filter results -->
     <div id="filterStatus" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 
-    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 space-y-6" id="content" role="main">"""]
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 space-y-6" id="content" tabindex="-1">"""]
 
 # 生成設備卡片
 for index, device in enumerate(final_list):
@@ -492,11 +504,13 @@ for index, device in enumerate(final_list):
     image_filename = f'{device["code"]}.png'
     image_file_path = os.path.join(images_dir, image_filename)
 
-    # 針對前 4 個卡片 (首屏可視區域) 使用 eager / fetchpriority=high，其餘使用 lazy loading
-    if index < 4:
+    # 僅對前 2 個首屏關鍵圖片設定 fetchpriority="high"，第 3-4 個維持 eager 預設優先權，其餘延遲載入
+    if index < 2:
         img_loading_attr = 'loading="eager" fetchpriority="high"'
+    elif index < 4:
+        img_loading_attr = 'loading="eager"'
     else:
-        img_loading_attr = 'loading="lazy" fetchpriority="auto"'
+        img_loading_attr = 'loading="lazy"'
 
     if os.path.isfile(image_file_path):
         device_visual_html = (
@@ -555,8 +569,8 @@ for index, device in enumerate(final_list):
         f'<div>'
         f'<h2 class="text-xl font-bold text-slate-900 dark:text-white leading-tight device-title tracking-tight">{device["name"]}</h2>'
         f'<div class="flex items-center gap-2 mt-1.5">'
-        f'<span class="text-[11px] font-mono font-medium text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-700/80 px-2 py-1 rounded-lg border border-slate-200 dark:border-slate-600 device-code">{device["code"]}</span>'
-        f'<span class="text-[11px] font-bold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-700/80 px-2 py-1 rounded-lg border border-slate-200 dark:border-slate-600 uppercase tracking-wide">{device["brand"]}</span>'
+        f'<span class="text-[0.6875rem] font-mono font-medium text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-700/80 px-2 py-1 rounded-lg border border-slate-200 dark:border-slate-600 device-code">{device["code"]}</span>'
+        f'<span class="text-[0.6875rem] font-bold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-700/80 px-2 py-1 rounded-lg border border-slate-200 dark:border-slate-600 uppercase tracking-wide">{device["brand"]}</span>'
         f'</div>'
         f'</div>'
         f'</div>'
@@ -564,7 +578,7 @@ for index, device in enumerate(final_list):
         f'<div class="flex flex-col items-end">'
         f'<div class="flex items-center gap-2">'
         f'<span class="text-xs font-bold text-slate-600 dark:text-slate-300 uppercase tracking-wider">更新於</span>'
-        f'<time datetime="{tw_date}" class="text-sm font-bold text-slate-800 dark:text-slate-100 bg-slate-100 dark:bg-slate-700/80 px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-600 font-mono">{tw_date}</time>'
+        f'<time datetime="{tw_date}" class="text-sm font-bold tabular-nums text-slate-800 dark:text-slate-100 bg-slate-100 dark:bg-slate-700/80 px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-600 font-mono">{tw_date}</time>'
         f'</div>'
         f'{ago_html}'
         f'</div>'
@@ -596,7 +610,7 @@ html_parts.append(f"""
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/></svg>
     </button>
     
-    <footer class="mt-20 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900" role="contentinfo">
+    <footer class="mt-20 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900">
         <div class="max-w-5xl mx-auto px-4 py-12 text-center">
             <p class="text-slate-600 dark:text-slate-300 text-sm font-medium">由 GitHub Actions 自動生成</p>
             <p class="text-slate-500 dark:text-slate-400 text-xs mt-2">共追蹤 {total_devices} 款機型</p>
@@ -615,43 +629,100 @@ html_parts.append(f"""
             const toggle = document.getElementById('themeToggle');
             const iconSun = document.getElementById('themeIconSun');
             const iconMoon = document.getElementById('themeIconMoon');
+            const metaColorScheme = document.querySelector('meta[name="color-scheme"]');
+            const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-            function applyTheme(theme) {{
-                if (theme === 'dark') {{
-                    html.classList.add('dark');
-                    iconSun.classList.remove('hidden');
-                    iconMoon.classList.add('hidden');
-                }} else {{
-                    html.classList.remove('dark');
-                    iconSun.classList.add('hidden');
-                    iconMoon.classList.remove('hidden');
+            function getSavedTheme() {{
+                try {{
+                    return localStorage.getItem('theme');
+                }} catch (e) {{
+                    return null;
                 }}
             }}
 
-            // Initialize: check localStorage, then system preference
-            const saved = localStorage.getItem('theme');
-            if (saved) {{
-                applyTheme(saved);
-            }} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {{
-                applyTheme('dark');
-            }} else {{
-                applyTheme('light');
+            function syncThemeUI() {{
+                const saved = getSavedTheme();
+                const isDark = saved === 'dark' || (!saved && darkQuery.matches);
+                html.classList.toggle('dark', isDark);
+                iconSun.classList.toggle('hidden', !isDark);
+                iconMoon.classList.toggle('hidden', isDark);
+                if (metaColorScheme) {{
+                    metaColorScheme.content = saved || 'light dark';
+                }}
             }}
 
-            // Listen for system changes
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {{
-                if (!localStorage.getItem('theme')) {{
-                    applyTheme(e.matches ? 'dark' : 'light');
+            syncThemeUI();
+
+            // Listen for system changes (only when following system preference)
+            darkQuery.addEventListener('change', () => {{
+                if (!getSavedTheme()) {{
+                    syncThemeUI();
+                }}
+            }});
+
+            // Sync across open tabs
+            window.addEventListener('storage', (e) => {{
+                if (e.key === 'theme') {{
+                    syncThemeUI();
                 }}
             }});
 
             toggle.addEventListener('click', () => {{
                 const isDark = html.classList.contains('dark');
                 const next = isDark ? 'light' : 'dark';
-                localStorage.setItem('theme', next);
-                applyTheme(next);
+                const matchesSystem = (next === 'dark') === darkQuery.matches;
+                try {{
+                    if (matchesSystem) {{
+                        localStorage.removeItem('theme');
+                    }} else {{
+                        localStorage.setItem('theme', next);
+                    }}
+                }} catch (e) {{}}
+                html.classList.toggle('dark', next === 'dark');
+                iconSun.classList.toggle('hidden', next !== 'dark');
+                iconMoon.classList.toggle('hidden', next === 'dark');
+                if (metaColorScheme) {{
+                    metaColorScheme.content = matchesSystem ? 'light dark' : next;
+                }}
             }});
         }})();
+
+        /* === Location-Agnostic Calendar Date Utilities === */
+        function parsePlainDateMs(dateStr) {{
+            const parts = String(dateStr || '').split('-');
+            if (parts.length !== 3) return NaN;
+            const y = Number(parts[0]), m = Number(parts[1]), d = Number(parts[2]);
+            if (!Number.isInteger(y) || !Number.isInteger(m) || !Number.isInteger(d)) return NaN;
+            return Date.UTC(y, m - 1, d);
+        }}
+
+        function diffCalendarDays(laterDateStr, earlierDateStr) {{
+            if (typeof Temporal !== 'undefined' && Temporal.PlainDate) {{
+                try {{
+                    const later = Temporal.PlainDate.from(laterDateStr);
+                    const earlier = Temporal.PlainDate.from(earlierDateStr);
+                    return later.since(earlier, {{ largestUnit: 'day' }}).days;
+                }} catch (e) {{}}
+            }}
+            const laterMs = parsePlainDateMs(laterDateStr);
+            const earlierMs = parsePlainDateMs(earlierDateStr);
+            if (Number.isNaN(laterMs) || Number.isNaN(earlierMs)) return NaN;
+            return Math.round((laterMs - earlierMs) / 86400000);
+        }}
+
+        function getTodayTaipeiStr() {{
+            if (typeof Temporal !== 'undefined' && Temporal.Now) {{
+                try {{
+                    return Temporal.Now.plainDateISO('Asia/Taipei').toString();
+                }} catch (e) {{}}
+            }}
+            return new Intl.DateTimeFormat('en-CA', {{
+                timeZone: 'Asia/Taipei',
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit'
+            }}).format(new Date());
+        }}
 
         /* === On-Demand History Table Rendering === */
         let romHistoryCache = null;
@@ -678,34 +749,30 @@ html_parts.append(f"""
                 const [os, release, android, aspatch] = romList[i];
                 let intervalHtml = '<span class="text-slate-500 dark:text-slate-400 font-medium" aria-label="無資料">—</span>';
                 if (i < romList.length - 1) {{
-                    try {{
-                        const cur = new Date(release);
-                        const prev = new Date(romList[i+1][1]);
-                        const diffDays = Math.round((cur - prev) / (1000 * 60 * 60 * 24));
-                        if (diffDays >= 0) {{
-                            let colorClass = 'bg-slate-100 text-slate-700 dark:bg-slate-700/80 dark:text-slate-200';
-                            if (diffDays > 90) colorClass = 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300';
-                            else if (diffDays < 30) colorClass = 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300';
-                            intervalHtml = `<span class="px-2 py-0.5 rounded-full text-[10px] font-medium ${{colorClass}}">${{diffDays}} 天</span>`;
-                        }}
-                    }} catch(e) {{}}
+                    const diffDays = diffCalendarDays(release, romList[i + 1][1]);
+                    if (!Number.isNaN(diffDays) && diffDays >= 0) {{
+                        let colorClass = 'bg-slate-100 text-slate-700 dark:bg-slate-700/80 dark:text-slate-200';
+                        if (diffDays > 90) colorClass = 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300';
+                        else if (diffDays < 30) colorClass = 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300';
+                        intervalHtml = `<span class="px-2 py-0.5 rounded-full text-[0.625rem] font-medium tabular-nums ${{colorClass}}">${{diffDays}} 天</span>`;
+                    }}
                 }} else {{
-                    intervalHtml = '<span class="text-[10px] font-medium text-blue-800 bg-blue-100 dark:text-blue-300 dark:bg-blue-950/60 px-2 py-0.5 rounded-full">首版</span>';
+                    intervalHtml = '<span class="text-[0.625rem] font-medium text-blue-800 bg-blue-100 dark:text-blue-300 dark:bg-blue-950/60 px-2 py-0.5 rounded-full">首版</span>';
                 }}
                 rowsHtml += `
                     <tr class="hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors">
                         <td class="py-2.5 pl-2 font-mono text-slate-800 dark:text-slate-200 font-medium">${{os}}</td>
-                        <td class="py-2.5 text-slate-600 dark:text-slate-300">${{release}}</td>
+                        <td class="py-2.5 text-slate-600 dark:text-slate-300 tabular-nums">${{release}}</td>
                         <td class="py-2.5 text-center">${{intervalHtml}}</td>
-                        <td class="py-2.5 text-right text-slate-600 dark:text-slate-300">${{android || '—'}}</td>
-                        <td class="py-2.5 text-right pr-2 text-slate-600 dark:text-slate-300">${{aspatch || '—'}}</td>
+                        <td class="py-2.5 text-right text-slate-600 dark:text-slate-300 tabular-nums">${{android || '—'}}</td>
+                        <td class="py-2.5 text-right pr-2 text-slate-600 dark:text-slate-300 tabular-nums">${{aspatch || '—'}}</td>
                     </tr>
                 `;
             }}
 
             container.innerHTML = `
-                <div class="overflow-x-auto">
-                    <table class="w-full text-xs text-left whitespace-nowrap" role="table">
+                <div class="overflow-x-auto focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg" tabindex="0" role="region" aria-label="歷史版本表格">
+                    <table class="w-full text-xs text-left whitespace-nowrap tabular-nums">
                         <thead class="text-slate-600 dark:text-slate-300 font-semibold border-b border-slate-200 dark:border-slate-700">
                             <tr>
                                 <th scope="col" class="py-2 pl-2">版本</th>
@@ -724,7 +791,7 @@ html_parts.append(f"""
             container.dataset.rendered = "true";
         }}
 
-        /* === History Toggle === */
+        /* === History Toggle (Event Delegation) === */
         function toggleHistory(element) {{
             const historyDiv = element.nextElementSibling;
             if (historyDiv) {{
@@ -736,44 +803,36 @@ html_parts.append(f"""
                     }}
                 }}
                 const isHidden = historyDiv.classList.toggle('hidden');
-                element.setAttribute('aria-expanded', !isHidden);
+                element.setAttribute('aria-expanded', String(!isHidden));
                 const arrow = element.querySelector('.arrow-icon');
                 if (arrow) arrow.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
             }}
         }}
+
+        const mainContent = document.getElementById('content');
+        mainContent.addEventListener('click', (e) => {{
+            const btn = e.target.closest('[data-history-toggle]');
+            if (btn) {{
+                toggleHistory(btn);
+            }}
+        }});
         
         /* === Filter Logic === */
         const searchInput = document.getElementById('searchInput');
         const brandFilter = document.getElementById('brandFilter');
         const recentFilter = document.getElementById('recentFilter');
         const daysFilter = document.getElementById('daysFilter');
-        const checkboxBox = document.getElementById('checkboxBox');
-        const checkmark = document.getElementById('checkmark');
         const emptyState = document.getElementById('emptyState');
         const filterStatus = document.getElementById('filterStatus');
-
-        function updateCheckboxVisual() {{
-            if (recentFilter.checked) {{
-                checkboxBox.style.backgroundColor = '#ff6900';
-                checkboxBox.style.borderColor = '#ff6900';
-                checkmark.classList.remove('scale-0', 'hidden');
-                checkmark.classList.add('scale-100');
-            }} else {{
-                checkboxBox.style.backgroundColor = '';
-                checkboxBox.style.borderColor = '';
-                checkmark.classList.add('scale-0', 'hidden');
-                checkmark.classList.remove('scale-100');
-            }}
-        }}
 
         function filterContent() {{
             requestAnimationFrame(() => {{
                 const searchText = searchInput.value.toLowerCase().trim();
                 const selectedBrand = brandFilter.value;
                 const isRecent = recentFilter.checked;
-                const recentDaysThreshold = parseInt(daysFilter.value) || 30;
+                const recentDaysThreshold = parseInt(daysFilter.value, 10) || 30;
                 const cards = document.querySelectorAll('.device-card');
-                const now = new Date();
+                const todayStr = isRecent ? getTodayTaipeiStr() : '';
                 let visibleCount = 0;
 
                 cards.forEach(card => {{
@@ -787,10 +846,8 @@ html_parts.append(f"""
                     
                     let matchRecent = true;
                     if (isRecent && dateStr) {{
-                        const releaseDate = new Date(dateStr);
-                        const diffTime = Math.abs(now - releaseDate);
-                        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-                        matchRecent = diffDays <= recentDaysThreshold;
+                        const diffDays = diffCalendarDays(todayStr, dateStr);
+                        matchRecent = !Number.isNaN(diffDays) && diffDays >= 0 && diffDays <= recentDaysThreshold;
                     }}
 
                     if (matchText && matchBrand && matchRecent) {{
@@ -824,11 +881,8 @@ html_parts.append(f"""
             searchTimer = setTimeout(filterContent, 300);
         }});
         brandFilter.addEventListener('change', filterContent);
-        recentFilter.addEventListener('change', function() {{
-            updateCheckboxVisual();
-            filterContent();
-        }});
-        daysFilter.addEventListener('change', function() {{
+        recentFilter.addEventListener('change', filterContent);
+        daysFilter.addEventListener('change', () => {{
             if (recentFilter.checked) filterContent();
         }});
 
@@ -847,7 +901,7 @@ html_parts.append(f"""
 
             const daysParam = urlParams.get('days');
             if (daysParam) {{
-                const days = parseInt(daysParam);
+                const days = parseInt(daysParam, 10);
                 if (!isNaN(days) && days > 0) {{
                     const daysOptions = Array.from(daysFilter.options);
                     const matchDays = daysOptions.find(opt => opt.value === String(days));
@@ -861,33 +915,31 @@ html_parts.append(f"""
                         daysFilter.value = days;
                     }}
                     recentFilter.checked = true;
-                    updateCheckboxVisual();
                 }}
             }}
 
             if (query || brandParam || daysParam) filterContent();
         }} catch (e) {{ console.error(e); }}
 
-        /* === Back to Top === */
+        /* === Back to Top via IntersectionObserver === */
         const backToTop = document.getElementById('backToTop');
-        let ticking = false;
-        window.addEventListener('scroll', () => {{
-            if (!ticking) {{
-                requestAnimationFrame(() => {{
-                    if (window.scrollY > 300) {{
-                        backToTop.classList.add('visible');
-                    }} else {{
-                        backToTop.classList.remove('visible');
-                    }}
-                    ticking = false;
+        const statsBar = document.getElementById('statsBar');
+        if (backToTop && statsBar && 'IntersectionObserver' in window) {{
+            const observer = new IntersectionObserver((entries) => {{
+                entries.forEach((entry) => {{
+                    const scrolledPast = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+                    backToTop.classList.toggle('visible', scrolledPast);
                 }});
-                ticking = true;
-            }}
-        }}, {{ passive: true }});
+            }}, {{ threshold: 0 }});
+            observer.observe(statsBar);
+        }}
 
-        backToTop.addEventListener('click', () => {{
-            window.scrollTo({{ top: 0, behavior: 'smooth' }});
-        }});
+        if (backToTop) {{
+            backToTop.addEventListener('click', () => {{
+                const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                window.scrollTo({{ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' }});
+            }});
+        }}
     </script>
 </body>
 </html>
