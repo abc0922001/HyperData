@@ -14,14 +14,14 @@ jobs:
     
     steps:
       - name: Checkout target repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: tw_version
           fetch-depth: 0
 
       - name: Sync upstream changes
         id: sync
-        uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
+        uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.3
         with:
           upstream_sync_repo: HegeKen/HyperData
           upstream_sync_branch: main
