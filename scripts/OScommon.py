@@ -19,8 +19,38 @@ from urllib.parse import quote
 from pymysql import Connection
 import config
 import os
+import copy
+import threading
 from collections import OrderedDict
 import re
+
+# ===== 并发支持：共享 HTTP Session（连接复用）与 ROM 写锁 =====
+# 单一 Session 跨线程复用：requests.Session 的请求执行与底层 urllib3 连接池是线程安全的，
+# 只要不在多线程间改 session 级状态（这里所有 header 都按请求传入）。
+_shared_session = None
+_session_init_lock = threading.Lock()
+
+# 保护 checkExist 中的落库/写 JSON 临界区，避免并发写同一设备文件或重复插库。
+_rom_write_lock = threading.Lock()
+
+
+def get_shared_session():
+	"""返回进程级共享 requests.Session（懒加载、线程安全）。"""
+	global _shared_session
+	if _shared_session is None:
+		with _session_init_lock:
+			if _shared_session is None:
+				s = requests.Session()
+				retries = Retry(total=5, backoff_factor=1,
+				                status_forcelist=[500, 502, 503, 504])
+				# 连接池大小与线程池对齐，避免 "Connection pool is full" 丢弃连接
+				adapter = HTTPAdapter(max_retries=retries,
+				                      pool_connections=16, pool_maxsize=16)
+				s.mount('http://', adapter)
+				s.mount('https://', adapter)
+				_shared_session = s
+	return _shared_session
+
 
 def get_platform_path(relative_path):
 	"""获取平台相关的文件路径"""
@@ -3037,7 +3067,18 @@ flags = {
 	"EMERALDRRUGlobal":"emerald_r",
 	"serenity_id_global":"serenity",
 	"SERENITYIDGlobal":"serenity",
-	"emerald_r_ru_global":"emerald_r"
+	"emerald_r_ru_global":"emerald_r",
+	"hongkong_tw_global": "hongkong",
+	"hongkong_eea_global": "hongkong",
+	"hongkong_ru_global": "hongkong",
+	"hongkong_id_global": "hongkong",
+	"hongkong_jp_global": "hongkong",
+	"madrid_tw_global": "madrid",
+	"madrid_eea_global": "madrid",
+	"madrid_id_global": "madrid",
+	"madrid_jp_global": "madrid",
+	"madrid_global": "madrid",
+	"hongkong_global": "hongkong",
 }
 
 
@@ -3958,31 +3999,32 @@ def getDeviceCode(filename):
 		return 0
 
 def OTAFormer(device, code, region, branch, zone, android, version):
-	"""生成OTA请求表单"""
-	HyperOSForm['d'] = code
-	HyperOSForm["obv"] = version[:5]
+	"""生成OTA请求表单（线程安全：基于模板深拷贝，避免并发篡改全局 HyperOSForm）"""
+	form = copy.deepcopy(HyperOSForm)
+	form['d'] = code
+	form["obv"] = version[:5]
 	if region == 'cn':
-		HyperOSForm['pn'] = code
-		HyperOSForm["r"] = 'CN'
+		form['pn'] = code
+		form["r"] = 'CN'
 	else:
-		HyperOSForm["r"] = 'GL'
+		form["r"] = 'GL'
 		if code == device + "_global":
-			HyperOSForm['pn'] = code
+			form['pn'] = code
 		else:
-			HyperOSForm['pn'] = code.split('_global')[0]
-	HyperOSForm['b'] = branch
-	HyperOSForm['options']['zone'] = zone
+			form['pn'] = code.split('_global')[0]
+	form['b'] = branch
+	form['options']['zone'] = zone
 	if android == '':
 		print(device, version, "请补充安卓版本")
-		HyperOSForm['c'] = '14'
+		form['c'] = '14'
 	else:
-		HyperOSForm['c'] = android.split('.0')[0]
-	HyperOSForm['sdk'] = sdk[android.split('.0')[0]]
+		form['c'] = android.split('.0')[0]
+	form['sdk'] = sdk[android.split('.0')[0]]
 	if "OS1" in version:
-		HyperOSForm['v'] = 'MIUI-' + version.replace('OS1', 'V816')
+		form['v'] = 'MIUI-' + version.replace('OS1', 'V816')
 	else:
-		HyperOSForm['v'] = version
-	return json.dumps(HyperOSForm)
+		form['v'] = version
+	return json.dumps(form)
 
 def db_job_latest(sql):
 	"""执行SQL查询并返回第一条结果"""
@@ -4017,6 +4059,35 @@ def query_device_by_code_or_branchcode(value):
 	sql = ("SELECT code, device, tag, region, carrier, branchcode FROM devices "
 			"WHERE LOWER(code) = LOWER(%s) OR LOWER(branchcode) = LOWER(%s)") % (stringify(value), stringify(value))
 	return db_job_latest(sql)
+
+def sync_device_branch_record(device, code, tag, region, carrier, version=None):
+	"""新分支写入 JSON 后，同步插入 devices 表的机型分支记录（已存在则跳过）
+
+	devices 表的 tag 存 idtag（如 CNTP），devcode 存版本号后 6 位（如 FRTWXM），
+	carrier 存运营商列表，branchcode 与语义化 code 保持一致。
+	"""
+	if not device or not code:
+		return
+	exists_sql = ("SELECT id FROM devices WHERE LOWER(device) = LOWER(%s) AND LOWER(code) = LOWER(%s) LIMIT 1"
+				  % (stringify(device), stringify(code)))
+	if db_job_latest(exists_sql):
+		return
+	devtag_row = db_job_latest("SELECT devtag FROM devices WHERE device = %s ORDER BY id ASC LIMIT 1"
+							   % stringify(device))
+	devtag = devtag_row[0] if devtag_row else None
+	devcode = version[-6:] if version and len(version) >= 6 else None
+	# str(list) 含单引号，需按 SQL 规则转义，否则空运营商会丢引号
+	carrier_value = str(carrier).replace("'", "''") if carrier else None
+
+	def _val(value):
+		return "NULL" if value is None or value == "" else stringify(value)
+
+	ins_sql = ("INSERT INTO devices (device, devtag, code, tag, region, devcode, carrier, branchcode) "
+			   "VALUES (%s,%s,%s,%s,%s,%s,%s,%s)" % (
+				   _val(device), _val(devtag), _val(code), _val(tag), _val(region),
+				   _val(devcode), _val(carrier_value), _val(code)))
+	db_job_latest(ins_sql)
+	print(f"已同步 devices 表: {device} - {code}")
 
 def getBranchcode(filename):
 	if filename.endswith(".zip"):
@@ -4226,6 +4297,10 @@ def getData(filename):
 								region = 'global'
 						else:
 								region = rest[0]
+				elif len(rest) == 0:
+						# 纯全局版 code（如 madrid_global / hongkong_global）：
+						# 去掉 device 与尾部 global 后已无剩余段，region 即为 global
+						region = 'global'
 				
 				# 从版本号提取 tag（最后4位），例如 VBNMXTC -> MXTC
 				tag = None
@@ -4982,6 +5057,9 @@ def add_rom_to_json(device, code, android, version, filetype, filename, devdata=
 									  region=region, zone=zone, branch=branch)
 		target_branch_idx = len(devdata["branches"]) - 1
 		match_method = f"auto-created branch: {code}"
+		# 自动创建分支后同步写入 devices 表，避免机型分支信息缺失
+		sync_device_branch_record(device, code, target_branch.get("idtag"),
+								  target_branch.get("region"), target_branch.get("carrier"), version)
 
 	# 处理 ROM 数据
 	if "roms" not in target_branch:
@@ -5319,38 +5397,37 @@ def checkExist(filename):
 			elif filename in str(localData(device_code)) or filename in newROM or filename in UInewROM:
 				return "Already Exist"
 			else:
-				if "CNXM" in filename:
-					writeData(filename)
-				else:
-					i = 0
-				rom_data = getData(filename)
-				if type(rom_data) != tuple:
-					return "Error"
-				else:
+				# 落库 + 写 JSON 临界区：全局串行，避免并发写同一设备文件 / 重复插库
+				with _rom_write_lock:
+					if "CNXM" in filename:
+						writeData(filename)
+					rom_data = getData(filename)
+					if type(rom_data) != tuple:
+						return "Error"
 					device, code, android, version, rom_type, bigver, region, tag, zone, branch, filetype = [item for item in rom_data]
 					checkDatabase(device, code, android, version, rom_type, bigver, region, tag, zone, branch, filetype, filename)
-				
-				device_file = get_platform_path(f"public/data/devices/{device}.json")
-				try:
-					with open(device_file, 'r', encoding='utf-8') as f:
-						dev_data = json.load(f)
-					devdata = add_rom_to_json(device, code, android, version, filetype, filename, dev_data, region=region, tag=tag, zone=zone, branch=branch or 'F')
-					
-					if devdata is None:
-						print(f"错误: add_rom_to_json 返回 None")
-						return "Error"
-					
-					# 检测原始文件的缩进格式
-					indent = detect_json_indent(device_file)
-					
-					with open(device_file, 'w', encoding='utf-8', newline='\n') as f:
-						json.dump(devdata, f, ensure_ascii=False, indent=indent, sort_keys=False)
-					
-				except Exception as e:
-					print(f"✗ 处理 JSON 文件时出错: {e}")
-					import traceback
-					traceback.print_exc()
-				return "New ROM"
+
+					device_file = get_platform_path(f"public/data/devices/{device}.json")
+					try:
+						with open(device_file, 'r', encoding='utf-8') as f:
+							dev_data = json.load(f)
+						devdata = add_rom_to_json(device, code, android, version, filetype, filename, dev_data, region=region, tag=tag, zone=zone, branch=branch or 'F')
+
+						if devdata is None:
+							print(f"错误: add_rom_to_json 返回 None")
+							return "Error"
+
+						# 检测原始文件的缩进格式
+						indent = detect_json_indent(device_file)
+
+						with open(device_file, 'w', encoding='utf-8', newline='\n') as f:
+							json.dump(devdata, f, ensure_ascii=False, indent=indent, sort_keys=False)
+
+					except Exception as e:
+						print(f"✗ 处理 JSON 文件时出错: {e}")
+						import traceback
+						traceback.print_exc()
+					return "New ROM"
 	else:
 		return "UI Maybe"
 
@@ -5423,7 +5500,7 @@ HyperOSForm = {
 }
 
 
-def getFromApi(encrypted_data):
+def getFromApi(encrypted_data, session=None):
 	headers = {"user-agent": "Dalvik/2.1.0 (Linux; U; Android 13; MI 9 Build/TKQ1.220829.002)",
 				 "Connection": "Keep-Alive",
 				 "Content-Type": "application/x-www-form-urlencoded",
@@ -5434,35 +5511,35 @@ def getFromApi(encrypted_data):
 				 "Cookie": "serviceToken=;"
 				 }
 	data = "q=" + encrypted_data + "&s=1&t="
-	session = requests.Session()
-	retries = Retry(total=5, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
-	session.mount('http://', HTTPAdapter(max_retries=retries))
-	session.mount('https://', HTTPAdapter(max_retries=retries))
+	if session is None:
+		session = get_shared_session()
+	response = None
 	try:
 		response = session.post(check_url, headers=headers, data=data, timeout=(5, 10))
 		if "code" in response.text:
-			i = 0
-		else:
-			try:
-				data = miui_decrypt(response.text.split("q=")[0])
-			except binascii.Error as e:
-				print(f"  [解码失败] {e}")
-				return 0
-			if "LatestRom" in data:
-				package = data["LatestRom"]["filename"].split("?")[0]
-				# print(package)
-				checkExist(package)
-				return 1
-			if "CurrentRom" in data:
-				package = data["CurrentRom"]["filename"].split("?")[0]
-				# print(package)
-				checkExist(package)
-				return 1
-			else:
-				return 0
-		response.close()
+			return 0
+		try:
+			data = miui_decrypt(response.text.split("q=")[0])
+		except binascii.Error as e:
+			print(f"  [解码失败] {e}")
+			return 0
+		if "LatestRom" in data:
+			package = data["LatestRom"]["filename"].split("?")[0]
+			# print(package)
+			checkExist(package)
+			return 1
+		if "CurrentRom" in data:
+			package = data["CurrentRom"]["filename"].split("?")[0]
+			# print(package)
+			checkExist(package)
+			return 1
+		return 0
 	except requests.exceptions.RequestException as e:
 		print(f"请求失败: {e}")
+	finally:
+		# 把连接归还共享池，避免并发下连接泄漏耗尽池
+		if response is not None:
+			response.close()
 
 def MiFirm(url):
 	options = Options()
@@ -5645,29 +5722,25 @@ def print_log(log):
 			print(entry)
 		
 
-def getFastboot(url):
-	s = requests.Session()
-	s.mount('http://', HTTPAdapter(max_retries=3))
-	s.mount('https://', HTTPAdapter(max_retries=3))
-	headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0',
-				 'Connection': 'close'}
+def getFastboot(url, session=None):
+	# 复用共享 Session 以保持长连接；不显式发送 Connection: close，让连接回到池中
+	if session is None:
+		session = get_shared_session()
+	headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0'}
+	response = None
 	try:
-		response = s.post(url, headers=headers, json=True, timeout=(5, 10))
+		response = session.post(url, headers=headers, json=True, timeout=(5, 10))
 		if (response.status_code == 200):
 			content = response.content.decode('utf8')
-			if content == '':
-				i = 0
-			else:
+			if content != '':
 				data = json.loads(content)['LatestFullRom']
 				if len(data) > 0:
 					checkExist(data['filename'])
-				else:
-					i = 0
-		else:
-			i = 0
-	except requests.exceptions.RequestException as e:
-		i = 0
-	s.close()
+	except requests.exceptions.RequestException:
+		pass
+	finally:
+		if response is not None:
+			response.close()
 
 def entryChecker(data,device):
 	check =[]
